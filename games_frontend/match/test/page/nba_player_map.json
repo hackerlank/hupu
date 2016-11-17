@@ -1,0 +1,85 @@
+{
+	"sections": 6,
+	"section_status": [1, 0, 1, 0, 1, 1],
+	"player_info": {
+		"player_id": "3074",
+		"tid": 2,
+		"player_name": "戈兰-德拉季奇",
+		"player_short_name": "德拉季奇",
+		"player_enname": "Goran Dragic",
+		"player_header": "http://c2.hoopchina.com.cn/images/gamespace/brand.jpg?t=41",
+		"wingspan": "2.01米",
+		"standing_reach": "不详",
+		"number": "7号",
+		"position": "后卫",
+		"is_birthday": "",
+		"age": "29岁",
+		"birth_date": "1986年5月6日",
+		"height": "1.90米",
+		"weight": "86公斤",
+		"contract": "5年9000万美元，2015年夏天签，2020年夏天到期，2019-20赛季球员选项",
+		"contract_details": "2015-16赛季 1478万美元#2016-17赛季 1589万美元#2017-18赛季 1700万美元#2018-19赛季 1811万美元#2019-20赛季 1922万美元",
+		"salary": "1478万美元",
+		"draft": "2008年2轮第15顺位",
+		"college": "斯洛文尼亚"
+	},
+	"player_score": {
+		"fgStats": [{
+			"shot_coord_x": 15.6,
+			"shot_coord_y": 27.55,
+			"is_get": 1
+		}, {
+			"shot_coord_x": 37.8,
+			"shot_coord_y": 26.55,
+			"is_get": 1
+		}, {
+			"shot_coord_x": 49.1,
+			"shot_coord_y": 5.15,
+			"is_get": 1
+		}, {
+			"shot_coord_x": 25.4,
+			"shot_coord_y": 8.55,
+			"is_get": 0
+		}, {
+			"shot_coord_x": 11.2,
+			"shot_coord_y": 19.15,
+			"is_get": 0
+		}],
+		"playerStats": {
+			"ft_made": 2,
+			"ft_missed": 2,
+			"fg_made": 0,
+			"fg_missed": 3,
+			"oreb": 1,
+			"dreb": 6,
+			"to": 3,
+			"pf": 4,
+			"violation": 0,
+			"substitution": 3,
+			"jumpball": 0,
+			"ejected": 0,
+			"ti": 34,
+			"pts": 25,
+			"asts": 4,
+			"stl": 1,
+			"blk": 0,
+			"blkr": 0,
+			"net_points": "+19",
+			"jumpshot_made": 5,
+			"jumpshot_missed": 7,
+			"dunk_made": 0,
+			"dunk_missed": 0,
+			"layup_made": 4,
+			"layup_missed": 1,
+			"tipin_made": 0,
+			"tipin_missed": 0,
+			"hook_made": 1,
+			"hook_missed": 0
+		}
+	},
+	"is_login": 0,
+	"night": 1,
+	"projectId": 1,
+	"version": null,
+	"client": "864394109890964"
+}

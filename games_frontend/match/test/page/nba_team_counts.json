@@ -1,0 +1,61 @@
+{
+  "rankData": {
+    "fgp": 1,
+    "tpp": 1,
+    "ptsavg": 1
+  },
+  "countData": {
+    "to": 32,
+    "pace": 8.7,
+    "tgm": 12,
+    "ortg": 1.4,
+    "fta": 55,
+    "ast": 23,
+    "ftm": 11,
+    "tf": 1124,
+    "drbp": 0.331,
+    "trbp": null,
+    "stavg": 3.5,
+    "orbp": 0.12,
+    "team_alias": "凯尔特人",
+    "blkavg": 55.4,
+    "drbavg": 5.66,
+    "tsp": 0.1,
+    "astavg": 3.4,
+    "ff": 2021,
+    "tga": 36,
+    "team_alias_en": "Celtics",
+    "orbavg": 3.4,
+    "trbavg": 2.2,
+    "blk": 3,
+    "st": 15,
+    "opptsavg": 0,
+    "team_name": "波士顿凯尔特人",
+    "efgp": 0.5,
+    "reb": 11,
+    "fga": 554,
+    "pf": 965,
+    "season": 2016,
+    "ptsavg": "-",
+    "ftp": 0.5,
+    "team_name_en": "Boston Celtics",
+    "tpp": 0.4,
+    "drtg": 2.5,
+    "fgp": 0.3,
+    "team_id": 1,
+    "fgm": 21,
+    "toavg": 44.7
+  },
+  "is_login": 0,
+  "night": 0,
+  "projectId": "3",
+  "version": "7.0.15",
+  "client": "",
+  "stat": {
+    "redis": {
+      "gamesMajor": 2
+    },
+    "db": [],
+    "net": []
+  }
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "name": "场均得分",
+    "data": [
+      {
+        "player_id": "465",
+        "player_name": "马库斯威廉姆斯",
+        "player_header": "http://cba.hupu.com/players/images/2015102216340066082.jpg",
+        "team_name": "吉林",
+        "pts": "37",
+        "reb": "17",
+        "asts": "4",
+        "tpm": "1",
+        "stl": "3",
+        "blk": "0",
+        "val": "37"
+      },
+      {
+        "player_id": "723",
+        "player_name": "乔纳森吉布森",
+        "player_header": "http://cba.hupu.com/players/images/2015102715133095496.jpg",
+        "team_name": "青岛",
+        "pts": "36",
+        "reb": "5",
+        "asts": "5",
+        "tpm": "4",
+        "stl": "3",
+        "blk": "0",
+        "val": "36"
+      },
+      {
+        "player_id": "881",
+        "player_name": "威廉·拜纳姆",
+        "player_header": "http://cba.hupu.com/players/images/2014121015390193871.jpg",
+        "team_name": "广东",
+        "pts": "32",
+        "reb": "7",
+        "asts": "6",
+        "tpm": "5",
+        "stl": "2",
+        "blk": "0",
+        "val": "32"
+      },
+      {
+        "player_id": "581",
+        "player_name": "兰多夫·莫里斯",
+        "player_header": "http://cba.hupu.com/players/images/2015102715192693392.jpg",
+        "team_name": "北京",
+        "pts": "28",
+        "reb": "9",
+        "asts": "3",
+        "tpm": "0",
+        "stl": "1",
+        "blk": "3",
+        "val": "28"
+      },
+      {
+        "player_id": "898",
+        "player_name": "E.巴蒂斯塔",
+        "player_header": "http://cba.hupu.com/players/images/2015103016042569459.jpg",
+        "team_name": "北控",
+        "pts": "27",
+        "reb": "18",
+        "asts": "4",
+        "tpm": "0",
+        "stl": "1",
+        "blk": "2",
+        "val": "27"
+      }
+    ]
+  },
+  {
+    "name": "篮板",
+    "data": [
+      {
+        "player_id": "898",
+        "player_name": "E.巴蒂斯塔",
+        "player_header": "http://cba.hupu.com/players/images/2015103016042569459.jpg",
+        "team_name": "北控",
+        "pts": "27",
+        "reb": "18",
+        "asts": "4",
+        "tpm": "0",
+        "stl": "1",
+        "blk": "2",
+        "val": "18"
+      },
+      {
+        "player_id": "465",
+        "player_name": "马库斯威廉姆斯",
+        "player_header": "http://cba.hupu.com/players/images/2015102216340066082.jpg",
+        "team_name": "吉林",
+        "pts": "37",
+        "reb": "17",
+        "asts": "4",
+        "tpm": "1",
+        "stl": "3",
+        "blk": "0",
+        "val": "17"
+      },
+      {
+        "player_id": "428",
+        "player_name": "桑尼",
+        "player_header": "http://cba.hupu.com/players/images/2015102415341236384.jpg",
+        "team_name": "同曦",
+        "pts": "19",
+        "reb": "14",
+        "asts": "5",
+        "tpm": "0",
+        "stl": "4",
+        "blk": "0",
+        "val": "14"
+      },
+      {
+        "player_id": "889",
+        "player_name": "威廉姆斯",
+        "player_header": "http://cba.hupu.com/players/images/2015102715142955544.jpg",
+        "team_name": "青岛",
+        "pts": "15",
+        "reb": "14",
+        "asts": "1",
+        "tpm": "0",
+        "stl": "1",
+        "blk": "0",
+        "val": "14"
+      },
+      {
+        "player_id": "853",
+        "player_name": "邹雨宸",
+        "player_header": "http://cba.hupu.com/players/images/2015102215095737022.jpg",
+        "team_name": "八一",
+        "pts": "17",
+        "reb": "13",
+        "asts": "0",
+        "tpm": "0",
+        "stl": "1",
+        "blk": "4",
+        "val": "13"
+      }
+    ]
+  },
+  {
+    "name": "助攻",
+    "data": [
+      {
+        "player_id": "536",
+        "player_name": "斯蒂芬·马布里",
+        "player_header": "http://cba.hupu.com/players/images/2015102715193773717.jpg",
+        "team_name": "北京",
+        "pts": "17",
+        "reb": "1",
+        "asts": "9",
+        "tpm": "1",
+        "stl": "3",
+        "blk": "0",
+        "val": "9"
+      },
+      {
+        "player_id": "892",
+        "player_name": "杰里米·帕戈",
+        "player_header": "http://cba.hupu.com/players/images/2015102715023948230.jpg",
+        "team_name": "广厦",
+        "pts": "7",
+        "reb": "8",
+        "asts": "7",
+        "tpm": "1",
+        "stl": "3",
+        "blk": "0",
+        "val": "7"
+      },
+      {
+        "player_id": "5",
+        "player_name": "周鹏",
+        "player_header": "http://cba.hupu.com/players/images/2015110119003322197.jpg",
+        "team_name": "广东",
+        "pts": "6",
+        "reb": "5",
+        "asts": "6",
+        "tpm": "0",
+        "stl": "0",
+        "blk": "0",
+        "val": "6"
+      },
+      {
+        "player_id": "881",
+        "player_name": "威廉·拜纳姆",
+        "player_header": "http://cba.hupu.com/players/images/2014121015390193871.jpg",
+        "team_name": "广东",
+        "pts": "32",
+        "reb": "7",
+        "asts": "6",
+        "tpm": "5",
+        "stl": "2",
+        "blk": "0",
+        "val": "6"
+      },
+      {
+        "player_id": "298",
+        "player_name": "钟诚",
+        "player_header": "http://cba.hupu.com/players/images/2015102216350937240.jpg",
+        "team_name": "吉林",
+        "pts": "2",
+        "reb": "7",
+        "asts": "5",
+        "tpm": "0",
+        "stl": "4",
+        "blk": "0",
+        "val": "5"
+      }
+    ]
+  },
+  {
+    "name": "三分进球数",
+    "data": [
+      {
+        "player_id": "940",
+        "player_name": "赵岩昊",
+        "player_header": "http://cba.hupu.com/players/images/2015102715020224474.jpg",
+        "team_name": "广厦",
+        "pts": "19",
+        "reb": "3",
+        "asts": "2",
+        "tpm": "5",
+        "stl": "1",
+        "blk": "0",
+        "val": "5"
+      },
+      {
+        "player_id": "881",
+        "player_name": "威廉·拜纳姆",
+        "player_header": "http://cba.hupu.com/players/images/2014121015390193871.jpg",
+        "team_name": "广东",
+        "pts": "32",
+        "reb": "7",
+        "asts": "6",
+        "tpm": "5",
+        "stl": "2",
+        "blk": "0",
+        "val": "5"
+      },
+      {
+        "player_id": "658",
+        "player_name": "沃恩.韦弗",
+        "player_header": "http://cba.hupu.com/players/images/2015102415351671459.jpg",
+        "team_name": "同曦",
+        "pts": "26",
+        "reb": "5",
+        "asts": "5",
+        "tpm": "4",
+        "stl": "2",
+        "blk": "0",
+        "val": "4"
+      },
+      {
+        "player_id": "281",
+        "player_name": "王骁辉",
+        "player_header": "http://cba.hupu.com/players/images/2015102715194494699.jpg",
+        "team_name": "北京",
+        "pts": "18",
+        "reb": "5",
+        "asts": "1",
+        "tpm": "4",
+        "stl": "0",
+        "blk": "0",
+        "val": "4"
+      },
+      {
+        "player_id": "723",
+        "player_name": "乔纳森吉布森",
+        "player_header": "http://cba.hupu.com/players/images/2015102715133095496.jpg",
+        "team_name": "青岛",
+        "pts": "36",
+        "reb": "5",
+        "asts": "5",
+        "tpm": "4",
+        "stl": "3",
+        "blk": "0",
+        "val": "4"
+      }
+    ]
+  },
+  {
+    "name": "抢断",
+    "data": [
+      {
+        "player_id": "279",
+        "player_name": "许钟豪",
+        "player_header": "http://cba.hupu.com/players/images/2015102215065180771.jpg",
+        "team_name": "八一",
+        "pts": "14",
+        "reb": "6",
+        "asts": "5",
+        "tpm": "0",
+        "stl": "6",
+        "blk": "2",
+        "val": "6"
+      },
+      {
+        "player_id": "827",
+        "player_name": "李雪松",
+        "player_header": "http://cba.hupu.com/players/images/2015103016035077249.jpg",
+        "team_name": "北控",
+        "pts": "6",
+        "reb": "2",
+        "asts": "2",
+        "tpm": "0",
+        "stl": "5",
+        "blk": "0",
+        "val": "5"
+      },
+      {
+        "player_id": "428",
+        "player_name": "桑尼",
+        "player_header": "http://cba.hupu.com/players/images/2015102415341236384.jpg",
+        "team_name": "同曦",
+        "pts": "19",
+        "reb": "14",
+        "asts": "5",
+        "tpm": "0",
+        "stl": "4",
+        "blk": "0",
+        "val": "4"
+      },
+      {
+        "player_id": "736",
+        "player_name": "多米尼克·琼斯",
+        "player_header": "http://cba.hupu.com/players/images/2015103118275679041.jpg",
+        "team_name": "山西",
+        "pts": "16",
+        "reb": "6",
+        "asts": "5",
+        "tpm": "0",
+        "stl": "4",
+        "blk": "0",
+        "val": "4"
+      },
+      {
+        "player_id": "138",
+        "player_name": "罗旭东",
+        "player_header": "http://cba.hupu.com/players/images/2015102715132652906.jpg",
+        "team_name": "青岛",
+        "pts": "23",
+        "reb": "0",
+        "asts": "1",
+        "tpm": "0",
+        "stl": "4",
+        "blk": "0",
+        "val": "4"
+      }
+    ]
+  },
+  {
+    "name": "盖帽",
+    "data": [
+      {
+        "player_id": "853",
+        "player_name": "邹雨宸",
+        "player_header": "http://cba.hupu.com/players/images/2015102215095737022.jpg",
+        "team_name": "八一",
+        "pts": "17",
+        "reb": "13",
+        "asts": "0",
+        "tpm": "0",
+        "stl": "1",
+        "blk": "4",
+        "val": "4"
+      },
+      {
+        "player_id": "613",
+        "player_name": "易建联",
+        "player_header": "http://cba.hupu.com/players/images/20151101190017611.jpg",
+        "team_name": "广东",
+        "pts": "20",
+        "reb": "9",
+        "asts": "0",
+        "tpm": "0",
+        "stl": "0",
+        "blk": "4",
+        "val": "4"
+      },
+      {
+        "player_id": "555",
+        "player_name": "张兆旭",
+        "player_header": "http://cba.hupu.com/players/images/201510301833431424.jpg",
+        "team_name": "上海",
+        "pts": "5",
+        "reb": "8",
+        "asts": "0",
+        "tpm": "0",
+        "stl": "0",
+        "blk": "3",
+        "val": "3"
+      },
+      {
+        "player_id": "581",
+        "player_name": "兰多夫·莫里斯",
+        "player_header": "http://cba.hupu.com/players/images/2015102715192693392.jpg",
+        "team_name": "北京",
+        "pts": "28",
+        "reb": "9",
+        "asts": "3",
+        "tpm": "0",
+        "stl": "1",
+        "blk": "3",
+        "val": "3"
+      },
+      {
+        "player_id": "279",
+        "player_name": "许钟豪",
+        "player_header": "http://cba.hupu.com/players/images/2015102215065180771.jpg",
+        "team_name": "八一",
+        "pts": "14",
+        "reb": "6",
+        "asts": "5",
+        "tpm": "0",
+        "stl": "6",
+        "blk": "2",
+        "val": "2"
+      }
+    ]
+  }
+]
