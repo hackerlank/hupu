@@ -1,0 +1,204 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+.send-gift {
+    @include float();
+    padding: 4px 15px 4px 8px;
+    .gift-tips {
+        display: none;
+        position: absolute;
+        bottom: 55px;
+        right: 0;
+        z-index: 11;
+        width: 435px;
+        padding: 5px;
+        background: #fff;
+        border: 1px solid #cfcfcf;
+        @include border-radius(3px);
+        @extend %clearfix;
+        .pic {
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            margin-right: 10px;
+            @include float();
+            background: #eee;
+            img {
+                width: 100%;
+            }
+        }
+        .gift-icon-bg {
+            width: 100%;
+            height: 120px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .icons {
+            @include inline-block();
+            width: 14px;
+            height: 14px;
+            margin-right: 5px;
+            overflow: hidden;
+            background: url(../../static/live/img/icon_2_s.png?__sprite) no-repeat 0 0;
+            vertical-align: middle;
+        }
+        .icons-2 {
+            width: 20px;
+            height: 17px;
+            background-image: url(../../static/live/img/icon_1_s.png?__sprite);
+        }
+        .list {
+            padding-top: 38px;
+            .about {
+                line-height: 1.2;
+                color: $grayDark;
+            }
+            .name {
+                padding-bottom: 3px;
+                font-weight: 700;
+                @include float();
+                margin-right: 10px;
+            }
+            .money {
+                margin-bottom: 5px;
+                color: $orange;
+            }
+        }
+        &:after {
+            content: "";
+            @include arrow(bottom, 5px, #fff);
+            top: initial;
+            left: initial;
+            bottom: -5px;
+            right: 16px;
+        }
+    }
+    .send-gift-tips {
+//        display: block;
+//        width: 500px;
+//        .pic {
+//            width: 175px;
+//            height: 175px;
+//        }
+        .list {
+            padding-top: 10px;
+            .name {
+                @include float();
+                margin-right: 10px;
+            }
+            .money {
+            }
+
+        }
+        .batch-send-gift {
+            a {
+                @include inline-block();
+                width: 65px;
+                height: 26px;
+                margin: 7px 2px 0;
+                line-height: 24px;
+                text-align: center;
+                font-size: 16px;
+                border: 1px solid $orange;
+                color: $orange;
+                @include border-radius(4px);
+            }
+            a:hover,
+            .active {
+                background: #ffbe7f;
+                color: $white;
+            }
+        }
+    }
+    .gift-list {
+        li {
+            position: relative;
+            z-index: 10;
+            @include float();
+            width: 42px;
+            height: 42px;
+            // border: 1px solid #ccc;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+        .gift-pic {
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            overflow: hidden;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            // background: #f29c98;
+            @include translate(-50%, -50%);
+            @include transition(all .1s ease-out);
+            img {
+                width: 100%;
+            }
+        }
+        .hover {
+            .gift-pic {
+                width: 40px;
+                height: 40px;
+            }
+            .gift-tips {
+                display: block;
+            }
+        }
+    }
+}
+
+/* 金币不足 */
+.buy-beans-tips-wrap {
+    #cboxClose {
+        top: 5px;
+        right: 5px;
+        background: url(./button_close.png?__sprite) no-repeat 0 0;
+    }
+}
+
+.ui-success-toast {
+//    display: none;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 10;
+    width: 60px;
+    text-align: center;
+    opacity: 0;
+    font-size: 12px;
+    color: #ff7e00;
+//    @include animation(toast-frames 0.4s);
+    @include transition(all .3s ease-in);
+    white-space:nowrap;
+}
+
+.ui-success-toast-hide {
+    top: -10px;
+    opacity: 1;
+}
+
+.buy-beans-tips {
+    padding: 30px 35px 0;
+    font-size: 18px;
+    .beans-content {
+        min-height: 60px;
+    }
+    .button-inner {
+        padding-top: 20px;
+        text-align: center;
+        .button {
+            @include inline-block();
+            width: 130px;
+            height: 35px;
+            line-height: 35px;
+            margin: 0 10px;
+            text-align: center;
+            background: $red;
+            color: $white;
+        }
+        .button-cancel {
+            background: #ccc;
+        }
+    }
+}

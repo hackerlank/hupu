@@ -1,0 +1,316 @@
+@charset "utf-8";
+@import "../sass/sassCore/base";
+
+.buying_goldbeans {
+    width: 980px;
+    margin-top: 15px;
+    margin-bottom: 150px;
+}
+.buying-guide-top {
+    margin-top: 30px;
+
+    span {
+        font-weight: 600;
+        color: #c01e2f;
+    }
+    .two-hr {
+        .purse-hr1 {
+            border: 1px solid #cccccc;
+        }
+        .purse-hr2 {
+            float: left;
+            border: 1px solid #c01e2f;
+            width: 55px;
+            margin-top: -9px;
+        }
+    }
+}
+
+.buying_top {
+    background-color: #fff;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    line-height: 30px;
+    .top_content {
+        @include clearfix();
+        padding: 20px 15px 15px;
+        .span_1 {
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .span_2 {
+            color: #c01e2f;
+            margin-left: 5px;
+            font-size: 20px;
+        }
+        img{
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        span{
+            vertical-align: middle;
+        }
+    }
+    .buying_top_l{
+        .span_1{
+            @include inline-block();
+            background: url(./img/goldbean.png) 0 7px no-repeat;
+            padding-left: 27px;
+        }
+    }
+    .buying_top_r{
+        .span_1{
+            @include inline-block();
+            background: url(./img/goldcoin.png) 0 8px no-repeat;
+            padding-left: 25px;
+        }
+    }
+    .buying_top_l {
+        @include inline-block();
+        width: 46%;
+        border-right: 1px solid #d5d5d5;
+    }
+    .buying_top_r {
+        @include inline-block();
+        width: 40%;
+        margin-left: 15px;
+    }
+    p {
+        font-size: 12px;
+        padding-left: 15px;
+        color: #a9a9b2;
+        padding-bottom: 10px;
+    }
+}
+.buy_choise {
+    background-color: #fff;
+    position: relative;
+    .choise_content {
+        position: relative;
+        padding: 30px 20px 40px;
+        li {
+            list-style: none;
+            margin-bottom: 12px;
+            position: relative;
+            &.disabled{
+                color: #ccc;
+                label{
+                    color: #ccc;
+                }
+            }
+            input {
+                margin-right: 20px;
+            }
+            .prompt {
+                position: absolute;
+                left: 120px;
+                top: 0;
+                span {
+                    font-size: 18px;
+                    line-height: 18px;
+                    color: #c01e2f;
+                    margin: 0 5px;
+                }
+            }
+
+        }
+        label{
+            @include inline-block();
+            font-size: 14px;
+            color: #434141;
+            cursor: pointer;
+            width: 100px;
+            margin-right: 20px;
+            
+        }
+        .tips{
+            position: absolute;
+            left: 120px;
+            top: 0;
+            font-size: 12px;
+            color: #a9a9b2;
+            display: none;
+            em{
+                font-style: normal;
+                font-size: 14px;
+                color: #c01e2f;
+                margin: 0 2px;
+            }
+            a{
+                color: #1e88e2;
+            }
+        }
+        
+    }
+    #J-get-beans input:checked+a {
+        background-color: red;
+    }
+
+    p {
+        padding-left: 15px;
+        padding-top: 8px;
+        color: #999;
+
+        span {
+            color: #c01e2f;
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+        a {
+            color: #3cf;
+        }
+    }
+    hr {
+        margin-top: 4px;
+    }
+    .buttons {
+        margin-left: 15px;
+        padding-bottom: 60px;
+
+        #cancel, #confirm {
+            width: 102px;
+            color: #fff;
+            height: 26px;
+            line-height: 26px;
+            font-size: 14px;
+            border: 0px;
+            border-radius: 5px;
+            font-weight: 400;
+            padding: 0;
+        }
+        #cancel {
+            background-color: #999;
+        }
+        #confirm {
+            margin-left: 10px;
+            background-color: #c01e2f;
+        }
+        .error-tips {
+            @include inline-block();
+            margin-left: 15px;
+            display: none;
+            .buying_fails {
+                color: #c01e2f;
+            }
+            a {
+                color: #1e88e2;
+            }
+        }
+    }
+}
+.warning {
+    display: none;
+}
+//购买成功
+#buy_success {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding-bottom: 100px;
+    left: 0;
+    top: 0;
+    display: none;
+    p {
+        background: url(./tick.png) left center no-repeat;
+        font-size: 15px;
+        padding-left: 35px;
+        margin: 15px;
+        img {
+            margin-right: 10px;
+        }
+        span {
+            color: #c01e2f;
+        }
+    }
+    #continue_btn {
+        @include inline-block();
+        text-align: center;
+        width: 95px;
+        color: #fff;
+        margin-left: 15px;
+        background-color: #c01e2f;
+        border-radius: 5px;
+        border: 0px;
+        height: 26px;
+        line-height: 26px;
+        vertical-align: middle;
+
+    }
+    #return_h {
+        @include inline-block();
+        text-align: center;
+        width: 95px;
+        color: #c01e2f;
+        background-color: #fff;
+        border-radius: 5px;
+        border: 1px solid #c01e2f;
+        margin-left: 10px;
+        height: 26px;
+        line-height: 25px;
+        vertical-align: middle;
+    }
+}
+
+.fail-tips{
+    padding: 50px 10px 20px;
+    .fail-content{
+        text-align: center;
+        font-size: 18px;
+        margin-bottom: 20px;
+        a{
+            color: #1e88e2;
+        }
+    }
+    .button-inner {
+        padding-top: 20px;
+        text-align: center;
+        .button {
+            @include inline-block();
+            width: 130px;
+            height: 35px;
+            line-height: 35px;
+            margin: 0 10px;
+            text-align: center;
+            background: $red;
+            color: $white;
+        }
+        .button-cancel {
+            background: #ccc;
+        }
+    }
+}
+//footer
+.w-footer {
+    // position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+//适配
+// @media screen and (min-width:575px) and (max-width:980px) {
+//     .myfollow-wrap {
+//         width: 575px;
+
+//         .buying_goldbeans {
+//             width: 395px;
+//         }
+//     }
+// }
+// @media screen and (min-width:395px) and (max-width:575px) {
+//     .myfollow-wrap {
+//         width: 395px;
+
+//         .pbuying_goldbeans {
+//             width: 395px;
+//         }
+//     }
+// }
+// @media screen and (max-width:394px) {
+//     .myfollow-wrap {
+//         width: 300px;
+
+//         .buying_goldbeans {
+//             width: 300px;
+//         }
+//     }
+// }

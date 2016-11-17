@@ -1,0 +1,296 @@
+{
+    "pageheader": {
+        "title": "NBA比赛中心_手机虎扑网"
+    },
+    "bottomtitle": "虎扑篮球-最篮球的世界",
+    "project": "nba",
+    "site": "nba",
+    "logo": "nba_logo_new.png",
+    "id4dace": 2120,
+    "mark4dace": "page_nba_game",
+    "baseurl": "http://m.hupu.com",
+    "test": "710998fd1b7c0235170265650770a4b1",
+    "_islogin": 1,
+    "loginurl": "http://passport.hupu.com/m/2?appid=10017&jumpurl=http://m.hupu.com/nba/game?test=710998fd1b7c0235170265650770a4b1&from=m&project=hupu",
+    "uid": "17903391",
+    "username": "farman",
+    "showAdvertise": 0,
+    "description": "虎扑体育",
+    "pclink": "http://g.hupu.com/nba?test=710998fd1b7c0235170265650770a4b1",
+    "hottitlelen": 16,
+    "columncontentlen": 46,
+    "footerword": {
+        "word": "我一直在追求完美。",
+        "person": "科比"
+    },
+    "videoImgUrlPrefix": "http://img04.store.sogou.com/net/a/67/link?appid=67&url=",
+    "daceChannel": "nba",
+    "topNav": [{
+        "title": "NBA",
+        "router": "nbaindex",
+        "url": "http://m.hupu.com/nba"
+    }, {
+        "title": "CBA",
+        "router": "cbanewsindex",
+        "url": "http://m.hupu.com/cba/news/"
+    }, {
+        "title": "足球",
+        "router": "soccerindex",
+        "url": "http://m.hupu.com/soccer"
+    }, {
+        "title": "论坛",
+        "router": "bbsindex",
+        "url": "http://m.hupu.com/bbs"
+    }, {
+        "title": "识货",
+        "url": "http://m.shihuo.cn/",
+        "router": "shihuoindex",
+        "target": "_blank"
+    }, {
+        "title": "彩票",
+        "url": "http://t.hupu.lecai.com/",
+        "router": "caipiaoindex",
+        "target": "_blank"
+    }],
+    "level2": [{
+        "name": "比赛",
+        "router": "nbacenter",
+        "url": "http://m.hupu.com/nba/game"
+    }, {
+        "name": "新闻",
+        "router": "nbanewsindex",
+        "url": "http://m.hupu.com/nba/news/"
+    }, {
+        "name": "球队",
+        "router": "gnbastanding",
+        "url": "http://m.hupu.com/nba/standing"
+    }, {
+        "name": "论坛",
+        "router": "forumindex",
+        "param": {
+            "fid": 1048
+        },
+        "url": "http://m.hupu.com/bbs/1048"
+    }],
+    "node": [{
+        "title": "NBA",
+        "url": "http://m.hupu.com/nba"
+    }, {
+        "title": "比赛",
+        "url": "#"
+    }],
+    "nbaGame": {
+        "1433865600": {
+            "timestr": "6月10日 星期三",
+            "date": "2015-06-10",
+            "gameinfo": [{
+                "match_id": "150121",
+                "time": "2015-06-10 09:00:00",
+                "home": {
+                    "id": "10",
+                    "shortcut": "cavaliers",
+                    "forum": "85",
+                    "name": "骑士",
+                    "fullname": "克利夫兰骑士",
+                    "logo": "CLE.png",
+                    "score": "96",
+                    "link": "http://m.hupu.com/nba/teams/cavaliers",
+                    "logourl": "http://c2.hoopchina.com.cn//images/gamespace/team/123x124/CLE.png",
+                    "color": "143,9,54"
+                },
+                "away": {
+                    "id": "28",
+                    "shortcut": "warriors",
+                    "forum": "102",
+                    "name": "勇士",
+                    "fullname": "金州勇士",
+                    "logo": "GSW.png",
+                    "score": "91",
+                    "link": "http://m.hupu.com/nba/teams/warriors",
+                    "color": "14,95,172",
+                    "logourl": "http://c2.hoopchina.com.cn//images/gamespace/team/123x124/GSW.png"
+                },
+                "process": "已结束",
+                "recap_title": "詹皇40分骑士反超总比分",
+                "pics_link": "",
+                "status": "1",
+                "lottery": null,
+                "match_time": "4,0:0",
+                "match_type": "PLAYOFF",
+                "usa_time": "2015-06-09 21:00:00",
+                "home_win": 2,
+                "away_win": 4,
+                "status_text": "已结束",
+                "year_desc": "2015年6月10日",
+                "time_desc": "9:00",
+                "scoreortime": "96 - 91",
+                "isover": 1,
+                "recaptext": "詹皇40分骑士反超总比分",
+                "hasvideo": 1,
+                "innerurl": "http://m.hupu.com/nba/game/recap_150121.html"
+            }]
+        },
+        "1434038400": {
+            "timestr": "6月12日 星期五",
+            "date": "2015-06-12",
+            "id": 1434038400,
+            "gameinfo": [{
+                "match_id": "150122",
+                "time": "2015-06-12 09:00:00",
+                "home": {
+                    "id": "10",
+                    "shortcut": "cavaliers",
+                    "forum": "85",
+                    "name": "骑士",
+                    "fullname": "克利夫兰骑士",
+                    "logo": "CLE.png",
+                    "score": "82",
+                    "link": "http://m.hupu.com/nba/teams/cavaliers",
+                    "logourl": "http://c2.hoopchina.com.cn//images/gamespace/team/123x124/CLE.png",
+                    "color": "143,9,54"
+                },
+                "away": {
+                    "id": "28",
+                    "shortcut": "warriors",
+                    "forum": "102",
+                    "name": "勇士",
+                    "fullname": "金州勇士",
+                    "logo": "GSW.png",
+                    "score": "103",
+                    "link": "http://m.hupu.com/nba/teams/warriors",
+                    "color": "14,95,172",
+                    "logourl": "http://c2.hoopchina.com.cn//images/gamespace/team/123x124/GSW.png"
+                },
+                "process": "已结束",
+                "recap_title": "勇士变阵大胜骑士扳平比分",
+                "pics_link": "",
+                "status": "1",
+                "lottery": null,
+                "match_time": "4,0:0",
+                "match_type": "PLAYOFF",
+                "usa_time": "2015-06-11 21:00:00",
+                "home_win": 2,
+                "away_win": 4,
+                "status_text": "已结束",
+                "year_desc": "2015年6月12日",
+                "time_desc": "9:00",
+                "scoreortime": "82 - 103",
+                "isover": 1,
+                "recaptext": "勇士变阵大胜骑士扳平比分",
+                "hasvideo": 1,
+                "innerurl": "http://m.hupu.com/nba/game/recap_150122.html"
+            }]
+        },
+        "1434297600": {
+            "timestr": "6月15日 星期一",
+            "date": "2015-06-15",
+            "gameinfo": [{
+                "match_id": "150123",
+                "time": "2015-06-15 08:00:00",
+                "home": {
+                    "id": "28",
+                    "shortcut": "warriors",
+                    "forum": "102",
+                    "name": "勇士",
+                    "fullname": "金州勇士",
+                    "logo": "GSW.png",
+                    "score": "104",
+                    "link": "http://m.hupu.com/nba/teams/warriors",
+                    "logourl": "http://c2.hoopchina.com.cn//images/gamespace/team/123x124/GSW.png",
+                    "color": "14,95,172"
+                },
+                "away": {
+                    "id": "10",
+                    "shortcut": "cavaliers",
+                    "forum": "85",
+                    "name": "骑士",
+                    "fullname": "克利夫兰骑士",
+                    "logo": "CLE.png",
+                    "score": "91",
+                    "link": "http://m.hupu.com/nba/teams/cavaliers",
+                    "color": "143,9,54",
+                    "logourl": "http://c2.hoopchina.com.cn//images/gamespace/team/123x124/CLE.png"
+                },
+                "process": "已结束",
+                "recap_title": "詹皇三双骑士坠落天王山",
+                "pics_link": "",
+                "status": "1",
+                "lottery": null,
+                "match_time": "4,0:0",
+                "match_type": "PLAYOFF",
+                "usa_time": "2015-06-14 17:00:00",
+                "home_win": 4,
+                "away_win": 2,
+                "status_text": "已结束",
+                "year_desc": "2015年6月15日",
+                "time_desc": "8:00",
+                "scoreortime": "104 - 91",
+                "isover": 1,
+                "recaptext": "詹皇三双骑士坠落天王山",
+                "hasvideo": 1,
+                "innerurl": "http://m.hupu.com/nba/game/recap_150123.html"
+            }]
+        },
+        "1434470400": {
+            "timestr": "6月17日 星期三",
+            "date": "2015-06-17",
+            "gameinfo": [{
+                "match_id": "150124",
+                "time": "2015-06-17 09:00:00",
+                "home": {
+                    "id": "10",
+                    "shortcut": "cavaliers",
+                    "forum": "85",
+                    "name": "骑士",
+                    "fullname": "克利夫兰骑士",
+                    "logo": "CLE.png",
+                    "score": "97",
+                    "link": "http://m.hupu.com/nba/teams/cavaliers",
+                    "logourl": "http://c2.hoopchina.com.cn//images/gamespace/team/123x124/CLE.png",
+                    "color": "143,9,54"
+                },
+                "away": {
+                    "id": "28",
+                    "shortcut": "warriors",
+                    "forum": "102",
+                    "name": "勇士",
+                    "fullname": "金州勇士",
+                    "logo": "GSW.png",
+                    "score": "105",
+                    "link": "http://m.hupu.com/nba/teams/warriors",
+                    "color": "14,95,172",
+                    "logourl": "http://c2.hoopchina.com.cn//images/gamespace/team/123x124/GSW.png"
+                },
+                "process": "已结束",
+                "recap_title": "勇士全面开花夺取总冠军",
+                "pics_link": "",
+                "status": "1",
+                "lottery": null,
+                "match_time": "4,0:0",
+                "match_type": "PLAYOFF",
+                "usa_time": "2015-06-16 21:00:00",
+                "home_win": 2,
+                "away_win": 4,
+                "status_text": "已结束",
+                "year_desc": "2015年6月17日",
+                "time_desc": "9:00",
+                "scoreortime": "97 - 105",
+                "isover": 1,
+                "recaptext": "勇士全面开花夺取总冠军",
+                "hasvideo": 1,
+                "innerurl": "http://m.hupu.com/nba/game/recap_150124.html"
+            }]
+        }
+    },
+    "time": 1435507200,
+    "date": "2015-06-29",
+    "rookieGameDates": [
+        "2015-02-14"
+    ],
+    "fourDates": [
+        "2015-02-15"
+    ],
+    "allStarGameDates": [
+        "2015-02-16"
+    ]
+}

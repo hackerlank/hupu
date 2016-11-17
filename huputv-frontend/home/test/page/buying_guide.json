@@ -1,0 +1,92 @@
+{
+    "is_mobile": false,
+    "base_url": null,
+    "login_url": "http://passport.videohupu.com/pc/login?project=hupuTv&from=pc",
+    "logout_url": "http://passport.videohupu.com/pc/logout",
+    "register_url": "http://passport.videohupu.com/pc/register?project=hupuTv&from=pc",
+    "recharge_url": "http://my.hupu.com/goldpay",
+    "open_soon": {
+        "new": 0,
+        "list": []
+    },
+    "show_follow": null,
+    "show_online": true,
+    "login": true,
+    "user": {
+        "avatar": {
+            "header": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+            "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+            "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png"
+        }
+    },
+    "category": [
+        {
+            "sid": 0,
+            "sname": "全部房间",
+            "sorder": "1",
+            "display": 1,
+            "updatetime": "",
+            "createtime": "",
+            "abs_url": "http://dev.videohupu.com/"
+        },
+        {
+            "sid": "33",
+            "sname": "竞技场",
+            "sroute": "arena",
+            "sorder": "14",
+            "display": "1",
+            "updatetime": "1447062549",
+            "createtime": "1447062549",
+            "abs_url": "http://dev.videohupu.com/arena"
+        },
+        {
+            "sid": "31",
+            "sname": "看球123",
+            "sroute": "kq123",
+            "sorder": "13",
+            "display": "1",
+            "updatetime": "1446447872",
+            "createtime": "1446447872",
+            "abs_url": "http://dev.videohupu.com?id=31"
+        },
+        {
+            "sid": "37",
+            "sname": "虎扑TV-test",
+            "sroute": "huputv-tes",
+            "sorder": "12",
+            "display": "1",
+            "updatetime": "1453887879",
+            "createtime": "1453887879",
+            "abs_url": "http://dev.videohupu.com/test"
+        },
+        {
+            "sid": "30",
+            "sname": "步行街",
+            "sroute": "bxj",
+            "sorder": "11",
+            "display": "1",
+            "updatetime": "1446447756",
+            "createtime": "1446447756",
+            "abs_url": "http://dev.videohupu.com?id=30"
+        },
+        {
+            "sid": "2",
+            "sname": "步行街",
+            "sroute": "bxj2",
+            "sorder": "10",
+            "display": "1",
+            "updatetime": "1445248982",
+            "createtime": "1445248982",
+            "abs_url": "http://dev.videohupu.com?id=2"
+        }
+    ],
+    "keywords": "体育直播,NBA2K游戏直播,校园体育赛事直播,户外直播,电子竞技直播,虎扑TV",
+    "description": "虎扑TV - 体育视频直播平台，提供高清、流畅的体育视频直播服务，包含丰富的体育赛事、体育活动、校园体育、NBA2K游戏、电子竞技、户外直播等各类体育视频直播内容，精彩体育视频直播尽在虎扑TV。",
+    "title": "金豆兑换 - 虎扑TV - 体育视频互动平台",
+    "balance": {
+        "1": 1415,
+        "6": 535
+    },
+    "bears_recharge_step": [10, 50, 100, 500, 2000, 5000, 9999],
+    "current_page": "center"
+}

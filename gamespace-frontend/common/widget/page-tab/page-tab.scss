@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.hp-threeNav {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 31px;
+  margin-bottom: 10px;
+  border-bottom: 4px solid #a92229;
+}
+
+.hp-threeNav-bd {
+  float: left;
+  line-height: 30px;
+  li {
+    float: left;
+    height: 30px;
+    margin-right: 5px;
+  }
+
+  li a {
+    display: inline-block;
+    height: 100%;
+    padding: 0 15px;
+    background-color: #ebeff1;
+    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#fff), to(#ebeff1));
+    background: -moz-linear-gradient(top, #fff, #ebeff1);
+    background: -o-linear-gradient(top, #fff, #ebeff1);
+    background: url(../images/threeNav_bg.png) repeat-x 0 0 \9;
+    border: 1px solid #ebeff1;
+    border-bottom: none;
+  }
+
+  li a,
+  li a:visited {
+    color: #444;
+  }
+
+  li a:hover {
+    color: #a41f24;
+  }
+
+  .on a {
+    background: #a92229;
+    border-color: #a92229;
+  }
+
+  .on a,
+  .on a:visited,
+  .on a:hover {
+    color: #fff;
+  }
+}

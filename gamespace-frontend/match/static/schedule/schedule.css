@@ -1,0 +1,73 @@
+body{margin:0;padding:0;color:#444;_background-image:url(about:blank);_background-attachment:fixed}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p{padding:0;margin:0}
+table,td,tr,th{font-size:12px}
+ol,ul{list-style:none}
+li{list-style-type:none}
+img{vertical-align:middle;border:0}
+a{color:#444444;text-decoration:none}
+a:hover{color:#a41f24;text-decoration:underline}
+html{overflow-x: hidden;}
+.clearfix{*zoom:1}
+.clearfix:before,.clearfix:after{display:table;content:"";line-height:0}
+.clearfix:after{clear:both}
+.f_l{float:left}
+.f_r{float:right}
+.mg_t{margin-top: 10px;}
+.color_font1{color: #999999;}
+.hp-threeNav{margin-top: 10px;}
+.gamecenter_livestart{width:980px;margin:0 auto; font:12px/1.5 \5b8b\4f53,Arial,sans-serif;}
+.players_left{width:248px;float:left;border:1px #efeff0 solid;border-top:0px}
+.players_left .all_teams{padding: 6px 0; text-align: center;}
+.players_left .title{height:30px;background-color:#fbfbfb;font:12px/1.5 \5FAE\8F6F\96C5\9ED1,Arial,sans-serif;font-size:16px;padding:8px 0 0 15px;border-top:1px #efeff0 solid}
+.players_left .players_list li{padding:5px 10px;border-top:1px #ffffff solid;border-bottom:1px #ffffff solid;cursor:pointer; position:relative;}
+.players_left .players_list li .bgs{position: absolute; right: -15px; top: -1px; width: 15px; height: 42px; background-color: #A92229; display: none;}
+.players_left .players_list li img{width:30px; height:30px;}
+.players_left .players_list li .team_name{display:inline-block;padding-left:15px}
+.players_left .players_list li .team_name a:hover{color: #444; text-decoration: none;}
+.players_left .players_list li.bg_color{background-color: #fcfcfc;}
+.players_left .players_list li.on{border-top:1px #eeeeee solid;border-bottom:1px #eeeeee solid;background:url(../img/schedule/jt2.png) no-repeat 220px center;background-color:#f7f7f7;position:relative; font-weight: bold;}
+.players_left .players_list li.on .bg{display:block}
+.players_left .players_list li .bg{position:absolute;right:-16px;top:0px;background-color:#a92229;width:15px;height:41px;display:none}
+.players_right{float:right;width:715px}
+.players_right .mar_height{height: 45px; display: none;}
+.players_right .choosedare{padding-bottom: 5px; width: 715px; position: relative;}
+.players_right .choosedare2{padding-bottom: 5px; width: 715px; position:fixed;_position:absolute;background-color:#fff;top:0px;_top:expression(documentElement.scrollTop+'px');margin-top:0px; z-index: 99;}
+.players_right .postfix_bg{position:fixed;_position:absolute;background:url(../img/schedule/bg.png);top:40px;_top:expression(documentElement.scrollTop+40+'px');_filter:alpha(opacity=40); width: 715px; height:27px;_height:12px;z-index: 101}
+.players_right .choosedare .datas{position: absolute; left: 10px; top: 8px; font-size: 14px; color: #999;}
+.players_right .choosedare .a{background:url(../img/schedule/chosedate.jpg) no-repeat left center; width: 375px; height: 35px; float: left; margin-left: 156px; display: inline;}
+.players_right .choosedare .a .t1,.players_right .choosedare .a .t2,.players_right .choosedare .a .t3{
+	display: inline-block;
+	width: 110px;
+	height: 32px;
+	line-height: 33px;
+	text-align: center;
+	margin-top: 2px;
+	font-size: 14px;
+}
+.players_right .choosedare .a .t1:hover{
+	background:url(../img/schedule/cbg2.jpg) no-repeat left center;
+}
+.players_right .choosedare .a .t3:hover{
+	background:url(../img/schedule/cbg1.jpg) no-repeat left center;
+}
+.players_table{border:1px solid #ebebeb; border-bottom: 0px;}
+.players_right .choosedare a:hover{text-decoration: none;}
+.players_right .choosedare .a .t2{width: 155px;color: #fff;}
+.players_right .choosedare .b{width: 91px; height: 32px; margin-top: 1px; float: right; cursor: pointer;}
+.players_right .players_table{display:none;border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;width:100%;text-align:center; background-color: #fbfbfb;}
+.players_right .players_table tr{ background:url(../img/schedule/tabbg.jpg) repeat-x top left;}
+.players_right .players_table tr td.left{text-align: left; padding-left: 10px;}
+.players_right .players_table tr.title{background-color: #fbfbfb;}
+.players_right .players_table tr img{border: 1px #ffffff solid;}
+.players_right .players_table tr.bg_a{background-color:#fbfbfb}
+.players_right .players_table th{border:1px solid #ebebeb;vertical-align:baseline}
+.players_right .players_table td{padding:10px 5px; border-bottom:1px solid #ebebeb;}
+.players_right .players_table td.center{text-align:center;padding-left:10px}
+.players_right .players_table td.left{text-align:left;line-height:22px}
+.players_right .players_table tr.linglei{ background: none;  background-color: #fff;}
+.players_right .players_table tr.linglei td{font-size: 14px; color: #a92229; font-weight: bold;}
+.players_right .players_table h2{font-size:14px;margin:10px 0 10px 0}
+.cancel_class{text-align: left; padding-left: 10px;}
+.cancel_class2{text-align: left; padding-left: 22px;}
+.date_box{position: fixed; _position:absolute; top: 0px; _top:expression(documentElement.scrollTop+32+'px'); width: 254px; height: 260px; background-color: #f2f2f2; border: 1px #cdcdcd solid; display: none; z-index: 105;}
+#date{position:absolute; top: -9999px;  right: 0px;}

@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/function";
+
+.tab {
+    @include display-flex();
+    @include justify-content(space-between);
+    @include align-items(center);
+    height: 50px;
+    padding: 0 32px;
+    border-bottom: 1px solid $morning_gray1_cor;
+    background-color: $morning_white_cor;
+
+    .icon {
+        display: block;
+        width: 22px;
+        height: 22px;
+        margin-left: 4px;
+        margin-bottom: 2px;
+        background-size: cover;
+    }
+
+    .icon-hotline { background-image: url(./icon-hotline.png);}
+    .icon-anchor { background-image: url(./icon-anchor.png);}
+    .icon-gift { background-image: url(./icon-gift.png);}
+
+    a {
+        display: block;
+        width: 30px;
+        text-align: center;
+        color: $morning_gray2_cor;
+    }
+
+    a.active {
+        color: $morning_red_cor;
+
+        .icon-hotline { background-image: url(./icon-hotline-active.png);}
+        .icon-anchor { background-image: url(./icon-anchor-active.png);}
+        .icon-gift { background-image: url(./icon-gift-active.png);}
+    }
+}
+
+
+.night {
+    .tab {
+        border-bottom-color: $night_gray1_cor;
+        background-color: $night_white_cor;
+
+        a {
+            color: $night_gray2_cor;
+        }
+
+        a.active {
+            color: $night_red_cor;
+        }
+    }
+}

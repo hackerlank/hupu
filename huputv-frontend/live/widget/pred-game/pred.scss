@@ -1,0 +1,143 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+.pred-game {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 10px 63px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+
+  @include clearfix();
+  .pred-left,
+  .pred-white,
+  .pred-right {
+    @include float;
+    // width: 50%;
+    padding: 0px;
+  }
+  .button-pred {
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    padding-top: 8px;
+    line-height: 1.1;
+    font-size: 12px;
+    background: #8db5c3;
+    color: #fff;
+    @include border-radius(50%);
+    text-align: center;
+    &:hover {
+      background: #75919a;
+    }
+  }
+  .pred-selected {
+    padding-top: 15px;
+    background: #bbc5c7;
+    &:hover {
+      background: #bbc5c7;
+    }
+  }
+  .pred-disable {
+    background: #bbc5c7;
+    &:hover {
+      background: #bbc5c7;
+    }
+  }
+  .team-name {
+    position: absolute;
+    top: -22px;
+    white-space: nowrap;
+  }
+  .number {
+    font-size: 12px;
+    color: #ee913b;
+  }
+  .progress-bar-inner {
+    position: relative;
+    margin-top: 19px;
+  }
+  .progress-bar {
+    height: 3px;
+    overflow: hidden;
+    background: #ee913b;
+  }
+  .pred-left {
+    .button-pred {
+      left: 12px;
+    }
+    .team-name {
+      left: 0;
+    }
+    .number {
+      padding-right: 12px;
+      margin-top:5px;
+    }
+  }
+  .pred-right {
+    .button-pred {
+      right: 12px;
+    }
+    .team-name {
+      right: 0;
+    }
+    .progress-bar {
+      background: #4f80cf;
+    }
+    .number {
+      color: #4f80cf;
+      padding-left: 12px;
+      position:absolute;
+      right:0;
+      margin-top:5px;
+    }
+  }
+  .game-text-tips {
+    // display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #e7a2a2;
+    width: 54px;
+    height: 16px;
+    margin-left: -27px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    &:before{
+      content: '';
+      position: absolute;
+      border: 6px solid transparent;
+      border-top: 10px solid #e7a2a2;
+      border-right: 4px solid #e7a2a2;
+      top: 0;
+      left: -10px;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      border: 6px solid transparent;
+      border-top: 10px solid #e7a2a2;
+      border-left: 4px solid #e7a2a2;
+      top: 0;
+      right: -10px;
+    }
+  }
+}
+
+.popup-pred-game {
+  padding-top: 20px;
+  line-height: 1.2;
+  text-align: center;
+  .title {
+    padding-bottom: 5px;
+    font-size: 16px;
+  }
+  .content {
+    font-size: 14px;
+    color: #777;
+  }
+}

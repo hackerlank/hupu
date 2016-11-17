@@ -1,0 +1,62 @@
+{
+  "code": 1,
+  "msg": "操作成功",
+  "data": {
+    "room_ranking": {
+      "room": [
+        
+      ],
+      "user": {
+        "puid": "19009252",
+        "total": 1536,
+        "nickname": "Jason_Hooper",
+        "rank": 0
+      }
+    },
+    "match_ranking": {
+      "room": [
+        {
+          "puid": 19510203,
+          "total": 1015,
+          "nickname": "littlexn"
+        },
+        {
+          "puid": 17903391,
+          "total": 780,
+          "nickname": "farman"
+        },
+        {
+          "puid": 17506264,
+          "total": 118,
+          "nickname": "konghai"
+        },
+        {
+          "puid": 19009252,
+          "total": 12,
+          "nickname": "Jason_Hooper"
+        },
+        {
+          "puid": 25351027,
+          "total": 12,
+          "nickname": "hupu_0cb05422d4528f0c"
+        },
+        {
+          "puid": 21709018,
+          "total": 8,
+          "nickname": "wo是小号ee"
+        },
+        {
+          "puid": 21007175,
+          "total": 1,
+          "nickname": "伪球迷32"
+        }
+      ],
+      "user": {
+        "puid": "19009252",
+        "total": 12,
+        "nickname": "Jason_Hooper",
+        "rank": 5
+      }
+    }
+  }
+}

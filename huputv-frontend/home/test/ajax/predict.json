@@ -1,0 +1,92 @@
+{
+    "code": 1,
+    "msg": "操作成功",
+    "data": {
+        "days": {
+            "2016-07-22": "0",
+            "2016-07-21": "1",
+            "2016-07-20": "-2",
+            "2016-07-19": "-3"
+        },
+        "data": [
+            {
+                "id": "23",
+                "puid": "18862063",
+                "topic_id": "29",
+                "option": "2",
+                "platform": "",
+                "win_score": "0",
+                "create_time": "1469177530",
+                "status": "2",
+                "topicInfo": {
+                    "id": "29",
+                    "option1": "测试1",
+                    "option2": "测试2",
+                    "score": "20",
+                    "status": "2",
+                    "right_option": "1"
+                }
+            },
+            {
+                "id": "22",
+                "puid": "18862063",
+                "topic_id": "28",
+                "option": "2",
+                "platform": "",
+                "win_score": "0",
+                "create_time": "1469177422",
+                "status": "2",
+                "topicInfo": {
+                    "id": "28",
+                    "option1": "测试1",
+                    "option2": "测试2",
+                    "score": "20",
+                    "status": "2",
+                    "right_option": "1"
+                }
+            },
+            {
+                "id": "21",
+                "puid": "18862063",
+                "topic_id": "27",
+                "option": "2",
+                "platform": "",
+                "win_score": "0",
+                "create_time": "1469177086",
+                "status": "0",
+                "topicInfo": {
+                    "id": "27",
+                    "option1": "测试1",
+                    "option2": "测试2",
+                    "score": "20",
+                    "status": "2",
+                    "right_option": "1"
+                }
+            },
+            {
+                "id": "21",
+                "puid": "18862063",
+                "topic_id": "27",
+                "option": "2",
+                "platform": "",
+                "win_score": "0",
+                "create_time": "1469177086",
+                "status": "2",
+                "topicInfo": {
+                    "id": "27",
+                    "option1": "测试7",
+                    "option2": "测试8",
+                    "score": "20",
+                    "status": "2",
+                    "right_option": "2"
+                }
+            }
+        ],
+        "day": "2016-07-19",
+        "timeFormat": {
+            "date": "07/28",
+            "cn": "今天"
+        },
+        "next": "2016-07-27"
+    }
+}

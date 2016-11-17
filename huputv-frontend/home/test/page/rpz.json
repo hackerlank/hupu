@@ -1,0 +1,285 @@
+{
+    "abs_url": "http://test.videohupu.com/predict/user/info",
+    "is_mobile": false,
+    "base_url": "http://test.videohupu.com/",
+    "login_url": "http://passport.videohupu.com/pc/login?project=hupuTv&amp;from=pc",
+    "logout_url": "http://passport.videohupu.com/pc/logout",
+    "register_url": "http://passport.videohupu.com/pc/register?project=hupuTv&amp;from=pc",
+    "recharge_url": "http://my.hupu.com/goldpay",
+    "beans_recharge_url": "http://test.videohupu.com/user/beans-recharge",
+    "open_soon": {
+        "new": 0,
+        "list": [
+            {
+                "cover": "http://w1.hoopchina.com.cn/38/c0/cc/38c0cc78de43077e28f196af91be6042001.jpg@300h_534w_1e_1c",
+                "uid": "17506264",
+                "id": "38",
+                "lid": "11",
+                "gid": "200009544",
+                "anchor_nickname": "我就是小孩",
+                "name": "konghai的房间",
+                "room_type": "46",
+                "is_live": "0",
+                "sort": "9",
+                "online_plus": "0",
+                "update_time": "1470640983",
+                "avatar": {
+                    "header_small": "http://i3.hoopchina.com.cn/user/264/17506264/17506264_small_8.jpg",
+                    "header_big": "http://i3.hoopchina.com.cn/user/264/17506264/17506264_big_8.jpg",
+                    "header": "http://i3.hoopchina.com.cn/user/264/17506264/17506264.jpg"
+                },
+                "online": 2,
+                "following": "15",
+                "tips": "1111t",
+                "rp": 0,
+                "is_follow": 1,
+                "abs_url": "http://test.videohupu.com/38",
+                "abs_share_url": "http://test.videohupu.com/share/38",
+                "abs_category_url": "http://test.videohupu.com/gma111",
+                "online_format": 2,
+                "status_text": "Live"
+            },
+            {
+                "cover": "http://w2.hoopchina.com.cn/fd/30/04/fd3004f510bac66325f34d401a8689c1001.jpg",
+                "uid": "18800316",
+                "id": "10109",
+                "lid": "11",
+                "gid": "200009503",
+                "anchor_nickname": "灬落_",
+                "name": "hello world!",
+                "room_type": "27",
+                "is_live": "0",
+                "sort": "0",
+                "online_plus": "0",
+                "update_time": "1470304580",
+                "avatar": {
+                    "header_small": "http://i2.hoopchina.com.cn/user/316/18800316/18800316-1467179495.jpeg@45h_45w_2e",
+                    "header_big": "http://i2.hoopchina.com.cn/user/316/18800316/18800316-1467179495.jpeg@194h_194w_2e",
+                    "header": "http://i2.hoopchina.com.cn/user/316/18800316/18800316-1467179495.jpeg"
+                },
+                "online": 1,
+                "following": "8",
+                "tips": "",
+                "rp": 0,
+                "is_follow": 1,
+                "abs_url": "http://test.videohupu.com/10109",
+                "abs_share_url": "http://test.videohupu.com/share/10109",
+                "abs_category_url": "http://test.videohupu.com/chaonneg",
+                "online_format": 1,
+                "status_text": "Live"
+            },
+            {
+                "cover": "http://w1.hoopchina.com.cn/5b/ae/26/5bae269d90c8d5bfad2cc90036d55e5e001.jpg@300h_534w_1e_1c",
+                "uid": "21007175",
+                "id": "10302",
+                "lid": "11",
+                "gid": "200009487",
+                "anchor_nickname": "奏是伪球迷",
+                "name": "奏是伪球迷的小房间",
+                "room_type": "57",
+                "is_live": "0",
+                "sort": "0",
+                "online_plus": "0",
+                "update_time": "1470288622",
+                "avatar": {
+                    "header_small": "http://i2.hoopchina.com.cn/user/175/21007175/21007175_small_3.png",
+                    "header_big": "http://i2.hoopchina.com.cn/user/175/21007175/21007175_big_3.png",
+                    "header": "http://i2.hoopchina.com.cn/user/175/21007175/21007175.png"
+                },
+                "online": 1,
+                "following": "4",
+                "tips": "美女",
+                "rp": 0,
+                "is_follow": 1,
+                "abs_url": "http://test.videohupu.com/10302",
+                "abs_share_url": "http://test.videohupu.com/share/10302",
+                "abs_category_url": "http://test.videohupu.com/game5",
+                "online_format": 1,
+                "status_text": "Live"
+            }
+        ]
+    },
+    "show_follow": true,
+    "show_online": true,
+    "login": true,
+    "user": {
+        "puid": "21007175",
+        "username": "伪球迷啊",
+        "nickname": "伪球迷32",
+        "last_time": "1467943628",
+        "mobile": "0",
+        "email": "jiajunzhanghaust@163.com",
+        "qqid": "0",
+        "create_time": "1450339281",
+        "status": "0",
+        "uid": "19044010",
+        "avatar": {
+            "header_small": "http://i2.hoopchina.com.cn/user/175/21007175/21007175_small_3.png",
+            "header_big": "http://i2.hoopchina.com.cn/user/175/21007175/21007175_big_3.png",
+            "header": "http://i2.hoopchina.com.cn/user/175/21007175/21007175.png"
+        },
+        "magnification": 1,
+        "score": "22"
+    },
+    "category": [
+        {
+            "sid": -1,
+            "sname": "首页",
+            "sorder": "1",
+            "display": 1,
+            "updatetime": "",
+            "createtime": "",
+            "abs_url": "http://test.videohupu.com/"
+        },
+        {
+            "sid": 0,
+            "sname": "全部房间",
+            "sroute": "allroom",
+            "sorder": "1",
+            "display": 1,
+            "updatetime": "",
+            "createtime": "",
+            "abs_url": "http://test.videohupu.com/allroom"
+        },
+        {
+            "sid": "59",
+            "sname": "美女直播",
+            "sroute": "1/2/3/4",
+            "sorder": "0",
+            "display": "1",
+            "displayindex": "0",
+            "updatetime": "1470279149",
+            "createtime": "0",
+            "abs_url": "http://test.videohupu.com/1/2/3/4"
+        },
+        {
+            "sid": "46",
+            "sname": "篮球精选",
+            "sroute": "gma111",
+            "sorder": "1",
+            "display": "1",
+            "displayindex": "1",
+            "updatetime": "1470307390",
+            "createtime": "0",
+            "abs_url": "http://test.videohupu.com/gma111"
+        },
+        {
+            "sid": "45",
+            "sname": "足球专区",
+            "sroute": "quwan",
+            "sorder": "2",
+            "display": "1",
+            "displayindex": "0",
+            "updatetime": "1470278877",
+            "createtime": "0",
+            "abs_url": "http://test.videohupu.com/quwan"
+        },
+        {
+            "sid": "27",
+            "sname": "步行街",
+            "sroute": "chaonneg",
+            "sorder": "3",
+            "display": "1",
+            "displayindex": "1",
+            "updatetime": "1470278869",
+            "createtime": "0",
+            "abs_url": "http://test.videohupu.com/chaonneg"
+        },
+        {
+            "sid": "47",
+            "sname": "游戏",
+            "sroute": "game1",
+            "sorder": "4",
+            "display": "1",
+            "displayindex": "0",
+            "updatetime": "1470393272",
+            "createtime": "0",
+            "abs_url": "http://test.videohupu.com/game1"
+        }
+    ],
+    "keywords": "体育直播,NBA2K游戏直播,校园体育赛事直播,户外直播,电子竞技直播,虎扑TV",
+    "description": "虎扑TV - 体育视频直播平台，提供高清、流畅的体育视频直播服务，包含丰富的体育赛事、体育活动、校园体育、NBA2K游戏、电子竞技、户外直播等各类体育视频直播内容，精彩体育视频直播尽在虎扑TV。",
+    "title": "人品值",
+    "current_page": "user-predict-home",
+    "userPredictionInfo": {
+        "puid": "21007175",
+        "score": "22",
+        "frequency": "5",
+        "win": "0",
+        "today_win_score": "-38",
+        "day_rank": "3",
+        "month_rank": "8",
+        "magnification": 1,
+        "userCount": "20"
+    },
+    "userTopicStatus": false,
+    "userTopicList": {
+        "days": {
+            "2016-08-08": "-38",
+            "2016-08-05": "40",
+            "2016-08-04": "20"
+        },
+        "data": [
+            {
+                "id": "78",
+                "puid": "21007175",
+                "topic_id": "163",
+                "option": "1",
+                "platform": "pc",
+                "win_score": "-60",
+                "create_time": "1470637392",
+                "status": "2",
+                "topicInfo": {
+                    "id": "163",
+                    "option1": "aa",
+                    "option2": "bb",
+                    "score": "60",
+                    "status": "2",
+                    "right_option": "2"
+                }
+            },
+            {
+                "id": "75",
+                "puid": "21007175",
+                "topic_id": "162",
+                "option": "2",
+                "platform": "pc",
+                "win_score": "0",
+                "create_time": "1470637325",
+                "status": "3",
+                "topicInfo": {
+                    "id": "162",
+                    "option1": "aa",
+                    "option2": "bb",
+                    "score": "40",
+                    "status": "3",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "73",
+                "puid": "21007175",
+                "topic_id": "161",
+                "option": "1",
+                "platform": "pc",
+                "win_score": "22",
+                "create_time": "1470627605",
+                "status": "2",
+                "topicInfo": {
+                    "id": "161",
+                    "option1": "aa",
+                    "option2": "bb",
+                    "score": "20",
+                    "status": "2",
+                    "right_option": "1"
+                }
+            }
+        ],
+        "day": "2016-08-08",
+        "timeFormat": {
+            "date": "08/08",
+            "cn": "今天"
+        },
+        "next": "2016-08-05"
+    }
+}

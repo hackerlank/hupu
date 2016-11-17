@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+.vjs-tv-skin .vjs-control-bar {
+  height: 4em;
+  background-color: #222;
+  background: rgba(0,0,0,.7);
+}

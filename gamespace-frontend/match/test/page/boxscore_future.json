@@ -1,0 +1,496 @@
+{
+  "nav_link": {
+    "home": "https://test-nba.hupu.com/games", 
+    "standing": "https://test-nba.hupu.com/standings", 
+    "stats": "https://test-nba.hupu.com/stats/players", 
+    "schedule": "https://test-nba.hupu.com/schedule", 
+    "team": "https://test-nba.hupu.com/teams", 
+    "player": "https://test-nba.hupu.com/players"
+  }, 
+  "match_info": {
+    "match_id": "153641", 
+    "time": "2016-10-02 07:30:00", 
+    "process": "", 
+    "status": "3", 
+    "match_time": null, 
+    "attendance": null, 
+    "season": "2016", 
+    "video_link": "http://v.opahnet.com/", 
+    "stadium_name": null, 
+    "game_time": "null:null", 
+    "match_type": "PRESEASON", 
+    "home_id": "15", 
+    "home_win": "0", 
+    "home_name": "猛龙", 
+    "home_shortcut": "Raptors", 
+    "home_logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/TOR.png", 
+    "home_score": "0", 
+    "away_id": "28", 
+    "away_win": "0", 
+    "away_name": "勇士", 
+    "away_shortcut": "Warriors", 
+    "away_logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/GSW.png", 
+    "away_score": "0", 
+    "boxscore_link": "https://test-nba.hupu.com/games/boxscore/153641", 
+    "textlive_link": "https://test-nba.hupu.com/games/playbyplay/153641", 
+    "recap_link": "https://test-nba.hupu.com/games/recap/153641", 
+    "home_link": "https://test-nba.hupu.com/teams/raptors", 
+    "away_link": "https://test-nba.hupu.com/teams/warriors"
+  }, 
+  "match_stats": {
+    "15": {
+      "section": {
+        "1": 0, 
+        "2": 0, 
+        "3": 0, 
+        "4": 0
+      }, 
+      "total": 0
+    }, 
+    "28": {
+      "section": {
+        "1": 0, 
+        "2": 0, 
+        "3": 0, 
+        "4": 0
+      }, 
+      "total": 0
+    }
+  }, 
+  "daily_match_list": [
+    {
+      "match_id": "153641", 
+      "home_name": "猛龙", 
+      "home_score": "0", 
+      "away_name": "勇士", 
+      "away_score": "0", 
+      "status": "3", 
+      "status_txt": "未开始", 
+      "time": "07:30", 
+      "link": "https://test-nba.hupu.com/games/boxscore/153641"
+    }, 
+    {
+      "match_id": "153642", 
+      "home_name": "鹈鹕", 
+      "home_score": "0", 
+      "away_name": "小牛", 
+      "away_score": "0", 
+      "status": "3", 
+      "status_txt": "未开始", 
+      "time": "08:00", 
+      "link": "https://test-nba.hupu.com/games/boxscore/153642"
+    }
+  ], 
+  "home_news": [
+    {
+      "title": "[流言板]官方：猛龙签约布雷迪-海斯利普", 
+      "url": "http://bbs.hupu.com/17349311.html"
+    }, 
+    {
+      "title": "曝猛龙或引天才中锋 有他可撼动骑士东部霸权", 
+      "url": "http://bbs.hupu.com/17345225.html"
+    }, 
+    {
+      "title": "特罗斯罗斯：我的2K能力值太鸡架低了", 
+      "url": "http://bbs.hupu.com/17335414.html"
+    }, 
+    {
+      "title": "[流言板]帕特里克-穆托姆博加盟猛龙队教练组", 
+      "url": "http://bbs.hupu.com/17335009.html"
+    }, 
+    {
+      "title": "[流言板]乌杰里：我们的目标是赢得总冠军", 
+      "url": "http://bbs.hupu.com/17323475.html"
+    }, 
+    {
+      "title": "《多伦多星报》：猛龙总经理乌吉里新赛季剑指总冠军 ZT", 
+      "url": "http://bbs.hupu.com/17322109.html"
+    }, 
+    {
+      "title": "[流言板]球员排名排第46位？德罗赞有话要说", 
+      "url": "http://bbs.hupu.com/17315901.html"
+    }, 
+    {
+      "title": "[流言板]猛龙将与布雷迪-海斯利普签约", 
+      "url": "http://bbs.hupu.com/17311917.html"
+    }
+  ], 
+  "away_news": [
+    {
+      "title": "[流言板]杜兰特：我并不是一个懦弱的人", 
+      "url": "http://bbs.hupu.com/17359309.html"
+    }, 
+    {
+      "title": "[流言板]库里妻子晒照：新书已经摆上货架", 
+      "url": "http://bbs.hupu.com/17359006.html"
+    }, 
+    {
+      "title": "库里的高挑篮高打板算是冠绝联盟么？", 
+      "url": "http://bbs.hupu.com/17358926.html"
+    }, 
+    {
+      "title": "[流言板]科尔：会尝试各种不同的阵容组合", 
+      "url": "http://bbs.hupu.com/17358658.html"
+    }, 
+    {
+      "title": "2k17模拟  你勇VS12-13热火", 
+      "url": "http://bbs.hupu.com/17358362.html"
+    }, 
+    {
+      "title": "科尔来我们学校啦！", 
+      "url": "http://bbs.hupu.com/17358292.html"
+    }, 
+    {
+      "title": "【散卡】我又回来了！ 带着即将面世的新栏目", 
+      "url": "http://bbs.hupu.com/17358050.html"
+    }, 
+    {
+      "title": "科尔训练营前接受采访：回顾总决赛，展望新赛季，麦基有望留下！", 
+      "url": "http://bbs.hupu.com/17358036.html"
+    }
+  ], 
+  "hot_news": [
+    {
+      "title": "雄鹿经理称字母哥为球队放弃更多薪水", 
+      "url": "http://voice.hupu.com/nba/2072698.html"
+    }, 
+    {
+      "title": "加内特正在和森林狼深入商讨买断", 
+      "url": "http://voice.hupu.com/nba/2072965.html"
+    }, 
+    {
+      "title": "哈登晒图：深夜在训练馆释放压力", 
+      "url": "http://voice.hupu.com/nba/2072749.html"
+    }, 
+    {
+      "title": "米德尔顿腿筋撕裂，将接受手术", 
+      "url": "http://voice.hupu.com/nba/2072950.html"
+    }, 
+    {
+      "title": "马特-巴恩斯：今夏本想签约快船", 
+      "url": "http://voice.hupu.com/nba/2072718.html"
+    }, 
+    {
+      "title": "伯德：想用顶薪合同提前续约乔治", 
+      "url": "http://voice.hupu.com/nba/2072915.html"
+    }, 
+    {
+      "title": "慈世平不堪某女子威胁，报警寻求帮助", 
+      "url": "http://voice.hupu.com/nba/2072731.html"
+    }, 
+    {
+      "title": "莫-威廉姆斯发推：回归再战一年", 
+      "url": "http://voice.hupu.com/nba/2072968.html"
+    }, 
+    {
+      "title": "皮蓬将作为分析师加盟ESPN", 
+      "url": "http://voice.hupu.com/nba/2072887.html"
+    }, 
+    {
+      "title": "波什：医生曾告诉我职业生涯可能结束", 
+      "url": "http://voice.hupu.com/nba/2072844.html"
+    }
+  ], 
+  "home_standing": false, 
+  "away_standing": false, 
+  "home_latest_five": {
+    "pts": [
+      "103", 
+      "99", 
+      "99", 
+      "0", 
+      "0"
+    ], 
+    "fga": [
+      "73", 
+      "74", 
+      "79", 
+      "79", 
+      "72"
+    ], 
+    "fgm": [
+      "28", 
+      "24", 
+      "42", 
+      "36", 
+      "33"
+    ], 
+    "tga": [
+      "19", 
+      "17", 
+      "21", 
+      "15", 
+      "14"
+    ], 
+    "tgm": [
+      "7", 
+      "1", 
+      "9", 
+      "6", 
+      "6"
+    ], 
+    "fta": [
+      "13", 
+      "36", 
+      "13", 
+      "13", 
+      "18"
+    ], 
+    "ftm": [
+      "12", 
+      "24", 
+      "11", 
+      "7", 
+      "14"
+    ], 
+    "dreb": [
+      "27", 
+      "31", 
+      "34", 
+      "29", 
+      "33"
+    ], 
+    "oreb": [
+      "12", 
+      "17", 
+      "11", 
+      "10", 
+      "5"
+    ], 
+    "reb": [
+      "39", 
+      "48", 
+      "45", 
+      "39", 
+      "38"
+    ], 
+    "ast": [
+      "19", 
+      "11", 
+      "35", 
+      "21", 
+      "20"
+    ], 
+    "st": [
+      "6", 
+      "10", 
+      "4", 
+      "13", 
+      "8"
+    ], 
+    "blk": [
+      "8", 
+      "4", 
+      "9", 
+      "5", 
+      "1"
+    ], 
+    "to": [
+      "21", 
+      "19", 
+      "12", 
+      "19", 
+      "17"
+    ], 
+    "pf": [
+      "27", 
+      "30", 
+      "22", 
+      "25", 
+      "23"
+    ], 
+    "fgp": [
+      38.36, 
+      32.43, 
+      53.16, 
+      45.57, 
+      45.83
+    ], 
+    "tgp": [
+      36.84, 
+      5.88, 
+      42.86, 
+      40, 
+      42.86
+    ], 
+    "ftp": [
+      92.31, 
+      66.67, 
+      84.62, 
+      53.85, 
+      77.78
+    ]
+  }, 
+  "away_latest_five": {
+    "pts": [
+      "107", 
+      "91", 
+      "86", 
+      "99", 
+      "92"
+    ], 
+    "fga": [
+      "87", 
+      "85", 
+      "82", 
+      "77", 
+      "77"
+    ], 
+    "fgm": [
+      "43", 
+      "33", 
+      "32", 
+      "36", 
+      "35"
+    ], 
+    "tga": [
+      "14", 
+      "17", 
+      "21", 
+      "15", 
+      "16"
+    ], 
+    "tgm": [
+      "4", 
+      "3", 
+      "5", 
+      "4", 
+      "6"
+    ], 
+    "fta": [
+      "23", 
+      "31", 
+      "24", 
+      "31", 
+      "24"
+    ], 
+    "ftm": [
+      "17", 
+      "22", 
+      "17", 
+      "23", 
+      "16"
+    ], 
+    "dreb": [
+      "33", 
+      "34", 
+      "31", 
+      "29", 
+      "36"
+    ], 
+    "oreb": [
+      "14", 
+      "13", 
+      "17", 
+      "7", 
+      "11"
+    ], 
+    "reb": [
+      "47", 
+      "47", 
+      "48", 
+      "36", 
+      "47"
+    ], 
+    "ast": [
+      "25", 
+      "23", 
+      "17", 
+      "22", 
+      "20"
+    ], 
+    "st": [
+      "12", 
+      "18", 
+      "4", 
+      "16", 
+      "12"
+    ], 
+    "blk": [
+      "3", 
+      "9", 
+      "8", 
+      "5", 
+      "4"
+    ], 
+    "to": [
+      "19", 
+      "17", 
+      "16", 
+      "10", 
+      "14"
+    ], 
+    "pf": [
+      "25", 
+      "28", 
+      "32", 
+      "19", 
+      "17"
+    ], 
+    "fgp": [
+      49.43, 
+      38.82, 
+      39.02, 
+      46.75, 
+      45.45
+    ], 
+    "tgp": [
+      28.57, 
+      17.65, 
+      23.81, 
+      26.67, 
+      37.5
+    ], 
+    "ftp": [
+      73.91, 
+      70.97, 
+      70.83, 
+      74.19, 
+      66.67
+    ]
+  }, 
+  "home_avg_score": {
+    "pts": {
+      "rank": 12, 
+      "score": "102.9"
+    }, 
+    "ast": {
+      "rank": 29, 
+      "score": "18.8"
+    }, 
+    "reb": {
+      "rank": 17, 
+      "score": "43.5"
+    }, 
+    "to": {
+      "rank": 29, 
+      "score": "12.05"
+    }, 
+    "lts": {
+      "rank": 28, 
+      "score": "97.52"
+    }
+  }, 
+  "away_avg_score": {
+    "pts": {
+      "rank": 1, 
+      "score": "115.1"
+    }, 
+    "ast": {
+      "rank": 1, 
+      "score": "29.1"
+    }, 
+    "reb": {
+      "rank": 4, 
+      "score": "46.2"
+    }, 
+    "to": {
+      "rank": 6, 
+      "score": "14.73"
+    }, 
+    "lts": {
+      "rank": 11, 
+      "score": "103.68"
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "nav_link": {
+    "home": "https://test-nba.hupu.com/games",
+    "standing": "https://test-nba.hupu.com/standings",
+    "stats": "https://test-nba.hupu.com/stats/players",
+    "schedule": "https://test-nba.hupu.com/schedule",
+    "team": "https://test-nba.hupu.com/teams",
+    "player": "https://test-nba.hupu.com/players"
+  },
+  "title": "姚明|Yao Ming|姚明视频|图片|数据资料－虎扑NBA",
+  "keywords": "姚明,Yao Ming,nba姚明,姚明视频,姚明图片,姚明资料",
+  "description": "姚明的英文名为Yao Ming,姚明的个人页面包括姚明在NBA的姚明视频,姚明图片和姚明数据统计等姚明资料.",
+  "mobile_agent_meta": "<meta name=\"mobile-agent\" content=\"format=html5;url=https://m.hupu.com/nba/players/yaoming-1\"/>",
+  "player_info": {
+    "id": 1,
+    "hupuid": 1,
+    "team_id": 0,
+    "beitai_pid": 0,
+    "name": "姚明",
+    "alias": "姚明",
+    "eng_name": "Yao Ming",
+    "first_name": "Yao",
+    "last_name": "Ming",
+    "photo": "/uploads/gamespace/players/1/1_246.jpg",
+    "big_photo": "/uploads/gamespace/players/1/1_117_big.jpg",
+    "espn_id": 1722,
+    "espn_name": "Yao Ming",
+    "number": "0",
+    "position": "中锋",
+    "age": 0,
+    "birth_date": "337536000",
+    "first_year": 2002,
+    "height": 89,
+    "weight": 310,
+    "wage": null,
+    "salary": null,
+    "country": "中国",
+    "draft_year": 2002,
+    "draft_round": 2,
+    "draft_pick": 6,
+    "draft_team_id": 18,
+    "high_school": "",
+    "college_school": "11",
+    "wingspan": 2.14,
+    "standing_reach": 1.33,
+    "contract_details": "打法",
+    "death_time": null,
+    "ilkid": "MINGYA01",
+    "territorial_pick": 0,
+    "player_link": "http://g.hupu.com/nba/players/yaoming-1.html",
+    "photo_link": "http://gdc.hupucdn.com/gdc/nba/players/uploads/gamespace/players/1/1_246.jpg",
+    "big_photo_link": "http://gdc.hupucdn.com/gdc/nba/players/uploads/gamespace/players/1/1_117_big.jpg",
+    "positionZhName": "中锋",
+    "height_fix": "2.26",
+    "weight_fix": "140.6",
+    "extend": [
+      {
+        "id": 23,
+        "hupu_pid": 1,
+        "video_title": "xx",
+        "video_link": "http://www.hupu.com",
+        "create_at": null
+      },
+      {
+        "id": 11,
+        "hupu_pid": 1,
+        "video_title": "adfadf",
+        "video_link": "http://www.hupu2.com",
+        "create_at": "2016-06-15 11:22:38"
+      },
+      {
+        "id": 9,
+        "hupu_pid": 1,
+        "video_title": "111",
+        "video_link": "http://www.hupu.com",
+        "create_at": "2016-06-14 18:27:51"
+      }
+    ]
+  },
+  "news": [
+    {
+      "title": "沃顿：依旧不知道该裁掉谁，真的真的很难",
+      "url": "http://voice.hupu.com/nba/2081050.html"
+    },
+    {
+      "title": "库班：巴恩斯就是我们想得到的球员",
+      "url": "http://voice.hupu.com/nba/2080946.html"
+    },
+    {
+      "title": "库里：我才刚刚进入自己的巅峰期",
+      "url": "http://voice.hupu.com/nba/2081114.html"
+    },
+    {
+      "title": "“布鲁克-林”组合正在建立化学反应",
+      "url": "http://voice.hupu.com/nba/2080989.html"
+    },
+    {
+      "title": "骑士寻求交易，希望得到替补控卫",
+      "url": "http://voice.hupu.com/nba/2081053.html"
+    },
+    {
+      "title": "阿德：我在马刺很开心，上赛季我们创造了历史",
+      "url": "http://voice.hupu.com/nba/2081039.html"
+    },
+    {
+      "title": "恩比德：蕾哈娜总是能让我开心地笑",
+      "url": "http://voice.hupu.com/nba/2081120.html"
+    },
+    {
+      "title": "洛杉矶火花拿到本赛季WNBA总冠军",
+      "url": "http://voice.hupu.com/nba/2081119.html"
+    }
+  ],
+  "video": [
+    {
+      "title": "林书豪闪电变向秒过罗齐尔滑翔上篮得手(凯尔特人vs篮网)",
+      "img": "http://img2.hupucdn.com/video/hoopchina8141081476750423_2016-10-18.png?imageView/1/w/120/h/70",
+      "hits": "35545",
+      "url": "http://v.opahnet.com/nba/v814108.html"
+    },
+    {
+      "title": "笑尿了！克六绝杀小乔丹提前进场庆祝吃T(快船vs开拓者)",
+      "img": "http://img2.hupucdn.com/video/hoopchina8137961476424361_2016-10-14.png?imageView/1/w/120/h/70",
+      "hits": "30144",
+      "url": "http://v.opahnet.com/nba/v813796.html"
+    },
+    {
+      "title": "对手都怒了！史上最不要脸的三双",
+      "img": "http://img1.hupucdn.com/video/hoopchina814274_2016-10-19.jpg?imageView/1/w/120/h/70",
+      "hits": "29191",
+      "url": "http://v.opahnet.com/nba/v814274.html"
+    },
+    {
+      "title": "重型武器对决！博班篮下隔扣恩比德(76人vs活塞)",
+      "img": "http://img1.hupucdn.com/video/hoopchina8139721476587365_2016-10-16.png?imageView/1/w/120/h/70",
+      "hits": "28191",
+      "url": "http://v.opahnet.com/nba/v813972.html"
+    },
+    {
+      "title": "简直大师！史上最强低位脚步有多强",
+      "img": "http://img1.hupucdn.com/video/hoopchina8140261476632644_2016-10-16.jpg?imageView/1/w/120/h/70",
+      "hits": "27464",
+      "url": "http://v.opahnet.com/nba/v814026.html"
+    },
+    {
+      "title": "一招骗了全世界！JR比手势排兵布阵结果自己投(骑士vs奇才)",
+      "img": "http://img2.hupucdn.com/video/hoopchina8142431476850490_2016-10-19.png?imageView/1/w/120/h/70",
+      "hits": "21236",
+      "url": "http://v.opahnet.com/nba/v814243.html"
+    },
+    {
+      "title": "全场无死角！科比生涯百大震撼表演",
+      "img": "http://img2.hupucdn.com/video/hoopchina8139261476515820_2016-10-15.png?imageView/1/w/120/h/70",
+      "hits": "20573",
+      "url": "http://v.opahnet.com/nba/v813926.html"
+    },
+    {
+      "title": "真大爷！39岁乔丹单挑教训巅峰麦迪",
+      "img": "http://img1.hupucdn.com/video/hoopchina8140211476631392_2016-10-16.png?imageView/1/w/120/h/70",
+      "hits": "19873",
+      "url": "http://v.opahnet.com/nba/v814021.html"
+    }
+  ],
+  "bbs": []
+}

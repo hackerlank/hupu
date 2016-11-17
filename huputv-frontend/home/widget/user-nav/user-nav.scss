@@ -1,0 +1,148 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+.w-user-nav {
+	float: left;
+	width: 180px;
+	color: #777;
+	background-color: #fff;
+	border-bottom: 1px #d4d4d4 solid;
+	margin-bottom: 35px;
+	.user-info{
+		padding-top: 18px;
+		text-align: center;
+		.thumb{
+			width: 70px;
+			height: 70px;
+			border-radius: 35px;
+			margin: 0 auto 5px;
+			img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+			}
+		}
+		.rpz-num{
+			display: inline-block;
+			padding: 3px 5px;
+			color: #fff;
+			background: #ff9fa5;
+			font-size: 12px;
+			line-height: 1;
+		}
+		.rpz-num-green{
+			background: #59dc65 !important;
+		}
+		.rpz-info{
+			padding: 5px 0 0;
+			font-size: 12px;
+			line-height: 1.8;
+			.rpz-detail{
+				margin-bottom: 12px;
+				.win{
+					color: #d04646;
+					margin: 0 3px;
+				}
+				.lose{
+					color: #59dc65;
+					margin: 0 3px;
+				}
+				em{
+					font-style: normal;
+					color: #5ac1f0;
+					margin-left: 3px;
+				}
+			}
+			.rpz-rank{
+
+			}
+		}
+	}
+
+	.user-list{
+		border-top: 1px solid #eee;
+		margin-top: 15px;
+		margin-bottom: 55px;
+		li{
+			height: 34px;
+			a{
+				display: block;
+				font-size: 14px;
+				line-height: 34px;
+				color: #434141;
+				padding-left: 30px;
+				span{
+					display: block;
+					padding-left: 25px;
+				}
+				&:hover{
+					color: #d22f33;
+				}
+			}
+			&.active{
+				a{
+					background: #d22f33;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.bottom-fn{
+		text-align: center;
+		font-size: 12px;
+		padding-bottom: 5px;
+		span{
+			margin: 0 2px;
+		}
+		a{
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: 395px) and (max-width: 575px) {
+	.w-user-nav {
+		width: 395px;
+		min-height: 38px;
+		margin-bottom: 10px;
+
+		a {
+			width: 100px;
+			padding-left: 0px;
+			text-align: center;
+			line-height: 38px;
+			border-left: none;
+			border-top: 4px #e5e5e5 solid;
+		}
+
+		a.active, a:hover {
+			border-top-color: #c01e2f;
+		}
+	}
+}
+
+@media screen and (max-width: 394px) {
+	.w-user-nav {
+		width: 300px;
+		min-height: 38px;
+		margin-bottom: 10px;
+
+		a {
+			width: 100px;
+			padding-left: 0px;
+			text-align: center;
+			line-height: 38px;
+			border-left: none;
+			border-top: 4px #e5e5e5 solid;
+		}
+
+		a.active, a:hover {
+			border-top-color: #c01e2f;
+		}
+	}
+}

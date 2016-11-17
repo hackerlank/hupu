@@ -1,0 +1,52 @@
+.f_l{float:left}
+.f_r{float:right}
+.mg_t{margin-top: 10px;}
+.color_font1{color: #999999;}
+.hp-threeNav{margin-top: 10px;}
+.gamecenter_livestart{width:980px;margin:0 auto; font:12px/1.5 \5b8b\4f53,Arial,sans-serif;}
+
+.left_box{width: 706px; float: left;}
+.top_tables .t1{float: left; width: 108px; border: 1px #e9e9e9 dashed; float: left; text-align: center; margin-right: 5px; cursor: pointer;}
+.top_tables .t1 .ft{background-color: #e9e9e9; height: 32px;font-size: 14px; font-weight: bold; line-height: 32px; }
+.top_tables .t1 .ft a{display: block; height: 32px;}
+.top_tables .t1 .ft a:hover{text-decoration: none;}
+.top_tables .bg_red{border: 1px #952524 dashed;}
+.top_tables .bg_red .ft{background-color: #bb1215; color: #fff;}
+.top_tables .tips{float: right; display: inline-block; margin-top: 10px;}
+
+.rank_data{margin-top: 10px;}
+.players_table{ border:1px solid #ebebeb; border-bottom: 0px;}
+.titles_font{background-color: #f7f7f7; border:1px solid #ebebeb; border-bottom: 0px;}
+.titles_font span{display: inline-block; width: 103px; height: 43px; text-align: center; line-height: 43px; font-weight: bold;}
+.titles_font span.a1{width: 120px;}
+.rank_data .players_table{border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;width:100%;text-align:center;}
+.rank_data .players_table tr.title td{font-size: 14px; color: #444444; font-weight: bold;}
+.rank_data .players_table tr td s{display: inline-block; text-decoration: none; background:url(../img/lit.jpg) no-repeat left center; width: 7px; height: 10px; margin-left: 3px;}
+.rank_data .players_table tr img{border: 1px #ffffff solid;}
+.rank_data .players_table tr.bg_a{background-color:#fbfbfb}
+.rank_data .players_table tr td.bg_b{background-color:#f6f6f6}
+.rank_data .players_table tr.title{background-color:#fdfdfd;}
+.rank_data .players_table th{border:1px solid #ebebeb;vertical-align:baseline}
+.rank_data .players_table td{padding:10px 5px; border-bottom:1px solid #ebebeb;}
+.rank_data .players_table tr.title td{border-bottom:0px solid #ebebeb;}
+.rank_data .players_table td.center{text-align:center;padding-left:10px}
+.rank_data .players_table td.left{text-align:left;}
+.rank_data .players_table td .rank_bg,.rank_data .players_table td .rank_bg2{display: inline-block; width: 24px; height: 24px; background:url(../img/rankbg.png) no-repeat left center; line-height: 24px; color: #fff; font-weight: bold;}
+.rank_data .players_table td .rank_bg2{background:url(../img/rankbg2.png) no-repeat left center;}
+.rank_data .players_table td.font_color_h{color: #999999; font-weight: bold;}
+.rank_data .players_table tr.linglei{ background: none;  background-color: #fff;}
+.rank_data .players_table tr.linglei td{font-size: 14px; color: #a92229; font-weight: bold; border-bottom: 1px #fff solid; padding-left: 25px;}
+.rank_data .players_table tr.linglei_b td{border-bottom: 1px #d0d0d0 solid;}
+.rank_data .players_table h2{font-size:14px;margin:10px 0 10px 0}
+.rank_data .players_table tr.bg_hui{background: url(../img/tabbg.jpg) repeat-x scroll left top;}
+
+.right_box{width: 250px; float: right;}
+.right_box .pic_ul li{float: left; margin: 10px 8px 0 8px; width: 105px; overflow: hidden; text-align: center; display: inline;}
+.right_box .pic_ul li .img{width: 100px; height: 100px; padding: 1px; border: 2px #ccc solid; margin-bottom: 3px;}
+.right_box .pic_ul li img{width: 100px; height: 100px;}
+.right_box .pic_ul li p {height: 36px;overflow: hidden;}
+.right_box .rule{border: 1px #ebebeb solid; margin-top: 10px;}
+.right_box .rule .title{background-color: #fbfbfb; padding: 10px 10px; font:12px/1.5 \5FAE\8F6F\96C5\9ED1,Arial,sans-serif; font-size: 16px;}
+.right_box .rule .txt{padding: 15px; line-height: 22px;}
+.right_box .rule .all_rule{text-align: right; padding: 0 10px 10px 0}
+.right_box .rule .all_rule a{color: #a92229;}

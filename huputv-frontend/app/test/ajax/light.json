@@ -1,0 +1,97 @@
+{
+    "status": 200,
+    "result": {
+        "all_count": "0",
+        "list": [{
+            "pid": "22064",
+            "puid": "18335303",
+            "via": "9",
+            "content": " 赶紧发个帖压压惊",
+            "create_time": "1435204210",
+            "update_info": "",
+            "light_count": false,
+            "time": "06-25"
+        }, {
+            "pid": "21766",
+            "puid": "17583092",
+            "via": "0",
+            "content": "不知道跟长江巫山段的大面积滑坡有么有关系",
+            "create_time": "1435204078",
+            "update_info": "",
+            "light_count": false,
+            "time": "06-25"
+        }, {
+            "pid": "21671",
+            "puid": "6336194",
+            "via": "0",
+            "content": "哎。那个托克逊地震的嘛，5.7级，你没事吧",
+            "create_time": "1435204035",
+            "update_info": "",
+            "light_count": false,
+            "time": "06-25"
+        }, {
+            "pid": "36",
+            "puid": "20142971",
+            "via": "3",
+            "content": " 乌鲁木齐JRS表示没感觉 前几天昌吉地震我也没感觉",
+            "create_time": "1435176317",
+            "update_info": "",
+            "light_count": false,
+            "time": "06-25"
+        }, {
+            "pid": "13",
+            "puid": "18660577",
+            "via": "0",
+            "content": "楼主福大命大 <br><small class=\"f666\"><a style=\"color:#666\" href=\"http://rogerqian.github.com/zen.apk\" target=\"_blank\">来自 Zen For Android</a></small>",
+            "create_time": "1435175319",
+            "update_info": "",
+            "light_count": false,
+            "time": "06-25"
+        }, {
+            "pid": "10",
+            "puid": "21455244",
+            "via": "0",
+            "content": "祝福，没事就好",
+            "create_time": "1435174918",
+            "update_info": "",
+            "light_count": false,
+            "time": "06-25"
+        }, {
+            "pid": "8",
+            "puid": "18338814",
+            "via": "9",
+            "content": " 楼主我也库尔勒的 刚被震醒 <br>#地震快讯#中国地震台网自动测定：06月25日03时12分在新疆维吾尔自治区吐鲁番地区托克逊县附近（北纬41.7度，东经88.5度）发生5.7级左右地震，最终结果以正式速报为准。",
+            "create_time": "1435174813",
+            "update_info": "",
+            "light_count": false,
+            "time": "06-25"
+        }, {
+            "pid": "4",
+            "puid": "18720063",
+            "via": "0",
+            "content": "希望都平安无事<br><small class=\"f666\"><a style=\"color:#666\" href=\"http://rogerqian.github.com/zen.apk\" target=\"_blank\">来自 Zen For Android</a></small>",
+            "create_time": "1435174672",
+            "update_info": "",
+            "light_count": false,
+            "time": "06-25"
+        }, {
+            "pid": "2",
+            "puid": "74663",
+            "via": "3",
+            "content": " 应该没啥。还能上网发帖",
+            "create_time": "1435174505",
+            "update_info": "",
+            "light_count": false,
+            "time": "06-25"
+        }, {
+            "pid": "1",
+            "puid": "18780659",
+            "via": "8",
+            "content": " 楼主没事吧？<br>赶紧跑啊，去空旷地带。",
+            "create_time": "1435174318",
+            "update_info": "",
+            "light_count": false,
+            "time": "06-25"
+        }]
+    }
+}

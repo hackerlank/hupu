@@ -1,0 +1,301 @@
+{
+    "res": {
+        "home:page/buying_guide.tpl": {
+            "uri": "/template/home/page/buying_guide.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "home:static/buying_guide/buying_guide.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/buying_guide/buying_guide_24a3f2c.css",
+            "type": "css"
+        },
+        "home:static/followList/followList.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/home/followList/followList_1344eb8.js",
+            "type": "js",
+            "deps": [
+                "common:widget/page-dace/page-dace.es6",
+                "home:static/followList/followList.scss"
+            ]
+        },
+        "home:static/followList/followList.scss": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/followList/followList_b27cec6.css",
+            "type": "css",
+            "pkg": "home:p1"
+        },
+        "home:static/buying_guide/buying_guide.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/buying_guide/buying_guide_7e07106.js",
+            "type": "js",
+            "deps": [
+                "home:static/buying_guide/buying_guide.scss"
+            ]
+        },
+        "home:page/followList.tpl": {
+            "uri": "/template/home/page/followList.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "home:page/icp.tpl": {
+            "uri": "/template/home/page/icp.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "home:page/index.tpl": {
+            "uri": "/template/home/page/index.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            },
+            "deps": [
+                "home:widget/video-play/video.js"
+            ]
+        },
+        "home:static/index/index.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/index/index_fa1a54d.css",
+            "type": "css",
+            "pkg": "home:p0"
+        },
+        "home:static/index/index.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/home/index/index_09cf5bc.js",
+            "type": "js",
+            "deps": [
+                "home:static/index/index.scss"
+            ],
+            "pkg": "home:p3"
+        },
+        "home:widget/video-play/video.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/widget/video-play/video_9f84369.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "home:widget/video-play/video"
+            },
+            "deps": [
+                "common:static/js/underscore/underscore.js",
+                "common:widget/dialog/dialog.js",
+                "home:widget/video-play/video.scss"
+            ]
+        },
+        "home:widget/video-play/video.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/widget/video-play/video_78910fd.css",
+            "type": "css"
+        },
+        "home:page/license.tpl": {
+            "uri": "/template/home/page/license.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "home:page/list.tpl": {
+            "uri": "/template/home/page/list.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "home:page/loginHandle.tpl": {
+            "uri": "/template/home/page/loginHandle.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "home:page/purse.tpl": {
+            "uri": "/template/home/page/purse.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "home:static/purse/purse.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/home/purse/purse_befc427.css",
+            "type": "css"
+        },
+        "home:static/purse/purse.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/purse/purse_9d579c9.js",
+            "type": "js",
+            "deps": [
+                "common:static/js/underscore/underscore.js",
+                "home:static/purse/purse.scss"
+            ]
+        },
+        "home:page/rpz_board.tpl": {
+            "uri": "/template/home/page/rpz_board.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "home:static/rpz/rpz_board.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/rpz/rpz_board_349e44c.js",
+            "type": "js",
+            "deps": [
+                "common:static/js/underscore/underscore.js"
+            ]
+        },
+        "home:page/rpz.tpl": {
+            "uri": "/template/home/page/rpz.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "home:static/rpz/rpz.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/rpz/rpz_d255e56.css",
+            "type": "css"
+        },
+        "home:static/rpz/rpz.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/rpz/rpz_ec55fc9.js",
+            "type": "js",
+            "deps": [
+                "common:static/js/underscore/underscore.js",
+                "home:static/rpz/rpz.scss"
+            ]
+        },
+        "home:page/share.tpl": {
+            "uri": "/template/home/page/share.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            },
+            "deps": [
+                "common:widget/page-dace/page-dace.es6"
+            ]
+        },
+        "home:static/share/share.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/home/share/share_caaaa07.css",
+            "type": "css",
+            "pkg": "home:p2"
+        },
+        "home:static/share/share.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/share/share_fbcdea9.js",
+            "type": "js",
+            "deps": [
+                "common:widget/page-dace/page-dace.es6",
+                "home:static/share/share.scss"
+            ]
+        },
+        "home:static/index/jquery.lazyload.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/index/jquery.lazyload_75578ef.js",
+            "type": "js"
+        },
+        "home:static/myfollow/myfollow.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/home/myfollow/myfollow_ec6f49f.js",
+            "type": "js",
+            "deps": [
+                "home:static/myfollow/myfollow.scss"
+            ]
+        },
+        "home:static/myfollow/myfollow.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/home/myfollow/myfollow_24c37ef.css",
+            "type": "css"
+        },
+        "home:widget/download/download.scss": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/widget/download/download_0f53033.css",
+            "type": "css",
+            "pkg": "home:p2"
+        },
+        "home:widget/download/download.tpl": {
+            "uri": "home/widget/download/download.tpl",
+            "type": "tpl",
+            "deps": [
+                "home:widget/download/download.scss"
+            ]
+        },
+        "home:widget/rule/rule.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/widget/rule/rule_4a7401b.css",
+            "type": "css"
+        },
+        "home:widget/rule/rule.tpl": {
+            "uri": "home/widget/rule/rule.tpl",
+            "type": "tpl",
+            "deps": [
+                "home:widget/rule/rule.scss"
+            ]
+        },
+        "home:widget/tips/tips.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/widget/tips/tips_67d2bcc.css",
+            "type": "css"
+        },
+        "home:widget/tips/tips.tpl": {
+            "uri": "home/widget/tips/tips.tpl",
+            "type": "tpl",
+            "deps": [
+                "home:widget/tips/tips.scss"
+            ]
+        },
+        "home:widget/title/title.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/widget/title/title_47a1e58.css",
+            "type": "css",
+            "pkg": "home:p0"
+        },
+        "home:widget/title/title.tpl": {
+            "uri": "home/widget/title/title.tpl",
+            "type": "tpl",
+            "deps": [
+                "home:widget/title/title.scss"
+            ]
+        },
+        "home:widget/user-nav/user-nav.scss": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/widget/user-nav/user-nav_60f65b1.css",
+            "type": "css",
+            "pkg": "home:p1"
+        },
+        "home:widget/user-nav/user-nav.tpl": {
+            "uri": "home/widget/user-nav/user-nav.tpl",
+            "type": "tpl",
+            "deps": [
+                "home:widget/user-nav/user-nav.scss"
+            ]
+        },
+        "home:widget/video-play/video.tpl": {
+            "uri": "home/widget/video-play/video.tpl",
+            "type": "tpl",
+            "deps": [
+                "home:widget/video-play/video.js",
+                "home:widget/video-play/video.scss"
+            ]
+        }
+    },
+    "pkg": {
+        "home:p0": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/pkg/index_7e003db.css",
+            "type": "css",
+            "has": [
+                "home:static/index/index.scss",
+                "home:widget/title/title.scss"
+            ]
+        },
+        "home:p1": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/home/pkg/myfollow_fe11d91.css",
+            "type": "css",
+            "has": [
+                "home:widget/user-nav/user-nav.scss",
+                "home:static/followList/followList.scss"
+            ]
+        },
+        "home:p2": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/home/pkg/share_7a84604.css",
+            "type": "css",
+            "has": [
+                "home:static/share/share.scss",
+                "home:widget/download/download.scss"
+            ]
+        },
+        "home:p3": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/home/pkg/index_f236e25.js",
+            "type": "js",
+            "has": [
+                "home:static/index/index.js"
+            ],
+            "deps": [
+                "home:static/index/index.scss"
+            ]
+        }
+    }
+}

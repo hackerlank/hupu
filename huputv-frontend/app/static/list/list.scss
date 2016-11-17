@@ -1,0 +1,421 @@
+@import "../../static/sass/sassCore/base";
+
+body,html{
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-drag: none;
+    -webkit-appearance: none;
+    -webkit-text-size-adjust:none;
+    -webkit-user-select: none;
+}
+body a,
+body img{
+    -webkit-touch-callout:none;
+}
+.room-list-wrap .mod-mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0);
+}
+.tv-top{
+  img{
+    width: 100%
+  }
+}
+.icon-arrow {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    width: 8px;
+    height: 14px;
+    background-size: cover;
+    background-image: url(./img/arrow-right-day.png?t=1);
+    margin-left: 4px;
+}
+.tv-header .icon-arrow {
+    background-image: url(./img/arrow-right-day.png?t=2);
+}
+.tv-pred{
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  padding: 10px 5px;
+  border-bottom: 1px solid $morning_gray1_cor;
+  .user{
+    position: relative;
+    margin-right: 8px;
+    .mask{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(0,0,0,.5);
+    }
+    img{
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+  .userinfo{
+    display: block;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    .rp_value{
+      color: $morning_gray2_cor;
+      font-size: 12px;
+    }
+    .rp_log{
+      color: #000;
+    }
+    .win{
+      color: $morning_red_cor;
+    }
+    .lose{
+      color: $morning_huputv_green;
+    }
+  }
+  .rpz-text{
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 2px;
+    line-height: 18px;
+  }
+  .rp-win{
+    background-color: $morning_huputv_red;
+    color: $morning_white_cor;
+  }
+  .rp-lost{
+    background-color: $morning_huputv_green;
+    color: $morning_white_cor;
+  }
+  .myrpz{
+    display: block;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    text-align: right;
+    line-height: 40px;
+    height: 40px;
+    width: 60px;
+    color: $morning_gray2_cor;
+  }
+}
+.tv-header{
+    background: $morning_gray0_cor;
+    section{
+        padding:0 5px;
+        display: -moz-box;
+        display: -webkit-box;
+        display: box;
+        height:42px;
+        line-height:42px;
+        border-bottom: 1px solid  $morning_gray1_cor;
+    }
+    .title{
+        display: block;
+        -moz-box-flex: 1;
+        -webkit-box-flex: 1;
+        box-flex: 1;
+        line-height:42px;
+        font-size: 14px;
+    }
+    .title .manage{
+        border-left: 1px solid #fbb21a;
+        margin-left:6px;
+        padding-left:6px;
+        font-size:14px;
+    }
+     .goto{
+        color: $morning_gray2_cor;
+        line-height: 40px;
+        height: 40px;
+        display: inline-block;
+    }
+    .empty{
+        line-height:86px;
+        height:86px;
+        text-align:center;
+        padding:0 8px;
+        color: #a9a9b2;
+    }
+    .list{
+        overflow:auto;
+        padding: 10px;
+    }
+    .list ul{
+        display: -moz-box;
+        display: -webkit-box;
+        display: box;
+    }
+    .list li{
+        position: relative;
+        display: block;
+        -moz-box-flex: 1;
+        -webkit-box-flex: 1;
+        box-flex: 1;
+        text-align:center;
+    }
+    .list li a{
+        display: block;
+        width: 60px;
+        overflow: hidden;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+     .list .rest img {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+    }
+    .list li .live{
+        color:#000;
+    }
+    .list li .rest{
+        color: $morning_gray2_cor;
+    }
+    .list li .head {
+        position: relative;
+    }
+    .list .head .mask {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .list li .zhubo-avatar{
+        width:60px;
+        height:60px;
+        border: none;
+        margin-bottom: 5px;
+        border-radius:50%;
+        line-height:60px;
+        font-size: 12px;
+        background-color: #efebec;
+        color: $morning_gray2_cor;
+        display:block;
+        overflow:hidden;
+    }
+    .status-label {
+        position: absolute;
+        left: 26px;
+        bottom: 24px;
+        display: inline-block;
+        width: 40px;
+        height: 14px;
+        line-height: 14px;
+        font-size: 12px;
+        text-align: center;
+        color: $morning_white_cor;
+        border-radius: 8px;
+        -webkit-transform: scale(0.9);
+    }
+    .live-label {
+        background-color: $morning_red_cor;
+    }
+    .rest-label {
+        /*background-image: url(img/rest.png);*/
+        background-color: $morning_gray2_cor;
+    }
+}
+.tv-category{
+    padding:0;
+    overflow:hidden;
+    color: $morning_gray3_cor;
+    line-height:24px;
+    a{
+        color: $morning_gray3_cor;
+        line-height:24px;
+    }
+    .list-item{
+        padding:16px 16px 0;
+        overflow:hidden;
+    }
+    .list-item li{
+        float: left;
+        width: 50%;
+        padding: 0 8px;
+        margin-bottom:12px;
+    }
+    .video-pic{
+        width:100%;
+        margin:0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    .tag{
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #ff3f4c;
+      color: $morning_white_cor;
+      padding: 0 5px;
+      line-height: 16px;
+      font-size: 12px;
+    }
+
+    h3{
+        line-height:30px;
+        background-color: $morning_gray1_cor;
+        height:30px;
+        padding-left:16px;
+        position:relative;
+        font-weight:normal;
+        font-size:15px;
+    }
+    h3 span{
+        padding-left: 3px;
+    }
+    h3:before{
+        position: absolute;
+        display:block;
+        content:'';
+        left:0;
+        top:12px;
+        height:5px;
+        width:10px;
+        line-height:20px;
+        background-color: $morning_yellow_cor;
+    }
+    .list-item{
+        background: $morning_gray0_cor;
+    }
+    .list-item .video-pic {
+        position: relative;
+    }
+    .item-line{
+        width: 100%;
+        height:22px;
+        font-size:15px;
+        overflow: hidden;
+        white-space: nowrap;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+    }
+    .item-line i{
+        background-image:url("//b1.hoopchina.com.cn/games/images/person-icon.png");
+        background-repeat: no-repeat;
+        background-position:right center;
+        background-size:69%;
+        padding-left:16px;
+        height:20px;
+        display:inline-block;
+        float: left;
+        margin:2px 2px 0 -5px;
+    }
+    .item-name{
+        color: $morning_gray2_cor;
+        font-size:12px;
+    }
+}
+#J-page-container{
+    width: 100%;
+    overflow:hidden;
+}
+
+
+.night {
+  background-color: $night_white_cor;
+  .tv-pred{
+    border-bottom: 1px solid $night_gray1_cor;
+    .userinfo{
+      .rp_value{
+        color: $night_gray2_cor;
+      }
+      .rp_log{
+        color: $night_gray3_cor;
+      }
+      .win{
+        color: $night_huputv_red;
+      }
+      .lose{
+        color: $night_huputv_green;
+      }
+    }
+    .rp-win{
+      background-color: $night_huputv_red;
+      color: $night_gray3_cor;
+    }
+    .rp-lost{
+      background-color: $night_huputv_green;
+      color: $night_gray3_cor;
+    }
+    .myrpz{
+
+      color: $night_gray2_cor;
+    }
+  }
+  .tv-header{
+      background: $night_white_cor;
+    .title,
+    .manage {
+      color: $night_gray3_cor;
+      border-left-color: $night_yellow_cor;
+    }
+    .goto {
+      color: $night_gray2_cor;
+    }
+    section {
+      border-bottom-color: $night_gray1_cor;
+    }
+    .live a {
+      color:  $night_gray3_cor;
+    }
+    .rest a {
+      color: $night_gray2_cor;
+    }
+    .list .zhubo-avatar {
+        color: $night_gray2_cor;
+        background-color: #1f1f1f;
+    }
+    .mask{
+      background-color: rgba(0,0,0,.5);
+    }
+  }
+  .status-label {
+      color:  $night_gray3_cor;
+  }
+  .live-label {
+      background-color: $night_red_cor;
+  }
+
+  .rest-label {
+      background-color: $night_gray2_cor;
+  }
+  .tv-category {
+    color: $night_gray3_cor;
+    h3{
+        color: $night_gray3_cor;
+        background-color:#1f1f1f;
+        &:before{
+             background-color:#7d590d;
+         }
+    }
+
+    .list-item{
+        background: $night_white_cor;
+    }
+    .mod-mask {
+        background-color: rgba(0,0,0,.3);
+    }
+    a{
+        color: $night_gray3_cor;
+    }
+    .item-name{
+        color: $night_gray2_cor;
+    }
+    .item-line i{
+        background-image:url("//b1.hoopchina.com.cn/games/images/person-icon-night.png");
+    }
+  }
+}

@@ -1,0 +1,803 @@
+{
+  "abs_url": "http://test.videohupu.com/",
+  "is_mobile": false,
+  "base_url": "http://test.videohupu.com/",
+  "login_url": "http://passport.videohupu.com/pc/login?project=hupuTv&from=pc",
+  "logout_url": "http://passport.videohupu.com/pc/logout",
+  "register_url": "http://passport.videohupu.com/pc/register?project=hupuTv&from=pc",
+  "recharge_url": "http://my.hupu.com/goldpay",
+  "beans_recharge_url": "http://test.videohupu.com/user/beans-recharge",
+  "open_soon": {
+    "new": 0,
+    "list": [
+      {
+        "cover": "http://w1.hoopchina.com.cn/38/c0/cc/38c0cc78de43077e28f196af91be6042001.jpg@300h_534w_1e_1c",
+        "uid": "17506264",
+        "id": "38",
+        "lid": "11",
+        "gid": "200009486",
+        "anchor_nickname": "我就是小孩",
+        "name": "konghai的房间",
+        "room_type": "64",
+        "is_live": "0",
+        "sort": "9",
+        "online_plus": "65103",
+        "update_time": "1470212981",
+        "avatar": {
+          "header_small": "http://i3.hoopchina.com.cn/user/264/17506264/17506264-1456386745.png@45h_45w_2e",
+          "header_big": "http://i3.hoopchina.com.cn/user/264/17506264/17506264-1456386745.png@194h_194w_2e",
+          "header": "http://i3.hoopchina.com.cn/user/264/17506264/17506264-1456386745.png"
+        },
+        "online": 65106,
+        "following": "15",
+        "tips": "1111t",
+        "rp": 0,
+        "is_follow": 1,
+        "abs_url": "http://test.videohupu.com/38",
+        "abs_share_url": "http://test.videohupu.com/share/38",
+        "abs_category_url": "http://test.videohupu.com/showtimes",
+        "online_format": "6.5万",
+        "status_text": "Live"
+      },
+      {
+        "cover": "http://w1.hoopchina.com.cn/5b/ae/26/5bae269d90c8d5bfad2cc90036d55e5e001.jpg@300h_534w_1e_1c",
+        "uid": "21007175",
+        "id": "10302",
+        "lid": "11",
+        "gid": "200009487",
+        "anchor_nickname": "奏是伪球迷",
+        "name": "奏是伪球迷的小房间",
+        "room_type": "57",
+        "is_live": "0",
+        "sort": "0",
+        "online_plus": "0",
+        "update_time": "1470204630",
+        "avatar": {
+          "header_small": "http://i3.hoopchina.com.cn/user/175/21007175/21007175_small_3.png",
+          "header_big": "http://i3.hoopchina.com.cn/user/175/21007175/21007175_big_3.png",
+          "header": "http://i3.hoopchina.com.cn/user/175/21007175/21007175.png"
+        },
+        "online": 1,
+        "following": "4",
+        "tips": "美女",
+        "rp": 0,
+        "is_follow": 1,
+        "abs_url": "http://test.videohupu.com/10302",
+        "abs_share_url": "http://test.videohupu.com/share/10302",
+        "abs_category_url": "http://test.videohupu.com/game5",
+        "online_format": 1,
+        "status_text": "Live"
+      }
+    ]
+  },
+  "show_follow": true,
+  "show_online": true,
+  "login": true,
+  "user": {
+      "puid": "19009252",
+    "username": "Jason_Hooper",
+    "nickname": "Jason_Hooper",
+    "last_time": "1464691637",
+    "mobile": "0",
+    "email": "lc_zhy@live.com",
+    "qqid": "0",
+    "create_time": "1450072676",
+    "status": "0",
+    "uid": "19043957",
+    "avatar": {
+      "header": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+      "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+      "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png"
+    }
+  },
+  "category": [
+    {
+      "sid": 0,
+      "sname": "全部房间",
+      "sorder": "1",
+      "display": 1,
+      "updatetime": "",
+      "createtime": "",
+      "abs_url": "http://test.videohupu.com/"
+    },
+    {
+      "sid": "27",
+      "sname": "超能",
+      "sroute": "chaonneg",
+      "sorder": "3",
+      "display": "1",
+      "updatetime": "1468921554",
+      "createtime": "0",
+      "abs_url": "http://test.videohupu.com/chaonneg"
+    },
+    {
+      "sid": "57",
+      "sname": "奥奥123",
+      "sroute": "game5",
+      "sorder": "2",
+      "display": "1",
+      "updatetime": "1468237497",
+      "createtime": "0",
+      "abs_url": "http://test.videohupu.com/game5"
+    },
+    {
+      "sid": "49",
+      "sname": "奥奥",
+      "sroute": "game",
+      "sorder": "2",
+      "display": "1",
+      "updatetime": "1467713249",
+      "createtime": "0",
+      "abs_url": "http://test.videohupu.com/game"
+    },
+    {
+      "sid": "46",
+      "sname": "篮球第一现场",
+      "sroute": "gma111",
+      "sorder": "1",
+      "display": "1",
+      "updatetime": "1467276973",
+      "createtime": "0",
+      "abs_url": "http://test.videohupu.com/gma111"
+    },
+    {
+      "sid": "47",
+      "sname": "游戏",
+      "sroute": "game1",
+      "sorder": "0",
+      "display": "1",
+      "updatetime": "1467341252",
+      "createtime": "0",
+      "abs_url": "http://test.videohupu.com/game1"
+    }
+  ],
+  "keywords": "体育直播,NBA2K游戏直播,校园体育赛事直播,户外直播,电子竞技直播,虎扑TV",
+  "description": "虎扑TV - 体育视频直播平台，提供高清、流畅的体育视频直播服务，包含丰富的体育赛事、体育活动、校园体育、NBA2K游戏、电子竞技、户外直播等各类体育视频直播内容，精彩体育视频直播尽在虎扑TV。",
+  "title": "虎扑TV - 体育视频互动平台 hupu.tv",
+  "live": {
+    "recommendRoomInfo": [
+      {
+        "uid": "26013585",
+        "nickname": "美洲杯视频",
+        "anchor_nickname": "美洲杯视频",
+        "anchorstatus": "0",
+        "tips": "",
+        "following": "0",
+        "roomid": "10297",
+        "roomname": "美洲杯shipin",
+        "roomstatus": "0",
+        "gid": "11000947",
+        "lid": "16",
+        "cover": "http://b3.hoopchina.com.cn/wl/nativeapp/games/zhubo/images/frontCover_img.jpg",
+        "cover_review": "1",
+        "online_plus": "0",
+        "is_relevance": "1",
+        "is_live": "0",
+        "live_type": "2",
+        "announce": "主播休息中，去别的直播间看看吧",
+        "notice": "",
+        "room_type": "46",
+        "create_time": "1462966466",
+        "online": 1,
+        "avatar": {
+          "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header": "http://i1.hoopchina.com.cn/user/ "
+        },
+        "is_follow": 0,
+        "live_addr": {
+          "status": 200,
+          "result": [
+            {
+              "name": "超清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-"
+            },
+            {
+              "name": "高清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-_1500/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/U-v0rQzyGQDWEEv-_1500"
+            },
+            {
+              "name": "普清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-_1000/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-_1000"
+            }
+          ]
+        },
+        "live_type_text": "amerciacup",
+        "abs_url": "http://test.videohupu.com/10297",
+        "abs_share_url": "http://test.videohupu.com/share/10297",
+        "abs_category_url": "http://test.videohupu.com/gma111",
+        "status_text": "Live",
+        "online_format": 1,
+        "category": "篮球第一现场"
+      },
+      {
+        "uid": "26013585",
+        "nickname": "美洲杯视频",
+        "anchor_nickname": "美洲杯视频",
+        "anchorstatus": "0",
+        "tips": "",
+        "following": "0",
+        "roomid": "10297",
+        "roomname": "美洲杯shipin",
+        "roomstatus": "0",
+        "gid": "11000947",
+        "lid": "16",
+        "cover": "http://b3.hoopchina.com.cn/wl/nativeapp/games/zhubo/images/frontCover_img.jpg",
+        "cover_review": "1",
+        "online_plus": "0",
+        "is_relevance": "1",
+        "is_live": "0",
+        "live_type": "2",
+        "announce": "主播休息中，去别的直播间看看吧",
+        "notice": "",
+        "room_type": "46",
+        "create_time": "1462966466",
+        "online": 1,
+        "avatar": {
+          "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header": "http://i1.hoopchina.com.cn/user/ "
+        },
+        "is_follow": 0,
+        "live_addr": {
+          "status": 200,
+          "result": [
+            {
+              "name": "超清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-"
+            },
+            {
+              "name": "高清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-_1500/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/U-v0rQzyGQDWEEv-_1500"
+            },
+            {
+              "name": "普清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-_1000/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-_1000"
+            }
+          ]
+        },
+        "live_type_text": "amerciacup",
+        "abs_url": "http://test.videohupu.com/10297222",
+        "abs_share_url": "http://test.videohupu.com/share/10297222",
+        "abs_category_url": "http://test.videohupu.com/gma111",
+        "status_text": "Live",
+        "online_format": 1,
+        "category": "篮球第一现场"
+      },
+      {
+        "uid": "26013585",
+        "nickname": "美洲杯视频",
+        "anchor_nickname": "美洲杯视频",
+        "anchorstatus": "0",
+        "tips": "",
+        "following": "0",
+        "roomid": "10297",
+        "roomname": "美洲杯shipin",
+        "roomstatus": "0",
+        "gid": "11000947",
+        "lid": "16",
+        "cover": "http://b3.hoopchina.com.cn/wl/nativeapp/games/zhubo/images/frontCover_img.jpg",
+        "cover_review": "1",
+        "online_plus": "0",
+        "is_relevance": "1",
+        "is_live": "0",
+        "live_type": "2",
+        "announce": "主播休息中，去别的直播间看看吧",
+        "notice": "",
+        "room_type": "46",
+        "create_time": "1462966466",
+        "online": 1,
+        "avatar": {
+          "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header": "http://i1.hoopchina.com.cn/user/ "
+        },
+        "is_follow": 0,
+        "live_addr": {
+          "status": 200,
+          "result": [
+            {
+              "name": "超清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-"
+            },
+            {
+              "name": "高清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-_1500/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-_1500"
+            },
+            {
+              "name": "普清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-_1000/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-_1000"
+            }
+          ]
+        },
+        "live_type_text": "amerciacup",
+        "abs_url": "http://test.videohupu.com/10297333",
+        "abs_share_url": "http://test.videohupu.com/share/102973333",
+        "abs_category_url": "http://test.videohupu.com/gma111",
+        "status_text": "Live",
+        "online_format": 1,
+        "category": "篮球第一现场"
+      },
+      {
+        "uid": "26013585",
+        "nickname": "美洲杯视频",
+        "anchor_nickname": "美洲杯视频",
+        "anchorstatus": "0",
+        "tips": "",
+        "following": "0",
+        "roomid": "10297",
+        "roomname": "美洲杯shipin",
+        "roomstatus": "0",
+        "gid": "11000947",
+        "lid": "16",
+        "cover": "http://b3.hoopchina.com.cn/wl/nativeapp/games/zhubo/images/frontCover_img.jpg",
+        "cover_review": "1",
+        "online_plus": "0",
+        "is_relevance": "1",
+        "is_live": "0",
+        "live_type": "2",
+        "announce": "主播休息中，去别的直播间看看吧",
+        "notice": "",
+        "room_type": "46",
+        "create_time": "1462966466",
+        "online": 1,
+        "avatar": {
+          "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header": "http://i1.hoopchina.com.cn/user/ "
+        },
+        "is_follow": 0,
+        "live_addr": {
+          "status": 200,
+          "result": [
+            {
+              "name": "超清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-"
+            },
+            {
+              "name": "高清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-_1500/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-_1500"
+            },
+            {
+              "name": "普清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-_1000/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-_1000"
+            }
+          ]
+        },
+        "live_type_text": "amerciacup",
+        "abs_url": "http://test.videohupu.com/10297",
+        "abs_share_url": "http://test.videohupu.com/share/10297",
+        "abs_category_url": "http://test.videohupu.com/gma111",
+        "status_text": "Live",
+        "online_format": 1,
+        "category": "篮球第一现场"
+      },
+      {
+        "uid": "26013585",
+        "nickname": "美洲杯视频",
+        "anchor_nickname": "美洲杯视频",
+        "anchorstatus": "0",
+        "tips": "",
+        "following": "0",
+        "roomid": "10297",
+        "roomname": "美洲杯shipin",
+        "roomstatus": "0",
+        "gid": "11000947",
+        "lid": "16",
+        "cover": "http://b3.hoopchina.com.cn/wl/nativeapp/games/zhubo/images/frontCover_img.jpg",
+        "cover_review": "1",
+        "online_plus": "0",
+        "is_relevance": "1",
+        "is_live": "0",
+        "live_type": "2",
+        "announce": "主播休息中，去别的直播间看看吧",
+        "notice": "",
+        "room_type": "46",
+        "create_time": "1462966466",
+        "online": 1,
+        "avatar": {
+          "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header": "http://i1.hoopchina.com.cn/user/ "
+        },
+        "is_follow": 0,
+        "live_addr": {
+          "status": 200,
+          "result": [
+            {
+              "name": "超清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-"
+            },
+            {
+              "name": "高清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-_1500/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-_1500"
+            },
+            {
+              "name": "普清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/mqiirQzyzJjaEAU-_1000/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/mqiirQzyzJjaEAU-_1000"
+            }
+          ]
+        },
+        "live_type_text": "amerciacup",
+        "abs_url": "http://test.videohupu.com/10297",
+        "abs_share_url": "http://test.videohupu.com/share/10297",
+        "abs_category_url": "http://test.videohupu.com/gma111",
+        "status_text": "Live",
+        "online_format": 1,
+        "category": "篮球第一现场"
+      },
+      {
+        "uid": "26013623",
+        "nickname": "奥视频",
+        "anchor_nickname": "奥视频",
+        "anchorstatus": "0",
+        "tips": "",
+        "following": "2",
+        "roomid": "10314",
+        "roomname": "奥视频的直播间",
+        "roomstatus": "0",
+        "gid": "11001100",
+        "lid": "888",
+        "cover": "http://b3.hoopchina.com.cn/wl/nativeapp/games/zhubo/images/frontCover_img.jpg",
+        "cover_review": "1",
+        "online_plus": "0",
+        "is_relevance": "1",
+        "is_live": "0",
+        "live_type": "2",
+        "announce": "主播休息中，去别的直播间看看吧",
+        "notice": "",
+        "room_type": "46",
+        "create_time": "1467029314",
+        "online": 1,
+        "avatar": {
+          "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+          "header": "http://i1.hoopchina.com.cn/user/ "
+        },
+        "is_follow": 0,
+        "live_addr": {
+          "status": 200,
+          "result": [
+            {
+              "name": "超清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/xAf-rQzyMRQFEACW/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/xAf-rQzyMRQFEACW"
+            },
+            {
+              "name": "高清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/xAf-rQzyMRQFEACW_1500/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/xAf-rQzyMRQFEACW_1500"
+            },
+            {
+              "name": "普清",
+              "hls": "http://huputv-ws-hls.arenacdn.com/prod/xAf-rQzyMRQFEACW_1000/playlist.m3u8",
+              "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/xAf-rQzyMRQFEACW_1000"
+            }
+          ]
+        },
+        "live_type_text": "olympic",
+        "abs_url": "http://test.videohupu.com/10314",
+        "abs_share_url": "http://test.videohupu.com/share/10314",
+        "abs_category_url": "http://test.videohupu.com/gma111",
+        "status_text": "Live",
+        "online_format": 1,
+        "category": "篮球第一现场"
+      },
+      {
+        "uid": "26012383",
+        "nickname": "test180",
+        "anchor_nickname": "test180",
+        "anchorstatus": "0",
+        "tips": "",
+        "following": "0",
+        "roomid": "10355",
+        "roomname": "test180的直播间",
+        "roomstatus": "0",
+        "gid": "200009405",
+        "lid": "11",
+        "cover": "http://w1.hoopchina.com.cn/jrstv/cd/dc/cddcf604e5cca82c14dba00aae6c482d.jpg",
+        "cover_review": "1",
+        "online_plus": "0",
+        "is_relevance": "0",
+        "is_live": "0",
+        "live_type": "2",
+        "announce": "主播休息中，去别的直播间看看吧",
+        "notice": "",
+        "room_type": "57",
+        "create_time": "1469179507",
+        "online": 1,
+        "avatar": {
+          "header_small": "http://i3.hoopchina.com.cn/user/383/26012383/26012383-1458726175.jpeg@45h_45w_2e",
+          "header_big": "http://i3.hoopchina.com.cn/user/383/26012383/26012383-1458726175.jpeg@194h_194w_2e",
+          "header": "http://i3.hoopchina.com.cn/user/383/26012383/26012383-1458726175.jpeg"
+        },
+        "is_follow": 0,
+        "live_addr": {
+          "status": 200,
+          "result": [
+            {
+              "name": "超清",
+              "hls": "http://wsvideopull.smartcourt.cn/prod/be4cd9f74144cd9f/playlist.m3u8",
+              "rtmp": "rtmp://wsvideopull.smartcourt.cn/prod/be4cd9f74144cd9f"
+            },
+            {
+              "name": "高清",
+              "hls": "http://wsvideopull.smartcourt.cn/prod/be4cd9f74144cd9f/playlist.m3u8",
+              "rtmp": "rtmp://wsvideopull.smartcourt.cn/prod/be4cd9f74144cd9f_550"
+            },
+            {
+              "name": "普清",
+              "hls": "http://wsvideopull.smartcourt.cn/prod/be4cd9f74144cd9f/playlist.m3u8",
+              "rtmp": "rtmp://wsvideopull.smartcourt.cn/prod/be4cd9f74144cd9f_290"
+            }
+          ]
+        },
+        "live_type_text": "other",
+        "abs_url": "http://test.videohupu.com/10355",
+        "abs_share_url": "http://test.videohupu.com/share/10355",
+        "abs_category_url": "http://test.videohupu.com/game5",
+        "status_text": "Live",
+        "online_format": 1,
+        "category": "奥奥123"
+      }
+    ],
+    "categorysInfo": [
+      {
+        "sid": "27",
+        "sname": "超能",
+        "sroute": "chaonneg",
+        "sorder": "3",
+        "display": "1",
+        "updatetime": "1468921554",
+        "createtime": "0",
+        "list": [
+          {
+            "cover": "http://kanqiu.hupucdn.com/kanqiu_27_20150323110444.jpeg!cover-534x300.jpeg",
+            "uid": "18104156",
+            "id": "27",
+            "lid": "11",
+            "gid": "200008472",
+            "anchor_nickname": "masaki",
+            "name": "111",
+            "room_type": "27",
+            "is_live": "0",
+            "sort": "0",
+            "online_plus": "0",
+            "update_time": "1467107663",
+            "recommend": "0",
+            "recommend_tag": "推荐",
+            "avatar": {
+              "header_small": "http://i3.hoopchina.com.cn/user/156/18104156/18104156-1450851274.jpeg@45h_45w_2e",
+              "header_big": "http://i3.hoopchina.com.cn/user/156/18104156/18104156-1450851274.jpeg@194h_194w_2e",
+              "header": "http://i3.hoopchina.com.cn/user/156/18104156/18104156-1450851274.jpeg"
+            },
+            "online": 1,
+            "following": "3",
+            "tips": "",
+            "rp": 0,
+            "abs_url": "http://test.videohupu.com/27",
+            "abs_share_url": "http://test.videohupu.com/share/27",
+            "abs_category_url": "http://test.videohupu.com/chaonneg",
+            "online_format": 1,
+            "status_text": "Live",
+            "category": "超能"
+          },
+          {
+            "cover": "http://w1.hoopchina.com.cn/huputv/resource/img/cover.png",
+            "uid": "21573081",
+            "id": "10280",
+            "lid": "11",
+            "gid": "200009227",
+            "anchor_nickname": "宁萌",
+            "name": "宁萌的直播间",
+            "room_type": "27",
+            "is_live": "0",
+            "sort": "0",
+            "online_plus": "0",
+            "update_time": "1468392425",
+            "recommend": "0",
+            "recommend_tag": "",
+            "avatar": {
+              "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+              "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+              "header": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png"
+            },
+            "online": 1,
+            "following": 0,
+            "tips": "",
+            "rp": 0,
+            "abs_url": "http://test.videohupu.com/10280",
+            "abs_share_url": "http://test.videohupu.com/share/10280",
+            "abs_category_url": "http://test.videohupu.com/chaonneg",
+            "online_format": 1,
+            "status_text": "Live",
+            "category": "超能"
+          },
+          {
+            "cover": "http://w1.hoopchina.com.cn/jrstv/61/c6/61c69377c540287a10e358376bf6814a.jpg",
+            "uid": "19760431",
+            "id": "10288",
+            "lid": "11",
+            "gid": "200009448",
+            "anchor_nickname": "主播昵称修改",
+            "name": "不要被覆盖",
+            "room_type": "27",
+            "is_live": "0",
+            "sort": "0",
+            "online_plus": "0",
+            "update_time": "1469671146",
+            "recommend": "0",
+            "recommend_tag": "",
+            "avatar": {
+              "header_small": "http://i2.hoopchina.com.cn/user/431/19760431/19760431_small_7.jpg",
+              "header_big": "http://i2.hoopchina.com.cn/user/431/19760431/19760431_big_7.jpg",
+              "header": "http://i2.hoopchina.com.cn/user/431/19760431/19760431.jpg"
+            },
+            "online": 1,
+            "following": "3",
+            "tips": "看看可以不adsaf",
+            "rp": 0,
+            "abs_url": "http://test.videohupu.com/10288",
+            "abs_share_url": "http://test.videohupu.com/share/10288",
+            "abs_category_url": "http://test.videohupu.com/chaonneg",
+            "online_format": 1,
+            "status_text": "Live",
+            "category": "超能"
+          },
+          {
+            "cover": "http://w1.hoopchina.com.cn/jrstv/fa/60/fa60a52653e2f448bec5ad9866abb183.jpg",
+            "uid": "19170332",
+            "id": "10279",
+            "lid": "11",
+            "gid": "200009377",
+            "anchor_nickname": "gift33",
+            "name": "压力的直间",
+            "room_type": "27",
+            "is_live": "0",
+            "sort": "0",
+            "online_plus": "0",
+            "update_time": "1469170908",
+            "recommend": "0",
+            "recommend_tag": "",
+            "avatar": {
+              "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+              "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+              "header": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png"
+            },
+            "online": 1,
+            "following": "1",
+            "tips": "",
+            "rp": 0,
+            "abs_url": "http://test.videohupu.com/10279",
+            "abs_share_url": "http://test.videohupu.com/share/10279",
+            "abs_category_url": "http://test.videohupu.com/chaonneg",
+            "online_format": 1,
+            "status_text": "Live",
+            "category": "超能"
+          },
+          {
+            "cover": "http://kanqiu.hupucdn.com/kanqiu_10210_20150908201924.png!cover-534x300.jpeg",
+            "uid": "26012382",
+            "id": "10210",
+            "lid": "9",
+            "gid": "10713956",
+            "anchor_nickname": "小美琳",
+            "name": "小美琳的直播间",
+            "room_type": "27",
+            "is_live": "0",
+            "sort": "0",
+            "online_plus": "0",
+            "update_time": "1469515987",
+            "recommend": "0",
+            "recommend_tag": "",
+            "avatar": {
+              "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+              "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+              "header": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png"
+            },
+            "online": 1,
+            "following": "1",
+            "tips": "",
+            "rp": 0,
+            "abs_url": "http://test.videohupu.com/10210",
+            "abs_share_url": "http://test.videohupu.com/share/10210",
+            "abs_category_url": "http://test.videohupu.com/chaonneg",
+            "online_format": 1,
+            "status_text": "Live",
+            "category": "超能"
+          }
+        ]
+      },
+      {
+        "sid": "49",
+        "sname": "奥奥",
+        "sroute": "game",
+        "sorder": "2",
+        "display": "1",
+        "updatetime": "1467713249",
+        "createtime": "0",
+        "list": [
+          {
+            "cover": "http://w1.hoopchina.com.cn/huputv/resource/img/cover.png",
+            "uid": "15261455",
+            "id": "10325",
+            "lid": "11",
+            "gid": "200009335",
+            "anchor_nickname": "bigbigsmile",
+            "name": "bigbig的直播间",
+            "room_type": "49",
+            "is_live": "0",
+            "sort": "0",
+            "online_plus": "0",
+            "update_time": "1468819122",
+            "recommend": "0",
+            "recommend_tag": "",
+            "avatar": {
+              "header_small": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+              "header_big": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png",
+              "header": "http://w1.hoopchina.com.cn/huputv/resource/img/header.png"
+            },
+            "online": 1,
+            "following": 0,
+            "tips": "体育adsafadsaf",
+            "rp": 0,
+            "abs_url": "http://test.videohupu.com/10325",
+            "abs_share_url": "http://test.videohupu.com/share/10325",
+            "abs_category_url": "http://test.videohupu.com/game",
+            "online_format": 1,
+            "status_text": "Live",
+            "category": "奥奥"
+          },
+          {
+            "cover": "http://i1.hoopchina.com.cn/hupuapp/kanqiu/201607/kanqiu_10333_20160705123340_388052103.jpeg@300h_534w_1e_1c",
+            "uid": "19009252",
+            "id": "10333",
+            "lid": "11",
+            "gid": "200009434",
+            "anchor_nickname": "Jason_Hooper",
+            "name": "Acoustica",
+            "room_type": "49",
+            "is_live": "0",
+            "sort": "0",
+            "online_plus": "0",
+            "update_time": "1469532707",
+            "recommend": "0",
+            "recommend_tag": "",
+            "avatar": {
+              "header_small": "http://i1.hoopchina.com.cn/user/252/19009252/19009252_small_1.jpg",
+              "header_big": "http://i1.hoopchina.com.cn/user/252/19009252/19009252_big_1.jpg",
+              "header": "http://i1.hoopchina.com.cn/user/252/19009252/19009252.jpg"
+            },
+            "online": 1,
+            "following": "4",
+            "tips": "12adsaf",
+            "rp": 0,
+            "abs_url": "http://test.videohupu.com/10333",
+            "abs_share_url": "http://test.videohupu.com/share/10333",
+            "abs_category_url": "http://test.videohupu.com/game",
+            "online_format": 1,
+            "status_text": "Live",
+            "category": "奥奥"
+          }
+        ]
+      }
+    ]
+  },
+  "current_page": "list",
+  "category_id": ""
+}

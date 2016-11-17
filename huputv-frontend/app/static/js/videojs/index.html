@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <head>
+    <title>DEMO</title>
+    <meta id="viewport" name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+
+    <link href="video-js.css" rel="stylesheet">
+    <link href="video-skins-tv.css" rel="stylesheet">
+    <script src="ie8/videojs-ie8.min.js"></script>
+    <script src="video.js"></script>
+    <script src="videojs-hls.min.js"></script>
+  </head>
+
+</head>
+
+<body>
+
+<video id="example-video" width=960 height=400 class="video-js vjs-tv-skin" controls data-setup= '{ "autoplay": true'>
+  <source src="rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31" type="rtmp/mp4">
+  <source src="https://s3.amazonaws.com/_bc_dml/example-content/tears-of-steel/playlist.m3u8" type="application/x-mpegURL">
+</video>
+</body>
+
+</html>
+
+<script>
+  videojs.options.flash.swf = "video-js.swf";
+  var player = videojs('example-video');
+player.play();
+</script>

@@ -1,0 +1,239 @@
+{
+  "id": "6",
+  "home_team": "1",
+  "guest_team": "2",
+  "home_score": "56",
+  "guest_score": "84",
+  "game_starttime": "2016-05-23 21:00:00",
+  "game_endtime": "2016-05-25 18:05:38",
+  "game_typename": "\u7bee\u74033\u5bf93",
+  "home_gift": "26",
+  "guest_gift": "27",
+  "game_sectiontime": "1800",
+  "game_sectionnum": "4",
+  "game_description": "\u7f8e\u5c11\u5973vs\u5c0f\u59d0\u59b9",
+  "created_at": "2016-05-23 15:01:50",
+  "updated_at": "2016-05-25 18:05:38",
+  "gameStatus": {
+    "id": "2",
+    "room_id": "28",
+    "game_id": "6",
+    "match_id": "6975",
+    "status": "1",
+    "created_at": "2016-05-23 15:02:04",
+    "updated_at": "2016-05-25 13:50:04"
+  },
+  "home_team_info": {
+    "id": "1",
+    "cn_name": "\u7f8e\u5c11\u5973",
+    "en_name": "meishaonv",
+    "team_logo": "http:\/\/c1.hoopchina.com.cn\/uploads\/star\/newuser\/160111\/fcd5354b858f5c25122adcba3f8e45de49f7feed.png",
+    "team_description": "\u8d85\u80fd\u7f8e\u5c11\u5973",
+    "team_left_power": null,
+    "created_at": "2016-05-18 11:52:51",
+    "updated_at": "2016-05-18 11:52:59"
+  },
+  "guest_team_info": {
+    "id": "2",
+    "cn_name": "\u5c0f\u59d0\u59b9",
+    "en_name": "xiaojiemei",
+    "team_logo": "http:\/\/c1.hoopchina.com.cn\/uploads\/star\/newuser\/160111\/fcd5354b858f5c25122adcba3f8e45de49f7feed.png",
+    "team_description": "\u8d85\u80fd\u5c0f\u59d0\u59b9",
+    "team_left_power": null,
+    "created_at": "2016-05-18 11:53:27",
+    "updated_at": "2016-05-18 11:53:31"
+  },
+  "home_skill": [{
+    "id": "22",
+    "game_id": "6",
+    "team_id": "1",
+    "skill_id": "3",
+    "skill_totlenum": "10",
+    "skill_usednum": "0",
+    "skill_status": "0",
+    "created_at": "2016-05-23 15:03:18",
+    "updated_at": "2016-05-24 17:11:02",
+    "skill_info": {
+      "id": "3",
+      "skill_name": "Jrs\u795d\u798f",
+      "skill_logo": "http:\/\/c1.hoopchina.com.cn\/uploads\/star\/newuser\/160111\/fcd5354b858f5c25122adcba3f8e45de49f7feed.png",
+      "skill_value": "5",
+      "skill_description": "Jrs\u795d\u798f",
+      "skill_visible": "1",
+      "created_at": "2016-05-18 18:38:04",
+      "updated_at": "2016-05-18 18:38:04"
+    }
+  }, {
+    "id": "23",
+    "game_id": "6",
+    "team_id": "1",
+    "skill_id": "4",
+    "skill_totlenum": "0",
+    "skill_usednum": "0",
+    "skill_status": "0",
+    "created_at": "2016-05-23 15:03:18",
+    "updated_at": "2016-05-23 15:03:18",
+    "skill_info": {
+      "id": "4",
+      "skill_name": "Jrs\u795d\u798f",
+      "skill_logo": "http:\/\/c1.hoopchina.com.cn\/uploads\/star\/newuser\/160111\/fcd5354b858f5c25122adcba3f8e45de49f7feed.png",
+      "skill_value": "5",
+      "skill_description": "Jrs\u795d\u798f",
+      "skill_visible": "1",
+      "created_at": "2016-05-18 18:38:04",
+      "updated_at": "2016-05-18 18:38:04"
+    }
+  }, {
+    "id": "24",
+    "game_id": "6",
+    "team_id": "1",
+    "skill_id": "5",
+    "skill_totlenum": "12",
+    "skill_usednum": "11",
+    "skill_status": "0",
+    "created_at": "2016-05-23 15:03:18",
+    "updated_at": "2016-05-25 16:02:49",
+    "skill_info": {
+      "id": "5",
+      "skill_name": "Jrs\u795d\u798f",
+      "skill_logo": "http:\/\/c1.hoopchina.com.cn\/uploads\/star\/newuser\/160111\/fcd5354b858f5c25122adcba3f8e45de49f7feed.png",
+      "skill_value": "5",
+      "skill_description": "Jrs\u795d\u798f",
+      "skill_visible": "1",
+      "created_at": "2016-05-18 18:38:04",
+      "updated_at": "2016-05-18 18:38:04"
+    }
+  }],
+  "guest_skill": [{
+    "id": "25",
+    "game_id": "6",
+    "team_id": "2",
+    "skill_id": "2",
+    "skill_totlenum": "0",
+    "skill_usednum": "0",
+    "skill_status": "0",
+    "created_at": "2016-05-23 15:03:21",
+    "updated_at": "2016-05-23 15:03:21"
+  }, {
+    "id": "26",
+    "game_id": "6",
+    "team_id": "2",
+    "skill_id": "3",
+    "skill_totlenum": "0",
+    "skill_usednum": "0",
+    "skill_status": "0",
+    "created_at": "2016-05-23 15:03:21",
+    "updated_at": "2016-05-23 15:03:21",
+    "skill_info": {
+      "id": "3",
+      "skill_name": "Jrs\u795d\u798f",
+      "skill_logo": "http:\/\/c1.hoopchina.com.cn\/uploads\/star\/newuser\/160111\/fcd5354b858f5c25122adcba3f8e45de49f7feed.png",
+      "skill_value": "5",
+      "skill_description": "Jrs\u795d\u798f",
+      "skill_visible": "1",
+      "created_at": "2016-05-18 18:38:04",
+      "updated_at": "2016-05-18 18:38:04"
+    }
+  }, {
+    "id": "27",
+    "game_id": "6",
+    "team_id": "2",
+    "skill_id": "4",
+    "skill_totlenum": "0",
+    "skill_usednum": "0",
+    "skill_status": "0",
+    "created_at": "2016-05-23 15:03:21",
+    "updated_at": "2016-05-23 15:03:21",
+    "skill_info": {
+      "id": "4",
+      "skill_name": "Jrs\u795d\u798f",
+      "skill_logo": "http:\/\/c1.hoopchina.com.cn\/uploads\/star\/newuser\/160111\/fcd5354b858f5c25122adcba3f8e45de49f7feed.png",
+      "skill_value": "5",
+      "skill_description": "Jrs\u795d\u798f",
+      "skill_visible": "1",
+      "created_at": "2016-05-18 18:38:04",
+      "updated_at": "2016-05-18 18:38:04"
+    }
+  }, {
+    "id": "28",
+    "game_id": "6",
+    "team_id": "2",
+    "skill_id": "5",
+    "skill_totlenum": "0",
+    "skill_usednum": "0",
+    "skill_status": "0",
+    "created_at": "2016-05-23 15:03:21",
+    "updated_at": "2016-05-23 15:03:21",
+    "skill_info": {
+      "id": "5",
+      "skill_name": "Jrs\u795d\u798f",
+      "skill_logo": "http:\/\/c1.hoopchina.com.cn\/uploads\/star\/newuser\/160111\/fcd5354b858f5c25122adcba3f8e45de49f7feed.png",
+      "skill_value": "5",
+      "skill_description": "Jrs\u795d\u798f",
+      "skill_visible": "1",
+      "created_at": "2016-05-18 18:38:04",
+      "updated_at": "2016-05-18 18:38:04"
+    }
+  }],
+  "live_info": {
+    "uid": "18402345",
+    "nickname": "fun_ayoah",
+    "anchor_nickname": "fun",
+    "anchorstatus": "0",
+    "tips": "",
+    "following": "0",
+    "roomid": "28",
+    "roomname": "\u8f6e\u64ad\u623f\u95f4",
+    "roomstatus": "0",
+    "gid": "200006975",
+    "lid": "11",
+    "cover": "http:\/\/b3.hoopchina.com.cn\/wl\/nativeapp\/games\/zhubo\/images\/frontCover_img.jpg",
+    "cover_review": "0",
+    "online_plus": "0",
+    "is_relevance": "0",
+    "is_live": "1",
+    "live_type": "2",
+    "announce": "",
+    "notice": "",
+    "room_type": "46",
+    "create_time": "1415726111",
+    "online": "2",
+    "avatar": {
+      "header_small": "http:\/\/w1.hoopchina.com.cn\/hybrid\/resource\/avatar\/man.png",
+      "header_big": "http:\/\/w1.hoopchina.com.cn\/hybrid\/resource\/avatar\/man.png",
+      "header": "http:\/\/w1.hoopchina.com.cn\/hybrid\/resource\/avatar\/man.png"
+    },
+    "is_follow": 0,
+    "live_addr": {
+      "status": 200,
+      "result": {
+        "publish_url": "rtmp:\/\/test-ws-pub.arenacdn.com\/prod",
+        "publish_code": "nnJa0M8jgLIhADQB?pass=43cc9f8c925790b7f65fe2a0da80c9d5",
+        "url": "rtmp:\/\/test-ws-live.arenacdn.com\/prod\/nnJa0M8jgLIhADQB",
+        "url_1000": "rtmp:\/\/test-ws-live.arenacdn.com\/prod\/nnJa0M8jgLIhADQB_1000",
+        "url_1500": "rtmp:\/\/test-ws-live.arenacdn.com\/prod\/nnJa0M8jgLIhADQB_1500",
+        "hlsUrl": "http:\/\/test-ws-hls.arenacdn.com\/prod\/nnJa0M8jgLIhADQB\/playlist.m3u8",
+        "hlsUrl_1000": "http:\/\/test-ws-hls.arenacdn.com\/prod\/nnJa0M8jgLIhADQB_1000\/playlist.m3u8",
+        "hlsUrl_1500": "http:\/\/test-ws-hls.arenacdn.com\/prod\/nnJa0M8jgLIhADQB_1500\/playlist.m3u8",
+        "code": "nnJa0M8jgLIhADQB",
+        "link_expired": 60
+      }
+    },
+    "live_type_text": "other",
+    "push_addr": "rtmp:\/\/test-ws-live.arenacdn.com\/prod\/nnJa0M8jgLIhADQB"
+  },
+  "time": {
+    "section": "1",
+    "time_str": "\u7b2c1\u8282 59:59",
+    "minute": "59",
+    "second": "59"
+  },
+  "home_power": {
+    "total": 5000,
+    "left": "275"
+  },
+  "guest_power": {
+    "total": 5000,
+    "left": "4"
+  }
+}

@@ -1,0 +1,123 @@
+.hp-threeNav { margin-top: 10px;}
+.gamecenter_livestart {
+    width: 980px;
+    margin: 0 auto;
+    font: 12px/1.5 \5b8b\4f53, Arial, sans-serif;
+}
+
+.players_left {
+    width: 248px;
+    float: left;
+    border: 1px #efeff0 solid;
+    border-top: 0px
+}
+
+.players_left .title {
+    height: 30px;
+    background-color: #fbfbfb;
+    font: 12px/1.5 \5FAE\8F6F\96C5\9ED1, Arial, sans-serif;
+    font-size: 16px;
+    padding: 8px 0 0 15px;
+    border-top: 1px #efeff0 solid
+}
+
+.players_left .players_list li {
+    padding: 5px 10px;
+    border-top: 1px #ffffff solid;
+    border-bottom: 1px #ffffff solid;
+    cursor: pointer
+}
+
+.players_left .players_list li img {
+    width: 31px;
+    height: 31px;
+}
+
+.players_left .players_list li .team_name {
+    display: inline-block;
+    padding-left: 15px
+}
+
+.players_left .players_list li.bg_color {
+    background-color: #fcfcfc;
+}
+
+.players_left .players_list li.on {
+    border-top: 1px #eeeeee solid;
+    border-bottom: 1px #eeeeee solid;
+    background: url(../img/jt2.png) no-repeat 220px center;
+    background: url(jt2.png) no-repeat 220px center;
+    background-color: #f7f7f7;
+    position: relative;
+    font-weight: bold;
+}
+
+.players_left .players_list li.on .bgs {
+    display: block
+}
+
+.players_left .players_list li .bgs {
+    position: absolute;
+    right: -16px;
+    top: 0px;
+    background-color: #a92229;
+    width: 15px;
+    height: 41px;
+    display: none
+}
+
+.players_right {
+    float: right;
+    width: 715px
+}
+
+.players_right .players_table {
+    display: none;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.players_right .players_table tr.title {
+    background-color: #fbfbfb;
+    text-align: left;
+}
+
+.players_right .players_table tr img {
+    border: 1px #ffffff solid;
+}
+
+.players_right .players_table tr.bg_a {
+    background-color: #fbfbfb
+}
+
+.players_right .players_table th {
+    border: 1px solid #ebebeb;
+    vertical-align: baseline
+}
+
+.players_right .players_table td {
+    border: 1px solid #ebebeb;
+    padding: 5px 10px;
+    padding-right: 5px;
+}
+
+.players_right .players_table td.center {
+    text-align: center;
+    padding-left: 10px
+}
+
+.players_right .players_table td.td_padding {
+    padding: 15px 0;
+}
+
+.players_right .players_table td.left {
+    text-align: left;
+}
+
+.players_right .players_table h2 {
+    font-size: 14px;
+    margin: 10px 0 10px 0
+}

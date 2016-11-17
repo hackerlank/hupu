@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/**
+ * 直播页面
+ **/
+@import "../sass/sassCore/base";
+
+body {
+  background: #eeebeb;
+}
+
+.stats-not-list {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: -20px;
+  font-size: 16px;
+  text-align: center;
+  color: #a9a9b2;
+}

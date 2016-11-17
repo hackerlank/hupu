@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.w-title {
+	border-bottom: 2px #d5d5d5 solid; 
+
+	h2 {
+		position: relative;
+		top: 2px;
+		display: inline-block;
+		line-height: 50px;
+		margin-top: 10px;
+		font-size: 30px;
+		color: #c01e2f;
+		border-bottom: 2px #c01e2f solid; 
+	}
+}

@@ -1,0 +1,26 @@
+.table_list{margin-top:15px;width:980px;*zoom:1}
+.table_list .table_list_l,.table_list .table_list_l2{float:left;background:url(./img/icon.png) no-repeat 0 0;width:47px;height:47px;margin-top:22px;cursor:pointer}
+.table_list .table_list_l:hover{background:url(./img/icon.png) no-repeat -190px -48px}
+.table_list .table_list_l2{background:url(./img/icon.png) no-repeat -190px -48px}
+.table_list .table_list_c{float:left;width:795px;height:70px;margin-left:20px;background-color:#fafbfd;border:1px #f7f7f7 solid;padding:10px}
+.table_list .table_list_c .table{overflow:hidden;border:1px #f3f3f3 solid;border-bottom:0px;position:relative;left:0px;top:0px;height:70px;background-color:#fff}
+.table_list .table_list_c .table ul{position:absolute;background-color:#fafbfc}
+.table_list .table_list_c .table ul li{float:left;width:113px;border-right:1px #f3f3f3 solid;border-bottom:1px #f3f3f3 solid;height:69px}
+.table_list .table_list_c .table ul li .team,.table_list .table_list_c .table ul li .team2{margin-top:4px;}
+.table_list .table_list_c .table ul li .team .name,.table_list .table_list_c .table ul li .team .bg_img_j,.table_list .table_list_c .table ul li .team2 .name{display:inline-block;width:50px;margin-left:20px;}
+.table_list .table_list_c .table ul li .team2{font-weight:bold;color:#a41f24}
+.table_list .table_list_c .table ul li .team2 .name{color:#444444}
+.table_list .table_list_c .table ul li p{text-align:center;height:20px;line-height:20px;border-bottom:1px #f3f3f3 solid}
+.table_list .table_list_c .table ul li.on{background-color:#fff;}
+.table_list .table_list_c .table ul li.on p{font-weight: bold;}
+.table_list .table_list_c .table ul li.on .border{border-bottom:4px #c5141b solid;}
+.table_list .table_list_c .table ul li .bg_img_j{background:url(./img/jt.png) no-repeat 10px center; margin-top: 4px;}
+.table_list .table_list_c .table ul li a{display: block;}
+.table_list .table_list_c .table ul li a:hover{text-decoration: none; color: #444;}
+.table_list .table_list_r,.table_list .table_list_r2{margin-left:20px;float:left;background:url(./img/icon.png) no-repeat 0 -49px;width:47px;height:47px;margin-top:22px;cursor:pointer}
+.table_list .table_list_r2{background:url(./img/icon.png) no-repeat -190px 0}
+.table_list .table_list_r2:hover{background:url(./img/icon.png) no-repeat 0 -49px}
+.table_list:before,.table_list:after{display:table;content:"";line-height:0}
+.table_list:after{clear:both}
+.table_list:before,.table_list:after{display:table;content:"";line-height:0}
+.table_list:after{clear:both}

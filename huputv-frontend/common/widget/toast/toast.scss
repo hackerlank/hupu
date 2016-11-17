@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import "../../static/sass/sassCore/base";
+
+.ui-toast {
+    display: none;
+    position: absolute;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    z-index: 1010;
+    height: 26px;
+    opacity: 1;
+    padding: 0 30px;
+    line-height: 26px;
+    font-size: 12px;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    @include border-radius(13px);
+    @include transition(opacity .5s ease);
+}
+
+
+.m-tips-hide {
+    opacity: 0;
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+img { max-width: 100%; pointer-events: none; }
+body {
+    height: 100%;
+    font-size: 12px;
+	color: $morning_gray3_cor;
+	background-color: $morning_gray1_cor;
+    -webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.layout-main {
+    overflow: scroll;
+    position: absolute;
+    width: 100%;
+   /* 增加该属性，可以增加内滚动弹性 */
+    -webkit-overflow-scrolling: touch;
+    -mz-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+body.night {
+    color: $night_gray3_cor;
+	background-color: $night_gray1_cor;
+}

@@ -1,0 +1,327 @@
+{
+    "res": {
+        "live:page/live.tpl": {
+            "uri": "/template/live/page/live.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            },
+            "deps": [
+                "common:widget/page-dace/page-dace.es6"
+            ]
+        },
+        "live:static/live/live.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/live/live_1ec7c6f.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:static/live/live.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/live/live_9a6f350.js",
+            "type": "js",
+            "deps": [
+                "common:widget/page-dace/page-dace.es6",
+                "common:widget/share/share.js",
+                "common:widget/share/qrcode/qrcode.js",
+                "common:widget/login/login.js",
+                "live:static/live/live.scss"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/pred-game/pred.tpl": {
+            "uri": "live/widget/pred-game/pred.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/pred-game/pred.es6",
+                "live:widget/pred-game/pred.scss"
+            ]
+        },
+        "live:widget/pred-game/pred.es6": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/pred-game/pred.js",
+            "type": "js",
+            "deps": [
+                "common:widget/login/login.js",
+                "common:widget/toast/toast.js",
+                "common:widget/dialog/dialog.js",
+                "common:static/js/underscore/underscore.js"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/pred-game/pred.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/live/widget/pred-game/pred_47c8316.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:static/stats/stats.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/live/stats/stats_f31b3cd.css",
+            "type": "css"
+        },
+        "live:widget/chaoneng/chaoneng.es6": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/widget/chaoneng/chaoneng.js",
+            "type": "js",
+            "deps": [
+                "common:static/js/underscore/underscore.js",
+                "live:widget/send-gift/gift.es6",
+                "live:widget/video-play/video.js"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/send-gift/gift.es6": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/widget/send-gift/gift.js",
+            "type": "js",
+            "deps": [
+                "common:static/js/underscore/underscore.js",
+                "common:widget/login/login.js",
+                "common:widget/toast/toast.js",
+                "common:widget/page-dace/page-dace.es6",
+                "live:widget/video-play/video.js",
+                "common:widget/dialog/dialog.js"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/video-play/video.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/video-play/video_aab2b53.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "live:widget/video-play/video"
+            },
+            "deps": [
+                "common:static/js/underscore/underscore.js",
+                "common:widget/dialog/dialog.js",
+                "live:widget/video-play/video.scss"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/video-play/video.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/widget/video-play/video_a4a0bc8.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:widget/chaoneng/chaoneng.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/live/widget/chaoneng/chaoneng_fb671e5.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:widget/chaoneng/chaoneng.tpl": {
+            "uri": "live/widget/chaoneng/chaoneng.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/chaoneng/chaoneng.es6",
+                "live:widget/chaoneng/chaoneng.scss"
+            ]
+        },
+        "live:widget/chatroom/chatroom.es6": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/chatroom/chatroom.js",
+            "type": "js",
+            "deps": [
+                "common:static/js/underscore/underscore.js",
+                "common:widget/js/socket-1.4.5/socket.js",
+                "live:widget/video-play/video.js",
+                "live:widget/timeline/timeline.es6",
+                "live:widget/gift-top/top.es6",
+                "common:widget/login/login.js",
+                "live:widget/pred-game/pred.es6",
+                "live:widget/chaoneng/chaoneng.es6",
+                "live:widget/send-gift/gift.es6"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/timeline/timeline.es6": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/widget/timeline/timeline.js",
+            "type": "js",
+            "deps": [
+                "common:static/js/underscore/underscore.js"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/gift-top/top.es6": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/gift-top/top.js",
+            "type": "js",
+            "deps": [
+                "common:static/js/underscore/underscore.js"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/chatroom/chatroom.scss": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/chatroom/chatroom_3baa43a.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:widget/chatroom/chatroom.tpl": {
+            "uri": "live/widget/chatroom/chatroom.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/chatroom/chatroom.es6",
+                "live:widget/chatroom/chatroom.scss"
+            ]
+        },
+        "live:widget/chatroom/gift-effects.es6": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/live/widget/chatroom/gift-effects.js",
+            "type": "js",
+            "deps": [
+                "common:static/js/underscore/underscore.js",
+                "live:widget/video-play/video.js",
+                "live:widget/gift-top/top.es6"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/gift-top/top.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/live/widget/gift-top/top_e0c8179.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:widget/gift-top/top.tpl": {
+            "uri": "live/widget/gift-top/top.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/gift-top/top.es6",
+                "live:widget/gift-top/top.scss"
+            ]
+        },
+        "live:widget/guide/guide.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/guide/guide_27d18ca.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "live:widget/guide/guide"
+            },
+            "deps": [
+                "live:widget/guide/guide.scss"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/guide/guide.scss": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/guide/guide_29816f4.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:widget/guide/guide.tpl": {
+            "uri": "live/widget/guide/guide.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/guide/guide.js",
+                "live:widget/guide/guide.scss"
+            ]
+        },
+        "live:widget/live-recommend/recommend.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/widget/live-recommend/recommend_54c4fc1.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "live:widget/live-recommend/recommend"
+            },
+            "deps": [
+                "live:widget/live-recommend/recommend.scss"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/live-recommend/recommend.scss": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/live-recommend/recommend_e84b11f.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:widget/live-recommend/recommend.tpl": {
+            "uri": "live/widget/live-recommend/recommend.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/live-recommend/recommend.js",
+                "live:widget/live-recommend/recommend.scss"
+            ]
+        },
+        "live:widget/send-gift/gift.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/live/widget/send-gift/gift_aa52d92.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:widget/send-gift/gift.tpl": {
+            "uri": "live/widget/send-gift/gift.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/send-gift/gift.es6",
+                "live:widget/send-gift/gift.scss"
+            ]
+        },
+        "live:widget/task/task.es6": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/live/widget/task/task.js",
+            "type": "js",
+            "deps": [
+                "common:widget/page-dace/page-dace.es6",
+                "common:widget/share/share.js",
+                "common:widget/login/login.js",
+                "common:widget/toast/toast.js",
+                "common:static/js/underscore/underscore.js",
+                "live:widget/video-play/video.js",
+                "live:widget/send-gift/gift.es6"
+            ],
+            "pkg": "live:p1"
+        },
+        "live:widget/task/task.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/widget/task/task_3aa180f.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:widget/task/task.tpl": {
+            "uri": "live/widget/task/task.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/task/task.es6",
+                "live:widget/task/task.scss"
+            ]
+        },
+        "live:widget/video-play/video.tpl": {
+            "uri": "live/widget/video-play/video.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/video-play/video.js",
+                "live:widget/video-play/video.scss"
+            ]
+        }
+    },
+    "pkg": {
+        "live:p0": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/pkg/live_f7b6977.css",
+            "type": "css",
+            "has": [
+                "live:static/live/live.scss",
+                "live:widget/pred-game/pred.scss",
+                "live:widget/video-play/video.scss",
+                "live:widget/chaoneng/chaoneng.scss",
+                "live:widget/chatroom/chatroom.scss",
+                "live:widget/gift-top/top.scss",
+                "live:widget/guide/guide.scss",
+                "live:widget/live-recommend/recommend.scss",
+                "live:widget/send-gift/gift.scss",
+                "live:widget/task/task.scss"
+            ]
+        },
+        "live:p1": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/pkg/live_2d76059.js",
+            "type": "js",
+            "has": [
+                "live:static/live/live.js",
+                "live:widget/video-play/video.js",
+                "live:widget/guide/guide.js",
+                "live:widget/live-recommend/recommend.js",
+                "live:widget/pred-game/pred.es6",
+                "live:widget/send-gift/gift.es6",
+                "live:widget/chaoneng/chaoneng.es6",
+                "live:widget/timeline/timeline.es6",
+                "live:widget/gift-top/top.es6",
+                "live:widget/chatroom/chatroom.es6",
+                "live:widget/chatroom/gift-effects.es6",
+                "live:widget/task/task.es6"
+            ],
+            "deps": [
+                "common:widget/page-dace/page-dace.es6",
+                "common:widget/share/share.js",
+                "common:widget/share/qrcode/qrcode.js",
+                "common:widget/login/login.js",
+                "live:static/live/live.scss",
+                "common:static/js/underscore/underscore.js",
+                "common:widget/dialog/dialog.js",
+                "live:widget/video-play/video.scss",
+                "live:widget/guide/guide.scss",
+                "live:widget/live-recommend/recommend.scss",
+                "common:widget/toast/toast.js",
+                "common:widget/js/socket-1.4.5/socket.js"
+            ]
+        }
+    }
+}

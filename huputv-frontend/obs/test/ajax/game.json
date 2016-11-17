@@ -1,0 +1,127 @@
+{
+    "code": 1,
+    "msg": null,
+    "data": {
+        "home_team": "8",
+        "guest_team": "11",
+        "home_score": "2",
+        "guest_score": "2",
+        "game_sectiontime": "720",
+        "home_team_info": {
+            "id": "8",
+            "cn_name": "打你到爆破",
+            "en_name": "ccsdw",
+            "team_logo": "http://w2.hoopchina.com.cn/a2/b3/7b/a2b37b3650deba89e772fcc3c118e725002.png",
+            "team_description": "技能备注是什么？这里不是球队介绍吗？\n我会告诉你，表单里面保存了上次填写的信息吗？4444",
+            "team_left_power": "0",
+            "created_at": "2016-06-01 13:59:26",
+            "updated_at": "2016-06-12 15:50:40"
+        },
+        "guest_team_info": {
+            "id": "11",
+            "cn_name": "我是毛巾队",
+            "en_name": "mao",
+            "team_logo": "http://w3.hoopchina.com.cn/3d/82/6d/3d826d1771ac9346829855d16f4a4b26002.png",
+            "team_description": "sdsesd我是不会告诉你们我拥有超强的技能的，哈哈哈哈哈哈哈，你懂得么，小孩子！！！888",
+            "team_left_power": "0",
+            "created_at": "2016-06-02 13:54:21",
+            "updated_at": "2016-06-02 13:54:21"
+        },
+        "home_skill": [
+            {
+                "id": "2396",
+                "game_id": "141",
+                "team_id": "8",
+                "skill_id": "24",
+                "skill_totlenum": "1",
+                "skill_usednum": "0",
+                "skill_status": "0",
+                "created_at": "2016-07-06 10:08:04",
+                "updated_at": "2016-07-06 11:01:15",
+                "skill_info": {
+                    "id": "24",
+                    "skill_name": "进攻限时8s",
+                    "skill_logo": "http://w4.hoopchina.com.cn/19/7f/78/197f78722ffecfdd3251eba12a3399b1002.png",
+                    "skill_value": "1",
+                    "skill_description": "每回合进攻时间将限制8秒完成，3回合结束恢复",
+                    "skill_visible": "1",
+                    "created_at": "2016-06-02 16:24:58",
+                    "updated_at": "2016-06-03 13:30:28"
+                }
+            },
+            {
+                "id": "2395",
+                "game_id": "141",
+                "team_id": "8",
+                "skill_id": "22",
+                "skill_totlenum": "1",
+                "skill_usednum": "1",
+                "skill_status": "1",
+                "created_at": "2016-07-06 10:08:04",
+                "updated_at": "2016-07-06 10:37:50",
+                "skill_info": {
+                    "id": "22",
+                    "skill_name": "得分翻倍",
+                    "skill_logo": "http://w2.hoopchina.com.cn/8a/81/72/8a8172bb1c7567a439128dc8cb95f533002.png",
+                    "skill_value": "1",
+                    "skill_description": "技能触发时所获得分将翻倍计算",
+                    "skill_visible": "1",
+                    "created_at": "2016-06-02 16:23:27",
+                    "updated_at": "2016-06-03 13:31:03"
+                }
+            }
+        ],
+        "guest_skill": [
+            {
+                "id": "2397",
+                "game_id": "141",
+                "team_id": "11",
+                "skill_id": "22",
+                "skill_totlenum": "1",
+                "skill_usednum": "0",
+                "skill_status": "0",
+                "created_at": "2016-07-06 10:08:04",
+                "updated_at": "2016-07-06 11:01:23",
+                "skill_info": {
+                    "id": "22",
+                    "skill_name": "得分翻倍",
+                    "skill_logo": "http://w2.hoopchina.com.cn/8a/81/72/8a8172bb1c7567a439128dc8cb95f533002.png",
+                    "skill_value": "1",
+                    "skill_description": "技能触发时所获得分将翻倍计算",
+                    "skill_visible": "1",
+                    "created_at": "2016-06-02 16:23:27",
+                    "updated_at": "2016-06-03 13:31:03"
+                }
+            },
+            {
+                "id": "2398",
+                "game_id": "141",
+                "team_id": "11",
+                "skill_id": "24",
+                "skill_totlenum": "0",
+                "skill_usednum": "0",
+                "skill_status": "0",
+                "created_at": "2016-07-06 10:08:04",
+                "updated_at": "2016-07-06 10:08:04",
+                "skill_info": {
+                    "id": "24",
+                    "skill_name": "进攻限时8s",
+                    "skill_logo": "http://w4.hoopchina.com.cn/19/7f/78/197f78722ffecfdd3251eba12a3399b1002.png",
+                    "skill_value": "1",
+                    "skill_description": "每回合进攻时间将限制8秒完成，3回合结束恢复",
+                    "skill_visible": "1",
+                    "created_at": "2016-06-02 16:24:58",
+                    "updated_at": "2016-06-03 13:30:28"
+                }
+            }
+        ],
+        "gameTime": {
+            "time_status": true,
+            "section": "2",
+            "pase": "0",
+            "time_str": "第2节 12:00",
+            "minute": "12",
+            "second": "00"
+        }
+    }
+}

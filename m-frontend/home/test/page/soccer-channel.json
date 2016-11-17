@@ -1,0 +1,628 @@
+{
+    "site": "soccer",
+    "pageheader": {
+        "title": "虎扑足球_手机虎扑网"
+    },
+    "bottomtitle": "虎扑体育 - 你的体育全世界！",
+    "id4dace": 3200,
+    "mark4dace": "page_soccer_leagueindex_",
+    "pageBottomSpread": [
+        {
+            "name": "NBA",
+            "url": "/bbs/1048"
+        },
+        {
+            "name": "足球",
+            "url": "/bbs/1389"
+        },
+        {
+            "name": "步行街",
+            "url": "/bbs/34"
+        },
+        {
+            "name": "情感",
+            "url": "/bbs/160"
+        },
+        {
+            "name": "影视",
+            "url": "/bbs/120"
+        }
+    ],
+    "baseurl": "http://m.hupu.com",
+    "test": "710998fd1b7c0235170265650770a4b1",
+    "_islogin": 0,
+    "loginurl": "http://passport.hupu.com/m/2?appid=10017&jumpurl=http://m.hupu.com/soccer/england?test=710998fd1b7c0235170265650770a4b1&from=m&project=hupu",
+    "uid": "",
+    "username": "",
+    "showAdvertise": 0,
+    "description": "虎扑体育",
+    "pclink": "http://soccer.hupu.com/england?test=710998fd1b7c0235170265650770a4b1",
+    "hottitlelen": 16,
+    "columncontentlen": 46,
+    "footerword": {
+        "word": "我喜欢批评声，这会让你更强大。",
+        "person": "勒布朗-詹姆斯"
+    },
+    "videoImgUrlPrefix": "http://img04.store.sogou.com/net/a/67/link?appid=67&url=",
+    "level2": [
+        {
+            "name": "比赛",
+            "router": "soccerleaguematch",
+            "url": "http://m.hupu.com/soccer/england/match"
+        },
+        {
+            "name": "新闻",
+            "router": "soccerleaguenews",
+            "url": "http://m.hupu.com/soccer/england/news"
+        },
+        {
+            "name": "论坛",
+            "router": "soccerforumindex",
+            "url": "http://m.hupu.com/soccer/england/bbs"
+        },
+        {
+            "name": "积分榜",
+            "router": "soccerleaguerank",
+            "url": "http://m.hupu.com/soccer/england/rank/score"
+        },
+        {
+            "name": "射手榜",
+            "router": "soccerleaguerank",
+            "url": "http://m.hupu.com/soccer/england/rank/shooter"
+        }
+    ],
+    "topNav": [
+        {
+            "title": "NBA",
+            "router": "nbaindex",
+            "url": "http://m.hupu.com/nba"
+        },
+        {
+            "title": "CBA",
+            "router": "cbanewsindex",
+            "url": "http://m.hupu.com/cba/news/"
+        },
+        {
+            "title": "足球",
+            "router": "soccerindex",
+            "url": "http://m.hupu.com/soccer"
+        },
+        {
+            "title": "论坛",
+            "router": "bbsindex",
+            "url": "http://m.hupu.com/bbs"
+        },
+        {
+            "title": "识货",
+            "url": "http://m.shihuo.cn/",
+            "router": "shihuoindex",
+            "target": "_blank"
+        },
+        {
+            "title": "彩票",
+            "url": "http://t.hupu.lecai.com/",
+            "router": "caipiaoindex",
+            "target": "_blank"
+        }
+    ],
+    "node": [
+        {
+            "title": "足球",
+            "url": "http://m.hupu.com/soccer"
+        },
+        {
+            "title": "英超",
+            "url": "#"
+        }
+    ],
+    "customSoccer": [],
+    "newsurl": "http://m.hupu.com/soccer/news/tag/496",
+    "bbsurl": "http://m.hupu.com/bbs/138",
+    "homeData": {
+        "news": [
+            {
+                "id": "1980880",
+                "title": "阿森纳对手：英国球迷也支持我们",
+                "media": "伦敦晚旗报",
+                "reply_count": "1",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980880.html",
+                "dateline": "2015-12-09 10:48:22",
+                "pub_date": 1449629302,
+                "overview": "阿森纳的欧冠生死战对手奥林匹亚克斯前锋伊...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/4820df1bc854f9ac8eca13a725a50315eb3d8c1d.png",
+                "type": "news",
+                "replies": "1"
+            },
+            {
+                "id": "1980872",
+                "title": "马斯切拉诺：帕杜不会用我",
+                "media": "伦敦晚旗报",
+                "reply_count": "4",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980872.html",
+                "dateline": "2015-12-09 10:26:17",
+                "pub_date": 1449627977,
+                "overview": "巴萨中卫马斯切拉诺近日谈到了指导过自己的...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/c79ceedb8fd0bee078d352f95f8ed37bb8f070b2.png",
+                "type": "news",
+                "replies": "4"
+            },
+            {
+                "id": "1980858",
+                "title": "许尔勒：狼堡的胜利实至名归",
+                "media": "Goal.com",
+                "reply_count": "1",
+                "light_count": "0",
+                "support": 1,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980858.html",
+                "dateline": "2015-12-09 10:01:26",
+                "pub_date": 1449626486,
+                "overview": "许尔勒表示，狼堡对阵曼联的胜利是实至名归...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/05e6734146823144c65e39a3311df77e63faf3dc.jpg",
+                "type": "news",
+                "replies": "1"
+            },
+            {
+                "id": "1980854",
+                "title": "前队友：法尔考有意去大联盟踢球",
+                "media": "Goal.com",
+                "reply_count": "1",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980854.html",
+                "dateline": "2015-12-09 09:56:20",
+                "pub_date": 1449626180,
+                "overview": "法尔考的前队友瓦勒里表示，法尔考有意前往...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/cd9a093f044e4379f9d545423fd61ce31bfedb82.jpg",
+                "type": "news",
+                "replies": "1"
+            },
+            {
+                "id": "1980850",
+                "title": "法尔考：回归之后我会更加强大",
+                "media": "ESPN FC",
+                "reply_count": "1",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980850.html",
+                "dateline": "2015-12-09 09:44:07",
+                "pub_date": 1449625447,
+                "overview": "切尔西前锋法尔考表示，自己希望伤愈归队后...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/efacaa8b48e0762a18dde2331ede63c968c6c6f7.jpg",
+                "type": "news",
+                "replies": "1"
+            },
+            {
+                "id": "1980849",
+                "title": "加里谈上任不紧张但要努力获胜",
+                "media": "阿斯报",
+                "reply_count": "0",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980849.html",
+                "dateline": "2015-12-09 09:42:19",
+                "pub_date": 1449625339,
+                "overview": "加里-内维尔召开了作为瓦伦西亚主帅的首次...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/7d93662b6e06603f80adf4cffaa90b446fabb1aa.png",
+                "type": "news",
+                "replies": "0"
+            },
+            {
+                "id": "1980823",
+                "title": "曼联狼堡之战分析：多项历史改写",
+                "media": "Sport1",
+                "reply_count": "4",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980823.html",
+                "dateline": "2015-12-09 08:39:18",
+                "pub_date": 1449621558,
+                "overview": "德国媒体SPORT1盘点了曼联和狼堡之战...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/210665989afa7aa397ccc74bca10fcd28dd8056f.jpg",
+                "type": "news",
+                "replies": "4"
+            },
+            {
+                "id": "1980818",
+                "title": "达米安与斯莫林或无缘周末联赛",
+                "media": "天空体育",
+                "reply_count": "2",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980818.html",
+                "dateline": "2015-12-09 08:19:18",
+                "pub_date": 1449620358,
+                "overview": "曼联在与狼堡比赛时折损达米安与斯莫林，他...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/77ca65b7ec9e704be471310c4b38787d22a14e23.jpg",
+                "type": "news",
+                "replies": "2"
+            },
+            {
+                "id": "1980812",
+                "title": "鲁梅尼格维护小猪：范加尔别挑剔",
+                "media": "Goal.com",
+                "reply_count": "10",
+                "light_count": "1",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980812.html",
+                "dateline": "2015-12-09 08:04:55",
+                "pub_date": 1449619495,
+                "overview": "鲁梅尼格表示，范加尔应对施魏因斯泰格有更...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/83643fd8d68c871839bca383b602c1456f63c15a.jpg",
+                "type": "news",
+                "replies": "10"
+            },
+            {
+                "id": "1980810",
+                "title": "费迪南德：曼联踢欧联杯令人尴尬",
+                "media": "卫报",
+                "reply_count": "5",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980810.html",
+                "dateline": "2015-12-09 07:56:21",
+                "pub_date": 1449618981,
+                "overview": "前曼联中卫费迪南德承认，老东家不得不去踢...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/c23e227b07562518b426271abb20b67e6a6f8b4d.jpg",
+                "type": "news",
+                "replies": "5"
+            }
+        ],
+        "bbs": {
+            "url": "http://m.hupu.com/bbs/138",
+            "name": "英超",
+            "data": [
+                {
+                    "title": "换个角度想问题，三主力受伤也并非全是坏事",
+                    "username": "司徒雷锋",
+                    "url": "http://m.hupu.com/bbs/14889831.html",
+                    "fid": 138,
+                    "type": "bbs",
+                    "replies": "28",
+                    "boardname": "英超专区",
+                    "boardurl": "http://m.hupu.com/bbs/138"
+                },
+                {
+                    "title": "[流言板]舒梅切尔：范加尔重建红魔需要时间",
+                    "username": "aaaatttt",
+                    "url": "http://m.hupu.com/bbs/14892882.html",
+                    "fid": 138,
+                    "type": "bbs",
+                    "replies": "27",
+                    "boardname": "英超专区",
+                    "boardurl": "http://m.hupu.com/bbs/138"
+                },
+                {
+                    "title": "散卡散卡，欧冠小组第一出线， 斯小寿星梅开二度",
+                    "username": "nomad2000",
+                    "url": "http://m.hupu.com/bbs/14893703.html",
+                    "fid": 138,
+                    "type": "bbs",
+                    "replies": "17",
+                    "boardname": "英超专区",
+                    "boardurl": "http://m.hupu.com/bbs/138"
+                },
+                {
+                    "title": "[赛后讨论]欧冠：马夏尔破门纳尔多梅开，曼联客场2-3不敌沃尔夫斯堡小组出局",
+                    "username": "战报团",
+                    "url": "http://m.hupu.com/bbs/14892738.html",
+                    "fid": 138,
+                    "type": "bbs",
+                    "replies": "411",
+                    "boardname": "英超专区",
+                    "boardurl": "http://m.hupu.com/bbs/138"
+                },
+                {
+                    "title": "散卡！庆祝曼城以小组第一的成绩小组出线！",
+                    "username": "三枚起请",
+                    "url": "http://m.hupu.com/bbs/14892769.html",
+                    "fid": 138,
+                    "type": "bbs",
+                    "replies": "78",
+                    "boardname": "英超专区",
+                    "boardurl": "http://m.hupu.com/bbs/138"
+                }
+            ]
+        },
+        "teamBbs": [
+            {
+                "name": "曼联",
+                "fid": 2916,
+                "url": "http://m.hupu.com/bbs/2916",
+                "data": [
+                    {
+                        "title": "[流言板]达米安与斯莫林或无缘周末联赛",
+                        "username": "aaaatttt",
+                        "url": "http://m.hupu.com/bbs/14892965.html",
+                        "fid": 2916,
+                        "type": "bbs",
+                        "replies": "20",
+                        "boardname": "曼联专区",
+                        "boardurl": "http://m.hupu.com/bbs/2916"
+                    },
+                    {
+                        "title": "[流言板]鲁梅尼格维护小猪：范加尔别挑剔",
+                        "username": "TuxedoMask",
+                        "url": "http://m.hupu.com/bbs/14892926.html",
+                        "fid": 2916,
+                        "type": "bbs",
+                        "replies": "7",
+                        "boardname": "曼联专区",
+                        "boardurl": "http://m.hupu.com/bbs/2916"
+                    },
+                    {
+                        "title": "[流言板]斯科尔斯：曼联小组出局不意外",
+                        "username": "TheBerserker",
+                        "url": "http://m.hupu.com/bbs/14892877.html",
+                        "fid": 2916,
+                        "type": "bbs",
+                        "replies": "36",
+                        "boardname": "曼联专区",
+                        "boardurl": "http://m.hupu.com/bbs/2916"
+                    },
+                    {
+                        "title": "[流言板]加里谈上任不紧张但要努力获胜",
+                        "username": "eileen_iker",
+                        "url": "http://m.hupu.com/bbs/14893491.html",
+                        "fid": 2916,
+                        "type": "bbs",
+                        "replies": "1",
+                        "boardname": "曼联专区",
+                        "boardurl": "http://m.hupu.com/bbs/2916"
+                    },
+                    {
+                        "title": "[流言板]越位悬案？曼联关键进球被吹无效",
+                        "username": "huangguisa2015",
+                        "url": "http://m.hupu.com/bbs/14892693.html",
+                        "fid": 2916,
+                        "type": "bbs",
+                        "replies": "12",
+                        "boardname": "曼联专区",
+                        "boardurl": "http://m.hupu.com/bbs/2916"
+                    }
+                ]
+            },
+            {
+                "name": "切尔西",
+                "fid": 2919,
+                "url": "http://m.hupu.com/bbs/2919",
+                "data": [
+                    {
+                        "title": "[互动]如果穆里尼奥真的下课了，希望喜欢鸟叔的朋友以后常来这里坐坐",
+                        "username": "pacmane",
+                        "url": "http://m.hupu.com/bbs/14893898.html",
+                        "fid": 2919,
+                        "type": "bbs",
+                        "replies": "3",
+                        "boardname": "切尔西专区",
+                        "boardurl": "http://m.hupu.com/bbs/2919"
+                    },
+                    {
+                        "title": "[纵使跌跌撞撞，向前走是唯一的方向！] 切尔西VS波尔图12月10日 03:45时",
+                        "username": "a黑色香水",
+                        "url": "http://m.hupu.com/bbs/14883351.html",
+                        "fid": 2919,
+                        "type": "bbs",
+                        "replies": "71",
+                        "boardname": "切尔西专区",
+                        "boardurl": "http://m.hupu.com/bbs/2919"
+                    },
+                    {
+                        "title": "[流言板]穆帅：希望赢下波尔图进军淘汰赛",
+                        "username": "飘雪又一年",
+                        "url": "http://m.hupu.com/bbs/14892536.html",
+                        "fid": 2919,
+                        "type": "bbs",
+                        "replies": "15",
+                        "boardname": "切尔西专区",
+                        "boardurl": "http://m.hupu.com/bbs/2919"
+                    },
+                    {
+                        "title": "[流言板]卡瓦略：穆帅不能容忍失败",
+                        "username": "冰蓝羽衣",
+                        "url": "http://m.hupu.com/bbs/14886104.html",
+                        "fid": 2919,
+                        "type": "bbs",
+                        "replies": "7",
+                        "boardname": "切尔西专区",
+                        "boardurl": "http://m.hupu.com/bbs/2919"
+                    }
+                ]
+            },
+            {
+                "name": "阿森纳",
+                "fid": 2918,
+                "url": "http://m.hupu.com/bbs/2918",
+                "data": [
+                    {
+                        "title": "[流言板]阿森纳将在2017年赴澳淘金",
+                        "username": "大坑B是也",
+                        "url": "http://m.hupu.com/bbs/14894483.html",
+                        "fid": 2918,
+                        "type": "bbs",
+                        "replies": "0",
+                        "boardname": "阿森纳专区",
+                        "boardurl": "http://m.hupu.com/bbs/2918"
+                    },
+                    {
+                        "title": "[流言板]阿森纳对手：英国球迷也支持我们",
+                        "username": "大坑B是也",
+                        "url": "http://m.hupu.com/bbs/14894152.html",
+                        "fid": 2918,
+                        "type": "bbs",
+                        "replies": "2",
+                        "boardname": "阿森纳专区",
+                        "boardurl": "http://m.hupu.com/bbs/2918"
+                    },
+                    {
+                        "title": "[流言板]厄齐尔荣获PFA球迷票选11月最佳",
+                        "username": "Vickayson",
+                        "url": "http://m.hupu.com/bbs/14890892.html",
+                        "fid": 2918,
+                        "type": "bbs",
+                        "replies": "6",
+                        "boardname": "阿森纳专区",
+                        "boardurl": "http://m.hupu.com/bbs/2918"
+                    },
+                    {
+                        "title": "[流言板]缺乏比赛机会，德布希冬季或离队",
+                        "username": "筱柏柏丽雪",
+                        "url": "http://m.hupu.com/bbs/14891951.html",
+                        "fid": 2918,
+                        "type": "bbs",
+                        "replies": "29",
+                        "boardname": "阿森纳专区",
+                        "boardurl": "http://m.hupu.com/bbs/2918"
+                    }
+                ]
+            },
+            {
+                "name": "利物浦",
+                "fid": 2917,
+                "url": "http://m.hupu.com/bbs/2917",
+                "data": [
+                    {
+                        "title": "[流言板]天空体育：斯图里奇再次受伤",
+                        "username": "L.Cattermole",
+                        "url": "http://m.hupu.com/bbs/14892821.html",
+                        "fid": 2917,
+                        "type": "bbs",
+                        "replies": "52",
+                        "boardname": "利物浦专区",
+                        "boardurl": "http://m.hupu.com/bbs/2917"
+                    },
+                    {
+                        "title": "4231体系, 克式红军下的鸡肋球员",
+                        "username": "lucaskong",
+                        "url": "http://m.hupu.com/bbs/14892605.html",
+                        "fid": 2917,
+                        "type": "bbs",
+                        "replies": "12",
+                        "boardname": "利物浦专区",
+                        "boardurl": "http://m.hupu.com/bbs/2917"
+                    },
+                    {
+                        "title": "[流言板]镜报：罗杰斯与妻子谈妥离婚协议",
+                        "username": "L.Cattermole",
+                        "url": "http://m.hupu.com/bbs/14884687.html",
+                        "fid": 2917,
+                        "type": "bbs",
+                        "replies": "25",
+                        "boardname": "利物浦专区",
+                        "boardurl": "http://m.hupu.com/bbs/2917"
+                    },
+                    {
+                        "title": "[工地][重振旗鼓线]欧联杯小组赛第6轮 12月11日 2 : 00 锡永vs利物浦",
+                        "username": "利村民工",
+                        "url": "http://m.hupu.com/bbs/14892186.html",
+                        "fid": 2917,
+                        "type": "bbs",
+                        "replies": "17",
+                        "boardname": "利物浦专区",
+                        "boardurl": "http://m.hupu.com/bbs/2917"
+                    }
+                ]
+            },
+            {
+                "name": "曼城",
+                "fid": 2908,
+                "url": "http://m.hupu.com/bbs/2908",
+                "data": [
+                    {
+                        "title": "[赛后讨论]大卫-席尔瓦破门斯特林梅开，曼城逆转4-2门兴头名出线",
+                        "username": "战报团",
+                        "url": "http://m.hupu.com/bbs/14892755.html",
+                        "fid": 2908,
+                        "type": "bbs",
+                        "replies": "87",
+                        "boardname": "曼城专区",
+                        "boardurl": "http://m.hupu.com/bbs/2908"
+                    },
+                    {
+                        "title": "[流言板]佩帅：赛前告诉斯特林至少进两个",
+                        "username": "wangbin3010",
+                        "url": "http://m.hupu.com/bbs/14892832.html",
+                        "fid": 2908,
+                        "type": "bbs",
+                        "replies": "8",
+                        "boardname": "曼城专区",
+                        "boardurl": "http://m.hupu.com/bbs/2908"
+                    },
+                    {
+                        "title": "[区内讨论] 此签谐(邪)乎？非也非也，待我慢慢道来也。",
+                        "username": "CFvxx1515",
+                        "url": "http://m.hupu.com/bbs/13567539.html",
+                        "fid": 2908,
+                        "type": "bbs",
+                        "replies": "32",
+                        "boardname": "曼城专区",
+                        "boardurl": "http://m.hupu.com/bbs/2908"
+                    },
+                    {
+                        "title": "【欧冠战门兴热线】15-16赛季欧冠小组赛第6轮 曼城VS门兴 12月09日 03:45",
+                        "username": "潴娃娃",
+                        "url": "http://m.hupu.com/bbs/14883604.html",
+                        "fid": 2908,
+                        "type": "bbs",
+                        "replies": "81",
+                        "boardname": "曼城专区",
+                        "boardurl": "http://m.hupu.com/bbs/2908"
+                    },
+                    {
+                        "title": "[流言板]德布劳内：战胜门兴争取小组第一",
+                        "username": "Vickayson",
+                        "url": "http://m.hupu.com/bbs/14881244.html",
+                        "fid": 2908,
+                        "type": "bbs",
+                        "replies": "8",
+                        "boardname": "曼城专区",
+                        "boardurl": "http://m.hupu.com/bbs/2908"
+                    }
+                ]
+            }
+        ]
+    },
+    "adInfo": [],
+    "gameList": [
+        {
+            "hometeam": "诺维奇",
+            "awayteam": "埃弗顿",
+            "score": "",
+            "gameurl": "http://m.hupu.com/soccer/england/game/lineup/",
+            "status": 2,
+            "progress": "08:00",
+            "gamestatus": "开始"
+        },
+        {
+            "hometeam": "水晶宫",
+            "awayteam": "南安普顿",
+            "score": "",
+            "gameurl": "http://m.hupu.com/soccer/england/game/lineup/",
+            "status": 2,
+            "progress": "08:00",
+            "gamestatus": "开始"
+        },
+        {
+            "hometeam": "曼城",
+            "awayteam": "斯旺西",
+            "score": "",
+            "gameurl": "http://m.hupu.com/soccer/england/game/lineup/",
+            "status": 2,
+            "progress": "08:00",
+            "gamestatus": "开始"
+        }
+    ]
+}

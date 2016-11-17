@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/function";
+
+.video-tool {
+    @include display-flex();
+    @include justify-content(space-between);
+    @include align-items(center);
+    height: 35px;
+    padding: 0 4px;
+    background-color: #222426;
+    color: #dedede;
+
+    .refresh { margin-right: 12px;}
+    .screen { margin-left: 6px;}
+
+    .icon {
+        display: inline-block;
+        background-size: cover;
+    }
+
+    .icon-anchor-s {
+        width: 10px;
+        height: 12px;
+        margin-right: 3px;
+        vertical-align: -2px;
+        background-image: url(./icon-anchor-s.png);
+    }
+
+    .volume {
+        .icon {
+            width: 20px;
+            height: 15px;
+            margin-right: 6px;
+            vertical-align: -3px;
+        }
+    }
+
+    .icon-volume { background-image: url(./icon-volume.png);}
+    .icon-volume-none { background-image: url(./icon-volume-none.png);}
+
+    .bg {
+        display: inline-block;
+        min-width: 32px;
+        padding: 0 10px;
+        height: 22px;
+        line-height: 22px;
+        background-color: #4e5051;
+        border-radius: 4px;
+    }
+}

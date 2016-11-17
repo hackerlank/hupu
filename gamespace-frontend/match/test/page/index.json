@@ -1,0 +1,1023 @@
+{
+  "nav_link": {
+    "home": "https://stg-nba.hupu.com/games",
+    "standing": "https://stg-nba.hupu.com/standings",
+    "stats": "https://stg-nba.hupu.com/stats/players",
+    "schedule": "https://stg-nba.hupu.com/schedule",
+    "team": "https://stg-nba.hupu.com/teams",
+    "player": "https://stg-nba.hupu.com/players"
+  },
+  "title": "NBA比分直播|NBA文字直播|NBA今日战报_虎扑NBA比赛中心",
+  "keywords": "",
+  "description": "",
+  "weekly_count": {
+    "2016-10-03": {
+      "count": 1,
+      "week": "星期一",
+      "link": "https://stg-nba.hupu.com/games/2016-10-03"
+    },
+    "2016-10-04": {
+      "count": 7,
+      "week": "星期二",
+      "link": "https://stg-nba.hupu.com/games/2016-10-04"
+    },
+    "2016-10-05": {
+      "count": 6,
+      "week": "星期三",
+      "link": "https://stg-nba.hupu.com/games/2016-10-05"
+    },
+    "2016-10-06": {
+      "count": 4,
+      "week": "星期四",
+      "link": "https://stg-nba.hupu.com/games/2016-10-06"
+    },
+    "2016-10-07": {
+      "count": 6,
+      "week": "星期五",
+      "link": "https://stg-nba.hupu.com/games/2016-10-07"
+    },
+    "2016-10-08": {
+      "count": 2,
+      "week": "星期六",
+      "link": "https://stg-nba.hupu.com/games/2016-10-08"
+    },
+    "2016-10-09": {
+      "count": 8,
+      "week": "星期日",
+      "link": "https://stg-nba.hupu.com/games/2016-10-09"
+    }
+  },
+  "match_list": [
+    {
+      "id": "6092",
+      "season": "2016",
+      "date": "2016-10-09",
+      "match_id": "152850",
+      "time": "2016-10-09 03:30:00",
+      "usa_time": "2016-10-08 15:30:00",
+      "process": "第四节结束",
+      "status": "1",
+      "recap_title": "黄蜂手感冰冷客场不敌绿军",
+      "pics_link": "",
+      "video_link": "http://v.liangle.com/nba/v813316.html",
+      "match_type": "PRESEASON",
+      "match_time": "4,0:0.0",
+      "game_time": "2:8",
+      "stadium_name": null,
+      "attendance": "8052",
+      "lottery": null,
+      "home_id": "1",
+      "home_win": "0",
+      "home_shortcut": "Celtics",
+      "home_forum": "82",
+      "home_name": "凯尔特人",
+      "home_fullname": "波士顿凯尔特人",
+      "home_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/e59350a5bc97aa5c.png",
+      "home_score": "104",
+      "away_id": "30",
+      "away_win": "0",
+      "away_shortcut": "Hornets",
+      "away_forum": "125",
+      "away_name": "黄蜂",
+      "away_fullname": "夏洛特黄蜂",
+      "away_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/CHA2.png",
+      "away_score": "86",
+      "created_at": "2016-09-30 18:02:08",
+      "updated_at": "2016-10-09 10:29:01",
+      "match_stats": {
+        "1": {
+          "section": [
+            "18",
+            "31",
+            "33",
+            "22"
+          ],
+          "total": "104"
+        },
+        "30": {
+          "section": [
+            "18",
+            "20",
+            "26",
+            "22"
+          ],
+          "total": "86"
+        }
+      },
+      "top_player": {
+        "home": {
+          "pts": {
+            "pts": "16",
+            "player_id": "150007",
+            "player_name": "Jordan Mickey",
+            "alias": "乔丹-米基",
+            "link": "https://stg-nba.hupu.com/players/jordanmickey-150007.html"
+          },
+          "reb": {
+            "reb": "6",
+            "player_id": "150007",
+            "player_name": "Jordan Mickey",
+            "alias": "乔丹-米基",
+            "link": "https://stg-nba.hupu.com/players/jordanmickey-150007.html"
+          },
+          "asts": {
+            "asts": "5",
+            "player_id": "4925",
+            "player_name": "Marcus Smart",
+            "alias": "斯马特",
+            "link": "https://stg-nba.hupu.com/players/marcussmart-4925.html"
+          }
+        },
+        "away": {
+          "pts": {
+            "pts": "13",
+            "player_id": "150143",
+            "player_name": "Christian Wood",
+            "alias": "克里斯蒂安-伍德",
+            "link": "https://stg-nba.hupu.com/players/christianwood-150143.html"
+          },
+          "reb": {
+            "reb": "12",
+            "player_id": "150010",
+            "player_name": "Frank Kaminsky",
+            "alias": "卡明斯基",
+            "link": "https://stg-nba.hupu.com/players/frankkaminsky-150010.html"
+          },
+          "asts": {
+            "asts": "5",
+            "player_id": "1343",
+            "player_name": "Spencer Hawes",
+            "alias": "霍伊斯",
+            "link": "https://stg-nba.hupu.com/players/spencerhawes-1343.html"
+          }
+        }
+      },
+      "home_link": "https://stg-nba.hupu.com/teams/celtics",
+      "away_link": "https://stg-nba.hupu.com/teams/hornets",
+      "boxscore_link": "https://stg-nba.hupu.com/games/boxscore/152850",
+      "playbyplay_link": "https://stg-nba.hupu.com/games/playbyplay/152850",
+      "recap_link": "https://stg-nba.hupu.com/games/recap/152850"
+    },
+    {
+      "id": "6093",
+      "season": "2016",
+      "date": "2016-10-09",
+      "match_id": "152851",
+      "time": "2016-10-09 07:30:00",
+      "usa_time": "2016-10-08 19:30:00",
+      "process": "第四节结束",
+      "status": "1",
+      "recap_title": "詹姆斯15分骑士拒绝逆转",
+      "pics_link": "",
+      "video_link": "http://v.liangle.com/nba/v813328.html",
+      "match_type": "PRESEASON",
+      "match_time": "4,0:0.0",
+      "game_time": "2:20",
+      "stadium_name": "速贷中心",
+      "attendance": "19694",
+      "lottery": null,
+      "home_id": "10",
+      "home_win": "0",
+      "home_shortcut": "Cavaliers",
+      "home_forum": "85",
+      "home_name": "骑士",
+      "home_fullname": "克利夫兰骑士",
+      "home_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/CLE.png",
+      "home_score": "108",
+      "away_id": "6",
+      "away_win": "0",
+      "away_shortcut": "76ers",
+      "away_forum": "124",
+      "away_name": "76人",
+      "away_fullname": "费城76人",
+      "away_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/PHI.png",
+      "away_score": "105",
+      "created_at": "2016-09-30 18:02:08",
+      "updated_at": "2016-10-09 10:29:01",
+      "match_stats": {
+        "6": {
+          "section": [
+            "27",
+            "20",
+            "29",
+            "29"
+          ],
+          "total": "105"
+        },
+        "10": {
+          "section": [
+            "26",
+            "25",
+            "32",
+            "25"
+          ],
+          "total": "108"
+        }
+      },
+      "top_player": {
+        "home": {
+          "pts": {
+            "pts": "20",
+            "player_id": "4964",
+            "player_name": "Jordan McRae",
+            "alias": "麦克雷",
+            "link": "https://stg-nba.hupu.com/players/jordanmcrae-4964.html"
+          },
+          "reb": {
+            "reb": "6",
+            "player_id": "526",
+            "player_name": "Chris Andersen",
+            "alias": "克里斯-安德森",
+            "link": "https://stg-nba.hupu.com/players/chrisandersen-526.html"
+          },
+          "asts": {
+            "asts": "4",
+            "player_id": "526",
+            "player_name": "Chris Andersen",
+            "alias": "克里斯-安德森",
+            "link": "https://stg-nba.hupu.com/players/chrisandersen-526.html"
+          }
+        },
+        "away": {
+          "pts": {
+            "pts": "20",
+            "player_id": "4964",
+            "player_name": "Jordan McRae",
+            "alias": "麦克雷",
+            "link": "https://stg-nba.hupu.com/players/jordanmcrae-4964.html"
+          },
+          "reb": {
+            "reb": "6",
+            "player_id": "526",
+            "player_name": "Chris Andersen",
+            "alias": "克里斯-安德森",
+            "link": "https://stg-nba.hupu.com/players/chrisandersen-526.html"
+          },
+          "asts": {
+            "asts": "8",
+            "player_id": "1265",
+            "player_name": "Sergio  Rodríguez",
+            "alias": "罗德里格斯",
+            "link": "https://stg-nba.hupu.com/players/sergiorodríguez-1265.html"
+          }
+        }
+      },
+      "home_link": "https://stg-nba.hupu.com/teams/cavaliers",
+      "away_link": "https://stg-nba.hupu.com/teams/76ers",
+      "boxscore_link": "https://stg-nba.hupu.com/games/boxscore/152851",
+      "playbyplay_link": "https://stg-nba.hupu.com/games/playbyplay/152851",
+      "recap_link": "https://stg-nba.hupu.com/games/recap/152851"
+    },
+    {
+      "id": "6094",
+      "season": "2016",
+      "date": "2016-10-09",
+      "match_id": "152852",
+      "time": "2016-10-09 07:30:00",
+      "usa_time": "2016-10-08 19:30:00",
+      "process": "第四节结束",
+      "status": "3",
+      "recap_title": "林书豪轮休篮网不敌尼克斯",
+      "pics_link": "",
+      "video_link": "http://v.liangle.com/nba/v813332.html",
+      "match_type": "PRESEASON",
+      "match_time": "4,0:0.0",
+      "game_time": "2:20",
+      "stadium_name": "麦迪逊广场花园",
+      "attendance": "19601",
+      "lottery": null,
+      "home_id": "4",
+      "home_win": "0",
+      "home_shortcut": "Knicks",
+      "home_forum": "92",
+      "home_name": "尼克斯",
+      "home_fullname": "纽约尼克斯",
+      "home_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/NYK.png",
+      "home_score": "116",
+      "away_id": "182",
+      "away_win": "0",
+      "away_shortcut": "Nets",
+      "away_forum": "84",
+      "away_name": "篮网",
+      "away_fullname": "布鲁克林篮网",
+      "away_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/BKN.png",
+      "away_score": "98",
+      "created_at": "2016-09-30 18:02:08",
+      "updated_at": "2016-10-09 10:29:01",
+      "match_stats": {
+        "4": {
+          "section": [
+            "27",
+            "22",
+            "39",
+            "28"
+          ],
+          "total": "116"
+        },
+        "182": {
+          "section": [
+            "27",
+            "21",
+            "27",
+            "23"
+          ],
+          "total": "98"
+        }
+      },
+      "top_player": {
+        "home": {
+          "pts": {
+            "pts": "16",
+            "player_id": "252",
+            "player_name": "Carmelo Anthony",
+            "alias": "安东尼",
+            "link": "https://stg-nba.hupu.com/players/carmeloanthony-252.html"
+          },
+          "reb": {
+            "reb": "6",
+            "player_id": "150039",
+            "player_name": "Kristaps Porzingis",
+            "alias": "波尔津吉斯",
+            "link": "https://stg-nba.hupu.com/players/kristapsporzingis-150039.html"
+          },
+          "asts": {
+            "asts": "5",
+            "player_id": "3307",
+            "player_name": "Brandon Jennings",
+            "alias": "詹宁斯",
+            "link": "https://stg-nba.hupu.com/players/brandonjennings-3307.html"
+          }
+        },
+        "away": {
+          "pts": {
+            "pts": "15",
+            "player_id": "4786",
+            "player_name": "Anthony Bennett",
+            "alias": "本内特",
+            "link": "https://stg-nba.hupu.com/players/anthonybennett-4786.html"
+          },
+          "reb": {
+            "reb": "7",
+            "player_id": "3682",
+            "player_name": "Justin Hamilton",
+            "alias": "贾斯汀-汉密尔顿",
+            "link": "https://stg-nba.hupu.com/players/justinhamilton-3682.html"
+          },
+          "asts": {
+            "asts": "5",
+            "player_id": "3307",
+            "player_name": "Brandon Jennings",
+            "alias": "詹宁斯",
+            "link": "https://stg-nba.hupu.com/players/brandonjennings-3307.html"
+          }
+        }
+      },
+      "home_link": "https://stg-nba.hupu.com/teams/knicks",
+      "away_link": "https://stg-nba.hupu.com/teams/nets",
+      "boxscore_link": "https://stg-nba.hupu.com/games/boxscore/152852",
+      "playbyplay_link": "https://stg-nba.hupu.com/games/playbyplay/152852",
+      "recap_link": "https://stg-nba.hupu.com/games/recap/152852"
+    },
+    {
+      "id": "6095",
+      "season": "2016",
+      "date": "2016-10-09",
+      "match_id": "152853",
+      "time": "2016-10-09 08:00:00",
+      "usa_time": "2016-10-08 19:00:00",
+      "process": "第四节结束",
+      "status": "1",
+      "recap_title": "",
+      "pics_link": "",
+      "video_link": "http://v.opahnet.com/",
+      "match_type": "PRESEASON",
+      "match_time": "4,0:0.0",
+      "game_time": null,
+      "stadium_name": "联合中心",
+      "attendance": "20096",
+      "lottery": null,
+      "home_id": "9",
+      "home_win": "0",
+      "home_shortcut": "Bulls",
+      "home_forum": "68",
+      "home_name": "公牛",
+      "home_fullname": "芝加哥公牛",
+      "home_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/CHI.png",
+      "home_score": "121",
+      "away_id": "12",
+      "away_win": "0",
+      "away_shortcut": "Pacers",
+      "away_forum": "74",
+      "away_name": "步行者",
+      "away_fullname": "印第安纳步行者",
+      "away_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/IND.png",
+      "away_score": "105",
+      "created_at": "2016-09-30 18:02:08",
+      "updated_at": "2016-10-09 10:29:02",
+      "match_stats": {
+        "9": {
+          "section": [
+            "26",
+            "38",
+            "24",
+            "19"
+          ],
+          "total": "107"
+        },
+        "12": {
+          "section": [
+            "30",
+            "19",
+            "28",
+            "14"
+          ],
+          "total": "91"
+        }
+      },
+      "top_player": {
+        "home": {
+          "pts": {
+            "pts": "21",
+            "player_id": "3309",
+            "player_name": "Jeff Teague",
+            "alias": "杰夫-蒂格",
+            "link": "https://stg-nba.hupu.com/players/jeffteague-3309.html"
+          },
+          "reb": {
+            "reb": "9",
+            "player_id": "4970",
+            "player_name": "Nikola Mirotic",
+            "alias": "米罗蒂奇",
+            "link": "https://stg-nba.hupu.com/players/nikolamirotic-4970.html"
+          },
+          "asts": {
+            "asts": "6",
+            "player_id": "1111",
+            "player_name": "Monta Ellis",
+            "alias": "埃利斯",
+            "link": "https://stg-nba.hupu.com/players/montaellis-1111.html"
+          }
+        },
+        "away": {
+          "pts": {
+            "pts": "21",
+            "player_id": "3309",
+            "player_name": "Jeff Teague",
+            "alias": "杰夫-蒂格",
+            "link": "https://stg-nba.hupu.com/players/jeffteague-3309.html"
+          },
+          "reb": {
+            "reb": "9",
+            "player_id": "4970",
+            "player_name": "Nikola Mirotic",
+            "alias": "米罗蒂奇",
+            "link": "https://stg-nba.hupu.com/players/nikolamirotic-4970.html"
+          },
+          "asts": {
+            "asts": "6",
+            "player_id": "1111",
+            "player_name": "Monta Ellis",
+            "alias": "埃利斯",
+            "link": "https://stg-nba.hupu.com/players/montaellis-1111.html"
+          }
+        }
+      },
+      "home_link": "https://stg-nba.hupu.com/teams/bulls",
+      "away_link": "https://stg-nba.hupu.com/teams/pacers",
+      "boxscore_link": "https://stg-nba.hupu.com/games/boxscore/152853",
+      "playbyplay_link": "https://stg-nba.hupu.com/games/playbyplay/152853",
+      "recap_link": "https://stg-nba.hupu.com/games/recap/152853"
+    },
+    {
+      "id": "6096",
+      "season": "2016",
+      "date": "2016-10-09",
+      "match_id": "152854",
+      "time": "2016-10-09 08:30:00",
+      "usa_time": "2016-10-08 19:30:00",
+      "process": "第三节剩2:57",
+      "status": "2",
+      "recap_title": "",
+      "pics_link": "",
+      "video_link": "http://v.opahnet.com/",
+      "match_type": "PRESEASON",
+      "match_time": "3,2:57.0",
+      "game_time": null,
+      "stadium_name": null,
+      "attendance": "0",
+      "lottery": null,
+      "home_id": "2",
+      "home_win": "0",
+      "home_shortcut": "Heat",
+      "home_forum": "77",
+      "home_name": "热火",
+      "home_fullname": "迈阿密热火",
+      "home_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/MIA.png",
+      "home_score": "77",
+      "away_id": "20",
+      "away_win": "0",
+      "away_shortcut": "Timberwolves",
+      "away_forum": "76",
+      "away_name": "森林狼",
+      "away_fullname": "明尼苏达森林狼",
+      "away_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/MIN.png",
+      "away_score": "79",
+      "created_at": "2016-09-30 18:02:08",
+      "updated_at": "2016-10-09 10:29:02",
+      "match_stats": {
+        "2": {
+          "section": [
+            "23",
+            "40",
+            "6",
+            null
+          ],
+          "total": "66"
+        },
+        "20": {
+          "section": [
+            "23",
+            "24",
+            "2",
+            null
+          ],
+          "total": "47"
+        }
+      },
+      "top_player": {
+        "home": {
+          "pts": {
+            "pts": "15",
+            "player_id": "3555",
+            "player_name": "Derrick Williams",
+            "alias": "德里克-威廉姆斯",
+            "link": "https://stg-nba.hupu.com/players/derrickwilliams-3555.html"
+          },
+          "reb": {
+            "reb": "12",
+            "player_id": "5010",
+            "player_name": "Hassan Whiteside",
+            "alias": "哈桑-怀特塞德",
+            "link": "https://stg-nba.hupu.com/players/hassanwhiteside-5010.html"
+          },
+          "asts": {
+            "asts": "5",
+            "player_id": "3074",
+            "player_name": "Goran Dragic",
+            "alias": "德拉季奇",
+            "link": "https://stg-nba.hupu.com/players/gorandragic-3074.html"
+          }
+        },
+        "away": {
+          "pts": {
+            "pts": "20",
+            "player_id": "150037",
+            "player_name": "Karl-Anthony Towns",
+            "alias": "唐斯",
+            "link": "https://stg-nba.hupu.com/players/karlanthonytowns-150037.html"
+          },
+          "reb": {
+            "reb": "10",
+            "player_id": "150037",
+            "player_name": "Karl-Anthony Towns",
+            "alias": "唐斯",
+            "link": "https://stg-nba.hupu.com/players/karlanthonytowns-150037.html"
+          },
+          "asts": {
+            "asts": "4",
+            "player_id": "3345",
+            "player_name": "Ricky Rubio",
+            "alias": "卢比奥",
+            "link": "https://stg-nba.hupu.com/players/rickyrubio-3345.html"
+          }
+        }
+      },
+      "home_link": "https://stg-nba.hupu.com/teams/heat",
+      "away_link": "https://stg-nba.hupu.com/teams/timberwolves",
+      "boxscore_link": "https://stg-nba.hupu.com/games/boxscore/152854",
+      "playbyplay_link": "https://stg-nba.hupu.com/games/playbyplay/152854",
+      "recap_link": "https://stg-nba.hupu.com/games/recap/152854"
+    },
+    {
+      "id": "6097",
+      "season": "2016",
+      "date": "2016-10-09",
+      "match_id": "152855",
+      "time": "2016-10-09 08:30:00",
+      "usa_time": "2016-10-08 19:30:00",
+      "process": "第四节剩9:13",
+      "status": "2",
+      "recap_title": "",
+      "pics_link": "",
+      "video_link": "http://v.opahnet.com/",
+      "match_type": "PRESEASON",
+      "match_time": "4,9:13.0",
+      "game_time": null,
+      "stadium_name": null,
+      "attendance": "0",
+      "lottery": null,
+      "home_id": "13",
+      "home_win": "0",
+      "home_shortcut": "Bucks",
+      "home_forum": "110",
+      "home_name": "雄鹿",
+      "home_fullname": "密尔沃基雄鹿",
+      "home_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/MIL.png",
+      "home_score": "73",
+      "away_id": "16",
+      "away_win": "0",
+      "away_shortcut": "Mavericks",
+      "away_forum": "80",
+      "away_name": "小牛",
+      "away_fullname": "达拉斯小牛",
+      "away_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/DAL.png",
+      "away_score": "61",
+      "created_at": "2016-09-30 18:02:09",
+      "updated_at": "2016-10-09 10:29:02",
+      "match_stats": {
+        "13": {
+          "section": [
+            "20",
+            "22",
+            "16",
+            null
+          ],
+          "total": "58"
+        },
+        "16": {
+          "section": [
+            "19",
+            "13",
+            "16",
+            null
+          ],
+          "total": "48"
+        }
+      },
+      "top_player": {
+        "home": {
+          "pts": {
+            "pts": "21",
+            "player_id": "4914",
+            "player_name": "Jabari Parker",
+            "alias": "贾巴里-帕克",
+            "link": "https://stg-nba.hupu.com/players/jabariparker-4914.html"
+          },
+          "reb": {
+            "reb": "9",
+            "player_id": "3003",
+            "player_name": "Michael Beasley",
+            "alias": "比斯利",
+            "link": "https://stg-nba.hupu.com/players/michaelbeasley-3003.html"
+          },
+          "asts": {
+            "asts": "5",
+            "player_id": "4789",
+            "player_name": "Matthew Dellavedova",
+            "alias": "戴拉维多瓦",
+            "link": "https://stg-nba.hupu.com/players/matthewdellavedova-4789.html"
+          }
+        },
+        "away": {
+          "pts": {
+            "pts": "15",
+            "player_id": "4967",
+            "player_name": "Dwight Powell",
+            "alias": "德怀特-鲍威尔",
+            "link": "https://stg-nba.hupu.com/players/dwightpowell-4967.html"
+          },
+          "reb": {
+            "reb": "7",
+            "player_id": "4967",
+            "player_name": "Dwight Powell",
+            "alias": "德怀特-鲍威尔",
+            "link": "https://stg-nba.hupu.com/players/dwightpowell-4967.html"
+          },
+          "asts": {
+            "asts": "2",
+            "player_id": "1050",
+            "player_name": "Deron Williams",
+            "alias": "德隆",
+            "link": "https://stg-nba.hupu.com/players/deronwilliams-1050.html"
+          }
+        }
+      },
+      "home_link": "https://stg-nba.hupu.com/teams/bucks",
+      "away_link": "https://stg-nba.hupu.com/teams/mavericks",
+      "boxscore_link": "https://stg-nba.hupu.com/games/boxscore/152855",
+      "playbyplay_link": "https://stg-nba.hupu.com/games/playbyplay/152855",
+      "recap_link": "https://stg-nba.hupu.com/games/recap/152855"
+    },
+    {
+      "id": "6098",
+      "season": "2016",
+      "date": "2016-10-09",
+      "match_id": "152856",
+      "time": "2016-10-09 08:30:00",
+      "usa_time": "2016-10-08 19:30:00",
+      "process": "第四节剩8:33",
+      "status": "2",
+      "recap_title": "",
+      "pics_link": "",
+      "video_link": "http://v.opahnet.com/",
+      "match_type": "PRESEASON",
+      "match_time": "4,8:33.0",
+      "game_time": null,
+      "stadium_name": "AT&T中心",
+      "attendance": "18555",
+      "lottery": null,
+      "home_id": "21",
+      "home_win": "0",
+      "home_shortcut": "Spurs",
+      "home_forum": "105",
+      "home_name": "马刺",
+      "home_fullname": "圣安东尼奥马刺",
+      "home_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/SAS.png",
+      "home_score": "84",
+      "away_id": "8",
+      "away_win": "0",
+      "away_shortcut": "Hawks",
+      "away_forum": "126",
+      "away_name": "老鹰",
+      "away_fullname": "亚特兰大老鹰",
+      "away_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/ATL.png",
+      "away_score": "80",
+      "created_at": "2016-09-30 18:02:09",
+      "updated_at": "2016-10-09 10:29:02",
+      "match_stats": {
+        "8": {
+          "section": [
+            "21",
+            "24",
+            "10",
+            null
+          ],
+          "total": "55"
+        },
+        "21": {
+          "section": [
+            "26",
+            "26",
+            "16",
+            null
+          ],
+          "total": "68"
+        }
+      },
+      "top_player": {
+        "home": {
+          "pts": {
+            "pts": "13",
+            "player_id": "150353",
+            "player_name": "Malcolm Delaney",
+            "alias": "德莱尼",
+            "link": "https://stg-nba.hupu.com/players/malcolmdelaney-150353.html"
+          },
+          "reb": {
+            "reb": "6",
+            "player_id": "4922",
+            "player_name": "Walter Tavares",
+            "alias": "塔瓦雷斯",
+            "link": "https://stg-nba.hupu.com/players/waltertavares-4922.html"
+          },
+          "asts": {
+            "asts": "7",
+            "player_id": "1221",
+            "player_name": "Will Bynum",
+            "alias": "威尔-拜纳姆",
+            "link": "https://stg-nba.hupu.com/players/willbynum-1221.html"
+          }
+        },
+        "away": {
+          "pts": {
+            "pts": "13",
+            "player_id": "150353",
+            "player_name": "Malcolm Delaney",
+            "alias": "德莱尼",
+            "link": "https://stg-nba.hupu.com/players/malcolmdelaney-150353.html"
+          },
+          "reb": {
+            "reb": "6",
+            "player_id": "4922",
+            "player_name": "Walter Tavares",
+            "alias": "塔瓦雷斯",
+            "link": "https://stg-nba.hupu.com/players/waltertavares-4922.html"
+          },
+          "asts": {
+            "asts": "7",
+            "player_id": "1221",
+            "player_name": "Will Bynum",
+            "alias": "威尔-拜纳姆",
+            "link": "https://stg-nba.hupu.com/players/willbynum-1221.html"
+          }
+        }
+      },
+      "home_link": "https://stg-nba.hupu.com/teams/spurs",
+      "away_link": "https://stg-nba.hupu.com/teams/hawks",
+      "boxscore_link": "https://stg-nba.hupu.com/games/boxscore/152856",
+      "playbyplay_link": "https://stg-nba.hupu.com/games/playbyplay/152856",
+      "recap_link": "https://stg-nba.hupu.com/games/recap/152856"
+    },
+    {
+      "id": "6099",
+      "season": "2016",
+      "date": "2016-10-09",
+      "match_id": "152857",
+      "time": "2016-10-09 19:30:00",
+      "usa_time": "2016-10-09 19:30:00",
+      "process": "",
+      "status": "3",
+      "recap_title": "",
+      "pics_link": "",
+      "video_link": "http://v.opahnet.com/",
+      "match_type": "PRESEASON",
+      "match_time": null,
+      "game_time": null,
+      "stadium_name": null,
+      "attendance": "0",
+      "lottery": null,
+      "home_id": "18",
+      "home_win": "0",
+      "home_shortcut": "Rockets",
+      "home_forum": "44",
+      "home_name": "火箭",
+      "home_fullname": "休斯顿火箭",
+      "home_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/HOU.png",
+      "home_score": "0",
+      "away_id": "14",
+      "away_win": "0",
+      "away_shortcut": "Pelicans",
+      "away_forum": "89",
+      "away_name": "鹈鹕",
+      "away_fullname": "新奥尔良鹈鹕",
+      "away_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/NOH.png",
+      "away_score": "0",
+      "created_at": "2016-09-30 18:02:09",
+      "updated_at": "2016-10-09 10:29:02",
+      "match_stats": {
+        "14": {
+          "section": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "total": 0
+        },
+        "18": {
+          "section": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "total": 0
+        }
+      },
+      "top_player": {
+        "home": null,
+        "away": null
+      },
+      "home_link": "https://stg-nba.hupu.com/teams/rockets",
+      "away_link": "https://stg-nba.hupu.com/teams/pelicans",
+      "boxscore_link": "https://stg-nba.hupu.com/games/boxscore/152857",
+      "playbyplay_link": "https://stg-nba.hupu.com/games/playbyplay/152857",
+      "recap_link": "https://stg-nba.hupu.com/games/recap/152857"
+    }
+  ],
+  "news": [
+    {
+      "title": "威金斯：如今是时候隔扣恩比德了",
+      "url": "http://voice.hupu.com/nba/2077342.html"
+    },
+    {
+      "title": "林书豪：打挡拆一直是我的一个优势",
+      "url": "http://voice.hupu.com/nba/2077302.html"
+    },
+    {
+      "title": "库里花577万美元在旧金山再购豪宅",
+      "url": "http://voice.hupu.com/nba/2077338.html"
+    },
+    {
+      "title": "霍华德：杜兰特在勇士看起来非常开心",
+      "url": "http://voice.hupu.com/nba/2077332.html"
+    },
+    {
+      "title": "戈贝尔：我知道自己是个出色的投手",
+      "url": "http://voice.hupu.com/nba/2077396.html"
+    },
+    {
+      "title": "比斯利：5年来首次得到保障合同",
+      "url": "http://voice.hupu.com/nba/2077487.html"
+    },
+    {
+      "title": "为什么只有76人签下了球衣广告协议？",
+      "url": "http://voice.hupu.com/nba/2077492.html"
+    },
+    {
+      "title": "基德否认交易流言：我们对迈卡威感到满意",
+      "url": "http://voice.hupu.com/nba/2077321.html"
+    },
+    {
+      "title": "霸气！易建联上演精彩双手隔扣！",
+      "url": "http://voice.hupu.com/nba/2077350.html"
+    },
+    {
+      "title": "哈登：我能重回竞争MVP的行列",
+      "url": "http://voice.hupu.com/nba/2077556.html"
+    }
+  ],
+  "mvp": [
+    {
+      "player_id": 3309,
+      "player_name": "蒂格",
+      "link": "http://g.hupu.com/nba/players/jeffteague-3309.html",
+      "pts": 17,
+      "reb": 3,
+      "asts": 3,
+      "stl": 1,
+      "tpm": 0,
+      "blk": 0,
+      "value": 17,
+      "img": "http://gdc.hupucdn.com/gdc/nba/players/uploads/gamespace/players/640b8f87c9a2a4b6c9892f3fb8194c9a.jpg",
+      "team": {
+        "id": 12,
+        "name": "步行者",
+        "link": "http://g.hupu.com/nba/teams/pacers"
+      }
+    },
+    {
+      "player_id": 50,
+      "player_name": "韦德",
+      "link": "http://g.hupu.com/nba/players/dwyanewade-50.html",
+      "pts": 17,
+      "reb": 1,
+      "asts": 5,
+      "stl": 0,
+      "tpm": 2,
+      "blk": 0,
+      "value": 17,
+      "img": "http://gdc.hupucdn.com/gdc/nba/players/uploads/gamespace/players/9a5729b55166b9d841ddb942a82e65e6.jpg",
+      "team": {
+        "id": 9,
+        "name": "公牛",
+        "link": "http://g.hupu.com/nba/teams/bulls"
+      }
+    },
+    {
+      "player_id": 150007,
+      "player_name": "米基",
+      "link": "http://g.hupu.com/nba/players/jordanmickey-150007.html",
+      "pts": 16,
+      "reb": 6,
+      "asts": 2,
+      "stl": 1,
+      "tpm": 0,
+      "blk": 0,
+      "value": 16,
+      "img": "http://gdc.hupucdn.com/gdc/nba/players/uploads/gamespace/players/aa26fc1246827b1203f98941951354dd.jpg",
+      "team": {
+        "id": 1,
+        "name": "凯尔特人",
+        "link": "http://g.hupu.com/nba/teams/celtics"
+      }
+    },
+    {
+      "player_id": 252,
+      "player_name": "安东尼",
+      "link": "http://g.hupu.com/nba/players/carmeloanthony-252.html",
+      "pts": 16,
+      "reb": 4,
+      "asts": 3,
+      "stl": 1,
+      "tpm": 2,
+      "blk": 1,
+      "value": 16,
+      "img": "http://gdc.hupucdn.com/gdc/nba/players/uploads/gamespace/players/b6f68dd232c3c67a0495a16cb0b70081.jpg",
+      "team": {
+        "id": 4,
+        "name": "尼克斯",
+        "link": "http://g.hupu.com/nba/teams/knicks"
+      }
+    },
+    {
+      "player_id": 3554,
+      "player_name": "欧文",
+      "link": "http://g.hupu.com/nba/players/kyrieirving-3554.html",
+      "pts": 15,
+      "reb": 2,
+      "asts": 3,
+      "stl": 1,
+      "tpm": 0,
+      "blk": 1,
+      "value": 15,
+      "img": "http://gdc.hupucdn.com/gdc/nba/players/uploads/gamespace/players/61e26ddc1959b2bf400ed36a468769e0.jpg",
+      "team": {
+        "id": 10,
+        "name": "骑士",
+        "link": "http://g.hupu.com/nba/teams/cavaliers"
+      }
+    }
+  ],
+  "date": "2016-10-09"
+}

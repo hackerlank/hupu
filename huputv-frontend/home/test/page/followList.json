@@ -1,0 +1,379 @@
+{
+	"login_url": "http://passport.hupu.com/pc/login?project=www&from=pc",
+	"open_soon": [{
+		"broadcast": "小王子",
+		"title": "所有的大人都曾经是小孩, 虽然只有少数的人...",
+		"follow": "10000",
+		"online": "1233",
+		"id": 1,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"小王子",
+			"小孩"
+		],
+		"status": "1",
+		"status_text": "直播中",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}, {
+		"broadcast": "荒唐故事",
+		"title": "至于生活, 长于现实的荒蛮故事.",
+		"follow": "43",
+		"online": "1233",
+		"id": 2,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"故事",
+			"生活",
+			"荒诞"
+		],
+		"status": "2",
+		"status_text": "已关闭",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}, {
+		"broadcast": "疯狂之路",
+		"title": "我就是那个以最璀璨夺目之姿, 直奔英灵殿的人.",
+		"follow": "433",
+		"online": "1233",
+		"id": 3,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"小王子",
+			"小孩"
+		],
+		"status": "1",
+		"status_text": "直播中",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}, {
+		"broadcast": "火星救援",
+		"title": "每个人类成员都有一种本能: 相助彼此走出困境.",
+		"follow": "4337",
+		"online": "1233",
+		"id": 4,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"火星",
+			"人类"
+		],
+		"status": "1",
+		"status_text": "直播中",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}, {
+		"broadcast": "心迷宫",
+		"title": "在血花中微笑逝去的迷宫之魁, 安息吧, 迷宫...",
+		"follow": "10000",
+		"online": "1233",
+		"id": 5,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"火星",
+			"人类"
+		],
+		"status": "2",
+		"status_text": "已关闭",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}, {
+		"broadcast": "小王子",
+		"title": "所有的大人都曾经是小孩, 虽然只有少数的人...",
+		"follow": "10000",
+		"online": "1233",
+		"id": 6,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"故事",
+			"生活",
+			"荒诞"
+		],
+		"status": "2",
+		"status_text": "已关闭",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}, {
+		"broadcast": "荒唐故事",
+		"title": "至于生活, 长于现实的荒蛮故事.",
+		"follow": "43",
+		"online": "1233",
+		"id": 7,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"火星",
+			"人类"
+		],
+		"status": "1",
+		"status_text": "直播中",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}, {
+		"broadcast": "疯狂之路",
+		"title": "我就是那个以最璀璨夺目之姿, 直奔英灵殿的人.",
+		"follow": "433",
+		"online": "1233",
+		"id": 8,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"火星",
+			"人类"
+		],
+		"status": "3",
+		"status_text": "休息中",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}, {
+		"broadcast": "火星救援",
+		"title": "每个人类成员都有一种本能: 相助彼此走出困境.",
+		"follow": "4337",
+		"online": "1233",
+		"id": 9,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"故事",
+			"生活",
+			"荒诞"
+		],
+		"status": "2",
+		"status_text": "已关闭",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}, {
+		"broadcast": "心迷宫",
+		"title": "在血花中微笑逝去的迷宫之魁, 安息吧, 迷宫...",
+		"follow": "10000",
+		"online": "1233",
+		"id": 10,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"火星",
+			"人类"
+		],
+		"status": "3",
+		"status_text": "休息中",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}, {
+		"broadcast": "心迷宫",
+		"title": "在血花中微笑逝去的迷宫之魁, 安息吧, 迷宫...",
+		"follow": "10000",
+		"online": "1233",
+		"id": 11,
+		"cover": "http://img2.hupucdn.com/photo/d3743516_450x450_2016-01-20.jpg",
+		"rtmp": "rtmp://hsn.mpl.miisolutions.net/hsn-live01/mp4:420p500kB31",
+		"his": "http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8",
+		"tag": [
+			"故事",
+			"生活",
+			"荒诞"
+		],
+		"status": "3",
+		"status_text": "休息中",
+		"sub_server": [
+			"192.168.9.28:3080",
+			"192.168.9.28:3080",
+			"192.168.9.28:3080"
+		]
+	}],
+	"show_follow": true,
+	"login": null,
+	"user": {
+	    "puid": 26012550,
+	    "username": "hupu_7c1abd76c7553b23",
+	    "nickname": "小草儿",
+	    "last_time": "1453451862",
+	    "mobile": "0",
+	    "email": "",
+	    "qqid": "0",
+	    "create_time": "1450850581",
+	    "status": "0",
+	    "uid": "19044057",
+	    "avator": {
+		    "header_small": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+		    "header_big": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+		    "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png"
+		}
+  	},
+	"category": [{
+		"id": "",
+		"name": "全部直播",
+		"sort": 0,
+		"show": true
+	}, {
+		"id": 1,
+		"name": "NBA 2K",
+		"sort": 1,
+		"show": true
+	}, {
+		"id": 2,
+		"name": "校园体育",
+		"sort": 2,
+		"show": true
+	}, {
+		"id": 3,
+		"name": "竞技场",
+		"sort": 3,
+		"show": true
+	}, {
+		"id": 4,
+		"name": "步行街",
+		"sort": 4,
+		"show": true
+	}, {
+		"id": 5,
+		"name": "游戏厅",
+		"sort": 5,
+		"show": true
+	}, {
+		"id": 6,
+		"name": "我是测试",
+		"sort": 0,
+		"show": false
+	}],
+	"keywords": "体育直播,NBA2K游戏直播,校园体育赛事直播,户外直播,电子竞技直播,虎扑TV ",
+	"description": "虎扑TV - 体育视频直播平台，提供高清、流畅的体育视频直播服务，包含丰富的体育赛事、体育活动、校园体育、NBA2K游戏、电子竞技、户外直播等各类体育视频直播内容，精彩体育视频直播尽在虎扑TV。",
+	"test": "710998fd1b7c0235170265650770a4b1",
+	"followList": {
+		"count": "4",
+		"pages": 1,
+		"list": [{
+			"cover": "http://kanqiu.hupucdn.com/kanqiu_10226_20150921155342.jpeg!cover-534x300.jpeg",
+			"uid": "481091",
+			"id": "10226",
+			"lid": "1",
+			"gid": "200004915",
+			"anchor_nickname": "就不爱休息",
+			"name": "NBA2K15 湖人王朝",
+			"room_type": "3",
+			"is_live": "0",
+			"sort": "0",
+			"online_plus": "0",
+			"update_time": "1442976377",
+			"avator": {
+				"header_small": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+				"header_big": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+				"header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png"
+			},
+			"count": "1",
+			"following": "10",
+			"tips": "",
+			"is_follow": true
+		}, {
+			"cover": "http://kanqiu.hupucdn.com/kanqiu_10231_20151012131424.jpeg!cover-534x300.jpeg",
+			"uid": "19751718",
+			"id": "10231",
+			"lid": "7",
+			"gid": "200005182",
+			"anchor_nickname": "蒋格格",
+			"name": "蒋格格的直播间~",
+			"room_type": "31",
+			"is_live": "0",
+			"sort": "0",
+			"online_plus": "0",
+			"update_time": "1446110647",
+			"avator": {
+				"header_small": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+				"header_big": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+				"header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png"
+			},
+			"count": "1",
+			"following": "6",
+			"tips": "",
+			"is_follow": true
+		}, {
+			"cover": "http://kanqiu.hupucdn.com/kanqiu_10239_20151015152457.jpeg!cover-534x300.jpeg",
+			"uid": "19628882",
+			"id": "10239",
+			"lid": "1",
+			"gid": "150877",
+			"anchor_nickname": "苏苏苏苏",
+			"name": "苏苏苏苏的直播间",
+			"room_type": "26",
+			"is_live": "0",
+			"sort": "8",
+			"online_plus": "0",
+			"update_time": "1446108299",
+			"avator": {
+				"header_small": "http://i3.hoopchina.com.cn/user/882/19628882/19628882_small_1.jpg",
+				"header_big": "http://i3.hoopchina.com.cn/user/882/19628882/19628882_big_1.jpg",
+				"header": "http://i3.hoopchina.com.cn/user/882/19628882/19628882.jpg"
+			},
+			"count": "1",
+			"following": "9",
+			"tips": "",
+			"is_follow": true
+		}, {
+			"cover": "http://b3.hoopchina.com.cn/wl/nativeapp/games/zhubo/images/frontCover_img.jpg",
+			"uid": "25373167",
+			"id": "10245",
+			"lid": "11",
+			"gid": "200005336",
+			"anchor_nickname": "老汉",
+			"name": "直播间名称?",
+			"room_type": "27",
+			"is_live": "0",
+			"sort": "0",
+			"online_plus": "0",
+			"update_time": "1445753037",
+			"avator": {
+				"header_small": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+				"header_big": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+				"header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png"
+			},
+			"count": "1",
+			"following": "4",
+			"tips": "",
+			"is_follow": true
+		}]
+	}
+}

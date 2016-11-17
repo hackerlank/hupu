@@ -1,0 +1,483 @@
+{
+  "pageheader": {
+    "title": "手机虎扑网"
+  },
+  "bottomtitle": "虎扑体育 - 你的体育全世界！",
+  "logo": "logo_new.png",
+  "site": "sports",
+  "headlink": "<link rel=\"apple-touch-icon\" href=\"//b1.hoopchina.com.cn/common/apple-touch-icon.png\"/>",
+  "id4dace": "1000",
+  "mark4dace": "page_index",
+  "keywords": "虎扑体育,虎扑,体育,运动",
+  "description": "虎扑体育是国内最大的垂直体育网站，拥有包括NBA、篮球、足球、网球、跑步、赛车等体育运动频道，提供最新、独家的体育赛事资讯及周边信息，同时拥有国内最大的体育论坛。",
+  "pageBottomSpread": [
+    {
+      "name": "NBA",
+      "url": "/bbs/1048"
+    },
+    {
+      "name": "足球",
+      "url": "/bbs/1389"
+    },
+    {
+      "name": "步行街",
+      "url": "/bbs/34"
+    },
+    {
+      "name": "情感",
+      "url": "/bbs/160"
+    },
+    {
+      "name": "影视",
+      "url": "/bbs/120"
+    }
+  ],
+  "baseurl": "//test-m.hupu.com",
+  "test": "1",
+  "_islogin": "1",
+  "loginurl": "https://passport.hupu.com/m/2?jumpurl=http%3A%2F%2Ftest-m.hupu.com%2F%3Ftest%3D1&from=m&project=hupu",
+  "uid": "26366901",
+  "username": "念12",
+  "showAdvertise": 0,
+  "pclink": "http://www.hupu.com?test=1",
+  "hottitlelen": "16",
+  "columncontentlen": "46",
+  "footerword": {
+    "word": "我有远大的雄心，我想享受它并后为之奋斗。",
+    "person": "罗纳尔多"
+  },
+  "videoImgUrlPrefix": "https://bbsstaticoss.hoopchina.com.cn/aHR0cDovL2ltZzA0LnN0b3JlLnNvZ291LmNvbS9uZXQvYS82Ny9saW5rP2FwcGlkPTY3JnVybD0",
+  "topNav": [
+    {
+      "title": "NBA",
+      "router": "nbaindex",
+      "url": "//test-m.hupu.com/nba"
+    },
+    {
+      "title": "CBA",
+      "router": "cbanewsindex",
+      "url": "//test-m.hupu.com/cba/news/"
+    },
+    {
+      "title": "足球",
+      "router": "soccerindex",
+      "url": "//test-m.hupu.com/soccer"
+    },
+    {
+      "title": "论坛",
+      "router": "bbsindex",
+      "url": "//test-m.hupu.com/bbs"
+    },
+    {
+      "title": "识货",
+      "url": "http://m.shihuo.cn/",
+      "router": "shihuoindex",
+      "target": "_blank"
+    },
+    {
+      "title": "游戏",
+      "url": "http://youxi.hupu.com/mzhan",
+      "router": "youxiindex",
+      "target": "_blank"
+    }
+  ],
+  "custom": [],
+  "gameList": [
+    {
+      "leaguename": "NBA",
+      "leaguetype": 0,
+      "hometeam": "骑士",
+      "awayteam": "猛龙",
+      "score": "115 - 119",
+      "gameurl": "//test-m.hupu.com/nba/game/playbyplay_152476.html",
+      "status": "1",
+      "progress": "第4节",
+      "gamestatus": "直播中"
+    },
+    {
+      "leaguename": "NBA",
+      "leaguetype": 0,
+      "hometeam": "热火",
+      "awayteam": "老鹰",
+      "score": "72 - 67",
+      "gameurl": "//test-m.hupu.com/nba/game/playbyplay_152477.html",
+      "status": "1",
+      "progress": "第3节",
+      "gamestatus": "结束"
+    },
+    {
+      "leaguename": "NBA",
+      "leaguetype": 0,
+      "hometeam": "森林狼",
+      "awayteam": "黄蜂",
+      "score": "50 - 58",
+      "gameurl": "//test-m.hupu.com/nba/game/playbyplay_152478.html",
+      "status": "1",
+      "progress": "第3节",
+      "gamestatus": "直播中"
+    }
+  ],
+  "homeData": {
+    "nba": [
+      {
+        "title": "修改修改修改66666666",
+        "url": "//test-m.hupu.com/bbs/13068109.html",
+        "type": "bbs",
+        "replies": "58",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "修改修改修改66666666"
+      },
+      {
+        "title": "修改修改修改66666666",
+        "url": "//test-m.hupu.com/bbs/13068109.html",
+        "type": "bbs",
+        "replies": "58",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "修改修改修改66666666"
+      },
+      {
+        "title": "修改修改修改66666666",
+        "url": "//test-m.hupu.com/bbs/13068109.html",
+        "type": "bbs",
+        "replies": "58",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "修改修改修改66666666"
+      },
+      {
+        "title": "CBA总决赛首选的App暗红色",
+        "url": "//test-m.hupu.com/bbs/13068172.html",
+        "type": "bbs",
+        "replies": "0",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "初级阶段妇女活动家的减肥减肥"
+      },
+      {
+        "title": "CBA总决赛首选的App橘黄色",
+        "url": "//test-m.hupu.com/bbs/13068172.html",
+        "type": "bbs",
+        "replies": "0",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "初级阶段妇女活动家的减肥减肥"
+      },
+      {
+        "title": "CBA总决赛首选的App3",
+        "url": "//test-m.hupu.com/bbs/13068172.html",
+        "type": "bbs",
+        "replies": "0",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "初级阶段妇女活动家的减肥减肥"
+      }
+    ],
+    "soccer": [
+      {
+        "title": "还缺射门靴！国足不幸创374分钟不进球纪录",
+        "url": "//test-m.hupu.com/soccer/news/csl/2089551.html",
+        "type": "news",
+        "img": "https://c1.hoopchina.com.cn/uploads/star/event/images/161115/fa5c6d2934dd2328fe980c6823fff6db10e5b4aa.jpg@.webp",
+        "media": "虎扑体育",
+        "replies": "11"
+      },
+      {
+        "title": "就差一点！国足再度与300万赢球奖失之交臂",
+        "url": "//test-m.hupu.com/soccer/news/csl/2089550.html",
+        "type": "news",
+        "img": "https://c2.hoopchina.com.cn/uploads/star/event/images/161115/1c1273fb971579928322f8480b7874933b250ca6.jpg@.webp",
+        "media": "虎扑体育",
+        "replies": "12"
+      },
+      {
+        "title": "12强赛首循环战罢，国足未战胜小组任何对手",
+        "url": "//test-m.hupu.com/soccer/news/csl/2089536.html",
+        "type": "news",
+        "img": "https://c2.hoopchina.com.cn/uploads/star/event/images/161115/61d325c490a4ea3dd21f4b337f57736bd71b06fa.jpg@.webp",
+        "media": "虎扑体育",
+        "replies": "6"
+      },
+      {
+        "title": "热议国足：多少次仰天长啸，离胜利就差一点！",
+        "url": "//test-m.hupu.com/soccer/news/csl/2089547.html",
+        "type": "news",
+        "img": "https://c1.hoopchina.com.cn/uploads/star/event/images/161115/730f6353148203e256d3a7ef0a2ccf7d0d755f7d.png@.webp",
+        "media": "虎扑体育",
+        "replies": "10"
+      },
+      {
+        "title": "GIF：瓦尔迪破14场球荒，做创意庆祝动作",
+        "url": "//test-m.hupu.com/soccer/news/2089629.html",
+        "type": "news",
+        "img": "https://c1.hoopchina.com.cn/uploads/star/event/images/161116/3ac6d4b2ae53d6fbeb253c05afc3d7d500313c5c.jpg@.webp",
+        "media": "虎扑足球",
+        "replies": "6"
+      },
+      {
+        "title": "10:15直播世预赛：秘鲁vs巴西",
+        "url": "//test-m.hupu.com/bbs/17771407.html",
+        "type": "bbs",
+        "replies": 0,
+        "fid": "34",
+        "boardname": "",
+        "boardurl": ""
+      }
+    ],
+    "f1": [
+      {
+        "title": "沃尔夫：我最大的噩梦是机械故障",
+        "type": "news",
+        "url": "//test-m.hupu.com/f1/news/2089338.html",
+        "media": "GrandPrix247",
+        "img": "https://bbsstaticoss.hoopchina.com.cn/aHR0cDovL2ltZzA0LnN0b3JlLnNvZ291LmNvbS9uZXQvYS80Ni9saW5rP2FwcGlkPTQ2JnVybD1odHRwJTNBJTJGJTJGd3d3LmdyYW5kcHJpeDI0Ny5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMTYlMkYxMSUyRlRvdG9Xb2xmZkYxVGVzdGluZ0JhcmNlbG9uYURheU9uZWVJSFBBQUgwNEYweC5qcGc",
+        "date": "2016-11-15 10:11:55",
+        "reply_count": "1",
+        "light_count": "0",
+        "replies": "1"
+      },
+      {
+        "title": "古铁雷斯解释和车队领队的冲突",
+        "type": "news",
+        "url": "//test-m.hupu.com/f1/news/2089446.html",
+        "media": "GrandPrix247",
+        "img": "https://bbsstaticoss.hoopchina.com.cn/aHR0cDovL2ltZzA0LnN0b3JlLnNvZ291LmNvbS9uZXQvYS80Ni9saW5rP2FwcGlkPTQ2JnVybD1odHRwJTNBJTJGJTJGd3d3LmdyYW5kcHJpeDI0Ny5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMTYlMkYxMSUyRnN0ZWluZXItZ3V0aWVycmV6LTIwMTYtSGFhcy5qcGc",
+        "date": "2016-11-15 17:05:36",
+        "reply_count": "0",
+        "light_count": "0",
+        "replies": "0"
+      }
+    ],
+    "tennis": [
+      {
+        "title": "锦织圭力克瓦林卡取得总决赛开门红",
+        "type": "news",
+        "url": "//test-m.hupu.com/tennis/news/2089342.html",
+        "media": "ATP",
+        "img": "https://c2.hoopchina.com.cn/uploads/star/event/images/161115/84fa7f247ff1a361e7b0e13c10bc9c4ebe40da2c.jpg@.webp",
+        "date": "2016-11-15 10:23:09",
+        "reply_count": "0",
+        "light_count": "0",
+        "replies": "0"
+      },
+      {
+        "title": "穆雷轻取西里奇 迎来登顶NO.1后首胜",
+        "type": "news",
+        "url": "//test-m.hupu.com/tennis/news/2089339.html",
+        "media": "ATP",
+        "img": "https://c1.hoopchina.com.cn/uploads/star/event/images/161115/adf5d478414188efff369da52ccd234f786d7447.jpg@.webp",
+        "date": "2016-11-15 10:20:40",
+        "reply_count": "0",
+        "light_count": "0",
+        "replies": "0"
+      }
+    ],
+    "bxj": [
+      {
+        "title": "<img src=\"https://w3.hoopchina.com.cn/index/images/photo.gif\">刘诗诗吴奇隆现身机场",
+        "href": "http://slide.ent.sina.com.cn/star/w/slide_4_704_146349.html#p=1",
+        "tid": "146349",
+        "replies": "",
+        "light": ""
+      },
+      {
+        "title": "测试标题换行",
+        "href": "http://bbs.hupu.com/13068109.html",
+        "tid": "13068109",
+        "replies": "58",
+        "light": "2",
+        "url": "//test-m.hupu.com/bbs/13068109.html",
+        "type": "bbs",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "修改修改修改66666666"
+      },
+      {
+        "title": "都会很喜欢薪火相传差距不错不错",
+        "href": "http://bbs.hupu.com/13068176.html",
+        "tid": "13068176",
+        "replies": "0",
+        "light": "0",
+        "url": "//test-m.hupu.com/bbs/13068176.html",
+        "type": "bbs",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "都会很喜欢薪火相传差距不错不错"
+      },
+      {
+        "title": "标题有换行",
+        "href": "http://bbs.hupu.com/13068107.html",
+        "tid": "13068107",
+        "replies": "57",
+        "light": "2",
+        "url": "//test-m.hupu.com/bbs/13068107.html",
+        "type": "bbs",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "标题有换行"
+      },
+      {
+        "title": "发送帖子五 ",
+        "href": "http://bbs.hupu.com/13068164.html",
+        "tid": "13068164",
+        "replies": "1",
+        "light": "0",
+        "url": "//test-m.hupu.com/bbs/13068164.html",
+        "type": "bbs",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "发送帖子五"
+      },
+      {
+        "title": "这里的推介太厉害了竟然全中！太牛了！！",
+        "href": "http://bbs.hupu.com/13068108.html",
+        "tid": "13068108",
+        "replies": "1",
+        "light": "0",
+        "url": "//test-m.hupu.com/bbs/13068108.html",
+        "type": "bbs",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "这里的推介太厉害了竟然全中！太牛了！！"
+      },
+      {
+        "title": "一二三四五六七八九十（测试声望明细里的标题长度）",
+        "href": "http://bbs.hupu.com/13067986.html",
+        "tid": "13067986",
+        "replies": "2",
+        "light": "0",
+        "url": "//test-m.hupu.com/bbs/13067986.html",
+        "type": "bbs",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "一二三四五六七八九十（测试声望明细里的标题长度）"
+      },
+      {
+        "title": "一二三四五六七八九十",
+        "href": "http://bbs.hupu.com/13067986.html",
+        "tid": "13067986",
+        "replies": "2",
+        "light": "0",
+        "url": "//test-m.hupu.com/bbs/13067986.html",
+        "type": "bbs",
+        "fid": "44",
+        "boardname": "火箭专区",
+        "boardurl": "//test-m.hupu.com/bbs/44",
+        "subject": "一二三四五六七八九十（测试声望明细里的标题长度）"
+      }
+    ]
+  },
+  "homeDataUrl": {
+    "nba": "/nba",
+    "soccer": "/soccer",
+    "f1": "/bbs/118",
+    "tennis": "/bbs/117",
+    "bxj": "/bbs/34",
+    "shihuo": "http://m.shihuo.cn/",
+    "kaluli": "http://m.kaluli.com/",
+    "youxi": "http://youxi.hupu.com/mzhan"
+  },
+  "homeGameData": [
+    {
+      "gid": "237",
+      "name": "街篮",
+      "enname": "jl",
+      "link": "http://youxi.hupu.com/jl_kqdownload?from=msite",
+      "logo": "https://hupu-game.hupucdn.com/qiniu1477882043600_youxi_logo.png?imageView2/0/q/50"
+    },
+    {
+      "gid": "172",
+      "name": "COC皇室战争",
+      "enname": "cochszz",
+      "link": "http://youxi.hupu.com/cochszz_kqdownload?from=msite",
+      "logo": "https://hupu-game.hupucdn.com/qiniu1459215844392_youxi_logo.png?imageView2/0/q/50"
+    },
+    {
+      "gid": "162",
+      "name": "CBA传奇",
+      "enname": "cbacq",
+      "link": "http://youxi.hupu.com/cbacq_kqdownload?from=msite",
+      "logo": "https://hupu-game.hupucdn.com/qiniu1460944137713_youxi_logo.png?imageView2/0/q/50"
+    },
+    {
+      "gid": "138",
+      "name": "最佳阵容",
+      "enname": "syzjzr",
+      "link": "http://youxi.hupu.com/syzjzr_kqdownload?from=msite",
+      "logo": "https://hupu-game.hupucdn.com/qiniu1453972993757_youxi_logo.png?imageView2/0/q/50"
+    }
+  ],
+  "shihuo": [
+    {
+      "title": "中亚prime会员！膳魔师 真空绝缘不锈钢保温杯 10盎司",
+      "subtitle": "70.09元不含税",
+      "intro": "真空绝缘的材质可以使液体保温保鲜10小时之久，且外侧不结水珠；为孩子设计的外观，耐用的内外不锈钢材质，可以有效的一直滋生；无BPA材质以及可以持久保温10小时，已经罐体不结水珠；可以供18个月以上的孩子使用，更加安全放心的弹出式硅胶吸管以及弹盖；10盎司容积；手洗/洗碗机均可。",
+      "img_path": "https://shihuo.hupucdn.com/newsIndex/201610/3011/d8da6f3c3b36472f698964867c9ad8ba.jpg",
+      "go_url": "http://go.shihuo.cn/u?url=https%3A%2F%2Fwww.amazon.cn%2Fdp%2FB002UJGK1C%2Fref%3Dags_rank_dp%3F_encoding%3DUTF8%26m%3DA2EDK7H33M5FFG",
+      "detail_url": "http://www.shihuo.cn/youhui/233680.html",
+      "time": "2016-11-16 10:04:35"
+    },
+    {
+      "title": "限尺码！new balance VAZEE 2090 女款顶级轻量缓震跑鞋",
+      "subtitle": "$45.47 （转运到手约￥422）",
+      "intro": "美国亚马逊目前售价$45.47 （转运到手约￥422）。图片色5.5码此价，历史新低，比之前推荐再降13刀。同款某宝售价￥1359，海淘低价保真，建议海淘带回。",
+      "img_path": "https://shihuo.hupucdn.com/newsIndex/201611/1609/f2368e64d6adc3a2c085bfbcc6f18534.jpg",
+      "go_url": "http://go.shihuo.cn/u?url=https%3A%2F%2Fwww.amazon.com%2Fdp%2FB019CVI9KA",
+      "detail_url": "http://www.shihuo.cn/youhui/238176.html",
+      "time": "2016-11-16 10:03:15"
+    },
+    {
+      "title": "吸湿排汗！Tripolar 袜透气除臭袜运动袜5双装",
+      "subtitle": "59元包邮",
+      "intro": "毛圈布缓震设计，穿着舒适足弓支撑设计，缔造稳固贴合的穿着体验，加固鞋跟和鞋头，经久耐穿，从细微处提升贴合感，网布脚面，透气效果出众，罗纹袖口舒适贴合。",
+      "img_path": "https://shihuo.hupucdn.com/newsIndex/201611/1609/2cb16876bd133789f71aa0afc218c992.jpg",
+      "go_url": "http://go.shihuo.cn/u?url=https%3A%2F%2Fwww.amazon.cn%2F%25E8%25BF%2590%25E5%258A%25A8-%25E6%2588%25B7%25E5%25A4%2596-%25E4%25BC%2591%25E9%2597%25B2%2Fdp%2FB01N06SK6M%2Fref%3Dzg_bs_sporting-goods_9",
+      "detail_url": "http://www.shihuo.cn/youhui/238174.html",
+      "time": "2016-11-16 10:01:59"
+    }
+  ],
+  "kaluli": [
+    {
+      "id": "395",
+      "title": "买1送1！索恩左旋精氨酸缓释胶囊120粒242元",
+      "subtitle": "缓释补充精氨酸,改善男性功能",
+      "img_path": "https://shihuo.hupucdn.com/uploads/kaluli/item/201611/1417/49d3a54b126d57e83bbb7f206bff8a35.jpg",
+      "detail_url": "http://track.kaluli.com/tradelink?union_id=hupuMSY&to=http%3A%2F%2Fm.kaluli.com%2Fproduct%2F560.html%3Ffrom%3DhupuMSY",
+      "time": "2016-11-16 00:00:00.0"
+    },
+    {
+      "id": "396",
+      "title": "买1送1！索恩硫酸软骨素90粒206元",
+      "subtitle": "赠同款，有效保护关节表面",
+      "img_path": "https://shihuo.hupucdn.com/uploads/kaluli/item/201611/1417/9b4fe7ea937547c3d2f013efaded20aa.jpg",
+      "detail_url": "http://track.kaluli.com/tradelink?union_id=hupuMSY&to=http%3A%2F%2Fm.kaluli.com%2Fproduct%2F557.html%3Ffrom%3DhupuMSY",
+      "time": "2016-11-16 00:00:00.0"
+    },
+    {
+      "id": "397",
+      "title": "评论赢好礼！3400份NBA正版周边随机送！",
+      "subtitle": "还有代金券",
+      "img_path": "https://shihuo.hupucdn.com/uploads/kaluli/item/201611/1417/7516cf94ddf804fb96625d040838ea64.jpg",
+      "detail_url": "http://track.kaluli.com/tradelink?union_id=hupuMSY&to=http%3A%2F%2Fm.kaluli.com%2Ftopic%3Fid%3D778%26from%3DhupuMSY",
+      "time": "2016-11-16 00:00:00.0"
+    }
+  ],
+  "adInfo": [],
+  "isPredict": "1",
+  "predicturl": "//test-m.hupu.com/predict",
+  "goto_script": "<script type=\"text/javascript\" src=\"https://goto.hupu.com/js/c/86.js\"></script>",
+  "num_notice": "8"
+}

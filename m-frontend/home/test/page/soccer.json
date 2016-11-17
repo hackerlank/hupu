@@ -1,0 +1,848 @@
+{
+    "pageheader": {
+        "title": "虎扑足球_手机虎扑网"
+    },
+    "project": "soccer",
+    "bottomtitle": "虎扑足球-最足球的世界",
+    "site": "soccer",
+    "logo_url": "http://m.hupu.com/soccer",
+    "id4dace": 3000,
+    "mark4dace": "page_soccer",
+    "keywords": "足球,虎扑足球",
+    "description": "虎扑体育",
+    "pageBottomSpread": [
+        {
+            "name": "NBA",
+            "url": "/bbs/1048"
+        },
+        {
+            "name": "足球",
+            "url": "/bbs/1389"
+        },
+        {
+            "name": "步行街",
+            "url": "/bbs/34"
+        },
+        {
+            "name": "情感",
+            "url": "/bbs/160"
+        },
+        {
+            "name": "影视",
+            "url": "/bbs/120"
+        }
+    ],
+    "baseurl": "http://m.hupu.com",
+    "test": "710998fd1b7c0235170265650770a4b1",
+    "_islogin": 0,
+    "loginurl": "http://passport.hupu.com/m/2?appid=10017&jumpurl=http://m.hupu.com/soccer?test=710998fd1b7c0235170265650770a4b1&from=m&project=hupu",
+    "uid": "",
+    "username": "",
+    "showAdvertise": 0,
+    "pclink": "http://soccer.hupu.com?test=710998fd1b7c0235170265650770a4b1",
+    "hottitlelen": 16,
+    "columncontentlen": 46,
+    "footerword": {
+        "word": "如果你害怕失败，那你很可能就会失败。",
+        "person": "科比"
+    },
+    "videoImgUrlPrefix": "http://img04.store.sogou.com/net/a/67/link?appid=67&url=",
+    "topNav": [
+        {
+            "title": "NBA",
+            "router": "nbaindex",
+            "url": "http://m.hupu.com/nba"
+        },
+        {
+            "title": "CBA",
+            "router": "cbanewsindex",
+            "url": "http://m.hupu.com/cba/news/"
+        },
+        {
+            "title": "足球",
+            "router": "soccerindex",
+            "url": "http://m.hupu.com/soccer"
+        },
+        {
+            "title": "论坛",
+            "router": "bbsindex",
+            "url": "http://m.hupu.com/bbs"
+        },
+        {
+            "title": "识货",
+            "url": "http://m.shihuo.cn/",
+            "router": "shihuoindex",
+            "target": "_blank"
+        },
+        {
+            "title": "彩票",
+            "url": "http://t.hupu.lecai.com/",
+            "router": "caipiaoindex",
+            "target": "_blank"
+        }
+    ],
+    "level2": [
+        {
+            "name": "中国足球",
+            "router": "soccerleagueindex",
+            "param": {
+                "league": "csl"
+            },
+            "url": "http://m.hupu.com/soccer/csl"
+        },
+        {
+            "name": "英超",
+            "router": "soccerleagueindex",
+            "param": {
+                "league": "england"
+            },
+            "url": "http://m.hupu.com/soccer/england"
+        },
+        {
+            "name": "德甲",
+            "router": "soccerleagueindex",
+            "param": {
+                "league": "germany"
+            },
+            "url": "http://m.hupu.com/soccer/germany"
+        },
+        {
+            "name": "西甲",
+            "router": "soccerleagueindex",
+            "param": {
+                "league": "spain"
+            },
+            "url": "http://m.hupu.com/soccer/spain"
+        },
+        {
+            "name": "意甲",
+            "router": "soccerleagueindex",
+            "param": {
+                "league": "italy"
+            },
+            "url": "http://m.hupu.com/soccer/italy"
+        },
+        {
+            "name": "欧冠",
+            "router": "soccerleagueindex",
+            "param": {
+                "league": "uefa"
+            },
+            "url": "http://m.hupu.com/soccer/uefa"
+        },
+        {
+            "name": "法甲",
+            "router": "soccerleagueindex",
+            "param": {
+                "league": "france"
+            },
+            "url": "http://m.hupu.com/soccer/france"
+        }
+    ],
+    "node": [
+        {
+            "title": "足球",
+            "url": "#"
+        }
+    ],
+    "customSoccer": [],
+    "engnewsurl": "http://m.hupu.com/bbs/138",
+    "espnewsurl": "http://m.hupu.com/bbs/140",
+    "iltnewsurl": "http://m.hupu.com/bbs/139",
+    "homeData": {
+        "soccer": [
+            {
+                "title": "[赛后讨论]欧冠：马夏尔破门纳尔多梅开，曼联客场2-3不敌沃尔夫斯堡小组出局",
+                "url": "http://m.hupu.com/bbs/14892738.html",
+                "type": "bbs",
+                "replies": "411",
+                "fid": "2916",
+                "boardname": "曼联专区",
+                "boardurl": "http://m.hupu.com/bbs/2916",
+                "subject": "[赛后讨论]欧冠：马夏尔破门纳尔多梅开，曼联客场2-3不敌沃尔夫斯堡小组出局"
+            },
+            {
+                "title": "[赛后讨论]大卫-席尔瓦破门斯特林梅开，曼城逆转4-2门兴头名出线",
+                "url": "http://m.hupu.com/bbs/14892755.html",
+                "type": "bbs",
+                "replies": "89",
+                "fid": "2908",
+                "boardname": "曼城专区",
+                "boardurl": "http://m.hupu.com/bbs/2908",
+                "subject": "[赛后讨论]大卫-席尔瓦破门斯特林梅开，曼城逆转4-2门兴头名出线"
+            },
+            {
+                "title": "[赛后讨论]C罗大四喜本泽马戴帽，皇马8-0马尔默",
+                "url": "http://m.hupu.com/bbs/14892751.html",
+                "type": "bbs",
+                "replies": "83",
+                "fid": "2543",
+                "boardname": "皇马专区",
+                "boardurl": "http://m.hupu.com/bbs/2543",
+                "subject": "[赛后讨论]C罗大四喜本泽马戴帽，皇马8-0马尔默"
+            },
+            {
+                "title": "[赛后讨论]欧冠：旧将略伦特破门制胜，尤文图斯客场0-1不敌塞维利亚",
+                "url": "http://m.hupu.com/bbs/14892733.html",
+                "type": "bbs",
+                "replies": "146",
+                "fid": "1846",
+                "boardname": "尤文专区",
+                "boardurl": "http://m.hupu.com/bbs/1846",
+                "subject": "[赛后讨论]欧冠：旧将略伦特破门制胜，尤文图斯客场0-1不敌塞维利亚"
+            },
+            {
+                "title": "曼联经历生死10分钟，无奈进军欧联杯",
+                "url": "http://m.hupu.com/soccer/news/1980760.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/3e62579ef22a187ac0f1c07c45870bd9fcebd7d3.jpg",
+                "media": "虎扑足球",
+                "replies": "16"
+            },
+            {
+                "title": "综述：皇马曼城第一晋级，曼联进军欧联",
+                "url": "http://m.hupu.com/soccer/news/1980765.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/3ece475011742fdfa0cb47d0a2b88761677d8b64.png",
+                "media": "虎扑足球",
+                "replies": "20"
+            },
+            {
+                "title": "范加尔：从欧冠出局令我失望",
+                "url": "http://m.hupu.com/soccer/news/1980795.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/7fafe044f46f7c2006b2bfdfd818ee58f435f0c2.jpg",
+                "media": "曼联官网",
+                "replies": "13"
+            },
+            {
+                "title": "佩帅：赛前告诉斯特林至少进两个",
+                "url": "http://m.hupu.com/soccer/news/1980785.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/314f1c8bc9138b342d223357481909f7f4aded9c.jpg",
+                "media": "曼城官网",
+                "replies": "6"
+            },
+            {
+                "title": "再创纪录！C罗欧冠小组赛打进11球",
+                "url": "http://m.hupu.com/soccer/news/1980755.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/ac6ec0e0415b7f6423b95f76b5a7f35f4d7d9479.png",
+                "media": "Twitter",
+                "replies": "21"
+            },
+            {
+                "title": "阿莱格里：不失望，出线最重要",
+                "url": "http://m.hupu.com/soccer/news/1980782.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/3322afc1f6838579023b5bb0a304b19dd1aa3505.jpg",
+                "media": "Football-Italia",
+                "replies": "8"
+            },
+            {
+                "title": "好久不见！C罗精彩任意球弹地破门",
+                "url": "http://m.hupu.com/soccer/news/1980754.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/93182e45be92980b49f9d4ef021e01307764a6aa.jpg",
+                "media": "虎扑足球",
+                "replies": "10"
+            },
+            {
+                "title": "内马尔受伤，恐错过欧冠小组赛",
+                "url": "http://m.hupu.com/soccer/news/1980763.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/79868f734dd26230800dec8907b97cad72906a3a.jpg",
+                "media": "巴塞罗那官网",
+                "replies": "6"
+            },
+            {
+                "title": "官方：贵州宣布孙继海回归，王宝山任主帅",
+                "url": "http://m.hupu.com/soccer/news/china/1980531.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151208/2674bdeec19062981f970f2f00ad15dd29f220f2.png",
+                "media": "新浪微博",
+                "replies": "20"
+            },
+            {
+                "title": "[留洋周报]第30期：张呈栋国王杯登场创历史；97国青锋将葡萄牙跳级演首秀",
+                "url": "http://m.hupu.com/bbs/14890370.html",
+                "type": "bbs",
+                "replies": "23",
+                "fid": "155",
+                "boardname": "中国足球",
+                "boardurl": "http://m.hupu.com/bbs/155",
+                "subject": "[留洋周报]第30期：张呈栋国王杯登场创历史；97国青锋将葡萄牙跳级演首秀"
+            },
+            {
+                "title": "世俱杯夺冠赔率：巴萨居首，恒大位居第三",
+                "url": "http://m.hupu.com/soccer/news/china/1980427.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151208/e9aa0ede739083b9389b98ae70f179377168ecd4.png",
+                "media": "虎扑体育",
+                "replies": "24"
+            },
+            {
+                "title": "定了？巴西锋霸秀中文，加盟权健或只差官宣",
+                "url": "http://m.hupu.com/soccer/news/china/1980408.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151208/73a7903422de68e79acc14d13df466319447bba2.jpg",
+                "media": "instagram",
+                "replies": "12"
+            },
+            {
+                "title": "他笑哈哈，他白了发——天下足球虎扑特别版：《绝对巨星：段暄》",
+                "url": "http://m.hupu.com/bbs/14886371.html",
+                "type": "bbs",
+                "replies": "294",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "他笑哈哈，他白了发——天下足球虎扑特别版：《绝对巨星：段暄》"
+            }
+        ],
+        "china": null,
+        "huati": [
+            {
+                "title": "剧情跌宕起伏，熬夜看球的魔蜜都好苦！",
+                "url": "http://m.hupu.com/bbs/14892723.html",
+                "type": "bbs",
+                "replies": "50",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "剧情跌宕起伏，曼联球迷裤子脱了又穿上了？"
+            },
+            {
+                "title": "小组未出线，如何评价曼联本赛季欧冠之旅？",
+                "url": "http://m.hupu.com/bbs/14892748.html",
+                "type": "bbs",
+                "replies": "62",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "最终小组未能出线，如何评价曼联本赛季欧冠的作死之路？"
+            },
+            {
+                "title": "戏耍曼联防线，德拉克斯勒果然物有所值？",
+                "url": "http://m.hupu.com/bbs/14892683.html",
+                "type": "bbs",
+                "replies": "73",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "肆意戏耍曼联后防，德拉克斯勒太强了，为何没能登陆豪门？"
+            },
+            {
+                "title": "C罗巧射任意球建功，这球能打几分？",
+                "url": "http://m.hupu.com/bbs/14892681.html",
+                "type": "bbs",
+                "replies": "66",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "c罗进任意球了！久旱逢甘露，这球啥水平？"
+            },
+            {
+                "title": "强队不少，谁能成为欧联杯夺冠热门？",
+                "url": "http://m.hupu.com/bbs/14892764.html",
+                "type": "bbs",
+                "replies": "73",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "曼联成功闯进塞维利亚杯，面对东道主谁是欧联杯的夺冠大热？"
+            },
+            {
+                "title": "尤文巴黎本菲卡，哪个小组第二最令人头痛？",
+                "url": "http://m.hupu.com/bbs/14892749.html",
+                "type": "bbs",
+                "replies": "48",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "尤文、巴黎、本菲卡，谁是最令人头痛的小组第二名？"
+            },
+            {
+                "title": "拿下小组第一，曼城这次欧冠有望突破吗？",
+                "url": "http://m.hupu.com/bbs/14892776.html",
+                "type": "bbs",
+                "replies": "64",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "凭曼城这欧冠表现，今年淘汰赛能帮英超球队挽回颜面吗？"
+            },
+            {
+                "title": "年度大戏来袭，阿森纳能否突出重围？",
+                "url": "http://m.hupu.com/bbs/14892912.html",
+                "type": "bbs",
+                "replies": "73",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "终于等到你了，明天的年度大戏《悬崖边上的阿森纳》将迎来怎样的结局？"
+            },
+            {
+                "title": "和其他前锋相比，劳尔的最大特点是什么？",
+                "url": "http://m.hupu.com/bbs/14886298.html",
+                "type": "bbs",
+                "replies": "45",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "跟同时代和现役的前锋相比，劳尔最大的特点是什么？"
+            },
+            {
+                "title": "有哪些看似不可信的预言最后成真了？",
+                "url": "http://m.hupu.com/bbs/14886186.html",
+                "type": "bbs",
+                "replies": "85",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "以弗格森预言亨德森为例，足球界还有哪些神一样的预言？"
+            },
+            {
+                "title": "门将主罚任意球，若被打反击怎么办？",
+                "url": "http://m.hupu.com/bbs/14885081.html",
+                "type": "bbs",
+                "replies": "41",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "不懂就问，门将主罚任意球不进被人打反击怎么办？"
+            },
+            {
+                "title": "是什么原因造成了当今足坛寡头的出现？",
+                "url": "http://m.hupu.com/bbs/14883156.html",
+                "type": "bbs",
+                "replies": "39",
+                "fid": "1389",
+                "boardname": "足球话题区",
+                "boardurl": "http://m.hupu.com/bbs/1389",
+                "subject": "是什么原因造成了当今足坛寡头的出现？"
+            }
+        ],
+        "eng": [
+            {
+                "id": "1980893",
+                "title": "阿森纳将在2017年赴澳淘金",
+                "media": "每日镜报",
+                "reply_count": "0",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980893.html",
+                "dateline": "2015-12-09 11:15:05",
+                "pub_date": 1449630905,
+                "overview": "《悉尼先驱晨报》报道，阿森纳将在2017...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/3a75ab2ec324d1adf614c0618c61458bb8695736.png",
+                "type": "news",
+                "replies": "0"
+            },
+            {
+                "id": "1980880",
+                "title": "阿森纳对手：英国球迷也支持我们",
+                "media": "伦敦晚旗报",
+                "reply_count": "1",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980880.html",
+                "dateline": "2015-12-09 10:48:22",
+                "pub_date": 1449629302,
+                "overview": "阿森纳的欧冠生死战对手奥林匹亚克斯前锋伊...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/4820df1bc854f9ac8eca13a725a50315eb3d8c1d.png",
+                "type": "news",
+                "replies": "1"
+            },
+            {
+                "id": "1980872",
+                "title": "马斯切拉诺：帕杜不会用我",
+                "media": "伦敦晚旗报",
+                "reply_count": "4",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980872.html",
+                "dateline": "2015-12-09 10:26:17",
+                "pub_date": 1449627977,
+                "overview": "巴萨中卫马斯切拉诺近日谈到了指导过自己的...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/c79ceedb8fd0bee078d352f95f8ed37bb8f070b2.png",
+                "type": "news",
+                "replies": "4"
+            },
+            {
+                "id": "1980858",
+                "title": "许尔勒：狼堡的胜利实至名归",
+                "media": "Goal.com",
+                "reply_count": "1",
+                "light_count": "0",
+                "support": 1,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980858.html",
+                "dateline": "2015-12-09 10:01:26",
+                "pub_date": 1449626486,
+                "overview": "许尔勒表示，狼堡对阵曼联的胜利是实至名归...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/05e6734146823144c65e39a3311df77e63faf3dc.jpg",
+                "type": "news",
+                "replies": "1"
+            },
+            {
+                "id": "1980854",
+                "title": "前队友：法尔考有意去大联盟踢球",
+                "media": "Goal.com",
+                "reply_count": "1",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980854.html",
+                "dateline": "2015-12-09 09:56:20",
+                "pub_date": 1449626180,
+                "overview": "法尔考的前队友瓦勒里表示，法尔考有意前往...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/cd9a093f044e4379f9d545423fd61ce31bfedb82.jpg",
+                "type": "news",
+                "replies": "1"
+            }
+        ],
+        "esp": [
+            {
+                "id": "1980878",
+                "title": "阿韦洛亚：皮克会去喜剧俱乐部",
+                "media": "阿斯报",
+                "reply_count": "5",
+                "light_count": "0",
+                "support": 0,
+                "against": 1,
+                "url": "http://m.hupu.com/soccer/news/1980878.html",
+                "dateline": "2015-12-09 10:45:45",
+                "pub_date": 1449629145,
+                "overview": "阿韦洛亚表示大家一致支持贝帅，球队比以往...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/b55b59faf688986384d1331364cf1969b4049609.jpg",
+                "type": "news",
+                "replies": "5"
+            },
+            {
+                "id": "1980825",
+                "title": "恩里克赛前：巴萨仍会坚持风格",
+                "media": "每日体育报",
+                "reply_count": "2",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980825.html",
+                "dateline": "2015-12-09 08:46:37",
+                "pub_date": 1449621997,
+                "overview": "巴萨主帅恩里克表示巴萨会在对勒沃库森的比...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/bb7a62c40c1e015ba08ce5e6f170ddfa74a1b72c.jpg",
+                "type": "news",
+                "replies": "2"
+            },
+            {
+                "id": "1980819",
+                "title": "内马尔受伤，梅西为他加油鼓劲",
+                "media": "每日体育报",
+                "reply_count": "5",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980819.html",
+                "dateline": "2015-12-09 08:25:03",
+                "pub_date": 1449620703,
+                "overview": "巴萨前锋内马尔在训练中受伤，梅西通过社交...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/63f694e6ff712c275fe16defa8b0bea4d3eecdef.jpg",
+                "type": "news",
+                "replies": "5"
+            },
+            {
+                "id": "1980817",
+                "title": "药厂主帅：几乎不可能阻挡梅西",
+                "media": "Goal.com",
+                "reply_count": "5",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980817.html",
+                "dateline": "2015-12-09 08:17:18",
+                "pub_date": 1449620238,
+                "overview": "施密特表示，想要阻止梅西是几乎不可能完成...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/6837fc0fa25e3fb36a6396abe03bcbdedad35389.jpg",
+                "type": "news",
+                "replies": "5"
+            },
+            {
+                "id": "1980813",
+                "title": "本菲卡有意巴萨小将格里马尔多",
+                "media": "世界体育报",
+                "reply_count": "3",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980813.html",
+                "dateline": "2015-12-09 08:06:19",
+                "pub_date": 1449619579,
+                "overview": "据葡萄牙媒体的报道，本菲卡俱乐部有意巴萨...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/00ac2368b8883d8cdb02332b318b7d8e1cac93a2.jpg",
+                "type": "news",
+                "replies": "3"
+            }
+        ],
+        "itl": [
+            {
+                "id": "1980869",
+                "title": "尤文寻找新波巴，相中摩德纳小将？",
+                "media": "Goal.com",
+                "reply_count": "0",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980869.html",
+                "dateline": "2015-12-09 10:20:07",
+                "pub_date": 1449627607,
+                "overview": "意大利媒体称，尤文图斯正在寻找潜力新星，...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/baed41ca9c8dc537acf9a6fb9d7e2f6dbfe4b40e.jpg",
+                "type": "news",
+                "replies": "0"
+            },
+            {
+                "id": "1980820",
+                "title": "遭遇抢劫，伊卡尔迪损失名贵手表",
+                "media": "Goal.com",
+                "reply_count": "2",
+                "light_count": "0",
+                "support": 1,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980820.html",
+                "dateline": "2015-12-09 08:29:03",
+                "pub_date": 1449620943,
+                "overview": "上周末联赛结束后，伊卡尔迪遭遇歹徒抢劫，...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/7479286bc7f43faec7053e3fdb341d37f8bad9e9.jpg",
+                "type": "news",
+                "replies": "2"
+            },
+            {
+                "id": "1980799",
+                "title": "迪巴拉：不走运，皮球就是不愿进门",
+                "media": "Football-Italia",
+                "reply_count": "5",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980799.html",
+                "dateline": "2015-12-09 07:23:00",
+                "pub_date": 1449616980,
+                "overview": "迪巴拉很遗憾未能取得进球，但鼓励了队友莫...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/5e199820509a551e33f3559227fa5e998b6bf94f.jpg",
+                "type": "news",
+                "replies": "5"
+            },
+            {
+                "id": "1980791",
+                "title": "略伦特：塞维利亚赢下了“决赛”",
+                "media": "Football-Italia",
+                "reply_count": "5",
+                "light_count": "0",
+                "support": 0,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980791.html",
+                "dateline": "2015-12-09 06:58:00",
+                "pub_date": 1449615480,
+                "overview": "略伦特攻破了布冯的大门，帮助塞维利亚获得...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/75c9c7b7ef9ae140e5746424641b3d2e17fd7c3e.jpg",
+                "type": "news",
+                "replies": "5"
+            },
+            {
+                "id": "1980782",
+                "title": "阿莱格里：不失望，出线最重要",
+                "media": "Football-Italia",
+                "reply_count": "8",
+                "light_count": "0",
+                "support": 1,
+                "against": 0,
+                "url": "http://m.hupu.com/soccer/news/1980782.html",
+                "dateline": "2015-12-09 06:42:00",
+                "pub_date": 1449614520,
+                "overview": "虽然今晚丢掉了小组第一的位置，阿莱格里还...",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/3322afc1f6838579023b5bb0a304b19dd1aa3505.jpg",
+                "type": "news",
+                "replies": "8"
+            }
+        ],
+        "hotnews": [
+            {
+                "title": "曼联经历生死10分钟，无奈进军欧联杯",
+                "type": "news",
+                "url": "http://m.hupu.com/soccer/news/1980760.html",
+                "media": "虎扑足球",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/3e62579ef22a187ac0f1c07c45870bd9fcebd7d3.jpg",
+                "date": "2015-12-09 05:40:04",
+                "reply_count": "16",
+                "light_count": "1",
+                "replies": "16"
+            },
+            {
+                "title": "再创纪录！C罗欧冠小组赛打进11球",
+                "type": "news",
+                "url": "http://m.hupu.com/soccer/news/1980755.html",
+                "media": "Twitter",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/ac6ec0e0415b7f6423b95f76b5a7f35f4d7d9479.png",
+                "date": "2015-12-09 04:57:57",
+                "reply_count": "22",
+                "light_count": "3",
+                "replies": "22"
+            },
+            {
+                "title": "许尔勒：战胜曼联将创造球队历史",
+                "type": "news",
+                "url": "http://m.hupu.com/soccer/news/1980493.html",
+                "media": "天空体育",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151208/a6de4293210000fa9b1bea1f6233b68bed2b2e51.png",
+                "date": "2015-12-08 11:38:09",
+                "reply_count": "15",
+                "light_count": "0",
+                "replies": "15"
+            },
+            {
+                "title": "综述：皇马曼城第一晋级，曼联进军欧联",
+                "type": "news",
+                "url": "http://m.hupu.com/soccer/news/1980765.html",
+                "media": "虎扑足球",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/3ece475011742fdfa0cb47d0a2b88761677d8b64.png",
+                "date": "2015-12-09 05:59:00",
+                "reply_count": "20",
+                "light_count": "3",
+                "replies": "20"
+            },
+            {
+                "title": "打欧联不全是坏事，英超需欧战积分",
+                "type": "news",
+                "url": "http://m.hupu.com/soccer/news/1980797.html",
+                "media": "天空体育",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/d555cdf2842a6631e3c4caad6f1baffb133e51cf.jpg",
+                "date": "2015-12-09 07:22:20",
+                "reply_count": "30",
+                "light_count": "1",
+                "replies": "30"
+            },
+            {
+                "title": "海啸男孩圆梦，伯纳乌终见C罗",
+                "type": "news",
+                "url": "http://m.hupu.com/soccer/news/1980533.html",
+                "media": "马卡报",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151208/7cc64293908823a2b6157ad65253f5d46e8fb7e9.jpg",
+                "date": "2015-12-08 14:09:42",
+                "reply_count": "13",
+                "light_count": "2",
+                "replies": "13"
+            },
+            {
+                "title": "巴萨有意紫百合左后卫阿隆索",
+                "type": "news",
+                "url": "http://m.hupu.com/soccer/news/1980495.html",
+                "media": "每日体育报",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151208/aff451144a5060ba009b992e6cd475848b539d45.png",
+                "date": "2015-12-08 11:43:07",
+                "reply_count": "23",
+                "light_count": "0",
+                "replies": "23"
+            },
+            {
+                "title": "范加尔：从欧冠出局令我失望",
+                "type": "news",
+                "url": "http://m.hupu.com/soccer/news/1980795.html",
+                "media": "曼联官网",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/7fafe044f46f7c2006b2bfdfd818ee58f435f0c2.jpg",
+                "date": "2015-12-09 07:15:49",
+                "reply_count": "14",
+                "light_count": "0",
+                "replies": "14"
+            },
+            {
+                "title": "斯科尔斯：曼联小组出局不意外",
+                "type": "news",
+                "url": "http://m.hupu.com/soccer/news/1980803.html",
+                "media": "每日邮报",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/408c5b25d9dad545e435ac04425e6ff52fa397a2.jpg",
+                "date": "2015-12-09 07:36:30",
+                "reply_count": "18",
+                "light_count": "0",
+                "replies": "18"
+            },
+            {
+                "title": "好久不见！C罗精彩任意球弹地破门",
+                "type": "news",
+                "url": "http://m.hupu.com/soccer/news/1980754.html",
+                "media": "虎扑足球",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/93182e45be92980b49f9d4ef021e01307764a6aa.jpg",
+                "date": "2015-12-09 04:48:45",
+                "reply_count": "10",
+                "light_count": "1",
+                "replies": "10"
+            }
+        ],
+        "zhizao": [
+            {
+                "title": "沃尔夫斯堡vs曼联复盘：又见后防卡通级表现 欧冠出局后该醒醒了",
+                "desc": "伤病严重防守糟糕，红魔无奈只能吞下被淘汰的苦果。",
+                "link": "http://bbs.hupu.com/14892843.html",
+                "bigPic": "http://soccer.hupucdn.com/2015-12-09/09f7a9e3f3bc5053_2015-12-09.jpg",
+                "smallPic": "http://soccer.hupucdn.com/2015-12-09/c160bf68cef5d01a_2015-12-09.",
+                "url": "http://m.hupu.com/bbs/14892843.html",
+                "type": "bbs",
+                "replies": "29",
+                "fid": "2916",
+                "boardname": "曼联专区",
+                "boardurl": "http://m.hupu.com/bbs/2916",
+                "subject": "沃尔夫斯堡vs曼联复盘：又见后防卡通级表现 欧冠出局后该醒醒了"
+            },
+            {
+                "title": "8球大胜创纪录：奔马续航C罗四喜，中场考量仍是重点",
+                "desc": "科瓦与J罗的组合炮制大胜，让皇马的阵容擦出新火花。",
+                "link": "http://bbs.hupu.com/14892868.html",
+                "bigPic": "http://soccer.hupucdn.com/2015-12-09/523c3c892c7fd051_2015-12-09.jpg",
+                "smallPic": "http://soccer.hupucdn.com/2015-12-09/6e1f00e8fb11e79e_2015-12-09.",
+                "url": "http://m.hupu.com/bbs/14892868.html",
+                "type": "bbs",
+                "replies": "16",
+                "fid": "2543",
+                "boardname": "皇马专区",
+                "boardurl": "http://m.hupu.com/bbs/2543",
+                "subject": "8球大胜创纪录：奔马续航C罗四喜，中场考量仍是重点"
+            }
+        ]
+    },
+    "adInfo": [],
+    "gamelist": [
+        {
+            "leaguename": "美洲杯",
+            "hometeam": "曼城",
+            "awayteam": "门兴",
+            "score": "",
+            "gameurl": "http://m.hupu.com/soccer/uefa/game/lineup/9018953",
+            "status": 2,
+            "progress": "03:45",
+            "gamestatus": "开始"
+        },
+        {
+            "leaguename": "欧冠",
+            "hometeam": "本菲卡",
+            "awayteam": "马竞",
+            "score": "",
+            "gameurl": "http://m.hupu.com/soccer/uefa/game/lineup/9018951",
+            "status": 2,
+            "progress": "03:45",
+            "gamestatus": "开始"
+        },
+        {
+            "leaguename": "欧冠",
+            "hometeam": "曼城",
+            "awayteam": "门兴",
+            "score": "",
+            "gameurl": "http://m.hupu.com/soccer/uefa/game/lineup/9018953",
+            "status": 2,
+            "progress": "03:45",
+            "gamestatus": "开始"
+        }
+    ]
+}

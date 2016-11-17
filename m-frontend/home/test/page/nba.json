@@ -1,0 +1,524 @@
+{
+    "pageheader": {
+        "title": "虎扑篮球_手机虎扑网"
+    },
+    "project": "nba",
+    "bottomtitle": "虎扑篮球-最篮球的世界",
+    "site": "nba",
+    "logo_url": "http://m.hupu.com/nba",
+    "id4dace": 2100,
+    "mark4dace": "page_nba",
+    "title": "NBA|虎扑篮球-手机虎扑网",
+    "keywords": "NBA,NBA中文网,篮球",
+    "description": "虎扑体育",
+    "pageBottomSpread": [
+        {
+            "name": "NBA",
+            "url": "/bbs/1048"
+        },
+        {
+            "name": "足球",
+            "url": "/bbs/1389"
+        },
+        {
+            "name": "步行街",
+            "url": "/bbs/34"
+        },
+        {
+            "name": "情感",
+            "url": "/bbs/160"
+        },
+        {
+            "name": "影视",
+            "url": "/bbs/120"
+        }
+    ],
+    "baseurl": "http://m.hupu.com",
+    "test": "710998fd1b7c0235170265650770a4b1",
+    "_islogin": 0,
+    "loginurl": "http://passport.hupu.com/m/2?appid=10017&jumpurl=http://m.hupu.com/nba?test=710998fd1b7c0235170265650770a4b1&from=m&project=hupu",
+    "uid": "",
+    "username": "",
+    "showAdvertise": 0,
+    "pclink": "http://nba.hupu.com?test=710998fd1b7c0235170265650770a4b1",
+    "hottitlelen": 16,
+    "columncontentlen": 46,
+    "footerword": {
+        "word": "我只想让人们将我看作是一个努力的、对比赛充满激情的足球运动员。",
+        "person": "贝克汉姆"
+    },
+    "videoImgUrlPrefix": "http://img04.store.sogou.com/net/a/67/link?appid=67&url=",
+    "topNav": [
+        {
+            "title": "NBA",
+            "router": "nbaindex",
+            "url": "http://m.hupu.com/nba"
+        },
+        {
+            "title": "CBA",
+            "router": "cbanewsindex",
+            "url": "http://m.hupu.com/cba/news/"
+        },
+        {
+            "title": "足球",
+            "router": "soccerindex",
+            "url": "http://m.hupu.com/soccer"
+        },
+        {
+            "title": "论坛",
+            "router": "bbsindex",
+            "url": "http://m.hupu.com/bbs"
+        },
+        {
+            "title": "识货",
+            "url": "http://m.shihuo.cn/",
+            "router": "shihuoindex",
+            "target": "_blank"
+        },
+        {
+            "title": "彩票",
+            "url": "http://t.hupu.lecai.com/",
+            "router": "caipiaoindex",
+            "target": "_blank"
+        }
+    ],
+    "level2": [
+        {
+            "name": "比赛",
+            "router": "nbacenter",
+            "url": "http://m.hupu.com/nba/game"
+        },
+        {
+            "name": "新闻",
+            "router": "nbanewsindex",
+            "url": "http://m.hupu.com/nba/news/"
+        },
+        {
+            "name": "球队",
+            "router": "nbateam",
+            "url": "http://m.hupu.com/nba/standing"
+        },
+        {
+            "name": "论坛",
+            "router": "forumindex",
+            "param": {
+                "fid": 1048
+            },
+            "url": "http://m.hupu.com/bbs/1048"
+        }
+    ],
+    "node": [
+        {
+            "title": "NBA",
+            "url": "#"
+        }
+    ],
+    "customNba": [],
+    "gameList": [
+        {
+            "hometeam": "国王",
+            "awayteam": "爵士",
+            "score": "114 - <span style='color:#999'>106</span>",
+            "gameurl": "http://m.hupu.com/nba/game/recap_151191.html",
+            "progress": "",
+            "status": 0,
+            "gamestatus": "已结束"
+        },
+        {
+            "hometeam": "掘金",
+            "awayteam": "魔术",
+            "score": "<span style='color:#999'>74</span> - 85",
+            "gameurl": "http://m.hupu.com/nba/game/recap_151190.html",
+            "progress": "",
+            "status": 0,
+            "gamestatus": "已结束"
+        },
+        {
+            "hometeam": "灰熊",
+            "awayteam": "雷霆",
+            "score": "<span style='color:#999'>88</span> - 125",
+            "gameurl": "http://m.hupu.com/nba/game/recap_151189.html",
+            "progress": "",
+            "status": 0,
+            "gamestatus": "已结束"
+        }
+    ],
+    "homeData": {
+        "nba": [
+            {
+                "title": "勇士27连胜追平历史第二连胜纪录",
+                "url": "http://m.hupu.com/nba/news/1980875.html",
+                "type": "news",
+                "img": "",
+                "media": "",
+                "replies": 0
+            },
+            {
+                "title": "巴蒂尔：勇士有望赢下70场比赛",
+                "url": "http://m.hupu.com/nba/news/1980928.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/f8c00ea9cc940901b57bd42dac0f7b2823b36e0c.jpg",
+                "media": "Twitter",
+                "replies": "13"
+            },
+            {
+                "title": "太骚！火影库里发动白眼脑后传球",
+                "url": "http://m.hupu.com/bbs/14893795.html",
+                "type": "bbs",
+                "replies": null,
+                "fid": null,
+                "boardname": null,
+                "boardurl": "http://m.hupu.com/bbs/",
+                "subject": null
+            },
+            {
+                "title": "看着眼熟？詹姆斯小莫梦回2009",
+                "url": "http://m.hupu.com/bbs/14894285.html",
+                "type": "bbs",
+                "replies": null,
+                "fid": null,
+                "boardname": null,
+                "boardurl": "http://m.hupu.com/bbs/",
+                "subject": null
+            },
+            {
+                "title": "哈登：我在场上做了一些糟糕决定",
+                "url": "http://m.hupu.com/nba/news/1980916.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/611984ce3ad86326de22eac33e96b0e8890865f0.jpg",
+                "media": "Twitter",
+                "replies": "45"
+            },
+            {
+                "title": "霍华德：生日愿望是赢得总冠军",
+                "url": "http://m.hupu.com/nba/news/1980925.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/b0b852e871e5690a6e5a6009ad35064f96e76ad1.jpg",
+                "media": "ESPN",
+                "replies": "32"
+            },
+            {
+                "title": "索顿替补32分，火箭近15年首人",
+                "url": "http://m.hupu.com/nba/news/1980888.html",
+                "type": "news",
+                "img": "",
+                "media": "",
+                "replies": 0
+            },
+            {
+                "title": "杜兰特生涯得分跻身历史第105位",
+                "url": "http://m.hupu.com/nba/news/1980890.html",
+                "type": "news",
+                "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/a310a4214dfbcaa491109e7766b4d4236a17652b.jpg",
+                "media": "Twitter",
+                "replies": "19"
+            }
+        ],
+        "zhizao": [
+            {
+                "title": "[翻译团]“我想打出完美的比赛”——斯蒂芬-库里 专访",
+                "url": "http://m.hupu.com/bbs/14858832.html",
+                "image": "http://w1.hoopchina.com.cn/static/www/2015-12-09/1449622580step3.jpg",
+                "small_image": "http://w1.hoopchina.com.cn/static/www/2015-12-09/small_1449622580step3.jpg",
+                "slogan": "“我追求完美。我会在训练中模仿诺维茨基的技术。”",
+                "logo": "http://w3.hoopchina.com.cn/m/images/icon_hupu.png",
+                "img": "http://w1.hoopchina.com.cn/static/www/2015-12-09/1449622580step3.jpg",
+                "type": "bbs",
+                "replies": "36",
+                "fid": "102",
+                "boardname": "勇士专区",
+                "boardurl": "http://m.hupu.com/bbs/102",
+                "subject": "[翻译团]“我想打出完美的比赛”——斯蒂芬-库里 专访"
+            },
+            {
+                "title": "【克家之言】骑士周而复始地打出令人大跌眼镜的比赛",
+                "url": "http://m.hupu.com/bbs/14891072.html",
+                "image": "http://w2.hoopchina.com.cn/static/www/2015-12-09/144962283714112610r72.jpg",
+                "small_image": "http://w2.hoopchina.com.cn/static/www/2015-12-09/small_144962283714112610r72.jpg",
+                "slogan": "骑士必须在欧文回归之前找到化解滞涩进攻的办法。",
+                "logo": "http://w3.hoopchina.com.cn/m/images/icon_hupu.png",
+                "img": "http://w2.hoopchina.com.cn/static/www/2015-12-09/144962283714112610r72.jpg",
+                "type": "bbs",
+                "replies": "29",
+                "fid": "85",
+                "boardname": "骑士专区",
+                "boardurl": "http://m.hupu.com/bbs/85",
+                "subject": "【克家之言】骑士周而复始地打出令人大跌眼镜的比赛"
+            }
+        ],
+        "topic": [
+            {
+                "title": "三分这种靠手感的打法，可统治一世吗",
+                "href": "http://bbs.hupu.com/14893432.html",
+                "replies": "361",
+                "light": "14",
+                "url": "http://m.hupu.com/bbs/14893432.html",
+                "type": "bbs",
+                "fid": "1048",
+                "boardname": "湿乎乎的话题",
+                "boardurl": "http://m.hupu.com/bbs/1048",
+                "subject": "我觉得，3分这种靠外线的手段，可以统治一时，不能统治一世~"
+            },
+            {
+                "title": "怎么玩？勇士首节4分钟打出22:0冲击波",
+                "href": "http://bbs.hupu.com/14893016.html",
+                "replies": "180",
+                "light": "10",
+                "url": "http://m.hupu.com/bbs/14893016.html",
+                "type": "bbs",
+                "fid": "1048",
+                "boardname": "湿乎乎的话题",
+                "boardurl": "http://m.hupu.com/bbs/1048",
+                "subject": "一波22-0?勇士第一节焦作人"
+            },
+            {
+                "title": "爆发最大动力？库里渴望比肩超越乔丹",
+                "href": "http://bbs.hupu.com/14892800.html",
+                "replies": "166",
+                "light": "12",
+                "url": "http://m.hupu.com/bbs/14892800.html",
+                "type": "bbs",
+                "fid": "1048",
+                "boardname": "湿乎乎的话题",
+                "boardurl": "http://m.hupu.com/bbs/1048",
+                "subject": "[流言板]库里：超越乔丹是我打球的动力"
+            },
+            {
+                "title": "伦纳德是唯一有可能1对1限制库里的？",
+                "href": "http://bbs.hupu.com/14892134.html",
+                "replies": "203",
+                "light": "12",
+                "url": "http://m.hupu.com/bbs/14892134.html",
+                "type": "bbs",
+                "fid": "1048",
+                "boardname": "湿乎乎的话题",
+                "boardurl": "http://m.hupu.com/bbs/1048",
+                "subject": "莱昂纳德能不能较大程度锁死库里形成兑子"
+            },
+            {
+                "title": "我研究出的最科学投篮，库里也在用！",
+                "href": "http://bbs.hupu.com/14891567.html",
+                "replies": "126",
+                "light": "7",
+                "url": "http://m.hupu.com/bbs/14891567.html",
+                "type": "bbs",
+                "fid": "1048",
+                "boardname": "湿乎乎的话题",
+                "boardurl": "http://m.hupu.com/bbs/1048",
+                "subject": "我研究的科学投篮训练方式，库里可能就在用，建议中国国家队引进"
+            }
+        ],
+        "teams": [
+            [
+                {
+                    "title": "【火箭专区YY楼第三十七期】阵容成型 秣马厉兵 关键之城 静候佳音！！！",
+                    "url": "http://m.hupu.com/bbs/13257301.html",
+                    "type": "bbs",
+                    "replies": "6999",
+                    "light": "17",
+                    "fid": "44",
+                    "boardname": "火箭专区",
+                    "boardurl": "http://m.hupu.com/bbs/44"
+                },
+                {
+                    "title": "慢转水，写在这场失利后",
+                    "url": "http://m.hupu.com/bbs/14895956.html",
+                    "type": "bbs",
+                    "replies": "4",
+                    "light": "0",
+                    "fid": "44",
+                    "boardname": "火箭专区",
+                    "boardurl": "http://m.hupu.com/bbs/44"
+                },
+                {
+                    "title": "[流言板]哈登：我在场上做了一些糟糕决定",
+                    "url": "http://m.hupu.com/bbs/14894933.html",
+                    "type": "bbs",
+                    "replies": "39",
+                    "light": "2",
+                    "fid": "44",
+                    "boardname": "火箭专区",
+                    "boardurl": "http://m.hupu.com/bbs/44"
+                }
+            ],
+            [
+                {
+                    "title": "老詹33 散卡3万3 祝贺结束三连败",
+                    "url": "http://m.hupu.com/bbs/14894081.html",
+                    "type": "bbs",
+                    "replies": "240",
+                    "light": "1",
+                    "fid": "85",
+                    "boardname": "骑士专区",
+                    "boardurl": "http://m.hupu.com/bbs/85"
+                },
+                {
+                    "title": "猖狂的话题区流言笑料",
+                    "url": "http://m.hupu.com/bbs/14895976.html",
+                    "type": "bbs",
+                    "replies": "0",
+                    "light": "0",
+                    "fid": "4463",
+                    "boardname": "骑士生活区",
+                    "boardurl": "http://m.hupu.com/bbs/4463"
+                },
+                {
+                    "title": "精神状态算是缓回来点了，但是战术关键时候还是依旧只有詹姆斯单打……",
+                    "url": "http://m.hupu.com/bbs/14894032.html",
+                    "type": "bbs",
+                    "replies": "26",
+                    "light": "3",
+                    "fid": "85",
+                    "boardname": "骑士专区",
+                    "boardurl": "http://m.hupu.com/bbs/85"
+                }
+            ],
+            [
+                {
+                    "title": "【瞎扯球】退役后做什么？科比本人亲自揭秘，最新单曲MV曝光",
+                    "url": "http://m.hupu.com/bbs/14894670.html",
+                    "type": "bbs",
+                    "replies": "5",
+                    "light": "0",
+                    "fid": "81",
+                    "boardname": "湖人专区",
+                    "boardurl": "http://m.hupu.com/bbs/81"
+                },
+                {
+                    "title": "[流言板]湖人功勋训练师加里-维蒂将退休",
+                    "url": "http://m.hupu.com/bbs/14895024.html",
+                    "type": "bbs",
+                    "replies": "8",
+                    "light": "0",
+                    "fid": "81",
+                    "boardname": "湖人专区",
+                    "boardurl": "http://m.hupu.com/bbs/81"
+                },
+                {
+                    "title": "蜗壳宣布退役，散卡81W",
+                    "url": "http://m.hupu.com/bbs/14820611.html",
+                    "type": "bbs",
+                    "replies": "1785",
+                    "light": "4",
+                    "fid": "81",
+                    "boardname": "湖人专区",
+                    "boardurl": "http://m.hupu.com/bbs/81"
+                }
+            ]
+        ],
+        "hotnews": [
+            {
+                "title": "保罗：我们让比赛变得很丑陋",
+                "type": "news",
+                "url": "http://m.hupu.com/nba/news/1980548.html",
+                "media": "橘郡纪事报",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151208/0a37e51659c216ed39233f17f42952aeb17955e9.jpg",
+                "date": "2015-12-08 14:53:00",
+                "reply_count": "53",
+                "light_count": "6",
+                "replies": "53"
+            },
+            {
+                "title": "德隆：来小牛可能是生涯最佳选择",
+                "type": "news",
+                "url": "http://m.hupu.com/nba/news/1980570.html",
+                "media": "纽约邮报",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151208/6188360b22d2e403ab83b15a9a8cee859258cff8.jpg",
+                "date": "2015-12-08 15:29:00",
+                "reply_count": "77",
+                "light_count": "7",
+                "replies": "77"
+            },
+            {
+                "title": "库里：超越乔丹是我打球的动力",
+                "type": "news",
+                "url": "http://m.hupu.com/nba/news/1980773.html",
+                "media": "康特拉克斯塔时报",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/d0ca04ddd11c57d8ec20185de8789402ebac8be4.png",
+                "date": "2015-12-09 06:27:00",
+                "reply_count": "192",
+                "light_count": "6",
+                "replies": "192"
+            },
+            {
+                "title": "科比戏称：不希望出现另一个科比",
+                "type": "news",
+                "url": "http://m.hupu.com/nba/news/1980540.html",
+                "media": "ESPN",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151208/3e4754f7c71d7b0922f9fc54c0eb87ae1e357aa8.png",
+                "date": "2015-12-08 14:43:12",
+                "reply_count": "56",
+                "light_count": "7",
+                "replies": "56"
+            },
+            {
+                "title": "科比雪地画像登上《洛杉矶时报》",
+                "type": "news",
+                "url": "http://m.hupu.com/nba/news/1980651.html",
+                "media": "洛杉矶时报",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151208/be0451c452d9b5520c6b8b8c0429ec4486b4184c.png",
+                "date": "2015-12-08 17:11:00",
+                "reply_count": "56",
+                "light_count": "6",
+                "replies": "56"
+            },
+            {
+                "title": "詹姆斯：对于轮休的决定没有异议",
+                "type": "news",
+                "url": "http://m.hupu.com/nba/news/1980539.html",
+                "media": "克利夫兰老实人报",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151208/072199461b67f1fd82f3934d7b4104cb4ff8bade.png",
+                "date": "2015-12-08 14:40:00",
+                "reply_count": "144",
+                "light_count": "9",
+                "replies": "144"
+            },
+            {
+                "title": "林书豪打趣：娶谁由我妈做主",
+                "type": "news",
+                "url": "http://m.hupu.com/nba/news/1980650.html",
+                "media": "NBA官网",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151208/4bee559b03a6c94aedbbc66945c581d39ba2ac9e.png",
+                "date": "2015-12-08 17:10:49",
+                "reply_count": "24",
+                "light_count": "4",
+                "replies": "24"
+            },
+            {
+                "title": "富尼耶曾索要年薪超千万的合同",
+                "type": "news",
+                "url": "http://m.hupu.com/nba/news/1980764.html",
+                "media": "ESPN",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/74cef35f2c99579ec24384b558cc25e0976944ef.jpg",
+                "date": "2015-12-09 05:53:44",
+                "reply_count": "48",
+                "light_count": "3",
+                "replies": "48"
+            },
+            {
+                "title": "韦德恭喜詹姆斯同耐克签终身合同",
+                "type": "news",
+                "url": "http://m.hupu.com/nba/news/1980777.html",
+                "media": "Instagram",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c1.hoopchina.com.cn/uploads/star/event/images/151209/74df88e29ff0834d5126b3ee04183257918f5d82.png",
+                "date": "2015-12-09 06:36:00",
+                "reply_count": "20",
+                "light_count": "1",
+                "replies": "20"
+            },
+            {
+                "title": "阿德：没有人会抱有成功了的心态",
+                "type": "news",
+                "url": "http://m.hupu.com/nba/news/1980804.html",
+                "media": "圣安东尼奥新闻快报",
+                "img": "http://img04.store.sogou.com/net/a/46/link?appid=46&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151209/33f3e4e35830de55863051162f90124b0a7b8b66.png",
+                "date": "2015-12-09 07:37:00",
+                "reply_count": "19",
+                "light_count": "1",
+                "replies": "19"
+            }
+        ]
+    },
+    "adInfo": [],
+    "from": ""
+}

@@ -1,0 +1,119 @@
+.hp-threeNav { margin-top: 10px;}
+.gamecenter_livestart {
+    width: 980px;
+    margin: 0 auto;
+    font: 12px/1.5 \5b8b\4f53,Arial,sans-serif;
+}
+.teamlist_box {
+    margin-top: 25px
+}
+
+.teamlist_box .teamlist_box_l {
+    float: left;
+    background: url(teamlist.gif) no-repeat center center;
+    height: 126px;
+    width: 80px;
+    text-align: center;
+    padding-top: 108px;
+    font-size: 14px;
+    font-weight: bold
+}
+
+.teamlist_box .teamlist_box_r {
+    width: 895px;
+    float: right
+}
+
+.teamlist_box .teamlist_box_r .all {
+    margin-bottom: 10px;
+    *zoom: 1
+}
+
+.teamlist_box .teamlist_box_r .all:before,
+.teamlist_box .teamlist_box_r .all:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.teamlist_box .teamlist_box_r .all:after {
+    clear: both
+}
+
+.teamlist_box .teamlist_box_r .all:before,
+.teamlist_box .teamlist_box_r .all:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.teamlist_box .teamlist_box_r .all:after {
+    clear: both
+}
+
+.teamlist_box .teamlist_box_r .all .a {
+    text-align: center;
+    float: left;
+    margin-top: 20px;
+    width: 85px
+}
+
+.teamlist_box .teamlist_box_r .all .a span {
+    border-radius: 5px;
+    color: #999999;
+    padding: 5px 10px;
+    background-color: #fafafc;
+    display: inline-block
+}
+
+.teamlist_box .teamlist_box_r .all .a span.on {
+    background-color: #a92229;
+    color: #fff
+}
+
+.teamlist_box .teamlist_box_r .all .team {
+    float: left
+}
+
+.teamlist_box .teamlist_box_r .all .team .box {
+    float: left;
+    margin-left: 10px;
+    width: 140px;
+    height: 66px;
+    padding: 5px;
+    display: inline
+}
+
+.teamlist_box .teamlist_box_r .all .team .a_teamlink:hover {
+    text-decoration: none;
+}
+
+.teamlist_box .teamlist_box_r .all .team .box.on {
+    background-color: #f7f7f7
+}
+
+.teamlist_box .teamlist_box_r .all .team .box .img {
+    float: left;
+    width: 64px;
+    height: 64px;
+    /*border:1px #f6f6f6 solid*/
+}
+
+.teamlist_box .teamlist_box_r .all .team .box .img img {
+    width: 64px;
+    height: 64px
+}
+
+.teamlist_box .teamlist_box_r .all .team .box .font {
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.teamlist_box .teamlist_box_r .all .team .box .font h2 {
+    font-size: 14px
+}
+
+.teamlist_box .teamlist_box_r .all .team .box:hover {
+    color: #444444
+}

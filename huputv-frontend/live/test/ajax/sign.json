@@ -1,0 +1,8 @@
+{
+    "code": 1,
+    "data": {
+        "has_sign": true,
+        "keep_days": 1,
+        "add_bean": 5
+    }
+}

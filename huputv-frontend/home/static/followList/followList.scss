@@ -1,0 +1,252 @@
+@charset "utf-8";
+@import "../sass/sassCore/base";
+
+.mod-overflow {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.myfollow-wrap {
+	width: 980px;
+	min-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.user-content {
+		@include clearfix();
+		margin-top: 10px;
+	}
+
+	.list {
+		float: right;
+		width: 790px;
+		margin-bottom: 20px;
+
+		.inner {
+			width: 810px;
+		}
+
+		li {
+			float: left;
+			width: 395px;
+			height: 120px;
+			padding: 10px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			background-color: #fff;
+			&:nth-child(even){
+				margin-right: 0;
+			}
+		}
+
+		.cover-wrap {
+			display: block;
+		}
+
+		.cover-wrap:hover .mask {
+			display: block;
+		}
+
+		.cover {
+			position: relative;
+			width: 174px;
+			height: 100px;
+
+			img {
+				width: 174px;
+				height: 100px;
+			}
+		}
+
+        .game-status {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+			min-width: 28px;
+            line-height: 16px;
+			text-align: center;
+            background: #6f6f6f;
+            color: #444;
+			font-weight: 700;
+            font-style: normal;
+            font-size: 12px;
+        }
+
+        .game-status-live {
+            background: rgba(255,255,255,.75);
+        }
+
+
+
+		.mask {
+			position: absolute;
+			left: 0;
+		    top: 0;
+            z-index: 2;
+		    display: none;
+		    width: 100%;
+		    height: 100%;
+		    text-align: center;
+			background-color: rgba(0, 0, 0, .5);
+		}
+
+		.icon-hptv-play-o {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 50px;
+			color: #fff;
+		}
+
+		.rest {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			height: 24px;
+			color: #fff;
+		}
+
+		.text {
+			margin-left: 180px;
+			margin-top: -100px;
+			font-size: 12px;
+			color: #a9a9b2;
+		}
+
+		.room-name {
+			font-size: 14px;
+			color: #434141;
+		}
+
+		.room-name a:hover {
+			color: #c01e2f;
+		}
+
+		.info {
+			@include clearfix();
+		}
+
+		.tags {
+			height: 24px;
+			line-height: 24px;
+			margin-bottom: 10px;
+		}
+
+		.user, .num {
+			float: left;
+		}
+
+		.audience, .btn {
+			float: right;
+		}
+
+		.btn {
+			position: relative;
+			top: -4px;
+			right: -2px;
+			display: block;
+			width: 70px;
+			line-height: 24px;
+			text-align: center;
+			color: #a9a9b2;
+			background-color: #eeebeb;
+			border-radius: 4px;
+		}
+
+		.icon-audience {
+			display: inline-block;
+			width: 15px;
+			height: 10px;
+			margin-right: 6px;
+			background-image: url(../img/icon-audience.png);
+			background-size: cover;
+		}
+	}
+
+	.no-follow {
+        text-align: center;
+		color: #434141;
+	}
+}
+
+@media screen and (min-width: 575px) and (max-width: 980px) {
+	.myfollow-wrap {
+		width: 575px;
+		.list {
+			width: 395px;
+
+			.inner {
+				width: 405px;
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 395px) and (max-width: 575px) {
+	.myfollow-wrap {
+		width: 395px;
+		.list {
+			width: 395px;
+
+			.inner {
+				width: 405px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 394px) {
+	.myfollow-wrap {
+		width: 300px;
+		.list {
+			width: 300px;
+
+			.inner {
+				width: 310px;
+			}
+
+			li {
+				width: 300px;
+				height: 78px;
+			}
+
+			.cover{
+				width: 100px;
+				height: 58px;
+				img {
+					width: 100px;
+					height: 58px;
+				}
+			}
+
+			.mask {
+				height: 58px;
+			}
+
+			.text {
+				margin-left: 106px;
+				margin-top: -64px;
+			}
+
+			.info {
+				margin-bottom: 4px;
+			}
+
+			.tags {
+				display: none;
+			}
+		}
+	}
+}

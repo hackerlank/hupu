@@ -1,0 +1,18 @@
+{
+    "code": 1,
+    "msg": null,
+    "data": {
+        "anchor": "lyf362345",
+        "start_date": "2016-05-12",
+        "end_date": "2016-05-11",
+        "list": [
+            {
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0,
+                "date": "2016-05-11"
+            }
+        ]
+    }
+}

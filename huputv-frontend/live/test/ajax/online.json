@@ -1,0 +1,30 @@
+{
+    "code": 1,
+    "data": {
+        "status": 1,
+        "cur_score": 5,
+        "rest_time": 15,
+        "scene_list": {
+            "1": {
+                "status": 3,
+                "score": 5
+            },
+            "2": {
+                "status": 1,
+                "score": 10
+            },
+            "3": {
+                "status": 0,
+                "score": 15
+            },
+            "4": {
+                "status": 0,
+                "score": 20
+            },
+            "5": {
+                "status": 0,
+                "score": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import "../../static/sass/sassCore/base";
+
+.hp-dialog-wrap {
+  #cboxClose {
+    top: 5px;
+    right: 5px;
+    background: url(./button_close.png?__sprite) no-repeat 0 0;
+  }  
+}
+
+.hp-dialog {
+  padding: 30px 35px 0;
+  font-size: 18px;
+  .hp-popup-content {
+      min-height: 60px;
+  }
+  .button-inner {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    .button {
+        @include inline-block();
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 10px;
+        text-align: center;
+        background: #8db5c3;
+        color: $white;
+    }
+    .button-cancel {
+        background: #ccc;
+    }
+  }
+}

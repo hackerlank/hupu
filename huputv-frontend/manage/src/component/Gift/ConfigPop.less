@@ -1,0 +1,52 @@
+.clearfix { 
+    *zoom: 1; 
+} 
+
+.clearfix:before, .clearfix:after { 
+  display: table; 
+  line-height: 0; 
+  content: ""; 
+} 
+
+.clearfix:after { 
+    clear: both; 
+} 
+
+.fl{
+    float: left;
+}
+
+.ml10{
+    margin-left: 10px;
+}
+
+.table-wrap{
+    display: -webkit-flex;
+    display: flex;
+}
+
+.sourceTable, .targetTable{
+    width: 300px;
+    height: 480px;
+    overflow-x: hidden;
+}
+
+.operation{
+    -webkit-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-justify-content: center;
+          justify-content: center;
+    -webkit-align-items: center;
+          align-items: center;
+}
+
+.anticon-caret-up, .anticon-caret-down{
+    display: block;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #2db7f5;
+}

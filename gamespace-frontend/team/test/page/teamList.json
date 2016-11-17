@@ -1,0 +1,351 @@
+{
+  "nav_link": {
+    "home": "https://dev-nba.hupu.com/games",
+    "standing": "https://dev-nba.hupu.com/standings",
+    "stats": "https://dev-nba.hupu.com/stats/players",
+    "schedule": "https://dev-nba.hupu.com/schedule",
+    "team": "https://dev-nba.hupu.com/teams",
+    "player": "https://dev-nba.hupu.com/players"
+  },
+  "title": "NBA球队主页|NBA东部球队|NBA西部球队—虎扑NBA",
+  "keywords": "虎扑为您提供NBA所有东西部球队，并按照大西洋赛区、西南赛区、中部赛区、西北赛区、东南赛区、太平洋赛区进行划分展示。",
+  "description": "nba球队",
+  "team_list": {
+    "southwest": {
+      "rank": 6,
+      "division": "西南赛区",
+      "team_list": [
+        {
+          "id": "21",
+          "name": "马刺",
+          "full_name": "圣安东尼奥马刺",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/SAS.png",
+          "won": "3",
+          "lost": "1",
+          "eng_name": "Spurs",
+          "url": "https://dev-nba.hupu.com/teams/spurs"
+        },
+        {
+          "id": "16",
+          "name": "小牛",
+          "full_name": "达拉斯小牛",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/DAL.png",
+          "won": "2",
+          "lost": "1",
+          "eng_name": "Mavericks",
+          "url": "https://dev-nba.hupu.com/teams/mavericks"
+        },
+        {
+          "id": "19",
+          "name": "灰熊",
+          "full_name": "孟菲斯灰熊",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/MEN.png",
+          "won": "2",
+          "lost": "2",
+          "eng_name": "Grizzlies",
+          "url": "https://dev-nba.hupu.com/teams/grizzlies"
+        },
+        {
+          "id": "18",
+          "name": "火箭",
+          "full_name": "休斯顿火箭",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/HOU.png",
+          "won": "1",
+          "lost": "3",
+          "eng_name": "Rockets",
+          "url": "https://dev-nba.hupu.com/teams/rockets"
+        },
+        {
+          "id": "14",
+          "name": "鹈鹕",
+          "full_name": "新奥尔良鹈鹕",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/NOH.png",
+          "won": "0",
+          "lost": "3",
+          "eng_name": "Pelicans",
+          "url": "https://dev-nba.hupu.com/teams/pelicans"
+        }
+      ]
+    },
+    "pacific": {
+      "rank": 5,
+      "division": "太平洋赛区",
+      "team_list": [
+        {
+          "id": "29",
+          "name": "快船",
+          "full_name": "洛杉矶快船",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/LAC.png",
+          "won": "4",
+          "lost": "0",
+          "eng_name": "Clippers",
+          "url": "https://dev-nba.hupu.com/teams/clippers"
+        },
+        {
+          "id": "28",
+          "name": "勇士",
+          "full_name": "金州勇士",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/GSW.png",
+          "won": "4",
+          "lost": "0",
+          "eng_name": "Warriors",
+          "url": "https://dev-nba.hupu.com/teams/warriors"
+        },
+        {
+          "id": "26",
+          "name": "太阳",
+          "full_name": "菲尼克斯太阳",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/PHX.png",
+          "won": "2",
+          "lost": "2",
+          "eng_name": "Suns",
+          "url": "https://dev-nba.hupu.com/teams/suns"
+        },
+        {
+          "id": "23",
+          "name": "国王",
+          "full_name": "萨克拉门托国王",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/SAC.png",
+          "won": "1",
+          "lost": "2",
+          "eng_name": "Kings",
+          "url": "https://dev-nba.hupu.com/teams/kings"
+        },
+        {
+          "id": "24",
+          "name": "湖人",
+          "full_name": "洛杉矶湖人",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/LAL.png",
+          "won": "0",
+          "lost": "3",
+          "eng_name": "Lakers",
+          "url": "https://dev-nba.hupu.com/teams/lakers"
+        }
+      ]
+    },
+    "northwest": {
+      "rank": 4,
+      "division": "西北赛区",
+      "team_list": [
+        {
+          "id": "27",
+          "name": "雷霆",
+          "full_name": "俄克拉荷马城雷霆",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/OKC.png",
+          "won": "3",
+          "lost": "1",
+          "eng_name": "Thunder",
+          "url": "https://dev-nba.hupu.com/teams/thunder"
+        },
+        {
+          "id": "20",
+          "name": "森林狼",
+          "full_name": "明尼苏达森林狼",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/MIN.png",
+          "won": "2",
+          "lost": "1",
+          "eng_name": "Timberwolves",
+          "url": "https://dev-nba.hupu.com/teams/timberwolves"
+        },
+        {
+          "id": "22",
+          "name": "爵士",
+          "full_name": "犹他爵士",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/UTA.png",
+          "won": "2",
+          "lost": "1",
+          "eng_name": "Jazz",
+          "url": "https://dev-nba.hupu.com/teams/jazz"
+        },
+        {
+          "id": "25",
+          "name": "开拓者",
+          "full_name": "波特兰开拓者",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/POR.png",
+          "won": "2",
+          "lost": "2",
+          "eng_name": "Blazers",
+          "url": "https://dev-nba.hupu.com/teams/blazers"
+        },
+        {
+          "id": "17",
+          "name": "掘金",
+          "full_name": "丹佛掘金",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/DEN.png",
+          "won": "1",
+          "lost": "2",
+          "eng_name": "Nuggets",
+          "url": "https://dev-nba.hupu.com/teams/nuggets"
+        }
+      ]
+    },
+    "atlantic": {
+      "rank": 3,
+      "division": "大西洋赛区",
+      "team_list": [
+        {
+          "id": "15",
+          "name": "猛龙",
+          "full_name": "多伦多猛龙",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/TOR.png",
+          "won": "3",
+          "lost": "0",
+          "eng_name": "Raptors",
+          "url": "https://dev-nba.hupu.com/teams/raptors"
+        },
+        {
+          "id": "4",
+          "name": "尼克斯",
+          "full_name": "纽约尼克斯",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/NYK.png",
+          "won": "2",
+          "lost": "2",
+          "eng_name": "Knicks",
+          "url": "https://dev-nba.hupu.com/teams/knicks"
+        },
+        {
+          "id": "1",
+          "name": "凯尔特人",
+          "full_name": "波士顿凯尔特人",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/e59350a5bc97aa5c.png",
+          "won": "1",
+          "lost": "2",
+          "eng_name": "Celtics",
+          "url": "https://dev-nba.hupu.com/teams/celtics"
+        },
+        {
+          "id": "6",
+          "name": "76人",
+          "full_name": "费城76人",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/PHI.png",
+          "won": "0",
+          "lost": "3",
+          "eng_name": "76ers",
+          "url": "https://dev-nba.hupu.com/teams/76ers"
+        },
+        {
+          "id": "182",
+          "name": "篮网",
+          "full_name": "布鲁克林篮网",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/BKN.png",
+          "won": "0",
+          "lost": "4",
+          "eng_name": "Nets",
+          "url": "https://dev-nba.hupu.com/teams/nets"
+        }
+      ]
+    },
+    "southeast": {
+      "rank": 2,
+      "division": "东南赛区",
+      "team_list": [
+        {
+          "id": "8",
+          "name": "老鹰",
+          "full_name": "亚特兰大老鹰",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/ATL.png",
+          "won": "3",
+          "lost": "1",
+          "eng_name": "Hawks",
+          "url": "https://dev-nba.hupu.com/teams/hawks"
+        },
+        {
+          "id": "7",
+          "name": "奇才",
+          "full_name": "华盛顿奇才",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/WAS.png",
+          "won": "2",
+          "lost": "1",
+          "eng_name": "Wizards",
+          "url": "https://dev-nba.hupu.com/teams/wizards"
+        },
+        {
+          "id": "2",
+          "name": "热火",
+          "full_name": "迈阿密热火",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/MIA.png",
+          "won": "2",
+          "lost": "1",
+          "eng_name": "Heat",
+          "url": "https://dev-nba.hupu.com/teams/heat"
+        },
+        {
+          "id": "5",
+          "name": "魔术",
+          "full_name": "奥兰多魔术",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/ORL.png",
+          "won": "0",
+          "lost": "3",
+          "eng_name": "Magic",
+          "url": "https://dev-nba.hupu.com/teams/magic"
+        },
+        {
+          "id": "30",
+          "name": "黄蜂",
+          "full_name": "夏洛特黄蜂",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/CHA2.png",
+          "won": "0",
+          "lost": "3",
+          "eng_name": "Hornets",
+          "url": "https://dev-nba.hupu.com/teams/hornets"
+        }
+      ]
+    },
+    "central": {
+      "rank": 1,
+      "division": "中部赛区",
+      "team_list": [
+        {
+          "id": "11",
+          "name": "活塞",
+          "full_name": "底特律活塞",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/DET.png",
+          "won": "3",
+          "lost": "0",
+          "eng_name": "Pistons",
+          "url": "https://dev-nba.hupu.com/teams/pistons"
+        },
+        {
+          "id": "9",
+          "name": "公牛",
+          "full_name": "芝加哥公牛",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/CHI.png",
+          "won": "3",
+          "lost": "1",
+          "eng_name": "Bulls",
+          "url": "https://dev-nba.hupu.com/teams/bulls"
+        },
+        {
+          "id": "10",
+          "name": "骑士",
+          "full_name": "克利夫兰骑士",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/CLE.png",
+          "won": "3",
+          "lost": "1",
+          "eng_name": "Cavaliers",
+          "url": "https://dev-nba.hupu.com/teams/cavaliers"
+        },
+        {
+          "id": "13",
+          "name": "雄鹿",
+          "full_name": "密尔沃基雄鹿",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/MIL.png",
+          "won": "1",
+          "lost": "3",
+          "eng_name": "Bucks",
+          "url": "https://dev-nba.hupu.com/teams/bucks"
+        },
+        {
+          "id": "12",
+          "name": "步行者",
+          "full_name": "印第安纳步行者",
+          "logo": "http://gdc.hupucdn.com/gdc/nba/team/logo/IND.png",
+          "won": "0",
+          "lost": "3",
+          "eng_name": "Pacers",
+          "url": "https://dev-nba.hupu.com/teams/pacers"
+        }
+      ]
+    }
+  }
+}

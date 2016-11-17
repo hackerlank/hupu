@@ -1,0 +1,7 @@
+.bbs_a{margin-top:10px;padding-bottom:10px;border:1px #efeff0 solid}
+.bbs_a .title{background-color:#fbfbfb;height:42px;font:12px/1.5 \9ED1\4F53,Arial,sans-serif;font-size:16px;line-height:40px;padding-left:15px}
+.bbs_a .title img{vertical-align:middle;margin-right:10px}
+.bbs_a ul li{margin:13px 0 0 13px;height:20px;overflow:hidden;padding-right:10px}
+.bbs_a ul.hour li i,
+.gamecenter_content_r .bbs_a ul.hour li s{font-size:14px;margin-right:10px;text-decoration:none;color:#999999}
+.bbs_a ul.hour li i{font-weight:bold;color:#000}

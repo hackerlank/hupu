@@ -1,0 +1,33 @@
+{
+  "name": "huputv_frontend",
+  "version": "1.0.0",
+  "description": "HUPU TV frontend code.",
+  "main": "",
+  "scripts": {
+    "start": "fis3 server start",
+    "stop": "fis3 server stop",
+    "local": "sh ./local.sh",
+    "dev": "sh ./devToDev.sh",
+    "test": "sh ./devToTest.sh",
+    "online": "sh ./publish.sh"
+  },
+  "repository": {
+    "type": "svn",
+    "url": "http://192.168.8.245/usvn/svn/huputv_frontend/trunk"
+  },
+  "keywords": [
+    "fis",
+    "huputv",
+    "frontend"
+  ],
+  "author": "hupu_frontend",
+  "dependencies": {
+    "fis-parser-es6-babel": "^1.0.0",
+    "fis-parser-node-sass": "^0.1.8",
+    "fis3-hook-module": "^1.2.2",
+    "fis3-smarty": "^1.1.10"
+  },
+  "devDependencies": {
+    "react-swf": "^1.0.3"
+  }
+}

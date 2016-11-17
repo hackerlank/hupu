@@ -1,0 +1,417 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+@mixin icons-multiply($width: 20px, $height: 20px){
+    width: $width;
+    height: $height;
+    overflow: hidden;
+    background: url(./img/multiply.png) no-repeat top left;
+    background-size: cover;
+}
+
+@mixin better-count($isFloat: true){
+    i {
+        overflow: hidden;
+        background: url(./img/number.png) no-repeat top left;
+
+        @if $isFloat{
+            @include float();
+            width: 22px;
+            height: 33px;
+            background-size: cover;
+
+        } @else {
+            @include inline-block();
+            width: 16px;
+            height: 24px;
+            margin-left: -4px;
+            background-size: 160px 100%;
+        }
+
+
+    }
+    @if $isFloat{
+        @for $i from 0 through 9 {
+            .count-#{$i} { background-position: -$i * 23px 0; }
+        }
+    } @else {
+        @for $i from 0 through 9 {
+            .count-#{$i} { background-position: -$i * 16px 0; }
+        }
+    }
+
+}
+
+.chatroom {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    .chatroom-list {
+        height: 416px;
+        padding: 10px 15px;
+        overflow: auto;
+        line-height: 1.4;
+        background: #fff;
+        word-wrap:break-word;
+        white-space:normal;
+        word-break:break-all;
+        li {
+            padding: 5px 0;
+        }
+        .chat-head {
+            padding-bottom: 2px;
+            .icon-zhubo {
+                @include inline-block;
+                width: 16px;
+                height: 16px;
+                margin-right: 2px;
+                overflow: hidden;
+                background: url(./img/icon_zhubo.png?__sprite) no-repeat top left;
+                vertical-align: middle;
+            }
+            .username {
+                font-size: 12px;
+                margin-right: 2px;
+                font-weight: 700;
+            }
+            .rpz-number {
+                @include inline-block;
+                min-width: 30px;
+                text-align: center;
+                height: 14px;
+                line-height: 14px;
+                font-size: 12px;
+                background: #ff9fa5;
+                color: #fff;
+                vertical-align: middle;
+            }
+            .rpz-number-lost{
+                background-color: #59dc65 !important;
+            }
+            .icons-phone {
+                @include inline-block();
+                width: 10px;
+                height: 16px;
+                margin-right: 2px;
+                overflow: hidden;
+                background: url(./img/icon_phone.png?__sprite) no-repeat top left;
+                vertical-align: middle;
+            }
+        }
+        .chat-content {
+            font-size: 12px;
+            color: #777;
+        }
+        .chat-news {
+            font-size: 12px;
+            .icon-news {
+                @include inline-block();
+                width: 14px;
+                height: 14px;
+                overflow: hidden;
+                background: url(./img/icon_news.png?__sprite) no-repeat top left;
+                vertical-align: text-top;
+            }
+        }
+        .red {
+            color: #cc3333;
+        }
+        .yellow {
+            color: #ffb300;
+        }
+
+        .self-chat {
+          color: #cc3333;
+          .username {
+            color: #cc3333;
+          }
+        }
+    }
+    .welcome-content {
+        font-size: 12px;
+        color: #999;
+    }
+    .send-hot-line {
+        padding: 10px;
+        font-size: 12px;
+        border-top: 1px solid #ddd;
+    }
+    .textarea-inner {
+        margin-bottom: 5px;
+        position: relative;
+        border: 1px solid #ccc;
+    }
+    .form-textarea {
+        width: 100%;
+        height: 55px;
+        padding: 5px 10px;
+        overflow-y: auto;
+        background: #fff;
+        border: none;
+        vertical-align: top;
+        // border: none;
+        resize: none;
+    }
+    .tips-islogin {
+        display: none;
+        text-align: center;
+        a {
+            display: block;
+            padding: 5px 10px;
+        }
+        .red {
+            color: #c01e2f;
+        }
+    }
+
+    .button-inner {
+        @include clearfix();
+        text-align: right;
+    }
+    .chat-error {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 22px;
+        text-align: center;
+        background: $white;
+        color: #c01e2f;
+    }
+    .shield {
+        @include float();
+        line-height: 26px;
+        color: #a9a9b2;
+        input {
+            // vertical-align: middle;
+        }
+    }
+    .button-right {
+        @include float(right);
+    }
+    .button-send {
+        display: inline-block;
+        height: 26px;
+        line-height: 26px;
+        padding: 0 15px;
+        background: #8db5c3;
+        color: #fff;
+    }
+    .button-has-send {
+        background: none;
+        color: #999;
+        border: 1px solid #a9a9b2;
+    }
+    .text-max-count {
+        margin-right: 10px;
+        color: #a9a9b2;
+    }
+
+    .chatroom-notlogin {
+        .tips-islogin {
+            display: block;
+        }
+        .textarea-inner,
+        .button-inner {
+            display: none;
+        }
+    }
+}
+
+/* 礼物 */
+.gift-batter-tip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    .batter-list {
+        position: absolute;
+        top: 0;
+        left: 0;
+        .batter-bg {
+            position: relative;
+            width: 0;
+            height: 60px;
+            overflow: hidden;
+            background: url(./img/1_bg_2.png) no-repeat top left;
+            color: $white;
+        }
+        .batter-inner {
+            width: 400px;
+        }
+        .icon-dec {
+            display: block;
+            position: absolute;
+            top: -5px;
+            right: -73px;
+            width: 81px;
+            height: 60px;
+            overflow: hidden;
+            background: url(./img/1_bg_1.png) no-repeat top left;
+        }
+        .gift-pic {
+//            display: none;
+            @include float();
+            width: 56px;
+            height: 56px;
+            overflow: hidden;
+            margin: -3px 5px 0 0;
+            border: 1px solid #8c2800;
+            img {
+                width: 100%;
+            }
+        }
+        .gift-text {
+//            display: none;
+            @include float();
+            margin: 10px 10px 0 0;
+        }
+        .name {
+//            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        .send-gift-name {
+            font-size: 12px;
+        }
+        .icons-multiply {
+            @include float();
+            @include icons-multiply;
+            margin: 20px 0 0 0;
+        }
+        .better-count {
+            @include float();
+            margin-top: 11px;
+            @include better-count();
+        }
+    }
+}
+
+.gift-message-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 0;
+    font-size: 12px;
+    @include clearfix;
+    @include bgcolor-alpha(rgba(131,145,169,.9));
+    color: #fff;
+    overflow: hidden;
+    .message-list-wrap {
+        position: relative;
+        width: 330px;
+        padding: 2px 35px 7px 15px;
+    }
+    a {
+        color: #fff;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .button-close {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 2;
+        width: 18px;
+        height: 18px;
+        overflow: hidden;
+        background: url(./img/button_close.png?__sprite) no-repeat 0 0;
+    }
+
+    .speak-dl {
+        @include clearfix;
+        .speak-avatar {
+            @include float;
+            width: 40px;
+            height: 40px;
+            margin-top: 0;
+            overflow: hidden;
+            @include border-radius(50%);
+            img {
+                width: 100%;
+            }
+        }
+        .speak-name,
+        .speak-content {
+            @include float(right);
+            width: 230px;
+        }
+        .speak-name {
+            font-size: 14px;
+        }
+        .speak-content {
+            line-height: 1.2;
+            min-height: 28px;
+        }
+    }
+    .message-title {
+        padding-bottom: 2px;
+        font-size: 14px;
+        .icon-system {
+            @include inline-block;
+            width: 16px;
+            height: 14px;
+            overflow: hidden;
+            vertical-align: text-top;
+            background: url(./img/icon_system.png?__sprite) no-repeat 0 0;
+        }
+    }
+    .message-content {
+        line-height: 1.2;
+        min-height: 28px;
+    }
+}
+.zhubo-speak-list {
+    @include bgcolor-alpha(rgba(255,126,0,.9));
+}
+
+.gift-better-antmation {
+    -webkit-animation: better .2s cubic-bezier(.51,.3,.25,.91);
+    -moz-animation: better .2s cubic-bezier(.51,.3,.25,.91);
+    animation: better .2s cubic-bezier(.51,.3,.25,.91);
+    -webkit-transform-origin: 10% 80%;
+}
+
+
+@-webkit-keyframes better {
+    0% {
+        -webkit-transform: scale(1) translate(0, 0);
+    }
+    65% {
+        -webkit-transform: scale(1.2) translate(4px, -4px);
+    }
+    100% {
+        -webkit-transform: scale(1) translate(0, 0);
+    }
+}
+@-moz-keyframes better1 {
+    0% {
+        -moz-transform: scale(1);
+    }
+    65% {
+        -moz-transform: scale(1.3);
+    }
+    100% {
+        -moz-transform: scale(1);
+    }
+}
+
+@keyframes better1 {
+    0% {
+        transform: scale(1);
+    }
+    65% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

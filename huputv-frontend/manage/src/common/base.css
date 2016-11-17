@@ -1,0 +1,99 @@
+.header h2{
+  padding:10px 0 10px 2%;
+}
+.content{
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.tb10{
+  padding:10px 0;
+}
+.red{
+  color:red;
+}
+.pr{
+  position: relative;
+}
+
+.psychc-skills-right .skill-con,
+.psychc-skills-left .skill-con{
+    padding: 4px 3px;
+    background-color: rgb(242,242,242);
+}
+.psychc-skills-left h3,
+.psychc-skills-right h3{
+  text-align: center;
+  background-color:rgb(253, 146, 149);
+  border:1px solid rgb(253, 97, 101);
+  color: #fff;
+  line-height: 30px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: normal;
+}
+.border-1{
+  border:1px solid rgb(253, 97, 101);
+  line-height: 28px;
+  height: 28px;
+  text-align: center;
+}
+.skill-block{
+  border:1px solid rgb(121,121,121);
+  display: flex;
+  margin: 12px 0;
+  position: relative;
+  height: 42px;
+}
+.skill-block img{
+  flex: 1;
+  border-right: 1px solid rgb(121,121,121);
+}
+.skill-block .btns{
+  flex: 2;
+  padding: 5px;
+}
+.skill-block .btns .btn{
+  width: 43%;
+  display: inline-block;
+  padding: 2px 4px;
+  margin: 3px;
+  text-align: center;
+  border: 1px solid #54afc7;
+  cursor: pointer;
+}
+.skill-block .btns .disabled{
+  background-color: #444;
+}
+.skill-block .btns .offline{
+  border:1px solid red!important;
+}
+.video-main{
+  padding:10px;
+  text-align: center;
+}
+.video-main object{
+  margin: 0 auto;
+}
+.video-js{
+  margin: 0 auto;
+  width: 880px;
+  height: 364px;
+}
+.psychc-controller{
+  display: flex;
+  padding: 6px;
+}
+.psychc-controller .psychc-team{
+  flex: 1
+}
+.psychc-controller .psychc-team{
+  height: 30px;
+  line-height: 30px;
+}
+.psychc-controller .psychc-section-list li{
+  height: 36px;
+  line-height: 36px;
+}
+.psychc-controller .psychc-section{
+  flex: 1
+}

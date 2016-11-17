@@ -1,0 +1,58 @@
+{
+  "name": "manage",
+  "version": "1.0.0",
+  "private": true,
+  "entry": {
+    "index": "./src/entry/index.jsx"
+  },
+  "dependencies": {
+    "antd": "0.12.x",
+    "atool-build": "0.6.x",
+    "babel-plugin-antd": "0.2.x",
+    "classnames": "^2.2.5",
+    "common": "^0.2.5",
+    "es3ify-loader": "^0.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^2.2.3",
+    "lib": "^0.1.1",
+    "mockjs": "^1.0.1-beta2",
+    "rc-table": "^4.0.0-beta.3",
+    "react": "^0.14.x",
+    "react-copy-to-clipboard": "^4.1.0",
+    "react-dnd": "^2.1.4",
+    "react-dnd-html5-backend": "^2.1.2",
+    "react-dom": "0.14.x",
+    "react-echarts": "^0.1.1",
+    "react-router": "^2.0.1",
+    "react-swf": "^1.0.3",
+    "redux": "^3.5.2",
+    "request": "^2.72.0",
+    "reqwest": "^2.0.5"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.0",
+    "dora": "0.3.x",
+    "dora-plugin-hmr": "0.5.x",
+    "dora-plugin-livereload": "0.3.x",
+    "dora-plugin-proxy": "0.6.x",
+    "dora-plugin-webpack": "0.6.x",
+    "eslint": "2.x",
+    "eslint-config-airbnb": "6.x",
+    "eslint-plugin-react": "4.x",
+    "isomorphic-fetch": "^2.2.1",
+    "node-sass": "^3.4.2",
+    "pre-commit": "1.x",
+    "sass-loader": "^3.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.15"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "dora -p 8003 --plugins webpack,hmr,proxy,livereload?enableJs=false",
+    "lint": "eslint --ext .js,.jsx src",
+    "build": "atool-build -o ./dist/${npm_package_name}/static/"
+  }
+}

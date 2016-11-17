@@ -1,0 +1,722 @@
+{
+  "pageheader": {
+    "title": "詹姆斯-哈登_NBA球星_虎扑体育"
+  },
+  "bottomtitle": "虎扑篮球-最篮球的世界",
+  "project": "nba",
+  "site": "nba",
+  "logo": "nba_logo_new.png",
+  "pageBottomSpread": [
+    {
+      "name": "NBA",
+      "url": "/bbs/1048"
+    },
+    {
+      "name": "足球",
+      "url": "/bbs/1389"
+    },
+    {
+      "name": "步行街",
+      "url": "/bbs/34"
+    },
+    {
+      "name": "情感",
+      "url": "/bbs/160"
+    },
+    {
+      "name": "影视",
+      "url": "/bbs/120"
+    }
+  ],
+  "baseurl": "//m.hupu.com",
+  "test": "710998fd1b7c0235170265650770a4b1",
+  "_islogin": "1",
+  "loginurl": "https://passport.hupu.com/m/2?jumpurl=http%3A%2F%2Fm.hupu.com%2Fnba%2Fplayers%2Fjamesharden-3306%3Ftest%3D710998fd1b7c0235170265650770a4b1&from=m&project=hupu",
+  "uid": "29212169",
+  "username": "前200名全是本子啊",
+  "showAdvertise": 0,
+  "description": "虎扑体育NBA频道赛事中心哈登个人主页，内容包含哈登职业生涯各项比赛数据、哈登薪资、哈登视频以及哈登图片和内容资讯。",
+  "pclink": "https://nba.hupu.com/players/jamesharden-3306.html",
+  "hottitlelen": "16",
+  "columncontentlen": "46",
+  "footerword": {
+    "word": "失败和成功之间的区别就是：做大概正确的事和做完全正确的事！不要欺骗自己的工作态度！",
+    "person": "韦德"
+  },
+  "videoImgUrlPrefix": "https://bbsstaticoss.hoopchina.com.cn/aHR0cDovL2ltZzA0LnN0b3JlLnNvZ291LmNvbS9uZXQvYS82Ny9saW5rP2FwcGlkPTY3JnVybD0",
+  "keywords": "哈登,詹姆斯-哈登",
+  "topNav": [
+    {
+      "title": "NBA",
+      "router": "nbaindex",
+      "url": "//m.hupu.com/nba"
+    },
+    {
+      "title": "CBA",
+      "router": "cbanewsindex",
+      "url": "//m.hupu.com/cba/news/"
+    },
+    {
+      "title": "足球",
+      "router": "soccerindex",
+      "url": "//m.hupu.com/soccer"
+    },
+    {
+      "title": "论坛",
+      "router": "bbsindex",
+      "url": "//m.hupu.com/bbs"
+    },
+    {
+      "title": "识货",
+      "url": "http://m.shihuo.cn/",
+      "router": "shihuoindex",
+      "target": "_blank"
+    },
+    {
+      "title": "游戏",
+      "url": "http://youxi.hupu.com/mzhan",
+      "router": "youxiindex",
+      "target": "_blank"
+    }
+  ],
+  "level2": [
+    {
+      "name": "比赛",
+      "router": "nbacenter",
+      "url": "//m.hupu.com/nba/game"
+    },
+    {
+      "name": "新闻",
+      "router": "nbanewsindex",
+      "url": "//m.hupu.com/nba/news/"
+    },
+    {
+      "name": "球队",
+      "router": "nbateam",
+      "url": "//m.hupu.com/nba/standing"
+    },
+    {
+      "name": "论坛",
+      "router": "forumindex",
+      "param": {
+        "fid": "1048"
+      },
+      "url": "//m.hupu.com/bbs/1048"
+    }
+  ],
+  "node": [
+    {
+      "title": "火箭",
+      "url": "//m.hupu.com/nba/teams/rockets"
+    }
+  ],
+  "team_name": "火箭",
+  "season": "2016",
+  "season_type": "regular",
+  "season_list": [
+    "16-17",
+    "15-16"
+  ],
+  "info": {
+    "id": "3306",
+    "team_id": "18",
+    "name": "詹姆斯-哈登",
+    "alias": "哈登",
+    "territorial_pick": "1",
+    "eng_name": "James Harden",
+    "first_name": "James",
+    "last_name": "Harden",
+    "photo": "https://gdc.hupucdn.com/gdc/nba/players/uploads/gamespace/players/f106b743c6f662b603f2ec2b4e68a9aa.png",
+    "big_photo": "https://gdc.hupucdn.com/gdc/nba/players/uploads/gamespace/players/a34ac50974c632a8a8df9ce92d2e7faf.png",
+    "player_link": "/nba/players/jamesharden-3306",
+    "number": "13",
+    "position": "G",
+    "positionZhName": "2",
+    "age": "27",
+    "birth_date": "620060400",
+    "first_year": "2009",
+    "height": "77",
+    "height_fix": "1.96",
+    "weight": "220",
+    "weight_fix": "100",
+    "wage": "4年1.18亿美元，2016年夏天在旧合同期内重新签约，2020年到期，2019-20赛季球员选项",
+    "salary": "2650",
+    "country": [
+        "中国",
+        "美国"
+    ],
+    "country_link": "https://b3.hoopchina.com.cn/images/country/美国.jpg",
+    "draft_year": "2009",
+    "draft_round": "1",
+    "draft_pick": "3",
+    "draft_team_id": 0,
+    "high_school": "Artesia HS",
+    "college_school": "亚利桑那州立大学",
+    "wingspan": "2.10",
+    "standing_reach": "2.63",
+    "contract_details": "2016-17赛季 2650万美元#2017-18赛季 2830万美元#2018-19赛季 3040万美元#2019-20赛季 3270万美元",
+    "death_time": null,
+    "death": "",
+    "extend": [
+      {
+        "id": "140",
+        "hupu_pid": "3306",
+        "video_title": "冰箱突袭者：带你走进哈登的健康饮食世界",
+        "video_link": "http://bbs.hupu.com/11676644.html",
+        "create_at": null
+      },
+      {
+        "id": "139",
+        "hupu_pid": "3306",
+        "video_title": "休城领袖詹姆斯-哈登的涅槃",
+        "video_link": "http://bbs.hupu.com/5762622.html",
+        "create_at": null
+      },
+      {
+        "id": "138",
+        "hupu_pid": "3306",
+        "video_title": "年度巨献：哈登——觊觎王座 ",
+        "video_link": "http://bbs.hupu.com/12006400.html",
+        "create_at": null
+      },
+      {
+        "id": "137",
+        "hupu_pid": "3306",
+        "video_title": "[翻译团]萨姆-普雷斯蒂畅谈哈登交易",
+        "video_link": "http://bbs.hupu.com/4548911.html",
+        "create_at": null
+    },
+    {
+      "id": "137",
+      "hupu_pid": "3306",
+      "video_title": "[翻译团]萨姆-普雷斯蒂畅谈哈登交易",
+      "video_link": "http://bbs.hupu.com/4548911.html",
+      "create_at": null
+  }
+    ],
+    "height_fix2": "6尺5",
+    "birth_date_fix2": "1989年8月26日",
+    "is_birthday": false
+  },
+  "injury": [],
+  "rank": [
+    [
+      "时间",
+      "10",
+      "36.8",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=mins&page=1"
+    ],
+    [
+      "得分",
+      "4",
+      "31.8",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=pts&page=1"
+    ],
+    [
+      "篮板",
+      "50",
+      "7.0",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=reb&page=1"
+    ],
+    [
+      "助攻",
+      "1",
+      "12.4",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=asts&page=1"
+    ],
+    [
+      "失误",
+      "3",
+      "4.60",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=toavg&page=1"
+    ],
+    [
+      "抢断",
+      "78",
+      "1.20",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=stl&page=1"
+    ],
+    [
+      "盖帽",
+      null,
+      "0.00",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=blk&page=1"
+    ],
+    [
+      "犯规",
+      "27",
+      "3.40",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=pf&page=1"
+    ],
+    [
+      "两双",
+      "7",
+      "3",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=dd&page=1"
+    ],
+    [
+      "命中率",
+      "90",
+      "50.0%",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=fgp&page=1"
+    ],
+    [
+      "三分命中率",
+      "83",
+      "39.1%",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=tpp&page=1"
+    ],
+    [
+      "罚球命中率",
+      "111",
+      "81.8%",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=ftp&page=1"
+    ],
+    [
+      "三双",
+      null,
+      0,
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=td&page=1"
+    ]
+  ],
+  "advance": [
+    [
+      "PER",
+      "3",
+      "34.8",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=per&page=1"
+    ],
+    [
+      "WS",
+      "1",
+      "1.5",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=ws&page=1"
+    ],
+    [
+      "DWS",
+      null,
+      "0.0",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=dws&page=1"
+    ],
+    [
+      "OWS",
+      "1",
+      "1.5",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=ows&page=1"
+    ],
+    [
+      "eFG%",
+      "45",
+      "59.4%",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=efgp&page=1"
+    ],
+    [
+      "TS%",
+      "27",
+      "66.1%",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=tsp&page=1"
+    ],
+    [
+      "失误率",
+      "94",
+      "16.1%",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=tovp&page=1"
+    ],
+    [
+      "助攻率",
+      "2",
+      "60.1%",
+      "https://games.mobileapi.hupu.com/nba/getDailyPlayer?client=x&category=regular&type=astp&page=1"
+    ]
+  ],
+  "career": {
+    "regular": [
+      {
+        "team_name": "-",
+        "season": "生涯",
+        "game_play": "539",
+        "game_start": "326",
+        "min": "33.3",
+        "pts": "21.2",
+        "reb": "4.6",
+        "asts": "5.0",
+        "stl": "1.47",
+        "blk": "0.44",
+        "to": "3.02",
+        "pf": "2.53",
+        "fga": ".444",
+        "tpa": ".368",
+        "fpt": ".855",
+        "dreb": "3.9",
+        "oreb": "0.7",
+        "efgp": ".518",
+        "tsp": ".606",
+        "age": null
+      },
+      {
+        "team_name": "火箭",
+        "season": "16-17",
+        "game_play": "5",
+        "game_start": "5",
+        "min": "36.8",
+        "pts": "31.8",
+        "reb": "7.0",
+        "asts": "12.4",
+        "stl": "1.20",
+        "blk": "0.00",
+        "to": "4.60",
+        "pf": "3.40",
+        "fga": ".500",
+        "tpa": ".391",
+        "fpt": ".818",
+        "dreb": "5.6",
+        "oreb": "1.4",
+        "efgp": ".594",
+        "tsp": ".661",
+        "age": "27"
+      },
+      {
+        "team_name": "火箭",
+        "season": "15-16",
+        "game_play": "82",
+        "game_start": "82",
+        "min": "38.1",
+        "pts": "29.0",
+        "reb": "6.1",
+        "asts": "7.5",
+        "stl": "1.70",
+        "blk": "0.62",
+        "to": "4.56",
+        "pf": "2.79",
+        "fga": ".439",
+        "tpa": ".359",
+        "fpt": ".860",
+        "dreb": "5.3",
+        "oreb": "0.8",
+        "efgp": ".512",
+        "tsp": ".598",
+        "age": "26"
+      },
+      {
+        "team_name": "火箭",
+        "season": "14-15",
+        "game_play": "81",
+        "game_start": "81",
+        "min": "36.8",
+        "pts": "27.4",
+        "reb": "5.7",
+        "asts": "7.0",
+        "stl": "1.90",
+        "blk": "0.74",
+        "to": "3.96",
+        "pf": "2.57",
+        "fga": ".440",
+        "tpa": ".375",
+        "fpt": ".868",
+        "dreb": "4.7",
+        "oreb": "0.9",
+        "efgp": ".511",
+        "tsp": ".605",
+        "age": "25"
+      },
+      {
+        "team_name": "火箭",
+        "season": "13-14",
+        "game_play": "73",
+        "game_start": "73",
+        "min": "38.0",
+        "pts": "25.4",
+        "reb": "4.7",
+        "asts": "6.1",
+        "stl": "1.58",
+        "blk": "0.40",
+        "to": "3.63",
+        "pf": "2.42",
+        "fga": ".456",
+        "tpa": ".366",
+        "fpt": ".866",
+        "dreb": "3.9",
+        "oreb": "0.8",
+        "efgp": ".529",
+        "tsp": ".618",
+        "age": "24"
+      },
+      {
+        "team_name": "火箭",
+        "season": "12-13",
+        "game_play": "78",
+        "game_start": "78",
+        "min": "38.3",
+        "pts": "25.9",
+        "reb": "4.9",
+        "asts": "5.8",
+        "stl": "1.82",
+        "blk": "0.49",
+        "to": "3.78",
+        "pf": "2.28",
+        "fga": ".438",
+        "tpa": ".368",
+        "fpt": ".851",
+        "dreb": "4.1",
+        "oreb": "0.8",
+        "efgp": ".504",
+        "tsp": ".600",
+        "age": "23"
+      },
+      {
+        "team_name": "雷霆",
+        "season": "11-12",
+        "game_play": "62",
+        "game_start": "2",
+        "min": "31.4",
+        "pts": "16.8",
+        "reb": "4.1",
+        "asts": "3.7",
+        "stl": "1.00",
+        "blk": "0.24",
+        "to": "2.21",
+        "pf": "2.42",
+        "fga": ".491",
+        "tpa": ".390",
+        "fpt": ".846",
+        "dreb": "3.6",
+        "oreb": "0.5",
+        "efgp": ".582",
+        "tsp": ".660",
+        "age": "22"
+      },
+      {
+        "team_name": "雷霆",
+        "season": "10-11",
+        "game_play": "82",
+        "game_start": "5",
+        "min": "26.7",
+        "pts": "12.2",
+        "reb": "3.1",
+        "asts": "2.1",
+        "stl": "1.12",
+        "blk": "0.29",
+        "to": "1.29",
+        "pf": "2.52",
+        "fga": ".436",
+        "tpa": ".349",
+        "fpt": ".843",
+        "dreb": "2.6",
+        "oreb": "0.5",
+        "efgp": ".518",
+        "tsp": ".598",
+        "age": "21"
+      },
+      {
+        "team_name": "雷霆",
+        "season": "09-10",
+        "game_play": "76",
+        "game_start": 0,
+        "min": "22.9",
+        "pts": "9.9",
+        "reb": "3.2",
+        "asts": "1.8",
+        "stl": "1.05",
+        "blk": "0.26",
+        "to": "1.39",
+        "pf": "2.63",
+        "fga": ".403",
+        "tpa": ".375",
+        "fpt": ".808",
+        "dreb": "2.6",
+        "oreb": "0.6",
+        "efgp": ".484",
+        "tsp": ".551",
+        "age": "20"
+      }
+    ],
+    "playoff": [
+      {
+        "team_name": "-",
+        "season": "生涯",
+        "game_play": "77",
+        "game_start": "34",
+        "min": "34.1",
+        "pts": "19.6",
+        "reb": "5.2",
+        "asts": "4.8",
+        "stl": "1.58",
+        "blk": "0.40",
+        "to": "2.91",
+        "pf": "2.99",
+        "fga": ".425",
+        "tpa": ".350",
+        "fpt": ".867",
+        "dreb": "4.5",
+        "oreb": "0.7",
+        "efgp": ".496",
+        "tsp": ".591",
+        "age": null
+      },
+      {
+        "team_name": "火箭",
+        "season": "15-16",
+        "game_play": "5",
+        "game_start": "5",
+        "min": "38.6",
+        "pts": "26.6",
+        "reb": "5.2",
+        "asts": "7.6",
+        "stl": "2.40",
+        "blk": "0.20",
+        "to": "5.20",
+        "pf": "2.60",
+        "fga": ".410",
+        "tpa": ".310",
+        "fpt": ".844",
+        "dreb": "3.8",
+        "oreb": "1.4",
+        "efgp": ".475",
+        "tsp": ".555",
+        "age": "26"
+      },
+      {
+        "team_name": "火箭",
+        "season": "14-15",
+        "game_play": "17",
+        "game_start": "17",
+        "min": "37.4",
+        "pts": "27.2",
+        "reb": "5.7",
+        "asts": "7.5",
+        "stl": "1.65",
+        "blk": "0.41",
+        "to": "4.53",
+        "pf": "2.88",
+        "fga": ".439",
+        "tpa": ".383",
+        "fpt": ".916",
+        "dreb": "5.0",
+        "oreb": "0.7",
+        "efgp": ".509",
+        "tsp": ".620",
+        "age": "25"
+      },
+      {
+        "team_name": "火箭",
+        "season": "13-14",
+        "game_play": "6",
+        "game_start": "6",
+        "min": "43.8",
+        "pts": "26.8",
+        "reb": "4.7",
+        "asts": "5.8",
+        "stl": "2.00",
+        "blk": "0.17",
+        "to": "3.50",
+        "pf": "3.50",
+        "fga": ".376",
+        "tpa": ".296",
+        "fpt": ".900",
+        "dreb": "3.8",
+        "oreb": "0.8",
+        "efgp": ".436",
+        "tsp": ".519",
+        "age": "24"
+      },
+      {
+        "team_name": "火箭",
+        "season": "12-13",
+        "game_play": "6",
+        "game_start": "6",
+        "min": "40.5",
+        "pts": "26.3",
+        "reb": "6.7",
+        "asts": "4.5",
+        "stl": "2.00",
+        "blk": "1.00",
+        "to": "4.50",
+        "pf": "3.00",
+        "fga": ".391",
+        "tpa": ".341",
+        "fpt": ".803",
+        "dreb": "5.8",
+        "oreb": "0.8",
+        "efgp": ".457",
+        "tsp": ".548",
+        "age": "23"
+      },
+      {
+        "team_name": "雷霆",
+        "season": "11-12",
+        "game_play": "20",
+        "game_start": 0,
+        "min": "31.5",
+        "pts": "16.3",
+        "reb": "5.1",
+        "asts": "3.4",
+        "stl": "1.55",
+        "blk": "0.10",
+        "to": "2.10",
+        "pf": "3.35",
+        "fga": ".435",
+        "tpa": ".410",
+        "fpt": ".857",
+        "dreb": "4.5",
+        "oreb": "0.7",
+        "efgp": ".509",
+        "tsp": ".605",
+        "age": "22"
+      },
+      {
+        "team_name": "雷霆",
+        "season": "10-11",
+        "game_play": "17",
+        "game_start": 0,
+        "min": "31.6",
+        "pts": "13.0",
+        "reb": "5.4",
+        "asts": "3.6",
+        "stl": "1.24",
+        "blk": "0.76",
+        "to": "1.65",
+        "pf": "2.82",
+        "fga": ".475",
+        "tpa": ".303",
+        "fpt": ".825",
+        "dreb": "4.8",
+        "oreb": "0.6",
+        "efgp": ".558",
+        "tsp": ".634",
+        "age": "21"
+      },
+      {
+        "team_name": "雷霆",
+        "season": "09-10",
+        "game_play": "6",
+        "game_start": 0,
+        "min": "20.0",
+        "pts": "7.7",
+        "reb": "2.5",
+        "asts": "1.8",
+        "stl": "1.00",
+        "blk": "0.17",
+        "to": "0.50",
+        "pf": "2.33",
+        "fga": ".387",
+        "tpa": ".375",
+        "fpt": ".842",
+        "dreb": "2.3",
+        "oreb": "0.2",
+        "efgp": ".484",
+        "tsp": ".584",
+        "age": "20"
+      }
+    ]
+  },
+  "type": "nba",
+  "is_app": false,
+  "kanqiu": {
+    "projectId": null,
+    "version": null,
+    "client": null,
+    "night": null,
+    "b7016": false
+  },
+  "id4dace": ""
+}

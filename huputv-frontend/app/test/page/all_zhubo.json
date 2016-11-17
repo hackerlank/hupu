@@ -1,0 +1,14 @@
+{
+  "anchorList": [],
+  "is_follow": 0,
+  "pagetab": "all",
+  "n": "0",
+  "test": "1",
+  "userInfo": [],
+  "login_url": "http://passport.liangle.com/pc/login?project=liangle&from=m",
+  "logout_url": "http://passport.liangle.com/pc/logout",
+  "register_url": "http://passport.liangle.com/pc/register?project=liangle&from=m",
+  "is_login": 0,
+  "in_kanqiu": 1,
+  "night": 0
+}

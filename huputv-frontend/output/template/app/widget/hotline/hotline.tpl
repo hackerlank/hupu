@@ -1,0 +1,94 @@
+<section class="t-content hotline">
+<div class="system-info" id="J-system-info">
+<div class="hd">系统通知</div>
+<div class="bd">
+为给大家提供更好的直播服务，虎扑TV现更名为［亮了网］；并将于近期对服务器进行升级操作，升级期间送礼服务将暂停使用，为大家带来的不便，尽请谅解。请大家期待即将发布的新版本！</div>
+<i class="icon icon-close" id="J-system-close"></i>
+</div>
+<div class="hotline-info">
+<header class="hd hotline-hd">
+<div class="content" id="J-hotline-wrap"></div>
+<script id="J-hotline-tpl" type="text/template">
+
+			    		<@if(datas.et==3001){@>
+				    		<div class="info">
+						    	<div class="anchor-name">
+						    		<img src="http://b3.hoopchina.com.cn/web/tv/static/app/widget/hotline/icon-anchor_d9e1c12.png" alt="" />
+						    		<b><@=nickname@></b>
+						    		<span><@=datas.cnt@></span>
+						    	</div>
+					    	</div>
+				    	<@}@>
+
+				    	<@if(datas.et==2001){@>
+				    		<@if(datas.lt == '2'){@>
+						    	<div class="info">
+						    		<b><@=datas.un@></b>
+						    		<span class="info-num <@if(datas.rp>=0){@>info-num－plus<@}else{@>info-num－minus<@}@>"><@=datas.rp@></span>
+						    		<span>
+						    			送出<i><@=datas.giftn@></i>个
+											<span class="gift-name"><@=datas.giftname@></span>给
+											<span class="ball-name"><@=datas.teamn@></span>本场排行第<i><@=datas.ur@></i>
+						    		</span>
+						    	</div>
+					    	<@}else{@>
+					    		<@if(datas.mt == "1"){@>
+							    	<div class="info">
+							    		<b><@=datas.un@></b>
+							    		<span class="info-num  <@if(datas.rp>=0){@>info-num－plus<@}else{@>info-num－minus<@}@>"><@=datas.rp@></span>
+							    		<span>
+							    			送出<i><@=datas.giftn@></i>个
+												<span class="gift-name"><@=datas.giftname@></span>
+												给主播
+							    		</span>
+							    	</div>
+							    <@}else{@>
+							    	<div class="info">
+							    		<b><@=datas.un@></b>
+							    		<span class="info-num  <@if(datas.rp>=0){@>info-num－plus<@}else{@>info-num－minus<@}@>"><@=datas.rp@></span>
+							    		<span>
+							    			送出<i><@=datas.giftn@></i>个
+												<span class="gift-name"><@=datas.giftname@></span>
+												给主播
+												，本场排行第<i><@=datas.ur@></i>
+							    		</span>
+							    	</div>
+							    <@}@>
+					    	<@}@>
+				    	<@}@>
+
+				    	<@if(datas.et==2002){@>
+					    	<div class="info">
+					    		<b><@=datas.un@></b>
+					    		<span class="info-num  <@if(datas.rp>=0){@>info-num－plus<@}else{@>info-num－minus<@}@>"><@=datas.rp@></span>
+					    		<span>
+					    			为
+										<span class="ball-name"> <@=datas.option@></span>攒了
+										<i><@=datas.score@></i>点人品
+					    		</span>
+					    	</div>
+				    	<@}@>
+
+				    	<@if(datas.et==2000){@>
+				    		<@if(datas.puid != userInfo){@>
+						    	<div class="info user-say">
+						    		<b><@=datas.un@></b>
+						    		<span class="info-num  <@if(datas.rp>=0){@>info-num－plus<@}else{@>info-num－minus<@}@>"><@=datas.rp@></span>
+						    		<span><@=datas.cnt@></span>
+						    	</div>
+						    <@}else{@>
+						    	<div class="info my-say">
+						    		<b><@=datas.un@></b>
+						    		<span class="info-num  <@if(datas.rp>=0){@>info-num－plus<@}else{@>info-num－minus<@}@>"><@=datas.rp@></span>
+						    		<span><@=datas.cnt@></span>
+						    	</div>
+					    	<@}@>
+					    <@}@>
+			    	</script>
+</header>
+</div>
+</section>
+{%script%}
+    var hotLine = require("app:widget/hotline/hotline");
+    hotLine.init();
+{%/script%}

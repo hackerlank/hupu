@@ -1,0 +1,24 @@
+{
+    "res": {
+        "obs:page/chaoneng.tpl": {
+            "uri": "/template/obs/page/chaoneng.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "obs:static/chaoneng/chaoneng.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/obs/chaoneng/chaoneng_0ce0563.css",
+            "type": "css"
+        },
+        "obs:static/chaoneng/chaoneng.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/obs/chaoneng/chaoneng_5024f67.js",
+            "type": "js",
+            "deps": [
+                "common:static/js/underscore/underscore.js",
+                "obs:static/chaoneng/chaoneng.scss"
+            ]
+        }
+    },
+    "pkg": {}
+}

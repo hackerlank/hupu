@@ -1,0 +1,22 @@
+{
+  "code": 1,
+  "msg": "操作成功",
+  "data": {
+    "room_ranking": {
+      "room": [{
+        "puid": 26102288,
+        "total": 1,
+        "nickname": "曼联25穆勒"
+      }, {
+        "puid": 26168347,
+        "total": 1,
+        "nickname": "SPURS丶面瘫男"
+      }],
+      "user": []
+    },
+    "match_ranking": {
+      "room": [],
+      "user": []
+    }
+  }
+}

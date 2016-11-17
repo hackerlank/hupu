@@ -1,0 +1,37 @@
+{
+  "code": 1,
+  "msg": "操作成功",
+  "data": {
+    "days": {
+      "2016-08-08": -120,
+      "2016-08-09": -20,
+      "2016-08-10": 0
+    },
+    "data": [
+      {
+        "id": "101",
+        "puid": "19009252",
+        "topic_id": "176",
+        "option": "2",
+        "platform": "pc",
+        "win_score": "-120",
+        "create_time": "1470737753",
+        "status": "2",
+        "topicInfo": {
+          "id": "176",
+          "option1": "aa333",
+          "option2": "bb333",
+          "score": "20",
+          "status": "2",
+          "right_option": "2"
+        }
+      }
+    ],
+    "day": "2016-08-09",
+    "timeFormat": {
+      "date": "08/08",
+      "cn": "星期一"
+    },
+    "next": false
+  }
+}

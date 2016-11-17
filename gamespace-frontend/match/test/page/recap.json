@@ -1,0 +1,213 @@
+{
+  "nav_link": {
+    "home": "https://stg-nba.hupu.com/games",
+    "standing": "https://stg-nba.hupu.com/standings",
+    "stats": "https://stg-nba.hupu.com/stats/players",
+    "schedule": "https://stg-nba.hupu.com/schedule",
+    "team": "https://stg-nba.hupu.com/teams",
+    "player": "https://stg-nba.hupu.com/players"
+  },
+  "match_info": {
+    "match_id": "152826",
+    "time": "2016-10-02 08:00:00",
+    "process": "第四节结束",
+    "status": "1",
+    "match_time": "4,0:0.0",
+    "attendance": "6752",
+    "season": "2016",
+    "video_link": "http://v.liangle.com/nba/v812840.html",
+    "stadium_name": null,
+    "game_time": "2:9",
+    "match_type": "PRESEASON",
+    "home_id": "14",
+    "home_win": "0",
+    "home_name": "鹈鹕",
+    "home_shortcut": "Pelicans",
+    "home_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/NOH.png",
+    "home_score": "116",
+    "away_id": "16",
+    "away_win": "0",
+    "away_name": "小牛",
+    "away_shortcut": "Mavericks",
+    "away_logo": "https://gdc.hupucdn.com/gdc/nba/team/logo/DAL.png",
+    "away_score": "102",
+    "boxscore_link": "https://stg-nba.hupu.com/games/boxscore/152826",
+    "textlive_link": "https://stg-nba.hupu.com/games/playbyplay/152826",
+    "recap_link": "https://stg-nba.hupu.com/games/recap/152826",
+    "home_link": "https://stg-nba.hupu.com/teams/pelicans",
+    "away_link": "https://stg-nba.hupu.com/teams/mavericks"
+  },
+  "match_stats": {
+    "14": {
+      "section": [
+        "21",
+        "37",
+        "28",
+        "30"
+      ],
+      "total": "116"
+    },
+    "16": {
+      "section": [
+        "22",
+        "24",
+        "32",
+        "24"
+      ],
+      "total": "102"
+    }
+  },
+  "daily_match_list": [
+    {
+      "match_id": "152825",
+      "home_name": "猛龙",
+      "home_score": "97",
+      "away_name": "勇士",
+      "away_score": "93",
+      "status": "1",
+      "status_txt": "已结束",
+      "time": "07:30",
+      "link": "https://stg-nba.hupu.com/games/boxscore/152825"
+    },
+    {
+      "match_id": "152826",
+      "home_name": "鹈鹕",
+      "home_score": "116",
+      "away_name": "小牛",
+      "away_score": "102",
+      "status": "1",
+      "status_txt": "已结束",
+      "time": "08:00",
+      "link": "https://stg-nba.hupu.com/games/boxscore/152826"
+    }
+  ],
+  "home_news": [
+    {
+      "title": "【区内翻译】球员展望||伊托万-摩尔：我辈岂是蓬蒿人",
+      "url": "http://bbs.hupu.com/17473804.html"
+    },
+    {
+      "title": "火箭、鹈鹕 上海站球迷日",
+      "url": "http://bbs.hupu.com/17467198.html"
+    },
+    {
+      "title": "【区内翻译】球员展望||兰斯-史蒂芬森：可否新桃换旧符",
+      "url": "http://bbs.hupu.com/17466821.html"
+    },
+    {
+      "title": "【区内翻译】球员展望||泰瑞克-埃文斯：昂首苦盼伯乐赏",
+      "url": "http://bbs.hupu.com/17465763.html"
+    },
+    {
+      "title": "【楼工团】继续有出色表现！希尔德砍18分5篮板2助攻，他不只是射手那么简单",
+      "url": "http://bbs.hupu.com/17455341.html"
+    },
+    {
+      "title": "[流言板]麦克米兰：所罗门-希尔可做鹈鹕首发",
+      "url": "http://bbs.hupu.com/17454353.html"
+    },
+    {
+      "title": "[流言板]史蒂芬森：要像新秀一样重新证明自己",
+      "url": "http://bbs.hupu.com/17452915.html"
+    },
+    {
+      "title": "[流言板]史蒂芬森：没有故意挂掉采访我的电话",
+      "url": "http://bbs.hupu.com/17449532.html"
+    }
+  ],
+  "away_news": [
+    {
+      "title": "[流言板]德克谈与博古特配合：难怪库里空位这么多",
+      "url": "http://bbs.hupu.com/17465759.html"
+    },
+    {
+      "title": "这是什么情况？",
+      "url": "http://bbs.hupu.com/17463526.html"
+    },
+    {
+      "title": "记第一次现场报道",
+      "url": "http://bbs.hupu.com/17457770.html"
+    },
+    {
+      "title": "[流言板]卡莱尔：德克他们会在正确的时刻出场",
+      "url": "http://bbs.hupu.com/17457629.html"
+    },
+    {
+      "title": "杂谈季前赛第一战",
+      "url": "http://bbs.hupu.com/17455618.html"
+    },
+    {
+      "title": "[翻译团]改换门庭，巴恩斯能否重获新生？",
+      "url": "http://bbs.hupu.com/17453297.html"
+    },
+    {
+      "title": "【MFFL图片】2016 媒体日",
+      "url": "http://bbs.hupu.com/17450884.html"
+    },
+    {
+      "title": "NBA季后赛经典镜头之墨西哥帅哥的一飞冲天",
+      "url": "http://bbs.hupu.com/17449337.html"
+    }
+  ],
+  "hot_news": [
+    {
+      "title": "安东尼：林书豪是篮网的脸面人物",
+      "url": "http://voice.hupu.com/nba/2077256.html"
+    },
+    {
+      "title": "罗斯性侵案陈词：她先勾引我，我拒绝了",
+      "url": "http://voice.hupu.com/nba/2077284.html"
+    },
+    {
+      "title": "威金斯：如今是时候隔扣恩比德了",
+      "url": "http://voice.hupu.com/nba/2077342.html"
+    },
+    {
+      "title": "林书豪：打挡拆一直是我的一个优势",
+      "url": "http://voice.hupu.com/nba/2077302.html"
+    },
+    {
+      "title": "76人主帅布朗：恩比德让我想起了邓肯",
+      "url": "http://voice.hupu.com/nba/2077248.html"
+    },
+    {
+      "title": "骑士记者：JR和球队都在等待观望",
+      "url": "http://voice.hupu.com/nba/2077264.html"
+    },
+    {
+      "title": "库里花577万美元在旧金山再购豪宅",
+      "url": "http://voice.hupu.com/nba/2077338.html"
+    },
+    {
+      "title": "戈登-海沃德尚未决定是否接受手术",
+      "url": "http://voice.hupu.com/nba/2077253.html"
+    },
+    {
+      "title": "霍华德：杜兰特在勇士看起来非常开心",
+      "url": "http://voice.hupu.com/nba/2077332.html"
+    },
+    {
+      "title": "邓肯将拍摄H-E-B“传奇系列”广告",
+      "url": "http://voice.hupu.com/nba/2077212.html"
+    }
+  ],
+  "home_standing": {
+    "won": 0,
+    "lost": 0
+  },
+  "away_standing": {
+    "won": 0,
+    "lost": 0
+  },
+  "article": {
+    "id": "6804",
+    "title": "希尔德19分鹈鹕轻取小牛",
+    "content": "sdsdsdsdsd",
+    "img": "https://gdc.hupucdn.com/gdc/nba/match/article/2a8051bca59794a8820708e0fbe310b9.jpg",
+    "updated_at": null
+  },
+  "title": "10月02日小牛vs鹈鹕比赛战报－虎扑NBA原创报道",
+  "keywords": "",
+  "description": "",
+  "mobile_agent_meta": "<meta name=\"mobile-agent\" content=\"format=html5;url=https://m.hupu.com/nba/game/recap_152826.html\"/>"
+}

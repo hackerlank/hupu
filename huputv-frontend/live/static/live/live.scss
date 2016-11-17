@@ -1,0 +1,539 @@
+@charset "utf-8";
+
+/**
+ * 直播页面
+ **/
+@import "../sass/sassCore/base";
+
+body {
+  background: #f0f4f5;
+}
+
+.live-wrap {
+  position: relative;
+  width: 1290px;
+  // max-width: 1784px;
+  // min-width: 1100px;
+  padding: 10px 0 60px;
+  margin: 0 auto;
+  @extend %clearfix;
+
+  .live-main {
+    @include float;
+    width: 865px;
+  }
+
+  .live-sidebar {
+    @include float(right);
+    width: 415px;
+    //background: #fff;
+    position: relative;
+    .day-board{
+        float: none;
+        width: 100%;
+        margin-top:11px;
+    }
+    .bulletin{
+        min-height:85px;
+        padding-bottom: 10px;
+        text-align: justify;
+        background:#fff;
+        border-bottom:1px solid #ddd;
+        h2{
+        padding:4px 0 0 14px;
+        font-size:14px;
+        font-weight:400;
+        }
+        .bd{
+        font-size:14px;
+        color:#777;
+        padding:0 14px;
+        line-height:16px;
+        }
+    }
+    .board-title .more{
+        @include float(right);
+        font-size: 12px;
+        line-height: 24px;
+        color: #999;
+        &:hover{
+            color: #d04646;
+        }
+    }
+  }
+
+  .rpz-link{
+    position: fixed;
+    right: 10px;
+    top: 30%;
+    z-index: 50;
+    .thumb{
+      position: relative;
+      float:left;
+      width: 34px;
+      height: 34px;
+      border: 2px solid #e7b9bc;
+      border-radius: 50%;
+      z-index: 10;
+      margin-right:-5px;
+      margin-top:-5px;
+      img{
+        display: block;
+        width: 100%;
+        border-radius: 50%;
+      }
+      em{
+        display: none;
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #d96b6b;
+        left: -3px;
+        top: -3px;
+      }
+    }
+    .on{
+      em{
+        display: inline-block;
+      }
+    }
+    .rpz-info{
+      z-index: 5;
+      height: 24px;
+      padding: 1px 10px;
+      white-space: nowrap;
+      background: rgba(0, 0, 0, 0.4);
+      float:left;
+      *zoom: 1;
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+      &:root{
+           filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#99000000',EndColorStr='#99000000');
+      }
+      .num{
+        display: inline-block;
+        padding: 0px 8px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #fff;
+        background: #e6999e;
+        margin-right: 5px;
+      }
+      .lose{
+        color:white;
+        border:1px solid #59dc65;
+        background:#59dc65;
+      }
+      .rate{
+        display: inline-block;
+        padding: 0px 4px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #fff;
+        background: #6fc3e9;
+      }
+
+    }
+  }
+
+  .col-1,
+  .col-2 {
+    @extend %clearfix;
+  }
+
+  .row-top {
+    padding: 0 10px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    @extend %clearfix;
+    .headline {
+      @include float;
+      padding: 8px 0 3px;
+      margin-right: 10px;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+    .sort {
+      @include float;
+      margin: 9px 15px 0 0;
+      color: #777;
+      a {
+        color: #777;
+      }
+      a:hover {
+          color: #d04646;
+      }
+    }
+    .online {
+      @include float;
+      height: 18px;
+      line-height: 16px;
+      padding-right: 3px;
+      font-size: 12px;
+      margin-top: 8px;
+      background: #fff;
+      border: 1px solid #ee913b;
+      color: #ee913b;
+      .online-tag {
+        @include float;
+        padding: 0 5px;
+        font-size: 14px;
+        background: #ee913b;
+        color: #fff;
+      }
+      .icons-online {
+        @include float;
+        width: 20px;
+        height: 14px;
+        margin: 1px 4px 0;
+        overflow: hidden;
+        background: url(../../static/live/img/icon_online.png?__sprite) no-repeat 0 0;
+      }
+    }
+    .row-top-right {
+      @include float(right);
+    }
+  }
+
+  .row-zhubo {
+    @extend %clearfix;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    .zhubo-info {
+      @include float;
+      width: 50%;
+    }
+    .avatar {
+      @include float;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      overflow: hidden;
+      @include border-radius(50%);
+      img {
+        width: 100%;
+      }
+    }
+    .zhubo-name {
+      white-space:nowrap;
+    }
+    .button-follow {
+      @include float;
+      position: relative;
+      height: 20px;
+      line-height: 18px;
+      padding: 1px;
+      margin-right: 18px;
+      font-size: 12px;
+      background: #d04646;
+      color: #fff;
+      .icons-follow {
+        @include inline-block;
+        position: relative;
+        vertical-align: 5px;
+        margin-right: 5px;
+        &:after,
+        &:before {
+          content: "";
+          position: absolute;
+          overflow: hidden;
+          background: #fff;
+
+        }
+        &:before {
+          width: 7px;
+          height: 1px;
+
+        }
+        &:after {
+          top: -3px;
+          left: 3px;
+          width: 1px;
+          height: 7px;
+        }
+      }
+      .text {
+        @include float;
+        padding: 0 15px;
+      }
+      .count {
+        @include float;
+        padding: 0 10px;
+        background: #fff;
+        color: #d04646;
+      }
+    }
+    .button-unfollow {
+       background: #8db5c3;
+      .icons-follow {
+        &:after {
+          display: none;
+        }
+      }
+      .count { color: #8db5c3;}
+    }
+    .tag-list {
+      @include float;
+      color: #999;
+    }
+    .zhubo-money {
+      @include float(right);
+      min-width: 150px;
+      height: 30px;
+      line-height: 30px;
+      margin-top: 5px;
+      padding: 0 10px;
+      background: #f5f6f7;
+      border: 1px solid #ededed;
+      i {
+        @include inline-block;
+        width: 16px;
+        height: 16px;
+        overflow: hidden;
+        background: url(../../static/live/img/icon_10.png?__sprite) no-repeat 0 0;
+        vertical-align: text-top;
+      }
+      .icons-beans {
+        background-image: url(../../static/live/img/icon_11.png?__sprite)
+      }
+      .money-item {
+        margin-right: 20px;
+      }
+    }
+
+  }
+}
+
+/* 任务和发礼物 */
+.task-and-gift {
+  position: relative;
+  z-index: 2;
+  @include clearfix();
+  height: 50px;
+  margin-bottom: 10px;
+  background: $white;
+  border-bottom: 1px solid #ddd;
+  // display: none;
+
+  .task-left {
+    @include float();
+    padding-left: 12px;
+    position: relative;
+
+    .login4task {
+      display: block;
+      width: 116px;
+      height: 45px;
+      margin-top: 2px;
+      background: url(./img/bag-bg.png) left center no-repeat;
+      padding-right: 4px;
+      background-size: 100%;
+      text-align: right;
+      color: #fff;
+      font-size: 12px;
+      line-height: 52px;
+    }
+  }
+
+  .gift-right {
+    @include float(right);
+  }
+
+  .my-wallet {
+    position: relative;
+    @include float();
+    display: block;
+    padding: 13px 0;
+    margin-right: 25px;
+
+    .button{
+        display: inline-block;
+        position: relative;
+        padding-left: 10px;
+        margin-right: 5px;
+        .icon{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 24px;
+            height: 24px;
+        }
+        .num{
+            font-size: 12px;
+            height: 18px;
+            line-height: 18px;
+            padding: 0 26px 0 20px;
+            margin-top: 3px;
+            border: 1px solid #bbc5c7;
+            border-left: none;
+            background: url(./img/plus.png) no-repeat right center;
+        }
+    }
+    .coin-button{
+        .icon{
+            background: url(./img/icon_1_l.png?__sprite) no-repeat 0 0;
+        }
+    }
+    .bean-button{
+        .icon{
+            background: url(./img/icon_2_l.png?__sprite) no-repeat 0 0;
+        }
+    }
+
+
+
+    .icon-arrow {
+      @include inline-block();
+      width: 15px;
+      height: 11px;
+      margin-right: 5px;
+      overflow: hidden;
+      background: url(./img/icon_arrow.png?__sprite) no-repeat 0 0;
+    }
+
+    .icons {
+      @include inline-block();
+      width: 18px;
+      height: 18px;
+      margin-right: 5px;
+      overflow: hidden;
+      background: url(./img/icon_2_l.png?__sprite) no-repeat 0 0;
+      vertical-align: middle;
+    }
+
+    .icons-2 {
+      width: 20px;
+      height: 17px;
+      background: url(./img/icon_1_l.png?__sprite) no-repeat 0 0;
+    }
+
+    .text {
+      padding: 0 7px;
+      line-height: 66px;
+      font-weight: 700;
+      font-size: 16px;
+      color: $red;
+      text-align: center;
+    }
+
+    .wallet-list {
+      display: none;
+      height: 66px;
+      padding: 8px 0 0 10px;
+      line-height: 24px;
+      border-left: 1px solid $red;
+
+      .text-col {
+        @include float();
+        margin-right: 10px;
+
+        .item {
+          margin-bottom: 3px;
+        }
+      }
+
+      .button-inner {
+        @include float();
+      }
+
+      .button {
+        display: block;
+        width: 70px;
+        height: 24px;
+        margin-bottom: 3px;
+        line-height: 24px;
+        text-align: center;
+        background: $red;
+        color: $white;
+        @include border-radius(3px);
+      }
+    }
+  }
+
+  .wallet-hover {
+    .text {
+      display: none;
+    }
+
+    .wallet-list {
+      display: block;
+    }
+  }
+}
+
+.match-desc {
+  padding: 15px 20px;
+  margin: 10px auto 20px;
+  background-color: #fff;
+  color: #777;
+  border-bottom: 1px solid #ddd;
+
+  h2 {
+    font-size: 16px;
+    color: #444;
+    line-height: 24px;
+  }
+}
+
+.ui-full-screen {
+  height: 100%;
+  overflow: hidden;
+
+  .video-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1090px) and (max-width: 1732px) {
+  .live-wrap {
+    width: 1065px;
+    .live-main {
+      width: 720px;
+    }
+    .live-sidebar {
+      width: 335px;
+    }
+    .live-play{
+      height: 405px;
+      .video-js {
+        height: 405px;
+      }
+    }
+    .chatroom {
+      .chatroom-list {
+        height: 316px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1733px) {
+  .live-wrap {
+    width: 1705px;
+    .live-main {
+      width: 1280px;
+    }
+    .live-play{
+      height: 720px;
+      .video-js {
+        height: 720px;
+      }
+    }
+    .chatroom {
+      .chatroom-list {
+        height: 650px;
+      }
+    }
+  }
+}

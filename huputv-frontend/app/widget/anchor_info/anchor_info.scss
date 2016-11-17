@@ -1,0 +1,197 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/function";
+
+.anchor-info {
+    display: none;
+
+    .hd {
+        @include display-flex();
+        @include justify-content(space-between);
+        @include align-items(center);
+        height: 72px;
+        padding: 0 12px;
+        border-bottom: 1px solid $morning_gray1_cor;
+        background-color: $morning_white_cor;
+        @include box-shadow(0 2px 4px rgba(0,0,0,.1));
+    }
+
+    .info {
+        @include display-flex();
+        @include align-items(center);
+    }
+
+    .head {
+        position: relative;
+        width: 45px;
+        height: 45px;
+        margin-right: 5px;
+        border-radius: 23px;
+        overflow: hidden;
+    }
+
+    .mask {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 45px;
+        height: 45px;
+        background-color: rgba(0,0,0,.5);
+        border-radius: 23px;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    .anchor-name {
+        font-size: 14px;
+    }
+
+    .earnings {
+        color: $morning_gray2_cor;
+        .coin { margin-right: 20px;}
+
+        .icon {
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            margin-right: 3px;
+            vertical-align: -1px;
+            background-size: cover;
+        }
+    }
+
+    .tags {
+        span {
+            display: inline-block;
+            min-width: 38px;
+            padding: 0 2px;
+            line-height: 12px;
+            text-align: center;
+            font-size: 10px;
+            margin-right: 2px;
+            color: $morning_gray2_cor;
+            border: 1px solid $morning_gray2_cor;
+            border-radius: 2px;
+        }
+    }
+
+    .follow { text-align: center;}
+
+    .follow .btn {
+        display: block;
+        width: 54px;
+        margin-bottom: 2px;
+        line-height: 20px;
+        border-radius: 2px;
+    }
+
+    .btn-follow {
+        color: $morning_red_cor;
+        border: 1px solid $morning_red_cor;
+    }
+
+    .btn-unfollow {
+        color: $morning_white_cor;
+        background-color: $morning_gray2_cor;
+        border: 1px solid $morning_gray2_cor;
+    }
+
+    .follow-num { color: $morning_red_cor;}
+
+    .unfollow-num { color: $morning_gray2_cor;}
+
+    .icon-coin { background-image: url(./icon-coin.png);}
+    .icon-beans { background-image: url(./icon-beans.png);}
+
+    .bd {
+        padding: 12px;
+        font-size: 15px;
+
+        .icon {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 3px;
+            background-image: url(./icon-anchor.png);
+            background-size: cover;
+            vertical-align: -1px;
+        }
+
+        h3 {
+            color: $morning_huputv_red;
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        p { color: $morning_gray2_cor;}
+
+        a { color: $morning_huputv_blue;}
+    }
+
+    .no-notice {
+        padding-top: 20%;
+        text-align: center;
+
+        img {
+            margin-bottom: 10px;
+        }
+
+        p { color: $morning_gray2_cor;}
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .anchor-info .no-notice {
+        padding-top: 4%;
+    }
+}
+
+
+.night {
+    .anchor-info {
+        .hd {
+            border-bottom-color: $night_gray1_cor;
+            background-color: $night_white_cor;
+            @include box-shadow(0 2px 4px rgba(0,0,0,.1));
+        }
+
+        .earnings {
+            color: $night_gray2_cor;
+        }
+
+        .tags {
+            span {
+                color: $night_gray2_cor;
+                border-color: $night_gray2_cor;
+            }
+        }
+
+        .btn-follow {
+            color: $night_red_cor;
+            border-color: $night_red_cor;
+        }
+
+        .btn-unfollow {
+            color: $night_white_cor;
+            background-color: $night_gray2_cor;
+            border-color: $night_gray2_cor;
+        }
+
+        .follow-num { color: $night_red_cor;}
+
+        .unfollow-num { color: $night_gray2_cor;}
+
+        .bd {
+            h3 {
+                color: $night_huputv_red;
+            }
+
+            p { color: $night_gray2_cor;}
+
+            a { color: $night_huputv_blue;}
+        }
+
+        .no-notice {
+            p { color: $night_gray2_cor;}
+        }
+    }
+}

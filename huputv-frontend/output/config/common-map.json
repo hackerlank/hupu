@@ -1,0 +1,417 @@
+{
+    "res": {
+        "common:page/layout-empty.tpl": {
+            "uri": "/template/common/page/layout-empty.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "common:static/mod.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/mod_9740b77.js",
+            "type": "js",
+            "pkg": "common:p1"
+        },
+        "common:static/common.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/common_b5cf131.css",
+            "type": "css",
+            "pkg": "common:p0"
+        },
+        "common:static/js/jquery/jquery-1.12.0.min.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/jquery/jquery-1.12.0.min_0de6bfa.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:static/js/jquery/jquery-1.12.0.min"
+            },
+            "pkg": "common:p1"
+        },
+        "common:static/js/global/global.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/global/global_e201c49.js",
+            "type": "js",
+            "deps": [
+                "common:widget/page-dace/page-dace.es6"
+            ],
+            "pkg": "common:p2"
+        },
+        "common:widget/page-dace/page-dace.es6": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/widget/page-dace/page-dace.js",
+            "type": "js",
+            "pkg": "common:p2"
+        },
+        "common:page/layout.tpl": {
+            "uri": "/template/common/page/layout.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "common:static/js/colorbox/jquery.colorbox.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/colorbox/jquery.colorbox_0498083.js",
+            "type": "js",
+            "pkg": "common:p1"
+        },
+        "common:widget/header/header.tpl": {
+            "uri": "common/widget/header/header.tpl",
+            "type": "tpl",
+            "deps": [
+                "common:widget/header/header.js",
+                "common:widget/header/header.scss"
+            ]
+        },
+        "common:widget/header/header.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/widget/header/header_48bc7ca.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/header/header"
+            },
+            "deps": [
+                "common:widget/login/login.js",
+                "common:widget/header/header.scss"
+            ],
+            "pkg": "common:p2"
+        },
+        "common:widget/login/login.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/widget/login/login_e4f1cb4.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/login/login"
+            },
+            "pkg": "common:p2"
+        },
+        "common:widget/header/header.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/widget/header/header_e9119ab.css",
+            "type": "css",
+            "pkg": "common:p0"
+        },
+        "common:widget/footer/footer.tpl": {
+            "uri": "common/widget/footer/footer.tpl",
+            "type": "tpl",
+            "deps": [
+                "common:widget/footer/footer.scss"
+            ]
+        },
+        "common:widget/footer/footer.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/widget/footer/footer_7f2fad7.css",
+            "type": "css",
+            "pkg": "common:p0"
+        },
+        "common:static/js/echarts/echarts.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/echarts/echarts_de27ec7.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:static/js/echarts/echarts"
+            }
+        },
+        "common:static/js/socket/socket-1.4.5/socket.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/socket/socket-1.4.5/socket_bef2053.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:static/js/socket/socket-1.4.5/socket"
+            }
+        },
+        "common:static/js/socket/socket.io-1.4.3.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/socket/socket.io-1.4.3_639e428.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:static/js/socket/socket.io-1.4.3"
+            }
+        },
+        "common:static/js/socket/socket.io.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/socket/socket.io_5bbec08.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:static/js/socket/socket.io"
+            }
+        },
+        "common:static/js/socket/socket.io.min.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/socket/socket.io.min_8542c59.js",
+            "type": "js"
+        },
+        "common:static/js/swiper/css/swiper.css": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/swiper/css/swiper_e7a97d8.css",
+            "type": "css"
+        },
+        "common:static/js/swiper/js/swiper.jquery.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/swiper/js/swiper.jquery_7ea11be.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:static/js/swiper/js/swiper.jquery"
+            }
+        },
+        "common:static/js/underscore/underscore.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/underscore/underscore_5d18ca9.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:static/js/underscore/underscore"
+            }
+        },
+        "common:static/js/videojs/ie8/videojs-ie8.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/ie8/videojs-ie8_8296655.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:static/js/videojs/ie8/videojs-ie8"
+            },
+            "pkg": "common:p4"
+        },
+        "common:static/js/videojs/video-js.css": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/video-js_be14e47.css",
+            "type": "css"
+        },
+        "common:static/js/videojs/video-skins-tv.css": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/videojs/video-skins-tv_b5ac1f0.css",
+            "type": "css"
+        },
+        "common:static/js/videojs/video.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/video_25e7872.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:static/js/videojs/video"
+            },
+            "pkg": "common:p4"
+        },
+        "common:static/js/videojs/videojs-hls.min.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/videojs-hls.min_82e457c.js",
+            "type": "js",
+            "pkg": "common:p4"
+        },
+        "common:static/js/videojs/lang/ar.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/ar_78e8210.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/ba.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/ba_f1c2384.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/bg.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/bg_b69b4e7.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/ca.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/ca_8770a07.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/cs.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/cs_536c994.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/da.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/da_972f59d.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/de.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/de_8b25958.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/es.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/es_82ac068.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/fi.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/fi_f2fd02d.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/fr.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/fr_5987ea6.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/hr.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/hr_c68fba3.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/hu.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/hu_152b48c.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/it.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/it_0f6ffee.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/ja.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/ja_04ce02f.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/ko.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/ko_adbb793.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/nl.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/nl_96a13c4.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/pt-BR.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/pt-BR_472d3bb.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/ru.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/ru_3c24781.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/sr.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/sr_dcb11f8.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/sv.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/sv_61ad28f.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/tr.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/tr_26c18d9.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/uk.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/uk_3696ac0.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/vi.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/vi_0a52825.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/zh-CN.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/zh-CN_4239e17.js",
+            "type": "js"
+        },
+        "common:static/js/videojs/lang/zh-TW.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/js/videojs/lang/zh-TW_2e41ed9.js",
+            "type": "js"
+        },
+        "common:static/js/zepto/zepto.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/js/zepto/zepto_b7016d3.js",
+            "type": "js"
+        },
+        "common:widget/dialog/dialog.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/widget/dialog/dialog_6370bfd.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/dialog/dialog"
+            },
+            "deps": [
+                "common:widget/dialog/dialog.scss"
+            ]
+        },
+        "common:widget/dialog/dialog.scss": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/widget/dialog/dialog_38c9d6b.css",
+            "type": "css"
+        },
+        "common:widget/js/socket-1.4.5/socket.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/widget/js/socket-1.4.5/socket_e6c6e2a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/js/socket-1.4.5/socket"
+            }
+        },
+        "common:widget/rpz-board/rpz-board.scss": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/widget/rpz-board/rpz-board_152219c.css",
+            "type": "css"
+        },
+        "common:widget/sessionStorage/basil.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/widget/sessionStorage/basil_5f17947.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/sessionStorage/basil"
+            }
+        },
+        "common:widget/share/qrcode/qrcode.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/widget/share/qrcode/qrcode_e2025cf.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/share/qrcode/qrcode"
+            },
+            "pkg": "common:p3"
+        },
+        "common:widget/share/share.js": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/widget/share/share_22c616d.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/share/share"
+            },
+            "deps": [
+                "common:widget/share/share.scss"
+            ],
+            "pkg": "common:p3"
+        },
+        "common:widget/share/share.scss": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/widget/share/share_26739e4.css",
+            "type": "css"
+        },
+        "common:widget/share/share.tpl": {
+            "uri": "common/widget/share/share.tpl",
+            "type": "tpl",
+            "deps": [
+                "common:widget/share/share.js",
+                "common:widget/share/share.scss"
+            ]
+        },
+        "common:widget/toast/toast.js": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/widget/toast/toast_a4bce2b.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "common:widget/toast/toast"
+            },
+            "deps": [
+                "common:widget/toast/toast.scss"
+            ],
+            "pkg": "common:p2"
+        },
+        "common:widget/toast/toast.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/widget/toast/toast_519aff2.css",
+            "type": "css",
+            "pkg": "common:p0"
+        }
+    },
+    "pkg": {
+        "common:p0": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/pkg/common_a97d9ff.css",
+            "type": "css",
+            "has": [
+                "common:static/common.scss",
+                "common:widget/header/header.scss",
+                "common:widget/footer/footer.scss",
+                "common:widget/toast/toast.scss"
+            ]
+        },
+        "common:p1": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/pkg/lib_78b7b59.js",
+            "type": "js",
+            "has": [
+                "common:static/mod.js",
+                "common:static/js/jquery/jquery-1.12.0.min.js",
+                "common:static/js/colorbox/jquery.colorbox.js"
+            ]
+        },
+        "common:p2": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/pkg/common_406a3aa.js",
+            "type": "js",
+            "has": [
+                "common:widget/page-dace/page-dace.es6",
+                "common:static/js/global/global.js",
+                "common:widget/login/login.js",
+                "common:widget/header/header.js",
+                "common:widget/toast/toast.js"
+            ],
+            "deps": [
+                "common:widget/header/header.scss",
+                "common:widget/toast/toast.scss"
+            ]
+        },
+        "common:p3": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/pkg/share_65943c8.js",
+            "type": "js",
+            "has": [
+                "common:widget/share/qrcode/qrcode.js",
+                "common:widget/share/share.js"
+            ],
+            "deps": [
+                "common:widget/share/share.scss"
+            ]
+        },
+        "common:p4": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/pkg/videojs_b6226b7.js",
+            "type": "js",
+            "has": [
+                "common:static/js/videojs/ie8/videojs-ie8.js",
+                "common:static/js/videojs/video.js",
+                "common:static/js/videojs/videojs-hls.min.js"
+            ]
+        }
+    }
+}

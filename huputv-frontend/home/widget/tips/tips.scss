@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+.rule-tips{
+    position: absolute;
+    padding: 15px 10px;
+    width: 645px;
+    left: -118px;
+    top: 30px;
+    color: #fff;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+    *zoom: 1;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    &:root{
+         filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#99000000',EndColorStr='#99000000');
+    }
+    display: none;
+    &:before{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-bottom: 8px solid #000;
+        opacity: 0.7;
+        top: -16px;
+        left: 118px;
+    }   
+
+    dl{
+        padding-left: 15px;
+        position: relative;
+        margin-bottom: 20px;
+        dt{
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 3px;
+            background: #fff;
+            left: 0;
+            top: 8px;
+
+        }
+        p{
+            span{
+                color: #ff9fa5;
+            }
+        }
+        table{
+            width: 100%;
+            margin: 15px 0;
+            text-align:center;
+            td{
+                border: 1px solid #a1a1a1;
+                text-indent: 4px;
+            }
+        }
+    }
+    .bottom-tips{
+        margin-top: 40px;
+        padding-left: 15px;
+    }
+
+}

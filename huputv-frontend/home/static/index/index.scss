@@ -1,0 +1,432 @@
+@charset "utf-8";
+@import "../sass/sassCore/base";
+
+.mod-overflow {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.index-wrap {
+	.channel-wrap {
+		.channel-block {
+			.item5, .item6 { display: none;}
+		}
+	}
+}
+
+.list-wrap {
+	.channel-wrap {
+		.channel-block {
+			li { margin-bottom: 20px;}
+		}
+	}
+}
+
+.IE8-tip {
+    width: 100%;
+	*width: 991px;
+    padding: 15px;
+	margin: 13px 0;
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+
+.mod-wrap {
+	width: 991px;
+	*width: 991px;
+	margin-left: auto;
+	margin-right: auto;
+
+	.no-live-wrap {
+		position: relative;
+		height: 768px;
+		text-align: center;
+
+		img {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 297px;
+			height: 235px;
+			margin-left: -148px;
+			margin-top: -118px;
+			vertical-align: middle;
+		}
+	}
+
+	.main-wrap {
+		@include clearfix();
+		*width: 991px;
+		margin-top: 11px;
+		margin-bottom: 13px;
+
+		.video {
+			@include float(left);
+			position: relative;
+			width: 832px;
+			height: 468px;
+			background-color: gray;
+		}
+
+		.video:hover {
+			.btn-enter {
+				display: block;
+			}
+		}
+
+		.btn-enter {
+			display: none;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 128px;
+			margin-left: -64px;
+			margin-top: -16px;
+			line-height: 32px;
+			text-align: center;
+			color: #fff;
+			background-color: rgba(0, 0, 0, .5);
+			border: 2px solid rgba(210, 47, 51, .5);
+			transition: .5s;
+			z-index: 99;
+		}
+
+		.btn-enter:hover {
+			background-color: rgba(210, 47, 51, .5);
+		}
+
+		.list {
+			@include float(right);
+			width: 159px;
+			height: 468px;
+			background-color: #000;
+			border-left: 1px solid rgba(255,255,255,.15);
+
+			img {
+				width: 144px;
+				height: 81px;
+			}
+
+			ul {
+				width: 152px;
+				margin: 11px auto;
+			}
+
+			li {
+				position: relative;
+				width: 152px;
+				height: 89px;
+				background-color: #dedede;
+				border: 4px solid #000;
+
+				p {
+					display: none;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					line-height: 20px;
+					font-size: 12px;
+					text-indent: 4px;
+					color: #fff;
+					background-image: url(../img/mask.png);
+					background-repeat: repeat;
+				}
+			}
+
+			li:hover p {
+				display: block;
+			}
+
+			li.active {
+				border-color: #d22f33;
+			}
+
+			li.active:after {
+				content: "";
+				position: absolute;
+				left: -10px;
+				top: 32px;
+				display: block;
+				width: 0;
+			    height: 0;
+			    border-top: 7px solid transparent;
+			    border-right: 7px solid #d22f33;
+			    border-bottom: 7px solid transparent;
+			}
+		}
+	}
+
+	.channel-wrap {
+		*width: 991px;
+		margin-top: 13px;
+		margin-bottom: 38px;
+
+		.mod-title {
+			position: relative;
+			line-height: 42px;
+			text-indent: 15px;
+			font-size: 14px;
+
+			a {
+				color: #262626;
+			}
+
+			a:hover {
+				color: #d22f33;
+			}
+		}
+
+		.more {
+			position: absolute;
+			right: 15px;
+			top: 0;
+			display: inline-block;
+			line-height: 42px;
+			color: #262626;
+
+			a:hover {
+				color: #d22f33;
+			}
+		}
+
+		.channel-block {
+			@include clearfix();
+			width: 100%;
+			*width: 991px;
+			margin-top: 13px;
+			margin-bottom: 13px;
+			background-color: #fff;
+			border-left: 1px solid #f1f3f3;
+			border-bottom: 1px solid #ddd;
+
+			ul {
+				margin-left: -5px;
+				margin-right: -5px;
+			}
+
+			li {
+				@include float(left);
+				width: 240px;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+
+			li>a {
+				position: relative;
+				display: block;
+			}
+
+			li>a:visited {
+				h3 { color: #999;}
+			}
+
+			li>a:hover {
+				h3 { color: #d22f33;}
+
+				.mask { display: block;}
+			}
+
+			.tag {
+				position: absolute;
+				top: 0;
+				width: 28px;
+				line-height: 16px;
+				text-align: center;
+				font-size: 12px;
+				z-index: 5;
+			}
+
+			.tag-recommend {
+				width: 36px;
+				right: 0;
+				color: #fff;
+				background-color: #d22f33;
+			}
+
+			.tag-status {
+				font-weight: bold;
+				color: #444;
+				background-color: rgba(255, 255, 255, .75);
+				left: 0;
+			}
+
+			.tag-rp {
+				left: 28px;
+				background-color: rgba(210,47,51,.75);
+				color: #fff;
+			}
+
+			.pic {
+				position: relative;
+				width: 240px;
+				height: 136px;
+				background-color: #dedede;
+				overflow: hidden;
+			}
+
+			img {
+				display: block;
+				max-width: 100%;
+			}
+
+			.mask {
+				display: none;
+				position: absolute;
+				left: 0;
+			    top: 0;
+			    width: 100%;
+			    height: 100%;
+				background-image: url(../img/mask.png);
+				background-repeat: repeat;
+				z-index: 10;
+			}
+
+			.icon-hptv-play-o {
+				position: absolute;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				margin: auto;
+				width: 60px;
+				height: 60px;
+				line-height: 60px;
+				font-size: 60px;
+				color: #fff;
+			}
+
+			h3 {
+				padding: 8px 5px 2px;
+				line-height: 14px;
+				font-size: 14px;
+				color: #262626;
+			}
+
+			.info {
+				@include clearfix();
+				padding: 0 5px;
+				line-height: 30px;
+				font-size: 12px;
+				color: #777;
+			}
+
+			.name {
+				@include float(left);
+			}
+
+			.audience {
+				@include float(right);
+			}
+
+			.icon-audience {
+				display: inline-block;
+				width: 15px;
+				height: 10px;
+				margin-right: 6px;
+				background-image: url(../img/icon-audience.png);
+				background-size: cover;
+			}
+		}
+	}
+}
+
+.body-1530 {
+	#live-video {
+		width: 1200px;
+		height: 675px;
+	}
+
+	.index-wrap {
+		.channel-wrap {
+			.channel-block {
+				.item5, .item6 { display: block;}
+			}
+		}
+	}
+	.mod-wrap {
+		width: 1491px;
+		.main-wrap {
+			.video {
+				width: 1200px;
+				height: 675px;
+			}
+
+			.list {
+				width: 291px;
+				height: 675px;
+
+				img {
+					width: 224px;
+					height: 126px;
+				}
+
+				ul {
+					width: 238px;
+					margin: 2px auto;
+				}
+
+				li {
+					position: relative;
+					width: 232px;
+					height: 134px;
+				}
+
+				li.active:after {
+					top: 55px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width:1530px) {
+	#live-video {
+		width: 1200px;
+		height: 675px;
+	}
+
+	.index-wrap {
+		.channel-wrap {
+			.channel-block {
+				.item5, .item6 { display: block;}
+			}
+		}
+	}
+	.mod-wrap {
+		width: 1491px;
+		.main-wrap {
+			.video {
+				width: 1200px;
+				height: 675px;
+			}
+
+			.list {
+				width: 291px;
+				height: 675px;
+
+				img {
+					width: 224px;
+					height: 126px;
+				}
+
+				ul {
+					width: 238px;
+					margin: 2px auto;
+				}
+
+				li {
+					position: relative;
+					width: 232px;
+					height: 134px;
+				}
+
+				li.active:after {
+					top: 55px;
+				}
+			}
+		}
+	}
+}

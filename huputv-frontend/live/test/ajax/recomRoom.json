@@ -1,0 +1,42 @@
+{
+  "code": 1,
+  "msg": "操作成功",
+  "data": [
+    {
+      "id": "10154",
+      "name": "八英里的2K成长路",
+      "cover": "http://kanqiu.hupucdn.com/kanqiu_10154_20150703120335.jpeg!cover-534x300.jpeg",
+      "anchor_nickname": "黄师傅",
+      "online_plus": "0",
+      "room_type_text": null,
+      "online": 1
+    },
+    {
+      "id": "10165",
+      "name": "LuLu上海疯狂追",
+      "cover": "http://kanqiu.hupucdn.com/kanqiu_10165_20150730112607.jpeg!cover-534x300.jpeg",
+      "anchor_nickname": "LuLu",
+      "online_plus": "0",
+      "room_type_text": null,
+      "online": 1
+    },
+    {
+      "id": "10183",
+      "name": "005test的直播间",
+      "cover": "http://i1.hoopchina.com.cn/hupuapp/kanqiu/201603/kanqiu_10183_20160325184517_1116972964.png@300h_534w_1e_1c",
+      "anchor_nickname": "005test",
+      "online_plus": "0",
+      "room_type_text": "篮球第一现场",
+      "online": 1
+    },
+    {
+      "id": "10254",
+      "name": "常用test的直播间",
+      "cover": "http://kanqiu.hupucdn.com/kanqiu_10254_20151109175027.jpeg",
+      "anchor_nickname": "常用test",
+      "online_plus": "0",
+      "room_type_text": null,
+      "online": 1
+    }
+  ]
+}

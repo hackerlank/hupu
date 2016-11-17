@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+/**
+ * 直播页面
+ **/
+@import "../sass/sassCore/base";
+
+html, body {
+  background-color: transparent;
+}
+
+.chaoneng-wrap {
+  padding-top: 6px;
+  text-align: center;
+  color: #fff;
+  .game-info {
+    min-width: 335px;
+    width: 35%;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 auto 1px;
+    background-color: #444;
+    border: 1px solid rgba(255,255,255, .6);
+    @include border-radius(15px);
+    @include display-flex();
+    @include opacity(90);
+    .team-name {
+      @include flex(4);
+      padding: 0 5px;
+    }
+    .score-number {
+      @include flex(1);
+      min-width: 45px;
+    }
+    .score-number-left {
+      padding-right: 7px;
+      background: #006ab4;
+    }
+    .score-number-right {
+      padding-left: 7px;
+      background: #e30a20;
+    }
+    .game-pos {
+      height: 35px;
+      position: relative;
+      top: -3px;
+      padding: 3px 7px 0;
+      line-height: 14px;
+      background: #2a2a2a;
+      &:after,
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-width: 18px 6px;
+        border-style: solid;
+        border-color:  #2a2a2a #2a2a2a transparent transparent;
+      }
+      &:after {
+        left: -12px;
+
+      }
+      &:before {
+        right: -12px;
+        @include rotateY(180deg);
+      }
+    }
+  }
+  .skill-info {
+    @include display-flex();
+    .team-skill {
+      padding: 0 27px;
+      @include flex(1);
+    }
+
+    .skill-pic-list {
+      position: relative;
+      z-index: 2;
+      @include float;
+      li {
+        @include float;
+        width: 28px;
+        height: 28px;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .skill-detail {
+      display: none;
+      @include float;
+      height: 26px;
+      line-height: 26px;
+      margin-top: 1px;
+      padding: 0 10px;
+      background: rgba(0, 0, 0, .6);
+      border: 1px solid rgba(255,255,255,.3);
+      .name {
+        margin-left: 3px;
+        color: #ffc363;
+      }
+    }
+
+    .team-skill-left {
+      .skill-pic-list {
+        @include float(right);
+      }
+      .skill-detail {
+        @include float(right);
+      }
+      .skill-detail {
+        margin-right: -5px;
+      }
+    }
+    .team-skill-right {
+      .skill-detail {
+        margin-left: -5px;
+      }
+    }
+  }
+}

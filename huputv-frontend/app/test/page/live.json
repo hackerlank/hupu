@@ -1,0 +1,76 @@
+{
+  "live": {
+    "id": "10333",
+    "puid": "19009252",
+    "nickname": "Jason_Hooper",
+    "anchor_nickname": "Jason_Hooper",
+    "room_name": "MJ - History Tour Munich",
+    "cover": "http://huputv-ws-img.arenacdn.com/prod-VFk2rQzyGQDWEBLU.jpg",
+    "online_plus": "0",
+    "tips": [
+      "12adsaf"
+    ],
+    "match_id": "9559",
+    "is_live": "1",
+    "allow_predict": "1",
+    "notice": "Jason的直播间",
+    "room_type": "49",
+    "recommend": "1",
+    "recommend_tag": "",
+    "following": "7",
+    "create_time": "1467693031",
+    "status": "0",
+    "online": 0,
+    "abs_url": "http://dev.videohupu.com/10333",
+    "abs_share_url": "http://dev.videohupu.com/share/10333",
+    "abs_category_url": "http://dev.videohupu.com/game",
+    "status_text": "Live",
+    "avatar": {
+      "header": "http://i3.hoopchina.com.cn/user/252/19009252/19009252.jpg",
+      "header_small": "http://i3.hoopchina.com.cn/user/252/19009252/19009252_small_1.jpg",
+      "header_big": "http://i3.hoopchina.com.cn/user/252/19009252/19009252_big_1.jpg"
+    },
+    "online_format": 1,
+    "rp": 1,
+    "announce": "主播休息中，去别的直播间看看吧",
+    "is_follow": 0,
+    "income": {
+      "gold": 8060,
+      "money": 6550
+    },
+    "live_addr": {
+      "status": 200,
+      "result": [
+        {
+          "name": "超清",
+          "hls": "http://huputv-ws-hls.arenacdn.com/prod/VFk2rQzyGQDWEBLU/playlist.m3u8",
+          "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/VFk2rQzyGQDWEBLU"
+        },
+        {
+          "name": "高清",
+          "hls": "http://huputv-ws-hls.arenacdn.com/prod/VFk2rQzyGQDWEBLU_1500/playlist.m3u8",
+          "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/VFk2rQzyGQDWEBLU_1500"
+        },
+        {
+          "name": "普清",
+          "hls": "http://huputv-ws-hls.arenacdn.com/prod/VFk2rQzyGQDWEBLU_1000/playlist.m3u8",
+          "rtmp": "rtmp://huputv-ws-live.arenacdn.com/prod/VFk2rQzyGQDWEBLU_1000"
+        }
+      ]
+    },
+    "category": "奥奥"
+  },
+  "sub_server": [
+    "192.168.9.28:3080",
+    "192.168.9.28:3080",
+    "192.168.9.28:3080",
+    "192.168.9.28:3080"
+  ],
+  "test": "1",
+  "userInfo": {
+    "puid": "19009252",
+    "nickname": "Jason_Hooper",
+    "token": "e495ec2d4c65c11b2492fc5b98abb311",
+    "username": "Jason_Hooper"
+  }
+}

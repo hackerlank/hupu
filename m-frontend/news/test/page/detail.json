@@ -1,0 +1,340 @@
+{
+    "pageheader": {
+        "title": "华纳兄弟为詹姆斯的视频平台注资_手机虎扑网"
+    },
+    "title": "虎扑篮球 - 最篮球的世界",
+    "project": "nba",
+    "site": "voice",
+    "id4dace": 2111,
+    "mark4dace": "page_nba_news_detail",
+    "pageBottomSpread": [
+        {
+            "name": "NBA",
+            "url": "/bbs/1048"
+        },
+        {
+            "name": "足球",
+            "url": "/bbs/1389"
+        },
+        {
+            "name": "步行街",
+            "url": "/bbs/34"
+        },
+        {
+            "name": "情感",
+            "url": "/bbs/160"
+        },
+        {
+            "name": "影视",
+            "url": "/bbs/120"
+        }
+    ],
+    "baseurl": "http://m.hupu.com",
+    "test": "710998fd1b7c0235170265650770a4b1",
+    "_islogin": 0,
+    "loginurl": "http://passport.hupu.com/m/2?appid=10017&jumpurl=http://m.hupu.com/nba/news/1978910.html?test=710998fd1b7c0235170265650770a4b1&from=m&project=hupu",
+    "uid": "",
+    "username": "",
+    "showAdvertise": 0,
+    "description": "北京时间12月3日，根据HollywoodReporter的报道，华纳兄弟娱乐公司将为勒布朗-詹姆斯的&ldquo;Uninter",
+    "pclink": "http://voice.hupu.com/nba/1978910.html?test=710998fd1b7c0235170265650770a4b1",
+    "hottitlelen": 16,
+    "columncontentlen": 46,
+    "footerword": {
+        "word": "只有我才能使自己停下来。",
+        "person": "艾弗森"
+    },
+    "videoImgUrlPrefix": "http://img04.store.sogou.com/net/a/67/link?appid=67&url=",
+    "keywords": "华纳兄弟为詹姆斯的视频平台注资",
+    "bottomtitle": "虎扑篮球 - 最篮球的世界",
+    "topNav": [
+        {
+            "title": "NBA",
+            "router": "nbaindex",
+            "url": "http://m.hupu.com/nba"
+        },
+        {
+            "title": "CBA",
+            "router": "cbanewsindex",
+            "url": "http://m.hupu.com/cba/news/"
+        },
+        {
+            "title": "足球",
+            "router": "soccerindex",
+            "url": "http://m.hupu.com/soccer"
+        },
+        {
+            "title": "论坛",
+            "router": "bbsindex",
+            "url": "http://m.hupu.com/bbs"
+        },
+        {
+            "title": "识货",
+            "url": "http://m.shihuo.cn/",
+            "router": "shihuoindex",
+            "target": "_blank"
+        },
+        {
+            "title": "彩票",
+            "url": "http://t.hupu.lecai.com/",
+            "router": "caipiaoindex",
+            "target": "_blank"
+        }
+    ],
+    "level2": [
+        {
+            "name": "比赛",
+            "router": "nbacenter",
+            "url": "http://m.hupu.com/nba/game"
+        },
+        {
+            "name": "新闻",
+            "router": "nbanewsindex",
+            "url": "http://m.hupu.com/nba/news/"
+        },
+        {
+            "name": "球队",
+            "router": "nbateam",
+            "url": "http://m.hupu.com/nba/standing"
+        },
+        {
+            "name": "论坛",
+            "router": "forumindex",
+            "param": {
+                "fid": 1048
+            },
+            "url": "http://m.hupu.com/bbs/1048"
+        }
+    ],
+    "id": 1978910,
+    "node": [
+        {
+            "title": "NBA新闻",
+            "url": "http://m.hupu.com/nba/news/"
+        },
+        {
+            "title": "新闻",
+            "url": "#"
+        }
+    ],
+    "custom": {
+        "m_top": [
+            {
+                "title": "11111",
+                "url": "1111"
+            }
+        ]
+    },
+    "detail": {
+        "id": "1978910",
+        "m_url": "http://m.hupu.com/nba/news/1978910.html",
+        "url": "http://voice.hupu.com/nba/1978910.html",
+        "title": "华纳兄弟为詹姆斯的视频平台注资",
+        "content": "<p>北京时间12月3日，根据HollywoodReporter的报道，华纳兄弟娱乐公司将为<a href=\"http://m.hupu.com/nba/players/lebronjames-650\" dace-node=\"2111_player\" >勒布朗-詹姆斯</a>的&ldquo;Uninterrupted&rdquo;视频平台注资1580万美元。</p>\r\n\r\n<p>&ldquo;Uninterrupted&rdquo;是詹姆斯在2014年与其儿时伙伴Maverick Cartet一起注资建成的一个视频平台，目的是为了给运动员们一个发表自己看法的平台。</p>\r\n\r\n<p>&ldquo;这给了运动员们一个机会，能让他们拥有一个可以谈论任何问题的平台，&rdquo;詹姆斯说，&ldquo;他们不用等待着记者拿着摄像机来采访他们。&rdquo;</p>\r\n\r\n<p>而且，&ldquo;Uninterrupted&rdquo;还给了运动员们一个与球迷们脱离传统媒体的交流平台。</p>\r\n\r\n<p>在&ldquo;Uninterrupted&rdquo;上，最多的是詹姆斯的视频，还有其他运动员，比如像拳击手Ronda Rousey、<a href=\"http://m.hupu.com/nba/players/draymondgreen-3672\" dace-node=\"2111_player\" >德雷蒙德-格林</a>和网球手Serena Williams也都参与了进来。</p>\r\n\r\n<p>在12月，&ldquo;Uninterrupted&rdquo;会发行&ldquo;Striving for Greatness&rdquo;的5集短剧，其中讲述了詹姆斯如何备战他在NBA的第13个赛季。</p>",
+        "media": "HollywoodReporter",
+        "img": "http://img04.store.sogou.com/net/a/66/link?appid=66&url=http://c2.hoopchina.com.cn/uploads/star/event/images/151203/1b0e2da8a6de7f242c8eeeb774292a88a490f818.jpg",
+        "dateline": "2015-12-03 14:17:00",
+        "type": "6",
+        "support": "0",
+        "against": "0",
+        "reply_count": "0",
+        "show_imgs": "",
+        "tags": [
+            {
+                "tag_id": "3023",
+                "tag_name": "骑士",
+                "category": "nba",
+                "url": "http://m.hupu.com/nba/news/tag/3023?tagname=骑士"
+            },
+            {
+                "tag_id": "4358",
+                "tag_name": "勒布朗-詹姆斯",
+                "category": "nba",
+                "url": "http://m.hupu.com/nba/news/tag/4358?tagname=勒布朗-詹姆斯"
+            }
+        ],
+        "date": "10分钟前"
+    },
+    "hot": [],
+    "commentsInfo": [
+        {
+            "id": "7146970",
+            "uid": "28237",
+            "user": "icewind",
+            "content": "lbj商业头脑联盟无出其右",
+            "togglecontent": "",
+            "smallcontent": "lbj商业...",
+            "light": "0",
+            "floor": "1",
+            "is_hide": 0,
+            "write": 1449123821,
+            "time": "3分钟前",
+            "quote": []
+        }
+    ],
+    "lightComments": [],
+    "commentsCount": 1,
+    "page": 1,
+    "ispics": false,
+    "pageCount": 1,
+    "restNum": 0,
+    "perPage": 20,
+    "router": "nbanewsreplys",
+    "urlprefix": "id=1978910",
+    "my_url": "http://m.hupu.com/my/",
+    "bottomList": {
+        "nba": {
+            "title": "NBA",
+            "url": "http://m.hupu.com/nba/news/"
+        },
+        "cba": {
+            "title": "CBA",
+            "url": "http://m.hupu.com/cba/news/"
+        },
+        "soccer": {
+            "title": "国际足球",
+            "url": "http://m.hupu.com/soccer/news/"
+        },
+        "china": {
+            "title": "中国足球",
+            "url": "http://m.hupu.com/soccer/news/china/"
+        },
+        "f1": {
+            "title": "赛车",
+            "url": "http://m.hupu.com/f1/news/"
+        },
+        "tennis": {
+            "title": "网球",
+            "url": "http://m.hupu.com/tennis/news/"
+        },
+        "sports": {
+            "title": "综合体育",
+            "url": "http://m.hupu.com/sports/news/"
+        }
+    },
+    "adInfo": {
+        "m_adbanner": {
+            "news_detail": []
+        },
+        "m_adapp": {
+            "hupusports": []
+        }
+    },
+    "from": "",
+    "hotThread": [
+        {
+            "tid": "14843390",
+            "fid": "130",
+            "subject": "12月03日NBA 比赛综述：神准库里狂砍40分擒黄蜂丨哈登24+10火箭战胜鹈鹕丨科比砍31分关键5分制胜",
+            "pushtobbshome": "0",
+            "newtitle": "",
+            "replies": "22",
+            "recs": "0",
+            "ifmail": "0",
+            "titlefont": "blue~1~~~~~",
+            "forumName": "",
+            "forumUrl": "/",
+            "threadUrl": "/14843390.html",
+            "postdate": "1449109321",
+            "lastpost": "1449123624",
+            "mobileurl": "http://m.hupu.com/bbs/14843390.html",
+            "mobileboardurl": "http://m.hupu.com/bbs/130",
+            "forumname": "湿乎乎的话题",
+            "posttime": "4小时前",
+            "url": "http://m.hupu.com/bbs/14843390.html"
+        },
+        {
+            "tid": "14843841",
+            "fid": "1048",
+            "subject": "[流言板]沃尔主场被嘘，母亲赛后哭泣",
+            "pushtobbshome": "1",
+            "newtitle": "[流言板]沃尔主场被嘘，母亲赛后哭泣",
+            "replies": "131",
+            "recs": "0",
+            "ifmail": "14",
+            "titlefont": "blue~~~~~~",
+            "forumName": "",
+            "forumUrl": "/",
+            "threadUrl": "/14843841.html",
+            "postdate": "1449112050",
+            "lastpost": "1449123495",
+            "mobileurl": "http://m.hupu.com/bbs/14843841.html",
+            "mobileboardurl": "http://m.hupu.com/bbs/1048",
+            "forumname": "湿乎乎的话题",
+            "posttime": "3小时前",
+            "url": "http://m.hupu.com/bbs/14843841.html"
+        },
+        {
+            "tid": "14845552",
+            "fid": "1048",
+            "subject": "【赛后】步行者103:91快船，保罗缺阵，乔治31+10",
+            "pushtobbshome": "1",
+            "newtitle": "【赛后】步行者103:91快船，保罗缺阵，乔治31+10",
+            "replies": "106",
+            "recs": "0",
+            "ifmail": "10",
+            "titlefont": "~1~~~~~",
+            "forumName": "",
+            "forumUrl": "/",
+            "threadUrl": "/14845552.html",
+            "postdate": "1449123413",
+            "lastpost": "1449123831",
+            "mobileurl": "http://m.hupu.com/bbs/14845552.html",
+            "mobileboardurl": "http://m.hupu.com/bbs/1048",
+            "forumname": "湿乎乎的话题",
+            "posttime": "7分钟前",
+            "url": "http://m.hupu.com/bbs/14845552.html"
+        },
+        {
+            "tid": "14843070",
+            "fid": "1048",
+            "subject": "库里又疯了，单节28分！！！！！！！！",
+            "pushtobbshome": "1",
+            "newtitle": "库里又疯了，单节28分！！！！！！！！",
+            "replies": "415",
+            "recs": "5",
+            "ifmail": "20",
+            "titlefont": "blue~~~~~~",
+            "forumName": "",
+            "forumUrl": "/",
+            "threadUrl": "/14843070.html",
+            "postdate": "1449107268",
+            "lastpost": "1449123821",
+            "mobileurl": "http://m.hupu.com/bbs/14843070.html",
+            "mobileboardurl": "http://m.hupu.com/bbs/1048",
+            "forumname": "湿乎乎的话题",
+            "posttime": "4小时前",
+            "url": "http://m.hupu.com/bbs/14843070.html"
+        },
+        {
+            "tid": "14843344",
+            "fid": "1048",
+            "subject": "【美国JRS之声赛中】强行打卡！流氓库里疯狂3分雨连得24分|库里单赛季400个3分？",
+            "pushtobbshome": "1",
+            "newtitle": "【美国JRS之声赛中】强行打卡！流氓库里疯狂3分雨连得24分|库里单赛季400个3分？",
+            "replies": "140",
+            "recs": "18",
+            "ifmail": "15",
+            "titlefont": "green~1~~~~~",
+            "forumName": "",
+            "forumUrl": "/",
+            "threadUrl": "/14843344.html",
+            "postdate": "1449108972",
+            "lastpost": "1449123473",
+            "mobileurl": "http://m.hupu.com/bbs/14843344.html",
+            "mobileboardurl": "http://m.hupu.com/bbs/1048",
+            "forumname": "湿乎乎的话题",
+            "posttime": "4小时前",
+            "url": "http://m.hupu.com/bbs/14843344.html"
+        }
+    ],
+    "kaluli": [
+        {
+            "id": "12",
+            "title": "标题",
+            "come":"卡路里运动营养",
+            "detail_url": "http://www.shihuo.cn/youhui/220748.html",
+            "time": "2016-08-30 11:39:19.0"
+        }
+    ]
+}

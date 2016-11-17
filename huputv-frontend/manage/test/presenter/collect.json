@@ -1,0 +1,191 @@
+{
+    "code": 1,
+    "msg": null,
+    "data": {
+        "count": 277,
+        "per": 20,
+        "offset": 0,
+        "list": [
+            {
+                "id": "0",
+                "uid": "17666703",
+                "anchor_nickname": "nickanme",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "3",
+                "uid": "1766670",
+                "anchor_nickname": "小行星",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "4",
+                "uid": "12",
+                "anchor_nickname": "7",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "5",
+                "uid": "521",
+                "anchor_nickname": "小五",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "6",
+                "uid": "121",
+                "anchor_nickname": "炎龙掌",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "7",
+                "uid": "1234",
+                "anchor_nickname": "18757",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "8",
+                "uid": "18233212",
+                "anchor_nickname": "Jason",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "9",
+                "uid": "18993850",
+                "anchor_nickname": "兼森没有房间",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "11",
+                "uid": "19009252",
+                "anchor_nickname": "Jason_Test",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "12",
+                "uid": "102310",
+                "anchor_nickname": "蛤蛤",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "13",
+                "uid": "8899",
+                "anchor_nickname": "xxx",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "14",
+                "uid": "20130614",
+                "anchor_nickname": "言文官",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "15",
+                "uid": "89757",
+                "anchor_nickname": "侠岚之独龙",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "16",
+                "uid": "176667032",
+                "anchor_nickname": "redis",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "18",
+                "uid": "1213651",
+                "anchor_nickname": "骑士必夺冠",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "19",
+                "uid": "1654645",
+                "anchor_nickname": "画江湖之不良人",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "20",
+                "uid": "98945",
+                "anchor_nickname": "骑士必夺冠22",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "21",
+                "uid": "201306143",
+                "anchor_nickname": "骑士必夺冠33",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "22",
+                "uid": "11",
+                "anchor_nickname": "feiku",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            },
+            {
+                "id": "23",
+                "uid": "18857503",
+                "anchor_nickname": "爱情贝多芬",
+                "live_time": 0,
+                "gold": 0,
+                "beans": 0,
+                "message": 0
+            }
+        ]
+    }
+}

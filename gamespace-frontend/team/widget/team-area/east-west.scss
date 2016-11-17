@@ -1,0 +1,53 @@
+
+.region_box{
+	border: 1px #efeff0 solid;
+	.active{
+		background-color: #f2f2f2;
+    color: #999999;
+	}
+	.title_a{
+		    display: inline-block;
+		width:120px;
+    height: 32px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 16px;
+    cursor: pointer;
+	}
+	.title_b{
+		display: inline-block;
+		width:122px;
+    height: 32px;
+    text-align: center;
+    padding-top: 8px;
+    font-size: 16px;
+    cursor: pointer;
+	}
+   table{
+			border-collapse: collapse;
+			font-family: Arial,Helvetica,sans-serif;
+			width: 100%;
+			text-align: center;
+			td{
+				height:35px;
+				text-align: center;
+				padding-left: 8px;
+			}
+			.red_color_font a {
+				color: #A92229;
+    		font-weight: bold;
+			}
+   }
+	.area_table{
+    .table_th{
+    	border-bottom: 2px solid #a92229;
+    	th{
+	    	height:40px;
+	    	font:12px/1.5 \5b8b\4f53,Arial,sans-serif;
+	    	text-align: center;
+	    	padding-left: 8px;
+	    	vertical-align: middle;
+	    }
+    }
+	}
+}

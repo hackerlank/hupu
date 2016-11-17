@@ -1,0 +1,231 @@
+@charset "utf-8";
+@import "../sass/sassCore/base";
+
+.rpz-wrap{
+    @include clearfix();
+    width: 980px;
+    margin: 10px auto 0;
+}
+
+.main-con{
+    @include float();
+    margin-left: 10px;
+    width: 700px;
+    .rpz-record{
+        background: #fff;
+        border-bottom: 1px solid #ddd;
+        .title{
+            @include clearfix();
+            padding: 5px 38px 0 0;
+            line-height: 24px;
+            margin-bottom: 30px;
+            .today-rank{
+                @include float(right);
+                font-size: 12px;
+                color: #777;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .record{
+                @include float();
+                position: relative;
+                width: 120px;
+                height: 24px;
+                background: #d04646;
+                text-align: center;
+                font-size: 14px;
+                color: #fff;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    right: -16px;
+                    top: 0;
+                    border-left: 8px solid #d04646;
+                    border-right: 8px solid transparent;
+                    border-top: 12px solid #d04646;
+                    border-bottom: 12px solid transparent;
+                }
+            }
+            .desc{
+                @include float();
+                margin-left: 25px;
+                color: #999;
+                font-size: 12px;
+                position: relative;
+                background: url(./notify-icon.png) left center no-repeat;
+                padding-left: 20px;
+                &:hover{
+                    .rule-tips{
+                        display: block;
+                    }
+                }
+            }
+        }
+        .rpz-grid{
+            padding: 0 35px 0 45px;
+            .grid-title{
+                @include clearfix();
+                font-size: 12px;
+                margin-bottom: 10px;
+                .title-right{
+                    @include float(right);
+                    span{
+                        color: #d04646;
+                    }
+                    em{
+                        font-style: normal;
+                        margin-left: 3px;
+                        color: #5ac1f0;
+                    }
+                }
+                .title-left{
+                    span{
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .rpz-list{
+        padding-bottom: 35px;
+        .section{
+            .title{
+                padding-left: 12px;
+                font-size: 12px;
+                line-height: 24px;
+                color: #777;
+                .status{
+                    margin-left: 20px;
+                    em{
+                        font-style: normal;
+                        margin-left: 3px;
+                        &.win{
+                           color: #d22f33;
+                        }
+                        &.lose{
+                           color: #59dc65;
+                        }
+                    }
+                }
+            }
+            .item{
+                @include clearfix();
+                padding-left: 50px;
+                background: #fff;
+                border-bottom: 1px solid #eee;
+                .status{
+                    @include float();
+                    position: relative;
+                    margin-left: -100%;
+                    left: -50px;
+                    padding: 8px 15px 6px;
+                    border-right: 1px dotted #eee;
+                    span{
+                        display: block;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        color: #010101;
+                        &.lose{
+                            color: #999;
+                        }
+                    }
+
+                }
+                .team-name{
+                    @include float();
+                    width: 100%;
+                    padding: 8px 0 6px;
+                    div{
+                        padding-left: 12px;
+                        height: 30px;
+                        line-height: 30px;
+                        span{
+                            margin-left: 8px;
+                            display: inline-block;
+                            color: #999;
+                            border: 1px solid #999;
+                            padding: 3px;
+                            line-height: 1;
+                        }
+                        &.lose{
+                            color: #999;
+                        }
+                    }
+                }
+                .result{
+                    @include float();
+                    width: 72px;
+                    margin-left: -72px;
+                    padding-top: 28px;
+                    div{
+                        display: inline-block;
+                        height: 20px;
+                        font-size: 12px;
+                        line-height: 20px;
+                        &.win{
+                            color: #d22f33;
+                            border: 1px solid #d22f33;
+                            text-align: center;
+                            padding: 0 8px;
+                        }
+                        &.lose{
+                            color: #59dc65;
+                            border: 1px solid #59dc65;
+                            text-align: center;
+                            padding: 0 8px;
+                        }
+                        &.wait{
+                            color: #999;
+                        }
+                    }
+                }
+            }
+        }
+        .more-record{
+            display: block;
+            background: #fff;
+            height: 35px;
+            border-bottom: 1px solid #DDD;
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            .arrow{
+                display: inline-block;
+                vertical-align: middle;
+                padding-top: 10px;
+                margin-right: 6px;
+                span{
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border: 8px solid transparent;
+                    border-top: 8px solid #CCC;
+                    position: relative;
+                    &:after{
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        border: 5px solid transparent;
+                        border-top: 5px solid #fff;
+                        top: -8px;
+                        left: -5px;
+                    }
+                }
+            }
+            .txt{
+                line-height: 35px;
+            }
+        }
+    }
+    .empty-tips{
+        padding: 165px 0;
+        text-align: center;
+        color: #777;
+        font-size: 14px;
+    }
+}
