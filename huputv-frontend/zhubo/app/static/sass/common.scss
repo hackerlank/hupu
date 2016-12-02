@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*
+* @Description:公用样式
+* @Author: wangjun
+* @Update: 2014-10-29 13:00
+*/
+
+@import "sass/vendor/sassCore/base";
+@import "vendor/sassCore/core/reset";
+@import "vendor/grid";
+
+textarea {
+    resize:none;
+}
+// 浮动及闭合浮动
+.fl{
+    @extend %float;
+}
+.fr{
+    @include float(right);
+}
+.clear {
+    display:block;
+    float:none;
+    clear:both;
+    overflow:hidden;
+    width:auto;
+    height:0;
+    margin:0 auto;
+    padding:0;
+    font-size:0;
+    line-height:0;
+}
+.clearfix, .row{
+    @extend %clearfix;
+}
+
+
+.ui-footer, .ui-header-bd, .ui-wrap {
+    max-width: $width-wrap;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+/* body 背景 */
+.body-bg-black {
+    height: 100%;
+   background: #2c2d2f;
+//    background: $black url($body-bg) no-repeat center 60px;
+   background-repeat: no-repeat;
+    @include prefixer-value(background, gradient(radial, center 0, 0, center -257, 1000, from(#797979), to(#2c2d2f)) fixed);
+}
+.warp-bg-black {
+    padding-top:10px;
+}
+
+.ui-start-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    text-align: center;
+    margin: -10px 0 0 -200px;
+}
+
+@include max-screen(1000px) {
+    .ui-footer, .ui-header-bd {
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
+
+
+/* 分页 */
+.ui-paging {
+    padding:10px 0;
+    margin:15px auto;
+    text-align:center;
+    font-size: $baseFontSize;
+    a, .active {
+        @include inline-block;
+
+        padding: 1px 4px;
+        margin: 0 3px;
+        line-height: 18px;
+        background: #98999a;
+        border: 1px solid #7c7d7e;
+        color:#49494b;
+        vertical-align: top;
+
+    }
+    .active, a:hover{
+        background:$red;
+        border-color:#c6c6c6;
+        color:$white;
+    }
+}

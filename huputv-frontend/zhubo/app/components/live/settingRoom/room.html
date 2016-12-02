@@ -1,0 +1,110 @@
+<div class="popup-setiting-room">
+  <div class="pop-scrollbar" popup-set-height>
+    <div class="setting-room-list">
+      <form name="settingRoomForm" novalidate>
+        <dl class="setting-list">
+          <dt class="title">
+             <h4>[基本信息]</h4>
+          </dt>
+          <dd>
+            <label for="roomId" class="control-label">直播间ID：</label>
+            <div class="control-input room-id J_roomId">
+                {{$root.common.id}}
+            </div>
+          </dd>
+          <dd>
+            <label for="roomTitle" class="control-label">直播间标题：</label>
+            <div class="control-input">
+                <input type="text" ng-model="params.room_name" class="input-border input-roomTitle" maxlength="14" name="room_name" placeholder="请输入直播间标题" required="" oninvalid="" ng-maxlength="14" />
+                <span class="tip-inner">
+                    <span class="note-text">注：长度不超过14个字</span>
+                    <div class="error-info" ng-show="settingRoomForm.$submitted || settingRoomForm.room_name.$touched">
+                      <div ng-show="settingRoomForm.room_name.$error.required">房间标题不能为空，请重新输入</div>
+                      <div ng-show="settingRoomForm.room_name.$error.maxlength">超出字节长度，请重新输入</div>
+                    </div>
+                </span>
+            </div>
+          </dd>
+          <dd>
+            <label for="notice" class="control-label">直播间公告：</label>
+            <div class="control-input">
+                <textarea class="input-border input-notice" ng-model="params.notice" rows="5" maxlength="280" name="notice" placeholder="请输入直播间公告">
+                </textarea>
+                <span class="tip-inner">
+                    <span class="note-text">注：长度不超过300个字符</span>
+                </span>
+            </div>
+          </dd>
+          <dd>
+            <label for="roomId" class="control-label">直播间封面：</label>
+            <div class="control-input ">
+                <div class="frontCover">
+                    <img ng-src="{{cover_url}}" src="" alt="" />
+                    <input type="hidden" ng-model="params.cover" />
+                </div>
+                <div class="fl">
+                    <div class="upload-file">
+                        上传
+                        <input type="file" name="files" upload-files="changeUpload($event, files)" value="上传图片" class="button-upload" />
+                    </div>
+                    <div class="note-text">建议图片的宽度与高度比例为16:9</div>
+                </div>
+            </div>
+          </dd>
+          <dd>
+            <label for="roomTips" class="control-label">Tips：</label>
+            <div class="control-input">
+                <input type="text" class="input-border input-roomTips" ng-model="params.tips" maxlength="16" name="tips" placeholder="体育 美女" />
+                <span class="tip-inner">
+                    <span class="note-text">注：可支持多个，使用空格分开，长度不超过16个字符</span>
+                    <i class="error-info"></i>
+                </span>
+            </div>
+          </dd>
+        </dl>
+        <dl class="setting-list J_setting_huputv" >
+          <dt class="title">
+            <h4>[虎扑TV]</h4>
+          </dt>
+          <dd>
+            <label class="control-label">选择分类：</label>
+            <div class="control-input">
+                <select class="room-select" ng-model="params.room_type" name="room_type">
+                  <option ng-repeat="item in catalog" ng-selected="{{item.sid == params.room_type}}" value="{{item.sid}}" >{{item.sname}}</option>
+              </select>
+            </div>
+          </dd>
+        </dl>
+        <dl class="setting-list" >
+          <dt class="title">
+            <h4>[礼物管理]</h4>
+          </dt>
+          <dd class="gift">
+            <div class="gift-title">
+              <h5>当前礼物</h5>
+              <a href="javascript:" class="button-modify" ng-click="handleModifyGift(gift_list)">修改</a>
+            </div>
+            <ul class="gift-list" ng-if="gift_list.giftOrder.length">
+              <li ng-repeat="item in gift_list.giftOrder" ng-if="$index < 6">
+                <div class="pic">
+                  <img src="{{item.cover}}" alt="" />
+                </div>
+                <div class="name">{{item.name}}</div>
+                <div class="money">
+                  {{item.multi_send === 1 ? "批量 (item.money_type)" : item.price}}
+                </div>
+              </li>
+            </ul>
+            <div class="not-gift" ng-if="!gift_list.giftOrder.length">
+              暂无礼物
+            </div>
+          </dd>
+        </dl>
+        <div class="ajax-error-info" ng-show="error">{{error}}</div>
+        <div class="button-inner">
+          <input type="submit" value="保存" class="btn-save" ng-click="handleSubmit(settingRoomForm)" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

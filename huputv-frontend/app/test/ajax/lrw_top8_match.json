@@ -1,0 +1,299 @@
+{
+    "code": 1,
+    "msg": "操作成功",
+    "data": {
+        "playing": {
+            "id": "5250",
+            "game_id": "5",
+            "left_puid": "28686916",
+            "right_puid": "256650",
+            "left_score": "0",
+            "right_score": "0",
+            "left_foul": "0",
+            "right_foul": "0",
+            "num": "2",
+            "game_start": "0",
+            "game_end": "0",
+            "match_type": "2",
+            "status": "0",
+            "left": {
+                "player_id": "35",
+                "player_num": "15",
+                "total_game": "1",
+                "total_win": "1",
+                "rank": "0",
+                "status": "1",
+                "rate": 100,
+                "puid": "28686916",
+                "nickname": "hupu_f2e58d75da850317",
+                "header": "http://i2.hoopchina.com.cn/user/ ",
+                "height": "0",
+                "weight": "0",
+                "lightness": "0"
+            },
+            "right": {
+                "player_id": "32",
+                "player_num": "18",
+                "total_game": "1",
+                "total_win": "1",
+                "rank": "0",
+                "status": "1",
+                "rate": 100,
+                "puid": "256650",
+                "nickname": "雪鸟",
+                "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+                "height": "0",
+                "weight": "0",
+                "lightness": "0"
+            }
+        },
+        "match_list": {
+            "ready": [
+                {
+                    "left_puid": "26012383",
+                    "right_puid": "15329187",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "3",
+                    "status": "0",
+                    "left": {
+                        "player_id": "43",
+                        "player_num": "7",
+                        "total_game": "1",
+                        "total_win": "1",
+                        "rank": "0",
+                        "status": "1",
+                        "rate": 100,
+                        "puid": "26012383",
+                        "nickname": "test180",
+                        "header": "http://i1.hoopchina.com.cn/user/383/26012383/26012383-1458726175.jpeg",
+                        "height": "0",
+                        "weight": "0",
+                        "lightness": "0"
+                    },
+                    "right": {
+                        "player_id": "47",
+                        "player_num": "4",
+                        "total_game": "3",
+                        "total_win": "2",
+                        "rank": "0",
+                        "status": "1",
+                        "rate": 66,
+                        "puid": "15329187",
+                        "nickname": "512512512",
+                        "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+                        "height": "0",
+                        "weight": "0",
+                        "lightness": "0"
+                    }
+                },
+                {
+                    "left_puid": "122107",
+                    "right_puid": "17774094",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "4",
+                    "status": "0",
+                    "left": {
+                        "player_id": "37",
+                        "player_num": "13",
+                        "total_game": "1",
+                        "total_win": "1",
+                        "rank": "0",
+                        "status": "1",
+                        "rate": 100,
+                        "puid": "122107",
+                        "nickname": "稀饭",
+                        "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+                        "height": "0",
+                        "weight": "0",
+                        "lightness": "6"
+                    },
+                    "right": {
+                        "player_id": "49",
+                        "player_num": "2",
+                        "total_game": "2",
+                        "total_win": "2",
+                        "rank": "0",
+                        "status": "1",
+                        "rate": 100,
+                        "puid": "17774094",
+                        "nickname": "bazinganswer",
+                        "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+                        "height": "0",
+                        "weight": "0",
+                        "lightness": "0"
+                    }
+                },
+                {
+                    "left_puid": "21736039",
+                    "right_puid": "0",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "5",
+                    "status": "0",
+                    "left": {
+                        "player_id": "45",
+                        "player_num": "5",
+                        "total_game": "2",
+                        "total_win": "1",
+                        "rank": "0",
+                        "status": "1",
+                        "rate": 50,
+                        "puid": "21736039",
+                        "nickname": "无敌小萌萌",
+                        "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+                        "height": "0",
+                        "weight": "0",
+                        "lightness": "0"
+                    },
+                    "right": false
+                },
+                {
+                    "left_puid": "0",
+                    "right_puid": "0",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "6",
+                    "status": "0",
+                    "left": false,
+                    "right": false
+                },
+                {
+                    "left_puid": "18862063",
+                    "right_puid": "0",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "7",
+                    "status": "0",
+                    "left": {
+                        "player_id": "46",
+                        "player_num": "3",
+                        "total_game": "4",
+                        "total_win": "2",
+                        "rank": "0",
+                        "status": "1",
+                        "rate": 50,
+                        "puid": "18862063",
+                        "nickname": "hoopliuyang",
+                        "header": "http://i2.hoopchina.com.cn/user/63/18862063/18862063-1459160522.jpeg",
+                        "height": "0",
+                        "weight": "0",
+                        "lightness": "0"
+                    },
+                    "right": false
+                },
+                {
+                    "left_puid": "0",
+                    "right_puid": "0",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "8",
+                    "status": "0",
+                    "left": false,
+                    "right": false
+                },
+                {
+                    "left_puid": "0",
+                    "right_puid": "0",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "9",
+                    "status": "0",
+                    "left": false,
+                    "right": false
+                },
+                {
+                    "left_puid": "0",
+                    "right_puid": "0",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "10",
+                    "status": "0",
+                    "left": false,
+                    "right": false
+                },
+                {
+                    "left_puid": "0",
+                    "right_puid": "0",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "11",
+                    "status": "0",
+                    "left": false,
+                    "right": false
+                },
+                {
+                    "left_puid": "0",
+                    "right_puid": "0",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "12",
+                    "status": "0",
+                    "left": false,
+                    "right": false
+                },
+                {
+                    "left_puid": "0",
+                    "right_puid": "0",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "13",
+                    "status": "0",
+                    "left": false,
+                    "right": false
+                },
+                {
+                    "left_puid": "0",
+                    "right_puid": "0",
+                    "left_score": "0",
+                    "right_score": "0",
+                    "num": "14",
+                    "status": "0",
+                    "left": false,
+                    "right": false
+                }
+            ],
+            "end": [
+                {
+                    "left_puid": "21736039",
+                    "right_puid": "18862063",
+                    "left_score": "0",
+                    "right_score": "3",
+                    "num": "1",
+                    "status": "2",
+                    "left": {
+                        "player_id": "45",
+                        "player_num": "5",
+                        "total_game": "2",
+                        "total_win": "1",
+                        "rank": "0",
+                        "status": "1",
+                        "rate": 50,
+                        "puid": "21736039",
+                        "nickname": "无敌小萌萌",
+                        "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+                        "height": "0",
+                        "weight": "0",
+                        "lightness": "0"
+                    },
+                    "right": {
+                        "player_id": "46",
+                        "player_num": "3",
+                        "total_game": "4",
+                        "total_win": "2",
+                        "rank": "0",
+                        "status": "1",
+                        "rate": 50,
+                        "puid": "18862063",
+                        "nickname": "hoopliuyang",
+                        "header": "http://i2.hoopchina.com.cn/user/63/18862063/18862063-1459160522.jpeg",
+                        "height": "0",
+                        "weight": "0",
+                        "lightness": "0"
+                    }
+                }
+            ]
+        }
+    }
+}

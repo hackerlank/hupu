@@ -1,0 +1,105 @@
+@charset "utf-8";
+/*
+* @Description: 比赛预测
+* @Author: wangjun
+* @Update: 2016-10-10 13:00
+*/
+
+@import "sass/vendor/sassCore/base";
+
+.pred-game-wrap {
+  .pred-game {
+    padding: 0 10px;
+    // @include bgcolor-alpha(rgba(0,0,0,.7));
+  }
+  .pred-hd {
+    padding: 10px 0;
+    // border-bottom:1px solid rgba(255,255,255,.1);
+    .button-new-pred {
+      display: inline-block;
+      height: 30px;
+      padding: 0 6px;
+      line-height:30px;
+      font-size: 14px;
+      vertical-align: top;
+      background: $red;
+      color:$white;
+    }
+  }
+  .pred-bd {
+    padding: 10px 0;
+  }
+  /* 表格 */
+  .table-1 {
+    width:100%;
+    text-align: center;
+    line-height:18px;
+    color: $grayDarker;
+    thead {
+      @include bgcolor-alpha(rgba(0,0,0,.7));
+      border-bottom:none;
+      th {
+        padding: 10px;
+        font-size: 14px;
+        border-right:1px solid rgba(172,172,172,.4);
+        color:#acacac;
+      }
+      .info {
+        font-size:$baseFontSize;
+        font-weight: 400;
+      }
+    }
+    tbody {
+      @include bgcolor-alpha(rgba(206,207,209,.8));
+      td {
+        line-height:18px;
+        padding: 10px;
+        border:1px solid rgba(172,172,172,.4);
+      }
+      .game-event {
+        text-align:left;
+      }
+      a {
+        color:#2d6b9b;
+        &:hover {
+            text-decoration: underline;
+        }
+      }
+    }
+    tr:nth-child(even) td {
+      @include bgcolor-alpha(rgba(255,255,255,.3));
+    }
+    .number-2 {
+      text-align: left;
+      width: 50%;
+    }
+
+  }
+}
+
+.popup-option-detail {
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .table {
+    width: 100%;
+    text-align: center;
+    thead {
+      @include bgcolor-alpha(rgba(0,0,0,.7));
+      th {
+        min-width: 80px;
+        padding: 2px 10px;
+        font-size: 14px;
+        color: #acacac;
+      }
+    }
+    tbody {
+      td {
+        line-height:18px;
+        padding: 5px 10px;
+        border-bottom: 1px solid #444;
+      }
+    }
+  }
+}

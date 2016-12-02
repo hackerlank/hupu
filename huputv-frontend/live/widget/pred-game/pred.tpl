@@ -1,150 +1,48 @@
 
-{%if !empty($predict)%}
-    <div id="J_predGame">
-        <div class="pred-game" data-id="{%$predict.id%}" data-score="{%$predict.score%}" data-rate="{%$user.magnification%}">
-            <div class="pred-left" style="width: {%$predict.total_score_1_percente%}%">
-                {%if $predict.status == 0%}
-                    {%if $predict.user_option == 0%}
-                        <a href="javascript:" class="button-pred J_buttonPred">攒<br />人品</a>
-                    {%elseif $predict.user_option == 1%}
-                        <span class="button-pred pred-selected">已选</span>
-                    {%else%}
-                        <span class="button-pred">攒<br />人品</span>
-                    {%/if%}
-                {%else%}
-                    {%if $predict.user_option == 1%}
-                        <span class="button-pred pred-selected">已选</span>
-                    {%else%}
-                        <span class="button-pred pred-disable">攒<br />人品</span>
-                    {%/if%}
-                {%/if%}
-                <div class="progress-bar-inner">
-                    <div class="team-name">
-                        {%$predict.option1%}
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-bar-bd"></div>
-                    </div>
-                    <div class="number">{%$predict.total_score_1%}</div>
-                </div>
-            </div>
-            <div class="pred-right" style="width: {%$predict.total_score_2_percente%}%">
-                <div class="progress-bar-inner">
-                    <div class="team-name">
-                        {%$predict.option2%}
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress-bar-bd"></div>
-                    </div>
-                    <div class="number">{%$predict.total_score_2%}</div>
-                </div>
-                {%if $predict.status == 0%}
-                    {%if $predict.user_option == 0%}
-                        <a href="javascript:" class="button-pred J_buttonPred">攒<br />人品</a>
-                    {%elseif $predict.user_option == 2%}
-                        <span class="button-pred pred-selected">已选</span>
-                    {%else%}
-                        <span class="button-pred">攒<br />人品</span>
-                    {%/if%}
-                {%else%}
-                    {%if $predict.user_option == 2%}
-                        <span class="button-pred pred-selected">已选</span>
-                    {%else%}
-                        <span class="button-pred pred-disable">攒<br />人品</span>
-                    {%/if%}
-                {%/if%}
-            </div>
-            {%if $predict.status == 0%}
-                <div class="game-text-tips">进行中</div>
-            {%elseif $predict.status == 1%}
-                <div class="game-text-tips">待开奖</div>
-            {%elseif $predict.status == 2%}
-                <div class="game-text-tips">已开奖</div>
-            {%else%}
-                <div class="game-text-tips">已流盘</div>
-            {%/if%}
-        </div>
+<div class="live-pred-game" id="J_predGame">
+  <div class="J_content">
+    <div class="not-content">
+      该主播暂未开题，敬请期待
     </div>
-{%else%}
-    <div id="J_predGame"></div>
-{%/if%}
+  </div>
+  <div class="button-inner">
+    <a href="javascript:" class="button-confirm J_buttonSubmit">确认</a>
+    <span class="text">已选中 【<span class="J_SelectText"></span>】</span>
+  </div>
+</div>
 
 <script id="pred-tpl" type="javascript/template">
-    <div class="pred-game" data-id="<@=data.id@>" data-score="<@=data.score@>">
-        <div class="pred-left" style="width: <@=data.total_score_1_percente@>%">
-
-            <@ if (data.status == 0){ @>
-                <@ if(data.user_option == 0){ @>
-                    <a href="javascript:" class="button-pred J_buttonPred">攒<br />人品</a>
-                <@ }else if(data.user_option == 1) { @>
-                    <span class="button-pred pred-selected">已选</span>
-                <@ }else{ @>
-                    <@if(data.user_option == 2){@>
-                        <span class="button-pred pred-disable">攒<br />人品</span>
-                    <@}else{@>
-                        <span class="button-pred">攒<br />人品</span>
-                    <@}@>
-                <@ } @>
-            <@ }else{ @>
-                <@ if(data.user_option == 1){ @>
-                    <span class="button-pred pred-selected">已选</span>
-                <@ }else{ @>
-                    <span class="button-pred pred-disable">攒<br />人品</span>
-                <@ } @>
-            <@ } @>
-            <div class="progress-bar-inner">
-                <div class="team-name">
-                    <@=data.option1@>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-bar-bd"></div>
-                </div>
-                <div class="number"><@=data.total_score_1@></div>
-            </div>
+  <@if(datas.length){@>
+    <@ _.each(datas, function(item,index) { @>
+      <div class="pred-game-list J_predGameList <@if(item.status == 0){@>pred-game-list-start<@}@>" data-id="<@=item.id@>" data-score="<@=item.score@>">
+        <div class="pred-title">
+          <span class="status"><@=['进行中', '待开奖', '已开奖', '已流盘'][item.status]@>-</span>
+          <span class="name"><@=item.title@></span>
+          （RP <span class="red"><@=item.score@></span> 分）
         </div>
-        <div class="pred-right" style="width: <@=data.total_score_2_percente@>%">
-            <div class="progress-bar-inner">
-                <div class="team-name">
-                    <@=data.option2@>
-                </div>
-                <div class="progress-bar">
-                    <div class="progress-bar-bd"></div>
-                </div>
-                <div class="number"><@=data.total_score_2@></div>
-            </div>
-
-            <@ if (data.status == 0){ @>
-                <@ if(data.user_option == 0){ @>
-                    <a href="javascript:" class="button-pred J_buttonPred">攒<br />人品</a>
-                <@ }else if(data.user_option == 2) { @>
-                    <span class="button-pred pred-selected">已选</span>
-                <@ }else{ @>
-                    <@if(data.user_option == 1){@>
-                        <span class="button-pred pred-disable">攒<br />人品</span>
-                    <@}else{@>
-                        <span class="button-pred">攒<br />人品</span>
-                    <@}@>
-                <@ } @>
-            <@ }else{ @>
-                <@ if(data.user_option == 2){ @>
-                    <span class="button-pred pred-selected">已选</span>
-                <@ }else{ @>
-                    <span class="button-pred pred-disable">攒<br />人品</span>
-                <@ } @>
-            <@ } @>
-
+        <@if(!+item.status && max(item.option).total_count) {@>
+          <div class="remind-option">
+            <@=rate(item.option)@>的人选择 [<@=max(item.option).option@>]
+          </div>
+        <@}else{@>
+          <div class="remind-option" style="display: none;"></div>
+        <@}@>
+        <div class="option-inner">
+          <@if(item.option.length){@>
+            <@ _.each(item.option, function(key) { @>
+              <@if(item.status == 0 && item.user_option == 0){@>
+                <a href="javascript:" class="button-option J_buttonOption <@=statusClass(item, key.option_id)@>" data-option-id="<@=key.option_id@>"><@=key.option@></a>
+              <@}else{@>
+                <span class="button-option button-disabled <@=statusClass(item, key.option_id)@>"><@=key.option@></span>
+              <@}@>
+            <@ }) @>
+          <@}@>
         </div>
-        <@ if(data.status == 0){ @>
-            <div class="game-text-tips">进行中</div>
-        <@ }else if(data.status == 1){ @>
-            <div class="game-text-tips">待开奖</div>
-        <@ }else if(data.status == 2){ @>
-            <div class="game-text-tips">已开奖</div>
-        <@ }else{ @>
-            <div class="game-text-tips">已流盘</div>
-        <@ } @>
-    </div>
+      </div>
+    <@ }) @>
+  <@}@>
 </script>
+
 {%script%}
 var PredGame = require("live:widget/pred-game/pred");
 PredGame.init();

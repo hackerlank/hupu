@@ -1,3 +1,4 @@
+
 {%if !isset($recap_tips)%}
     {%if $type == "football"%}
         {%if !empty($video_url) || !empty($title) || !empty($video_cover)%}
@@ -9,7 +10,7 @@
                 </a>
             </section>
             {%else%}
-            <section class="section-item hot-pic">
+            <section class="section-item hot-pic" style="display:none;">
                 <a {%if !empty($video_url)%}href="{%$video_url%}"{%else%}href="javascript:void(0);"{%/if%}>
                     <img src="{%$video_cover%}" alt="{%$title%}" />
                     <div class="title">
@@ -24,15 +25,24 @@
 
     {%if $type == "nba"%}
         {%if !empty($video_collection)%}
-            <section class="section-item hot-pic">
-                <a {%if !empty($video_collection[0].fromurl)%}href="browser://{%$video_collection[0].fromurl|escape:none%}"{%else%}href="javascript:void(0);"{%/if%}>
-                    <img src="{%$video_collection[0].cover%}" alt="{%$video_collection[0].title%}" />
-                    <div class="title">
-                        <p>{%$video_collection[0].title%}</p>
-                    </div>
-                    {%if !empty($video_collection[0].fromurl)%}<i class="icon icon-play-b"></i>{%/if%}
-                </a>
-            </section>
+            {%if !empty($nopic) || empty($video_collection[0].cover)%}
+                <section class="section-item hot-nopic">
+                    <a {%if !empty($video_collection[0].fromurl)%}href="browser://{%$video_collection[0].fromurl|escape:none%}"{%else%}href="javascript:void(0);"{%/if%}>
+                        <span>{%$video_collection[0].title%}</span>
+                        <i class="icon icon-arrow-right"></i>
+                    </a>
+                </section>
+            {%else%}
+                <section class="section-item hot-pic" style="display:none;">
+                    <a {%if !empty($video_collection[0].fromurl)%}href="browser://{%$video_collection[0].fromurl|escape:none%}"{%else%}href="javascript:void(0);"{%/if%}>
+                        <img src="{%$video_collection[0].cover%}" alt="{%$video_collection[0].title%}" />
+                        <div class="title">
+                            <p>{%$video_collection[0].title%}</p>
+                        </div>
+                        {%if !empty($video_collection[0].fromurl)%}<i class="icon icon-play-b"></i>{%/if%}
+                    </a>
+                </section>
+            {%/if%}
         {%/if%}
 
         {%if !empty($video_collection) && $video_collection|count > 1%}
@@ -42,7 +52,11 @@
                     <ul class="list">
                         {%foreach $video_collection as $val%}
                             {%if $val@index > 0%}
-                            <li {%if $val@index > 3%}class="more-li"{%/if%}>
+                            <li class="{%if $info.extend|count <= 4%}
+                                {%if $val@index > 3%}more-li{%/if%}
+                            {%else%}
+                                {%if $val@index > 2%}more-li{%/if%}
+                            {%/if%}">
                                 <a href="browser://{%$val.fromurl|escape:none%}">
                                     <span>{%$val.title%}</span>
                                     <i class="icon icon-arrow-right"></i>
@@ -52,7 +66,8 @@
                         {%/foreach%}
                         {%if $video_collection|count > 4%}
                         <li>
-                            <a href="javascript:;" id="J-more" class="more" data-more="1"><em>更多</em><i class="icon icon-arrow-down"></i></a>
+                            <input type="hidden" name="name" id="left-video" value="{%$video_collection|count - 4%}">
+                            <a href="javascript:;" id="J-more" class="more" data-more="1"><em>更多{%$video_collection|count - 4%}条视频</em><i class="icon icon-arrow-down"></i></a>
                         </li>
                         {%/if%}
                     </ul>
@@ -170,6 +185,7 @@
     {%/if%}
 
     {%if $type == "football"%}
+        {%if !empty($key_event.qt) || !empty($key_event.dq)%}
         <section class="section-item match">
             {%if !empty($key_event.qt)%}
             <div class="normal">
@@ -225,7 +241,7 @@
                     <ul class="left" {%if $key_event.dq_first_tid == $away_tid%}style="margin-top:10px;"{%/if%}>
                         {%foreach $key_event.dq[$home_tid] as $val%}
                         <li>
-                            <span class="name">{%$val.event.player_name%}</span>
+                            <a {%if !empty($val.event.player_id)%}href="kanqiu://soccerleagues/{%$league_name%}/player/{%$val.event.player_id%}"{%/if%} class="name">{%$val.event.player_name%}</a>
                             <span class="time">{%$val.live_time%}'</span>
                             <span class="icon-wrap">
                                 {%if $val.event.id == 17%}
@@ -248,7 +264,7 @@
                                 {%/if%}
                             </span>
                             <span class="time">{%$val.live_time%}'</span>
-                            <span class="name">{%$val.event.player_name%}</span>
+                            <a {%if !empty($val.event.player_id)%}href="kanqiu://soccerleagues/{%$league_name%}/player/{%$val.event.player_id%}"{%/if%} class="name">{%$val.event.player_name%}</a>
                         </li>
                         {%/foreach%}
                     </ul>
@@ -256,6 +272,7 @@
             </div>
             {%/if%}
         </section>
+        {%/if%}
     {%/if%}
 
     {%if !empty($recap) || !empty($list)%}
@@ -270,9 +287,9 @@
                                 {%$val.desc|escape:none%}
                                 {%if $val.img_url%}
         							{%if $nopic%}
-        			                    {%$defaultPic="//b3.hoopchina.com.cn/games/images/news_nopic_day@2x.png?t={%$val@index%}"%}
+        			                    {%$defaultPic="//w3.hoopchina.com.cn/hybrid/resource/img/news_gif_nopic_2x_day.png?t={%$val@index%}"%}
         			                    {%if $night%}
-        			                        {%$defaultPic="//w3.hoopchina.com.cn/games/images/bbs-night-nopic.png?t={%$val@index%}"%}
+        			                        {%$defaultPic="//w3.hoopchina.com.cn/hybrid/resource/img/news_gif_nopic_2x_night.png?t={%$val@index%}"%}
         			                    {%/if%}
         			                    {%if $val.img_url_src%}
         			                    <img src="{%$defaultPic%}" data-src="{%$val.img_url_src%}" data-gif="{%$val.img_url%}" alt="GIF {%$val.img_size%}MB"/>
@@ -306,13 +323,17 @@
                 <ul>
                     {%foreach $light_reply as $val%}
                     <li>
-                        <p>{%$val.content|escape:none%}</p>
-                        <div class="name">
-                            <span class="head"><img src="{%$val.userImg%}?t={%$val@index%}" alt="" /></span>
-                            <span class="name">{%$val.userName%}</span>
+                        <div class="user-info">
+                            <div class="info">
+                                <span class="head"><img src="{%$val.userImg%}?t={%$val@index%}" alt="" /></span>
+                                <span class="name">{%$val.userName%}</span>
+                            </div>
+                            <div class="light">亮了 ({%$val.light_count%})</div>
                         </div>
+                        <p>{%$val.content|escape:none%}</p>
                     </li>
                     {%/foreach%}
+                    <li class="more"><a href="kanqiu://bbs/topic/{%$tid%}">更多论坛精彩讨论&nbsp;&nbsp;<i class="icon icon-arrow-right"></i></a></li>
                 </ul>
             </div>
         </section>

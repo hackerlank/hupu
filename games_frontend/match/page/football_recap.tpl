@@ -8,7 +8,9 @@
     <script>
         window.GM = {
             "night":!!parseInt("{%$night%}", 10),
-            "nopic":!!parseInt("{%$nopic%}", 10)
+            "nopic":!!parseInt("{%$nopic%}", 10),
+            "lid": "{%$lid%}",
+            "gid": "{%$gid%}"
         };
     </script>
     {%script%}

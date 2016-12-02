@@ -14,6 +14,7 @@ package tv.hupu.view.toolbar
 	import flash.ui.Keyboard;
 	
 	import tv.hupu.conf.ControlBarConfig;
+	import tv.hupu.conf.PlaybackType;
 	import tv.hupu.events.ControlBarEvent;
 	import tv.hupu.utils.ConsTrace;
 	import tv.hupu.utils.SOStorage;
@@ -29,6 +30,10 @@ package tv.hupu.view.toolbar
 		//嵌入图片
 		[Embed(source="../../../../../assets/refresh.png")]
 		private var RefreshBitmap:Class;
+		[Embed(source="../../../../../assets/play.png")]
+		private var PlayBitmap:Class;
+		[Embed(source="../../../../../assets/pause.png")]
+		private var PauseBitmap:Class;
 		[Embed(source="../../../../../assets/fullscreen.png")]
 		private var FullScreenBitmap:Class;
 		[Embed(source="../../../../../assets/normalscreen.png")]
@@ -53,6 +58,8 @@ package tv.hupu.view.toolbar
 		private var _inputText:TextField;
 		private var _sendBtn:Sprite;
 		private var _refreshBtn:CtlButton;
+		private var _playBtn:CtlButton;
+		private var _pauseBtn:CtlButton;
 		private var _fullscreenWebBtn:CtlButton;
 		private var _normalscreenWebBtn:CtlButton;
 		private var _isWebFullscreen:Boolean = false;
@@ -63,6 +70,7 @@ package tv.hupu.view.toolbar
 		private var _volumeBtn:CtlButton;
 		private var _volumeBar:VolumeBar;
 		private var _defiBtn:DefinBtn;
+		private var _progressBar:ProgressBar;
 		
 		public function ControlBar()
 		{
@@ -103,6 +111,27 @@ package tv.hupu.view.toolbar
 		}
 		
 		/**
+		 * 设置进度条
+		 * 
+		 */		
+		public function setProgress(val:Number):void{
+			if(_progressBar){
+				_progressBar.percent = val;
+			}
+		}
+		
+		/**
+		 * 设置播放状态
+		 * 
+		 */		
+		public function setNetStatus(playing:Boolean):void{
+			//if(!_refreshBtn.visible){
+				_playBtn.visible = !playing;
+				_pauseBtn.visible = playing;
+			//}
+		}
+		
+		/**
 		 * 弹幕是否开启
 		 * @return 
 		 * 
@@ -130,6 +159,48 @@ package tv.hupu.view.toolbar
 		public function hideDefiPopup():void
 		{
 			return _defiBtn.hidePopup();
+		}
+		
+		/**
+		 * 设置流模式: http/rtmp
+		 * @return 
+		 * 
+		 */		
+		public function setPlaybackType(mode:String):void
+		{
+			if(!_refreshBtn  || !_defiBtn){
+				return;
+			}
+			if(mode == PlaybackType.RTMP){  //rtmp流
+				_refreshBtn.visible = true;
+				_playBtn.visible = _pauseBtn.visible = false;
+				if(_progressBar){
+					_progressBar.visible = false;
+				}
+			}else if(mode == PlaybackType.HTTP){  //http流
+				_refreshBtn.visible = false;
+				_playBtn.visible = true;
+				_pauseBtn.visible = false;
+				if(!_progressBar){
+					initProgressBar();
+				}
+				_progressBar.visible = true;
+			}
+			_defiBtn.enabled = false; //设置自定义的流地址后，清晰度按钮不可用
+		}
+		
+		public function setPlayButtonStatus(playing:Boolean):void{
+			// 播放状态 需要暂停
+			if (playing)
+			{
+				_pauseBtn.visible = false;
+				_playBtn.visible = true;
+			}
+			else
+			{
+				_pauseBtn.visible = true;
+				_playBtn.visible = false;
+			}
 		}
 
 		/**
@@ -168,10 +239,26 @@ package tv.hupu.view.toolbar
 			_leftGroup = new Sprite();
 			addChild(_leftGroup);
 			
+			_playBtn = new CtlButton();
+			_playBtn.addEventListener(MouseEvent.CLICK, play);
+			_playBtn.btm = new PlayBitmap() as Bitmap;
+			_playBtn.x = 35;
+			_leftGroup.addChild(_playBtn);
+			ToolTip.register(_playBtn, "播放");
+			_playBtn.visible = false;
+			
+			_pauseBtn = new CtlButton();
+			_pauseBtn.addEventListener(MouseEvent.CLICK, pause);
+			_pauseBtn.btm = new PauseBitmap() as Bitmap;
+			_pauseBtn.x = 35;
+			_leftGroup.addChild(_pauseBtn);
+			ToolTip.register(_pauseBtn, "暂停");
+			_pauseBtn.visible = false;
+			
 			_refreshBtn = new CtlButton();
 			_refreshBtn.addEventListener(MouseEvent.CLICK, refresh);
 			_refreshBtn.btm = new RefreshBitmap() as Bitmap;
-			_refreshBtn.x = 35;
+			_refreshBtn.x = 70;
 			_leftGroup.addChild(_refreshBtn);
 			ToolTip.register(_refreshBtn, "刷新");
 		}
@@ -265,7 +352,7 @@ package tv.hupu.view.toolbar
 		 */		
 		protected function initInputGroup():void{
 			_inputGroup = new Sprite();
-			_inputGroup.x = 66;
+			_inputGroup.x = 95;
 			
 			
 			_inputText = new TextField();
@@ -295,6 +382,21 @@ package tv.hupu.view.toolbar
 			_sendBtn.addChild(_sendText);
 			_sendBtn.y = ControlBarConfig.CONTROLBAR_HEIGHT/2;
 			_inputGroup.addChild(_sendBtn);
+		}
+		
+		/**
+		 * 初始化进度条
+		 * 
+		 */		
+		protected function initProgressBar():void{
+			if(!_progressBar){
+				_progressBar = new ProgressBar();
+				_progressBar.x = 66;
+				_progressBar.y = ControlBarConfig.CONTROLBAR_HEIGHT/2;
+				_progressBar.bwidth = stage.stageWidth - 470;
+				_progressBar.addEventListener(ControlBarEvent.PROG_PLAYING, playingProg);
+				addChild(_progressBar);
+			}
 		}
 		
 		/**
@@ -337,6 +439,9 @@ package tv.hupu.view.toolbar
 		protected function stageResize(evt:Event):void{
 			initBG();
 			_rightGroup.x = stage.stageWidth;
+			if(_progressBar){
+				_progressBar.bwidth = stage.stageWidth - 470;
+			}
 			resetInputSize();
 		}
 		
@@ -361,6 +466,24 @@ package tv.hupu.view.toolbar
 		 */		
 		protected function refresh(evt:MouseEvent = null):void{
 			dispatchEvent(new ControlBarEvent(ControlBarEvent.BTN_REFRESH));
+		}
+		
+		/**
+		 * 开始播放
+		 * @param evt
+		 * 
+		 */		
+		protected function play(evt:MouseEvent = null):void{
+			dispatchEvent(new ControlBarEvent(ControlBarEvent.BTN_PLAY));
+		}
+		
+		/**
+		 * 暂停
+		 * @param evt
+		 * 
+		 */		
+		protected function pause(evt:MouseEvent = null):void{
+			dispatchEvent(new ControlBarEvent(ControlBarEvent.BTN_PAUSE));
 		}
 		
 		/**
@@ -411,6 +534,15 @@ package tv.hupu.view.toolbar
 			}
 			
 			dispatchEvent(new ControlBarEvent(ControlBarEvent.BTN_VOLUME, _volumeBar.percent));
+		}
+		
+		/**
+		 * 进度条点击
+		 * @param evt
+		 * 
+		 */
+		protected function playingProg(evt:ControlBarEvent = null):void{
+			dispatchEvent(new ControlBarEvent(ControlBarEvent.PROG_PLAYING, _progressBar.percent));
 		}
 		
 		/**

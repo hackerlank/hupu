@@ -182,6 +182,7 @@ var Toast = {
         var config = $.extend({
           title: "",
           content: "",
+          gray:"",
           align: "center",
           submitHandler: function(){},
           submitText: "确认",
@@ -190,7 +191,7 @@ var Toast = {
         }, options);
         config.html = [
           '<div class="toast-player">',
-            '<div class="content"><h2>', config.title ,'</h2><p>', config.content ,'</p></div>',
+            '<div class="content"><h2>', config.title ,'</h2><p>', config.content ,'</p><p class="gray">',config.gray ,'</p></div>',
             '<div class="btn-box clearfix">',
               '<span class="cancel">',config.cancelText,'</span>',
               '<span class="submit">',config.submitText,'</span>',

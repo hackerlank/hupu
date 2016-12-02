@@ -8,6 +8,7 @@
     var Toast = require("common:widget/toast/toast.js");
     var _ = require('common:static/js/underscore/underscore.js');
     var VideoPlay = require('live:widget/video-play/video.js');
+    var Flash = require('common:widget/flash-movie/flash');
     var SendGift = require('live:widget/send-gift/gift.es6');
 
 
@@ -40,6 +41,13 @@
         },
 
         bind() {
+          /**
+           * 网页全屏
+           */
+          Flash.register('getBeans', str => {
+            this.requestOnline();
+          });
+
             $('#J_login4task').on('click', function(e) {
                 e.preventDefault();
                 User.login();
@@ -244,11 +252,10 @@
                         SendGift.addBeans(data.data.pre_score);
                         Toast.toast(`获得${data.data.pre_score}金豆`, '.mask-con-wrap');
                         HTV.beansNum = data.data.cur_score;
-                        VideoPlay.callFromJS({
-                            "key":"getBeansResult",    //通知领取金豆结果
-                            "data":{
-                                "msg":`获得${data.data.pre_score}金豆`
-                            }
+
+                        //通知领取金豆结果
+                        Flash.send('getBeansResult', {
+                            "msg":`获得${data.data.pre_score}金豆`
                         });
                     }else if(data.code == -3015){
                         clearInterval(this.countTimer);
@@ -306,12 +313,10 @@
                         .end().find('.btn-timing').hide()
                         .siblings('span').text('领取');
 
-                    VideoPlay.callFromJS({
-                        "key":"getBeans",
-                        "data":{
-                            "msg": "你有" + HTV.beansNum + "个金豆可 <FONT COLOR='#ff7e00'><a href='event:getBeans'>领取</a></FONT>",
-                            "dur": 1.5
-                        }
+                    //通知领取金豆结果
+                    Flash.send('getBeans', {
+                      "msg": "你有" + HTV.beansNum + "个金豆可 <FONT COLOR='#ff7e00'><a href='event:getBeans'>领取</a></FONT>",
+                      "dur": 1.5
                     });
                     return ;
                 }

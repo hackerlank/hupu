@@ -1,0 +1,40 @@
+@charset "utf-8";
+/*
+* @Description: 首页
+* @Author: wangjun
+* @Update: 2014-10-03 13:00
+*/
+
+@import "sass/vendor/sassCore/base";
+
+.warp-error {
+  text-align:center;
+  .bg {
+    background-repeat:no-repeat;
+    background-position:top center;
+  }
+  .bg-1 {
+    height:300px;
+    background-image: url(./img/bg_1.jpg);
+  }
+  .bg-2 {
+    height:300px;
+    background-image:url(./img/bg_2.jpg);
+  }
+  .bg-3 {
+    height:185px;
+    background-image:url(./img/bg_3.jpg);
+  }
+  .button-prev {
+    @include inline-block;
+    width:155px;
+    height:50px;
+    margin-top:110px;
+    line-height:50px;
+    text-align:center;
+    font:700 22px/50px "Microsoft Yahei";
+    background:#a6171d;
+    color:#fff;
+  }
+}
+

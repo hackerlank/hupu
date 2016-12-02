@@ -1,0 +1,98 @@
+<div class="warp-bg-black">
+  <div class="container ui-wrap pred-game-wrap">
+    <!-- crumb start -->
+    <section class="ui-nav-crumb">
+      <div class="ui-nav-crumb-bd">
+        当前位置
+        <span class="crumb-arrow-right"></span>
+        <a ui-sref="app.live">直播间</a>
+        <span class="crumb-arrow-right"></span>
+        <a ui-sref="app.predGame">比赛预测</a>
+      </div>
+    </section>
+    <!-- crumb end -->
+    <section class="pred-game">
+      <div class="pred-hd">
+        <a href="javascript:" class="button-new-pred" ng-click="handleNewPred()" title="新建预测题">
+          新建预测题
+        </a>
+      </div>
+      <div class="pred-bd">
+
+        <table class="table-1">
+          <thead>
+            <tr>
+              <th class="number-1">序号</th>
+              <th class="number-2">题目标题</th>
+              <th class="number-3">题目得分</th>
+              <th class="number-4">选项详情</th>
+              <th class="number-5">状态</th>
+              <th class="number-6">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="item in list">
+              <td class="number-1">{{item.id}}</td>
+              <td class="number-2">{{item.title}}</td>
+              <td class="number-3">{{item.score}}分</td>
+              <td class="number-4">
+                <a href="javascript:" class="button" ng-click="handleOption(item.option)">共{{item.option.length}}个选项</a><br />
+                总参与：{{computeTotle(item.option)}}
+              </td>
+              <td class="number-5">{{['进行中', '已封盘', '已开奖', '已流盘'][item.status]}}</td>
+              <td class="number-6">
+                <div ng-show="item.status == 0">
+                  <a href="javascript:" class="button" ng-click="handleStopPred(item.id, $index)">封盘</a><br />
+                  <a href="javascript:" class="button" ng-click="handleModify(item)">修改</a>
+                </div>
+                <div ng-show="item.status == 1">
+                  <a href="javascript:" class="button" ng-click="handleFinishPred(item)">开奖</a><br />
+                  <a href="javascript:" class="button" ng-click="handleCancelPred(item.id, $index)">流盘</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!--
+        <div class="ui-paging">
+          <span class="active">1</span>
+          <a href="income?rid=10272&page=2">2</a>
+          <a href="income?rid=10272&page=2" class="paging-btn-next">下一页</a>
+        </div>
+        -->
+      </div>
+    </section>
+	</div>
+</div>
+
+<ui-popup ng-if="popup.open" close="popup.open=false">
+  <popup-pred-game close="popup.open=false" preddata={{pred_data}} pred_option={{pred_option}} iscreate={{is_create}} isedit={{is_edit}}></popup-pred-game>
+</ui-popup>
+
+<ui-popup ng-if="popupoption.open" close="popupoption.open=false">
+  <div class="popup-option-detail">
+    <div class="pop-scrollbar">
+      <div class="setting-room-list">
+        <div class="title">
+          <h4>选项详细</h4>
+        </div>
+        <div class="bd">
+          <div class="table-scroll">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th ng-repeat="item in optionDetail">{{item.option}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td  ng-repeat="item in optionDetail">{{item.total_count}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ui-popup>

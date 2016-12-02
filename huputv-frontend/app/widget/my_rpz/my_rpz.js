@@ -1,11 +1,12 @@
 var _ = require("app:static/js/underscore/underscore.js");
-
+var refresh = require("app:widget/ui-refresh/ui-refresh.js");
 var my_rpz = {
 
     init: function(){
-        this.render();
-        this.bind();
+
+        this.render();        
         this.showChart();
+        this.bind();
     },
 
     render: function(){
@@ -19,10 +20,9 @@ var my_rpz = {
         this.open = $("#J-open");
         this.bOn = true;
 
-        if($("#J-rpz-tpl").html()){
-            this.tplRender = _.template($("#J-rpz-tpl").html());
-        }
-
+        if($("#J-rpz-tpl").html()){            
+            this.tplRender = _.template($("#J-rpz-tpl").html());            
+        }        
         this.year = parseInt(new Date().getFullYear());
         if(this.year % 4 == 0){
             this.day = "29";
@@ -45,8 +45,8 @@ var my_rpz = {
             ["12/01", "12/08", "12/15", "12/22", "12/31"]
         ];
 
-        this.height = $(window).height();
-        $(".my-rpz-wrap").css("height", this.height);
+        //this.height = $(window).height();
+        //$(".my-rpz-wrap").css("height", this.height);
     },
 
     bind: function(){
@@ -54,25 +54,34 @@ var my_rpz = {
 
         // 打开弹层
         self.open.on("click", function(){
-            self.explainWrap.css({
-                "z-index": 10,
-                "opacity": 1
-            });
+            self.explainWrap.show();
         });
         // 关闭弹层
         self.close.on("click", function(){
-            self.explainWrap.css({
-                "z-index": -1,
-                "opacity": 0
-            });
+            self.explainWrap.hide();
         });
 
-        self.moreBtn.on("click", function(){
-            if(self.bOn && $(this).attr("data-more") != ""){
-                self.getMoreMyRpz($(this).attr("data-more"));
-                self.bOn = false;
+        if(self.detailList.attr("data-more") != ""){
+            self.bOn=true;
+        }else{
+            self.bOn=false;
+        }
+        refresh({
+            contentEl: '#J-rpz-main',
+            isRefresh: true,
+            isLoadingMore: self.bOn,
+            refreshCallback: function(complete) {
+                 setTimeout(function() {
+                     complete();
+                     location.reload();
+                 }, 1000);
+            },
+            loadingMoreCallback: function(complete) {                   
+                self.loadList(function(val){                   
+                    complete(val);
+                });
             }
-        });
+        });        
     },
 
     showChart: function(){
@@ -132,9 +141,19 @@ var my_rpz = {
         // 防止进来看到变化效果
         self.chart.css("opacity", 1);
     },
-
-    getMoreMyRpz: function(next){
+    loadList:function(callback){
         var self = this;
+        if(self.detailList.attr("data-more") != ""){
+            self.getMoreMyRpz(self.detailList.attr("data-more"),callback);           
+            
+        }else{            
+            callback && callback("finish");            
+        } 
+    },
+
+    getMoreMyRpz: function(next,callback){
+        var self = this;
+        
         $.ajax({
             //url: "/predict/my_rpz" + next, // test
             url: "/m/predict/my/topiclist", // 线上
@@ -146,15 +165,20 @@ var my_rpz = {
             },
             success: function(data){
                 if(data.code ==1){
-                    self.bOn = true;
-                    self.moreBtn.attr("data-more", data.data.next);
-                    if(!data.data.next){
-                        self.moreBtn.html("暂无更多数据~");
-                    }
+                    
+                    self.detailList.attr("data-more", data.data.next);
                     self.detailList.append(self.tplRender({
                         result: data.data,
-                        datas: data.data.data
+                        datas: data.data
                     }));
+                     
+                    if(!data.data.next){                        
+                         callback && callback("finish");
+                    }else{
+                        callback && callback(); 
+                    }
+                    
+                                    
                 }
             }
         });

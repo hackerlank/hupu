@@ -27,6 +27,7 @@
             </div>
         </div>
     </div>
+    <img src="huputv.swf" id="J_flashPlayUrl" style="display: none"/>
 </div>
 
 <script id="play-recommend-tpl" type="text/template">
@@ -55,3 +56,17 @@
         <@ }); @>
     </ul>
 </script>
+
+
+{%script%}
+    // 播放器swf
+    videojs.options.flash.swf = $('#J_flashPlayUrl').attr('src');
+
+    var VideoPlay = require('home:widget/video-play/video.js');
+
+    VideoPlay.init();
+
+    // 休息中
+    HTV.isLiveRest = parseInt("{%!empty($videoAnnounceError)%}");
+
+{%/script%}

@@ -1,0 +1,46 @@
+<div class="warp-bg-black">
+  <div class="container ui-wrap index-wrap">
+    
+    <!-- crumb start -->
+    <section class="ui-nav-crumb">
+      <div class="ui-nav-crumb-bd">
+        当前位置
+        <span class="crumb-arrow-right"></span>
+        <a ui-sref="app.index">首页</a>
+      </div>
+    </section>
+    <!-- crumb end -->
+
+    <section class="index-list">
+      <div class="row">
+        <!-- 我的房间 start -->
+        <div class="col-md-6">
+            <div class="room-item myLive-room" ng-class="$root.common.is_live == 1 ? 'room-list-liveIn' : ''">
+              <a ui-sref="app.live({id: $root.common.id})">
+                <div class="room-title">
+                  <h2>
+                      <img src="{{$root.stateUrl}}/images/title/myLive_room.png" alt="我的房间" />
+                  </h2>
+                </div>
+                <div class="room-bd">
+                  <div class="live-state">
+                    <i class="ico-live"></i>
+                    <span class="line"></span>
+                    {{$root.common.is_live == 1 ? '直播中' : '休息中'}}
+                  </div>
+                  <h4 class="room-name">{{$root.common.name}}</h4>
+                  <div class="room-info">
+                    <div class="staff-info">
+                      主播：{{$root.common.anchor_nickname}}
+                    </div>
+                  </div>
+                  <i class="arrow-right"></i>
+                </div>
+              </a>
+            </div>
+        </div>
+        <!-- 我的房间 end -->
+      </div>
+    </section>
+	</div>
+</div>

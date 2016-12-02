@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import "../../../static/sass/sassCore/function";
+
+.match-anainst {
+	font-size: 14px;
+  .match-title {
+    padding: 2px 10px;
+    text-align: center;
+    background: #eeebeb;
+    h5 {
+      font-size: 14px;
+
+    }
+  }
+  &-item {
+		@include display-flex();
+		@include align-items(center);
+    padding: 10px;
+    text-align: center;
+		background: #fff;
+    border-bottom: 1px solid #eeebeb;
+		.avatar-inner {
+	    padding-bottom: 5px;
+	    text-align: center;
+	    .avatar {
+	      @include inline-block;
+	      width: 40px;
+	      height: 40px;
+	      margin: 0 10px 0;
+	      overflow: hidden;
+	      text-align: center;
+	      background: #eee;
+	      border: 1px solid #ffb3b7;
+	      @include border-radius(50%);
+	      vertical-align: top;
+	      img {
+	        width: 100%;
+	        vertical-align: top;
+	      }
+	    }
+	    .number {
+	      @include inline-block;
+	      padding-top: 10px;
+	    }
+	  }
+
+	  .title {
+			padding-bottom: 2px;
+	    font-size: 14px;
+	    font-weight: 400;
+	    line-height: 1.2;
+	    word-wrap: break-word;
+	  }
+	  .info {
+	    font-size: 12px;
+	    color: #a9a9b2;
+	  }
+
+		.unknown-person {
+			color: #f90;
+		}
+  }
+  .col-left,
+  .col-right {
+    position: relative;
+    @include flex(1);
+  }
+
+  .match-score {
+    margin: 10px;
+    line-height: 1.4;
+    min-width: 60px;
+    border: 1px solid #ccc;
+    .course-number {
+      padding: 0 5px;
+      font-weight: 700;
+      color: #c01e2f;
+      border-bottom: 1px solid #ccc;
+    }
+    .score {
+      padding: 0 5px;
+    }
+  }
+
+  .semifinal-item-notstart {
+    .match-score {
+      .score {
+        font-size: 12px;
+        color: #999;
+      }
+    }
+  }
+  .match-fail {
+    color: #ccc;
+    .avatar {
+      @include opacity(70);
+    }
+    .info {
+      color: #ccc;
+    }
+  }
+}

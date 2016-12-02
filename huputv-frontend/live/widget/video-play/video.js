@@ -1,5 +1,8 @@
   var _ = require('common:static/js/underscore/underscore.js');
   var Dialog = require('common:widget/dialog/dialog');
+  var Flash = require('common:widget/flash-movie/flash');
+  var Gift = require('live:widget/send-gift/gift');
+  var PageEvent = require("common:widget/page-dace/page-dace.es6");
 
   var isfullScreenStatus = 0,
       $video = $('#live-video'),
@@ -7,7 +10,9 @@
 
   // 视频
   if($video.length){
+    try {
       VideoPlayer = videojs('live-video');
+    } catch (e) {}
   }
 
   /**
@@ -28,35 +33,135 @@
         this.$rest = $('#J_liveVideoRest');
 
         // 判断是否安装flash
-        if(!this.hayFlash()){
+        if(!Flash.hayFlash()){
           $('#J_zeroClipboard').hide();
 
           // video
           $('#live-video').hide();
-          $('#J_liveVideoRest').show();
-          $('#J_liveVideoRest .video-mark').html('您还没有安装flash播放器，请点击<a href="https://get.adobe.com/cn/flashplayer/?fpchrome" target="_blank">这里</a>安装');
+          $('#J_liveVideoRest')
+            .show()
+            .html('<div class="video-mark">您还没有安装flash播放器，请点击<a href="https://get.adobe.com/cn/flashplayer/?fpchrome" target="_blank">这里</a>安装</div>');
         }
 
-
-
         this.recomRoom();
+        this.flashBind();
         this.bind();
       },
       bind: function() {
-        var that = this,
+        var self = this,
             timer = null;
 
         $(window).on('resize', function() {
             timer = setTimeout(function() {
-                that.resize();
+                self.resize();
             }, 300);
+        });
+
+        $(document).on('wall', function(e, data) {
+          self.wall(data);
+        })
+      },
+      /**
+       * flash调用事件
+       * @return {[type]} [description]
+       */
+      flashBind: function() {
+        var self = this;
+
+        /**
+         * 网页全屏
+         */
+        Flash.register('trace', function(str) {
+          Flash.debug(str);
+        });
+
+        /**
+         * 网页全屏
+         */
+        Flash.register('fullScreenVideo', function() {
+          self.fullScreenVideo();
+        });
+
+        /**
+         * 发送百度自定义事件
+         * @param {array} arr 自定内容
+         */
+        Flash.register('sendBaiduEvent', function(arr) {
+          PageEvent.sendBaiduEvent(arr);
+        });
+
+        /**
+         * 发送百度播放自定义事件
+         * @param {array} arr 自定内容
+         */
+        Flash.register('sendBaiduPlayEvent', function(value, opt) {
+          return PageEvent.sendBaiduPlayEvent(value, opt);
+        });
+
+        /**
+         * 发送播放时长
+         * @param {string} str dace的数据
+         */
+        Flash.register('sendDacePlayTime', function(str) {
+          return PageEvent.sendDacePlayTime(str);
         });
       },
       wall: function(data) {
-        if(_.isUndefined(data.et)) return;
 
-        // 房间切换结束状态
         switch(data.et){
+          // 热线
+          case 2000:
+            var params = {
+              msg: data.cnt
+            }
+
+            Flash.send('chat', params);
+            break;
+          // 礼物
+          case 2001:
+            var params = {
+                msg: data.un + data.cnt
+              },
+              notShieldGift = !$('.J_shieldCheckbox').is(":checked");
+
+            if(notShieldGift) {
+              var detail = Gift.getGiftDetail(data.giftid, data.lt);
+
+              Flash.send('chat', params);
+
+              // 礼物类型 1金豆 6虎扑币
+              if(+detail.money_type === 6 && detail.position) {
+                data.giftDetail = detail;
+
+                var giftData = this.getGiftData(data);
+
+                /**
+                 * 送礼物
+                 * @param  {object} data                   礼物信息
+                 * @config {string} cover_url              封面
+                 * @config {string} effect_file_flash_url  动画flash
+                 * @config {string} effect_file_gif_url    GIF素材
+                 * @config {string} effect_file_icon_url   icon
+                 * @config {number} id                     礼物ID
+                 * @config {number} money_type             礼物类型 {1金豆 6虎扑币}
+                 * @config {string} name                   礼物名字
+                 * @config {number} number                 这次送礼物数量
+                 * @config {number} total                  送礼物总数
+                 * @config {number} position               送礼位置 ｛1右上角从右至左展出 2人浪 增加屏幕特效-屏幕下方由下至上展出｝
+                 * @config {string} username               礼物名字
+                 */
+                 Flash.send('gift', giftData);
+              }
+            }
+            break;
+          // 参与预测
+          case 2002:
+            var params = {
+              msg: data.un + data.cnt
+            }
+
+            Flash.send('chat', params);
+            break;
           // 主播关闭直播
           case 3003:
             if($video.length) {
@@ -115,41 +220,6 @@
         })
       },
       /**
-       * 推送礼物信息
-       * @param  {[type]} data [description]
-       * @return {[type]}      [description]
-       */
-      pushGift: function(data) {
-        var giftData = this.getGiftData(data);
-
-        // 礼物类型 1金豆 6虎扑币
-        if(giftData.money_type == 1){
-            return;
-        }
-
-        if(giftData.position ){
-            try {
-                /**
-                 * 送礼物
-                 * @param  {object} data                   礼物信息
-                 * @config {string} cover_url              封面
-                 * @config {string} effect_file_flash_url  动画flash
-                 * @config {string} effect_file_gif_url    GIF素材
-                 * @config {string} effect_file_icon_url   icon
-                 * @config {number} id                     礼物ID
-                 * @config {number} money_type             礼物类型 {1金豆 6虎扑币}
-                 * @config {string} name                   礼物名字
-                 * @config {number} number                 这次送礼物数量
-                 * @config {number} total                  送礼物总数
-                 * @config {number} position               送礼位置 ｛1右上角从右至左展出 2人浪 增加屏幕特效-屏幕下方由下至上展出｝
-                 * @config {string} username               礼物名字
-                 */
-                VideoPlay.videoFlashMovie().vjs_rcvGift(giftData);
-            } catch(err) {
-            }
-        }
-      },
-      /**
        * 获取礼物数据
        * @param data
        */
@@ -176,50 +246,6 @@
 
           return arr;
       },
-
-       /**
-       * 调试日志
-       */
-      trace: function(content) {
-        if(/debug/i.test(location.search)){
-              console.log(content);
-        }
-      },
-      /**
-       * flash 交互
-       * @param movieName
-       * @returns {*}
-       */
-      getFlashMovie: function(movieName) {
-          var isIE = navigator.appName.indexOf("Microsoft") != -1;
-          return (isIE) ? window[movieName] : document[movieName];
-      },
-      hayFlash: function() {
-          var flash;
-
-          try{
-              flash = new ActiveXObject('ShockwaveFlash.ShockwaveFlash')
-          }catch(e){
-              flash = navigator.plugins['Shockwave Flash']
-          }
-          return flash
-      },
-      /**
-       * 视频flash交互
-       */
-      videoFlashMovie: function() {
-          return this.getFlashMovie("live-video_Flash_api");
-      },
-      /**
-       * 和flash交互
-       */
-      callFromJS: function(msg){
-        try{
-          this.videoFlashMovie().callFromJS(msg)
-        } catch(e){
-          console && console.log(e.message);
-        }
-      },
       /**
        * web视频全屏
        */
@@ -229,7 +255,7 @@
               VideoPlay.resize();
           }else{
               isfullScreenStatus = false;
-              SetVideoSize();
+              VideoPlay.setVideoSize();
           }
 
           $('html,body').toggleClass('ui-full-screen');
@@ -266,6 +292,22 @@
         $pic.css({
           height: height
         })
+      },
+      /**
+       * 设置视频尺寸
+       */
+      setVideoSize: function() {
+        if($(window).width() <= 650){
+          return;
+        }
+
+        var mainWidth = $('.live-main').width(),
+            mainHeight = mainWidth / 1.77;
+
+        $('.live-play, #live-video').css({
+            width: mainWidth,
+            height: mainHeight
+        });
       }
     };
 

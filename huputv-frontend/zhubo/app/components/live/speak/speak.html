@@ -1,0 +1,27 @@
+<div class="room-live-text">
+  <form name="speakForm">
+    <ul>
+      <li>
+        <label for="liveContent" class="control-label col-md-3 col-sm-3 col-xs-3">直播内容：</label>
+        <div class="control-input col-md-9 col-sm-9 col-xs-9">
+            <textarea class="editor-box" rows="5" ng-model="params.content" ng-keydown="keydown($event, params, speakForm)" placeholder="直播内容"></textarea>
+        </div>
+      </li>
+      <li>
+        <label for="textColor" class="control-label col-md-3 col-sm-3 col-xs-3">插入链接：</label>
+        <div class="control-input col-md-9 col-sm-9 col-xs-9">
+          <input type="text" name="link" value="" placeholder="输入链接地址" ng-model="params.link" class="input-border input-href"  />
+          <div class="clear"></div>
+          <div id="J_uploadfileProgerss" class="uploadfile-progerss">
+            <div class="progerss-bar"></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <input type="submit" value="发送"  class="button-send" ng-click="handleSubmit(params, speakForm)" /> 
+    <div ng-show="speakForm.$submitted">
+      <div ng-show="!params.content && !error" class="error-live-info">发送直播流不能为空！</div>
+      <div ng-show="error" class="error-live-info">{{error}}</div>
+    </div>
+  </form>
+</div>

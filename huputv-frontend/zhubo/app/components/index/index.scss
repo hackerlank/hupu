@@ -1,0 +1,154 @@
+@charset "utf-8";
+/*
+* @Description: 首页
+* @Author: wangjun
+* @Update: 2014-10-03 13:00
+*/
+
+@import "sass/vendor/sassCore/base";
+
+$room-list-live:      "./img/room_live_state.png";
+$room-list-bottom-bg: "./img/room_bootom_bg.png";
+
+.index-wrap {
+  @include roomTitle('.room-title');
+  /* 房间列表 */
+  .room-item {
+      margin-bottom:15px;
+      @include bgcolor-alpha(rgba(0,0,0,.7));
+      border:1px solid rgba(255,255,255,.1);
+
+      .room-bd {
+          position: relative;
+          padding:10px 20px 10px;
+          min-height:116px;
+          @include bgcolor-alpha(rgba(0,0,0,.2));
+      }
+  //    房间名
+      .room-name {
+          font-size: 16px;
+          font-family: $fontYaHei;
+      }
+
+      .room-info {
+          line-height:24px;
+          font-size: 14px;
+          .staff-info {
+              @extend %clearfix;
+          }
+          .staff-info-item {
+              display:block;
+
+          }
+          .games-info-time {
+              margin-right:10px;
+          }
+      }
+
+  //    状态
+      .live-state {
+          position: absolute;
+          top:0;
+          right:0;
+          min-width:120px;
+          height:24px;
+          padding:0 14px 0 4px;
+          line-height:24px;
+          text-align:right;
+          font-weight:700;
+          background:#7a7a7a;
+          color:#fff;
+          .ico-live {
+              @include float;
+              @include inline-block;
+              width:45px;
+              height:11px;
+              margin:7px 5px 0 0;
+              overflow:hidden;
+              background:url($room-list-live) no-repeat 0 0;
+          }
+          .line {
+              @include inline-block;
+              @include float;
+              width:0;
+              height:11px;
+              margin-top:7px;
+              overflow:hidden;
+              border-left:1px solid #9f9f9f;
+
+          }
+          span {
+              @include float(right);
+          }
+      }
+      .arrow-right {
+          position: absolute;
+          bottom:10px;
+          right:10px;
+          width:8px;
+          height:12px;
+          overflow:hidden;
+          background:url($room-list-live) no-repeat 0 -69px;
+      }
+  //    本场收益
+      .field-gains {
+  //        min-height:73px;
+          padding:5px 5px 5px 15px;
+          font-weight:700;
+          background:#b3adad url($room-list-bottom-bg) repeat 0 0;
+          color:#2c2d2f;
+          .field-gains-list {
+              padding:2px 0;
+              line-height:20px;
+              .number {
+                  color:$red;
+              }
+          }
+      }
+  }
+  //直播中
+  .room-list-liveIn {
+      .room-bd {
+          color:$white;
+      }
+      .live-state {
+          background:#a6171d;
+          .ico-live {
+              width:45px;
+              height:21px;
+              margin-top:2px;
+              background-position:0 -20px;
+          }
+          .line {
+              border-color:#bf585c;
+          }
+      }
+      .arrow-right {
+          background-position: -19px -69px;
+      }
+  }
+
+  //休息中
+  .room-list-rest {
+      .live-state {
+          background: #ffae00;
+          .ico-live {
+              width:45px;
+              height:9px;
+              margin-top:8px;
+              background-position:5px -50px;
+          }
+          .line {
+              border-color:#ffc547;
+          }
+      }
+  }
+}
+
+@media (max-width: 1000px) {
+    .room-earnings {
+        .border-line-left {
+            display: none;
+        }
+    }
+}

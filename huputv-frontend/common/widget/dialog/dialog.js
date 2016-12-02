@@ -7,7 +7,8 @@
 var Instance;
 
 var defaults = {
-  content: '',  
+  title: '',
+  content: '',
   canel: {
     text: '取消',
     callback: function() {}
@@ -33,9 +34,12 @@ Popup.prototype = {
     render: function() {
         var that = this;
 
+        var titleTpl = this.opts.title ? '<div class="hp-popup-title">'+ this.opts.title +'</div>' : '';
+
         var tpl = [
             '<div class="hp-dialog" id="J_hpDialog">',
                 '<div class="hp-popup-wrap">',
+                    titleTpl,
                     '<div class="hp-popup-content">',
                         this.opts.content,
                     '</div>',
@@ -82,5 +86,3 @@ module.exports = function(options){
         return Instance = new Popup(options);
     }
 };
-
-

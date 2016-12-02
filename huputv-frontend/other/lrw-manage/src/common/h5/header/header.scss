@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+@import "../../../static/sass/vendor/sassCore/base";
+
+.ui-header {
+  position: relative;
+  height: 45px;
+  line-height: 10px;
+  text-align: center;
+  background: #302f2f;
+  color: #fff;
+  .headerline {
+    font-size: 18px;
+    line-height: 45px;
+  }
+  .button-refresh {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 17px;
+    height: 18px;
+    background: url(./icon_refresh.png) no-repeat 0 0;
+    background-size: 100%;
+  }
+}

@@ -79,7 +79,7 @@
             "pkg": "common:p2"
         },
         "common:widget/header/header.scss": {
-            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/widget/header/header_e9119ab.css",
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/widget/header/header_c41df5c.css",
             "type": "css",
             "pkg": "common:p0"
         },
@@ -143,7 +143,8 @@
             "type": "js",
             "extras": {
                 "moduleId": "common:static/js/underscore/underscore"
-            }
+            },
+            "pkg": "common:p1"
         },
         "common:static/js/videojs/ie8/videojs-ie8.js": {
             "uri": "http://b1.hoopchina.com.cn/web/tv/static/common/js/videojs/ie8/videojs-ie8_8296655.js",
@@ -286,11 +287,13 @@
             },
             "deps": [
                 "common:widget/dialog/dialog.scss"
-            ]
+            ],
+            "pkg": "common:p2"
         },
         "common:widget/dialog/dialog.scss": {
             "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/widget/dialog/dialog_38c9d6b.css",
-            "type": "css"
+            "type": "css",
+            "pkg": "common:p0"
         },
         "common:widget/js/socket-1.4.5/socket.js": {
             "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/widget/js/socket-1.4.5/socket_e6c6e2a.js",
@@ -360,37 +363,41 @@
     },
     "pkg": {
         "common:p0": {
-            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/pkg/common_a97d9ff.css",
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/common/pkg/common_9fbaae9.css",
             "type": "css",
             "has": [
                 "common:static/common.scss",
                 "common:widget/header/header.scss",
                 "common:widget/footer/footer.scss",
-                "common:widget/toast/toast.scss"
+                "common:widget/toast/toast.scss",
+                "common:widget/dialog/dialog.scss"
             ]
         },
         "common:p1": {
-            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/pkg/lib_78b7b59.js",
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/pkg/lib_bbc720e.js",
             "type": "js",
             "has": [
                 "common:static/mod.js",
                 "common:static/js/jquery/jquery-1.12.0.min.js",
-                "common:static/js/colorbox/jquery.colorbox.js"
+                "common:static/js/colorbox/jquery.colorbox.js",
+                "common:static/js/underscore/underscore.js"
             ]
         },
         "common:p2": {
-            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/pkg/common_406a3aa.js",
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/common/pkg/common_2647648.js",
             "type": "js",
             "has": [
                 "common:widget/page-dace/page-dace.es6",
                 "common:static/js/global/global.js",
                 "common:widget/login/login.js",
                 "common:widget/header/header.js",
-                "common:widget/toast/toast.js"
+                "common:widget/toast/toast.js",
+                "common:widget/dialog/dialog.js"
             ],
             "deps": [
                 "common:widget/header/header.scss",
-                "common:widget/toast/toast.scss"
+                "common:widget/toast/toast.scss",
+                "common:widget/dialog/dialog.scss"
             ]
         },
         "common:p3": {

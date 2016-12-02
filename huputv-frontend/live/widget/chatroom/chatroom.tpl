@@ -1,7 +1,6 @@
 <div class="chatroom" id="J_chatroom">
     <div class="chatroom-list J_chatroomScroll">
-        <ul class="list J_chatroomList">
-        </ul>
+      <ul class="list J_chatroomList"></ul>
     </div>
     <div class="gift-batter-tip" id="J_giftBatterTip">
 
@@ -34,42 +33,23 @@
 <script id="hotline-tpl" type="text/template">
     <@if(item.username != ""){@>
         <li>
-            <@if(item.et !== 1012){@>
-                <div class="chat-head">
-                    <@if(item.et === 3001){@>
-                        <i class="icon-zhubo"></i>
-                    <@}@>
-                    <@if(typeof item.un == 'undefined'){@>
-                        <span class="username"><@=item.an@></span>
-                    <@}else{@>
-                        <span class="username"><@=item.un@></span>
-                    <@}@>
-                    <span class="rpz-number <@if(item.rp < 0){@>rpz-number-lost<@}@>"><@=item.rp || 0@></span>
-                    <@if(typeof item.via !== "undefined" && item.via != 5 ){@>
-                        <a href="http://voice.hupu.com/other/2006264.html" target="_blank" class="icons-phone"></a>
-                    <@}@>
-                </div>
-                <@if(item.et === 2000 || item.et === 3001){@>
-                    <div class="chat-content">
-                        <@=item.cnt@>
-                    </div>
-                <@}@>
-                <@if(item.et === 2001){@>
-                    <div class="chat-content">
-                        送出 <span class="red"><@=item.giftn@></span>个 <span class="yellow"><@=item.giftDetail.name@></span>
-                        <@if(item.giftDetail.money_type == 6){@>
-                            给<@=item.giftDetail.teamName||'主播'@><@if(item.ur){@>，本场排行第 <span class="red"><@=item.ur@></span><@}@>
-                        <@}@>
-                    </div>
-                <@}@>
-                <@if(item.et === 2002){@>
-                    <div class="chat-content">
-                        为 <span class="red"><@=item.option@></span> 攒了 <span class="red"><@=item.score@></span>点人品
-                    </div>
-                <@}@>
-            <@}else{@>   
-                <div class="welcome-content"><@=item.cnt@></div>
-            <@}@>
+          <div class="chat-head">
+              <@if(item.et === 3001){@>
+                  <i class="icon-zhubo"></i>
+              <@}@>
+              <@if(typeof item.un == 'undefined'){@>
+                  <span class="username"><@=item.an@></span>
+              <@}else{@>
+                  <span class="username"><@=item.un@></span>
+              <@}@>
+              <span class="rpz-number <@if(item.rp < 0){@>rpz-number-lost<@}@>"><@=item.rp || 0@></span>
+              <@if(typeof item.via !== "undefined" && item.via != 5 ){@>
+                  <a href="http://voice.hupu.com/other/2006264.html" target="_blank" class="icons-phone"></a>
+              <@}@>
+          </div>
+          <div class="chat-content <@if(typeof conName != 'undefined'){@>chat-content-<@=conName@><@}@>">
+            <@=item.cnt@>
+          </div>
         </li>
     <@}@>
 </script>
@@ -96,5 +76,4 @@
 var Chatroom = require("live:widget/chatroom/chatroom");
 
 Chatroom.init();
-HTV.emitChat = Chatroom.emit;
 {%/script%}

@@ -38,7 +38,7 @@
         <thead>
             <tr>
                 <td width="50%" class="type">
-                    {%$title%}
+                    球队
                 </td>
                 <td width="20%" align="center">{%$value_title%}</td>
             </tr>

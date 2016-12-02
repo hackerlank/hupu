@@ -40,9 +40,24 @@ package tv.hupu.events
 		public static const BTN_REFRESH:String = "BTN_REFRESH";
 		
 		/**
+		 * 播放
+		 */		
+		public static const BTN_PLAY:String = "BTN_PLAY";
+		
+		/**
+		 * 暂停
+		 */		
+		public static const BTN_PAUSE:String = "BTN_PAUSE";
+		
+		/**
 		 * 音量条改变
 		 */		
 		public static const PROG_VOLUME:String = "PROG_VOLUME";
+		
+		/**
+		 * 进度条改变
+		 */		
+		public static const PROG_PLAYING:String = "PROG_PLAYING";
 		
 		/**
 		 * 发送弹幕

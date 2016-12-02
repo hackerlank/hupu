@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+@import "sass/vendor/sassCore/base";
+
+
+.popup-setiting-room {
+  .gift-title {
+    @extend %clearfix;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    h5 {
+      @include float;
+      margin-right: 10px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .button-modify {
+      @include float;
+      @include inline-block;
+      height: 24px;
+      padding: 0 10px;
+      line-height: 24px;
+      background: #a6171d;
+      color: #fff;
+    }
+  }
+  .gift-list {
+    line-height: 1.2;
+    li {
+      @include float;
+      width: 16%;
+      padding-right: 10px;
+    }
+    .pic {
+      width: 56px;
+      height: 56px;
+      overflow: hidden;
+      margin-bottom: 5px;
+      img {
+        width: 56px;
+        height: 56px;
+      }
+    }
+    .name {
+      font-size: 14px;
+      height: 16px;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+    .money {
+      color: #777;
+    }
+  }
+  .not-gift {
+    padding: 10px;
+    color: #999;
+    text-align: center;
+  }
+}

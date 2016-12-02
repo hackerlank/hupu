@@ -190,6 +190,4 @@
 var Task = require("live:widget/task/task");
 Task.init({%$chaoneng|default:false%});
 
-HTV.getBeans = Task.requestOnline;
-
 {%/script%}

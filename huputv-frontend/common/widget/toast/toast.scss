@@ -19,6 +19,20 @@
     @include transition(opacity .5s ease);
 }
 
+.ui-number-toast {
+  // display: none;
+  opacity: 1;
+  position: absolute;
+  z-index: 1010;
+  font-size: 12px;
+  margin-top: -3px;
+  color: #ffb300;
+  @include transition(opacity .2s ease, margin-top .1s ease-in-out);
+}
+.ui-number-toast-hide {
+  margin-top: 4px;
+  opacity: 0;
+}
 
 .m-tips-hide {
     opacity: 0;

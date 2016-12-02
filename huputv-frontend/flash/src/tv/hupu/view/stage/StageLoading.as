@@ -3,14 +3,23 @@ package tv.hupu.view.stage
 	
 	import com.greensock.TweenLite;
 	
+	import flash.display.Bitmap;
+	import flash.display.DisplayObject;
+	import flash.display.Graphics;
+	import flash.display.Loader;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import flash.events.MouseEvent;
 	import flash.events.TimerEvent;
+	import flash.net.URLRequest;
 	import flash.text.TextField;
 	import flash.text.TextFormat;
 	import flash.utils.Timer;
 	
+	import tv.hupu.utils.AS2JS;
 	import tv.hupu.utils.ConsTrace;
+	import flash.display.BitmapData;
+	import flash.geom.Matrix;
 	
 	
 	public class StageLoading extends Sprite
@@ -23,6 +32,12 @@ package tv.hupu.view.stage
 		private var timer:Timer;
 		private var length:Number = 5;
 		private var padding:Number = 3;
+		private var playPic:DisplayObject;
+		private var coverImg:Bitmap;
+		private var drawCover:Graphics;
+		
+		[Embed(source="../../../../../assets/playbutton_70x70.png")]
+		var PlayBitmap:Class;
 		
 		public function StageLoading()
 		{
@@ -115,6 +130,51 @@ package tv.hupu.view.stage
 			graphics.endFill();
 			x = stage.stageWidth/2;
 			y = stage.stageHeight/2;
+		}
+		
+		// 截取当前屏幕作为暂停界面 加载播放大按钮
+		public function loadCoverImg():void{
+			var bitmapData:BitmapData = new BitmapData(stage.stageWidth, stage.stageHeight);
+			bitmapData.draw(stage, new Matrix());
+			coverImg = new Bitmap(bitmapData);
+			playPic = new PlayBitmap();
+		}
+		
+		// 视频暂停 覆盖图片遮罩
+		public function coverVideo():void{
+			
+			loadCoverImg();
+			
+			stage.addChild(coverImg);
+			
+			coverImg.x=0;
+			coverImg.y=0;
+			coverImg.width = stage.stageWidth;
+			coverImg.height = stage.stageHeight;	
+			
+			var picSize:Number = 70;
+			
+			stage.addChild(playPic);
+			
+			playPic.x = (stage.stageWidth - picSize)/2;
+			playPic.y = (stage.stageHeight - picSize)/2;
+			
+			playPic.width  = picSize;
+			playPic.height = picSize;
+		}
+		
+		// 移除暂停图片遮罩
+		public function removeVideoCover(e:Event = null):void{
+			stage.removeChild(playPic);
+			stage.removeChild(coverImg);
+		}
+		
+		public function drawCover():void
+		{
+			
+//			drawCover.beginFill('#000000', 0);
+//			drawCover.drawRect(0, 0, stage.stageWidth, stage.stageHeight);
+//			drawCover.endFill();
 		}
 	}
 }

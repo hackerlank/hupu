@@ -3,7 +3,7 @@
 
 .send-gift {
     @include float();
-    padding: 4px 15px 4px 8px;
+    padding: 7px 15px 0 8px;
     .gift-tips {
         display: none;
         position: absolute;
@@ -127,10 +127,9 @@
             height: 34px;
             overflow: hidden;
             border-radius: 50%;
-            left: 50%;
-            top: 50%;
+            left: 0;
+            top: 0;
             // background: #f29c98;
-            @include translate(-50%, -50%);
             @include transition(all .1s ease-out);
             img {
                 width: 100%;
@@ -138,6 +137,8 @@
         }
         .hover {
             .gift-pic {
+              top: -3px;
+              left: -3px;
                 width: 40px;
                 height: 40px;
             }

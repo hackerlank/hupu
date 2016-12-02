@@ -1,7 +1,7 @@
 #! /bin/bash
 #svn up
 # 模块
-MODULES=("common live app")
+MODULES=("common live home app")
 
 for mod in ${MODULES[@]}
 do

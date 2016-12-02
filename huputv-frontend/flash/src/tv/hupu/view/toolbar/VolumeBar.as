@@ -58,7 +58,7 @@ package tv.hupu.view.toolbar
 			initBG();
 			initActiveBar();
 			initDragger();
-//			percent = SOStorage.getValue(SOStorage.KEY_VOLUME) ? Number(SOStorage.getValue(SOStorage.KEY_VOLUME)) : 65;
+			percent = SOStorage.getValue(SOStorage.KEY_VOLUME) ? Number(SOStorage.getValue(SOStorage.KEY_VOLUME)) : 65;
 		}
 		
 		protected function initBG():void{

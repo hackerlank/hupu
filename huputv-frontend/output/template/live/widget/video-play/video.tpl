@@ -32,7 +32,7 @@
 </div>
 </div>
 </div>
-<img src="http://b1.hoopchina.com.cn/web/tv/static/live/widget/video-play/huputv_e1b65d8.swf" id="J_flashPlayUrl" style="display: none"/>
+<img src="http://b1.hoopchina.com.cn/web/tv/static/live/widget/video-play/huputv_dd35c03.swf" id="J_flashPlayUrl" style="display: none"/>
 </div>
 <script id="play-recommend-tpl" type="text/template">
     <ul class="live-announce-list">

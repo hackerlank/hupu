@@ -496,7 +496,7 @@ const App = React.createClass({
                   <div className="video-main">
                       {this.state.id ? <ReactSWFCompat
                         container={<div style={{background: 'transparent'}} />}
-                        src="/manage/static/huputv.swf"
+                        src="/manage/static/huputv_1.swf"
                         width="800"
                         height="460"
                         wmode="transparent"
@@ -523,7 +523,7 @@ const App = React.createClass({
                         {sections}
                         <li>
                         <CopyToClipboard text={this.state.live_info.obs_browser_url}
-                          onCopy={this.handleCopy} 
+                          onCopy={this.handleCopy}
                           style={{marginTop: '15px'}}>
                           <button className="ant-btn ant-btn-primary">复制OBS地址</button>
                         </CopyToClipboard>

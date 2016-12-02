@@ -7,7 +7,7 @@ package tv.hupu.view.stage
 	import flash.net.URLRequest;
 	
 	import tv.hupu.utils.ConsTrace;
-	import tv.hupu.utils.JSInterface;
+	import tv.hupu.utils.AS2JS;
 	
 	
 	public class VideoJJ extends Sprite
@@ -57,7 +57,7 @@ package tv.hupu.view.stage
 			//obj.time_callback = function():Number{ return player.time };
 			
 			//合并js传入参数
-			var cusParam:Object = JSInterface.getVideoJJ();
+			var cusParam:Object = AS2JS.getVideoJJ();
 			if(cusParam){
 				for(var item:Object in cusParam){
 					obj[item] = cusParam[item];

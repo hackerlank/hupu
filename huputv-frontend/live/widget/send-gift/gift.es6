@@ -123,7 +123,7 @@ var SendGift = {
      * 显示提示层
      * @param e
      */
-    send(parent, number = 1, game_id, team_id, chaoneng = false, callback) {
+    send(parent, number = 1, params, callback) {
         let isElem = parent instanceof jQuery;
 
         let giftID = isElem ? parent.attr('data-id') : parent;
@@ -140,25 +140,23 @@ var SendGift = {
             live_type: 1
         }
 
-        //超能送礼物
-        if(chaoneng && game_id && team_id){
-          sendData.game_id = game_id;
-          sendData.team_id = team_id;
-          sendData.live_type = 2;
+        // 其它参数
+        if(_.isObject(params)){
+          sendData = _.extend(sendData, params)
         }
 
         // 获取礼物详情
-        let giftData = this.getGiftDetail(giftID, !!chaoneng);
+        let giftData = this.getGiftDetail(giftID, sendData.live_type);
 
         if(_.isUndefined(giftData.id)){
             return;
         }
 
         // 价格
-        let price = parseInt(giftData.price, 10) * parseInt(number, 10);
+        let price = (+giftData.price) * (+number);
 
         // 礼物类型 1金豆 6虎扑币
-        if(parseInt(giftData.money_type, 10) === 6){
+        if(+giftData.money_type == 6){
             if(this.goldCount < price){
                 Dialog({
                     content: '你的虎扑币余额不足，是否立即充值？',
@@ -198,65 +196,6 @@ var SendGift = {
             }
         }
 
-        //     // 礼物类型 1金豆 6虎扑币
-        //     if(parseInt(_tempGiftDetail.money_type, 10) == 6){
-        //         if(this.goldCount >= price){
-        //             if(!chaoneng){
-        //                 this.timeline.create({data: giftData[0]});
-        //                 VideoPlay.pushGift(giftData[0]);
-        //             }
-
-        //             //需要排名，不能模拟发
-        //             //Chatroom.renderLive(giftData);
-
-        //             isElem && this.successToast(parent, giftData);
-        //             this.goldCount -= price;
-        //         }else{
-        //             Dialog({
-        //                 content: '你的虎扑币余额不足，是否立即充值？',
-        //                 confirm: {
-        //                   text: '充值',
-        //                   callback: function() {
-        //                     window.location.href = HTV.rechargeUrl;
-        //                   }
-        //                 }
-        //             });
-        //             return;
-        //         }
-
-        //     }else{
-        //         if(this.beansCount >= price){
-        //           //  Chatroom.renderLive(giftData);
-        //             isElem && this.successToast(parent, giftData);
-        //             this.beansCount -= price;
-        //         }else{
-        //             if(this.goldCount >= price ){
-        //                 Dialog({
-        //                     content: '你的金豆余额不足，是否使用虎扑币购买？<br /><div style="font-size: 14px;color:#c01e2f">虎扑币与余额兑换比例为 1：1</div>',
-        //                     confirm: {
-        //                       text: '购买',
-        //                       callback: function() {
-        //                         window.location.href = HTV.beansRechargeUrl;
-        //                       }
-        //                     }
-        //                 });
-        //             }else{
-        //                 Dialog({
-        //                     content: '你的虎扑币余额不足，是否立即充值？',
-        //                     confirm: {
-        //                       text: '充值',
-        //                       callback: function() {
-        //                         window.location.href = HTV.rechargeUrl;
-        //                       }
-        //                     }
-        //                 });
-        //             }
-        //             return;
-        //         }
-        //     }
-        //     dace.sendBaiduEvent(["PC礼物发送总数", "PC_礼物次数_" + _tempGiftDetail.name, "PC_礼物次数_" + _tempGiftDetail.name + "_" + HTV.roomID + "_" + JSON.stringify(sendData)]);
-        // }
-        // 
         dace.sendBaiduEvent(["PC礼物发送总数", "PC_礼物次数_" + giftData.name, "PC_礼物次数_" + giftData.name + "_" + HTV.roomID + "_" + JSON.stringify(sendData)]);
 
         // 取最后ajax最后的请求
@@ -292,7 +231,7 @@ var SendGift = {
                     }
 
                     dace.sendBaiduEvent(["PC礼物发送成功数", "PC_礼物次数_发送成功", "PC_礼物次数_发送成功_" + HTV.roomID + "_" + JSON.stringify(sendData)]);
-                    callback && callback();
+                    callback && callback(data);
                     return;
                 }
 
@@ -310,17 +249,17 @@ var SendGift = {
      * 获取礼物详细
      * @param datas
      */
-    getGiftDetail(id, chaoneng = false){
+    getGiftDetail(id, type){
         let result = {};
 
-        if(!chaoneng){
+        if(+type === 1){
             _.map(HTV.giftData, item => {
                 // 礼物下架，查找不到礼物过滤
                 if(item.id === id){
                     result = item;
-                }    
-            })       
-        }else{
+                }
+            })
+        }else if(+type === 2){
             _.map(HTV.chaoneng.chaoneng_gift, item => {
                 if(item.id == id){
                     //获取技能代表队伍的名称
@@ -334,6 +273,13 @@ var SendGift = {
                }
             });
 
+        }else{
+          result = {
+            id: 0,
+            money_type: 1,
+            price: 1,
+            name: '路人王球员卡片'
+          }
         }
 
         return result;

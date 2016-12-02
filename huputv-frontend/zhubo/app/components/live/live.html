@@ -1,0 +1,70 @@
+<div class="warp-bg-black">
+  <div class="container ui-wrap live-wrap">
+    <ui-nav-crumb></ui-nav-crumb>
+
+    <div class="row">
+        <main class="live-main col-md-7">
+            <!-- pushLive start -->
+            <div class="push-live" id="J_pushLive">
+                <div class="room-title">
+                  <h2>
+                      <img src="{{$root.stateUrl}}/images/title/online_number.png" alt="在线人数" />
+                  </h2>
+                  <div class="online-users">
+                      <span>{{online_people_number}}</span>
+                  </div>
+                  <div class="setting-room-button">
+                    <a href="javascript:" ui-sref="app.predGame" ng-show="!!allow_predict && $root.common.is_live == 1" title="基本信息">
+                        比赛预测
+                        <span class="line">|</span>
+                        <i class="arrow-right"></i>
+                    </a>
+                    <a href="javascript:" ng-click="popup={open: true}" title="基本信息">
+                        基本信息
+                        <span class="line">|</span>
+                        <i class="arrow-right"></i>
+                    </a>
+                  </div>
+                  <div class="clear"></div>
+                </div>
+                <div class="room-tab">
+                  <ul class="tab-list" ng-init="tabs=1">
+                    <li ng-click="tabs=1" ng-class="{'active':tabs==1}">
+                      <a href="javascript:">视频参数</a>
+                    </li>
+                    <li ng-click="tabs=2" ng-class="{'active':tabs==2}">
+                      <a href="javascript:">主播发言</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="main-content">
+                  <div ng-class="{'content-active':tabs==1}" class="content-list">
+                    <video-params></video-params>
+                  </div>
+                  <div ng-class="{'content-active':tabs==2}" class="content-list">
+                    <zhubo-speak></zhubo-speak>
+                  </div>
+                </div>
+                <div class="function-button">
+                  <a href="javascript:" title="结束直播" ng-click="handleLiveSwitch()" ng-show="$root.common.is_live == 1" class="button-live button-endLive">结束直播</a>
+                  <a href="javascript:" title="开启直播" ng-click="handleLiveSwitch()" ng-show="$root.common.is_live == 0"  class="button-live">开启直播</a>
+                  <br />
+                  开播提醒：<a href="javascript:" title="发送" class="button-send-remind" ng-click="handleSendRemind()">发送</a> 注意：”开播提醒“每天只能发送一次
+                </div>
+            </div>
+            <!-- pushLive end -->
+        </main>
+        <aside class="live-side col-md-5">
+          <live-hotline></live-hotline>
+        </aside>
+    </div>
+  </div>
+</div>
+
+<ui-popup ng-if="popup.open" close="popup.open=false">
+  <setting-room close="popup.open=false"></setting-room>
+</ui-popup>
+
+<ui-popup ng-if="popupgift.open" close="popupgift.open=false">
+  <shuttle-gift></shuttle-gift>
+</ui-popup>

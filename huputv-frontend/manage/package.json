@@ -6,7 +6,7 @@
     "index": "./src/entry/index.jsx"
   },
   "dependencies": {
-    "antd": "0.12.x",
+    "antd": "^1.11.2",
     "atool-build": "0.6.x",
     "babel-plugin-antd": "0.2.x",
     "classnames": "^2.2.5",
@@ -39,6 +39,7 @@
     "eslint": "2.x",
     "eslint-config-airbnb": "6.x",
     "eslint-plugin-react": "4.x",
+    "html-webpack-plugin": "^2.24.1",
     "isomorphic-fetch": "^2.2.1",
     "node-sass": "^3.4.2",
     "pre-commit": "1.x",

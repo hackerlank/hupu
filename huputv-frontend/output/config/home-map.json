@@ -50,10 +50,7 @@
             "type": "tpl",
             "extras": {
                 "isPage": true
-            },
-            "deps": [
-                "home:widget/video-play/video.js"
-            ]
+            }
         },
         "home:static/index/index.scss": {
             "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/index/index_fa1a54d.css",
@@ -67,22 +64,6 @@
                 "home:static/index/index.scss"
             ],
             "pkg": "home:p3"
-        },
-        "home:widget/video-play/video.js": {
-            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/widget/video-play/video_9f84369.js",
-            "type": "js",
-            "extras": {
-                "moduleId": "home:widget/video-play/video"
-            },
-            "deps": [
-                "common:static/js/underscore/underscore.js",
-                "common:widget/dialog/dialog.js",
-                "home:widget/video-play/video.scss"
-            ]
-        },
-        "home:widget/video-play/video.scss": {
-            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/widget/video-play/video_78910fd.css",
-            "type": "css"
         },
         "home:page/license.tpl": {
             "uri": "/template/home/page/license.tpl",
@@ -252,6 +233,22 @@
             "deps": [
                 "home:widget/user-nav/user-nav.scss"
             ]
+        },
+        "home:widget/video-play/video.js": {
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/home/widget/video-play/video_9f84369.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "home:widget/video-play/video"
+            },
+            "deps": [
+                "common:static/js/underscore/underscore.js",
+                "common:widget/dialog/dialog.js",
+                "home:widget/video-play/video.scss"
+            ]
+        },
+        "home:widget/video-play/video.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/home/widget/video-play/video_78910fd.css",
+            "type": "css"
         },
         "home:widget/video-play/video.tpl": {
             "uri": "home/widget/video-play/video.tpl",

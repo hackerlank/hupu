@@ -2,170 +2,127 @@
 @import "../../static/sass/sassCore/base";
 
 .gift-top {
-    i { font-style: normal;}
+  .icons-money {
+    @include inline-block;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    background: url(./img/icon_1.png?__sprite) no-repeat 0 0;
+    vertical-align: middle;
+  }
+  .gift-top-title {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 20px;
+    border-bottom: 1px dashed #ccc;
+    color: #777;
+    h4 {
+      @include float;
+      font-weight: 400;
+    }
+    .title-right {
+      @include float(right);
+      font-size: 12px;
+      .icons-money {
+        margin: 0 3px;
+      }
+      .red {
+        color: #d04646;
+      }
+      .self-send-not {
+        color: $grayDark;
+      }
+    }
+  }
+  .gift-top-bd {
+    border-bottom: 1px dashed #ccc;
+  }
 
-    position: relative;
-    z-index: 2;
-    height: 125px;
-    .gift-top-inner {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-        width: 100%;
-        min-height: 125px;
-        background: #f8f8f8;
-        border-bottom: 1px solid #d9d9d9;
-    }
-    .gift-top-tab {
-        border-bottom: 1px solid #eee;
-        height: 32px;
-        color: #444;
-        li {
-            @include float();
-            width: 50%;
-            height: 32px;
-            line-height: 28px;
-            text-align: center;
-        }
-        a {
-            display: block;
-            padding: 2px 0;
-            color: #444;
-        }
-        .active {
-            a {
-                padding-bottom: 0;
-                border-bottom: 2px solid $red;
-            }
-        }
-    }
-    .content {
-        padding-top: 5px;
-    }
-    .content-list {
-        display: none;
-    }
-    .gift-list {
-        font-size: 12px;
-        li {
-            padding-right: 10px;
-            height: 24px;
-            overflow: hidden;
-            line-height: 24px;
-        }
-        .count {
-            @include float();
-            min-width: 50px;
-            text-align: center;
-        }
-        .name {
-            @include float();
-            font-weight: 700;
-            color: #3c92e9;
-        }
-        .gift-count {
-            @include float(right);
-            color: #706e6e;
-        }
-        .icon-beans {
-            @include inline-block();
-            width: 20px;
-            height: 17px;
-            overflow: hidden;
-            background: url(../../static/live/img/icon_1.png?__sprite) no-repeat 0 0;
-            vertical-align: middle;
-        }
-    }
-    .not-gift {
-        padding: 35px 0 0;
-        text-align: center;
-        color: #999;
-    }
-    .self-not-gift {
-        font-size: 12px;
-        text-align: center;
-        color: #999;
-    }
-    .gift-top-list {
-        padding-bottom: 5px;
-        li {
-            display: none;
-        }
+  .not-content {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 12px;
+    color: $gray;
+  }
 
-        .top-1,
-        .top-2,
-        .top-3 {
-            display: block;
-            height: 28px;
-            line-height: 28px;
-            .name {
-                font-size: 14px;
+  .gift-top-list {
+    padding-bottom: 5px;
+    color: #777;
+    li {
+      padding-right: 20px;
+      height: 28px;
+      overflow: hidden;
+      line-height: 28px;
+      font-size: 12px;
+    }
+    .count {
+      @include float();
+      min-width: 50px;
+      text-align: center;
+      color: $grayDark;
+      font-style: inherit;
+    }
+    .name {
+      @include float();
+    }
+    .gift-count {
+      @include float(right);
+      color: #706e6e;
+    }
+    .top-1,
+    .top-2,
+    .top-3 {
+      font-size: 14px;
+      .name {
+        font-weight: 700;
+      }
+      .count {
+        min-width: 9px;
+        height: 12px;
+        overflow: hidden;
+        margin: 10px 18px 0 22px;
+        text-indent: -99em;
+        background-color: transparent;
+        background: url(./img/number_1.png?__sprite) no-repeat 0 0;
+      }
+    }
+    .top-1 {
+      .name,
+      .gift-count {
+          color: #cda818;
+      }
+    }
+    .top-2 {
+      .name,
+      .gift-count {
+          color: $grayDark;
+      }
+      .count {
+          background-image: url(./img/number_2.png?__sprite);
+      }
+    }
+    .top-3 {
+      .name,
+      .gift-count {
+          color: #daa16e;
+      }
+      .count {
+          background-image: url(./img/number_3.png?__sprite);
+      }
+    }
+  }
 
-            }
-            .count {
-                min-width: 9px;
-                height: 12px;
-                overflow: hidden;
-                margin: 10px 18px 0 22px;
-                text-indent: -99em;
-                background-color: transparent;
-                background: url(./img/number_1.png?__sprite) no-repeat 0 0;
-            }
-        }
-        .top-1 {
-            .name,
-            .gift-count {
-                color: #cda818;
-            }
-        }
-        .top-2 {
-            .name,
-            .gift-count {
-                color: $grayDark;
-            }
-            .count {
-                background-image: url(./img/number_2.png?__sprite);
-            }
-        }
-        .top-3 {
-            .name,
-            .gift-count {
-                color: #daa16e;
-            }
-            .count {
-                background-image: url(./img/number_3.png?__sprite);
-            }
-        }
-    }
-    .self-gift-top {
-        display: none;
-        padding: 5px 0;
-        border-top: 1px dashed #c12334;
-        .count {
-            width: auto;
-            height: auto;
-            min-width: 46px;
-            margin: 0 2px;
-            line-height: inherit;
-            background: none;
-            color: #444;
-        }
-    }
+  .tip-text {
+    font-size: 12px;
+    padding: 20px 0;
+    text-align: center;
+    color: $gray;
+  }
 
-    .content {
-        .active {
-            display: block;
-        }
-        .hover{
-            .gift-top-list {
-                li {
-                    display: block;
-                }
-            }
-            .self-gift-top {
-                display: block;
-            }
-        }
-    }
+  .all-not-gift {
+    text-align: center;
+    padding: 100px 10px 0;
+    // font-size: 12px;
+    color: $gray;
+  }
 }

@@ -1,5 +1,10 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router'
+import { Form, Input, Row, Col, Button, Select, Table, Popconfirm, message, Modal } from 'antd'
+
+import _ from 'common/underscore'
+import dataService from 'common/dataService'
+
 import './RoomList.less'
 import RecommendPop from './RecommendPop'
 import Forbid from './Forbid'
@@ -10,10 +15,7 @@ import TypeChange from './TypeChange'
 import OnlineChange from './OnlineChange'
 import VideoJJ from './VideoJJ'
 import ShowGift from './ShowGift'
-import _ from 'common/underscore'
-import $ from 'jquery'
-import dataService from 'common/dataService'
-import { Form, Input, Row, Col, Button, Select, Table, Popconfirm, message, Modal } from 'antd'
+import ChatModal from './ChatModal'
 
 const FormItem = Form.Item;
 const Option = Select.Option;
@@ -29,6 +31,88 @@ const Api = {
     giftOrderList: '/manage/gift/order',
     cancelRecommend: '/manage/room-recommend/:id'
 };
+
+/**
+ * 搜索
+ */
+class SearchInput extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      startValue: '',
+      endValue: '',
+      selectValue: ''
+    };
+  }
+  /**
+   * 搜索提交
+   * @param  {[type]} event [description]
+   * @return {[type]}       [description]
+   */
+  handleSearch(event){
+    let params = this.props.form.getFieldsValue();
+
+    this.props.uploadSearch(params);
+  }
+  render() {
+    const { getFieldProps } = this.props.form;
+
+    return (
+      <div>
+        <Form horizontal className="advanced-search-form form-search" onSubmit={this.handleSearch.bind(this)} style={{marginBottom: 10}} >
+            <Row>
+            <Col span = "6" >
+                <FormItem label = "关键字搜索："
+                    labelCol = {{ span: 7 }}
+                    wrapperCol = {{ span: 14 }} >
+                    <Input placeholder = "输入直播间名字或ID"
+                        {...getFieldProps('search', { initialValue: '' })} />
+                </FormItem>
+            </Col>
+            <Col span = "6" >
+                <FormItem label = "选择直播间状态："
+                    labelCol = {{ span: 10 }}
+                    wrapperCol = {{ span: 12 }} >
+                    <Select
+                        style = {{ width: 120 }}
+                        {...getFieldProps('status', { initialValue: '' })} >
+                        <Option value = ""> 全部 </Option>
+                        <Option value = "0"> 正常 </Option>
+                        <Option value = "1"> 封禁 </Option>
+                    </Select>
+                </FormItem>
+            </Col>
+            <Col span = "5">
+                <FormItem label = "选择直播状态："
+                    labelCol = {{ span: 10 }}
+                    wrapperCol = {{ span: 12 }} >
+                    <Select
+                        style = {{ width: 120 }}
+                        {...getFieldProps('is_live', { initialValue: '' })} >
+                        <Option value = ""> 全部 </Option>
+                        <Option value = "1"> 直播中 </Option>
+                        <Option value = "0"> 休息 </Option>
+                    </Select>
+                </FormItem>
+            </Col>
+            <Col span = "5">
+                <Button
+                  className="btn-room"
+                  type="primary"
+                  htmlType="submit"
+                >
+                  搜索
+                </Button>
+            </Col>
+            </Row>
+        </Form>
+      </div>
+    );
+  }
+};
+
+const SearchForm = Form.create()(SearchInput);
 
 class Room extends Component {
     constructor(props) {
@@ -61,8 +145,7 @@ class Room extends Component {
             typeId: 0,
             roomId: 0,
             status: 0,
-            search: '',
-            searchResult: '',
+            searchParams: {},
             streamInfo: {},
             page: 1,
             author: 1,
@@ -73,7 +156,8 @@ class Room extends Component {
             userID: "",
             userPwd: "",
             giftVisible: false,
-            giftData: []
+            giftData: [],
+            waterarmyVisible: false
         };
     }
 
@@ -91,17 +175,22 @@ class Room extends Component {
         })
     }
 
-    fetchList(page = 1) {
-        let data = this.props.form.getFieldsValue();
-        this.setState({ loading: true, page: page });
+    fetchList(page = 1, searchParams = this.state.searchParams) {
+        let params = {
+          room_type: this.state.typeNum,
+          page
+        }
 
-        data.search = this.state.searchResult;
-        data.room_type = this.state.typeNum;
-        data.page = page;
+        params = Object.assign(params, searchParams);
 
-        this.setState({ loading: true });
+        this.setState({
+          loading: true,
+          page: page
+        });
 
-        dataService.get(Api.list, data).then((res) =>{
+        dataService
+          .get(Api.list, params)
+          .then((res) => {
             this.setState({
                 data: res.data.list,
                 count: res.data.count,
@@ -109,6 +198,16 @@ class Room extends Component {
                 loading: false
             })
         })
+    }
+    /**
+     * 更新搜索
+     */
+    uploadSearch(data = {}) {
+      this.setState({
+        searchParams: data
+      });
+
+      this.fetchList(1, data);
     }
 
     componentDidMount() {
@@ -311,24 +410,13 @@ class Room extends Component {
     }
 
     filterType(id, e){
-
-        let data = this.props.form.getFieldsValue();
-        this.setState({ loading: true, typeNum: id });
-
-        data.search = this.state.searchResult;
-        data.room_type = id;
-        data.page = 1;
-
-        dataService.get(Api.list, data).then((res) =>{
-            this.setState({
-                data: res.data.list,
-                count: res.data.count,
-                loading: false
-            });
-
+        this.setState({
+          typeNum: id
         })
 
-
+        this.fetchList(1, {
+          room_type: id
+        });
     }
 
     showCover(index){
@@ -470,31 +558,6 @@ class Room extends Component {
 
         })
     }
-
-    handleSeachChange(e) {
-        this.setState({
-            search: e.target.value
-        })
-    }
-
-    handleSearch() {
-        let data = this.props.form.getFieldsValue();
-        this.setState({ loading: true });
-
-        data.search = this.state.search;
-        data.room_type = this.state.typeNum;
-        data.page = 1;
-
-        dataService.get(Api.list, data).then((res) =>{
-            this.setState({
-                data: res.data.list,
-                count: res.data.count,
-                searchResult: this.state.search,
-                loading: false
-            })
-        })
-    }
-
     renderName(o, row, index) {
         return ( <span> {o} <Button size = "small" onClick={this.changeName.bind(this, index)}> 修改 </Button> </span>)
     }
@@ -552,31 +615,7 @@ class Room extends Component {
     handleTypeOk(){
         this.fetchList(this.state.current);
         this.handleTypeCancel();
-        // let api = Api.roomInfoName.replace(':id', roomId);
-        // dataService.post(api, { key: 'room_type',value: typeId }).then((res) =>{
-        //     if(res.code == 1){
-        //         let typeName = '';
 
-        //         this.state.roomType.forEach(function(item) {
-        //             if(item.sid == typeId){
-        //                 typeName = item.sname;
-        //             }
-        //         })
-
-        //         this.state.data.forEach(function(item) {
-        //             if(item.id == roomId) {
-        //                 item['room_type_text'] = typeName;
-        //             }
-        //         })
-
-        //         message.success('修改直播间分类成功！');
-
-        //         this.setState({
-        //             data: this.state.data,
-        //             typeVisible: false
-        //         })
-        //     }
-        // })
     }
 
     handleTypeCancel() {
@@ -624,11 +663,28 @@ class Room extends Component {
         this.fetchList(current);
     }
 
+    /**
+     * 显示军水ID
+     */
+    handleShowWaterarmy(id) {
+      this.setState({
+        roomId: +id,
+        waterarmyVisible: true
+      })
+    }
+    handleCancelWaterarmy() {
+      this.setState({
+        roomId: 0,
+        waterarmyVisible: false
+      })
+    }
+
     renderOnline(o, row, index) {
         return(
             <span onClick={this.addOnlineNum.bind(this,index)}>{row.online} <span style={{color: 'red'}}>+{row.online_plus}</span></span>
         )
     }
+
 
     renderMessage(o, row, index) {
         return(
@@ -708,8 +764,9 @@ class Room extends Component {
                     showButton()
                 }
                 <span className = "ant-divider"></span>
-                <Button className = "ant-btn-primary" onClick={this.showGift.bind(this,row.id)} > 礼物管理 </Button>
-
+                <Button type="primary" onClick={this.showGift.bind(this,row.id)} > 礼物管理 </Button>
+                <span className = "ant-divider"></span>
+                <Button type="primary" onClick={this.handleShowWaterarmy.bind(this, row.id)}>热线发言</Button>
             </span>
         );
     }
@@ -781,52 +838,9 @@ class Room extends Component {
                     </span>
                 </div>
                 <div className = "form-room">
-                    <div className = "form-search"></div>
-                    <Form horizontal className = "advanced-search-form form-search" form={this.props.form} >
-                        <Row>
-                        <Col span = "6" >
-                            <FormItem label = "关键字搜索："
-                                labelCol = {{ span: 7 }}
-                                wrapperCol = {{ span: 14 }} >
-                                <Input placeholder = "输入直播间名字或ID"
-                                    {...getFieldProps('search')} value={this.state.search} onChange={this.handleSeachChange.bind(this)} />
-                            </FormItem>
-                        </Col>
-                        <Col span = "6" >
-                            <FormItem label = "选择直播间状态："
-                                labelCol = {{ span: 10 }}
-                                wrapperCol = {{ span: 12 }} >
-                                <Select
-                                    style = {{ width: 120 }}
-                                    {...getFieldProps('status', { initialValue: '' })} >
-                                    <Option value = ""> 全部 </Option>
-                                    <Option value = "0"> 正常 </Option>
-                                    <Option value = "1"> 封禁 </Option>
-                                </Select>
-                            </FormItem>
-                        </Col>
-                        <Col span = "5">
-                            <FormItem label = "选择直播状态："
-                                labelCol = {{ span: 10 }}
-                                wrapperCol = {{ span: 12 }} >
-                                <Select
-                                    style = {{ width: 120 }}
-                                    {...getFieldProps('is_live', { initialValue: '' })} >
-                                    <Option value = ""> 全部 </Option>
-                                    <Option value = "1"> 直播中 </Option>
-                                    <Option value = "0"> 休息 </Option>
-                                </Select>
-                            </FormItem>
-                        </Col>
-                        <Col span = "5">
-                            <Button className = "btn-room"
-                                type = "primary"
-                                htmlType = "submit"
-                                onClick={ this.handleSearch.bind(this) }> 搜索
-                            </Button>
-                        </Col>
-                        </Row>
-                    </Form>
+                  <SearchForm
+                    uploadSearch={this.uploadSearch.bind(this)}
+                     />
                     <div className = "sort-room">
                             {
                                 this.state.roomType.map((item, key) => {
@@ -928,15 +942,16 @@ class Room extends Component {
                     roomId = {this.state.roomIdForGift}
                 />
 
-            </div>
+                <ChatModal
+                    visible = {this.state.waterarmyVisible}
+                    handleCancel = {this.handleCancelWaterarmy.bind(this)}
+                    roomId = {this.state.roomId}
+                />
 
+            </div>
         );
     }
 };
-
-
-
-
 
 Room = Form.create()(Room);
 

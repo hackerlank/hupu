@@ -14,7 +14,7 @@
 	background-color: #fff;
 	border-bottom: 1px solid #ddd;
 
-	&>.inner {
+	.inner {
 		@include clearfix();
 		width: 990px;
 		margin-left: auto;
@@ -376,7 +376,7 @@
 
 @media screen and (min-width:1530px) {
 	.w-header {
-		&>.inner {
+		.inner {
 			width: 1490px;
 		}
 	}

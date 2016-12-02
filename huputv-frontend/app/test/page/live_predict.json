@@ -1,0 +1,61 @@
+{
+    "user_predict_info": {
+        "puid": 0,
+        "score": 0,
+        "frequency": 0,
+        "win": 0,
+        "today_win_score": 0,
+        "day_rank": 0,
+        "month_rank": 0,
+        "magnification": 1,
+        "userCount": 1
+    },
+    "list": [
+        {
+            "id": "834",
+            "title": "测试 10333 预测题",
+            "option": [
+                {
+                    "option_id": 1,
+                    "option": "12121",
+                    "total_count": 0
+                },
+                {
+                    "option_id": 2,
+                    "option": "4234234",
+                    "total_count": "1"
+                },
+                {
+                    "option_id": 3,
+                    "option": "432423",
+                    "total_count": 0
+                },
+                {
+                    "option_id": 4,
+                    "option": "42342342",
+                    "total_count": 0
+                }
+            ],
+            "right_option": "0",
+            "score": "20",
+            "status": "0",
+            "user_option": 1
+        },
+        
+    ],
+    "room_id": "10333",
+    "test": "1",
+    "userInfo": {
+        "uid": "29035272",
+        "username": "a9901zhy",
+        "nickname": "hupu_faa80a897cedd6b8"
+    },
+    "login_url": "https://passport.liangle.com/pc/login?project=liangle&from=m",
+    "logout_url": "https://passport.liangle.com/pc/logout",
+    "register_url": "https://passport.liangle.com/pc/register?project=liangle&from=m",
+    "is_login": 1,
+    "in_kanqiu": 0,
+    "night": 0,
+    "client": "",
+    "platform": "h5"
+}

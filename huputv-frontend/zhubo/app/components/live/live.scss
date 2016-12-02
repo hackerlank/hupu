@@ -1,0 +1,266 @@
+@charset "utf-8";
+/*
+ * 直播页面
+ */
+
+@import "sass/vendor/sassCore/base";
+
+// loading
+$room-loading:        "/static/images/loading.gif";
+//直播房间
+$room-team-games:     "/static/images/room_game_ico.png";
+$room-color-active:   "/static/images/color_active.png";
+$room-ico-refresh:   "/static/images/ico_refresh.png";
+
+// 弹出设置房间
+$pop-button-close:    "/static/images/btn_close.png";
+
+@mixin input-bg {
+  background:#c1c2c2;
+  border:1px solid #a2a0a0;
+  color:$grayDarker;
+  @include prefixer(box-shadow, 0 0 2px 1px #b0b0b0 inset);
+}
+
+.live-wrap {
+  .push-live {
+    margin-bottom: 15px;
+    @include bgcolor-alpha(rgba(0,0,0,.7));
+  }
+  @include roomTitle('.room-title');
+  .room-title {
+    border:1px solid rgba(255,255,255,.1);
+    padding-bottom:0;
+    h2 {
+      @include float;
+      margin-right:10px;
+    }
+    .online-users {
+      @include float;
+      margin-top:2px;
+      font-size:28px;
+      line-height:29px;
+      span {
+          @include float;
+          @include inline-block;
+          padding:0 1px;
+          margin-right:1px;
+          font-weight:700;
+          background:$red;
+          color:$white;
+      }
+    }
+    .setting-room-button {
+      @include float(right);
+      margin-top:4px;
+      a {
+          position: relative;
+          @include inline-block;
+          height:24px;
+          padding:0 18px 0 6px;
+          margin-left:5px;
+          line-height:24px;
+          background:$grayDarker;
+          color:#dddede;
+          .line {
+              @include inline-block;
+              width:1px;
+              height:19px;
+              margin-left:2px;
+              overflow:hidden;
+              background:#b7b7b7;
+              vertical-align:middle;
+          }
+          .arrow-right {
+              @include arrow(right, 4px, #dddede);
+              top:8px;
+              left:initial;
+              right:7px;
+          }
+      }
+    }
+  }
+
+  .room-tab {  
+    padding-top: 8px;
+    font-size: 14px;
+    .tab-list {
+      @include clearfix;
+      li {
+        @include float();
+        height: 26px;
+        line-height: 26px;
+        padding: 0 10px;
+        margin-left: 5px;
+        background: #5e5e5e;
+        color: #fff;
+      }
+      a {
+        color: #fff;
+      }
+      .active {
+        background: #c9c9c9;
+        color: #333;
+        a {
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    position: relative;
+    padding: 20px 0;
+    background: #c9c9c9;
+    .content-list {
+      display: none;
+    }
+    .content-active {
+      display: block;
+    }
+  }
+
+  .room-live-text {
+    font-size: 14px;
+    li {
+        @extend %clearfix;
+        padding:4px 0;
+        line-height:26px;
+    }
+    .control-label {
+        width:100px;
+        text-align:right;
+        padding:0;
+    }
+
+    .editor-box {
+        width:100%;
+        height:64px;
+        padding:5px;
+        line-height:20px;
+        overflow-x: auto;
+        vertical-align:top;
+        @include input-bg;
+        &::-moz-placeholder {
+            color: #818181;
+        }
+        &::-webkit-input-placeholder {
+            color:#818181;
+        }
+    }
+    .color-list {
+        a {
+            @include inline-block;
+            width:17px;
+            height:17px;
+            margin-right:4px;
+            overflow:hidden;
+            vertical-align: middle;
+        }
+        .active span {
+            display:block;
+            width:100%;
+            height:100%;
+            background:url($room-color-active) no-repeat 0 0;
+        }
+    }
+    .input-border {
+        @include float;
+        width:150px;
+        height:24px;
+        margin-right:10px;
+        line-height:24px;
+        padding:0 5px;
+        @include input-bg;
+        &:-moz-placeholder {
+            color: #818181;
+        }
+        &::-webkit-input-placeholder {
+            color:#818181;
+        }
+    }
+    .button-fileinput {
+        position: relative;
+        @include float;
+        width:68px;
+        height:24px;
+        margin-right:10px;
+        overflow:hidden;
+        line-height:24px;
+        text-align:center;
+        font-size: $baseFontSize;
+        font-weight:700;
+        background:#a2a3a3;
+        border:none;
+        color:#dedada;
+    }
+    // .button-upload {
+    //     @extend %upload;
+    // }
+    .upload-info {
+        margin-top:5px;
+        font-size: $baseFontSize;
+    }
+    .uploadfile-progerss {
+        display: none;
+        height: 20px;
+        margin-top:10px;
+        overflow:hidden;
+        background: #a2a3a3;
+        @include box-shadow(inset 0 1px 2px rgba(0,0,0,.1));
+        @include border-radius(4px);
+        .progerss-bar {
+            width: 0%;
+            height: 100%;
+            background: #5cb85c;
+            @include box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));
+            @include transition(width .6s ease);
+        }
+    }
+  }
+
+  .function-button {
+    padding:10px;
+    text-align:center;
+    .button-live {
+      @include inline-block;
+        width:145px;
+        height:42px;
+        margin:0 8px 10px;
+        text-align:center;
+        background: $red;
+        color: $white;
+        font:700 18px/42px $fontYaHei;
+    }
+    .button-endLive {
+      background:#4c4d4d;
+      color:#c7c8c8;
+    }
+    .error-live-info {
+        display: none;
+        margin-bottom:10px;
+        text-align:left;
+        color:$red;
+    }
+    .button-send-remind {
+      @include inline-block;
+      height: 24px;
+      font-size: 14px;
+      padding: 0 5px;
+      line-height: 24px;
+      background: $red;
+      color: $white;
+    }
+  }
+
+  @include max-screen(520px) {
+      .push-live{
+          .room-live-video {
+              .input-rtmpUrl, .editor-box {
+                  width: 53%;
+              }
+          }   
+      }
+         
+  }
+}

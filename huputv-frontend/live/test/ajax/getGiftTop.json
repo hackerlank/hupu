@@ -1,22 +1,50 @@
 {
-  "code": 1,
-  "msg": "操作成功",
-  "data": {
-    "room_ranking": {
-      "room": [{
-        "puid": 26102288,
-        "total": 1,
-        "nickname": "曼联25穆勒"
-      }, {
-        "puid": 26168347,
-        "total": 1,
-        "nickname": "SPURS丶面瘫男"
-      }],
-      "user": []
-    },
-    "match_ranking": {
-      "room": [],
-      "user": []
+    "code": 1,
+    "msg": "操作成功",
+    "data": {
+        "room_ranking": {
+            "room": [
+                {
+                    "puid": 5365981,
+                    "total": 35261,
+                    "nickname": "nevergivejun"
+                },
+                {
+                    "puid": 21007175,
+                    "total": 707,
+                    "nickname": "伪球迷32"
+                },
+                {
+                    "puid": 18531002,
+                    "total": 386,
+                    "nickname": "lyf362345"
+                },
+                {
+                    "puid": 19058153,
+                    "total": 200,
+                    "nickname": "pattss"
+                },
+                {
+                    "puid": 19510203,
+                    "total": 11,
+                    "nickname": "littlexn"
+                },
+                {
+                    "puid": 17506264,
+                    "total": 5,
+                    "nickname": "konghai"
+                }
+            ],
+            "user": {
+                "puid": "5365981",
+                "total": 35261,
+                "nickname": "nevergivejun",
+                "rank": 1
+            }
+        },
+        "match_ranking": {
+            "room": [],
+            "user": []
+        }
     }
-  }
 }

@@ -16,12 +16,6 @@ import GiftDetail from '../component/Gift/GiftDetail';
 import Bean from '../component/Gift/Bean';
 import GiftTop from '../component/Gift/top';
 
-// 管理员
-import OtherManage from '../component/Admin/Index';
-import AdminList from '../component/Admin/List';
-import AdminAdd from '../component/Admin/Add';
-import AdminEdit from '../component/Admin/Edit';
-
 // 直播分类
 //import Catalog from '../component/Catalog';
 import CatalogIndex from '../component/Catalog/Index';
@@ -75,14 +69,28 @@ import NoMatch from '../component/NotFound/NoMatch';
 import Predict from '../component/Predict/Index';
 import Rank from '../component/Predict/Rank';
 
+// 路人王赛事
+import LrwApp, {
+  LrwMatchApp,
+  LrwMatchViewPlayers,
+  LrwPlayersApp
+} from '../component/Lrw/Index';
+
+
+// 管理员
+import OtherManage from '../component/Admin/Index';
+import AdminList from '../component/Admin/List';
+import AdminAdd from '../component/Admin/Add';
+import AdminEdit from '../component/Admin/Edit';
+
 // 系统消息
 import SystemIndex from '../component/System/index';
 import SystemAddInfo from '../component/System/AddInfo';
 
 // 违禁词库
 import BannedwordsIndex from '../component/Bannedwords/Index';
-
-// 比赛管理
+// 水军ID管理
+import WaterArmy from '../component/WaterArmy/List';
 
 render((
         <Router history={hashHistory}>
@@ -142,6 +150,12 @@ render((
                     <Route path="operate/:id" component={PsychcOperate} />
                 </Route>
 
+                <Route path="lrw" component={LrwApp}>
+                    <IndexRoute component={LrwMatchApp}/>
+                    <Route path="view_players/:id" component={LrwMatchViewPlayers} />
+                    <Route path="players" component={LrwPlayersApp} />
+                </Route>
+
                 <Route path="predict">
                     <IndexRoute component={Predict}/>
                     <Route path="rank" component={Rank} />
@@ -150,6 +164,7 @@ render((
                 <Route path="other" component={OtherManage}>
                     <IndexRoute component={AdminList}/>
                     <Route path="bannedwords" component={BannedwordsIndex} />
+                    <Route path="waterarmy" component={WaterArmy} />
                     <Route path="admin" >
                         <IndexRoute component={AdminList}/>
                         <Route path="add" component={AdminAdd} />
@@ -160,7 +175,7 @@ render((
                         <Route path="add" component={SystemAddInfo} />
                     </Route>
                 </Route>
-                
+
             </Route>
 
             <Route path="login" component={Login}/>

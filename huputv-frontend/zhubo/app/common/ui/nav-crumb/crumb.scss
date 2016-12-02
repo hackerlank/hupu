@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@import "sass/vendor/sassCore/base";
+
+/* 面包屑 */
+.ui-nav-crumb {
+  margin-bottom:10px;
+  .crumb-arrow-right {
+      position: relative;
+      width:4px;
+      height:22px;
+      padding:1px 2px;
+      margin:0 14px;
+      background:url(./img/arrow_right.png) no-repeat 0 0;
+  }
+  a {
+      color:#d6d6d6;
+      &:hover {
+          color:#d6d6d6;
+      }
+  }
+}
+.ui-nav-crumb-bd {
+    @include inline-block;
+    padding:0 20px;
+    font: 14px/22px $fontYaHei;
+    @include bgcolor-alpha(rgba(39,29,29,.5));
+    border:1px solid rgba(255,255,255,.1);
+    color:#d6d6d6;
+}

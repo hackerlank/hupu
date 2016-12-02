@@ -22,9 +22,9 @@ package tv.hupu{
     import tv.hupu.conf.ExternalErrorEventName;
     import tv.hupu.conf.ExternalEventName;
     import tv.hupu.events.VideoJSEvent;
-    import tv.hupu.service.JSSocketService;
+    import tv.hupu.utils.JS2AS;
     import tv.hupu.utils.ConsTrace;
-    import tv.hupu.utils.JSInterface;
+    import tv.hupu.utils.AS2JS;
     import tv.hupu.utils.Statistics;
 
     [SWF(backgroundColor="#000000", frameRate="60", width="800", height="600")]

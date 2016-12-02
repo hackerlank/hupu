@@ -1,0 +1,13 @@
+<!-- crumb start -->
+<section class="ui-nav-crumb">
+  <div class="ui-nav-crumb-bd">
+    当前位置
+    <span class="crumb-arrow-right"></span>
+    <a ui-sref="app.index">首页</a>
+    <span ng-repeat="item in items">
+      <span class="crumb-arrow-right"></span>
+      <a ui-sref="{{item.state}}">{{item.title}}</a>
+    </span>
+  </div>
+</section>
+<!-- crumb end -->

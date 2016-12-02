@@ -7,7 +7,7 @@ echo ">>>>>>>>>>All tpl start compile<<<<<<<";
 
 ssh root@192.168.8.123 << remotessh
 rm -rf /data/www-data/hupu.com/huputv_frontend/template_c/*;
-php ~/complie.php;
+php ~/compile.php;
 cd /root/huputv-frontend;
 git checkout -b $VERSION
 git pull origin $VERSION;

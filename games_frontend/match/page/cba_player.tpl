@@ -7,7 +7,7 @@
     {%require name="common:static/js/swiper/js/swiper.jquery.js"%}
     {%require name="common:static/js/swiper/css/swiper.css"%}
 	{%require name="match:static/page/cba_player.scss"%}
-	<script type="text/javascript" src="//w1.hoopchina.com.cn/hybrid/common/hpbridge_v1.0.1.js"></script>
+	<script type="text/javascript" src="//w10.hoopchina.com.cn/hybrid/common/hpbridge_v1.0.2.js"></script>
 	{%script%}
 		window.GM = {
             "client": "{%$client%}" || "x",
@@ -79,7 +79,7 @@
 		-->
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide">
+				<div class="swiper-slide player-height">
 					<section class="data">
 						<h2>赛季数据</h2>
 						<ul class="main clearfix">
@@ -87,17 +87,24 @@
 								<li>
 									<div class="num">{%$val[1]%}</div>
 									<div class="type">{%$val[0]%}</div>
-									
 								</li>
 							{%/foreach%}
 						</ul>
 					</section>
-					{%if !empty($result.profile.info)%}	
+					{%if !empty($result.profile.info)%}
 						<section class="intro border_top">
 							<h2>球员简介</h2>
 							<p>{%$result.profile.info%}</p>
 						</section>
 					{%/if%}
+					<div class="analyze">
+			      <a href="https://nba.hupu.com/wiki/%E8%BF%9B%E9%98%B6%E6%95%B0%E6%8D%AE">
+		          <div class="link-title">
+	              <p class="title">虎扑篮球百科：真实命中率、有效命中率等数据说明</p>
+	              <i></i>
+		          </div>
+			      </a>
+		     </div>
 				</div>
 				<div class="swiper-slide" style="height: 100%;">
 					<div class='no-news'><p>暂无该球员相关新闻</p></div>

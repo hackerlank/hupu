@@ -1,7 +1,16 @@
-
 var _ = require("underscore");
 var refresh = require("common:widget/ui-refresh/ui-refresh.js");
 var tapLink = require("common:widget/tap-link/tap-link.js");
+
+function initBridge(callback) {
+    if(window.HupuBridge){
+        callback();
+    }else{
+        document.addEventListener("hupuBridgeReady", function(){
+            callback();
+        });
+    }
+}
 
 var all_rank = {
 	init: function() {
@@ -30,6 +39,12 @@ var all_rank = {
 		if (GM.rank_type != "TOP20") {
 			self.initScroll();
 		}
+
+		initBridge(function(){
+			HupuBridge.send("hupu.ui.share", {
+				open: false
+			}, function(){});
+		});
 	},
 
 	linkAllMore: function(page, callback) {

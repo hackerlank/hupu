@@ -6,12 +6,16 @@
     top: 5px;
     right: 5px;
     background: url(./button_close.png?__sprite) no-repeat 0 0;
-  }  
+  }
 }
 
 .hp-dialog {
   padding: 30px 35px 0;
   font-size: 18px;
+  .hp-popup-title {
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
   .hp-popup-content {
       min-height: 60px;
   }

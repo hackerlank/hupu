@@ -27,6 +27,13 @@ body.night .follow-null-wrap {
 }
 
 .widget-list-wrap {
+    // .all-zhubo-list {
+    //     position: relative;
+    //     overflow: hidden;
+    //     ul {
+    //         overflow-y: auto;
+    //     }
+    // }
 
     font-size: 14px;
     background-color: #fff;
@@ -70,12 +77,12 @@ body.night .follow-null-wrap {
     }
 
     .left {
-        @include flex(4);
+        @include flex(1);
         display: block;
     }
 
     .right {
-        @include flex(1);
+        // @include flex(1);
         text-align: right;
     }
 

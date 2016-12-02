@@ -25,7 +25,6 @@ var set_game_gifs = {
 				     	var  sort = (parseFloat(liSizeUp) + parseFloat(liSizeDown))/2;
 				     }
 				     //self.accSub(liSizeUp,liSizeDown)
-				      console.log(liSizeUp,liSizeDown,liSizeNow,"---",sort,evt.newIndex)
 				     	set_game_gifs.ajax("/chuanshuo/setGifSort",{
 								"gid": GM.gid,
 								"gifId":gifId,

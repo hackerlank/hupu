@@ -22,7 +22,7 @@
           userInfo: "{%$userInfo.uid|f_escape_js%}",
           hotline: {%json_encode($sub_server)%},
           match_id: "{%$live.match_id|f_escape_js%}" || 9716,
-          token: "{%$live.token|f_escape_js%}",
+          token: "{%$token|f_escape_js%}",
           is_live: parseInt("{%$live.is_live|f_escape_js%}"),
           sub_server: "{%$sub_server[0]|f_escape_js%}"
         });
@@ -35,6 +35,7 @@
 <section class="layout-video">
 {%widget
             name="app:widget/video/video.tpl"
+            data = $live
         %}
 </section>
 <section class="layout-tab">

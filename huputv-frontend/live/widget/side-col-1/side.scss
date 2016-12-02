@@ -1,0 +1,55 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+.live-sidebar-col-1 {
+  background: $white;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+  .side-tab-inner {
+    height: 37px;
+    color: $grayDark;
+    border-bottom: 1px solid #eee;
+    li {
+      @include float();
+      width: 33.33%;
+      text-align: center;
+    }
+    a {
+      position: relative;
+      display: block;
+      height: 100%;
+      padding-bottom: 2px;
+      height: 37px;
+      line-height: 37px;
+      color: $grayDark;
+    }
+    .new-message {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 12px;
+      width: 6px;
+      height: 6px;
+      overflow: hidden;
+      background: #d04646;
+      @include border-radius(50%);
+    }
+    .active {
+      a {
+        padding-bottom: 0;
+        border-bottom: 2px solid $red;
+        color: $red;
+      }
+    }
+  }
+  .content-list {
+    display: none;
+    height: 591px;
+    overflow-y: auto;
+  }
+  .content {
+    .active {
+      display: block;
+    }
+  }
+}

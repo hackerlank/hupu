@@ -1,0 +1,176 @@
+@charset "utf-8";
+/*
+ * 直播页面
+ */
+
+@import "sass/vendor/sassCore/base";
+
+// loading
+$room-loading:        "/static/images/loading.gif";
+$room-ico-refresh:   "/static/images/ico_refresh.png";
+
+/* 热线 */
+.hotline {
+    .tab-hd {
+    }
+    .tab-list {
+        overflow:hidden;
+        *zoom:1;
+        li {
+            @include float;
+            width:33%;
+            height:38px;
+            margin-left:1px;
+            text-align:center;
+            font:700 20px/38px $fontYaHei;
+            @include bgcolor-alpha(rgba(0,0,0,.7));
+            border-top:2px solid #575757;
+            &:first-child {
+                width: 33.5%;
+                margin-left:-1px;
+            }
+        }
+        .active {
+            border-top-color:$red;
+        }
+        a {
+            display:block;
+            height:100%;
+        }
+    }
+    .bd {
+        @include bgcolor-alpha(rgba(0,0,0,.5));
+        border:1px solid rgba(255,255,255,.1);
+        border-bottom:none;
+    }
+    .hotline-list {
+
+    }
+    // 最新数据提示
+    .hotline-newInfo {
+        display: block;
+        text-align:center;
+        line-height:40px;
+        @include bgcolor-alpha(rgba(0,0,0,.5));
+        border-bottom:1px solid rgba(255,255,255,.1);
+        color:$gray;
+        span {
+            color:$red;
+        }
+        .ico-refresh {
+            @include inline-block;
+            width: 50px;
+            height:16px;
+            margin-left: 35px;
+            overflow:hidden;
+            background:url($room-ico-refresh) no-repeat center right;
+            border-left:1px solid #585959;
+            vertical-align:middle;
+        }
+        a {
+            display: block;
+            height: 100%;
+            color: $gray;
+        }
+    }
+    .hotline-scrollbar {
+        position: relative;
+        height: 405px;
+        overflow-y: auto;
+    }
+    .table {
+        width:100%;
+        line-height:18px;
+        font-family:$fontYaHei;
+        word-break: break-word;
+        td {
+            padding:4px 8px;
+            border-bottom:1px solid rgba(255,255,255,.1);
+        }
+        .content {
+            font-size: 14px;
+        }
+        .operating {
+            width:41%;
+            padding-left:0;
+            padding-right:3px;
+            text-align: right;
+        }
+        .button-wall {
+            @include inline-block;
+            width:45px;
+            height:25px;
+            margin:0 2px;
+            line-height:25px;
+            text-align:center;
+            border:1px solid #8f8f8f;
+            @include border-radius(2px);
+            &:hover {
+                @include bgcolor-alpha(rgba(166,23,29,.2));
+                border-color:$red;
+                color:$red;
+            }
+        }
+    }
+    .hotline-list-1 {
+        .operating {
+            width: 30%;
+        }
+    }
+    .table-video {
+        td {
+            padding:10px 15px 10px 8px;
+        }
+    }
+    // 礼物排行
+    .top-table {
+        width:100%;
+        line-height:18px;
+        font-size: 14px;
+        font-family:$fontYaHei;
+        color:$white;
+        word-break: break-word;
+        td {
+            padding:5px 8px;
+            border-bottom:1px solid rgba(255,255,255,.1);
+        }
+        .number {
+            width: 15%;
+        }
+        .name {
+            width: 35%;
+        }
+        .gift-number {
+            width: 25%;
+        }
+        .operating {
+            width: 25%;
+            text-align:center;
+        }
+        .button-wall {
+            @include inline-block;
+            width:64px;
+            height: 27px;
+            text-align:center;
+            font:700 #{$baseFontSize}/27px $fontYaHei;
+            background:$red;
+            border:1px solid #101011;
+            color:$white;
+            @include border-radius(3px);
+        }
+        .none-td {
+            padding:100px 10px;
+            text-align:center;
+            border-bottom:none;
+            color: $grayDark;
+        }
+    }
+    .loading {
+        display:none;
+        height:50px;
+        background:url($room-loading) no-repeat center;
+    }
+    .ps-container .ps-scrollbar-y-rail {
+        right:0;
+    }
+}

@@ -236,7 +236,7 @@ const LiveIndex = React.createClass({
                 }
             }
             function gotoOnlink(record){
-              let action = `${record.liveInfo.abs_url}`
+              let action = `/${record.liveInfo.id}`
               window.open(action);
             }
             function videoPreview(record){
@@ -318,7 +318,7 @@ const LiveClose = React.createClass({
               }
           }
           function gotoOnlink(record){
-            let action = `${record.liveInfo.abs_url}`
+            let action = `/${record.liveInfo.id}`
             window.open(action);
           }
           function videoPreview(record){
@@ -396,7 +396,7 @@ const LiveOpen = React.createClass({
               }
           }
           function gotoOnlink(record){
-            let action = `${record.liveInfo.abs_url}`
+            let action = `/${record.liveInfo.id}`
             window.open(action);
           }
           function videoPreview(record){

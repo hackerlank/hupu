@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+img { max-width: 100%; pointer-events: none; }
+body {
+    height: 100%;
+    font-size: 12px;
+	color: $morning_gray3_cor;
+	background-color: $morning_gray1_cor;
+    -webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.layout-main {
+    overflow: scroll;
+    position: absolute;
+    width: 100%;
+   /* 增加该属性，可以增加内滚动弹性 */
+    -webkit-overflow-scrolling: touch;
+    -mz-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+
+.not-content-match {
+  padding: 50px 10px;
+  text-align: center;
+  color: $grayDark;
+}
+
+body.night {
+    color: $night_cor5;
+    background-color: $night_gray1_cor;
+    .ui-inner-tab{
+    	background:$night_white_cor;
+    	.ui-inner-tab-list{
+    		a{
+    			color:$night_cor5;
+    		}
+    	}
+    	.active{
+    		a{
+    			color:$night_red_cor;
+    		}    		
+    	}
+    }	
+	.play-list-item{
+		background:$night_white_cor;
+		border-bottom:1px solid $night_gray0_cor;
+		.play-list-left{
+			color:$night_cor5;
+		}
+		.play-list-mid{
+			.maskavatar{
+				position:absolute;
+				left:0;
+				right:0;
+				width:40px;
+				height:40px;
+				border-radius:50%;
+				background:#000;
+				opacity:0.3;				
+			}
+			.play-list-text{
+				.play-energy{					
+					background:#771616;
+					color: $night_cor5;			
+				}
+				.play-message{
+					color:$night_cor4;
+				}
+				.player-nick{
+					color:$night_cor5;
+				}
+			}
+			
+		}
+		.play-list-right{
+			.rank-item{
+				color:$night_red_cor;
+			}
+			.play-list-number-1,
+			.play-list-number-2,
+			.play-list-number-3{
+				background:none;
+				color: $night_cor5;
+			}
+			.list-giveup{
+				color:$night_cor4;
+			}
+		}
+	}
+	.list-out{
+		background:#262626;
+	}
+	.lrw-title{
+		background:$night_gray0_cor;
+		h4{
+			color:$night_cor5;
+		}
+	}
+	.match-anainst-item{
+		background:$night_white_cor;
+		border-bottom:1px solid $night_gray0_cor;
+		.number{
+			color:$night_cor5;
+		}
+		.avatar{
+			position:relative;			
+		}
+		.title{
+			color:$night_cor5;
+		}
+		.info{
+			color:$night_cor4;
+		}
+		.maskavatar{
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    width: 40px;
+		    height: 40px;
+		    background: #000;
+		    opacity: 0.2; 
+		    border-radius: 50%;
+		}
+	}
+	.match-score{
+		border :1px solid $night_cor5;
+		.course-number{
+			color:$night_cor1;
+			border-bottom:1px solid $night_cor5;
+		}
+	}
+	.not-content-match{
+		color:$night_cor5;
+	}
+}

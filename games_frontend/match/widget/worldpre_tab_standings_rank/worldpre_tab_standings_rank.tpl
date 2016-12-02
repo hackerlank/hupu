@@ -5,10 +5,10 @@
 			<table class="mod-title title">
 				<thead>
 					<td width="10%" align="center">
-						{%if $code != "w174"%}
-							{%if $val@index == 0%}A{%else if $val@index == 1%}B{%else if $val@index == 2%}C{%else if $val@index == 3%}D{%else if $val@index == 4%}E{%else if $val@index == 5%}F{%else if $val@index == 6%}G{%else if $val@index == 7%}H{%else if $val@index == 8%}I{%/if%}组
-						{%else%}
+						{%if $code == "w174" || $code == "w175"%}
 							排行
+						{%else%}
+							{%if $val@index == 0%}A{%else if $val@index == 1%}B{%else if $val@index == 2%}C{%else if $val@index == 3%}D{%else if $val@index == 4%}E{%else if $val@index == 5%}F{%else if $val@index == 6%}G{%else if $val@index == 7%}H{%else if $val@index == 8%}I{%/if%}组
 						{%/if%}
 					</td>
 					<td width="32%" colspan="2" align="left">球队</td>
@@ -36,7 +36,7 @@
 							* 小组前四出线（标红色），小组第五进下一轮（标黄色）
 							*
 							* 中北美 w175
-							* 小组前二出线（标红色）
+							* 小组前二出线（标红色） :第五轮规则 小组前三出线（标红色），小组第四进下一轮（标黄色）
 							*
 							* 非洲 w176
 							* 小组第一出线（标红色）
@@ -65,8 +65,10 @@
 								yellow
 								{%/if%}
 							{%else if $code == "w175"%}
-								{%if $subVal.rank < 3%}
+								{%if $subVal.rank < 4%}
 								red
+								{%else if $subVal.rank == 4%}
+								yellow
 								{%/if%}
 							{%else if $code == "w176"%}
 								{%if $subVal.rank == 1%}
@@ -103,7 +105,7 @@
 				{%else if $code == "w174"%}
 				<p>南美十支球队将进行主客场双循环比赛，前四名直接出线，第五名将与大洋洲胜者进行附加赛，胜者出线。</p>
 				{%else if $code == "w175"%}
-				<p>当前为中北美区第4轮，三个小组的前两名晋级第5轮，六支队伍在一个组内进行主客场对决，前三名出线，第四名将与亚洲区第4轮的胜者进行附加赛，胜者出线。</p>
+				<p>当前为中北美区第5轮，六支队伍在一个组内进行主客场对决，前三名出线，第四名将与亚洲区第4轮的胜者进行附加赛，胜者出线。</p>
 				{%else if $code == "w176"%}
 				<p class="short">当前为非洲区第3轮，五个小组的第一名出线。</p>
 				{%else if $code == "w177"%}

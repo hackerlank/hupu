@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+@import "sass/vendor/sassCore/base";
+
+.popup-setiting-pred {
+  .pred-item {
+    li{
+      padding: 5px 0;
+    }
+    .flex {
+      @include display-flex();
+    }
+    .label-left {
+      display: block;
+      margin-right: 10px;
+    }
+    .inner-right {
+      @include flex(1);
+    }
+    .label {
+      @include float;
+      margin-right: 5px;
+    }
+    .room-select {
+      width: 120px;
+      float: none;
+    }
+    .top-border {
+      margin-top: 10px;
+      border-top: 1px solid #3b3b3b;
+    }
+    .error-text {
+      color: $red;
+    }
+  }
+  .pred-item-show{
+    font-size: 14px;
+    line-height: 32px;
+    li{
+      min-height: 52px;
+    }
+    .label{
+      float: none!important;
+    }
+  }
+
+  .popup-textarea {
+    width: 100%;
+    min-height: 60px;
+    line-height: 1.5;
+    background: #161616;
+    border: 1px solid #3e3e3e;
+    vertical-align: top;
+  }
+  .button-add-option {
+    color: $red;
+  }
+}
+.date-inner{
+  position: relative;
+  line-height: 50px;
+  height: 50px;
+  .date-selected{
+    border: 1px solid #3e3e3e;
+    background-color: #161616;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 5px;
+    display: inline-block;
+  }
+  .dropdown-date{
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    display: none;
+    background-color: #161616;
+    border: 1px solid #3e3e3e;
+  }
+}
+.table-condensed>tbody>tr>td{
+  padding: 5px;
+  line-height: 1.42857143;
+  vertical-align: top;
+}
+
+/**
+ * @license angular-bootstrap-datetimepicker  version: 0.4.0
+ * Copyright 2016 Knight Rider Consulting, Inc. http://www.knightrider.com
+ * License: MIT
+ */
+.datetimepicker {
+  border-radius: 0;
+  direction: ltr;
+  display: block;
+  margin-top: 1px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 320px;
+}
+.datetimepicker > div {
+  display: none;
+}
+.datetimepicker .hour,
+.datetimepicker .minute {
+  height: 34px;
+  line-height: 34px;
+  margin: 0;
+  width: 25%;
+}
+.datetimepicker .table {
+  width: 100%;
+  margin: 0;
+}
+.datetimepicker .table td,
+.datetimepicker .table th {
+  border: 0;
+  border-radius: 4px;
+  height: 20px;
+  text-align: center;
+}
+.datetimepicker .table th{
+  padding-left: 10px;
+}
+.datetimepicker .minute:hover,
+.datetimepicker .hour:hover,
+.datetimepicker .day:hover,
+.datetimepicker .switch:hover,
+.datetimepicker .left:hover,
+.datetimepicker .right:hover {
+  background: #161616;
+  cursor: pointer;
+}
+.datetimepicker .disabled,
+.datetimepicker .disabled:hover {
+  background: none;
+  color: #555;
+  cursor: default;
+}
+.datetimepicker .active,
+.datetimepicker .active:hover,
+.datetimepicker .active.disabled,
+.datetimepicker .active.disabled:hover {
+  background-color: #0044cc;
+  // background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  border-color: #0044cc #0044cc #002a80;
+  color: #ffffff;
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#08c', endColorstr='#04c', GradientType=0);
+  // text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.datetimepicker .active:hover,
+.datetimepicker .active:hover:hover,
+.datetimepicker .active.disabled:hover,
+.datetimepicker .active.disabled:hover:hover,
+.datetimepicker .active:active,
+.datetimepicker .active:hover:active,
+.datetimepicker .active.disabled:active,
+.datetimepicker .active.disabled:hover:active,
+.datetimepicker .active.active,
+.datetimepicker .active:hover.active,
+.datetimepicker .active.disabled.active,
+.datetimepicker .active.disabled:hover.active,
+.datetimepicker .active.disabled,
+.datetimepicker .active:hover.disabled,
+.datetimepicker .active.disabled.disabled,
+.datetimepicker .active.disabled:hover.disabled,
+.datetimepicker td.active[disabled],
+.datetimepicker td.active:hover[disabled],
+.datetimepicker td.active.disabled[disabled],
+.datetimepicker td.active.disabled:hover[disabled],
+.datetimepicker span.active[disabled],
+.datetimepicker span.active:hover[disabled],
+.datetimepicker span.active.disabled[disabled],
+.datetimepicker span.active.disabled:hover[disabled] {
+  background-color: #161616;
+}
+.datetimepicker span {
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 54px;
+  line-height: 54px;
+  margin: 1%;
+  // width: 23%;
+}
+.datetimepicker span:hover {
+  background: #161616;
+}
+.datetimepicker .past,
+.datetimepicker .future {
+  color: #ededed;
+}

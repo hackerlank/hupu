@@ -2,6 +2,7 @@
 @import "../../static/sass/sassCore/base";
 
 .clearfix:after {content:""; display:block; height:0; visibility:hidden; clear:both;}
+
 .clearfix span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .fl { float: left; }
 .fr { float: right; }
@@ -63,6 +64,7 @@
     display: -moz-box;
     display: -webkit-box;
     display: box;
+    display: -webkit-flex;
     border-top: 1px solid #e8e8e8;
 }
 .reply-list:first-child .operations-user{
@@ -85,9 +87,12 @@
 }
 .m-reply .user-info{
     padding-top:5px;
-    img{
-        padding: 0 4px;
-    }
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    
 }
 .article-author{
     img{
@@ -97,33 +102,64 @@
 .m-reply .user-name {
     line-height: 26px;
 }
+.m-reply .user-name  .fl{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -webkit-flex; 
+    display: -moz-flex;
+    display: -ms-flexbox; 
+    display: flex;
+}
 .m-reply .user-name span {
     display: inline-block;
-    max-width: 200px;
 }
 .m-reply .user-name .ellipsis {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
 .m-reply .user-name a {
     color: #434141;
     font-size:14px;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+.m-reply .user-name .J_name_word {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.m-reply .user-name .no_louzhu {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 .clearfix a.certification{
     color:#c80c00;
+    margin-left:2px;
     span{
         font-size:12px;
     }
 }
 .m-reply .user-name i{
+    -webkit-align-self: center;
+    align-self: center;
     font-style: normal;
     padding: 0 8px;
+    margin-left: 4px;
     line-height: 16px;
     height: 16px;
     font-size: 12px;
-    display: inline-block;
-    margin-left: 6px;
     border-radius: 8px;
     background: #cfcfcf;
     color: #626466;
@@ -134,9 +170,11 @@
     line-height:30px;
     height:30px;
     display: block;
+    /*
     -moz-box-flex: 1;
     -webkit-box-flex: 1;
     box-flex: 1;
+    */
     text-align: right;
 }
 .m-reply .source-left{

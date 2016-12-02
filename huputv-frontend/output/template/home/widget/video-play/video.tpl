@@ -24,6 +24,7 @@
 </div>
 </div>
 </div>
+<img src="http://b1.hoopchina.com.cn/web/tv/static/home/widget/video-play/huputv_6f9f573.swf" id="J_flashPlayUrl" style="display: none"/>
 </div>
 <script id="play-recommend-tpl" type="text/template">
     <ul class="live-announce-list">
@@ -51,3 +52,35 @@
         <@ }); @>
     </ul>
 </script>
+{%script%}
+    // 播放器swf
+    videojs.options.flash.swf = $('#J_flashPlayUrl').attr('src');
+
+    var VideoPlay = require('home:widget/video-play/video');
+
+    VideoPlay.init();
+
+    // 休息中
+    HTV.isLiveRest = parseInt("{%!empty($videoAnnounceError)%}");
+
+    HTV.fullScreenVideo = VideoPlay.fullScreenVideo;
+    HTV.trace = VideoPlay.trace;
+
+    if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.match(/7./i)=="7.") {
+        $(".J-list a").on("click", function(){
+            window.location.href = $(this).attr("href");
+        });
+    }
+
+    $("#J-video-silde").find("li").on("click", function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        $(this).parents(".main-wrap").find(".btn-enter").attr("href", $(this).attr("data-url"));
+
+        VideoPlay.callFromJS({
+            key: "playStream",
+            data: {
+                url:  $(this).attr("data-rtmp")
+            }
+        });
+    });
+{%/script%}

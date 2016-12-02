@@ -38,20 +38,25 @@ fis.match('::package', {
             'static/common.scss',
             'widget/header/header.scss',
             'widget/footer/footer.scss',
-            'widget/toast/toast.scss'
+            'widget/toast/toast.scss',
+            'widget/dialog/dialog.scss'
         ],
         'pkg/lib.js': [
             'static/mod.js',
             'static/js/jquery/jquery-1.12.0.min.js',
             'static/js/colorbox/jquery.colorbox.js',
-            'widget/underscore/underscore.js'
+            'static/js/underscore/underscore.js'
         ],
         'pkg/common.js': [
             'static/js/global/global.js',
+            'widget/sessionStorage/basil.js',
+            'widget/util/util.js',
             'widget/page-dace/page-dace.es6',
             'widget/header/header.js',
             'widget/login/login.js',
-            'widget/toast/toast.js'
+            'widget/flash-movie/flash.js',
+            'widget/toast/toast.js',
+            'widget/dialog/dialog.js'
         ],
         'pkg/share.js': [
             'widget/share/qrcode/qrcode.js',
@@ -154,7 +159,7 @@ fis.media('local').match('*', {
 // 上线增加cdn
 fis.media('pushAddCdn')
   .match ('*.{png,jpg,js,es6,css,scss,eot,svg,ttf,woff,swf}', {
-      domain: ['http://b3.hoopchina.com.cn/web/tv', 'http://b2.hoopchina.com.cn/web/tv', 'http://b1.hoopchina.com.cn/web/tv']
+    domain: ['http://assets.liangle.com/tv']
   })
   .match('*', {
     deploy: pushDev(qa123_receiver)
@@ -164,9 +169,9 @@ fis.media('pushAddCdn')
 fis.media('online')
   // 静态资源
   .match('*.{png,jpg,js,es6,css,scss,eot,svg,ttf,woff,swf}', {
-    deploy: localTo('../../b1/web/tv'),
+    deploy: localTo('../output/static/tv'),
     // cdn
-    domain: ['http://b3.hoopchina.com.cn/web/tv', 'http://b2.hoopchina.com.cn/web/tv', 'http://b1.hoopchina.com.cn/web/tv']
+    domain: ['http://assets.liangle.com/tv']
   })
   .match('*-map.json', {
     deploy: localTo('../output')

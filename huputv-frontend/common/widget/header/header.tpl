@@ -7,7 +7,7 @@ Safari下面样式兼容
 	<div class="inner clearfix">
 		<h1 class="logo">
 			<a href="/" title="亮了网">
-                <img src="./img/logo.png" alt="">         
+                <img src="./img/logo_1.png" alt="亮了网">         
             </a>
 		</h1>
 		<div class="nav">

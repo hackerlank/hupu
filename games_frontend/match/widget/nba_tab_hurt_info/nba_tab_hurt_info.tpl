@@ -47,9 +47,13 @@
 								</td>
 								<td  width="20%"  align="center">
 									<@ if(subItem.injury_part_cn){ @>
-										<@=subItem.injury_part_cn@>
+										<span class="injury_returns">
+											<@=subItem.injury_part_cn@>
+										</span>
 									<@ }else{ @>
-										<@=subItem.injury_part@>
+										<span class="injury_returns">
+											<@=subItem.injury_part@>
+										</span>
 									<@ } @>
 								</td>
 								<td align="center">

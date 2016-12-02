@@ -1,6 +1,6 @@
 {%extends file="app/page/layout.tpl"%}
 
-{%block name="title"%}亮了网{%/block%}
+{%block name="title"%}路人王{%/block%}
 
 {%block name="head_static"%}
     {%require name="app:static/js/underscore/underscore.js"%}
@@ -36,7 +36,7 @@
       {%/if%}
     </div>
     {%if $is_login && !empty($user_predict)%}
-    <a class="tv-pred" href="/m/predict/my/info?n={%$in_kanqiu%}&client={%$client%}">
+    <a class="tv-pred" href="/m/predict/my/list?n={%$in_kanqiu%}&client={%$client%}">
         <div class="user">
           <img src="{%$user_predict.header%}" />
           {%if !empty($night)%}<span class="mask"></span>{%/if%}
@@ -156,7 +156,7 @@
             								<span class="rp-tag">RP</span>
             							{%/if%}
                         </div>
-                        <img data-src="{%$room.cover%}" src="http://b3.hoopchina.com.cn/wl/nativeapp/games/zhubo/images/frontCover_img.jpg" width="100%" />
+                        <img data-src="{%$room.cover%}" src="http://w1.hoopchina.com.cn/huputv/resource/img/cover.png" width="100%" />
                         <span class="mod-mask mask"></span>
                     </div>
                     <div class="item-line">{%$room.room_name%}</div>

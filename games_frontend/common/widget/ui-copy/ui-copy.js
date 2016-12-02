@@ -13,7 +13,7 @@ var copy = {
             }
 
             var script = document.createElement("script");
-            script.src = '//st1.shihuo.cn/kanqiu.js?callback=shcopy';
+            script.src = '//st1.shihuo.cn/kanqiu.js?callback=shcopy&t=20161116';
             document.head.appendChild(script);
         }
     }

@@ -1,0 +1,298 @@
+@charset "utf-8";
+@import "../sass/sassCore/base";
+
+body {
+    height: 100%;
+    font-size: 12px;
+	color: $morning_gray3_cor;
+	background-color: $morning_gray1_cor;
+    -webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.rpz_wrap{
+	margin-top:10px;	
+	.rpz_core{
+		@include display-flex();
+		height:51px;
+		background:$morning_cor2;		
+		border-bottom:1px solid $morning_cor3;
+		color:$morning_gray3_cor;
+		padding:0 10px;
+		.rpz_core_left{
+			@include flex(1);
+			line-height:51px;
+			padding-right:32px;
+			.rpz_total_num{
+				display:inline-block;
+				color:$morning_cor2;
+				@include border-radius(2px);
+				background:$morning_huputv_red;
+				height:14px;
+				text-align:center;
+				min-width:20px;
+				padding:0 5px;
+				line-height:14px;
+				font-size:10px;
+				margin-left:5px;
+				vertical-align:middle;
+			}			
+		}		
+		.rpz_core_right{
+			padding-top:15px;
+			color:$morning_gray2_cor;
+		}		
+	}
+	.rpz_title_rank{
+		height:51px;
+		background:$morning_cor2;
+		color:$morning_gray3_cor;
+		@include display-flex();
+		padding:0 10px;
+		.rpz_rank_left{
+			@include flex(1);
+			line-height:51px;
+			padding-right:32px;
+		}
+		.rpz_rank_right{
+			padding-top:15px;
+			color:$morning_gray2_cor;
+		}
+	}
+}
+.rpz_predict_wrap{
+	margin-top:10px;
+	background:$morning_cor2;
+	.rpz_title{
+		height:30px;
+		line-height:30px;
+		color:$morning_red_cor;
+		padding-left:10px;
+		border-bottom:1px solid $morning_cor3;
+		font-size:12px;
+	}
+	.rpz_list{
+		.rpz_predict_item{			
+			border-bottom:1px solid $morning_cor3;
+			padding:10px 10px 0 10px;
+			.rpz_predict_head{
+				@include display-flex();
+				position:relative;
+				.rpz_predict_item_left{
+					@include flex(1);
+					padding-right:20px;
+					word-break: break-all;
+					word-wrap: break-word;
+					.rpz_predict_selected{
+						color:$morning_gray2_cor;
+					}
+				}
+				.rpz_predict_item_right{						
+						@include display-flex();
+						align-items: center;
+						font-size:12px;
+						color:$morning_gray2_cor;					
+					.ward-rpz{
+						text-align:center;
+					}
+					.voting{
+						height:18px;
+						padding:0px 5px;
+						color:$morning_h5_cor3;
+						border:1px solid $morning_h5_cor3;
+						@include border-radius(2px);
+					}
+
+					.ready{
+						height:18px;
+						padding:0px 5px;
+						color:$morning_gray2_cor;
+						border:1px solid $morning_gray2_cor;
+						@include border-radius(2px);
+					}
+					.ward{
+						height:18px;
+						padding:0px 5px;
+						color:$morning_red_cor;
+						border:1px solid $morning_red_cor;
+						@include border-radius(2px);
+					}
+					.win{
+						color:$morning_red_cor;
+					}
+					.disappear{
+						height:18px;
+						padding:0px 5px;
+						color:$morning_gray2_cor;
+						border:1px solid $morning_gray2_cor;
+						@include border-radius(2px);
+					}
+				}
+			}
+			.rpz_predict_tap{
+				.rpz_predict_option{
+					margin-top:10px;					
+					.rpz_option_item{		
+						display:inline-block;											
+						color:$morning_gray2_cor;
+						margin:0 6px 10px 0;
+						min-height:20px;
+						word-break: break-all;
+						padding:5px 10px;
+						background:$morning_cor3;
+						@include border-radius(2px);
+					}
+					.selected{
+						color:$morning_gray3_cor;
+						background:$morning_pink_cor;
+						border:1px solid $morning_red_cor;
+						@include border-radius(2px);
+					}
+					.correct{
+						color:$morning_cor2;
+						background:$morning_red_cor;
+						border:1px solid $morning_red_cor;
+						@include border-radius(2px);
+					}
+					.unselected{
+						background:$morning_cor2;
+						color:$morning_gray3_cor;
+						border:1px solid $morning_cor3;
+						@include border-radius(2px);
+					}
+					
+				}
+			}
+		}		
+	}
+}
+.toast-mask{
+	.toast-player{
+		.content{
+			p{
+				display:none;				
+			}
+			.popup-pred-game{
+				.content{
+					border-bottom:none;
+				}
+			}
+		}
+		.cancel{
+			color:#2181f7;
+		}
+		.submit{
+			color:#2181f7;
+		}
+	}
+}
+
+body.night{
+	color: $night_gray3_cor;
+	background-color: $night_gray1_cor;
+	.rpz_wrap{		
+		.rpz_core{
+			background:$night_cor2;		
+			border-bottom:1px solid $night_gray1_cor;
+			color:$night_cor5;		
+			.rpz_core_left{			
+				.rpz_total_num{				
+					color:$night_cor5;
+					background:$night_huputv_red;				
+				}			
+			}		
+			.rpz_core_right{
+				color:$night_white_cor;
+			}		
+		}
+		.rpz_title_rank{
+			background:$night_cor2;
+			color:$night_cor5;		
+			.rpz_rank_right{
+				color:$night_white_cor;
+			}
+		}
+	}
+	.rpz_predict_wrap{
+		background:$night_cor2;
+		.rpz_title{
+			color:$night_cor5;
+			border-bottom:1px solid $night_gray1_cor;
+		}
+		.rpz_list{
+			.rpz_predict_item{			
+				border-bottom:1px solid $night_gray1_cor;
+				.rpz_predict_head{
+					.rpz_predict_item_left{
+						@include flex(1);
+						.rpz_predict_selected{
+							color:$night_cor4;
+						}
+					}
+					.rpz_predict_item_right{
+							color:$night_cor4;
+						.voting{
+							border:1px solid $night_voting_cor;
+							color:$night_voting_cor;
+						}
+
+						.ready{
+							border:1px solid $night_gray2_cor;
+							color:$night_gray2_cor;
+							@include border-radius(2px);
+						}
+						.ward{
+							color:$night_cor1;
+							border:1px solid $night_cor1;
+						}
+						.win{
+							color:$night_cor1;
+						}
+						.disappear{
+							color:$night_cor4;
+							border:1px solid $night_cor4;
+						}
+					}
+				}
+				.rpz_predict_tap{
+					.rpz_predict_option{
+						.rpz_option_item{													
+							color:$night_cor4;
+							background:$night_cor3;
+						}
+						.selected{
+							color:$night_gray3_cor;
+							background:$night_pink_cor;
+							border:1px solid $night_cor1;
+						}
+						.correct{
+							color:$night_gray3_cor;
+							background:$night_cor1;
+							border:1px solid $night_cor1;
+						}
+						.unselected{							
+							color:$night_gray3_cor;
+							border:1px solid $night_cor3;
+						}
+						
+					}
+				}
+			}		
+		}
+	}
+	.toast-mask{
+		.toast-player{			
+			.cancel{
+				color:$night_cor4;
+			}
+			.popup-pred-game{
+				.content{
+					border-bottom:none;
+				}
+			}
+			.submit{
+				color:$night_cor5;
+			}
+		}
+	}
+}

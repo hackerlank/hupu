@@ -314,8 +314,16 @@
                             {%/if%}
                     </a>
                 </li>
-
             </ul>
         </div>
+        <div class="analyze">
+            <a href="https://nba.hupu.com/wiki/%E8%BF%9B%E9%98%B6%E6%95%B0%E6%8D%AE">
+                <div class="link-title">
+                    <p class="title">虎扑篮球百科：进攻效率、防守效率等数据说明</p>
+                    <i></i>
+                </div>
+            </a>
+        </div>
+        
     </section>
 {%/block%}

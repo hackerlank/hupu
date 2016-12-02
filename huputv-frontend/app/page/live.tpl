@@ -40,6 +40,7 @@
     <section class="layout-video">
         {%widget
             name="app:widget/video/video.tpl"
+            data = $live
         %}
     </section>
 

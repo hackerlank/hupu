@@ -1,5 +1,7 @@
   var _ = require('common:static/js/underscore/underscore.js');
   var Dialog = require('common:widget/dialog/dialog');
+  var Flash = require('common:widget/flash-movie/flash');
+  var PageEvent = require("common:widget/page-dace/page-dace.es6");
 
   var isfullScreenStatus = 0,
       $video = $('#live-video'),
@@ -20,9 +22,7 @@
         this.$rest = $('#J_liveVideoRest');
 
         // 判断是否安装flash
-        if(!this.hayFlash()){
-          $('#J_zeroClipboard').hide();
-
+        if(!Flash.hayFlash()){
           // video
           $('#live-video').hide();
           $('#J_liveVideoRest').show();
@@ -30,6 +30,7 @@
         }
 
         this.bind();
+        this.flashBind();
       },
       bind: function() {
         var that = this,
@@ -39,6 +40,59 @@
             timer = setTimeout(function() {
                 that.resize();
             }, 300);
+        });
+
+        if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.match(/7./i)=="7.") {
+            $(".J-list a").on("click", function(){
+                window.location.href = $(this).attr("href");
+            });
+        }
+
+        $("#J-video-silde").find("li").on("click", function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            $(this).parents(".main-wrap").find(".btn-enter").attr("href", $(this).attr("data-url"));
+
+            Flash.send('playStream', {
+                url:  $(this).attr("data-rtmp")
+            });
+        });
+      },
+      /**
+       * flash调用事件
+       * @return {[type]} [description]
+       */
+      flashBind: function() {
+        var self = this;
+
+        /**
+         * 网页全屏
+         */
+        Flash.register('trace', function(str) {
+          Flash.debug(str);
+        });
+
+        /**
+         * 发送百度自定义事件
+         * @param {array} arr 自定内容
+         */
+        Flash.register('sendBaiduEvent', function(arr) {
+          PageEvent.sendBaiduEvent(arr);
+        });
+
+        /**
+         * 发送百度播放自定义事件
+         * @param {array} arr 自定内容
+         */
+        Flash.register('sendBaiduPlayEvent', function(value, opt) {
+          return PageEvent.sendBaiduPlayEvent(value, opt);
+        });
+
+        /**
+         * 发送播放时长
+         * @param {string} str dace的数据
+         */
+        Flash.register('sendDacePlayTime', function(str) {
+          return PageEvent.sendDacePlayTime(str);
         });
       },
       wall: function(data) {
@@ -78,63 +132,6 @@
             default:
           }
         }
-      },
-       /**
-       * 调试日志
-       */
-      trace: function(content) {
-        if(/debug/i.test(location.search)){
-              console.log(content);
-        }
-      },
-      /**
-       * flash 交互
-       * @param movieName
-       * @returns {*}
-       */
-      getFlashMovie: function(movieName) {
-          var isIE = navigator.appName.indexOf("Microsoft") != -1;
-          return (isIE) ? window[movieName] : document[movieName];
-      },
-      hayFlash: function() {
-          var flash;
-
-          try{
-              flash = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
-          }catch(e){
-              flash = navigator.plugins['Shockwave Flash'];
-          }
-          return flash;
-      },
-      /**
-       * 视频flash交互
-       */
-      videoFlashMovie: function() {
-          return this.getFlashMovie("live-video_Flash_api");
-      },
-      /**
-       * 和flash交互
-       */
-      callFromJS: function(msg){
-        try{
-          this.videoFlashMovie().callFromJS(msg);
-        } catch(e){
-          console && console.log(e.message);
-        }
-      },
-      /**
-       * web视频全屏
-       */
-      fullScreenVideo: function() {
-          if(!isfullScreenStatus){
-              isfullScreenStatus = true;
-              VideoPlay.resize();
-          }else{
-              isfullScreenStatus = false;
-              SetVideoSize();
-          }
-
-          $('html,body').toggleClass('ui-full-screen');
       },
       resize: function() {
           // 是否播放器播放器窗口全屏

@@ -43,19 +43,44 @@ var cbaPlayer = {
 			//$(".swiper-slide").eq(index).show().siblings(".swiper-slide").hide();
 			if(index == 1){
 				self.getNews("", "tab");
+				self.initScroll();
 			}
-        mySwiper.slideTo(index, 400, false);
+
+            if(index == 0){
+                HupuBridge.send("hupu.ui.slidegesture", {
+                    open : true
+                }, function(){});
+            }else{
+                HupuBridge.send("hupu.ui.slidegesture", {
+                    open : false
+                }, function(){});
+            }
+
+            mySwiper.slideTo(index, 400, false);
 		});
 		//tab滑动切换
 		mySwiper = new Swiper ('.swiper-container', {
 			autoHeight: true,
 			lazyLoading: true,
 			preloadImages: false,
+            resistanceRatio: 0,
 		    onSlideChangeStart: function(swiper){
 		        $("#J-tab").find('li').eq(mySwiper.activeIndex).addClass("active").siblings().removeClass("active");
+
+                if(mySwiper.activeIndex == 0){
+                    HupuBridge.send("hupu.ui.slidegesture", {
+                        open : true
+                    }, function(){});
+                }else{
+                    HupuBridge.send("hupu.ui.slidegesture", {
+                        open : false
+                    }, function(){});
+                }
+
 		        if(mySwiper.activeIndex == 1){
-              self.getNews("", "tab");
-            }
+                  self.getNews("", "tab");
+                  self.initScroll();
+                }
 		    }
 		});
 		// 滚动加载新闻
@@ -67,7 +92,7 @@ var cbaPlayer = {
         //         self.getNews(self.next_nid, "scroll");
         //     }
         // });
-    self.initScroll();
+
 	},
 	initScroll: function() {
 		var self = this;
@@ -120,7 +145,7 @@ var cbaPlayer = {
         	self.next_nid = data.result.data[data.result.data.length-1].nid;
         }else{
         	self.next_nid = null;
-        }       
+        }
 			}
 		})
 	}

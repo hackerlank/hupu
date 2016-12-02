@@ -14,5 +14,5 @@ npm run build;
 
 echo ">>>>>manage scp to [ $devServer ]<<<<<";
 sed -e "s/\.\//\/$product\/static\//g" ./$entry > $dist/$product/$entry
-cp huputv.swf $dist/$product/static/
+cp huputv_1.swf $dist/$product/static/
 scp -r $dist/$product/* $devServer

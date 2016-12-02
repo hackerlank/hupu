@@ -84,6 +84,21 @@ fis.config.merge({
             from: "/config",
             to: '/data/www-data/hupu.com/front-end'
         }],
+        // 违禁图片测试环境
+        admintest: [{
+            receiver: 'http://my.hupu.com/receive.php',
+            from: '/static',
+            to: '/home/www/hoopchina/user/static',
+            exclude: [/\/sass\//i]
+        }, {
+            receiver: 'http://my.hupu.com/receive.php',
+            from: "/template",
+            to: '/home/www/hoopchina/user/templates_against'
+        }, {
+            receiver: 'http://my.hupu.com/receive.php',
+            from: "/config",
+            to: '/home/www/hoopchina/user/templates_against'
+        }],
         //本地
         local: [{
             from: "/template",

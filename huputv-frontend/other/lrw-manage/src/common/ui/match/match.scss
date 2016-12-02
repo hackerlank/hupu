@@ -1,0 +1,227 @@
+@charset "utf-8";
+
+@import "../../../static/sass/vendor/sassCore/base";
+
+/**
+ * 对阵区
+ */
+.ui-match {
+  background: #fff;
+  .match-row,
+  .info-row {
+    @include display-flex();
+    padding: 0 10px;
+    text-align: center;
+  }
+  .col-left,
+  .col-right {
+    position: relative;
+    @include flex(1);
+  }
+  .avatar-inner {
+    padding-bottom: 5px;
+    text-align: center;
+    .avatar {
+      @include inline-block;
+      width: 40px;
+      height: 40px;
+      margin: 10px 10px 0;
+      overflow: hidden;
+      text-align: center;
+      background: #eee;
+      border: 2px solid #ffb3b7;
+      @include border-radius(50%);
+      vertical-align: top;
+      img {
+        width: 100%;
+        vertical-align: top;
+      }
+    }
+    .number {
+      position: relative;
+      z-index: 3;
+      @include inline-block;
+      width: 18px;
+      padding: 12px 2px 2px;
+      font-size: 12px;
+      background: #448aca;
+      color: #fff;
+      vertical-align: top;
+      &:after {
+        content: "";
+        @include arrow(bottom, 9px, #448aca);
+        top: inherit;
+        left: 0;
+        bottom: -9px;
+      }
+    }
+  }
+
+  .defeat-number {
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 2px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #ccc;
+    // @include scale(.8);
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 9px;
+      height: 17px;
+      background: url(./arrow_right.png) no-repeat top left;
+      background-size: cover;
+    }
+    // border-left: none;
+  }
+  .col-left {
+    .defeat-number {
+      left: -10px;
+      &:after {
+        right: -9px;
+        @include scaleX(-1);
+      }
+    }
+  }
+  .col-right {
+    .number {
+      background: #d04646;
+      &:after {
+        border-top-color: #d04646;
+      }
+    }
+    .defeat-number {
+      right: -10px;
+      &:after {
+        left: -9px;
+      }
+    }
+  }
+
+  .match-row {
+    .title {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+    .info {
+      font-size: 12px;
+      color: #a9a9b2;
+    }
+  }
+
+  .match-score {
+    margin: 25px 10px 0;
+    line-height: 1.4;
+    min-width: 60px;
+    border: 1px solid #ccc;
+    .course-number {
+      padding: 0 5px;
+      font-weight: 700;
+      color: #c01e2f;
+      border-bottom: 1px solid #ccc;
+    }
+    .score {
+      padding: 0 5px;
+    }
+  }
+
+  .option-area {
+    @include display-flex();
+    padding: 5px 0 8px;
+    text-align: center;
+    .col-left,
+    .col-right {
+      padding: 0 20px;
+    }
+    .col-left {
+      border-right: 1px solid #eeebeb;
+    }
+    .area-item {
+      padding: 10px 0;
+      @include display-flex();
+      .text {
+        display: block;
+        height: 26px;
+        line-height: 26px;
+        padding: 0 5px;
+        font-size: 14px;
+        background: #c01e2f;
+        color: #fff;
+      }
+      button {
+        display: block;
+        height: 26px;
+        line-height: 26px;
+        padding: 0 7px;
+        background: #fff;
+
+      }
+      .button-add {
+        @include flex(2);
+        border: 1px solid #d04646;
+        color: #d04646;
+        border-right: none;
+        @include border-radius(3px 0 0 3px);
+      }
+      .button-less {
+        @include flex(1);
+        border: 1px solid #999;
+        color: #999;
+        border-left: none;
+        @include border-radius(0 3px 3px 0);
+      }
+    }
+    .button-waiver {
+      display: block;
+  		padding: 5px 8px;
+      margin: 5px 0;
+  		border: 1px solid #C01E2F;
+  		color: #C01E2F;
+  		@include border-radius(3px);
+    }
+  }
+
+  .ok-inner {
+    padding: 12px 0;
+    text-align: center;
+    border-top: 1px solid #eeebeb;
+    a {
+      color: #c01e2f;
+    }
+  }
+}
+
+.ui-team-flex {
+  @include display-flex();
+  .team-red,
+  .team-blue {
+    @include flex(1);
+    font-size: 16px;
+  }
+  .team-red {
+    text-align: right;
+  }
+  .team-blue {
+    text-align: left;
+  }
+  .team-score {
+    padding: 2px 10px 0 ;
+  }
+  .icon-win {
+    @include inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 8px;
+    font-size: 14px;
+    border: 1px solid #ff9900;
+    color: #ff9900;
+  }
+}

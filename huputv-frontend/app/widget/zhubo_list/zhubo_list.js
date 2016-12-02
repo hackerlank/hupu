@@ -1,6 +1,7 @@
 var Toast = require("app:widget/ui-toast/ui-toast.js");
 var _ = require("app:static/js/underscore/underscore.js");
 var common = require("app:widget/ui-common/ui-common.js");
+var refresh = require("app:widget/ui-refresh/ui-refresh.js");
 var _escape = _.escape;
 
 var requestActions = {
@@ -18,6 +19,17 @@ var zhubo_list = {
         this.followContainer = $("#J-myFollow-list");
         this.noFollowContainer = $("#J-follow-null-wrap");
         this.tplRender = _.template($("#J-follow-list").html());
+
+        // this.height = $(window).height() - $('#J-tab-page').height();
+
+        // this.allContainer.css({
+        //     height: this.height
+        // });
+
+        // console.log(this.height);
+
+        this.pages = 1;
+
         if(GM.pagetab == "follow"){
             $("#J-myfollow").addClass("active").siblings().removeClass("active");
             self.tabFollow(function(){
@@ -105,6 +117,18 @@ var zhubo_list = {
             }
             common.login(GM.islogin, followEvent);
         });
+
+        refresh({
+            contentEl: '#J-zhubo-list ul',
+            isRefresh: false,
+            isLoadingMore: true,
+            loadingMoreCallback: function(complete) {
+                self.tabAll(function(val){
+                    // self.isFollow(self.allContainer);
+                    complete(val);
+                });
+            }
+        });
     },
     followZhubo: function(id, callback) {
         var loginEvent = function() {
@@ -161,18 +185,36 @@ var zhubo_list = {
         var self = this;
         if(this.ajaxLock) return;
         this.ajaxLock = true;
+
+        var sendData = {
+            "t": (new Date().getTime()),
+            "json": 1,
+            "page": self.pages
+        }
+
         $.ajax({
             url: requestActions.getAllAnchor,
             type: "GET",
             dataType: "json",
-            data:{
-                "t": (new Date().getTime()),
-                "json":1
+            data: sendData,
+            timeout: 5000,
+            success: function(data){                
+                self.allContainer.find('ul').append( self.tplRender({datas: data.anchorList.list, type:"all",_escape:_escape, withRoomUrl: common.withRoomUrl}) );
+                
+                if(self.pages >= data.anchorList.total_page){
+                    callback && callback("finish");
+                }else{
+                    callback && callback('');
+                    $('.preloader-loading-more').show();
+                    self.pages++;
+                }
+
+                setTimeout(function() {
+                    self.ajaxLock = false;
+                }, 100)
             },
-            success: function(data){
+            error: function(xhr, type){
                 self.ajaxLock = false;
-                self.allContainer.html( self.tplRender({datas: data.anchorList, type:"all",_escape:_escape, withRoomUrl: common.withRoomUrl}) );
-                callback && callback();
             }
         });
     },

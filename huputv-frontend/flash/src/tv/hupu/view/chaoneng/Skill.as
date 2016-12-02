@@ -3,8 +3,8 @@ package tv.hupu.view.chaoneng
 	import flash.display.Sprite;
 	import flash.events.Event;
 	
-	import tv.hupu.events.SocketServiceEvent;
-	import tv.hupu.service.JSSocketService;
+	import tv.hupu.events.JSInterfaceEvent;
+	import tv.hupu.utils.JS2AS;
 	
 	/**
 	 * 超能技能
@@ -37,8 +37,8 @@ package tv.hupu.view.chaoneng
 			initUI();
 			
 			stage.addEventListener(Event.RESIZE, resetStage);
-			JSSocketService.getInstance().addEventListener(SocketServiceEvent.RECEIVE_SKILL_STAT_ON, skillOn);
-			JSSocketService.getInstance().addEventListener(SocketServiceEvent.RECEIVE_SKILL_STAT_OFF, skillOff);
+			JS2AS.getInstance().addEventListener(JSInterfaceEvent.RECEIVE_SKILL_STAT_ON, skillOn);
+			JS2AS.getInstance().addEventListener(JSInterfaceEvent.RECEIVE_SKILL_STAT_OFF, skillOff);
 		}
 		
 		/**
@@ -63,7 +63,7 @@ package tv.hupu.view.chaoneng
 		 * @return 
 		 * 
 		 */		
-		protected function skillOn(evt:SocketServiceEvent){
+		protected function skillOn(evt:JSInterfaceEvent){
 			var data:Object = evt.data;
 			if(data && data.hasOwnProperty('isHomeTeam')){
 				if(data['isHomeTeam']){
@@ -80,7 +80,7 @@ package tv.hupu.view.chaoneng
 		 * @return 
 		 * 
 		 */		
-		protected function skillOff(evt:SocketServiceEvent){
+		protected function skillOff(evt:JSInterfaceEvent){
 			var data:Object = evt.data;
 			if(data && data.hasOwnProperty('isHomeTeam')){
 				if(data['isHomeTeam']){

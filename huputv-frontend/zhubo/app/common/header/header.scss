@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@import "sass/vendor/sassCore/base";
+
+/* header */
+.ui-header {
+    min-height: 60px;
+    background: $red;
+    border-bottom: 1px solid #8d1016;
+    color: $white;
+    @extend %clearfix;
+
+    .ui-header-logo {
+        @include float;
+        margin:13px 25px 0 0;
+    }
+    .header-onlineService {
+        @include float;
+        height: 25px;
+        line-height:25px;
+        padding:0 10px;
+        margin-top:18px;
+        font-family: $fontYaHei;
+        background: #780d12;
+        border:1px solid #b41c23;
+        @include border-radius(2px);
+        .ico-online {
+            @include inline-block;
+            width:15px;
+            height:20px;
+            margin:2px 5px 0 0;
+            overflow:hidden;
+            vertical-align: top;
+            background: url(./img/ico_contact.png) no-repeat 0 0;
+            background-size:100% 100%;
+        }
+        a {
+            display: block;
+            height: 100%;
+            color:$white;
+        }
+    }
+}
+.ui-header-login {
+    @include float(right);
+    line-height:60px;
+    a, a:hover {
+        color: $white;
+
+    }
+}
+@media (max-width: 700px) {
+    .ui-header {
+        .ui-header-login {
+            clear:both;
+            float: none;
+            display:block;
+        }
+    }
+}

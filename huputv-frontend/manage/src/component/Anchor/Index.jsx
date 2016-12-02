@@ -1,10 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router';
-import { Table, Icon, Form,  Modal, Menu, Row, Col, Input,  Button, Checkbox, InputNumber, Radio, Cascader, Popconfirm, message   } from 'antd';
+import { Table, Icon, Form, Modal, Menu, Row, Col, Input,  Button, Checkbox, InputNumber, Radio, Cascader, Popconfirm, message   } from 'antd';
 import classNames from 'classnames';
 import dataService from 'common/dataService';
 import _ from 'common/underscore';
-
 
 const InputGroup = Input.Group;
 const FormItem = Form.Item;

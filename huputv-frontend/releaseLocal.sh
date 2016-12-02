@@ -12,4 +12,9 @@ cd ..;
 sleep 1;
 done
 
+cpPath="../b1/web/tv"
+
+mkdir -p $cpPath
+cp -r ./output/static/tv/** $cpPath
+
 echo "==========All online end========"

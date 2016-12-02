@@ -1,0 +1,18 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+.day-board{
+    float: none;
+    width: 100%;
+    .board-title {
+        .more {
+            @include float(right);
+            font-size: 12px;
+            line-height: 24px;
+            color: #999;
+            &:hover{
+                color: #d04646;
+            }
+        }
+    }
+}

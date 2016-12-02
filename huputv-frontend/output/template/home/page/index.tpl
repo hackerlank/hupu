@@ -7,48 +7,6 @@
 {%require name="common:static/js/videojs/ie8/videojs-ie8.js"%}
 {%require name="common:static/js/videojs/video.js"%}
 {%require name="common:static/js/videojs/videojs-hls.min.js"%}
-{%script%}
-	// 播放器swf
-	videojs.options.flash.swf = "http://b3.hoopchina.com.cn/web/tv/flash/huputv_index2.swf";
-
-	var VideoPlay = require('home:widget/video-play/video');
-
-	VideoPlay.init();
-
-	// 休息中
-	HTV.isLiveRest = parseInt("{%!empty($videoAnnounceError)%}");
-
-	HTV.fullScreenVideo = VideoPlay.fullScreenVideo;
-	HTV.trace = VideoPlay.trace;
-	
-	{%if !empty($datas) %}
-		HTV.roomID = "{%$live.recommendRoomInfo[0].roomid|f_escape_js%}" || 0;
-		// 视频流
-		HTV.flashStreamAddress = function(){
-			return {%if $live.recommendRoomInfo[0].is_live == 1 && $live.recommendRoomInfo[0].live_addr.status == 200%}{%json_encode($live.recommendRoomInfo[0].live_addr.result[1])%}{%else%}[]{%/if%}
-		};
-	{%/if%}
-
-    if(navigator.appName == "Microsoft Internet Explorer" && navigator.appVersion.match(/7./i)=="7.") {
-        $(".J-list a").on("click", function(){
-            window.location.href = $(this).attr("href");
-        });
-    }
-
-	var VideoPlay = require('home:widget/video-play/video');
-
-	$("#J-video-silde").find("li").on("click", function(){
-		$(this).addClass("active").siblings().removeClass("active");
-		$(this).parents(".main-wrap").find(".btn-enter").attr("href", $(this).attr("data-url"));
-
-		VideoPlay.callFromJS({
-			key: "playStream",
-			data: {
-		        url:  $(this).attr("data-rtmp")
-		    }
-		});
-	});
-	{%/script%}
 {%/block%}
 {%block name="content"%}
 <div class="mod-wrap index-wrap" id="J-index-wrap">

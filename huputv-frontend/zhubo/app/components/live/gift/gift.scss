@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+@import "sass/vendor/sassCore/base";
+
+$pop-gift-drop:    "./img/arrow_1.png";
+
+.popup-setiting-gift {
+  .col-left {
+    min-height: 250px;
+    border-left: 1px solid #535353;
+  }
+  .col-right {
+    min-height: 250px;
+    border-right: 1px solid #535353;
+  }
+  .gift-title {
+    @extend %clearfix;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+    h5 {
+      @include float;
+      margin-right: 10px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    .button-modify {
+      @include float;
+      @include inline-block;
+      height: 24px;
+      padding: 0 10px;
+      line-height: 24px;
+      background: #a6171d;
+      color: #fff;
+    }
+  }
+
+  .item {
+    line-height: 1.2;
+    li {
+      @extend %clearfix;
+      padding: 5px 0 5px 5px;
+    }
+    
+    .active {
+      background: #444;
+    }
+  }
+
+  .button-center {
+    padding-top: 100px;
+    text-align: center;
+    a {
+      @include inline-block;
+      position: relative;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 20px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      background: #666;
+      color: #fff;
+      
+    }
+    .button-add {
+      &:after {
+        content: "";
+        @include inline-block;
+        @include arrow(right, 6px, #fff);
+        position: relative;
+        margin-left: 5px;
+      }
+    }
+    .button-remove {
+      &:before {
+        content: "";
+        @include inline-block;
+        @include arrow(left, 6px, #fff);
+        position: static;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.setting-gift-list {
+  .drop-move {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    z-index: 8;
+    width: 25px;
+    height: 56px;
+    background: #444;
+    border: 1px solid #555;
+    background: url($pop-gift-drop) no-repeat center;
+  }
+  .pic {
+    @include float;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    margin-right: 10px;
+    img {
+      width: 100%;
+    }
+  }
+  .name {
+    font-size: 14px;
+    height: 18px;
+    padding-right: 25px;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  .money {
+    color: #777;
+  }
+}
+
+.angular-ui-tree {}
+
+// .angular-ui-tree-empty {
+//     border: 1px dashed #bbb;
+//     min-height: 100px;
+//     background-color: #e5e5e5;
+//     background-image: -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+//     background-image: -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+//     background-image: linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+//     background-size: 60px 60px;
+//     background-position: 0 0, 30px 30px;
+// }
+
+.angular-ui-tree-nodes {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.angular-ui-tree-nodes .angular-ui-tree-nodes {
+    padding-left: 20px;
+}
+
+.angular-ui-tree-node, .angular-ui-tree-placeholder {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 20px;
+    line-height: 20px;
+}
+
+.angular-ui-tree-hidden {
+    display: none;
+}
+
+.angular-ui-tree-placeholder {
+    margin: 5px 0;
+    padding: 0;
+    min-height: 30px;
+}
+
+.angular-ui-tree-handle {
+    cursor: move;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 20px;
+    line-height: 20px;
+}
+
+.angular-ui-tree-drag {
+    position: absolute;
+    pointer-events: none;
+    z-index: 999;
+    opacity: .8;
+}

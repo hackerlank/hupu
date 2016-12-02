@@ -1,0 +1,34 @@
+{
+    "game_info": {
+        "id": "34",
+        "title": "上海路人王第四轮",
+        "division": "上海",
+        "signup_start": "1474438674",
+        "signup_end": "1474438674",
+        "game_start": "1474438674",
+        "room_id": "10333",
+        "match_id": "9787",
+        "num": "4",
+        "game_status": "5",
+        "match_status": "8"
+    },
+    "wheel_match_url": "/m/passerbyking/wheel/match/34",
+    "wheel_rank_url": "/m/passerbyking/wheel/rank/34",
+    "top8_match_url": "/m/passerbyking/top8/match/34",
+    "top8_rank_url": "/m/passerbyking/top8/rank/34",
+    "rank_url": "/m/passerbyking/rank/list/34",
+    "json": "1",
+    "userInfo": {
+        "uid": "5365981",
+        "username": "nevergivejun",
+        "nickname": "nevergivejun"
+    },
+    "login_url": "https://passport.liangle.com/pc/login?project=liangle&from=m",
+    "logout_url": "https://passport.liangle.com/pc/logout",
+    "register_url": "https://passport.liangle.com/pc/register?project=liangle&from=m",
+    "is_login": 1,
+    "in_kanqiu": 0,
+    "night": 0,
+    "client": "",
+    "platform": ""
+}

@@ -45,10 +45,8 @@
 .chatroom {
     position: relative;
     z-index: 1;
-    background: #fff;
-    border-bottom: 1px solid #ddd;
     .chatroom-list {
-        height: 416px;
+        height: 483px;
         padding: 10px 15px;
         overflow: auto;
         line-height: 1.4;
@@ -103,6 +101,12 @@
             font-size: 12px;
             color: #777;
         }
+        .chat-content-gift {
+          color: #d79908;
+        }
+        .chat-content-pred {
+          color: #23984f;
+        }
         .chat-news {
             font-size: 12px;
             .icon-news {
@@ -135,7 +139,6 @@
     .send-hot-line {
         padding: 10px;
         font-size: 12px;
-        border-top: 1px solid #ddd;
     }
     .textarea-inner {
         margin-bottom: 5px;
@@ -350,6 +353,8 @@
         .speak-content {
             line-height: 1.2;
             min-height: 28px;
+            word-wrap: break-word;
+            word-break: break-all;
         }
     }
     .message-title {
@@ -367,6 +372,8 @@
     .message-content {
         line-height: 1.2;
         min-height: 28px;
+        word-wrap: break-word;
+        word-break: break-all
     }
 }
 .zhubo-speak-list {

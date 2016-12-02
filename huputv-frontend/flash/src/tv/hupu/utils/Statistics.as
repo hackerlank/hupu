@@ -167,7 +167,7 @@ package tv.hupu.utils
 		 */		
 		private static function sendPlayTime(_sec:Number):void{
 			sendBaiduDurEvent(TYPE_DUR_PLAYTIME, _sec/60);
-			JSInterface.sendDaceDurEvent(_sec/60);
+			AS2JS.sendDaceDurEvent(_sec/60);
 			SOStorage.setValue(SOStorage.KEY_STATIS_PLAYTIME, 0);
 		}
 		
@@ -197,7 +197,7 @@ package tv.hupu.utils
 		 */		
 		private static function sendBaiduPlayEvent(type:String):void{
 //			ConsTrace.htrace("sendBaiduPlayEvent: " + type);
-			JSInterface.sendBaiduPlayEvent(type);
+			AS2JS.sendBaiduPlayEvent(type);
 		}
 		
 		/**
@@ -207,7 +207,7 @@ package tv.hupu.utils
 		 */		
 		private static function sendBaiduDurEvent(type:int, val:Number):void{
 //			ConsTrace.htrace("sendBaiduDurEvent: " + type, val);
-			JSInterface.sendBaiduDurEvent(type, val);
+			AS2JS.sendBaiduDurEvent(type, val);
 		}
 	}
 }

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*
+ * 登录
+ */
+@import "sass/vendor/sassCore/base";
+
+.login-wrap {
+  max-width: $width-wrap;
+  margin: 60px auto 0;
+  background: $white;
+  .login-header {
+    height: 100px;
+    line-height:100px;
+    background: $red;
+    text-align:center;
+    .hupu-logo {
+      @include float;
+      width:25%;
+      height:66px;
+      padding-top: 34px;
+      border-right:1px solid #ba3746;
+    }
+    .kanqiu-logo {
+      @include float(right);
+      width:74%;
+    }
+  }
+  .login-main {
+    padding: 20px;
+  }
+  .login-buttom {
+    padding: 150px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #a6171d;
+    a {
+      color: #a6171d;
+    }
+  }
+
+}

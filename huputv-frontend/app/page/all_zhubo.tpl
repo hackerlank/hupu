@@ -33,8 +33,10 @@
                 <p>还没有关注的主播</p>
             </div>
         </section>
-        <ul id="J-zhubo-list" {%if $active=="follow"%}style="display:none"{%/if%}>
-        </ul>
+        <div class="all-zhubo-list" id="J-zhubo-list" {%if $active=="follow"%}style="display:none"{%/if%}>
+            <ul>
+            </ul>
+        </div>
         <ul id="J-myFollow-list" {%if $active=="all"%}style="display:none"{%/if%}></ul>
 
         <script id="J-follow-list" type="text/template">

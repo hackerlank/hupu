@@ -18,8 +18,8 @@ package tv.hupu.view.gift
 	
 	import org.bytearray.display.ScaleBitmap;
 	
-	import tv.hupu.events.SocketServiceEvent;
-	import tv.hupu.service.JSSocketService;
+	import tv.hupu.events.JSInterfaceEvent;
+	import tv.hupu.utils.JS2AS;
 	
 	/**
 	 * 人浪礼物特效，显示在底部
@@ -66,7 +66,7 @@ package tv.hupu.view.gift
 			initUI();
 			
 			stage.addEventListener(Event.RESIZE, loaderComplete);
-			JSSocketService.getInstance().addEventListener(SocketServiceEvent.RECEIVE_WAVE_GIFT, receiveGift);
+			JS2AS.getInstance().addEventListener(JSInterfaceEvent.RECEIVE_WAVE_GIFT, receiveGift);
 		}
 		
 		/**
@@ -214,7 +214,7 @@ package tv.hupu.view.gift
 		 * @param evt
 		 * 
 		 */		
-		protected function receiveGift(evt:SocketServiceEvent):void{
+		protected function receiveGift(evt:JSInterfaceEvent):void{
 			queue.push(evt.data);
 			if(queue.length == 1){	//如果当前队列只有一个，则直接显示
 				show();

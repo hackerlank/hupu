@@ -157,7 +157,7 @@ body {
 		margin-right: 4px;
 	}
 
-	.link-touched {
+	.link:active {
 		.num {
 			background-color: #dcdfe3;
 		}
@@ -341,7 +341,7 @@ body.night {
 			border-left-color: #99222c;
 		}
 
-		.link-touched {
+		.link:active {
 			.num {
 				background-color: #1f1f1f;
 			}

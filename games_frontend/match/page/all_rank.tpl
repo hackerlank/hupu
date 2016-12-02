@@ -6,6 +6,7 @@
     {%require name="common:static/js/underscore/underscore.js"%}
     {%require name="common:static/js/zepto/zepto.js"%}
     {%require name="match:widget/rank_list/rank_list.scss"%}
+    <script type="text/javascript" src="//w1.hoopchina.com.cn/hybrid/common/hpbridge_v1.0.1.js"></script>
     {%script%}
         window.GM = {
             "client": "{%$client%}" || "x",

@@ -5,6 +5,7 @@
 {%block name="head_static"%}
     {%require name="common:static/js/zepto/zepto.js"%}
     {%require name="match:widget/rank_list/rank_list.scss"%}
+    <script type="text/javascript" src="//w1.hoopchina.com.cn/hybrid/common/hpbridge_v1.0.1.js"></script>
     {%script%}
         window.GM = {
             "client": "{%$client%}" || "x",
@@ -20,6 +21,21 @@
             window.location.href = current.attr("link");
         });
 
+        initBridge(function(){
+			HupuBridge.send("hupu.ui.share", {
+				open: false
+			}, function(){});
+		});
+
+        function initBridge(callback) {
+            if(window.HupuBridge){
+                callback();
+            }else{
+                document.addEventListener("hupuBridgeReady", function(){
+                    callback();
+                });
+            }
+        }
     {%/script%}
     {%style%}
     .detail span {
@@ -83,7 +99,7 @@
                         <td width="30%" align="center" style="line-height: normal; vertical-align: middle;">{%$val.team_name%}</td>
                         <td width="20%" align="center">
                             {%if $rank_type == "pass_per_p"%}
-                                {%$val[$rank_type]*100%}%
+                                {%$val[$field]*100%}%
                             {%else%}
                                 {%if $league_name == "afccl" || $league_name == "chlg" || $league_name == "uefael"%}
                                     {%$val[$field]%}

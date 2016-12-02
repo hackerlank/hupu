@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+@import "../../static/sass/vendor/sassCore/base";
+
+.start-confirm-wrap {
+  .ok-inner {
+    padding: 12px 0;
+    text-align: center;
+    background: #fff;
+    // border-top: 1px solid #eeebeb;
+    a {
+      color: #c01e2f;
+    }
+  }
+}
+.ui-play-list-number-1{
+	border-top:1px solid #ebebeb;
+}

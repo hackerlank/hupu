@@ -1,4 +1,3 @@
-(function() {
   var slide = {
     init: function() {
       this.wrap = $('.live-recommend');
@@ -21,7 +20,10 @@
     },
     bind: function() {
       var self = this;
-      $(window).on("resize", self.calcMax.bind(self));
+      
+      $(window).on("resize", function() {
+        self.calcMax.bind(self);
+      });
 
       this.leftBtn.on('click', function() {
         if (self.cur <= 0) {
@@ -55,6 +57,4 @@
     }
   };
 
-  slide.init();
-
-})()
+module.exports = slide;

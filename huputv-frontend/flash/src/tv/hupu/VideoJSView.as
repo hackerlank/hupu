@@ -3,34 +3,28 @@ package tv.hupu{
     import com.greensock.TweenLite;
     
     import flash.display.DisplayObject;
-    import flash.display.Loader;
     import flash.display.Sprite;
     import flash.display.StageDisplayState;
     import flash.events.Event;
     import flash.events.KeyboardEvent;
     import flash.events.MouseEvent;
-    import flash.events.NetStatusEvent;
     import flash.events.TimerEvent;
     import flash.external.ExternalInterface;
     import flash.media.Video;
-    import flash.net.URLRequest;
     import flash.utils.Timer;
-    import flash.utils.getTimer;
     
     import tv.hupu.conf.ControlBarConfig;
-    import tv.hupu.conf.ExternalErrorEventName;
-    import tv.hupu.conf.ExternalEventName;
+    import tv.hupu.conf.PlaybackType;
     import tv.hupu.events.ControlBarEvent;
-    import tv.hupu.events.SocketServiceEvent;
+    import tv.hupu.events.JSInterfaceEvent;
     import tv.hupu.events.VideoJSEvent;
     import tv.hupu.events.VideoPlaybackEvent;
-    import tv.hupu.service.JSSocketService;
+    import tv.hupu.utils.AS2JS;
     import tv.hupu.utils.ConsTrace;
-    import tv.hupu.utils.JSInterface;
+    import tv.hupu.utils.JS2AS;
     import tv.hupu.utils.SOStorage;
     import tv.hupu.utils.Statistics;
     import tv.hupu.view.barrage.Barrage;
-    import tv.hupu.view.chaoneng.Skill;
     import tv.hupu.view.gift.SpecialGift;
     import tv.hupu.view.gift.WaveGift;
     import tv.hupu.view.stage.StageLoading;
@@ -51,9 +45,11 @@ package tv.hupu{
 		private var _toast:Toast;
 //		private var _skill:Skill;
 		private var _videojj:VideoJJ;
+		private var _currentVol:Number;
 
-		private var jsSocketService:JSSocketService;
+		private var jsInterface:JS2AS;
         private var _model:VideoJSModel;
+		private var _progTimer:Timer;
 
         public function VideoJSView(){
 			if(this.stage){
@@ -73,9 +69,10 @@ package tv.hupu{
             _model.addEventListener(VideoPlaybackEvent.ON_VIDEO_DIMENSION_UPDATE, onDimensionUpdate);
 			_model.addEventListener(VideoPlaybackEvent.ON_NETSTREAM_STATUS, onNetStreamStatus);
 			
-			jsSocketService = JSSocketService.getInstance();
-			jsSocketService.addEventListener(SocketServiceEvent.RECEIVE_GET_BEANS, rcvCoin);
-			jsSocketService.addEventListener(SocketServiceEvent.RECEIVE_GET_BEANS_RESULT, rcvCoinResult);
+			jsInterface = JS2AS.getInstance();
+			jsInterface.addEventListener(JSInterfaceEvent.RECEIVE_GET_BEANS, rcvCoin);
+			jsInterface.addEventListener(JSInterfaceEvent.RECEIVE_GET_BEANS_RESULT, rcvCoinResult);
+			jsInterface.addEventListener(JSInterfaceEvent.RECEIVE_STREAM_ADDR, rcvStreamAddr);
 			Statistics.getInstance().model = _model;
 	
             _uiBackground = new Sprite();
@@ -100,7 +97,7 @@ package tv.hupu{
 			_stgLoading.show();
 
 			_uiBarrage = new Barrage();
-			_uiBarrage.injectService(jsSocketService);
+			_uiBarrage.injectService(jsInterface);
 			addChild(_uiBarrage);
 			
 			_uiSpecialGift = new SpecialGift();
@@ -119,6 +116,9 @@ package tv.hupu{
 			_uiControl.addEventListener(ControlBarEvent.BTN_VOLUME, controlbarEvent);
 			_uiControl.addEventListener(ControlBarEvent.BTN_SEND, controlbarEvent);
 			_uiControl.addEventListener(ControlBarEvent.BTN_DEFI, controlbarEvent);
+			_uiControl.addEventListener(ControlBarEvent.BTN_PLAY, controlbarEvent);
+			_uiControl.addEventListener(ControlBarEvent.BTN_PAUSE, controlbarEvent);
+			_uiControl.addEventListener(ControlBarEvent.PROG_PLAYING, controlbarEvent);
 			stage.addEventListener(Event.RESIZE, stageResize);
 			stage.addEventListener(MouseEvent.MOUSE_MOVE, showCtrlbar);
 			stage.addEventListener(MouseEvent.MOUSE_DOWN, showCtrlbar);
@@ -154,6 +154,16 @@ package tv.hupu{
 				if(_model.rtmpStream){
 					_model.rtmpStream = _model.rtmpStream;
 				}
+			}else if(evt.type == ControlBarEvent.BTN_PAUSE){
+				//暂停
+				changeLiveStatus(true);
+			}else if(evt.type == ControlBarEvent.BTN_PLAY){
+				//播放
+			}else if(evt.type == ControlBarEvent.PROG_PLAYING){
+				//进度条
+				if(evt.data != null){
+					_model.seekByPercent(Number(evt.data)/100);
+				}
 			}else if(evt.type == ControlBarEvent.BTN_BARRAGE){
 				//弹幕开关
 				var _on:Boolean = Boolean(evt.data);
@@ -178,18 +188,14 @@ package tv.hupu{
 					if(stage.displayState != StageDisplayState.NORMAL){
 						stage.displayState = StageDisplayState.NORMAL;
 					}
-					try{
-						ExternalInterface.call('HTV.fullScreenVideo');
-					}catch(e:Error){
-						
-					}
+					AS2JS.webFullscreen();
 				}
 			}else if(evt.type == ControlBarEvent.BTN_VOLUME){
 				//音量控制
 				_model.volume = Number(evt.data) / 100;
 			}else if(evt.type == ControlBarEvent.BTN_SEND){
 				//发送弹幕
-				JSSocketService.getInstance().send(String(evt.data));
+				JS2AS.getInstance().send(String(evt.data));
 				Statistics.getInstance().sendBtnClick(Statistics.COUNT_SEND);
 			}else if(evt.type == ControlBarEvent.BTN_DEFI){
 				//清晰度选择
@@ -267,8 +273,8 @@ package tv.hupu{
 				ConsTrace.htrace(i + ": " + _model.metadata[i]);  
 			}  
 			
-//			_model.volume = Number(_uiControl.getVolume()) / 100;
-			_uiControl.setVolume(_model.volume * 100);
+			_model.volume = Number(_uiControl.getVolume()) / 100;
+//			_uiControl.setVolume(_model.volume * 100);
 			
             sizeVideoObject();
         }
@@ -283,12 +289,23 @@ package tv.hupu{
 				case "NetStream.Buffer.Empty":
 				case "NetStream.Seek.Notify":
 					_stgLoading.show();
+					setVodStatus(false);
 					break;
 				case "NetStream.Buffer.Full":
 					_stgLoading.hide();
+					setVodStatus(true);
 					break;
-				case "NetStream.Play.Stop":
+				case "NetStream.Play.Stop"://录播完成播放，重新开始播放，或者通知JS
+					setVodStatus(false);
+					_model.seekBySeconds(0);
+					break;
+				case "NetStream.Pause.Notify":
+					setVodStatus(false);
+					break;
 				case "NetStream.Play.StreamNotFound":
+					break;
+				case "NetStream.Unpause.Notify":
+					setVodStatus(true);
 					break;
 				default:
 					break;
@@ -300,7 +317,7 @@ package tv.hupu{
 		 * @param evt [SocketServiceEvent] msg: 你有10个金豆可 <FONT COLOR='#ff7e00'><a href='event:getBeans'>领取</a></FONT>
 		 * 
 		 */		
-		private function rcvCoin(evt:SocketServiceEvent):void{
+		private function rcvCoin(evt:JSInterfaceEvent):void{
 			//只在全屏模式下才显示领取金豆
 			var msg:String = String(evt.data);
 			if(msg && (_uiControl.isWebFullscreen || stage.displayState != StageDisplayState.NORMAL)){
@@ -316,7 +333,7 @@ package tv.hupu{
 		 * 
 		 */		
 		private function getBeans(evt:Event):void{
-			JSInterface.getBeans();
+			AS2JS.getBeans();
 //			rcvCoinResult(new SocketServiceEvent(SocketServiceEvent.RECEIVE_GET_BEANS_RESULT, "领取成功"));
 		}
 		
@@ -325,12 +342,118 @@ package tv.hupu{
 		 * @param num
 		 * 
 		 */		
-		private function rcvCoinResult(evt:SocketServiceEvent):void{
+		private function rcvCoinResult(evt:JSInterfaceEvent):void{
 			//只在全屏模式下才显示领取金豆成功/失败
 			var msg:String = String(evt.data);
 			if(msg && (_uiControl.isWebFullscreen || stage.displayState != StageDisplayState.NORMAL)){
 				_toast.show(msg, 2);
 			}
+		}
+		
+		/**
+		 * 设置点播的播放状态
+		 * @param playing
+		 * 
+		 */		
+		private function setVodStatus(playing:Boolean):void{
+			if(_uiControl){
+				if (_model.currentPlaybackType == PlaybackType.HTTP)
+				{
+					_uiControl.setNetStatus(playing);
+					if(_progTimer){
+						if(playing){
+							_progTimer.addEventListener(TimerEvent.TIMER, playProgress);
+						}else{
+							_progTimer.removeEventListener(TimerEvent.TIMER, playProgress);
+						}
+					}
+				}
+				else
+				{
+					if (playing) _uiControl.setNetStatus(playing);
+				}
+			}
+		}
+		
+		/**
+		 * js触发新的流地址
+		 * @param num
+		 * 
+		 */		
+		private function rcvStreamAddr(evt:JSInterfaceEvent):void{
+			//只在全屏模式下才显示领取金豆成功/失败
+			var data:Object = evt.data;
+			if(data && data.hasOwnProperty('url')){
+				var url:String = String(data['url']);
+				if(/^http/i.test(url)){   //http协议
+					_model.src = url;
+					_uiControl.setPlaybackType(PlaybackType.HTTP);
+					if(_progTimer){
+						_progTimer.removeEventListener(TimerEvent.TIMER, playProgress);
+						_progTimer = null;
+					}
+					_progTimer = new Timer(100); //每秒更新10次进度，可调整
+					_progTimer.addEventListener(TimerEvent.TIMER, playProgress);
+					_progTimer.start();
+				}else if(/^rtmp/i.test(url)){   //rtmp协议
+					var _arr:Array = url.split("/");
+					var _st:String = _arr.pop();
+					if(_model.rtmpStream != _st){
+						_model.autoplay = true;
+						_model.rtmpConnectionURL = _arr.join("/");	//rtmpConnectionURL: rtmp://pull6.arenazb.hupu.com/test
+						_model.rtmpStream = _st;	//rtmpStream：f1c12bd966d0ae1a71b2b0b723fd0473_1000
+						_uiControl.setPlaybackType(PlaybackType.RTMP);
+					}
+				}
+			}else{
+				ConsTrace.htrace('无效的参数地址');
+			}
+		}
+		
+		/**
+		 * 更新播放进度
+		 * @param evt
+		 * 
+		 */		
+		private function playProgress(evt:Event):void{
+			if(_model && _model.duration > 0){
+				_uiControl.setProgress(100*_model.time/_model.duration);
+			}
+		}
+		
+		/**
+		 * 更改当前直播状态
+		 * @param living
+		 * 
+		 */		
+		private function changeLiveStatus(living:Boolean):void{
+			// 播放按钮
+			_uiControl.setPlayButtonStatus(living);
+			if (living)
+			{
+				ConsTrace.htrace('changeLiveStatus set pause');
+				stage.addEventListener(MouseEvent.CLICK, stageMouseClick);
+				_currentVol = _model.volume;
+				_model.volume = 0;
+
+			}
+			else
+			{
+				ConsTrace.htrace('changeLiveStatus set live');
+				_model.volume = _currentVol;
+			}
+		}
+		
+		private function stageMouseClick(evt:MouseEvent):void{
+			_stgLoading.coverVideo();
+			stage.removeEventListener(MouseEvent.CLICK, stageMouseClick);
+			stage.addEventListener(MouseEvent.CLICK, removeVideoCovers);
+		}
+		
+		private function removeVideoCovers(evt:MouseEvent):void{
+			_stgLoading.removeVideoCover();
+			stage.removeEventListener(MouseEvent.CLICK, removeVideoCovers);
+			changeLiveStatus(false);
 		}
 		
 		private function stageResize(e:Event):void{

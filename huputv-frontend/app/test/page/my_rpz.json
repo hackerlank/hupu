@@ -1,158 +1,661 @@
 {
-  "userPredictionInfo": {
-    "puid": "21007175",
-    "score": "0",
-    "frequency": "24",
-    "win": "5",
-    "today_win_score": "0",
-    "day_rank": "0",
-    "month_rank": "1",
-    "magnification": 1.4,
-    "userCount": "243"
-  },
-  "userTopicStatus": {
-    "win": 13,
-    "lose": 8,
-    "rate": 62
-  },
-  "userTopicList": {
-    "days": {
-      "2016-09-01": "78"
+    "userPredictionInfo": {
+        "puid": "29035272",
+        "score": "0",
+        "frequency": "34",
+        "win": "1",
+        "today_win_score": "0",
+        "day_rank": "0",
+        "month_rank": "0",
+        "magnification": 1,
+        "userCount": "254"
     },
-    "data": [
-      {
-        "id": "547",
-        "puid": "21007175",
-        "topic_id": "343",
-        "option": "2",
-        "platform": "pc",
-        "win_score": "0",
-        "create_time": "1472734534",
-        "status": "0",
-        "topicInfo": {
-          "id": "343",
-          "option1": "aa",
-          "option2": "bb",
-          "score": "20",
-          "status": "0",
-          "right_option": "0"
-        }
-      },
-      {
-        "id": "512",
-        "puid": "21007175",
-        "topic_id": "332",
-        "option": "2",
-        "platform": "pc",
-        "win_score": "78",
-        "create_time": "1472711129",
-        "status": "2",
-        "topicInfo": {
-          "id": "332",
-          "option1": "aa",
-          "option2": "33",
-          "score": "60",
-          "status": "2",
-          "right_option": "2"
-        }
-      }
-    ],
-    "day": "2016-09-01",
-    "days_score": {
-      "2016-09-01": "78",
-      "2016-08-31": "24",
-      "2016-08-29": "64",
-      "2016-08-24": "0",
-      "2016-08-11": "-60",
-      "2016-08-10": "-60",
-      "2016-08-09": "20",
-      "2016-08-08": "-38",
-      "2016-08-05": "40",
-      "2016-08-04": "20"
+    "userTopicStatus": {
+        "win": 3,
+        "lose": 3,
+        "rate": 50
     },
-    "chart_data": [
-      "78",
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "chart_date": [
-      "2016-09-01",
-      "2016-09-02",
-      "2016-09-03",
-      "2016-09-04",
-      "2016-09-05",
-      "2016-09-06",
-      "2016-09-07",
-      "2016-09-08",
-      "2016-09-09",
-      "2016-09-10",
-      "2016-09-11",
-      "2016-09-12",
-      "2016-09-13",
-      "2016-09-14",
-      "2016-09-15",
-      "2016-09-16",
-      "2016-09-17",
-      "2016-09-18",
-      "2016-09-19",
-      "2016-09-20",
-      "2016-09-21",
-      "2016-09-22",
-      "2016-09-23",
-      "2016-09-24",
-      "2016-09-25",
-      "2016-09-26",
-      "2016-09-27",
-      "2016-09-28",
-      "2016-09-29",
-      "2016-09-30"
-    ],
-    "max": "78",
-    "min": 0,
-    "timeFormat": {
-      "date": "09/01",
-      "cn": "星期四"
+    "userTopicList": {
+        "days": [],
+        "data": [
+            {
+                "id": "1176",
+                "puid": "29035272",
+                "topic_id": "834",
+                "option": "3",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477914714",
+                "status": "0",
+                "topicInfo": {
+                    "id": "834",
+                    "title": "测试 10333 预测题",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "12121"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "4234234"
+                        },
+                        {
+                            "option_id": 3,
+                            "option": "432423"
+                        },
+                        {
+                            "option_id": 4,
+                            "option": "42342342"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1175",
+                "puid": "29035272",
+                "topic_id": "910",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477914628",
+                "status": "0",
+                "topicInfo": {
+                    "id": "910",
+                    "title": "法撒旦法",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "发送到发送到"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "法师打发啊"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1174",
+                "puid": "29035272",
+                "topic_id": "941",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477913656",
+                "status": "0",
+                "topicInfo": {
+                    "id": "941",
+                    "title": "１１１１１１１１１",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "１１１１１１１１"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "２２２２２２２２"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1165",
+                "puid": "29035272",
+                "topic_id": "914",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477901013",
+                "status": "0",
+                "topicInfo": {
+                    "id": "914",
+                    "title": "2222222222",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "11111111"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "22222222"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1164",
+                "puid": "29035272",
+                "topic_id": "997",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477899950",
+                "status": "0",
+                "topicInfo": {
+                    "id": "997",
+                    "title": "55555555555",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "55555555"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "55555555"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1161",
+                "puid": "29035272",
+                "topic_id": "915",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477899471",
+                "status": "0",
+                "topicInfo": {
+                    "id": "915",
+                    "title": "333333333333",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "11111111"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "12222222"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1160",
+                "puid": "29035272",
+                "topic_id": "916",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477899467",
+                "status": "0",
+                "topicInfo": {
+                    "id": "916",
+                    "title": "44444444",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "111"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "222"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1159",
+                "puid": "29035272",
+                "topic_id": "947",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477899456",
+                "status": "0",
+                "topicInfo": {
+                    "id": "947",
+                    "title": "男男女女男男女女",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "１１１１１１１１"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "１１１２２２２２"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1157",
+                "puid": "29035272",
+                "topic_id": "987",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477899446",
+                "status": "0",
+                "topicInfo": {
+                    "id": "987",
+                    "title": "1111111111111111111",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "11111111"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "11111111"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1156",
+                "puid": "29035272",
+                "topic_id": "1016",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "20",
+                "create_time": "1477899389",
+                "status": "2",
+                "topicInfo": {
+                    "id": "1016",
+                    "title": "11111111111111111111111111111111",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "11111111"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "11111111"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "2",
+                    "right_option": "2"
+                }
+            },
+            {
+                "id": "1155",
+                "puid": "29035272",
+                "topic_id": "929",
+                "option": "1",
+                "platform": "pc",
+                "win_score": "0",
+                "create_time": "1477899285",
+                "status": "0",
+                "topicInfo": {
+                    "id": "929",
+                    "title": "不不不不放大放大",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "１１１发发"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "２２２２２额f"
+                        }
+                    ],
+                    "score": "60",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1154",
+                "puid": "29035272",
+                "topic_id": "940",
+                "option": "2",
+                "platform": "pc",
+                "win_score": "0",
+                "create_time": "1477899279",
+                "status": "0",
+                "topicInfo": {
+                    "id": "940",
+                    "title": "一样他样呀呀呀呀呀呀呀一样一样呀呀呀呀呀呀呀一样一样呀呀呀呀呀呀呀一样一样呀呀呀呀呀呀呀一样一样呀呀呀呀呀呀呀一样一样呀呀呀呀呀呀呀一样一样呀呀呀呀呀呀呀一样一样呀呀呀呀呀呀呀一样一样呀呀呀呀呀呀呀他",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "分分分分分人发发"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "得分分各个而非菲"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1153",
+                "puid": "29035272",
+                "topic_id": "939",
+                "option": "1",
+                "platform": "pc",
+                "win_score": "0",
+                "create_time": "1477899276",
+                "status": "0",
+                "topicInfo": {
+                    "id": "939",
+                    "title": "不不不不１１１１",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "１１１去去去去吧"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "２２２我问问"
+                        }
+                    ],
+                    "score": "60",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1152",
+                "puid": "29035272",
+                "topic_id": "1000",
+                "option": "2",
+                "platform": "pc",
+                "win_score": "0",
+                "create_time": "1477899268",
+                "status": "0",
+                "topicInfo": {
+                    "id": "1000",
+                    "title": "88888888888888",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "88888888"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "88888888"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1151",
+                "puid": "29035272",
+                "topic_id": "1014",
+                "option": "1",
+                "platform": "pc",
+                "win_score": "0",
+                "create_time": "1477899263",
+                "status": "0",
+                "topicInfo": {
+                    "id": "1014",
+                    "title": "2222222222222",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "11111111"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "22222222"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1150",
+                "puid": "29035272",
+                "topic_id": "476",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477898936",
+                "status": "0",
+                "topicInfo": {
+                    "id": "476",
+                    "title": "本场谁会赢3？",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "test multi 11"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "test multi 22"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1139",
+                "puid": "29035272",
+                "topic_id": "477",
+                "option": "1",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477897386",
+                "status": "0",
+                "topicInfo": {
+                    "id": "477",
+                    "title": "本场谁会赢4？",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "test multi 11"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "test multi 22"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1137",
+                "puid": "29035272",
+                "topic_id": "909",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477897325",
+                "status": "0",
+                "topicInfo": {
+                    "id": "909",
+                    "title": "f'd'sa'f",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "是的发生的"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "法撒旦飞"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1133",
+                "puid": "29035272",
+                "topic_id": "911",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477897154",
+                "status": "0",
+                "topicInfo": {
+                    "id": "911",
+                    "title": "法撒旦飞",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "fasdfas"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "fasdfa"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            },
+            {
+                "id": "1130",
+                "puid": "29035272",
+                "topic_id": "912",
+                "option": "2",
+                "platform": "h5",
+                "win_score": "0",
+                "create_time": "1477897114",
+                "status": "0",
+                "topicInfo": {
+                    "id": "912",
+                    "title": "阿斯顿发生",
+                    "option": [
+                        {
+                            "option_id": 1,
+                            "option": "fa's'd'f"
+                        },
+                        {
+                            "option_id": 2,
+                            "option": "发大水发"
+                        }
+                    ],
+                    "score": "20",
+                    "status": "0",
+                    "right_option": "0"
+                }
+            }
+        ],
+        "day": "2016-10-31",
+        "days_score": {
+            "2016-10-31": "20",
+            "2016-10-26": "-40"
+        },
+        "chart_data": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+        ],
+        "chart_date": [
+            "2016-11-01",
+            "2016-11-02",
+            "2016-11-03",
+            "2016-11-04",
+            "2016-11-05",
+            "2016-11-06",
+            "2016-11-07",
+            "2016-11-08",
+            "2016-11-09",
+            "2016-11-10",
+            "2016-11-11",
+            "2016-11-12",
+            "2016-11-13",
+            "2016-11-14",
+            "2016-11-15",
+            "2016-11-16",
+            "2016-11-17",
+            "2016-11-18",
+            "2016-11-19",
+            "2016-11-20",
+            "2016-11-21",
+            "2016-11-22",
+            "2016-11-23",
+            "2016-11-24",
+            "2016-11-25",
+            "2016-11-26",
+            "2016-11-27",
+            "2016-11-28",
+            "2016-11-29",
+            "2016-11-30"
+        ],
+        "max": 0,
+        "min": 0,
+        "timeFormat": {
+            "date": "10/31",
+            "cn": "星期一"
+        },
+        "next": "2016-10-26"
     },
-    "next": "2016-08-31"
-  },
-  "n": "0",
-  "test": "1",
-  "userInfo": {
-    "uid": "21007175",
-    "username": "伪球迷啊",
-    "nickname": "伪球迷啊"
-  },
-  "login_url": "http://passport.liangle.com/pc/login?project=liangle&from=m",
-  "logout_url": "http://passport.liangle.com/pc/logout",
-  "register_url": "http://passport.liangle.com/pc/register?project=liangle&from=m",
-  "is_login": 1,
-  "in_kanqiu": 0,
-  "night": 0
+    "test": "1",
+    "userInfo": {
+        "uid": "29035272",
+        "username": "a9901zhy",
+        "nickname": "hupu_faa80a897cedd6b8"
+    },
+    "login_url": "https://passport.liangle.com/pc/login?project=liangle&from=m",
+    "logout_url": "https://passport.liangle.com/pc/logout",
+    "register_url": "https://passport.liangle.com/pc/register?project=liangle&from=m",
+    "is_login": 1,
+    "in_kanqiu": 0,
+    "night": 0,
+    "client": "",
+    "platform": ""
 }

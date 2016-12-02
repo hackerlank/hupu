@@ -10,6 +10,9 @@
     <meta property="wb:webmaster" content="d8a16d6112fc138f" />
     <meta name="baidu-site-verification" content="AEcuH3GtJR" />
     <link rel="shortcut icon" href="http://b3.hoopchina.com.cn/common/favicon.ico" />
+    <link rel="dns-prefetch" href="//b1.hoopchina.com.cn" />
+    <link rel="dns-prefetch" href="//b2.hoopchina.com.cn" />
+    <link rel="dns-prefetch" href="//b3.hoopchina.com.cn" />
     <title>
         {%block name="title"%}{%$title%}{%/block%}
     </title>
@@ -22,6 +25,8 @@
 
         !function(win){
             var HTV = win.HTV = {};
+            win.HPF = {};
+
             // 用户id
             HTV.getUserId = "{%$user.puid%}" || "";
             // 用户名称
@@ -40,7 +45,6 @@
             HTV.loginUrl = "{%$login_url%}&display=mini&fback=true&jumpurl={%$base_url%}user/auth?absurl={%$abs_url%}";
 
             HTV.registerUrl = "{%$register_url%}&display=mini&fback=true&jumpurl={%$base_url%}user/auth?absurl={%$abs_url%}";
-
         }(window);
     </script>
 
@@ -67,7 +71,7 @@
             {%widget name="common:widget/header/header.tpl"%}
         {%/block%}
         {%block name="content"%}
-            
+
         {%/block%}
         {%block name="footer"%}
                 {%widget name="common:widget/footer/footer.tpl"%}

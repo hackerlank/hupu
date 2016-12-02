@@ -203,8 +203,8 @@ var Images = {
     var $imgs = $container.find("img");
     if(!$imgs.size()) return;
 
-    var isNopic = nopic || GM.nopic || false;
-    var isNight = night || GM.night || false;
+    var isNopic = _.isUndefined(nopic) ? (_.isUndefined(GM.nopic) ? false : GM.nopic) : nopic;
+    var isNight = _.isUndefined(night) ? (_.isUndefined(GM.night) ? false : GM.night) : night;
     var className = isNight ? 'icon_night' : 'icon_day';
 
     //因为新闻和论坛的gif的格式不同，所以需要不同的处理方式.
@@ -266,7 +266,7 @@ var Images = {
   },
   //点击包含data-gif图片的处理.
   handlerClickGif: function( target, nopic ){
-    var isNopic = nopic || GM.nopic || false;
+    var isNopic = _.isUndefined(nopic) ? (_.isUndefined(GM.nopic) ? false : GM.nopic) : nopic;
     var $target = $(target);
     if(isNopic){
       if(target.getAttribute("secondclick")){

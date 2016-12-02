@@ -1,39 +1,24 @@
 var path = require("path");
-// var HtmlWebpackPlugin = require('html-webpack-plugin');
 
-var distUrl = '/dist/manage/';
+var ENV = process.env.npm_lifecycle_event;
+var isProd = ENV === 'build';
+var distPaths = __dirname + '/dist/manage/';
+var appPaths = __dirname + '/src/';
 
-module.exports = function(webpackConfig) {
-  webpackConfig.babel.plugins.push('antd');
+module.exports = function(config) {
+  config.babel.plugins.push('antd');
 
   // Fix ie8 compatibility
-  webpackConfig.module.loaders.unshift(
+  config.module.loaders.unshift(
     {
         test: /\.jsx?$/,
         loader: 'es3ify-loader',
     }
   );
 
-  webpackConfig.resolve.alias = {
+  config.resolve.alias = {
     'common': path.resolve(__dirname, 'src', 'common')
   };
 
-  // webpackConfig.output = {
-  //   path: __dirname + distUrl + 'static',
-  //   publicPath: '/',
-  //   filename: '[name].[hash].js',
-  //   chunkFilename: '[name].[hash].js'
-  // }
-
-  // webpackConfig.plugins = [];
-
-  // webpackConfig.plugins.push(
-  //   new HtmlWebpackPlugin({
-  //     template: './index.html',
-  //     filename: distUrl + 'index.html',
-  //     inject: 'body'
-  //   })
-  // )
-
-  return webpackConfig;
+  return config;
 };

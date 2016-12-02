@@ -4,8 +4,8 @@ package tv.hupu.view.barrage
 	import flash.events.Event;
 	
 	import tv.hupu.conf.BarrageConfig;
-	import tv.hupu.events.SocketServiceEvent;
-	import tv.hupu.service.JSSocketService;
+	import tv.hupu.events.JSInterfaceEvent;
+	import tv.hupu.utils.JS2AS;
 	
 	/**
 	 * 弹幕层
@@ -57,9 +57,9 @@ package tv.hupu.view.barrage
 		 * @param srv
 		 * 
 		 */		
-		public function injectService(srv:JSSocketService):void{
-			srv.addEventListener(SocketServiceEvent.RECEIVE_MSG, receiveMsg);
-			srv.addEventListener(SocketServiceEvent.RECEIVE_SELF_MSG, receiveMsg);
+		public function injectService(srv:JS2AS):void{
+			srv.addEventListener(JSInterfaceEvent.RECEIVE_MSG, receiveMsg);
+			srv.addEventListener(JSInterfaceEvent.RECEIVE_SELF_MSG, receiveMsg);
 		}
 		
 		/**
@@ -129,12 +129,12 @@ package tv.hupu.view.barrage
 		 * @param evt
 		 * 
 		 */		
-		protected function receiveMsg(evt:SocketServiceEvent):void{
+		protected function receiveMsg(evt:JSInterfaceEvent):void{
 			if(_on && evt && evt.data){
 				var data:String = String(evt.data);
 				var track:Track = getSpecTrack();
 				if(track && data){
-					track.addBullet(data, evt.type == SocketServiceEvent.RECEIVE_SELF_MSG);
+					track.addBullet(data, evt.type == JSInterfaceEvent.RECEIVE_SELF_MSG);
 				}
 			}
 			

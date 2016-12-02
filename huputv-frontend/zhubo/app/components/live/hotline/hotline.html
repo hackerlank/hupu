@@ -1,0 +1,57 @@
+<!-- hotline start -->
+<div class="hotline" id="J_hotline">
+  <div class="tab-hd">
+    <ul class="tab-list J_tabList" ng-init="tabs=1">
+        <li ng-click="tabs=1" ng-class="{'active':tabs==1}">
+            <a href="javascript:">热线</a>
+        </li>
+        <li ng-click="tabs=2" ng-class="{'active':tabs==2}">
+            <a href="javascript:">礼物</a>
+        </li>
+        <li ng-click="tabs=3" ng-class="{'active':tabs==3}">
+            <a href="javascript:">礼物排行</a>
+        </li>
+    </ul>
+  </div>
+  <div class="bd">
+    <div class="hotline-list J_hotLine_list">
+      <div class="hotline-scrollbar J_hotline_scrollbar" ng-show="tabs==1">
+        <table class="table table-video" ng-repeat="item in message_item">
+          <tr>
+            <td class="content">
+              {{item.un}}: {{item.cnt}}                                     
+            </td>
+          </tr>  
+        </table>
+      </div>
+    </div>
+    <div class="hotline-list hotline-list-1 J_hotLine_list" ng-show="tabs==2">
+      <div class="hotline-scrollbar J_hotline_scrollbar">
+          <table class="table table-video" ng-repeat="item in gift_item">
+            <tr >
+              <td class="content">
+                {{item.cnt}}       
+              </td>
+            </tr>  
+          </table>
+      </div>
+    </div>
+    <div class="gift-list-top J_hotLine_list" ng-show="tabs==3">
+      <div class="hotline-scrollbar J_hotline_scrollbar">
+          <table class="top-table" ng-repeat="item in tops">
+            <tr>
+                <td class="number">{{$index + 1}}</td>
+                <td class="content">{{item.nickname}}</td>
+                <td class="gift-number">{{item.total}}</td>
+            </tr>
+          </table>
+          <table class="top-table" ng-show="!tops.length">
+            <tr>
+              <td class="none-td">暂无礼物排行</td>
+            </tr>
+          </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- hotline end -->      

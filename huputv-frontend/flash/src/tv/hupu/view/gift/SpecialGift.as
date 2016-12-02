@@ -14,8 +14,8 @@ package tv.hupu.view.gift
 	import flash.text.TextFormat;
 	import flash.utils.Timer;
 	
-	import tv.hupu.events.SocketServiceEvent;
-	import tv.hupu.service.JSSocketService;
+	import tv.hupu.events.JSInterfaceEvent;
+	import tv.hupu.utils.JS2AS;
 	
 	/**
 	 * 特殊礼物，目前有666和MVP，显示在右上角
@@ -71,7 +71,7 @@ package tv.hupu.view.gift
 			initUI();
 			
 			stage.addEventListener(Event.RESIZE, resetStage);
-			JSSocketService.getInstance().addEventListener(SocketServiceEvent.RECEIVE_SPECIAL_GIFT, receiveSpecialGift);
+			JS2AS.getInstance().addEventListener(JSInterfaceEvent.RECEIVE_SPECIAL_GIFT, receiveSpecialGift);
 		}
 		
 		/**
@@ -257,7 +257,7 @@ package tv.hupu.view.gift
 		 * @param evt
 		 * 
 		 */		
-		protected function receiveSpecialGift(evt:SocketServiceEvent):void{
+		protected function receiveSpecialGift(evt:JSInterfaceEvent):void{
 			queue.push(evt.data);
 			if(queue.length == 1){	//如果当前队列只有一个，则直接显示
 				show();

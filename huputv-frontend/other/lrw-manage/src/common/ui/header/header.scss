@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+@import "../../../static/sass/vendor/sassCore/base";
+
+.ui-header {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 10px;
+  text-align: center;
+  background: #302f2f;
+  color: #fff;
+  @include display-flex;
+  .headerline {
+    @include flex(1);
+    font-size: 18px;
+    line-height: 45px;
+  }
+  .button-match-back,
+  .button-bulletin {
+    // position: absolute;
+    // top: 12px;
+    // right: 10px;
+    margin-top: 12px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 10px;
+    border: 1px solid #fff;
+    color: #fff;
+    @include border-radius(3px);
+  }
+  .button-match-back {
+    border-color: #999;
+    color: #999;
+  }
+}

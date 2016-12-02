@@ -1,6 +1,6 @@
 var _ = require('common:static/js/underscore/underscore.js');
-var Gift = require('live:widget/send-gift/gift.es6');
-var VideoPlay = require('live:widget/video-play/video.js');
+var SendGift = require('live:widget/send-gift/gift.es6');
+var Flash = require('common:widget/flash-movie/flash');
 
 var ChaoNeng = {
 	init: function() {
@@ -16,6 +16,10 @@ var ChaoNeng = {
 		this.swiperFn($(".home-skill-swiper")); // 主队技能轮播
 		this.swiperFn($(".guest-skill-swiper")); // 客队技能轮播
 		this.skillView(); // 技能展示
+
+		$(document).on('wall', function(e, data) {
+			self.wall(data);
+		})
 
 		$(window).on("resize load", function() {
 			self.progressAuto();
@@ -87,7 +91,13 @@ var ChaoNeng = {
 		var guestPowerTotal = $(".guest-power-total");
 		var guestAddTip = $(".guest-add-tip");
 
-		Gift.send(giftId, number, gameid, teamid, ischaoneng, function() {
+		var params = {
+			game_id: gameid,
+			team_id: teamid,
+			live_type: 2
+		}
+
+		SendGift.send(giftId, number, params, function() {
 			if (isHomeTeam) {
 				homeAddTip.text("×" + number).show().animate({
 					top: -55,
@@ -301,25 +311,25 @@ var ChaoNeng = {
 		}
 
 		switch(data.et) {
-      // 更新时间，删除   
-      // case 3009:  
+      // 更新时间，删除
+      // case 3009:
 	      /**
 				 * 时间更新时间
 				 * {"room":"hupuTv","type":"chaoneng","room_id":"28","game_id":"5","section":"1","minute":"00","second":"00","time_str":"第1节 00:00"}
 				 */
-	    
+
 				// if (self.energyMatch.find(".show-vs").size() || isGameStart) {
 				// 	isGameStart = true;
 				// 	self.energyMatch.find(".show-vs").remove();
 				// 	self.energyMatch.find(".J-score").show();
 				// }
-	    
+
 				// var section = parseInt(data.sec);
 				// var showSectionNum = section > sectionNum ? section - sectionNum :
 				// 	section;
 				// var showSection = section > sectionNum ? ("加时" + showSectionNum) : ("第" +
 				// 	showSectionNum + "节");
-	    
+
 				// self.energyMatch.find(".section-num").text(showSection);
 				// if (data.min == "00" && data.s == "00") {
 				// 	self.energyMatch.find(".section-time").text('已结束');
@@ -328,7 +338,7 @@ var ChaoNeng = {
 				// 		data.s);
 				// }
 	      // break;
-	    // 技能使用 
+	    // 技能使用
 	    case 3011:
 	    	/**
 				 * 技能卡使用
@@ -336,20 +346,14 @@ var ChaoNeng = {
 				 */
 				var teamName = isHomeTeam(data.team_id) ? "home" : "guest";
 				var skill = "#" + teamName + "_skill_" + data.skill_id;
-		
+
 				data.isHomeTeam = isHomeTeam(data.team_id);
 				data.teamName = data.isHomeTeam ? HTV.chaoneng.home_team_info.cn_name : HTV.chaoneng.guest_team_info.cn_name;
 				if (data.skill_status) {
-					VideoPlay.callFromJS({
-						key: "skillcardOnline",
-						data: data
-					});
+					Flash.send('skillcardOnline',data);
 					$(skill).find(".active").show();
 				} else {
-					VideoPlay.callFromJS({
-						key: "skillcardOffline",
-						data: data
-					});
+					Flash.send('skillcardOffline',data);
 					$(skill).find(".active").hide();
 				}
 	    	break;

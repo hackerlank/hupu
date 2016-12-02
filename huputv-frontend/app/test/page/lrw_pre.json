@@ -1,0 +1,45 @@
+{
+	"test": "1",
+	"game": {
+		"id": "77",
+		"title": "测试2",
+		"division_id": "17",
+		"division_name": "长沙",
+		"division": {
+			"id": "17",
+			"name": "长沙",
+			"room_id": "102333",
+			"address": "shagnhaig ",
+			"pc_img": "http://w4.hoopchina.com.cn/fa/fa/5e/fafa5efeaf3cbe3b23b2748d13e629a1001.jpg",
+			"app_img": "http://w3.hoopchina.com.cn/fa/fa/5e/fafa5efeaf3cbe3b23b2748d13e629a1001.jpg",
+			"is_follow": 0
+		},
+		"signup_start": "2016-11-17 00:00:00",
+		"signup_end": "2016-11-18 00:00:00",
+		"lottery_time": "2016-11-18 00:00:00",
+		"game_start": "2016-11-18 00:00:00",
+		"room_id": "0",
+		"lottery_room": "11",
+		"tid": "1212",
+		"match_id": "0",
+		"num": "0",
+		"game_status": "0",
+		"match_status": "0",
+		"desc": "121212"
+	},
+	"video_recommend": [],
+	"userInfo": {
+		"uid": "18692998",
+		"username": "仰望星空123",
+		"nickname": "仰望星空123",
+		"avatar": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png"
+	},
+	"login_url": "https://passport.liangle.com/pc/login?project=liangle&from=m",
+	"logout_url": "https://passport.liangle.com/pc/logout",
+	"register_url": "https://passport.liangle.com/pc/register?project=liangle&from=m",
+	"is_login": 1,
+	"in_kanqiu": 0,
+	"night": 0,
+	"client": "",
+	"platform": "h5"
+}

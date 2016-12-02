@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+.bulletin{
+    min-height:85px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    background:#fff;
+    border-bottom:1px solid #ddd;
+    h2{
+        padding:4px 0 0 14px;
+        font-size:14px;
+        font-weight:400;
+    }
+    .bd{
+        font-size:14px;
+        color:#777;
+        padding:0 14px;
+        line-height:16px;
+    }
+}

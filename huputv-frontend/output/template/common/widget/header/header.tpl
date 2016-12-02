@@ -93,9 +93,9 @@ Safari下面样式兼容
 <span class="app"><i class="icon icon-phone"></i><a {%if $smarty.server.HTTP_USER_AGENT|ismobile%}href="http://mobile.hupu.com/?_r=shareRoom"{%else%}href="http://voice.hupu.com/other/2006264.html"{%/if%} target="_blank" dace-node="nav_appDownloadClick">手机客户端</a></span>
 <span class="logreg">
 <i class="icon icon-user"></i>
-<a href="http://passport.videohupu.com/pc/login?project=hupuTv&from=pc&display=mini&fback=true&jumpurl={%$base_url|f_escape_path%}user/auth?absurl={%$abs_url|f_escape_path%}" id="J_loginUrl">登录</a>
+<a href="{%$login_url|f_escape_xml%}" id="J_loginUrl">登录</a>
 <i class="line">|</i>
-<a href="http://passport.videohupu.com/pc/register?project=hupuTv&from=pc&display=mini&fback=true&jumpurl={%$base_url|f_escape_path%}user/auth?absurl={%$abs_url|f_escape_path%}" id="J_registerUrl">注册</a></span>
+<a href="{%$register_url|f_escape_xml%}" id="J_registerUrl">注册</a></span>
 </div>
 {%/if%}
 </div>

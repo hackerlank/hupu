@@ -1,12 +1,9 @@
     var _ = require('common:static/js/underscore/underscore.js');
     var io = require('common:widget/js/socket-1.4.5/socket.js');
-    var VideoPlay = require('live:widget/video-play/video.js');
     var Timeline = require('live:widget/timeline/timeline');
-    var GiftTop = require('live:widget/gift-top/top');
+    var Gift = require('live:widget/send-gift/gift');
     var User = require("common:widget/login/login.js");
-    var predCtrl = require("live:widget/pred-game/pred.es6");
-    var Chaoneng = require('live:widget/chaoneng/chaoneng.es6');
-    var Gift = require('live:widget/send-gift/gift.es6');
+    var Flash = require('common:widget/flash-movie/flash');
 
     /**
      * 接口地址
@@ -57,6 +54,8 @@
             this._sessionName = 'chatSendText';
             this.timer = null;
             this.isShieldGift = false;
+            // 全部热线数
+            this.allChatNumber = 0;
 
             // 浏览器默认选中，需要移除选中
             this.$buttonShield.removeAttr('checked');
@@ -71,8 +70,6 @@
             this.timeline = new Timeline();
             this.timeline.start();
 
-            // 礼物数据格式转换
-            // this.transGiftId();
         },
         bind() {
             var that = this,
@@ -109,6 +106,13 @@
                 User.login();
                 return false;
             });
+
+            /**
+             * 网页全屏
+             */
+            Flash.register('emitChat', function(str) {
+              that.emit(str);
+            });
         },
         /**
          * 获取ip
@@ -129,7 +133,6 @@
             var that = this;
 
             var chatroom = io.connect(ip);
-            var isChaoneng = !!HTV.chaoneng;
 
             chatroom.on('connect', () => {
                 chatroom.emit('join', {
@@ -146,114 +149,85 @@
             });
 
             // 重连
-            chatroom.on('error', function (data) {
-            });
+            // chatroom.on('error', function (data) {
+            // });
         },
         wall(data){
-            let isChaoneng = !!HTV.chaoneng;
 
             if(_.isUndefined(data.et)) return;
 
-            // 数据
-            VideoPlay.wall(data);
-            // 超能
-            Chaoneng.wall(data);
+            $(document).trigger('wall', [data]);
 
             switch(data.et) {
-                // 在线人数   
-                case 1010:  
-                    this.$onlineCount.html(data.n);
-                    break;
-                // 热线   
-                case 2000:  
-                    this.pushFlashChat(data, 'other');
-                    break;    
-                // 礼物   
-                case 2001:
-                    data.giftDetail = Gift.getGiftDetail(data.giftid, isChaoneng);
+              // 在线人数
+              case 1010:
+                this.$onlineCount.html(data.n);
+                break;
+              // 参与预测
+              case 2002:
+                this.renderChat(data, 'pred');
+                break;
+              // 礼物
+              case 2001:
+                let detail = Gift.getGiftDetail(data.giftid, data.lt);
 
-                    !this.isShieldGift && this.pushFlashChat(data, 'other');
+                this.renderChat(data, 'gift');
 
-                    // 送礼物是虎扑币 
-                    if(parseInt(data.giftDetail.money_type, 10) === 6){
-                        if(!this.isShieldGift){
-                            this.timeline.create({data: data});
-                            VideoPlay.pushGift(data);
-                        }
-                        // 更新礼物排行榜
-                        GiftTop.getTopData();
-                    }
-                    break;
-                // 预测   
-                case 2002:  
-                    predCtrl.updatePred(data);
-                    break;  
-                // 预测题开奖用户小红点    
-                case 2003:  
-                    $(document).trigger("rpzAddNotify");
-                    break; 
-                // 预测题封盘    
-                case 3005:
-                    data.status = 1;
-                    predCtrl.updatePred(data);
-                    break;
-                // 预测题开奖    
-                case 3006:
-                    data.status = 2;
-                    predCtrl.updatePred(data);
-                    break;
-                // 预测题流盘    
-                case 3007:
-                    data.status = 3;
-                    predCtrl.updatePred(data);
-                    break;
-                // 预测题修改    
-                case 3004:
-                    predCtrl.updatePred(data);
-                    break;
-                // 新增预测题    
-                case 3014:
-                    predCtrl.reloadPred(data);
-                    break;     
-                // 主播发言
-                case 3001:
-                case 1011:
-                    data.avater_url = HTV.zhiboAvatarUrl;
-                    data.username = HTV.getUserName;
-                    data.rp = HTV.rpzNumber;
+                // 送礼物是虎扑币
+                if(+detail.money_type == 6 && !this.isShieldGift) {
+                  data.giftDetail = detail;
+                  this.timeline.create({data: data});
+                }
+                break;
+              // 主播发言
+              case 3001:
+              case 1011:
+                  data.avater_url = HTV.zhiboAvatarUrl;
+                  data.username = HTV.getUserName;
+                  data.rp = HTV.rpzNumber;
 
-                    this.timeline.create({
-                        data: data,
-                        type: data.et
-                    });
+                  this.timeline.create({
+                      data: data,
+                      type: data.et
+                  });
+                  break;
             }
 
-            // et 热线2000 || 礼物2001 || 预测2002 || 主播发言3001
-            if(data.et === 2000 || data.et === 2001 || data.et === 2002 || data.et === 3001 || data.et === 1012 ) {
-                this.renderChat(data);
+            // et 热线2000 || 主播发言3001
+            if(data.et === 2000 || data.et === 3001 ) {
+              this.renderChat(data);
             }
 
             // et 技能使用3011 技能购买3012
             if(data.et === 3011 || data.et === 3012) {
-                this.renderChaoneng(data);
+              this.renderChaoneng(data);
             }
         },
         /**
          * 渲染
          */
-        renderChat(data) {
+        renderChat(data, conName) {
             let result = {
                     username: HTV.getUserName,
-                    item: data
+                    item: data,
+                    conName: conName
                 },
                 template = '';
 
             if(data.et === 2001 && this.isShieldGift){
                 return;
-            }    
+            }
 
-            template = _.template(this._listTpl)(result);
+            template = $.trim(_.template(this._listTpl)(result));
 
+            // 热线列表最多100数
+            if(this.allChatNumber >= 100) {
+              this.$content.find('li:first').remove();
+            }else{
+              this.allChatNumber++;
+            }
+
+            // trim 超过100条删除，存在空白
             this.$content.append(template);
             this.scrollBottom();
         },
@@ -269,7 +243,7 @@
             }
 
             data.teamname = isHomeTeam(data.team_id) ? HTV.chaoneng.home_team_info.cn_name : HTV.chaoneng.guest_team_info.cn_name;
-            
+
             var result = {
                 username: HTV.getUserName,
                 item: data
@@ -359,19 +333,6 @@
             });
         },
         /**
-         * 推送到flash
-         */
-        pushFlashChat: function(data, type) {
-            try {
-                if(type && type === 'self'){
-                    VideoPlay.videoFlashMovie().vjs_rcvSelfChat(data.cnt);
-                }else{
-                    VideoPlay.videoFlashMovie().vjs_rcvChat(data.cnt);
-                }
-            } catch(err) {
-            }
-        },
-        /**
          * 计算输入框文字
          */
         calculatedTextarea(content) {
@@ -424,50 +385,6 @@
         },
         hideError() {
             this.$error.hide();
-        },
-        /**
-         * 获取礼物详细
-         * @param datas
-         */
-        getGiftDetail(id, chaoneng = false){
-            let result = {};
-
-            if(!chaoneng){
-                _.map(HTV.giftData, item => {
-                    // 礼物下架，查找不到礼物过滤
-                    if(item.id === id){
-                        result = item;
-                    }    
-                })       
-            }else{
-                _.map(HTV.chaoneng.chaoneng_gift, item => {
-                    if(item.id == id){
-                        //获取技能代表队伍的名称
-                        if(item.id == HTV.chaoneng.home_gift){
-                           item.teamName = HTV.chaoneng.home_team_info.cn_name;
-                        } else{
-                           item.teamName = HTV.chaoneng.guest_team_info.cn_name;
-                        }
-
-                        result = item;
-                   }
-                });
-
-            }
-
-            return result;
-        },
-        /**
-         * 礼物数据转换id
-         */
-        transGiftId() {
-            var temp = HTV.giftDataId;
-
-            _.map(HTV.giftData, (item) => {
-                temp[item.id] = item;
-            });
-
-            return temp;
         }
     };
 

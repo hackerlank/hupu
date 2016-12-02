@@ -1,0 +1,24 @@
+<div class="room-live-text room-live-video" id="J_roomVideoLive">
+  <dl class="list">
+    <dd>
+        <label class="control-label control-label-video col-md-3 col-sm-3 col-xs-3">RTMP URL：</label>
+        <div class="control-input col-md-9 col-sm-9 col-xs-10">
+            <input type="text" name="rtmpUrl" value="{{url}}" readonly="true" placeholder="输入rtmp地址" class="input-border input-rtmpUrl"  />
+            <a href="javascript:" class="btn-textCopy" ng-show="!is_supported" ng-click="handleClipboard(1)">复制</a>
+        </div>
+    </dd>
+    <dd>
+      <label class="control-label control-label-video col-md-3 col-sm-3 col-xs-3">Stream Name：</label>
+      <div class="control-input col-md-9 col-sm-9 col-xs-10">
+        <textarea class="editor-box editor-LiveCode" readonly="true" rows="5" placeholder="输入直播码">{{stream}}</textarea>
+        <a href="javascript:" class="btn-textCopy" ng-show="!is_supported" ng-click="handleClipboard(2)">复制</a>
+      </div>
+    </dd>
+  </dl>
+  <div class="video-info">
+      注：rtmp地址复制有效时间为90秒，请在90秒内将最新的地址复制到XSplit使用。
+  </div>
+  <!-- <div class="video-button">
+      <a href="javascript:" class="button-flowCode" ng-click="handleClick()">刷新</a>
+  </div> -->
+</div>

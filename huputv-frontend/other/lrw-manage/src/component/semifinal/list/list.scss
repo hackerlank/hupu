@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+@import "../../../static/sass/vendor/sassCore/base";
+
+.ui-semifinal-list {
+  background: #fff;
+  .match-title {
+    padding: 2px 10px;
+    text-align: center;
+    background: #eeebeb;
+    h5 {
+      font-size: 14px;
+
+    }
+  }
+  .semifinal-item {
+    border-bottom: 1px solid #eeebeb;
+  }
+
+  .match-row {
+    @include display-flex();
+    padding: 10px;
+    text-align: center;
+  }
+  .subscribe{
+    background:#fffaf0;
+  }
+  .col-left,
+  .col-right {
+    @include flex(1);
+    width: 0;
+  }
+  .avatar-inner {
+    padding-bottom: 5px;
+    text-align: center;
+    .avatar {
+      @include inline-block;
+      width: 40px;
+      height: 40px;
+      margin: 0 10px 0;
+      overflow: hidden;
+      text-align: center;
+      background: #eee;
+      border: 2px solid #ffb3b7;
+      @include border-radius(50%);
+      vertical-align: top;
+      img {
+        width: 100%;
+        vertical-align: top;
+      }
+    }
+    .number {
+      @include inline-block;
+      padding-top: 10px;
+    }
+  }
+
+
+  .match-row {
+    .title {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.2;
+      word-wrap: break-word;
+    }
+    .info {
+      font-size: 12px;
+      color: #a9a9b2;
+    }
+  }
+
+  .match-score {
+    margin: 15px 10px;
+    line-height: 1.4;
+    min-width: 60px;
+    border: 1px solid #ccc;
+    .course-number {
+      padding: 0 5px;
+      font-weight: 700;
+      color: #c01e2f;
+      border-bottom: 1px solid #ccc;
+    }
+    .score {
+      padding: 0 5px;
+      .score-color{
+        color:#444;
+      }
+    }
+  }
+
+  .option-area {
+    @include display-flex();
+    padding: 5px 0 8px;
+    text-align: center;
+    .col-left,
+    .col-right {
+      padding: 10px 5px;
+    }
+    .col-left {
+      border-right: 1px solid #eeebeb;
+    }
+    button {
+      display: inline-block;
+      height: 26px;
+      line-height: 26px;
+      padding: 0 7px;
+      margin: 0 3px;
+      border: 1px solid #d04646;
+      color: #d04646;
+      background: #fff;
+      @include border-radius(3px);
+    }
+  }
+
+  .unknown-person {
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    margin-top: 20px;
+    border: 1px solid #f90;
+    color: #f90;
+  }
+
+  .semifinal-item-notstart {
+    .match-score {
+      .score {
+        font-size: 12px;
+        color: #999;
+      }
+    }
+  }
+  .match-fail {
+    color: #ccc;
+    .avatar {
+      @include opacity(70);
+    }
+    .info {
+      color: #ccc;
+    }
+  }
+
+}
+.ui-play-list-subscribe{
+  background:#fffaf0;
+}

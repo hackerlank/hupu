@@ -1,0 +1,70 @@
+<div class="popup-setiting-gift">
+  <div class="pop-gift-scrollbar" gift-set-height>
+    <div class="setting-room-list">
+      <form name="settingGiftForm" novalidate>
+        <dl class="setting-list">
+          <dt class="title">
+             <h4>[礼物管理]</h4>
+          </dt>
+          <dd>
+            <div class="row gift-list">
+              <div class="col-md-4 col-sm-4 col-xs-4 col-right">
+                <div class="gift-title">
+                  <h5>可选礼物</h5>
+                </div>
+                <div ui-tree ng-style="giftScrollStyle">
+                  <ul ui-tree-nodes ng-model="rightscope" class="item">
+                    <li ui-tree-node ng-repeat="item in rightscope" ng-click="handleSetActive(item, rightscope)" ng-class="{active: item.active}">
+                      <div class="setting-gift-list">
+                        <div class="drop-move drop-move-right" ui-tree-handle></div>
+                        <div class="pic">
+                          <img src="{{item.cover}}" alt="" />
+                        </div>
+                        <div class="name">{{item.name}}</div>
+                        <div class="money">
+                          {{item.multi_send == 0 ? item.price : ("批量（" + item.price + "）")}}
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4">
+                <div class="button-center">
+                  <a href="javascript:" class="button-add" ng-click="handleAdd()">添加</a><br />
+                  <a href="javascript:" class="button-remove" ng-click="handleRemove()">移除</a>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4 col-xs-4 col-left">
+                <div class="gift-title">
+                  <h5>展示礼物（可设置6个）</h5>
+                </div>
+                <div ui-tree ng-style="giftScrollStyle">
+                  <ul ui-tree-nodes ng-model="leftscope" class="item">
+                    <li ui-tree-node ng-repeat="item in leftscope" ng-click="handleSetActive(item, leftscope)" ng-class="{active: item.active}">
+                      <div class="setting-gift-list">
+                        <div class="drop-move drop-move-left" ui-tree-handle></div>
+                        <div class="pic">
+                          <img src="{{item.cover}}" alt="" />
+                        </div>
+                        <div class="name">{{item.name}}</div>
+                        <div class="money">
+                          {{item.multi_send == 0 ? item.price : ("批量（" + item.price + "）")}}
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </dd>
+        </dl>
+
+        <div class="ajax-error-info" ng-show="error">{{error}}</div>
+        <div class="button-inner">
+          <input type="submit" value="提交" class="btn-save" ng-click="handleSubmit(leftscope, settingGiftForm)" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

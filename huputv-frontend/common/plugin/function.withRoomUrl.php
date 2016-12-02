@@ -14,7 +14,7 @@ function smarty_function_withRoomUrl($params, &$smarty) {
 
     $roomUrl = "";
     if($inKanqiu) {
-        $roomUrl = 'huputiyu://huputv/room/' . $roomId;
+        $roomUrl = 'huputiyu://huputv/room/' . $roomId . '?entrance=1';
     } else {
         $roomUrl = '/m/room/' . $roomId . '?n=0&client=' . $client;
     }

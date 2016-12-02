@@ -112,7 +112,7 @@ module.exports = {
                   "streamName": document.title,         //流名称 or房间名称   （新模式huputTv自己填充）
                   "platform": GM.platform,          //平台 ios/android/pc/h5
                   "time": Math.floor(new Date().getTime()/1000),      //秒时间戳
-                  "isRegister": GM.isLogin,      //秒时间戳
+                  "isRegister": GM.islogin,      //秒时间戳
                   "streamUrl": streamurl,          //流URL
                   "token": this.getCookie('__dacevid3') || this.getCookie('_dacevid3'),             //用户唯一标识
                   "deviceNo": GM.client || this.getCookie('__dacevid3') || this.getCookie('_dacevid3'),             //用户唯一标识，使用dacevid
@@ -192,7 +192,7 @@ module.exports = {
                  "streamName": document.title,         //流名称 or房间名称   （新模式huputTv自己填充）
                  "platform": GM.platform,          //平台 ios/android/pc/h5
                  "time": Math.floor(new Date().getTime()/1000),      //秒时间戳
-                 "isRegister": GM.isLogin,      //秒时间戳
+                 "isRegister": GM.islogin,      //秒时间戳
                  "streamUrl": streamurl,          //流URL
                  "token": this.getCookie('__dacevid3') || this.getCookie('_dacevid3'),             //用户唯一标识
                  "deviceNo": GM.client || this.getCookie('__dacevid3') || this.getCookie('_dacevid3'),             //用户唯一标识，使用dacevid

@@ -9,8 +9,8 @@ package tv.hupu.view.toolbar
 	import flash.text.TextFormat;
 	
 	import tv.hupu.events.ControlBarEvent;
+	import tv.hupu.utils.AS2JS;
 	import tv.hupu.utils.ConsTrace;
-	import tv.hupu.utils.JSInterface;
 	import tv.hupu.utils.SOStorage;
 	import tv.hupu.utils.Statistics;
 	
@@ -41,6 +41,11 @@ package tv.hupu.view.toolbar
 			stageClick();
 		}
 		
+		public function set enabled(bool:Boolean):void{
+			buttonMode = bool;
+			_dispBtn.mouseEnabled = bool;
+		}
+		
 		public function highLight(id:int):void{
 			var item:DefiItem;
 			var itemNum:int = _popupSpt.numChildren;
@@ -68,10 +73,7 @@ package tv.hupu.view.toolbar
 		
 		public function getDefData():void{
 			//通过JS接口获取直播地址
-			if(!ExternalInterface.available){
-				return;
-			}
-			var arr:Array = JSInterface.getAddress();
+			var arr:Array = AS2JS.getAddress();
 			if(_popupSpt && arr && arr is Array){
 				_dispBtn.buttonMode = true;
 				_defData = arr;

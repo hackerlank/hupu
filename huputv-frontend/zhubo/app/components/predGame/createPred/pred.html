@@ -1,0 +1,96 @@
+<div class="popup-setiting-pred">
+  <div class="pop-scrollbar">
+    <div class="setting-room-list">
+      <form name="predGameForm" novalidate>
+        <div class="title">
+          <h4>[{{+iscreate ? '新建预测':'预测详情'}}]</h4>
+        </div>
+        <ul class="pred-item" ng-show="+isedit">
+          <li>
+            <div class="flex">
+              <span class="label-left">题目标题</span>
+              <div class="inner-right">
+                <textarea name="title" ng-model="params.title" required="" oninvalid="" maxlength="120" class="popup-textarea"></textarea>
+                <div class="error-text" ng-show="predGameForm.$submitted || predGameForm.title.$touched">
+                  <div ng-show="predGameForm.title.$error.required">题目标题不能为空，请重新输入</div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <div ng-repeat="item in params.option track by $index">
+              <div class="col-md-6 col-sm-6 col-xs-6">
+                <span class="label">选项{{$index + 1}}</span>
+                <input type="text" class="input-border" maxlength="8"  ng-model="item.option" name="option_{{$index}}" required="" oninvalid="" ng-maxlength="8" />
+                <div class="error-text" ng-show="predGameForm.$submitted || predGameForm.option_{{$index}}.$touched">
+                    <div ng-show="predGameForm.option_{{$index}}.$error.required">选项{{$index + 1}}不能为空</div>
+                  </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="javascript:" class="button-add-option" ng-click="handleAddOption()">+添加选项</a>
+          </li>
+          <li>
+            <div class="flex">
+              <span class="label">题目得分</span>
+              <div class="inner-right">
+                <select class="room-select" name="room_type" ng-model="params.score">
+                  <option value="20">20分</option>
+                  <option value="40">40分</option>
+                  <option value="60">60分</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li class="top-border">
+            <div class="auto-seal">
+              <label for="auto_pred">
+                <input type="checkbox" name="auto" ng-model="autoPred" id="auto_pred"/>
+                自动封盘
+              </label>
+            </div>
+            <div class="date-inner" ng-show="!!autoPred">
+              <span class="label">
+                  <span class="date-selected" ng-click="showDate()">{{params.stop_time | date:'yyyy-MM-dd HH:mm:ss'}}</span>
+              </span>
+              <div class="dropdown-date">
+                <datetimepicker data-before-render="beforeRender($view, $dates, $leftDate, $upDate, $rightDate)" data-ng-model="params.stop_time" data-datetimepicker-config="{ startView:'hour', minView:'minute', dropdownSelector:'.dropdown-date' }"></datetimepicker>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="pred-item pred-item-show" ng-show="!+isedit">
+          <li>
+            <span class="label">预测状态: {{["进行中","待开奖","已开奖","已流盘"][params.status]}}</span>
+          </li>
+          <li>
+            <span class="label">题目标题: {{params.title}}</span>
+          </li>
+          <li class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6" ng-repeat="item in option_list track by $index">
+              <label>
+                <input type="radio" name="finish_option" ng-model="$parent.finishParams" value="{{item.option_id}}" />
+                <span class="label">选项{{$index + 1}}: {{item.option}}</span>
+              </label>
+            </div>
+          </li>
+          <li>
+            <span class="label">题目得分: {{params.score}}分</span>
+          </li>
+          <li class="top-border" ng-show="!params.stop_time">
+            <div class="date-inner">
+              <span class="label">封盘时间: {{params.stop_time}}</span>
+            </div>
+          </li>
+        </ul>
+        <div class="ajax-error-info" ng-show="error">{{error}}</div>
+        <div class="button-inner">
+          <input type="submit" value="{{!params.id ? '开启预测':'保存修改'}}" ng-disabled="isSaving" ng-show="+isedit" class="btn-save" ng-click="handleSubmit(params, predGameForm)" />
+          <input type="button" value="开奖" ng-show="params.id && !+isedit" class="btn-save" ng-click="handleFinishPred(finishParams, predGameForm)" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -32,6 +32,9 @@ const App = React.createClass({
           <Menu.Item key="bannedwords">
             <Link to='other/bannedwords'>违禁词库</Link>
           </Menu.Item>
+          <Menu.Item key="waterarmy">
+            <Link to='other/waterarmy'>水军ID管理</Link>
+          </Menu.Item>
         </Menu>
 
         {this.props.children || <Adminmanage />}

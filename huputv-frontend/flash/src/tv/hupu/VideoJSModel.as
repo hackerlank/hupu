@@ -19,7 +19,6 @@ package tv.hupu{
     import tv.hupu.providers.HTTPVideoProvider;
     import tv.hupu.providers.IProvider;
     import tv.hupu.providers.RTMPVideoProvider;
-    import tv.hupu.utils.ConsTrace;
 
     public class VideoJSModel extends EventDispatcher{
 
@@ -57,6 +56,11 @@ package tv.hupu{
                 _stageRect = new Rectangle(0, 0, 100, 100);
             }
         }
+
+		public function get currentPlaybackType():String
+		{
+			return _currentPlaybackType;
+		}
 
         public static function getInstance():VideoJSModel {
             if (_instance === null){

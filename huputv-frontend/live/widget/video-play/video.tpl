@@ -1,5 +1,5 @@
 <div class="live-play">
-    
+
     {%if $data.is_live == 1 && $data.live_addr.status == 200%}
         {%if $smarty.server.HTTP_USER_AGENT|ismobile%}
             <video id="mobile-live-video" style="width: 100%;height: 180px;" class="video-js vjs-tv-skin">
@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <img src="huputv.swf" id="J_flashPlayUrl" style="display: none"/>
+    <img src="./huputv.swf" id="J_flashPlayUrl" style="display: none"/>
 </div>
 
 <script id="play-recommend-tpl" type="text/template">
@@ -80,6 +80,4 @@ VideoPlay.init();
 // 休息中
 HTV.isLiveRest = {%!empty($videoAnnounceError)%};
 
-HTV.fullScreenVideo = VideoPlay.fullScreenVideo;
-HTV.trace = VideoPlay.trace;
 {%/script%}

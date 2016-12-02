@@ -1,6 +1,6 @@
 import React from 'react';
-import {QueueAnim, Menu, Icon, Breadcrumb} from 'antd';
-import {Link} from 'react-router';
+import { Menu, Icon, Breadcrumb } from 'antd';
+import { Link } from 'react-router';
 import DataService from 'common/dataService';
 
 import Nav from '../common/Nav';
@@ -20,7 +20,7 @@ const App = React.createClass({
 
     render() {
         return (
-            <QueueAnim delay={500}>
+            <div>
               <div className="ant-layout-top">
                 <div className="ant-layout-header">
                   <div className="ant-layout-wrapper">
@@ -71,9 +71,13 @@ const App = React.createClass({
               <div className="ant-layout-container">
                 {this.props.children}
               </div>
-            </QueueAnim>
+            </div>
         );
     }
 });
+
+// <Menu.Item key="lrw">
+//                             <Link to="/lrw"><Icon type="user" />路人王</Link>
+//                         </Menu.Item>
 
 export default App;

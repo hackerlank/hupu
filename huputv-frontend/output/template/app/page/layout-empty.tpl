@@ -9,7 +9,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 {%block name="meta"%}{%/block%}
 <script id="watch_script" data-mid="4" src="//b3.hoopchina.com.cn/js/watch/watch.app.1.0.6.js"></script>
-<script type="text/javascript" src="//b3.hoopchina.com.cn/web/module/dace/m/m_dace.js?v=20160121"></script>
+<script src="//b3.hoopchina.com.cn/web/module/dace/opdace/dace.cross.min.js"></script>
 {%block name="head_static"%}{%/block%}
 {%/head%}
 {%body class="{%if !empty($night)%}night{%/if%}"%}

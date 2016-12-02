@@ -12,7 +12,7 @@
 <link rel="dns-prefetch" href="//b3.hoopchina.com.cn" />
 {%block name="meta"%}{%/block%}
 <script type="text/javascript" src="//b3.hoopchina.com.cn/games/js/hpbridge_v1.0.1.js"></script>
-<script type="text/javascript" src="//b3.hoopchina.com.cn/web/module/dace/m/m_dace.js?v=20160121"></script>
+<script src="//b3.hoopchina.com.cn/web/module/dace/opdace/dace.cross.min.js"></script>
 {%require name="app:static/js/zepto/zepto.js"%}
 {%require name="app:static/js/underscore/underscore.js"%}
 {%require name="app:static/global.js"%}

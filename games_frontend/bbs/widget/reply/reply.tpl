@@ -47,24 +47,24 @@
                         <div class="user-info">
                             <@if (item.puid == author_puid){@>
                                 <div class="user-name clearfix">
-                                    <span class="fl ellipsis"><a href="kanqiu://people/<@=item.puid@>"><@=item.userName@></a>
+                                    <div class="fl"><a class="J_name_word" href="kanqiu://people/<@=item.puid@>"><@=item.userName@></a>
 
-                                    <i>楼主</i>
-                                    <a href="<@=item.cert_url@>" class="certification">
-                                        <@if(item.cert_type == 2){@>
-                                            <img src="img/official_ic_day.png" alt="official" height="22">
-                                        <@}@>
-                                        <@if(item.cert_type == 1){@>
-                                            <img src="img/author_ic_day.png" alt="author" height="22">
-                                        <@}@>
-                                    </a>
-                                    </span>
+                                        <i>楼主</i>
+                                        <a href="<@=item.cert_url@>" class="certification">
+                                            <@if(item.cert_type == 2){@>
+                                                <img src="img/official_ic_day.png" alt="official" height="22">
+                                            <@}@>
+                                            <@if(item.cert_type == 1){@>
+                                                <img src="img/author_ic_day.png" alt="author" height="22">
+                                            <@}@>
+                                        </a>
+                                    </div>
                                     
                                 </div>
                             <@}else{@>
                                 <div class="user-name clearfix">
-                                    <span class="fl">
-                                        <a dace-node="post_user" href="kanqiu://people/<@=item.puid@>">
+                                    <div class="fl">
+                                        <a dace-node="post_user" class="no_louzhu" href="kanqiu://people/<@=item.puid@>">
                                             <@=item.userName@>
                                         </a>
                                         <a href="<@=item.cert_url@>" class="certification">
@@ -75,7 +75,7 @@
                                                 <img src="img/author_ic_day.png" alt="author" height="22">
                                             <@}@>
                                         </a>
-                                    </span>
+                                    </div>
                                 </div>
                             <@}@>
                             <div class="source-left">

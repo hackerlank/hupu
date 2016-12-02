@@ -7,6 +7,7 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <link rel="shortcut icon" href="http://b3.hoopchina.com.cn/common/favicon.ico" />
 				<link rel="dns-prefetch" href="//b1.hoopchina.com.cn" />
         <link rel="dns-prefetch" href="//b2.hoopchina.com.cn" />
         <link rel="dns-prefetch" href="//b3.hoopchina.com.cn" />
@@ -29,8 +30,8 @@
 				platform:'{%$platform%}',
 				n: "{%$smarty.get.n%}" || 0
 		    };
-            var dace = require("app:widget/ui-dace/ui-dace.js");
-            dace.init();
+           //var dace = require("app:widget/ui-dace/ui-dace.js");
+           //dace.init();
         {%/script%}
     	{%block name="head_static"%}{%/block%}
 	{%/head%}

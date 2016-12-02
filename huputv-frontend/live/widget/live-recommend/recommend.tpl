@@ -33,7 +33,7 @@
     {%/if%}
 </div>
 
-
 {%script%}
-    require("live:widget/live-recommend/recommend");
+var Recommend = require("live:widget/live-recommend/recommend.js");
+Recommend.init();
 {%/script%}

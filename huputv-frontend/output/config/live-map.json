@@ -11,7 +11,7 @@
             ]
         },
         "live:static/live/live.scss": {
-            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/live/live_1ec7c6f.css",
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/live/live_e8f4e0c.css",
             "type": "css",
             "pkg": "live:p0"
         },
@@ -55,6 +55,18 @@
             "uri": "http://b2.hoopchina.com.cn/web/tv/static/live/stats/stats_f31b3cd.css",
             "type": "css"
         },
+        "live:widget/bulletin/bulletin.scss": {
+            "uri": "http://b2.hoopchina.com.cn/web/tv/static/live/widget/bulletin/bulletin_320791f.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:widget/bulletin/bulletin.tpl": {
+            "uri": "live/widget/bulletin/bulletin.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/bulletin/bulletin.scss"
+            ]
+        },
         "live:widget/chaoneng/chaoneng.es6": {
             "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/widget/chaoneng/chaoneng.js",
             "type": "js",
@@ -79,7 +91,7 @@
             "pkg": "live:p1"
         },
         "live:widget/video-play/video.js": {
-            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/video-play/video_aab2b53.js",
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/video-play/video_56484d3.js",
             "type": "js",
             "extras": {
                 "moduleId": "live:widget/video-play/video"
@@ -142,7 +154,7 @@
             "pkg": "live:p1"
         },
         "live:widget/chatroom/chatroom.scss": {
-            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/chatroom/chatroom_3baa43a.css",
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/widget/chatroom/chatroom_dd720c6.css",
             "type": "css",
             "pkg": "live:p0"
         },
@@ -265,6 +277,18 @@
                 "live:widget/task/task.scss"
             ]
         },
+        "live:widget/today-rank/rank.scss": {
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/widget/today-rank/rank_1650902.css",
+            "type": "css",
+            "pkg": "live:p0"
+        },
+        "live:widget/today-rank/rank.tpl": {
+            "uri": "live/widget/today-rank/rank.tpl",
+            "type": "tpl",
+            "deps": [
+                "live:widget/today-rank/rank.scss"
+            ]
+        },
         "live:widget/video-play/video.tpl": {
             "uri": "live/widget/video-play/video.tpl",
             "type": "tpl",
@@ -276,11 +300,12 @@
     },
     "pkg": {
         "live:p0": {
-            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/pkg/live_f7b6977.css",
+            "uri": "http://b1.hoopchina.com.cn/web/tv/static/live/pkg/live_ba1ebb5.css",
             "type": "css",
             "has": [
                 "live:static/live/live.scss",
                 "live:widget/pred-game/pred.scss",
+                "live:widget/bulletin/bulletin.scss",
                 "live:widget/video-play/video.scss",
                 "live:widget/chaoneng/chaoneng.scss",
                 "live:widget/chatroom/chatroom.scss",
@@ -288,11 +313,12 @@
                 "live:widget/guide/guide.scss",
                 "live:widget/live-recommend/recommend.scss",
                 "live:widget/send-gift/gift.scss",
-                "live:widget/task/task.scss"
+                "live:widget/task/task.scss",
+                "live:widget/today-rank/rank.scss"
             ]
         },
         "live:p1": {
-            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/pkg/live_2d76059.js",
+            "uri": "http://b3.hoopchina.com.cn/web/tv/static/live/pkg/live_332a66e.js",
             "type": "js",
             "has": [
                 "live:static/live/live.js",

@@ -138,7 +138,7 @@ fis.media('local').match('*', {
 // 上线增加cdn
 fis.media('pushAddCdn')
     .match ('*.{png,jpg,js,es6,css,scss,eot,svg,ttf,woff,swf}', {
-        domain: ['http://b3.hoopchina.com.cn/web/tv', 'http://b2.hoopchina.com.cn/web/tv', 'http://b1.hoopchina.com.cn/web/tv']
+        domain: ['http://assets.liangle.com/tv']
     })
     .match('*', {
         deploy: pushDev(qa123_receiver)
@@ -146,11 +146,10 @@ fis.media('pushAddCdn')
 
 // 线上
 fis.media('online')
-    // 静态资源
     .match('*.{png,jpg,js,es6,css,scss,eot,svg,ttf,woff,swf}', {
-        deploy: localTo('../../b1/web/tv'),
-        // cdn
-        domain: ['http://b3.hoopchina.com.cn/web/tv', 'http://b2.hoopchina.com.cn/web/tv', 'http://b1.hoopchina.com.cn/web/tv']
+      deploy: localTo('../output/static/tv'),
+      // cdn
+      domain: ['http://assets.liangle.com/tv']
     })
     .match('*-map.json', {
         deploy: localTo('../output')

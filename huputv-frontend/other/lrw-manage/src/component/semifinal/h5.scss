@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+@import "../../static/sass/vendor/sassCore/base";
+
+.start-wrap {
+  .main-title {
+    text-align: center;
+    h2 {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,8 +1,8 @@
 {%extends file="common/page/layout.tpl"%} 
 {%block name="block_head_static"%}
+{%require name="common:widget/rpz-board/rpz-board.scss"%}
 {%require name="live:static/live/live.scss"%}
 {%require name="common:static/js/videojs/video-js.css"%}
-{%require name="common:widget/rpz-board/rpz-board.scss"%}
 {%require name="common:static/js/videojs/ie8/videojs-ie8.js"%}
 {%require name="common:static/js/videojs/video.js"%}
 {%require name="common:static/js/videojs/videojs-hls.min.js"%}
@@ -106,57 +106,6 @@
         HTV.sendDacePlayTime = function(str) {
             return PageEvent.sendDacePlayTime(str);
         }
-
-        var firstImgLoad = false;
-
-        function BulletinSize(){
-            $('.bulletin .bd').css({
-                height: $('.recomend-list').height()
-            });
-        }
-
-        function SetVideoSize() {
-            if($(window).width() > 650){
-                var mainWidth = $('.live-main').width(),
-                    mainHeight = mainWidth / 1.77;
-
-                $('.live-play, #live-video').css({
-                    width: mainWidth,
-                    height: mainHeight
-                });
-
-                $('.J_chatroomScroll').css({
-                    height: mainHeight - $('.J_sendHotline').height() - $('#J_giftTop').height() + 46
-                });
-
-                if(!firstImgLoad){
-                    // 图片加载成功
-                    $('.recomend-list img').eq(0).load(function(){
-                        BulletinSize();
-                    });
-                }else{
-                    BulletinSize();
-                }
-
-                firstImgLoad = true;
-            }
-
-            $('.J_taskAndGift').show();
-
-        }
-
-        /*
-        SetVideoSize();
-
-        $(window).on('resize', function() {
-            setTimeout(function() {
-                SetVideoSize();
-            }, 300);
-        });
-        */
-
-        window.SetVideoSize = SetVideoSize;
-
     {%/script%}
 {%/block%}
 {%block name="content"%}
@@ -249,9 +198,9 @@
 </div>
 {%else%}
 {%widget
-                        name="live:widget/task/task.tpl"
-                        chaoneng=false
-                    %}
+                            name="live:widget/task/task.tpl"
+                            chaoneng=false
+                        %}
 <div class="gift-right">
 {%if $login%}
 <div class="my-wallet" id="J_myWallet">
@@ -266,9 +215,9 @@
 </div>
 {%/if%}
 {%widget
-                            name="live:widget/send-gift/gift.tpl"
-                            datas=$gift.list
-                        %}
+                                name="live:widget/send-gift/gift.tpl"
+                                datas=$gift.list
+                            %}
 </div>
 {%/if%}
 </div>
@@ -310,60 +259,14 @@
                 %}
 </div>
 <div class="live-sidebar">
-<div class="bulletin">
-<div class="title">
-<h2>主播公告</h2>
-</div>
-<div class="bd">
-{%if !empty($live.notice)%}
-{%$live.notice|escape:none%}
-{%/if%}
-</div>
-</div>
-{%if !empty($predict_today_rank)%}
-<div class="day-board">
-<div class="board-title">
-<div class="tag">人品值排行榜</div>
-<a href="/predict/rank/list" target="_blank" class="more">
-更多 &gt;</a>
-</div>
-<div class="rpz-list">
-{%$rankCls = ["","no1","no2","no3"]%}
-{%$statusCls = ["tie","up","down"]%}
-<ul id="J_dayList">
-{%foreach $predict_today_rank as $val%}
-<li>
-<div class="list-left">
-<span class="rank {%if intval($val.rank) < 4%}{%$rankCls[$val.rank]|f_escape_xml%}{%/if%}">
-{%$val.rank|f_escape_xml%}
-</span>
-<span class="status {%$statusCls[$val.change]|default:'new'|f_escape_xml%}">
-<em></em>
-</span>
-<span class="thumb">
-<img src="{%$val.header|f_escape_xml%}" alt="" />
-</span>
-<span class="name" title="{%$val.username|f_escape_xml%}">{%$val.username|f_escape_xml%}</span>
-<span class="result 
-                                        {%if $val.score|string_format:'%d' >= 0%}
-                                            num 
-                                        {%else%}
-                                            lose
-                                        {%/if%}">{%$val.score|f_escape_xml%}</span>
-</div>
-<div class="list-right">
-<span class="result {%if intval($val.win_score) >= 0%}win{%else%}fail{%/if%}">{%if intval($val.win_score)> 0%}
-+{%$val.win_score|f_escape_xml%}
-{%else%}
-{%$val.win_score|f_escape_xml%}
-{%/if%}</span>
-</div>
-</li>
-{%/foreach%}
-</ul>
-</div>
-</div>
-{%/if%}
+{%widget
+                    name="live:widget/bulletin/bulletin.tpl"
+                    data = $live.notice
+                %}
+{%widget
+                    name="live:widget/today-rank/rank.tpl"
+                    datas = $predict_today_rank
+                %}
 </div>
 </div>
 </div>

@@ -2,7 +2,7 @@
 
     var _ = require('common:static/js/underscore/underscore.js');
     var api = {
-        list: '/predict/topic/list'
+        list: '/predict/user/topic/list'
     };
 
     var recordList = {
@@ -75,6 +75,8 @@
             this.moreBtn = $('#J_more');
             this.recordList = $('#J_recordList');
             this.moreFinish = $("#J_loadmore");
+            this.zrpTab = $(".zrp-record");
+            this.zrpContent = $(".zrp-detail");
             this.nextDate = HTV.nextDate;
             this.bind();
         },
@@ -90,7 +92,7 @@
                 },function(data) {
 
                     if(data.code == 1) {
-                        var recordTpl = _.template( $("#record-tpl").html(), {data: data.data} );
+                        var recordTpl = _.template( $("#record-tpl").html(), {datas: data.data} );
                         self.recordList.append( recordTpl );
                         if(data.data.next){
                           self.nextDate = data.data.next;
@@ -104,7 +106,13 @@
                     }
                 },"json")
             });
-
+            this.zrpTab.on('click',function(){
+              console.log("enter");
+              var index = $(this).index();
+              $(this).addClass("active").siblings().removeClass("active");
+              self.zrpContent.removeClass("active").eq(index).addClass("active");
+              //self.zrpContent.eq(index).addClass("active").siblings.removeClass("active");
+            })
         }
 
     };

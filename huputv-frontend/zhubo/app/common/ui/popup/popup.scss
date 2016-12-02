@@ -1,0 +1,248 @@
+@charset "UTF-8";
+
+@import "sass/vendor/sassCore/base";
+
+$pop-button-close:    "./img/btn_close.png";
+
+.ui-popup-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  @include opacity(70);
+  background: #000;
+}
+
+.ui-popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 弹出设置房间 */
+.ui-popup-inner {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:1001;
+  width:640px;
+  padding:15px 20px 20px;
+  background:$grayDarker;
+  color: #fff;
+  border:1px solid #222;
+  .btn-close {
+      display: block;
+      position: absolute;
+      top:8px;
+      right:8px;
+      width:15px;
+      height:15px;
+      overflow:hidden;
+      background:url($pop-button-close) no-repeat center;
+      text-indent:-10em;
+  }
+  .pop-scrollbar {
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+  }
+  .setting-room-list {
+      line-height:28px;
+      color:$white;
+      .setting-list {
+          margin-bottom:10px;
+      }
+      .title {
+          height: 26px;
+          margin-bottom:8px;
+          border-bottom:1px solid #5e5e5e;
+          h4 {
+              display: inline-block;
+              height: 26px;
+              padding:0 10px;
+              line-height: 26px;
+              font-size: 14px;
+              text-align: center;
+              background: #5e5e5e;
+          }
+      }
+      dd {
+          padding:2px 0;
+          @extend %clearfix;
+      }
+      // li {
+      //     padding:2px 0;
+      //     @extend %clearfix;
+      // }
+      .control-label {
+          @include float;
+          width:90px;
+          padding-right:5px;
+          font-size: 14px;
+          font-weight:700;
+          font-family:$fontYaHei;
+          text-align:right;
+      }
+      .control-input {
+          overflow:hidden;
+          *zoom:1;
+      }
+      .room-id {
+          font-size: 14px;
+          font-weight:700;
+          font-family:$fontYaHei;
+      }
+      .input-border {
+          @include float;
+          height:26px;
+          line-height:26px;
+          padding:0 5px;
+          margin-right:6px;
+          background:#161616;
+          border:1px solid #3e3e3e;
+      }
+      .room-select {
+          @include float;
+          position: relative;
+          height:26px;
+          line-height:26px;
+          padding:0 5px;
+          margin-right:6px;
+          background:#161616;
+          border:1px solid #3e3e3e;
+      }
+      .input-roomTitle {
+          width:190px;
+      }
+      .input-notice {
+          width: 190px;
+          height: 58px;
+          line-height: 18px;
+      }
+      .input-select-game {
+          width:82px;
+      }
+      .frontCover {
+          @include float;
+          width:140px;
+          height:90px;
+          line-height:90px;
+          margin-right:10px;
+          text-align:center;
+          overflow:hidden;
+          background: $black;
+          border:1px solid #434343;
+          img {
+//                display: none;
+              max-width: 100%;
+          }
+      }
+      // 上传
+      .upload-file {
+          position: relative;
+          width: 58px;
+          height:26px;
+          margin:20px 0 5px;
+          text-align:center;
+          background:$red;
+          color:$white;
+          font:700 14px/26px $fontYaHei;
+      }
+      .button-upload {
+          position: absolute;
+          top: 0;
+          right: 0;
+          margin: 0;
+          padding: 0;
+          font-size: 200px;
+          direction: ltr;
+          cursor: pointer;
+          @include opacity(0);
+      }
+      .split {
+          @include float;
+          margin-right: 6px;
+          font-size: 14px;
+          font-weight:700;
+          font-family:$fontYaHei;
+      }
+//        热词
+      .hot-title {
+          display: block;
+          margin-top:4px;
+          line-height:26px;
+          font-size:$baseFontSize;
+          color:#696969;
+      }
+
+      .tip-inner {
+          @include float;
+          @include inline-block;
+          position: relative;
+      }
+      .note-text {
+          color:$grayDark;
+      }
+//        错误提示
+      .error-info {
+          // display: none;
+          position: absolute;
+          top:0;
+          left:0;
+          width:100%;
+          padding-right:10px;
+          font-style: inherit;
+          background: $grayDarker;
+          color:$red;
+          white-space: nowrap;
+      }
+      .ajax-error-info {
+          padding-left:15px;
+          color:$red;
+      }
+  }
+  .button-inner {
+    padding-top:20px;
+    margin-top:10px;
+    text-align:center;
+    border-top:1px solid #535353;
+
+    .btn-save {
+        @include inline-block;
+        width:145px;
+        height:42px;
+        margin:0 8px;
+        text-align:center;
+        background:$red;
+        border: none;
+        color:$white;
+        font:700 18px/42px $fontYaHei;
+    }
+
+    .btn-cancel {
+        @include inline-block;
+        width:145px;
+        height:42px;
+        margin:0 8px;
+        text-align:center;
+        border: none;
+        background:#4c4d4d;
+        color:#c7c8c8;
+        font:700 18px/42px $fontYaHei;
+    }
+  }
+}
+
+@include max-screen(768px) {
+    .pop-setting-room {
+        width: 95%;
+    }
+}

@@ -1,0 +1,116 @@
+{
+    "code": 1,
+    "msg": "操作成功",
+    "data": {
+        "rank_list": [
+            {
+                "left_puid": "18538257",
+                "right_puid": "3565350",
+                "num": 3,
+                "status": 2,
+                "left": {
+                    "player_id": "39",
+                    "player_num": "11",
+                    "total_game": "2",
+                    "total_win": "1",
+                    "status": "1",
+                    "rate": 50,
+                    "puid": "18538257",
+                    "nickname": "我是克隆人",
+                    "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+                    "height": "0",
+                    "weight": "0",
+                    "total_popularity": "0"
+                },
+                "right": {
+                    "player_id": "33",
+                    "player_num": "17",
+                    "total_game": "1",
+                    "total_win": "1",
+                    "status": "1",
+                    "rate": 100,
+                    "puid": "3565350",
+                    "nickname": "FlyingFinn",
+                    "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+                    "height": "0",
+                    "weight": "0",
+                    "total_popularity": "0"
+                },
+                "left_score": "0",
+                "right_score": "3"
+            },
+            {
+                "left_puid": "29060092",
+                "right_puid": "28686916",
+                "num": 2,
+                "status": 2,
+                "left": {
+                    "player_id": "36",
+                    "player_num": "14",
+                    "total_game": "2",
+                    "total_win": "1",
+                    "status": "1",
+                    "rate": 50,
+                    "puid": "29060092",
+                    "nickname": "suibian45",
+                    "header": "http://i3.hoopchina.com.cn/user/ ",
+                    "height": "0",
+                    "weight": "0",
+                    "total_popularity": "0"
+                },
+                "right": {
+                    "player_id": "35",
+                    "player_num": "15",
+                    "total_game": "1",
+                    "total_win": "1",
+                    "status": "1",
+                    "rate": 100,
+                    "puid": "28686916",
+                    "nickname": "hupu_f2e58d75da850317",
+                    "header": "http://i2.hoopchina.com.cn/user/ ",
+                    "height": "0",
+                    "weight": "0",
+                    "total_popularity": "0"
+                },
+                "left_score": "0",
+                "right_score": "3"
+            },
+            {
+                "left_puid": "17774094",
+                "right_puid": "256650",
+                "num": 1,
+                "status": 2,
+                "left": {
+                    "player_id": "49",
+                    "player_num": "2",
+                    "total_game": "2",
+                    "total_win": "1",
+                    "status": "1",
+                    "rate": 50,
+                    "puid": "17774094",
+                    "nickname": "bazinganswer",
+                    "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+                    "height": "0",
+                    "weight": "0",
+                    "total_popularity": "0"
+                },
+                "right": {
+                    "player_id": "32",
+                    "player_num": "18",
+                    "total_game": "1",
+                    "total_win": "1",
+                    "status": "1",
+                    "rate": 100,
+                    "puid": "256650",
+                    "nickname": "雪鸟",
+                    "header": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+                    "height": "0",
+                    "weight": "0",
+                    "total_popularity": "0"
+                },
+                "left_score": "0",
+                "right_score": "3"
+            }
+        ]
+    }
+}

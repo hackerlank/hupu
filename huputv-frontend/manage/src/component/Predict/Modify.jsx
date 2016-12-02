@@ -1,9 +1,10 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router'
 import dataService from 'common/dataService'
 import { Form, Input, Row, Col, Radio, Button, Tabs, Table, Popconfirm, Select, message, Modal, DatePicker, Checkbox } from 'antd'
 
 const FormItem = Form.Item;
+const InputGroup = Input.Group;
 const RadioGroup = Radio.Group;
 
 const Api = {
@@ -18,28 +19,16 @@ class Modify extends Component {
         this.state = {
             id: 0,
             match_id: 0,
-            option1: 0,
-            option2: 0,
+            option: [],
             score: 0,
             stop_time: 0
         }
     }
 
     componentWillReceiveProps(nextProps) {
-        // if(nextProps.data.id != undefined && (nextProps.data.id === this.state.id)){
-        //     return;
-        // }
-        // console.log(nextProps.data);
-        this.setState({
-            id: nextProps.data.id,
-            match_id: nextProps.data.match_id,
-            option1: nextProps.data.option1,
-            option2: nextProps.data.option2,
-            score: nextProps.data.score,
-            stop_time: nextProps.data.stop_time,
-            checked: nextProps.data.stop_time == '0000-00-00 00:00:00' ? false : true
-        })
+        const props = Object.assign(this.state, nextProps.data);
 
+        this.setState(props);
     }
 
     handleCancel() {
@@ -57,15 +46,30 @@ class Modify extends Component {
             let data = this.props.form.getFieldsValue();
             let api = Api.modify.replace(':id', this.props.form.getFieldValue('id'));
 
+            let option = [];
+
+            // 选项处理
+            for(var i in data) {
+                if(/^option_\d$/.test(i)){
+                    option.push(data[i]);
+                    delete data[i];
+                }
+            }
+
+            data.option = option.join(',')
+
             console.log("接收到的表单值",data);
 
-            dataService.put(api, data).then((res) =>{
-                if(res.code == 1) {
-                    this.props.handleOk();
-                }else{
-                    message.error(res.msg);
-                }
-            })
+
+            dataService
+                .put(api, data)
+                .then((res) => {
+                    if(res.code == 1) {
+                        this.props.handleOk();
+                    }else{
+                        message.error(res.msg);
+                    }
+                })
 
         })
     }
@@ -87,29 +91,18 @@ class Modify extends Component {
 
     render() {
 
-        const { getFieldProps } = this.props.form;
+        const { getFieldProps, getFieldValue } = this.props.form;
 
         const formItemLayout = {
             labelCol: { span: 6 },
             wrapperCol: { span: 14 },
         };
 
-        const option1Props = getFieldProps('option1', {
-            initialValue: this.state.option1,
+        const titleProps = getFieldProps('title', {
+            initialValue: this.state.title,
             rules: [
-                { required: true, message: '请输入选项1' }
+                { required: true, message: `请输入题目标题` }
             ]
-        });
-
-        const option2Props = getFieldProps('option2', {
-            initialValue: this.state.option2,
-            rules: [
-                { required: true, message: '请输入选项2' }
-            ]
-        });
-
-        const autoCloseProps = getFieldProps('auto', {
-            valuePropName: 'checked'
         });
 
         const scoreProps = getFieldProps('score', {
@@ -126,6 +119,29 @@ class Modify extends Component {
             display: this.state.checked ? 'block': 'none'
         };
 
+
+
+        const optionRender = (item, index) => {
+            index += 1;
+            return (
+                <Col>
+                    <FormItem
+                        {...formItemLayout} 
+                        label={`选项${index}`}>
+                        <Input 
+                            placeholder={`请输入选项${index}`} 
+                            {...getFieldProps(`option_${index}`, {
+                                initialValue: item.option,
+                                rules: [
+                                    { required: true, message: `请输入选项${index}` }
+                                ]
+                            })} 
+                        />
+                    </FormItem>
+                </Col>
+            )
+        }
+
         return (
             <div>
                 <Modal 
@@ -139,23 +155,23 @@ class Modify extends Component {
                     ]}
                 >
                     <Form horizontal form={this.props.form} >
+                        <FormItem
+                          {...formItemLayout}
+                          label="题目标题"
+                        >
+                            <Input 
+                                type="textarea"
+                                {...titleProps}
+                             />
+                        </FormItem>
                         <Row>
-                            <Col>
-                                <FormItem
-                                    {...formItemLayout} 
-                                    label='选项1'>
-                                    <Input placeholder="请输入选项1" 
-                                        {...option1Props} />
-                                </FormItem>
-                            </Col>
-                            <Col>
-                                <FormItem
-                                    {...formItemLayout} 
-                                    label='选项1'>
-                                    <Input placeholder="请输入选项2" 
-                                        {...option2Props} />
-                                </FormItem>
-                            </Col>                           
+                            {
+                                this.state.option.map((item, index) => {
+                                    return (
+                                        optionRender(item, index)
+                                    )
+                                })            
+                            }
                         </Row>
                         <FormItem
                           {...formItemLayout}
@@ -193,10 +209,6 @@ class Modify extends Component {
 
                         <Input type="hidden" {...getFieldProps('id', {
                             initialValue: this.state.id
-                        })} />
-
-                        <Input type="hidden" {...getFieldProps('match_id', {
-                            initialValue: this.state.match_id
                         })} />
                     </Form>
                     

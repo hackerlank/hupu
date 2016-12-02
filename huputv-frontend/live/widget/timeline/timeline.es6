@@ -84,16 +84,16 @@ Timeline.prototype = {
         this.timerHeart = setInterval(() => {
             timestamp = +new Date();
 
-            this.nodes.map((value, index) => {
-                if(!this.isUndefined(value.className)
-                    && (timestamp - value.startDate) >= value.timeout){
+            _.map(this.nodes, (value, index) => {
+              if(!this.isUndefined(value.className)
+                  && (timestamp - value.startDate) >= value.timeout){
 
-                    if(value.type === 1000){
-                        this.removeGift(value.className, index);
-                    }else{
-                        this.removeMessage(value.className, index);
-                    }
-                }
+                  if(value.type === 1000){
+                      this.removeGift(value.className, index);
+                  }else{
+                      this.removeMessage(value.className, index);
+                  }
+              }
             })
         }, 200);
     },

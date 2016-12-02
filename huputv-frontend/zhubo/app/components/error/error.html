@@ -1,0 +1,15 @@
+<div class="warp-error">
+  <div class="ui-wrap">
+
+    <div class="error-info">
+      <h2 class="error-title">
+        {{data.title || '亲，您还没有开通主播权限,请联系客服MM哦！'}}
+      </h2>
+      <div class="banned" ng-show="data.reason">
+        封禁理由：{{data.reason}}<br />
+        封禁时间：{{data.time}}
+      </div>
+    </div>
+    <a href="javascript:" title="返回上页" ng-click="back()" class="button-prev">返回上页</a>
+  </div>
+</div>
