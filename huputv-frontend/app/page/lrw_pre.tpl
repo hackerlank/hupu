@@ -18,7 +18,8 @@
 
             //平台
             HTV.platform='{%$platform%}';
-           
+            //match_ID
+            HTV.match_id = '{%$game.id%}'
             // 跳转登录
             HTV.jumpLogin = function() {
                 {%if !$is_login && !empty($login_url)%}
@@ -32,29 +33,36 @@
 {%/block%}
 
 {%block name="content"%}
-    <section class="lrw-header">
-        <img src="{%$game.division.app_img%}">
-    </section>
-    <section class="lrw-wrap" id="J_lrw_pre">
-        {%widget
-          name = "app:widget/inner-tab/tab.tpl"
-          channel = "lrw-pre"
-          selected = "1"
-        %}
+    <div id="J-pre-main">
+        <section class="lrw-header">
+            <img src="{%$game.division.app_img%}">
+        </section>
+        <section class="lrw-wrap" id="J_lrw_pre">
+            {%widget
+              name = "app:widget/inner-tab/tab.tpl"
+              channel = "lrw-pre"
+              selected = "1"
+            %}
 
-        <div id="J_lrwContent"></div>
-
-        {%widget
-          name = "app:widget/lrw-pre/game-introduce/introduce.tpl"
-          game =  $game
-          recommend = $video_recommend
-
-        %}
-
-        {%widget
-          name="app:widget/lrw/play-list/play-list.tpl"
-        %}
-
-        
-  </section>
+            <div id="J-lrw-pre">
+                <div class="lrw-pre-item visited actived">
+                    {%widget
+                        name = "app:widget/lrw-pre/game-introduce/introduce.tpl"
+                        game =  $game
+                        recommend = $video_recommend
+                    %}
+                </div>
+                <div class="lrw-pre-item" >
+                    {%widget
+                        name="app:widget/target_video/player_statistics/statistics.tpl"
+                    %}
+                </div>
+                <div class="lrw-pre-item">
+                    {%widget
+                        name="app:widget/target_video/end_discuss/discuss.tpl"
+                    %}
+                </div>
+            </div>
+        </section>
+    </div>
 {%/block%}

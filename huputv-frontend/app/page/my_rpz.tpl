@@ -140,9 +140,25 @@
                 </section>
             </section>
             <section class="rank-link">
-                <a href="/m/predict/ranking?n={%$in_kanqiu%}&client={%$client%}">人品值排行榜 ></a>
+                <a href="/m/predict/ranking?n={%$in_kanqiu%}&client={%$client%}">
+                    <span class="rank-text">人品值排行榜</span>
+                    <span class="rank-list">
+                        日排行1，月排行21
+                        <em></em>
+                    </span>
+                    
+                </a>
             </section>
            {%if !empty($userTopicList)%}
+           <section class="zrp-record-detail">
+                <a href="/m/predict/ranking?n={%$in_kanqiu%}&client={%$client%}">
+                    <span class="rank-text">攒人品记录</span>
+                    <span class="rank-list">
+                        人品值明细
+                        <em></em>
+                    </span>                    
+                </a>
+            </section>
             <section class="rpz-predict">            
                 <ul class="pre-list" id="J-detail-list" data-more="{%$userTopicList.next%}">
                     <li class="pre-list-head">

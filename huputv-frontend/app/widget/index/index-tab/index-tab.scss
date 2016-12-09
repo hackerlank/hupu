@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import "../../../static/sass/sassCore/function";
+
+.ui-inner-tab {	
+	@include display-flex();
+	padding:0 10px;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	color: $grayDark;
+	background: $white;	
+	&-list {
+		@include flex(1);		
+		li {	
+			display:inline-block;		
+			text-align:center;
+			margin-right:25px;			
+		}
+		a {
+			display: block;			
+			color: #a9a9b2;			
+		}
+		.active{
+			color: $morning_red_cor;
+			font-size:16px;
+			border-bottom: 1px solid $morning_red_cor;
+			a {
+				color: $morning_red_cor;
+			}
+		}		
+	}
+	.lrw-login{
+		right:0px;
+		color:#434141;
+		font-size:14px;
+	}
+}

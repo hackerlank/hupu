@@ -28,7 +28,7 @@
 			}
 		}
 		.star_num{
-			
+			position:relative;
 			li{
 				width:15px;
 				height:15px;
@@ -100,11 +100,14 @@
 	}
 	.introduce_list{
 		background:#fff;
-		padding:16px 10px;
 		font-size:12px;
+		padding-top:8px;
 		.list{
 			@include display-flex();
-			margin-bottom:15px;
+			padding:8px 10px;
+			&:active{
+				background:#eee;
+			}
 			.img{
 				position:relative;
 				margin-right:12px;	
@@ -187,6 +190,10 @@
 				}				
 			}
 		}
+	}
+	.no_more{
+		text-align:center;
+		color:#777;
 	}
 }
 .night{

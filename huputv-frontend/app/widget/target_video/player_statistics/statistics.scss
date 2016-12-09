@@ -1,11 +1,11 @@
 @charset "utf-8";
 @import "../../../static/sass/sassCore/function";
-.statistics{
-	display:none;
+.statistics{	
 	li{
 		background:#fff;
 		height:72px;
 		margin-bottom:4px;
+		margin-top:5px;
 		padding:14px 0px 10px 16px;
 
 		display: -webkit-box;
@@ -48,6 +48,7 @@
 			img{
 				width:37px;
 				height:37px;
+				border-radius: 50%;
 			}
 		}
 		.content{	
@@ -107,12 +108,17 @@
 							vertical-align: -2px;
 						}
 					}
-					&.select{
-						background:#c01e2f;
+					&.select_win{
+						color:#ff4252;
+						border:1px solid #ff4252;
 					}
 					&.finish{
+						background:#ff4252;
+						color:#fff;
+					}
+					&.selected{
 						background:#d5d7c8;
-						color:#a2a2a0;
+						color:#999;
 					}
 				}
 				span:active{

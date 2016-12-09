@@ -64,7 +64,7 @@
 		        	</div>
 		        	<div class="rpz-tab">
 		        		<a href="javascript:;" class="zrp-record active">攒人品记录</a>
-		        		<a href="javascript:;" class="zrp-record">人品值明细</a>
+		        		<a href="javascript:;" class="zrp-record" id="J-rpz-detail-head">人品值明细</a>
 		        	</div>
 					<div class="rpz-predict-wrap" id="J-rpz-predict">
 						<div class="zrp-detail active">
@@ -143,43 +143,25 @@
 								</div>
 							{%/if%}	
 						</div>
-						<div class="zrp-detail ">
-							{%if empty($userTopicdetail)%}
+						<div class="zrp-detail ">							
 								<div class="rpz-detail">
 									<p class="rpz-header">
 										<span class="rpz-title">人品值明细</span><span class="rpz-text">可查询最近3个月的人品值记录</span>
 									</p>
 									<ul class="rpz-detail-wrap" id="J-rpz-detail">
-										<li class="rpz-item">
-											<div class="rpz-date">
-												2016/03/19  11:07
-											</div>
-											<div class="rpz-content">												
-												攒人品 - [路人王上海站] 参与攒人品
-											</div>
-											<div class="rpz-score">
-												+100RP
-											</div>
-											<div class="rpz-current">
-												当前PR 700
-											</div>
-										</li>
+										
 									</ul>
-									<div class="more">
-						                {%if !empty($userTopicList.next)%}
-					        			<a href="javascript:;" class="more-record" id="J_more_rpz">
+									<div class="more-btn">						                
+					        			<a href="javascript:;" class="more-record rpz-more" id="J_more_rpz">
 					        				<div class="arrow"><span></span></div>
 					        				<span class="txt">向下展开查看更多</span>
-					        			</a>
-										{%/if%}
+					        			</a>										
 										<div class="more-record" id="J_loadmore" style="display:none"><span class="txt">加载完毕</span></div>
 						            </div>
+						            <div class="rpz-detail-empty">
+										暂无人品值明细
+									</div>
 								</div>
-							{%else%}
-								<div class="rpz-detail-empty">
-									暂无人品值明细
-								</div>
-							{%/if%}
 						</div>				
 					</div>
 		        </div>
@@ -266,20 +248,20 @@
 		</li>
 	<@})@>
 	</script>
-	<script id="detail-tpl" type="text/template">
-		<@ _.each(datas.data, function(val,index) { @>
-			<li class="rpz-item">
+	<script id="J-detail-tpl" type="text/template">
+		<@ _.each(datas, function(val,index) { @>
+			<li class="rpz-item <@if (index%2 == 1){@> odd <@ }@>">
 				<div class="rpz-date">
-					2016/03/19  11:07
+					<@=val.create_time@>
 				</div>
 				<div class="rpz-content">												
-					攒人品 - [路人王上海站] 参与攒人品
+					<@=val.title@>
 				</div>
-				<div class="rpz-score">
-					+100RP
+				<div class="rpz-score <@if (val.rp > 0){@> add <@}else {@> reduce <@}@>">
+					<@=val.rp@>RP
 				</div>
 				<div class="rpz-current">
-					当前PR 700
+					当前RP<@=val.balance@>
 				</div>
 			</li>
 		<@})@>

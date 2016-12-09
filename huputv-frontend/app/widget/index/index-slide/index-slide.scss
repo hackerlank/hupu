@@ -1,0 +1,64 @@
+
+
+.page-swipe {
+    max-height: 167px;
+    overflow:hidden;
+    position:relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.page-swipe figure {
+    display: block;    
+}
+.swipe-wrap > figure {
+    float: left;
+    width:100%;
+    height:100%;
+    position: relative;
+    a{  
+        display:block;
+        width:100%;
+        height:100%;
+    }
+}
+.page-swipe figure .image {
+    height:167px;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-swipe .swipe-title{
+    background-color:rgba(0,0,0,0.5);
+    color:#fff;
+    padding-left:12px;
+    height:35px;
+    line-height:35px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;    
+}
+
+.page-swipe .swipe-position {
+    position:absolute;
+    right:10px;
+    bottom:0px;    
+    height:30px;
+    overflow:hidden;
+}
+
+.page-swipe .swipe-position li {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background: #fff;
+    margin:5px 2px 0 2px;
+    vertical-align:middle;
+}
+
+.page-swipe .swipe-position li.on{
+    width: 11px;
+}

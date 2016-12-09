@@ -1,0 +1,277 @@
+{
+    "kanqiu_version": "7.0.18",
+    "test": "1",
+    "client": "",
+    "night": 0,
+    "n": 2,
+    "catalog": [
+        {
+            "sid": "69",
+            "sname": "路人王",
+            "sroute": "lrw",
+            "sorder": "1",
+            "display": "1",
+            "displayindex": "1",
+            "division": [
+                {
+                    "id": "1",
+                    "name": "上海"
+                },
+                {
+                    "id": "2",
+                    "name": "南京"
+                },
+                {
+                    "id": "3",
+                    "name": "合肥"
+                },
+                {
+                    "id": "4",
+                    "name": "杭州"
+                },
+                {
+                    "id": "5",
+                    "name": "天津"
+                },
+                {
+                    "id": "6",
+                    "name": "广州"
+                },
+                {
+                    "id": "7",
+                    "name": "沈阳"
+                },
+                {
+                    "id": "8",
+                    "name": "西安"
+                },
+                {
+                    "id": "12",
+                    "name": "武汉"
+                },
+                {
+                    "id": "17",
+                    "name": "长沙"
+                },
+                {
+                    "id": "22",
+                    "name": "上上海"
+                },
+                {
+                    "id": "26",
+                    "name": "222"
+                },
+                {
+                    "id": "27",
+                    "name": "333333"
+                },
+                {
+                    "id": "28",
+                    "name": "4444444"
+                },
+                {
+                    "id": "29",
+                    "name": "1111111"
+                },
+                {
+                    "id": "30",
+                    "name": "加俊"
+                },
+                {
+                    "id": "31",
+                    "name": "路人王"
+                }
+            ]
+        },
+        {
+            "sid": "59",
+            "sname": "美女直播",
+            "sroute": "sssss2",
+            "sorder": "1",
+            "display": "1",
+            "displayindex": "1"
+        },
+        {
+            "sid": "46",
+            "sname": "篮球精选",
+            "sroute": "gma111",
+            "sorder": "1",
+            "display": "1",
+            "displayindex": "1"
+        },
+        {
+            "sid": "49",
+            "sname": "奥奥",
+            "sroute": "game",
+            "sorder": "2",
+            "display": "1",
+            "displayindex": "1"
+        },
+        {
+            "sid": "45",
+            "sname": "足球专区",
+            "sroute": "quwan",
+            "sorder": "2",
+            "display": "1",
+            "displayindex": "0"
+        },
+        {
+            "sid": "27",
+            "sname": "步行街",
+            "sroute": "chaonneg",
+            "sorder": "3",
+            "display": "1",
+            "displayindex": "1"
+        },
+        {
+            "sid": "47",
+            "sname": "游戏",
+            "sroute": "game1",
+            "sorder": "4",
+            "display": "1",
+            "displayindex": "0"
+        },
+        {
+            "sid": "57",
+            "sname": "游戏竞技",
+            "sroute": "game5",
+            "sorder": "5",
+            "display": "1",
+            "displayindex": "1"
+        },
+        {
+            "sid": "60",
+            "sname": "12333",
+            "sroute": "far",
+            "sorder": "6",
+            "display": "1",
+            "displayindex": "0"
+        },
+        {
+            "sid": "48",
+            "sname": "惊奇竞技",
+            "sroute": "basketball1",
+            "sorder": "99",
+            "display": "1",
+            "displayindex": "0"
+        }
+    ],
+    "recommend": [
+        {
+            "type": 1,
+            "id": "10356",
+            "room_name": "farman的直播间",
+            "is_live": "1",
+            "anchor_nickname": "farman",
+            "recommend": "1",
+            "online_format": 1,
+            "cover": "http://w3.hoopchina.com.cn/5e/6b/2e/5e6b2ed91290929b3367d58f76cb70e1001.jpg@300h_534w_1e_1c"
+        },
+        {
+            "id": "bbb6478c0d992524f5cfc6382acdf2c9",
+            "title": "测试1=2",
+            "recommend": "2",
+            "cover": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png",
+            "score": 0,
+            "create_time": "2016-11-18",
+            "tag": [],
+            "type": 2
+        },
+        {
+            "id": "bc089b487d79fbac81e4a82aa273c199",
+            "title": "11111",
+            "recommend": "3",
+            "cover": "http://w2.hoopchina.com.cn/fa/fa/5e/fafa5efeaf3cbe3b23b2748d13e629a1001.jpg",
+            "score": 0,
+            "create_time": "2016-11-21",
+            "tag": [],
+            "type": 2
+        },
+        {
+            "id": "ce2bcbd0f64586f446cb79fc8c8b1f74",
+            "title": "003",
+            "recommend": "4",
+            "cover": "http://w2.hoopchina.com.cn/37/ec/8f/37ec8f26d0da865144aeb407896b9ed0001.jpg",
+            "score": 0,
+            "create_time": "2016-11-21",
+            "tag": [],
+            "type": 2
+        },
+        {
+            "type": 1,
+            "id": "666",
+            "room_name": "athos的直播间",
+            "is_live": "1",
+            "anchor_nickname": "athos",
+            "recommend": "5",
+            "online_format": 1001,
+            "cover": "http://w1.hoopchina.com.cn/38/c0/cc/38c0cc78de43077e28f196af91be6042001.jpg@300h_534w_1e_1c"
+        },
+        {
+            "id": "85a373a0a7483793c7ec2180bd9c3b11",
+            "title": "ttt",
+            "recommend": "6",
+            "cover": "http://w2.hoopchina.com.cn/5a/44/c7/5a44c7ba5bbe4ec867233d67e4806848001.jpg",
+            "score": 2,
+            "create_time": "2016-11-24",
+            "tag": [
+                "a",
+                "b",
+                "c"
+            ],
+            "type": 2
+        },
+        {
+            "id": "f768cea7bbe4fceffa652812ae0d5f2b",
+            "title": "test",
+            "recommend": "7",
+            "cover": "http://w1.hoopchina.com.cn/ba/45/c8/ba45c8f60456a672e003a875e469d0eb001.jpg",
+            "score": 0,
+            "create_time": "2016-11-24",
+            "tag": [
+                "klk"
+            ],
+            "type": 2
+        },
+        {
+            "type": 1,
+            "id": "10372",
+            "room_name": "陈奕迅迅迅迅的直播间",
+            "is_live": "1",
+            "anchor_nickname": "陈奕迅迅迅迅",
+            "recommend": "8",
+            "online_format": 1,
+            "cover": "http://w1.hoopchina.com.cn/huputv/resource/img/cover.png"
+        },
+        {
+            "id": "76be972941d1a2284018f0458bd20a6a",
+            "title": "1",
+            "recommend": "9",
+            "cover": "http://w2.hoopchina.com.cn/fa/fa/5e/fafa5efeaf3cbe3b23b2748d13e629a1001.jpg",
+            "score": 0,
+            "create_time": "2016-11-24",
+            "tag": [
+                "aa",
+                "bbb"
+            ],
+            "type": 2
+        },
+        {
+            "id": "mmvw1poxx0e",
+            "title": "dd232",
+            "recommend": "10",
+            "cover": "http://w3.hoopchina.com.cn/49/82/b0/4982b0b7390d7af25881ef2a628d2069001.jpg",
+            "score": 0,
+            "create_time": "2016-12-06",
+            "tag": [],
+            "type": 2
+        }
+    ],
+    "userInfo": [],
+    "login_url": "https://passport.liangle.com/pc/login?project=liangle&from=m",
+    "logout_url": "https://passport.liangle.com/pc/logout",
+    "register_url": "https://passport.liangle.com/pc/register?project=liangle&from=m",
+    "is_login": 0,
+    "in_kanqiu": 0,
+    "platform": "h5"
+}

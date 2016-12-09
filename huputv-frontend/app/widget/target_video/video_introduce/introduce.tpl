@@ -4,7 +4,7 @@
 				<div class="star_title">视频打分</div>
 				<div class="star_num">
 					<ul class="clearfix">
-						<li class="on"></li>
+						<li></li>
 						<li></li>
 						<li></li>
 						<li></li>
@@ -15,8 +15,15 @@
 				</div>
 			</div>
 			<div class="star_confirm">
-				<span class="star_btn">确认</span>
-				<span>已评分</span>
+				
+					<span {%if $video.is_rated == 0%} class="star_btn" {%/if%}>
+						{%if $video.is_rated == 0%}
+							确认
+						{%else%}
+							已评分
+						{%/if%}
+					</span>
+				
 			</div>
 		</div>
 

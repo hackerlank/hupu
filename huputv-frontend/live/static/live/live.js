@@ -66,10 +66,14 @@
             $(document).bind("rpzAddNotify", function(){
                 $(".rpz-link .thumb").addClass("on");
             });
+            //移除人品值notify
+            $(document).bind("rpzRemoveNotify", function(){
+                $(".rpz-link .thumb").removeClass("on");
+            });
 
             //点击人品值区域，去掉红点提示.
             $(".rpz-link").on("mouseover", function(){
-                $(".rpz-link .thumb").removeClass("on");
+                $(document).trigger("rpzRemoveNotify");
             })
         },
         /**

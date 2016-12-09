@@ -1,4 +1,11 @@
 {
     "status":200,
-    "code":1
+    "code":1,
+    "score": 5,
+    "data": {
+			"top": "60",
+			"step": "26",
+			"score": 9990
+		}
+
 }

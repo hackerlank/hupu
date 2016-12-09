@@ -1,0 +1,96 @@
+{
+    "code": 1,
+    "msg": "操作成功",
+    "data": [
+        {
+            "id": "74",
+            "title": "武汉第一轮",
+            "division_name": "武汉",
+            "room_id": "0",
+            "game_status": "0",
+            "game_date": "11/13",
+            "game_time": "19:00",
+            "is_follow": 0
+        },
+        {
+            "id": "80",
+            "title": "武汉第一轮",
+            "division_name": "武汉",
+            "room_id": "0",
+            "game_status": "0",
+            "game_date": "11/13",
+            "game_time": "19:00",
+            "is_follow": 0
+        },
+        {
+            "id": "78",
+            "title": "测试21",
+            "division_name": "长沙",
+            "room_id": "0",
+            "game_status": "0",
+            "game_date": "11/17",
+            "game_time": "17:29",
+            "is_follow": 1
+        },
+        {
+            "id": "75",
+            "title": "测试上海",
+            "division_name": "合肥",
+            "room_id": "0",
+            "game_status": "0",
+            "game_date": "11/18",
+            "game_time": "00:00",
+            "is_follow": 0
+        },
+        {
+            "id": "77",
+            "title": "测试2",
+            "division_name": "长沙",
+            "room_id": "0",
+            "game_status": "0",
+            "game_date": "11/18",
+            "game_time": "00:00",
+            "is_follow": 0
+        },
+        {
+            "id": "81",
+            "title": "路人王加俊",
+            "division_name": "加俊",
+            "room_id": "10196",
+            "game_status": "0",
+            "game_date": "11/18",
+            "game_time": "16:51",
+            "is_follow": 0
+        },
+        {
+            "id": "79",
+            "title": "测试比赛了了了了了了了了了",
+            "division_name": "上海",
+            "room_id": "0",
+            "game_status": "0",
+            "game_date": "11/20",
+            "game_time": "10:43",
+            "is_follow": 0
+        },
+        {
+            "id": "76",
+            "title": "长沙测试",
+            "division_name": "长沙",
+            "room_id": "0",
+            "game_status": "0",
+            "game_date": "11/24",
+            "game_time": "00:00",
+            "is_follow": 0
+        },
+        {
+            "id": "82",
+            "title": "路人",
+            "division_name": "加俊",
+            "room_id": "10109",
+            "game_status": "0",
+            "game_date": "11/27",
+            "game_time": "11:46",
+            "is_follow": 0
+        }
+    ]
+}

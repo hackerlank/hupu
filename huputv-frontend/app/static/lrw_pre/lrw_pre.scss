@@ -26,7 +26,30 @@ body {
   text-align: center;
   color: $grayDark;
 }
-
+#J-lrw-pre{
+  .lrw-pre-item{
+    display:none;
+  }
+  .actived{
+    display:block;
+  }
+}
+.toast-player{  
+  .content{
+    padding:5px 5px 5px;   
+    h2{
+      display:none;
+    }
+    p{
+      display:none;
+    }
+    .popup-pred-game{
+      .content{
+         border-bottom:none;
+      }
+    }
+  }
+}
 body.night {
   
 }

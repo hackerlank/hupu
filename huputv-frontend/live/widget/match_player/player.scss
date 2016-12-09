@@ -1,0 +1,152 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base"; 
+.player-card-info {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: $white;
+  border-bottom: 1px solid #ddd;
+  h2{
+    height:22px;
+    line-height:22px;
+    color:#fff;
+    font-size:14px;
+    background:#d04646;
+    padding-left: 22px;
+    margin-left: -10px;
+    margin-bottom: 5px;
+    width:110px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -16px;
+      top: 0;
+      border-left: 8px solid #d04646;
+      border-right: 8px solid transparent;
+      border-top: 10px solid #d04646;
+      border-bottom: 12px solid transparent;
+    }
+  }
+  .player-content {
+    padding-top: 10px;
+    @include clearfix;
+  }
+  .player-card-list {
+    @include float;
+    width: 120px;
+    margin: 0 10px 25px;
+    font-size: 12px;
+    text-align: center;
+    .player-card-inner {
+      position: relative;
+      border: 1px solid #eee;
+    }
+    .avatar {
+      height: 118px;
+      overflow: hidden;
+      margin-bottom: 2px;
+      border-bottom: 1px solid #eee;
+      background: #f4f4f3;
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .num{
+        position: absolute;
+        top:0;
+        left:0;
+        padding:0 2px;
+        color:#fff;
+        background:#000;
+      }
+      .team_name{
+        position: absolute;
+        bottom:0;
+        right:0;
+        padding:0 2px;
+        color:#fff;
+        background:#d04646;
+      }
+    }
+    .wins {
+      padding: 2px;
+      margin-top: 2px;
+      border-top: 1px solid #eee;
+      color:#8d8d8d;
+    }
+    .weight {
+      color:#8d8d8d;
+    }
+    .operat-inner {
+      height: 20px;
+      padding-right: 0px;
+      margin-top: 5px;
+      line-height: 20px;
+      background: #ffb300;
+      i{
+        width:12px;
+        height:12px;
+        margin-right: 5px;
+        display:inline-block;
+        background-size: cover;
+      }
+      .button-zan {
+        @include float;
+        display: block;
+        color: $white;
+        width: 50%;
+        background:#ff4252;
+        &:hover {
+          opacity:0.8;
+          filter:alphy(opacity=80);
+        }
+        i{
+          background-image: url(img/cai.png);
+          vertical-align: middle;
+        }
+      }
+      .cai {
+        @include float(right);
+        width: 50%;
+        line-height: 20px;
+        height:20px;
+        margin-top: 0px;
+        color: $white;
+        background-color: #8dcf5e;
+        cursor:pointer;
+        i{
+          background-image: url(img/zan.png);
+        }
+      }
+    }
+    .operat-has-support {
+      background: #ccc;
+      .button-zan {
+        &:hover {
+          opacity:0.8;
+          filter:alphy(opacity=80);
+        }
+      }
+      .number {
+        color: $grayDark;
+      }
+    }
+    .fixed-tag {
+      position: absolute;
+      top: 0;
+      right: -4px;
+      z-index: 2;
+      padding: 2px 5px;
+      line-height: 1.2;
+      @include scale(.9);
+      background: #d04646;
+      color: $white;
+    }
+  }
+
+  .support-tips {
+    display: none;
+  }
+}

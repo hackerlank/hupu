@@ -100,7 +100,7 @@ Refresh.prototype.loadingRender = function() {
                 '加载中…',
             '</div>'
         ].join('');
-    }else{
+     }else{
         var refreshTpl = [
             '<div class="preloader-refresh">',
                 '<i class="icon-refresh"></i>',

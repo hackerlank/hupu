@@ -1,0 +1,27 @@
+@charset "utf-8";
+@import "../../../static/sass/sassCore/function";
+
+.division-area{
+	background:#fff;
+	.division-wrap{
+		padding:0 5px;
+		padding-top:10px;
+		@include display-flex();
+		@include flex-wrap(wrap);
+		.division-item{
+			height:27px;
+			margin:5px 5px;	
+			padding:0 10px;			
+			line-height:27px;
+			border:1px solid #d5d5d5;
+			@include border-radius(12px);
+			background:#eeebeb;
+			text-align:center;
+		}
+		.active{
+			color:#c01e2f;
+			background:#fff;
+			border-color:#c01e2f;
+		}
+	}
+}

@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import "../sass/sassCore/base";
+
+img { max-width: 100%; pointer-events: none; }
+body {
+    height: 100%;
+    font-size: 12px;
+	color: $morning_gray3_cor;
+	background-color: $morning_gray1_cor;
+    -webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.layout-main {
+    overflow: scroll;
+    position: absolute;
+    width: 100%;
+   /* 增加该属性，可以增加内滚动弹性 */
+    -webkit-overflow-scrolling: touch;
+    -mz-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+.rpz-wrap{	
+    background:#fff;
+	.rpz-header{
+		height:26px;
+		line-height:26px;       
+        color:#777777;
+        padding:0 8px;
+        font-weight:12px;
+        background:#eeebeb;
+	}
+    .rpz-detail{
+        background:#fff;       
+        font-size:14px;
+        color:#999;
+        .rpz-detail-wrap{
+            .item{
+                min-height:67px;
+                padding:10px 8px;
+                border-bottom:1px solid #ddd;                
+                .item-date{
+                    @include display-flex();
+                    .item-time{
+                        @include flex(1);
+                    }
+                    .zrp-score{
+                        right:0;
+                        .win{
+                            color:#c01e2f;
+                        }
+                        .lose{
+                            color:#47b852;
+                        }   
+                    }
+                }
+            }
+            .odd{
+                background:#eeebeb;
+            }
+        }
+    }
+    .show-more{
+        text-align:center;
+        background:#eeebeb;
+    }
+}

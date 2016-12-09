@@ -1,0 +1,77 @@
+{
+  "code": 1, 
+  "msg": "操作成功", 
+  "data": {
+    "pages": 2, 
+    "list": [
+      {
+        "vid": "85a373a0a7483793c7ec2180bd9c3b11", 
+        "title": "视频标题视频标题视频标题视频标题视频标题", 
+        "tag": [
+          "杭州站", 
+          "杭州站杭州", 
+          "222333"
+        ], 
+        "cover": "http://w2.hoopchina.com.cn/5a/44/c7/5a44c7ba5bbe4ec867233d67e4806848001.jpg", 
+        "score": 2
+      }, 
+      {
+        "vid": "85a373a0a7483793c7ec2180bd9c3b11", 
+        "title": "视频标题视频标题视频标题视频标题视频标题", 
+        "tag": [
+          "杭州站", 
+          "杭州站杭州", 
+          "222333"
+        ], 
+        "cover": "http://w2.hoopchina.com.cn/5a/44/c7/5a44c7ba5bbe4ec867233d67e4806848001.jpg", 
+        "score": 2.4
+      },
+      {
+        "vid": "85a373a0a7483793c7ec2180bd9c3b11", 
+        "title": "视频标题视频标题视频标题视频标题视频标题", 
+        "tag": [
+          "杭州站", 
+          "杭州站杭州", 
+          "222333"
+        ], 
+        "cover": "http://w2.hoopchina.com.cn/5a/44/c7/5a44c7ba5bbe4ec867233d67e4806848001.jpg", 
+        "score": 2.4
+      },
+      {
+        "vid": "85a373a0a7483793c7ec2180bd9c3b11", 
+        "title": "视频标题视频标题视频标题视频标题视频标题", 
+        "tag": [
+          "杭州站", 
+          "杭州站杭州", 
+          "222333"
+        ], 
+        "cover": "http://w2.hoopchina.com.cn/5a/44/c7/5a44c7ba5bbe4ec867233d67e4806848001.jpg", 
+        "score": 2.4
+      }, 
+      {
+        "vid": "85a373a0a7483793c7ec2180bd9c3b11", 
+        "title": "视频标题视频标题视频标题视频标题视频标题", 
+        "tag": [
+          "杭州站杭州", 
+          "222333"
+        ], 
+        "cover": "http://w2.hoopchina.com.cn/5a/44/c7/5a44c7ba5bbe4ec867233d67e4806848001.jpg", 
+        "score": 4
+      }, 
+      {
+        "vid": "dc10db9233cf67a2991d64ec45d48a31", 
+        "title": "fdf", 
+        "tag": [], 
+        "cover": "http://w1.hoopchina.com.cn/07/6e/3c/076e3caed758a1c18c91a0e9cae3368f001.jpg", 
+        "score": 4
+      }, 
+      {
+        "vid": "dc10db9233cf67a2991d64ec45d48a31", 
+        "title": "fdf", 
+        "tag": [], 
+        "cover": "http://w1.hoopchina.com.cn/07/6e/3c/076e3caed758a1c18c91a0e9cae3368f001.jpg", 
+        "score": 4
+      }
+    ]
+  }
+}

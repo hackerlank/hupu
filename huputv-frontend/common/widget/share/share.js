@@ -7,7 +7,6 @@
  */
 
 	"use strict";
-
 	// 分享默认配置
     var defaults = {
     	social: ['weibo', 'tqq', 'qzone', 'renren'],

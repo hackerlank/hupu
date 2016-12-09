@@ -7,12 +7,15 @@ body{
     @include display-flex();
     @include justify-content(space-between);
     @include align-items(center);
-    height: 50px;
     margin-bottom:4px;
     background-color: $morning_white_cor;
     a {
         display: block;
-        width: 33.33%;
+        -webkit-box-flex: 1;
+        -moz-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
         height: 50px;
         line-height: 50px;
         text-align: center;

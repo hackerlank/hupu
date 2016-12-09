@@ -88,12 +88,14 @@
 	    }
 		}
 	}
-	.more{
+	.more a{
 		background:#fff;
+		color:#434341;
 		text-align:center;
 		height:36px;
 		line-height:36px;
 		margin-top:4px;
+		display:block;
 		em{
     	position: relative;
 	    top: -1px;
@@ -157,13 +159,13 @@
 			    }
 				}
 			}
-		.more{
+		.more a{
 			background:$night_white_cor;
 			color:$night_gray3_cor;
 			em{
 		    border-top: 1px solid $night_gray3_cor;
 		    border-right: 1px solid $night_gray3_cor;
-	    }
+	    }			
 		}
 	}
 }

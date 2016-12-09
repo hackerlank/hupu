@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import "../../static/sass/sassCore/base";
+
+.match-relate-content{
+	background:#fff;
+	padding:0px 7px 16px 7px;
+	margin-bottom:10px;
+	.match-wrap{
+		.match-item{			
+			margin-top:10px;				
+			height:62px;
+			&:after{
+				content:"";
+				display:block;
+				clear:both;
+			}
+			.item-video{	
+				float:left;			
+				position:relative;					
+				width:110px;
+				margin-right:4px;
+				&:before{
+					background:url(./player.png) center center no-repeat;
+					position:absolute;
+					content:'';							
+					left:0;
+					right:0;
+					top:0;
+					bottom:0;
+											
+				}					
+				i{
+					position:absolute;
+					right:0;
+					bottom:0;
+					font-style:normal;
+					background:#ff3f4c;
+					line-height:14px;
+					padding:0 4px;
+				}
+			}
+			.item-content{
+				float:left;
+				height:62px;
+				width:287px;
+				overflow:hidden;
+				.item-content-title{					
+					line-height:14px;
+					overflow:hidden;							
+				}
+				.item-content-label{
+					overflow:hidden;			
+					.content-label-item{	
+						display:inline-block;
+						font-size:10px;
+						line-height:14px;
+						border:1px solid #eee;
+						@include border-radius(3px);
+						color:#777;
+						padding:0 5px;
+						margin-right:4px;
+						margin-top:4px;						
+					}
+					
+				}
+			}
+		}
+	}
+}

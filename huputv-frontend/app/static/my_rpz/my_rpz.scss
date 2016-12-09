@@ -317,15 +317,72 @@ body {
 
 .rank-link, .more {
     a {
+
         display: block;
         width: 100%;
-        text-align: center;
+        padding-left:10px;
         font-size: 13px;
         color: $morning_gray2_cor;
+        font-size:14px;        
     }
 }
-
-.rank-link a { line-height: 30px;}
+.rank-link a { 
+    line-height: 50px;
+    color:#434141;
+    font-weight:600;
+    @include display-flex();
+    .rank-text{
+        @include flex(1);
+    }
+    .rank-list{
+        font-size:12px;
+        color:#c01e2f;
+        font-weight:normal;
+        margin-right:10px;
+    }
+    em {
+        position: relative;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin-left: 4px;
+        border-top: 1px solid #a9a9b2;
+        border-right: 1px solid #a9a9b2;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+.zrp-record-detail {
+    margin-top:10px;
+    a{
+        background:#fff;
+        color:#434141;
+        font-weight:600;
+        line-height: 50px;
+        padding-left:10px;
+        @include display-flex();
+        .rank-text{
+            @include flex(1);
+        }
+        .rank-list{
+            color:#434141;
+            margin-right:10px;
+            font-weight:normal;
+        }
+        em {
+            position: relative;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin-left: 4px;
+            border-top: 1px solid #a9a9b2;
+            border-right: 1px solid #a9a9b2;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}
+    
 .more a { line-height: 37px;}
 
 .detail-list {

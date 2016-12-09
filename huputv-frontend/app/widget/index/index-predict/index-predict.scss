@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import "../../../static/sass/sassCore/function";
+
+.match-formatch{
+	background:#fff;
+	position:relative;
+}
+.show-more-btn{
+	background:#fff;
+}
+.foreshow-wrap{	
+	.foreshow-item{
+		height:60px;
+		@include display-flex();
+		border-bottom:1px solid #eeebeb;
+		text-align:center;
+		vertical-align:middle;
+		.show-left{
+			width:75px;	
+			padding-top:10px;
+			border-right:1px solid #eeebeb;
+		}
+		.show-mid{
+			@include flex(1);
+			.show-status{
+				@include float(left);
+				display:block;
+				width:67px;
+				margin:0 10px;
+				margin-top:20px;
+				height:20px;
+				line-height:20px;
+				color:#fff;	
+				display:inline;		
+				border:1px solid #ff3f4c;
+				background:#ff3f4c;
+				@include border-radius(9px);
+				.triggle{
+					width:11px;
+					height:14px;
+					display:inline-block;
+					top:2px;
+					background:url('./triggle.png') no-repeat;
+					background-size:contain;
+				}
+				
+			}
+			.show-text{
+				@include float(left);
+				margin-top:20px;
+			}
+		}
+		.show-right{
+			right:0;
+			width:60px;
+			color:#ff3f4c;
+			font-size:12px;
+			.subscribe-img{
+				display:block;
+				width:20px;
+				height:20px;
+				margin:0 auto;
+				margin-top:10px;
+				background:url("./alarm.png");
+				background-size:cover;
+			}
+			.subscribe-text{
+				display:block;
+				padding-top:3px;
+			}
+		}
+		.subscribed{
+			color:#a9a9b3;
+			.subscribe-img{
+				background:url("./alarm.png") 20px ;
+				background-size:cover;
+			}
+		}
+	}
+}
+.show-more-btn{
+	text-align:center;
+	height:34px;
+	line-height:34px;
+}

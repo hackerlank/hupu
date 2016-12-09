@@ -21,6 +21,85 @@ body {
   .live-main {
     @include float;
     width: 865px;
+    .score{
+      width:100%;
+      height:70px;
+      line-height:70px;
+      background:#fff;
+      padding-left:22px;
+      .video_num{
+        float:left;
+        width: 60%;
+      }
+      .video_name{
+        font-size:16px;
+        margin-right:20px;
+        font-weight:600;
+      }
+      .play{
+        border:1px solid #ee913b;
+        color:#ee913b;
+        font-size:12px;
+        span{
+          padding:0 4px;
+        }
+        .play_word{
+          background:#ee913b;
+          color:#fff;
+        }
+      }
+      .star{
+        float:right;
+        .star_title{
+          display:inline-block;
+          font-size: 14px;
+          margin-right: 4px;
+          vertical-align: middle;
+        }
+        .star_num{
+          display:inline-block;
+          vertical-align: middle;
+          position:relative;
+          li{
+            width:19px;
+            height:18px;
+            line-height:18px;
+            float:left;
+            margin-right:5.1px;
+            background-image:url(./img/star_kong.png);
+            background-size: cover;
+            &.on{
+              background-image:url(./img/star_full1.png);
+            }
+            &:last-child {
+              margin-right:0px;
+            }
+          }
+          .rating-stars{
+            display:none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width:116px;
+            height: 18px;
+            background-image:url(./img/star_full.png);
+            background-size: cover;
+            vertical-align: -2px;
+          }
+        }
+        .star_btn{
+          padding:4px 10px;
+          color:#fff;
+          font-size:12px;
+          background:#ff4252;
+          &:hover {
+            opacity:0.8;
+            filter:alphy(opacity=80);
+            cursor:pointer;
+          }
+        }
+      }
+    }
   }
 
   .live-sidebar {
@@ -475,7 +554,6 @@ body {
     height: 100%;
   }
 }
-
 @media screen and (min-width: 1090px) and (max-width: 1732px) {
   .live-wrap {
     width: 1065px;

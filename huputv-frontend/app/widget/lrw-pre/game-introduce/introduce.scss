@@ -21,6 +21,7 @@
 		line-height:32px;			
 		.signup-right{
 			margin-left:33px;
+			font-weight:600;
 		}
 		.contact{
 			font-size:12px;
@@ -126,8 +127,7 @@
 						left:0;
 						right:0;
 						top:0;
-						bottom:0;
-												
+						bottom:0;												
 					}					
 					i{
 						position:absolute;
@@ -137,6 +137,7 @@
 						background:#ff3f4c;
 						line-height:14px;
 						padding:0 4px;
+						color:#fff;
 					}
 				}
 				.item-content{

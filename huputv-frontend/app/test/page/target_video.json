@@ -1,3 +1,27 @@
 {
-	"night":1
+  "test": "1", 
+  "video": {
+    "vid": "227f5da952928983b49416dfe449c559", 
+    "title": "加俊的直播", 
+    "division_id": "0", 
+    "gid": "0", 
+    "tid": "3", 
+    "play_num": "45", 
+    "video_type": "2", 
+    "score": 7.8, 
+    "is_rated": 0
+  }, 
+  "userInfo": {
+    "uid": "26366901", 
+    "username": "念12", 
+    "nickname": "念12", 
+    "score":"32",
+    "avatar": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png"
+  }, 
+  "login_url": "https://passport.liangle.com/pc/login?project=liangle&from=m", 
+  "logout_url": "https://passport.liangle.com/pc/logout", 
+  "register_url": "https://passport.liangle.com/pc/register?project=liangle&from=m", 
+  "is_login": 0, 
+  "in_kanqiu": 0, 
+  "night":0
 }

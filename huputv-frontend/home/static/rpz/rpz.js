@@ -2,7 +2,8 @@
 
     var _ = require('common:static/js/underscore/underscore.js');
     var api = {
-        list: '/predict/user/topic/list'
+        list: '/predict/user/topic/list',
+        zrplist:'/predict/user/record/list'
     };
 
     var recordList = {
@@ -77,6 +78,10 @@
             this.moreFinish = $("#J_loadmore");
             this.zrpTab = $(".zrp-record");
             this.zrpContent = $(".zrp-detail");
+            this.zrpDetailNav = $("#J-rpz-detail-head");
+            this.zrpDetailWrap = $("#J-rpz-detail");
+            this.zrpDetailTpl = $("#J-detail-tpl").html();
+            this.zrpDetailMore = $("#J_more_rpz");
             this.nextDate = HTV.nextDate;
             this.bind();
         },
@@ -106,13 +111,45 @@
                     }
                 },"json")
             });
-            this.zrpTab.on('click',function(){
-              console.log("enter");
+            this.zrpTab.on('click',function(){             
               var index = $(this).index();
-              $(this).addClass("active").siblings().removeClass("active");
+
+              $(this).addClass("active").siblings().removeClass("active");              
               self.zrpContent.removeClass("active").eq(index).addClass("active");
-              //self.zrpContent.eq(index).addClass("active").siblings.removeClass("active");
+              if( index >0 && !$(this).hasClass("visited")){
+                $(this).addClass("visited");
+                self.getzrpdata();    
+              }
+                      
             })
+
+        },
+        getzrpdata:function(next_id){     
+          var self = this;     
+          var id = next_id ? next_id :"";
+          $.get(api.zrplist,
+            {next_id:id},
+            function(res){
+              if(res.code == 1){                
+                var temp = _.template( self.zrpDetailTpl, {datas: res.data.list} );
+                  console.log(temp);
+                self.zrpDetailWrap.append( temp );
+                if(res.data.next_id){
+                  self.zrpDetailMore.show();
+                  self.getMoreRpz(res.data.next_id);
+                }else{
+                  self.zrpDetailMore.hide();
+                }
+              }
+            }
+          )
+        },
+        getMoreRpz:function(next_id){
+          var self = this;          
+          this.zrpDetailMore.click(function(){
+            self.getzrpdata(next_id);
+            return false;
+          })
         }
 
     };
