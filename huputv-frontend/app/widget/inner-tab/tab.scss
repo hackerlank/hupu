@@ -27,3 +27,21 @@
 	}
 	
 }
+.night{
+	.ui-inner-tab{		
+		color: $night_cor5;
+		background:$night_cor2;
+		&-list {
+			a {				
+				color: $night_cor5;
+			}
+			.active{
+				color: $night_red_cor;
+				border-bottom: 1px solid $night_red_cor;
+				a {
+					color: $night_red_cor;
+				}
+			}		
+		}
+	}
+}

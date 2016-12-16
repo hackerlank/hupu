@@ -4,12 +4,39 @@
 .match-formatch{
 	background:#fff;
 	position:relative;
+	.no-match{
+		height:60px;
+		font-size:14px;
+		line-height:60px;
+		text-align:center;
+	}
 }
 .show-more-btn{
 	background:#fff;
+	.arrow{
+		display: inline-block;
+        width: 0;
+        height: 0;
+        border: 8px solid transparent;
+        border-top: 8px solid #CCC;
+        position: relative;
+        vertical-align:middle;
+        margin-top:10px;
+        &:after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 5px solid transparent;
+            border-top: 5px solid #fff;
+            top: -8px;
+            left: -5px;
+        }
+	}
 }
 .foreshow-wrap{	
 	.foreshow-item{
+		font-size:12px;
 		height:60px;
 		@include display-flex();
 		border-bottom:1px solid #eeebeb;
@@ -17,38 +44,46 @@
 		vertical-align:middle;
 		.show-left{
 			width:75px;	
-			padding-top:10px;
+			padding-top:12px;
 			border-right:1px solid #eeebeb;
 		}
 		.show-mid{
 			@include flex(1);
-			.show-status{
-				@include float(left);
+			a{
 				display:block;
-				width:67px;
-				margin:0 10px;
-				margin-top:20px;
-				height:20px;
-				line-height:20px;
-				color:#fff;	
-				display:inline;		
-				border:1px solid #ff3f4c;
-				background:#ff3f4c;
-				@include border-radius(9px);
-				.triggle{
-					width:11px;
-					height:14px;
-					display:inline-block;
-					top:2px;
-					background:url('./triggle.png') no-repeat;
-					background-size:contain;
+				height:100%;
+				.show-status-wrap{
+					@include float(left);
+					display:block;
+					width:76px;
+					height:100%;
+					.show-status{					
+						margin:0 10px;
+						margin-top:20px;				
+						color:#fff;	
+						display:block;	
+						width:57px;	
+						border:1px solid #ff3f4c;
+						background:#ff3f4c;
+						@include border-radius(9px);
+						.triggle{
+							width:11px;
+							height:14px;
+							display:inline-block;
+							top:2px;
+							background:url('./trigcol.png') no-repeat;
+							background-size:contain;
+							vertical-align:middle;
+						}
+						
+					}
 				}
-				
-			}
-			.show-text{
-				@include float(left);
-				margin-top:20px;
-			}
+				.show-text{
+					@include float(left);
+					margin-top:20px;
+					color:#000;
+				}
+			}	
 		}
 		.show-right{
 			right:0;
@@ -82,4 +117,63 @@
 	text-align:center;
 	height:34px;
 	line-height:34px;
+}
+
+body.night{
+	.match-formatch{
+		background:$night_cor2;
+	}
+	.show-more-btn{
+		background:$night_cor2;
+		.arrow{			
+	        border: 8px solid transparent;
+	        border-top: 8px solid $night_cor5;	       
+	        &:after{	           
+	            border: 5px solid transparent;
+	            border-top: 5px solid $night_cor5;	            
+	        }
+		}
+	}
+	.foreshow-wrap{	
+		.foreshow-item{
+			
+			border-bottom:1px solid $night_cor3;			
+			.show-left{				
+				border-right:1px solid $night_cor3;
+			}
+			.show-mid{				
+				a{					
+					.show-status-wrap{						
+						.show-status{
+							color:$night_cor5;								
+							border:1px solid $night_cor1;
+							background:$night_cor1;
+							.triggle{								
+								background:url('./trigcol.png') no-repeat;
+								background-size:cover;								
+							}
+							
+						}
+					}
+					.show-text{						
+						color:$night_cor5;
+					}
+				}	
+			}
+			.show-right{				
+				color:$night_huputv_red;
+				.subscribe-img{					
+					background:url("./alarm.png");
+					background-size:cover;
+				}				
+			}
+			.subscribed{
+				color:$night_cor5;
+				.subscribe-img{
+					background:url("./alarm.png") 20px ;
+					background-size:cover;					
+				}
+			}
+		}
+	}	
 }

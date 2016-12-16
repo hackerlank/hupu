@@ -1,0 +1,143 @@
+@charset "utf-8";
+@import "../sass/sassCore/base";
+
+body {
+    height: 100%;
+    font-size: 12px;
+	color: $morning_gray3_cor;
+	background-color: $morning_gray1_cor;
+    -webkit-user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.play-list-item{	
+	position:relative;
+	padding:10px;
+	padding-left:18px;
+	height:75px;	
+	margin-bottom:10px;
+	@include display-flex();
+	@include align-items(center);
+	background:$morning_white_cor;
+	border-bottom:1px solid $morning_gray1_cor;	
+	.play-list-mid{
+		@include flex(1);
+		@include display-flex();
+		position:relative;
+		.avatar{
+			width:60px;
+			height:60px;
+			overflow:hidden;
+			border-radius:50%;
+			border:1px solid #ffb3b7;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+		.play-list-text{
+			padding-left:10px;
+			text-align:left;
+			font-size:14px;
+			.player-nick{
+				display:inline-block;
+				padding-top:5px;
+			}			
+			.play-message{				
+				font-size:12px;
+				padding-top:5px;
+				color:$morning_gray2_cor;
+			}
+		}		
+		
+	}
+}
+.my-rpz{
+	border-bottom:1px solid $morning_gray1_cor;
+}
+.my-zhubo {
+	.my-rpz-right{
+	.zhubo-name{
+		display:inline-block;
+	}
+		color:$morning_red_cor;
+	}
+}
+.my-rpz,.my-zhubo{
+	
+	height:50px;
+	line-height:50px;	
+	background:$morning_white_cor;
+	padding-left:18px;
+	.my-rpz-content{
+		@include display-flex();
+		.my-rpz-left{
+			@include flex(1);
+			color: $morning_gray3_cor;
+			font-size:14px;
+		}
+		.my-rpz-right{
+
+			padding-right:10px;
+			em{
+				position: relative;
+			    top: -1px;
+			    left: -1px;
+			    display: inline-block;
+			    width: 10px;
+			    height: 10px;
+			    margin-left: 4px;
+			    border-top: 1px solid $morning_gray3_cor;
+			    border-right: 1px solid $morning_gray3_cor;
+			    -webkit-transform: rotate(45deg);
+			    transform: rotate(45deg);
+			}
+		}
+		
+	}
+}
+
+body.night{
+	color: $night_gray3_cor;
+	background-color: $night_gray1_cor;
+	.play-list-item{
+		
+		background:$night_white_cor;
+		border-bottom:1px solid $night_gray1_cor;	
+		.play-list-mid{			
+			.avatar{				
+				border:1px solid #ffb3b7;				
+			}
+			.play-list-text{						
+				.play-message{
+					color:$night_gray2_cor;
+				}
+			}		
+			
+		}
+	}
+	.my-rpz{
+		border-bottom:1px solid $night_gray1_cor;
+	}
+	.my-zhubo {
+		.my-rpz-right{			
+			color:$morning_red_cor;
+		}
+	}
+	.my-rpz,.my-zhubo{	
+		background:$night_white_cor;
+		padding-left:18px;
+		.my-rpz-content{			
+			.my-rpz-left{				
+				color:$night_gray3_cor;				
+			}
+			.my-rpz-right{
+				em{					
+				    border-top: 1px solid $night_gray3_cor;
+				    border-right: 1px solid $night_gray3_cor;				    
+				}
+			}
+			
+		}
+	}
+}

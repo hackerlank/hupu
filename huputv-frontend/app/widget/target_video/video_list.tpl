@@ -1,6 +1,8 @@
 <div class="video_title">
 	<h2>相关视频</h2>
+	<!--
 	<p>更多视频<em></em></p>
+	-->
 </div>
 <div class="introduce_list">
 	<ul class="J_video_list">
@@ -15,7 +17,7 @@
 				<span class="video_btn"></span>
 			</div>
 			<div class="video_content">
-				<p><span>10/25</span><@=item.title@></p>
+				<p><span><@=item.create_time@></span>&nbsp;<@=item.title@></p>
 				<div class="video_tag clearfix">
 					<ul>
 						<@_.each(item.tag, function(val,index){@>

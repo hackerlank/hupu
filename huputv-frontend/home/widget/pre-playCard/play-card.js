@@ -44,6 +44,8 @@
   					console.log("enter")
 	    		HTV.playerID = $(this).attr("data-id");
 	    		HTV.nickName = $(this).attr("data-nickname");
+	    		
+	    		console.log(HTV.nickName);
 	    		self.$elEvent = $(this);
 	    		if(!HTV.isLogin){
 	    			HTV.jumpLogin();

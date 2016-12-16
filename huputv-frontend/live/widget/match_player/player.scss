@@ -42,6 +42,12 @@
     .player-card-inner {
       position: relative;
       border: 1px solid #eee;
+      .name{
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -o-text-overflow: ellipsis;
+          white-space: nowrap;
+      }
     }
     .avatar {
       height: 118px;

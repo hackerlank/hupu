@@ -6,7 +6,6 @@ body,html{
     -webkit-appearance: none;
     -webkit-text-size-adjust:none;
     -webkit-user-select: none;
-    background:#eeebeb;
 }
 body a,
 body img{
@@ -41,14 +40,14 @@ body img{
     background-image: url(./img/arrow-right-day.png?t=2);
 }
 .tv-pred{
-  @include display-flex(flex); 
-  @include align-items(center);
-  padding: 10px 5px 10px 18px;
-  background:#fff;
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  padding: 10px 5px;
   border-bottom: 1px solid $morning_gray1_cor;
   .user{
     position: relative;
-    margin-right: 15px;
+    margin-right: 8px;
     .mask{
       position: absolute;
       left: 0;
@@ -65,48 +64,67 @@ body img{
     }
   }
   .userinfo{
-    @include flex(1);
+    display: block;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
     .rp_value{
-      .user-nickname{
-        font-size:14px;
-        color:#444;
-        font-weight:600;
-      }
+      color: $morning_gray2_cor;
+      font-size: 12px;
     }
     .rp_log{
-      font-size:12px;
-      color: #a9a9b2;
-    }    
+      color: #000;
+    }
+    .win{
+      color: $morning_red_cor;
+    }
+    .lose{
+      color: $morning_huputv_green;
+    }
+  }
+  .rpz-text{
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 2px;
+    line-height: 18px;
+  }
+  .rp-win{
+    background-color: $morning_huputv_red;
+    color: $morning_white_cor;
+  }
+  .rp-lost{
+    background-color: $morning_huputv_green;
+    color: $morning_white_cor;
+  }
+  .myrpz{
+    display: block;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+    text-align: right;
+    line-height: 40px;
+    height: 40px;
+    width: 60px;
+    color: $morning_gray2_cor;
   }
 }
-.tv-my-rpz{
-    margin-top:10px;
-    height:50px;
-    line-height:50px;
-    padding-left:18px;
-    background:#fff;
-    font-weight:600;
-    border-bottom:1px solid #eeebeb;
-    @include display-flex(flex);
-    span{
-      @include flex(1);
-    } 
-    .arrow{
-      right:12px;
-      top:18px;
-    }
-}
 .tv-header{
-    background: #fff;
+    background: $morning_gray0_cor;
     section{
-        padding:0 10px 0 18px;
-        @include display-flex(flex);
-        height:50px;
-        line-height:50px;
+        padding:0 5px;
+        display: -moz-box;
+        display: -webkit-box;
+        display: box;
+        height:42px;
+        line-height:42px;
         border-bottom: 1px solid  $morning_gray1_cor;
     }
     .title{
-        @include flex(1);        
+        display: block;
+        -moz-box-flex: 1;
+        -webkit-box-flex: 1;
+        box-flex: 1;
+        line-height:42px;
         font-size: 14px;
     }
     .title .manage{
@@ -116,15 +134,10 @@ body img{
         font-size:14px;
     }
      .goto{
-        color: $morning_gray2_cor; 
+        color: $morning_gray2_cor;
+        line-height: 40px;
+        height: 40px;
         display: inline-block;
-        .zhubo-name{
-          color:#c01e2f;
-          font-weight:600;
-        }
-        .zhubo-islive{
-          color:#c01e2f;
-        }
     }
     .empty{
         line-height:86px;

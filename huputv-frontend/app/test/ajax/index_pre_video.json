@@ -9,7 +9,7 @@
             "tag": [],
             "play_num": "0",
             "create_time": "12/06",
-            "type": 2,
+            "type": 1,
             "score": 0
         },
         {
@@ -29,7 +29,7 @@
             "tag": [],
             "play_num": "0",
             "create_time": "12/06",
-            "type": 2,
+            "type": 1,
             "score": 0
         },
         {
@@ -39,7 +39,7 @@
             "tag": [],
             "play_num": "0",
             "create_time": "12/06",
-            "type": 2,
+            "type": 1,
             "score": 0
         },
         {
@@ -124,9 +124,21 @@
         },
         {
             "vid": "85a373a0a7483793c7ec2180bd9c3b11",
-            "title": "ttt",
+            "title": "我就是测试测试的测试的一个事情，justfortestforsomething",
             "cover": "http://w2.hoopchina.com.cn/5a/44/c7/5a44c7ba5bbe4ec867233d67e4806848001.jpg",
             "tag": [
+                "a",
+                "b",
+                "c",
+                "a",
+                "b",
+                "c",
+                "a",
+                "b",
+                "c",
+                "a",
+                "b",
+                "c",
                 "a",
                 "b",
                 "c"

@@ -7,18 +7,34 @@ body,html{
     -webkit-appearance: none;
     -webkit-text-size-adjust:none;
     -webkit-user-select: none;
-    background:#eeebeb;
+    background:$morning_cor3;
 }
 body a,
 body img{
     -webkit-touch-callout:none;
 }
 
-.foreshow,.past-match{
-	.foreshow-title{
-		height:22px;
-		line-height:22px;
-		padding-left:10px;
-		background:#eeebeb;
-	}
+
+.item-wrap{
+    display:none;
 }
+
+.active-show{
+    display:block;
+}
+.foreshow,.past-match{
+    .foreshow-title{
+        height:22px;
+        line-height:22px;
+        padding-left:10px;
+        background:$morning_gray1_cor;
+    }
+}
+body.night{
+    .foreshow,.past-match{
+        .foreshow-title{            
+            background: $night_cor3;
+        }
+    }
+}
+

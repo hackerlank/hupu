@@ -9,14 +9,14 @@
 	<div class="list">
 		<ul>
 			{%foreach from=$recommend item=val name=key%}
-				<li class="clearfix link" link="huputiyu://huputv/video/{%$val.vid%}?entrance=1">
+				<li class="clearfix link" link="/video/{%$val.vid%}">
 					<div class="img">
 						<img src="{%$val.cover%}" alt="">
 						<span class="video_score">7.5</span>
 						<span class="video_btn"></span>
 					</div>
 					<div class="video_content">
-						<p><span>{%$val.create_time%}</span>{%$val.title%}</p>
+						<p><span>{%$val.create_time%}</span>&nbsp;{%$val.title%}</p>
 						<div class="video_tag clearfix">
 							<ul>
 								{%foreach from=$val.tag item=item name=key%}

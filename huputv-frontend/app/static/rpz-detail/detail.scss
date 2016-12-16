@@ -21,7 +21,7 @@ body {
     overflow-scrolling: touch;
 }
 .rpz-wrap{	
-    background:#fff;
+   
 	.rpz-header{
 		height:26px;
 		line-height:26px;       
@@ -64,4 +64,45 @@ body {
         text-align:center;
         background:#eeebeb;
     }
+}
+
+body.night{
+    color: $night_gray3_cor;
+    background-color: $night_gray1_cor;
+    .rpz-wrap{  
+        background:$night_white_cor;
+        .rpz-header{           
+            color:$night_h5_cor6;       
+            background:$night_cor3;
+        }
+        .rpz-detail{
+            background:$night_white_cor;     
+            
+            color:$night_gray3_cor;
+            .rpz-detail-wrap{
+                .item{
+                    min-height:67px;
+                    padding:10px 8px;
+                    border-bottom:1px solid $night_gray0_cor;                
+                    .item-date{                    
+                        .zrp-score{                       
+                            .win{
+                                color:$night_cor1;
+                            }
+                            .lose{
+                                color:$night_green_cor;
+                            }   
+                        }
+                    }
+                }
+                .odd{
+                    background:$night_cor3;
+                }
+            }
+        }
+        .show-more{       
+            background:$night_cor3;
+        }
+    }
+
 }

@@ -46,23 +46,46 @@
     <ul class="live-announce-list">
         <@ _.each(datas, function(item,index) { @>
             <li>
-                <a href="/<@=item.id@>">
+                <@if (item.type == 1){ @>
+                    <a href="/<@=item.id@>">
+                <@}else{@>
+                    <a href="/video/<@=item.vid@>">
+                <@}@>     
                     <div class="pic">
                         <img src="<@=item.cover@>" alt=""/>
                     </div>
                     <div class="recommend-mark"></div>
-                    <div class="title">
-                        <@=item.room_name@>
-                    </div>
-                    <div class="bottom">
-                        <div class="people-number">
-                            <i class="icon-people"></i>
-                            <@=item.online@>
+                    
+                    <div class="move-top">
+                        <div class="ovrly">
+                            <@if (item.type == 1){ @>
+                                <div class="title1">
+                                    <@=item.room_name@>
+                                </div>
+                                <div class="bottom1">
+                                    <div class="people-number">
+                                        <i class="icon-people"></i>
+                                        <@=item.online@>1
+                                    </div>
+                                    <div class="name">
+                                        <@=item.anchor_nickname@>2
+                                    </div>
+                                </div>
+                            <@}else{@>
+                                <div class="title1">
+                                    <@=item.title@>
+                                </div>
+                                <div class="bottom1">
+                                    <div class="name">
+                                        <@=item.play_num@>次播放
+                                    </div>
+                                </div>
+                            <@}@>
                         </div>
-                        <div class="name">
-                            <@=item.anchor_nickname@>
-                        </div>
-                    </div>
+                    </div> 
+                    <@if (item.type != 1){ @>
+                        <span class="type2_score"><@=item.score@></span> 
+                    <@}@>                  
                 </a>
             </li>
         <@ }); @>

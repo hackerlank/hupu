@@ -9,6 +9,7 @@ var Instance;
 var defaults = {
   title: '',
   content: '',
+  gray: '',
   canel: {
     text: '取消',
     callback: function() {}
@@ -41,10 +42,11 @@ Popup.prototype = {
                 '<div class="hp-popup-wrap">',
                     titleTpl,
                     '<div class="hp-popup-content">',
-                        this.opts.content,
+                        this.opts.content+
+                        '<p class="gray">'+this.opts.gray+'</p>'+
                     '</div>',
                     '<div class="button-inner">',
-                        '<a href="javascript:" class="button button-cancel J_buttonCanel">' + this.opts.canel.text + '</a>',
+                        '<a href="javascript:" class="button button-cancel J_buttonCanel">' + this.opts.canel.text +'</a>',
                         '<a href="javascript:" class="button button-confirm J_buttonSubmit">' + this.opts.confirm.text + '</a>',
                     '</div>',
                 '</div>',

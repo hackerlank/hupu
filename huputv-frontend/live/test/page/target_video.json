@@ -43,7 +43,7 @@
     }, 
     {
       "sid": "59", 
-      "sname": "美女直播", 
+      "sname": "综合赛事", 
       "sroute": "sssss2", 
       "sorder": "1", 
       "display": "1", 
@@ -52,68 +52,53 @@
     }, 
     {
       "sid": "46", 
-      "sname": "篮球精选", 
+      "sname": "其他", 
       "sroute": "gma111", 
       "sorder": "1", 
       "display": "1", 
       "displayindex": "1", 
       "abs_url": "/gma111"
-    }, 
-    {
-      "sid": "49", 
-      "sname": "奥奥", 
-      "sroute": "game", 
-      "sorder": "2", 
-      "display": "1", 
-      "displayindex": "1", 
-      "abs_url": "/game"
-    }, 
-    {
-      "sid": "45", 
-      "sname": "足球专区", 
-      "sroute": "quwan", 
-      "sorder": "2", 
-      "display": "1", 
-      "displayindex": "0", 
-      "abs_url": "/quwan"
     }
   ], 
   "keywords": "体育直播,NBA2K游戏直播,校园体育赛事直播,户外直播,电子竞技直播,亮了网", 
   "description": "亮了网 - 体育视频直播平台，提供高清、流畅的体育视频直播服务，包含丰富的体育赛事、体育活动、校园体育、NBA2K游戏、电子竞技、户外直播等各类体育视频直播内容，精彩体育视频直播尽在亮了网。", 
+  "title": "亮了网 - 加俊的直播", 
+  "current_page": "video", 
   "video": {
     "vid": "227f5da952928983b49416dfe449c559", 
     "title": "加俊的直播", 
+    "cover": "http://w2.hoopchina.com.cn/2b/04/df/2b04df3ecc1d94afddff082d139c6f15001.jpg", 
     "division_id": "0", 
     "gid": "72", 
     "tid": "0", 
-    "play_num": "45", 
+    "play_num": "547", 
     "url": {
-      "sc": "liangle.com", 
-      "hd": "liangle.com", 
-      "sd": "liangle.com"
+      "sc": "http://huputv-ali-vod.arenacdn.com/test1.flv?auth_key=1481612875-0-0-053faa903f65f6fc415abdfa49f75bf5", 
+      "hd": "http://huputv-ali-vod.arenacdn.com/flv-sd/test1.flv?auth_key=1481612875-0-0-32e4509bd96e1a7b8568d731d85b05a7", 
+      "sd": "http://huputv-ali-vod.arenacdn.com/flv-ld/test1.flv?auth_key=1481612875-0-0-6f16554725f265d5bd99a8442723c9d6"
     }, 
     "rbi": [
       {
-        "t": "18:44:50", 
+        "t": 18, 
         "desc": "5555"
+      }, 
+      {
+        "t": 631, 
+        "desc": "wwwerwerew"
       }
     ], 
     "video_type": "2", 
-    "score": 2.4, 
-    "is_rated": 0
+    "score": 1, 
+    "is_rated": 1
   }, 
   "recommend": [
     {
       "vid": "be9a887e6ee2525b0b34686d0834b4aa", 
-      "title": "视频标题视25视频标题视25视频标题视25视频标题视视频", 
-      "tag": [
-        "杭州站",
-        "1113",
-        "杭州站"
-      ], 
+      "title": "dd232", 
+      "tag": [], 
       "cover": "http://w3.hoopchina.com.cn/49/82/b0/4982b0b7390d7af25881ef2a628d2069001.jpg", 
       "create_time": "12/06", 
-      "score": 0
+      "score": 2
     }, 
     {
       "vid": "85a373a0a7483793c7ec2180bd9c3b11", 
@@ -125,7 +110,7 @@
       ], 
       "cover": "http://w2.hoopchina.com.cn/5a/44/c7/5a44c7ba5bbe4ec867233d67e4806848001.jpg", 
       "create_time": "11/24", 
-      "score": 2
+      "score": 2.3
     }, 
     {
       "vid": "dc10db9233cf67a2991d64ec45d48a31", 
@@ -143,7 +128,7 @@
       ], 
       "cover": "http://w1.hoopchina.com.cn/ba/45/c8/ba45c8f60456a672e003a875e469d0eb001.jpg", 
       "create_time": "11/24", 
-      "score": 0
+      "score": 2
     }, 
     {
       "vid": "5b4d73996269beb8a795a8f707ff5d5e", 
@@ -151,7 +136,7 @@
       "tag": [], 
       "cover": "http://w1.hoopchina.com.cn/bd/f3/bf/bdf3bf1da3405725be763540d6601144001.jpg", 
       "create_time": "11/23", 
-      "score": 0
+      "score": 4
     }, 
     {
       "vid": "b2a8105495f21bc0e8c9f95718dd35a5", 
@@ -169,7 +154,7 @@
       ], 
       "cover": "http://w4.hoopchina.com.cn/07/6e/3c/076e3caed758a1c18c91a0e9cae3368f001.jpg", 
       "create_time": "11/23", 
-      "score": 0
+      "score": 2
     }, 
     {
       "vid": "e8acf238e0df71b4cdc6e4657811b480", 
@@ -193,7 +178,7 @@
       "tag": [], 
       "cover": "http://w2.hoopchina.com.cn/17/41/7c/17417cc84238e0b46aff34fb96d0ecd7001.jpg", 
       "create_time": "11/23", 
-      "score": 0
+      "score": 4
     }, 
     {
       "vid": "3205508e85a1c8bd4ca73d51c3781ed6", 
@@ -201,7 +186,7 @@
       "tag": [], 
       "cover": "http://w3.hoopchina.com.cn/9d/37/7b/9d377b10ce778c4938b3c7e2c63a229a001.jpg", 
       "create_time": "11/23", 
-      "score": 0
+      "score": 3
     }, 
     {
       "vid": "d1fcf6939810071f3a3aa079933f79ab", 
@@ -209,7 +194,7 @@
       "tag": [], 
       "cover": "http://w2.hoopchina.com.cn/17/41/7c/17417cc84238e0b46aff34fb96d0ecd7001.jpg", 
       "create_time": "11/23", 
-      "score": 0
+      "score": 2
     }, 
     {
       "vid": "10c7cc35c2b07de70bc61d882ce75755", 
@@ -217,7 +202,7 @@
       "tag": [], 
       "cover": "http://w4.hoopchina.com.cn/15/77/29/157729efd3781360680d006d835e2ae0001.jpg", 
       "create_time": "11/22", 
-      "score": 0
+      "score": 2
     }, 
     {
       "vid": "9398dba5ce8c9403510f4c8c6036b972", 
@@ -225,7 +210,7 @@
       "tag": [], 
       "cover": "http://w4.hoopchina.com.cn/ba/45/c8/ba45c8f60456a672e003a875e469d0eb001.jpg", 
       "create_time": "11/22", 
-      "score": 0
+      "score": 4
     }, 
     {
       "vid": "b30b3997bd12644af1b4d11ff897d02e", 
@@ -233,7 +218,7 @@
       "tag": [], 
       "cover": "http://w4.hoopchina.com.cn/ba/45/c8/ba45c8f60456a672e003a875e469d0eb001.jpg", 
       "create_time": "11/22", 
-      "score": 0
+      "score": 2
     }, 
     {
       "vid": "caba4021306e9a10776349af2d139fdf", 
@@ -249,7 +234,7 @@
       "tag": [], 
       "cover": "http://w3.hoopchina.com.cn/15/77/29/157729efd3781360680d006d835e2ae0001.jpg", 
       "create_time": "11/22", 
-      "score": 0
+      "score": 4
     }, 
     {
       "vid": "94ec68257e4b2a5e236d396a1650050d", 
@@ -257,7 +242,7 @@
       "tag": [], 
       "cover": "http://w4.hoopchina.com.cn/33/92/92/3392920ff87e0462a3d48f675247c1e4001.jpg", 
       "create_time": "11/22", 
-      "score": 0
+      "score": 2
     }, 
     {
       "vid": "35421f241243769b7028c2081aa86115", 
@@ -276,7 +261,7 @@
       "tag": [], 
       "cover": "http://w2.hoopchina.com.cn/37/ec/8f/37ec8f26d0da865144aeb407896b9ed0001.jpg", 
       "create_time": "11/21", 
-      "score": 0
+      "score": 2
     }
   ], 
   "player": [
@@ -288,10 +273,10 @@
       "height": "190", 
       "weight": "180", 
       "total_win": "13", 
-      "player_num":"10",
       "total_game": "28", 
       "group": "2", 
       "rate": 46, 
+      "player_num": "10", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -308,6 +293,7 @@
       "total_game": "32", 
       "group": "2", 
       "rate": 43, 
+      "player_num": "15", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -324,6 +310,7 @@
       "total_game": "27", 
       "group": "1", 
       "rate": 55, 
+      "player_num": "2", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -340,6 +327,7 @@
       "total_game": "29", 
       "group": "4", 
       "rate": 58, 
+      "player_num": "26", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -356,6 +344,7 @@
       "total_game": "0", 
       "group": "4", 
       "rate": 0, 
+      "player_num": "4", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -364,7 +353,7 @@
     {
       "id": "584", 
       "puid": "28937392", 
-      "nickname": "一根有独立原则黄瓜", 
+      "nickname": "一根有独立原则的黄瓜", 
       "header": "http://w1.hoopchina.com.cn/64/37/ca/6437cae956f07e7774d36c4434b4e941001.jpg", 
       "height": "175", 
       "weight": "75", 
@@ -372,6 +361,7 @@
       "total_game": "0", 
       "group": "3", 
       "rate": 0, 
+      "player_num": "12", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -388,6 +378,7 @@
       "total_game": "0", 
       "group": "1", 
       "rate": 0, 
+      "player_num": "9", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -404,6 +395,7 @@
       "total_game": "0", 
       "group": "3", 
       "rate": 0, 
+      "player_num": "3", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -420,6 +412,7 @@
       "total_game": "0", 
       "group": "3", 
       "rate": 0, 
+      "player_num": "5", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -436,6 +429,7 @@
       "total_game": "0", 
       "group": "1", 
       "rate": 0, 
+      "player_num": "18", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -452,6 +446,7 @@
       "total_game": "0", 
       "group": "3", 
       "rate": 0, 
+      "player_num": "1", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -468,6 +463,7 @@
       "total_game": "0", 
       "group": "1", 
       "rate": 0, 
+      "player_num": "6", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -484,6 +480,7 @@
       "total_game": "0", 
       "group": "4", 
       "rate": 0, 
+      "player_num": "7", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -500,6 +497,7 @@
       "total_game": "0", 
       "group": "4", 
       "rate": 0, 
+      "player_num": "8", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -516,6 +514,7 @@
       "total_game": "0", 
       "group": "4", 
       "rate": 0, 
+      "player_num": "11", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -532,6 +531,7 @@
       "total_game": "0", 
       "group": "2", 
       "rate": 0, 
+      "player_num": "13", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -548,6 +548,7 @@
       "total_game": "0", 
       "group": "1", 
       "rate": 0, 
+      "player_num": "14", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -564,6 +565,7 @@
       "total_game": "0", 
       "group": "1", 
       "rate": 0, 
+      "player_num": "16", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -580,6 +582,7 @@
       "total_game": "0", 
       "group": "2", 
       "rate": 0, 
+      "player_num": "17", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -596,6 +599,7 @@
       "total_game": "0", 
       "group": "4", 
       "rate": 0, 
+      "player_num": "19", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -612,6 +616,7 @@
       "total_game": "0", 
       "group": "2", 
       "rate": 0, 
+      "player_num": "20", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -628,6 +633,7 @@
       "total_game": "0", 
       "group": "4", 
       "rate": 0, 
+      "player_num": "21", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -644,6 +650,7 @@
       "total_game": "0", 
       "group": "2", 
       "rate": 0, 
+      "player_num": "22", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -660,6 +667,7 @@
       "total_game": "0", 
       "group": "4", 
       "rate": 0, 
+      "player_num": "23", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -676,6 +684,7 @@
       "total_game": "0", 
       "group": "2", 
       "rate": 0, 
+      "player_num": "24", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 
@@ -692,6 +701,7 @@
       "total_game": "0", 
       "group": "3", 
       "rate": 0, 
+      "player_num": "25", 
       "predict_champion_num": "0", 
       "top": "0", 
       "step": "0", 

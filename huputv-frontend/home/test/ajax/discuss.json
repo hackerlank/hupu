@@ -1,0 +1,59 @@
+
+{
+	"code": 1,
+	"msg": "操作成功",
+	"data": {
+		"thread_info": {
+			"tid": "13096693",
+			"puid": "26366901",
+			"title": "我的帖子被点赞了",
+			"titlefont": "",
+			"top_value": "0",
+			"is_lock": "0",
+			"recommend_num": "2",
+			"visits": "0",
+			"replies": 46,
+			"lights": "1",
+			"lastpost_puid": "26366901",
+			"lastpost_username": "丫丫dld2015",
+			"update_info": "",
+			"user_ip": "172.16.11.170",
+			"via": "0",
+			"aid": "",
+			"content": "我的帖子被点赞了\r\n\r\n\r\n",
+			"create_time": "1479093161",
+			"type": "0",
+			"lastpost_time": "1479966713",
+			"digest": "0",
+			"fid": "44",
+			"is_push": "0",
+			"forum": [ ],
+			"username": "念12",
+			"viaInfo": "",
+			"update_time": 1481611508
+	    },
+	    "light_reply": {
+			"tid": "13096693",
+			"count": 1,
+			"lights": [
+				{
+					"pid": "170",
+					"puid": "26012334",
+					"username": "常用test28",
+					"aid": "",
+					"user_ip": "172.16.11.171",
+					"via": "0",
+					"content": "@<a class=\"u\" target=\"_blank\" href=\"http://my.hupu.com/26366901\" uid=\"26366901\">念12</a>",
+					"quote": [ ],
+					"create_time": "1479201137",
+					"update_info": "",
+					"header": "http://i1.hoopchina.com.cn/user/334/26012334/26012334-1458560681.png@45h_45w_2e",
+					"viaInfo": "",
+					"light": 10,
+					"light_count": 10,
+					"time": "27天前"
+				}
+			]
+		}
+	}
+}

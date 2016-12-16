@@ -8,7 +8,7 @@
 
 	var apiUrl = {
 	    // 获取列表
-	    list: '/predict/topic/list/:id',
+	    list: '/m/predict/my/recordlist',
 	    
 	};
 
@@ -17,16 +17,70 @@
 			this.$ZrpdetailWrap = $("#J-rpz-detail");
 			this.$ZrpItemWrap = $("#J-rpz-detail-wrap");
 			this.$zrpItemTemp = $("#J_lrwRpzDetailTpl").html();
-			//this.bind();
-			this.render();
+			
+			this.getData("load");
+			this.bind();
+			this.isRefresh();			
 
-		},
+		}, 
 		bind:function(){
       		var self = this;
+      		
 		},
-		render:function(){
+		render:function(data,type){
 			var self = this;
-			console.log("enter");
+			if(type == 'more'){
+				var template = _.template(self.$zrpItemTemp, {datas:data.list});
+		        self.$ZrpItemWrap.append(template);
+	        }else{
+	        	var template = _.template(self.$zrpItemTemp, {datas:data.list});
+		        self.$ZrpItemWrap.html(template);
+	        }
+	       
+		},
+		getData:function(type){			
+			var self = this;			
+			$.ajax({
+              	url: apiUrl.list,
+              	type: "GET",
+              	dataType: "json",
+              	success: function(res){
+                if(res.code == 1) {
+                  	self.render(res.data,type);
+                  	self.$ZrpItemWrap.attr("data-next",res.data.next_id);
+                }else{
+                	Toast.toast(res.msg);
+                }
+              }
+            });
+		},
+		getMoreDate:function(id,callback){
+			var self = this;		
+			var type = 'more';	
+			$.ajax({
+              	url: apiUrl.list,
+              	type: "GET",
+              	data:{
+              		next_id:id
+              	},
+              	dataType: "json",
+              	success: function(res){
+                if(res.code == 1) {
+                  	self.render(res.data,type);
+                  	self.$ZrpItemWrap.attr("data-next",res.data.next_id);
+                  	if(!res.data.next_id){                        
+                         callback && callback("finish");
+                    }else{
+                        callback && callback(); 
+                    }
+                }else{
+                	Toast.toast(res.msg);
+                }
+              }
+            });
+		},
+		isRefresh:function(){
+			var self = this;
 			var pHeight = self.$ZrpdetailWrap.height();
 			var pWindow = $(window).height();
 			if(pHeight < pWindow-10){
@@ -35,23 +89,33 @@
 			refresh({
 		        contentEl: '#J-rpz-detail',
 		        isRefresh: true,
-		        isLoadingMore: false,
+		        isLoadingMore: true,
 		        refreshCallback: function(complete) {
 	                setTimeout(function() {
 	                   complete();
 	                   location.reload();
 	                }, 1000);
-		        }
+		        },
+		        loadingMoreCallback: function(complete) {                   
+	                self.loadList(function(val){                   
+	                    complete(val);
+	                });
+	            }
 		    });
-			var template = _.template(self.$zrpItemTemp, {datas:datas});
-
-	        self.$ZrpItemWrap.append(template);
-	        console.log('enter2');
-		},		
+		},
+		loadList:function(callback){
+			var self = this;
+	        if(	self.$ZrpItemWrap.attr("data-next")){
+	            self.getMoreRpz(self.$ZrpItemWrap.attr("data-next"),callback);           
+	            
+	        }else{            
+	            callback && callback("finish");            
+	        } 
+		}		
 		
 	}
 
-  $(function(){
-      Zrpdetail.init();
-  })
+  	$(function(){
+      	Zrpdetail.init();
+  	})
 }();

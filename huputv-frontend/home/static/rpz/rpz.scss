@@ -291,13 +291,37 @@
                     background:#fff;
                     .rpz-more{                   
                         display:none;
+                        .arrow{
+                            display: inline-block;
+                            vertical-align: middle;
+                            padding-top: 10px;
+                            margin-right: 6px;
+                            span{
+                                display: block;
+                                width: 0;
+                                height: 0;
+                                border: 8px solid transparent;
+                                border-top: 8px solid #CCC;
+                                position: relative;
+                                &:after{
+                                    content: '';
+                                    position: absolute;
+                                    width: 0;
+                                    height: 0;
+                                    border: 5px solid transparent;
+                                    border-top: 5px solid #fff;
+                                    top: -8px;
+                                    left: -5px;
+                                }
+                            }
+                        }
                     }
                 }
                 
                 .rpz-detail-wrap{
                     .rpz-item{
                         position:relative;
-                        border:1px solid #eeeeee;
+                        border-bottom:1px solid #eeeeee;
                         &:after{
                             display:block;
                             content:"";
@@ -319,7 +343,10 @@
                             white-space:nowrap; 
                             text-overflow:ellipsis; 
                             -o-text-overflow:ellipsis; 
-                            overflow: hidden;                            
+                            overflow: hidden;  
+                            .rpz-title-bold{
+                                font-weight:600;
+                            }                          
                         }
                         .rpz-score{
                             float:left;

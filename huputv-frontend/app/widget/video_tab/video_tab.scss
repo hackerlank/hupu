@@ -3,7 +3,7 @@
 body{
     background:$morning_gray1_cor;
 }
-.tab {
+.target_tab {
     @include display-flex();
     @include justify-content(space-between);
     @include align-items(center);
@@ -20,6 +20,7 @@ body{
         line-height: 50px;
         text-align: center;
         color: $morning_gray2_cor;
+        border-bottom: 1px solid #eeebeb;
     }
 
     a.active {
@@ -31,7 +32,7 @@ body.night{
     background:$night_gray1_cor;
 }
 .night{ 
-    .tab {
+    .target_tab {
        background-color: $night_white_cor; 
         a{
            color: $night_gray3_cor; 

@@ -267,11 +267,16 @@
             "type": 2
         }
     ],
-    "userInfo": [],
+    "userInfo": {
+        "uid" : "18800316",
+        "username": "灬落_",
+        "nickname": "灬落_",
+        "avatar": "http://i1.hoopchina.com.cn/user/316/18800316/18800316-1467179495.jpeg@45h_45w_2e"
+    },
     "login_url": "https://passport.liangle.com/pc/login?project=liangle&from=m",
     "logout_url": "https://passport.liangle.com/pc/logout",
     "register_url": "https://passport.liangle.com/pc/register?project=liangle&from=m",
-    "is_login": 0,
+    "is_login": 1,
     "in_kanqiu": 0,
     "platform": "h5"
 }

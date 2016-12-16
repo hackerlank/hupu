@@ -255,13 +255,17 @@
 					<@=val.create_time@>
 				</div>
 				<div class="rpz-content">												
-					<@=val.title@>
+					<span class="rpz-title-bold"><@=val.title@></span>-<@=val.name@>
 				</div>
 				<div class="rpz-score <@if (val.rp > 0){@> add <@}else {@> reduce <@}@>">
-					<@=val.rp@>RP
+					<@if (val.rp > 0){@>
+						+<@=val.rp@>RP
+					<@}else {@>	
+						<@=val.rp@>RP
+					<@}@>
 				</div>
 				<div class="rpz-current">
-					当前RP<@=val.balance@>
+					当前RP &nbsp;<@=val.balance@>
 				</div>
 			</li>
 		<@})@>

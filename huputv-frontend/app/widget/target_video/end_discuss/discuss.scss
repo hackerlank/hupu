@@ -110,6 +110,13 @@
 			transform: rotate(45deg); 
     }
 	}
+	.null{
+		margin-top:100px;
+		p{
+			text-align:center;
+			color:#a9a9b2;
+		}
+	}
 }
 .night{
 	.discuss{
@@ -167,5 +174,11 @@
 		    border-right: 1px solid $night_gray3_cor;
 	    }			
 		}
+		.null{
+			p{
+				color:$night_gray2_cor;
+			}
+		}
 	}
+
 }

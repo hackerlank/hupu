@@ -2,7 +2,7 @@
 </div>
 
 <script type="text/template" id="J-discuss-tpl">
-		<h2>赛前讨论</h2>
+		<h2>JRs讨论</h2>
 		<div class="title">
 			<p><@=thread_info.title@></p>
 			<span><@=thread_info.replies@> 回复</span>
@@ -44,7 +44,7 @@
 			</div>
 		<@})@>
 		<div class="more">
-			<a href="kanqiu://bbs/topic/<@=thread_info.tid@>">
+			<a href="http://bbs.hupu.com/<@=thread_info.tid@>">
 				更多精彩回帖
 				<em></em>
 			</a>

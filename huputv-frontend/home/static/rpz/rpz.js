@@ -84,6 +84,7 @@
             this.zrpDetailMore = $("#J_more_rpz");
             this.nextDate = HTV.nextDate;
             this.bind();
+            this.index = 0;
         },
         canvasSupport: function() {
             return !!document.createElement('canvas').getContext;
@@ -118,7 +119,7 @@
               self.zrpContent.removeClass("active").eq(index).addClass("active");
               if( index >0 && !$(this).hasClass("visited")){
                 $(this).addClass("visited");
-                self.getzrpdata();    
+                self.getzrpdata();
               }
                       
             })
@@ -131,12 +132,18 @@
             {next_id:id},
             function(res){
               if(res.code == 1){                
-                var temp = _.template( self.zrpDetailTpl, {datas: res.data.list} );
-                  console.log(temp);
+                var rate = res.data.list.length ? res.data.list.length%2 : '-1';
+                
+                var data  = self.arrayList(res.data.list);
+                var temp = _.template( self.zrpDetailTpl, {datas:data ,rate:rate} );                 
                 self.zrpDetailWrap.append( temp );
-                if(res.data.next_id){
+               
+                if(res.data.next_id){                  
                   self.zrpDetailMore.show();
-                  self.getMoreRpz(res.data.next_id);
+                  if(self.index < 1){
+                    self.getMoreRpz(res.data.next_id);
+                    self.index++;
+                  }
                 }else{
                   self.zrpDetailMore.hide();
                 }
@@ -146,11 +153,31 @@
         },
         getMoreRpz:function(next_id){
           var self = this;          
-          this.zrpDetailMore.click(function(){
-            self.getzrpdata(next_id);
-            return false;
+          this.zrpDetailMore.on('click',function(){
+            self.getzrpdata(next_id);               
           })
-        }
+        },
+        arrayList:function(data){
+          var listDate = []; 
+          if(!data.length){
+            return;
+          }             
+
+          data.map(function(item,index){ 
+            var obj = {};            
+            for(var key in item){
+              if(key == 'title'){
+                var arr = item.title.split('-');
+                obj['title'] = arr[0] ? arr[0]: "";
+                obj['name'] = arr[1] ? arr[1] :"";
+              }else{                
+                obj[key] = item[key];                
+              }
+            }
+            listDate.push(obj);
+          })          
+          return listDate;
+        },
 
     };
 

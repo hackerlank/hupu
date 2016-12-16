@@ -100,7 +100,7 @@ Refresh.prototype.loadingRender = function() {
                 '加载中…',
             '</div>'
         ].join('');
-     }else{
+    }else{
         var refreshTpl = [
             '<div class="preloader-refresh">',
                 '<i class="icon-refresh"></i>',
@@ -327,7 +327,6 @@ Refresh.prototype.getLoadMore = function() {
         scrollTop = this.$wrap.scrollTop(),
         viewTop = viewHeight + scrollTop,
         moreTime = null;
-
     /**
      * 回调执行完，回调
      */

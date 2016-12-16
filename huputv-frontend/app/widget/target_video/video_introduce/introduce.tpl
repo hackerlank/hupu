@@ -1,7 +1,7 @@
 <section class="t-content introduce">
 		<div class="score">
 			<div class="star">
-				<div class="star_title">视频打分</div>
+				<div class="star_title">{%$video.score%}</div>
 				<div class="star_num">
 					<ul class="clearfix">
 						<li></li>
@@ -18,7 +18,7 @@
 				
 					<span {%if $video.is_rated == 0%} class="star_btn" {%/if%}>
 						{%if $video.is_rated == 0%}
-							确认
+							评分
 						{%else%}
 							已评分
 						{%/if%}

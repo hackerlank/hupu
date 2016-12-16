@@ -1,27 +1,46 @@
 {
-  "test": "1", 
+  "test": "", 
   "video": {
     "vid": "227f5da952928983b49416dfe449c559", 
     "title": "加俊的直播", 
+    "cover": "http://w2.hoopchina.com.cn/2b/04/df/2b04df3ecc1d94afddff082d139c6f15001.jpg", 
     "division_id": "0", 
-    "gid": "0", 
-    "tid": "3", 
-    "play_num": "45", 
+    "gid": "72", 
+    "tid": "0", 
+    "play_num": "441", 
+    "url": {
+      "sc": "http://huputv-ali-vod.arenacdn.com/wh.flv?auth_key=1481553558-0-0-98b072c1fdfcd56d5cc3eb11c8fe09db", 
+      "hd": "http://huputv-ali-vod.arenacdn.com/flv-sd/wh.flv?auth_key=1481553558-0-0-3b6060356b1371f30aec73d8d5672a41", 
+      "sd": "http://huputv-ali-vod.arenacdn.com/flv-ld/wh.flv?auth_key=1481553558-0-0-21e43f6bdec2c4cf3908074f312bb7a2"
+    }, 
+    "rbi": [
+      {
+        "t": 18, 
+        "desc": "5555"
+      }, 
+      {
+        "t": 631, 
+        "desc": "wwwerwerew"
+      }
+    ], 
     "video_type": "2", 
-    "score": 7.8, 
+    "score": 2.3, 
     "is_rated": 0
   }, 
+  "contain_player": true, 
   "userInfo": {
-    "uid": "26366901", 
-    "username": "念12", 
-    "nickname": "念12", 
-    "score":"32",
-    "avatar": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png"
+    "uid": "26303402", 
+    "username": "hp_9t_hh", 
+    "nickname": "dld001", 
+    "avatar": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png", 
+    "score": "0"
   }, 
   "login_url": "https://passport.liangle.com/pc/login?project=liangle&from=m", 
   "logout_url": "https://passport.liangle.com/pc/logout", 
   "register_url": "https://passport.liangle.com/pc/register?project=liangle&from=m", 
-  "is_login": 0, 
+  "is_login": 1, 
   "in_kanqiu": 0, 
-  "night":0
+  "night": 0, 
+  "client": "", 
+  "platform": ""
 }

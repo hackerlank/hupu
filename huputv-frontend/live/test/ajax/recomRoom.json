@@ -1,42 +1,42 @@
 {
-  "code": 1,
-  "msg": "操作成功",
+  "code": 1, 
+  "msg": "操作成功", 
   "data": [
     {
-      "id": "10154",
-      "name": "八英里的2K成长路",
-      "cover": "http://kanqiu.hupucdn.com/kanqiu_10154_20150703120335.jpeg!cover-534x300.jpeg",
-      "anchor_nickname": "黄师傅",
-      "online_plus": "0",
-      "room_type_text": null,
-      "online": 1
-    },
+      "vid": "ww", 
+      "title": "测试1=2", 
+      "cover": "http://w3.hoopchina.com.cn/5b/ae/26/5bae269d90c8d5bfad2cc90036d55e5e001.jpg@300h_534w_1e_1c", 
+      "play_num": "0", 
+      "score": 0, 
+      "type": 2
+    }, 
     {
-      "id": "10165",
-      "name": "LuLu上海疯狂追",
-      "cover": "http://kanqiu.hupucdn.com/kanqiu_10165_20150730112607.jpeg!cover-534x300.jpeg",
-      "anchor_nickname": "LuLu",
-      "online_plus": "0",
-      "room_type_text": null,
-      "online": 1
-    },
+      "vid": "f10abc5ca23f99f9b16398b62ce6c37b", 
+      "title": "测试1", 
+      "cover": "http://w1.hoopchina.com.cn/38/c0/cc/38c0cc78de43077e28f196af91be6042001.jpg@300h_534w_1e_1c", 
+      "play_num": "0", 
+      "score": 0, 
+      "type": 2
+    }, 
     {
-      "id": "10183",
-      "name": "005test的直播间",
-      "cover": "http://i1.hoopchina.com.cn/hupuapp/kanqiu/201603/kanqiu_10183_20160325184517_1116972964.png@300h_534w_1e_1c",
-      "anchor_nickname": "005test",
-      "online_plus": "0",
-      "room_type_text": "篮球第一现场",
-      "online": 1
-    },
+      "id": "38", 
+      "cover": "http://w1.hoopchina.com.cn/38/c0/cc/38c0cc78de43077e28f196af91be6042001.jpg@300h_534w_1e_1c", 
+      "room_name": "konghai的房间", 
+      "online": 2, 
+      "anchor_nickname": "我就是小孩", 
+      "rp": 0, 
+      "abs_url": "http://dev.liangle.com/38", 
+      "type": 1
+    }, 
     {
-      "id": "10254",
-      "name": "常用test的直播间",
-      "cover": "http://kanqiu.hupucdn.com/kanqiu_10254_20151109175027.jpeg",
-      "anchor_nickname": "常用test",
-      "online_plus": "0",
-      "room_type_text": null,
-      "online": 1
+      "id": "10288", 
+      "cover": "http://w3.hoopchina.com.cn/5b/ae/26/5bae269d90c8d5bfad2cc90036d55e5e001.jpg@300h_534w_1e_1c", 
+      "room_name": "加俊的直播间加俊的直播间加俊", 
+      "online": 1, 
+      "anchor_nickname": "加俊", 
+      "rp": 1, 
+      "abs_url": "http://dev.liangle.com/10288", 
+      "type": 1
     }
   ]
 }

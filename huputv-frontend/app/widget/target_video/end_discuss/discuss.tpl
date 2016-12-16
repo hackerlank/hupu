@@ -1,8 +1,15 @@
-<section class="t-content discuss J_discuss">
-
+<section class="t-content discuss">
+<div class="J_discuss">
+	
+</div>
 </section>
 
 <script type="text/template" id="J-discuss-tpl">
+	<@if (code != 1){@>
+		<div class="null">
+				<p>暂无数据</p>
+		</div>
+	<@}else {@>
 		<div class="title link" link="kanqiu://bbs/topic/<@=thread_info.tid@>">
 			<h2><@=thread_info.title@></h2>
 			<span><@=thread_info.replies@> 回复</span>
@@ -54,4 +61,5 @@
 				<em></em>
 			</a>
 		</div>
+	<@}@>
 </script>

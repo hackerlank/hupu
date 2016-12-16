@@ -111,14 +111,16 @@
 					&.select_win{
 						color:#ff4252;
 						border:1px solid #ff4252;
-					}
-					&.finish{
-						background:#ff4252;
-						color:#fff;
-					}
+					}					
 					&.selected{
 						background:#d5d7c8;
 						color:#999;
+						border:1px solid #d5d7c8;
+					}
+					&.finish{
+						background:#ff4252;
+						border:1px solid #ff4252;
+						color:#fff;
 					}
 				}
 				span:active{
@@ -129,9 +131,10 @@
 			}
 		}
 	}
-	.null{
-		display:none;
-		margin-top:200px;
+
+	.null{		
+		margin-top:100px;
+		padding:0 30px;
 		p{
 			text-align:center;
 			color:#a9a9b2;

@@ -27,8 +27,8 @@
               {%/if%}
             </div>
             <div class="operat-inner">
-              <a href="javascript:" class="button-zan J_buttonSupport" data-name="{%$val.nickname%}" data-id="{%$val.player_id%}"><i></i><span>{%$val.top%}</span></a>
-              <span class="cai" data-id="{%$val.player_id%}"><i></i><span>{%$val.step%}</span></span>
+              <a href="javascript:" class="button-zan J_buttonSupport" data-name="{%$val.nickname%}" data-id="{%$val.id%}"><i></i><span>{%$val.top%}</span></a>
+              <span class="cai" data-id="{%$val.id%}"><i></i><span>{%$val.step%}</span></span>
             </div>
           </div>
         {%/foreach%}

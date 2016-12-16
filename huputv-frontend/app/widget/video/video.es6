@@ -18,7 +18,7 @@ const videoController = {
         source: 'mobileLive'
       };
       //如果正在直播，初始化播放器
-      if(GM.is_live){
+      if(GM.is_live || HTV.targetVideo){
         this.initVideo();
         this.bindEvent();
       }

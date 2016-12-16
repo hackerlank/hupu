@@ -15,11 +15,14 @@
             HTV.nickName = "{%$userInfo.nickname%}" || "";
             // 用户登陆状态
             HTV.isLogin = {%intval($is_login)%};
-
+            //帖子ID
+            HTV.tid = "{%$game.tid%}";
             //平台
             HTV.platform='{%$platform%}';
             //match_ID
-            HTV.match_id = '{%$game.id%}'
+            HTV.match_id = '{%$game.id%}';            
+            //
+            HTV.game_status = '{%$game.game_status%}'
             // 跳转登录
             HTV.jumpLogin = function() {
                 {%if !$is_login && !empty($login_url)%}

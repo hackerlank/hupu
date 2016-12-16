@@ -28,6 +28,7 @@ body {
 }
 #J-lrw-pre{
   .lrw-pre-item{
+    margin-top:4px;
     display:none;
   }
   .actived{
@@ -36,20 +37,30 @@ body {
 }
 .toast-player{  
   .content{
+    max-height:138px;
     padding:5px 5px 5px;   
     h2{
       display:none;
+    }
+    .tips{
+      text-align:center;
+      color:#444;
+      font-size:12px;
     }
     p{
       display:none;
     }
     .popup-pred-game{
-      .content{
-         border-bottom:none;
+      
+      .content{        
+        overflow-y:hidden;
+        text-align:left;
+        border-bottom:none;
       }
     }
   }
 }
 body.night {
-  
+  color: $night_gray3_cor;
+  background-color: $night_gray1_cor;
 }

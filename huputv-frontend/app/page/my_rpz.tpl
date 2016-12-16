@@ -143,7 +143,7 @@
                 <a href="/m/predict/ranking?n={%$in_kanqiu%}&client={%$client%}">
                     <span class="rank-text">人品值排行榜</span>
                     <span class="rank-list">
-                        日排行1，月排行21
+                        日排行{%$userPredictionInfo.day_rank%}，月排行{%$userPredictionInfo.month_rank%}
                         <em></em>
                     </span>
                     
@@ -151,7 +151,7 @@
             </section>
            {%if !empty($userTopicList)%}
            <section class="zrp-record-detail">
-                <a href="/m/predict/ranking?n={%$in_kanqiu%}&client={%$client%}">
+                <a href="/m/my/predict/record?n={%$in_kanqiu%}&client={%$client%}">
                     <span class="rank-text">攒人品记录</span>
                     <span class="rank-list">
                         人品值明细

@@ -4,92 +4,95 @@
 .player-content {
     padding-top: 10px;
     @include clearfix;
-  }
-  .player-card-list {
+  	.player-card-list {
 	    @include float;
-		    width: 120px;
-		    margin: 0 10px 25px;
-		    font-size: 12px;
-		    text-align: center;
-		    .player-card-inner {
-			    position: relative;
-			    border: 1px solid #eee;
-			    .name{
-			    	height:18px;
-			    }
-			    .weight{
-			    	height:18px;
-			    }
+	    width: 120px;
+	    margin: 0 10px 25px;
+	    font-size: 12px;
+	    text-align: center;
+	    .player-card-inner {
+		    position: relative;
+		    border: 1px solid #eee;
+		    .name{
+		    	height:18px;
 		    }
-    .avatar {
-    	position:relative;
-	    height: 118px;
-	    overflow: hidden;
-	    margin-bottom: 2px;
-	    border-bottom: 1px solid #eee;
-	    background: #f4f4f3;
-	    img {
-	        width: 100%;
+		    .weight{
+		    	height:18px;
+		    }
 	    }
-	    .player-number{
-	    	position:absolute;
-	    	left:0;
-	    	top:0;
-	    	color:#fff;
-	    	font-style:normal;
-	    	padding:0 3px;
-	    	background-color:rgba(0,0,0,0.8);			
-	    	filter:Alpha(opacity=0.8);
+	    .avatar {
+	    	position:relative;
+		    height: 118px;
+		    overflow: hidden;
+		    margin-bottom: 2px;
+		    border-bottom: 1px solid #eee;
+		    background: #f4f4f3;
+		    img {
+		        width: 100%;
+		    }
+		    .player-number{
+		    	position:absolute;
+		    	left:0;
+		    	top:0;
+		    	color:#fff;
+		    	font-style:normal;
+		    	padding:0 3px;
+		    	background-color:rgba(0,0,0,0.8);			
+		    	filter:Alpha(opacity=0.8);
+		    }
+		    .player-group{
+		    	position:absolute;
+		    	right:0;
+		    	bottom:0;
+		    	color:#fff;
+		    	font-style:normal;
+		    	padding:0 3px;
+		    	background:#d04646;
+		    	white-space:nowrap; 
+				text-overflow:ellipsis; 
+				-o-text-overflow:ellipsis; 
+				overflow: hidden;
+		    }
 	    }
-	    .player-group{
-	    	position:absolute;
-	    	right:0;
-	    	bottom:0;
-	    	color:#fff;
-	    	font-style:normal;
-	    	padding:0 3px;
-	    	background:#d04646;
-	    	white-space:nowrap; 
-			text-overflow:ellipsis; 
-			-o-text-overflow:ellipsis; 
-			overflow: hidden;
+	    .wins {
+		    padding: 2px;
+		    margin-top: 2px;
+		    border-top: 1px solid #eee;
+		    
 	    }
-    }
-    .wins {
-	    padding: 2px;
-	    margin-top: 2px;
-	    border-top: 1px solid #eee;
-	    
-    }
-    .operat-inner {
-	    height: 20px;
-      	padding-right: 1px;
-	    margin-top: 5px;
-	    line-height: 20px;
-	    background: #fff;
-	    .button-support {	        
-	        display: block;	        
-	        color: #ff4252;
-	        height:18px;
-	        line-height: 18px;
-	        border:1px solid #ff4252;
-	        &:hover {
-	         	color:#fff;
-	          	background: #ff4252;
-	        }      	
-	      	.number {
-	        		
-	      	}
-	    }
-	    .disable{
-	     	display: block;	   
-	    	background:#d5d7c8;
-	    	color:#999;
-	    }
-	    .operat-has-support {
-	      	background: #ff4252;
-	      	color:#fff; 
-	    } 
-    }
-       
+	    .operat-inner {
+		    height: 20px;
+	      	padding-right: 1px;
+		    margin-top: 5px;
+		    line-height: 20px;
+		    background: #fff;
+		    .button-support {	        
+		        display: block;	        
+		        color: #ff4252;
+		        height:18px;
+		        line-height: 18px;
+		        border:1px solid #ff4252;
+		        &:hover {
+		         	color:#fff;
+		          	background: #ff4252;
+		        }      	
+		      	.number {
+		        		
+		      	}
+		    }
+		    .disable{
+		     	display: block;	   
+		    	background:#d5d7c8;
+		    	color:#999;
+		    }
+		    .operat-has-support {
+		      	background: #ff4252;
+		      	color:#fff; 
+		    } 
+	    }       
+	}
+	.no-player{
+		height:70px;
+		text-align:center;
+	}
 }

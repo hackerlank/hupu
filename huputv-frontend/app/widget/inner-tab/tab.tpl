@@ -27,7 +27,7 @@
       "url" => "javascript:"
     ],
     [
-      "name" => "赛前讨论",
+      "name" => "JRs讨论",
       "url" => "javascript:"
     ]
   ]%}

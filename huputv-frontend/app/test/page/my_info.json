@@ -1,0 +1,38 @@
+{
+    "test": "",
+    "user_prediction_info": {
+        "puid": "26508679",
+        "score": "62",
+        "frequency": "8",
+        "win": "3",
+        "today_win_score": "62",
+        "day_rank": "1",
+        "month_rank": "1",
+        "magnification": 1.2,
+        "userCount": 270
+    },
+    "balance": {
+        "1": 450,
+        "6": 0
+    },
+    "follow": {
+        "anchor_nickname": "我就是小孩",
+        "abs_url": "http://dev.liangle.com/38",
+        "abs_share_url": "http://dev.videohupu.com/m/room/38"
+    },
+    "my_rp_url": "http://dev.videohupu.com/m/predict/my/list",
+    "userInfo": {
+        "uid": "26508679",
+        "username": "庄大新",
+        "nickname": "庄大新",
+        "avatar": "http://w1.hoopchina.com.cn/hybrid/resource/avatar/man.png"
+    },
+    "login_url": "https://passport.liangle.com/pc/login?project=liangle&from=m",
+    "logout_url": "https://passport.liangle.com/pc/logout",
+    "register_url": "https://passport.liangle.com/pc/register?project=liangle&from=m",
+    "is_login": 1,
+    "in_kanqiu": 0,
+    "night": 0,
+    "client": "",
+    "platform": "h5"
+}

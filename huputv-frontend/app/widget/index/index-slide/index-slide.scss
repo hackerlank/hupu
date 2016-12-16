@@ -1,3 +1,5 @@
+@charset "utf-8";
+@import "../../../static/sass/sassCore/function";
 
 
 .page-swipe {
@@ -21,6 +23,15 @@
         display:block;
         width:100%;
         height:100%;
+        position:relative;
+        .live_status{
+            position:absolute;
+            font-weight: 700;
+            color: #444;
+            background-color: rgba(255,255,255,.75);
+            left: 0;
+            
+        }
     }
 }
 .page-swipe figure .image {
@@ -30,6 +41,15 @@
     background-size: cover;
 }
 .page-swipe .swipe-title{
+    color:#fff;
+    .swipe-text{
+        font-size:18px;       
+        font-weight:600;
+    }
+    .swipe-date{
+        font-size:14px;
+
+    }
     background-color:rgba(0,0,0,0.5);
     color:#fff;
     padding-left:12px;
@@ -61,4 +81,31 @@
 
 .page-swipe .swipe-position li.on{
     width: 11px;
+}
+
+body.night{  
+    .swipe-wrap > figure {
+        a{              
+            .live_status{               
+                color: #444;
+                background-color: rgba(255,255,255,.75);
+                
+            }
+        }
+    }    
+    .page-swipe figure .image-mask{
+        position:absolute;
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
+        background: rgba(0,0,0,.75);
+    }
+    .page-swipe .swipe-title{
+        color:$night_cor5;        
+        background-color:rgba(0,0,0,0.5);            
+    }
+    .page-swipe .swipe-position li {       
+        background: $night_cor5;
+    }
 }

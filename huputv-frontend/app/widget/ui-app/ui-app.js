@@ -68,6 +68,13 @@ var app = {
 			content: content
 		});
 	},
+	/**
+	 * 触屏返回上一页，靠边线
+	 * @return {[type]} [description]
+	 */
+	offTouch: function() {
+		this.send("hupu.off.touch", {});
+	},
 	getVersion: function(defaultVer) {
 		var defaultInfo = {
 			appVer: defaultVer

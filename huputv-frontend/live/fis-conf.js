@@ -29,12 +29,8 @@ fis.media('debug').match('*.{js,css,png}', {
 fis.match('::package', {
     spriter: fis.plugin('csssprites'),
     packager: fis.plugin('map', {
-        useTrack : false, // 是否输出路径信息,默认为 true
-        'static/pkg/live.js': [
-            'static/live/live.js',
-            'widget/**/*.js',
-            'widget/**/*.es6'
-        ]
+        useTrack : false // 是否输出路径信息,默认为 true
+        
     })
 })
 
